@@ -17,6 +17,7 @@
   const TOKEN_KEY = "annotate_github_pat";
   const USER_KEY = "annotate_github_user";
   const ANNOTATOR_KEY = "annotate_annotator_name";
+  const ROLE_KEY = "annotate_role"; // "annotator" 标注者 | "reviewer" 审核者
 
   // ===== Token 存取（localStorage）=====
   function getToken() {
@@ -53,6 +54,14 @@
     if (name) return sanitizeId(name);
     const user = getUser();
     return user ? user.login : "anonymous";
+  }
+
+  // ===== 角色（标注者 / 审核者）=====
+  function getRole() {
+    try { return localStorage.getItem(ROLE_KEY) || "annotator"; } catch (e) { return "annotator"; }
+  }
+  function setRole(role) {
+    try { localStorage.setItem(ROLE_KEY, role === "reviewer" ? "reviewer" : "annotator"); } catch (e) {}
   }
 
   function clearAuth() {
@@ -138,5 +147,7 @@
     getAnnotatorName: getAnnotatorName,
     setAnnotatorName: setAnnotatorName,
     getAnnotatorId: getAnnotatorId,
+    getRole: getRole,
+    setRole: setRole,
   };
 })();
