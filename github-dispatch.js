@@ -16,6 +16,11 @@
   const API_BASE = "https://api.github.com";
   const LOCK_TTL = (CONFIG.lockTTLMinutes || 30) * 60 * 1000;
 
+  // 当前数据集 id（用于存储路径隔离，避免不同数据集行号冲突）
+  let currentDatasetId = "default";
+  function setDataset(id) { currentDatasetId = id || "default"; }
+  function getDataset() { return currentDatasetId; }
+
   function authHeaders() {
     const token = window.GithubAuth.getToken();
     if (!token) throw new Error("未登录，请先登录 GitHub");
@@ -28,12 +33,16 @@
 
   function pad6(n) { return String(n).padStart(6, "0"); }
   function lineFileName(line) { return "line_" + pad6(line); }
+  // 路径按数据集隔离：annotations/{datasetId}/line_XXXXXX__{username}.json
   function annotationFilePath(line, username) {
-    return CONFIG.linesDir + "/" + lineFileName(line) + "__" + username + ".json";
+    return CONFIG.linesDir + "/" + currentDatasetId + "/" + lineFileName(line) + "__" + username + ".json";
   }
   function lockFilePath(line) {
-    return CONFIG.locksDir + "/" + lineFileName(line) + ".json";
+    return CONFIG.locksDir + "/" + currentDatasetId + "/" + lineFileName(line) + ".json";
   }
+  // 当前数据集的目录前缀（用于扫描时过滤）
+  function annoPrefix() { return CONFIG.linesDir + "/" + currentDatasetId + "/"; }
+  function lockPrefix() { return CONFIG.locksDir + "/" + currentDatasetId + "/"; }
 
   // ===== Base64 UTF-8 安全编解码 =====
   function utf8ToBase64(str) {
@@ -71,18 +80,18 @@
     const done = new Set();
     const locks = new Map();
     const lockSha = new Map();
-    const annoPrefix = CONFIG.linesDir + "/";
-    const lockPrefix = CONFIG.locksDir + "/";
+    const aPfx = annoPrefix();
+    const lPfx = lockPrefix();
     for (const path of files) {
-      if (path.startsWith(annoPrefix) && path.endsWith(".json")) {
-        const m = path.slice(annoPrefix.length).match(/^line_(\d+)__/);
+      if (path.startsWith(aPfx) && path.endsWith(".json")) {
+        const m = path.slice(aPfx.length).match(/^line_(\d+)__/);
         if (m) done.add(parseInt(m[1], 10));
       }
     }
     // 锁文件需要读内容（含 username/ts）和 sha
-    const lockPaths = files.filter((p) => p.startsWith(lockPrefix) && p.endsWith(".json"));
+    const lockPaths = files.filter((p) => p.startsWith(lPfx) && p.endsWith(".json"));
     for (const path of lockPaths) {
-      const m = path.slice(lockPrefix.length).match(/^line_(\d+)\.json$/);
+      const m = path.slice(lPfx.length).match(/^line_(\d+)\.json$/);
       if (!m) continue;
       const line = parseInt(m[1], 10);
       try {
@@ -310,6 +319,8 @@
 
   // ===== 暴露 API =====
   window.GithubDispatch = {
+    setDataset: setDataset,
+    getDataset: getDataset,
     listAllFiles: listAllFiles,
     scanStatus: scanStatus,
     findNextFreeLine: findNextFreeLine,
