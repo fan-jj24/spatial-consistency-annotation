@@ -19,7 +19,7 @@
 
   const CONFIG = window.ANNOTATE_CONFIG.github;
   const API_BASE = "https://api.github.com";
-  const LOCK_TTL = (CONFIG.lockTTLMinutes || 30) * 60 * 1000;
+  // 锁不再自动过期，由持有者上传后释放
 
   // 当前数据集 id
   let currentDatasetId = "default";
@@ -133,11 +133,8 @@
     return { ok: true };
   }
 
-  // ===== 锁过期判断 =====
-  function isLockStale(lockData) {
-    if (!lockData || !lockData.ts) return true;
-    return (Date.now() - lockData.ts) > LOCK_TTL;
-  }
+  // ===== 锁信息（不再自动过期，由持有者上传后释放）=====
+  // lockData: { lines: [...], ts: number, username: string }
 
   // ===== 扫描仓库状态 =====
   /**
@@ -171,7 +168,8 @@
       }
     }
 
-    // 解析批量锁文件
+    // 解析批量锁文件（不过期，由持有者上传后释放）
+    const lockHolders = new Map(); // line → username
     const lockPaths = files.filter((p) => p.startsWith(lPfx) && p.endsWith(".json"));
     for (const path of lockPaths) {
       const m = path.slice(lPfx.length).match(/^batch__(.+)\.json$/);
@@ -180,16 +178,17 @@
         const info = await getFileRaw(path);
         if (!info || !info.data) continue;
         const lockData = info.data;
-        if (isLockStale(lockData)) continue; // 过期锁忽略
         const lines = lockData.lines || [];
-        if (m[1] === username) {
+        const holder = m[1];
+        if (holder === username) {
           myLock = { lines: lines, sha: info.sha, path: path };
         }
-        lines.forEach((l) => lockedLines.add(l));
+        lines.forEach((l) => { lockedLines.add(l); lockHolders.set(l, holder); });
       } catch (e) {}
     }
 
     // 解析审核批量锁文件
+    const reviewLockHolders = new Map(); // line → username
     const reviewLockPaths = files.filter((p) => p.startsWith(rlPfx) && p.endsWith(".json"));
     for (const path of reviewLockPaths) {
       const m = path.slice(rlPfx.length).match(/^batch__(.+)\.json$/);
@@ -198,16 +197,16 @@
         const info = await getFileRaw(path);
         if (!info || !info.data) continue;
         const lockData = info.data;
-        if (isLockStale(lockData)) continue;
         const lines = lockData.lines || [];
-        if (m[1] === username) {
+        const holder = m[1];
+        if (holder === username) {
           myReviewLock = { lines: lines, sha: info.sha, path: path };
         }
-        lines.forEach((l) => reviewLockedLines.add(l));
+        lines.forEach((l) => { reviewLockedLines.add(l); reviewLockHolders.set(l, holder); });
       } catch (e) {}
     }
 
-    return { done, reviewed, lockedLines, reviewLockedLines, myLock, myReviewLock };
+    return { done, reviewed, lockedLines, reviewLockedLines, lockHolders, reviewLockHolders, myLock, myReviewLock };
   }
 
   // ===== 池子统计 =====
@@ -221,21 +220,28 @@
     const allLines = samples.map((s) => s.line);
     const status = await scanStatus();
     let done = 0, locked = 0;
+    const lockHolders = {}; // { line: username } 用于界面展示
     for (const line of allLines) {
       if (isReview) {
         if (status.reviewed.has(line)) { done++; continue; }
         if (!status.done.has(line)) continue; // 未标注的不算审核池
-        if (status.reviewLockedLines.has(line)) locked++;
+        if (status.reviewLockedLines.has(line)) {
+          locked++;
+          lockHolders[line] = status.reviewLockHolders.get(line) || "未知";
+        }
       } else {
         if (status.done.has(line)) { done++; continue; }
-        if (status.lockedLines.has(line)) locked++;
+        if (status.lockedLines.has(line)) {
+          locked++;
+          lockHolders[line] = status.lockHolders.get(line) || "未知";
+        }
       }
     }
     const total = isReview
       ? allLines.filter((l) => status.done.has(l)).length  // 审核池 = 已标注的
       : allLines.length;
     const available = total - done - locked;
-    return { total, done, locked, available };
+    return { total, done, locked, available, lockHolders };
   }
 
   // ===== 批量领取 =====
@@ -407,6 +413,5 @@
     getFileRaw: getFileRaw,
     annotationFilePath: annotationFilePath,
     reviewFilePath: reviewFilePath,
-    isLockStale: isLockStale,
   };
 })();
