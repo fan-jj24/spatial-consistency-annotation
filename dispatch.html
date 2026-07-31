@@ -254,6 +254,13 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
 
 /* 顶栏分隔线 */
 .tb-sep { width:1px; height:20px; background:var(--border); margin:0 2px; flex:0 0 auto; }
+.arrow-scale-label {
+  display:flex; align-items:center; gap:4px; font-size:12px; color:var(--muted); white-space:nowrap;
+}
+.arrow-scale-label input[type="range"] {
+  width:80px; cursor:pointer; accent-color:var(--accent);
+}
+#arrowScaleVal { font-size:11px; min-width:24px; text-align:center; }
 #navInfo { font-size:12px; color:var(--muted); }
 #navDots { display:flex; gap:3px; flex-wrap:wrap; max-width:300px; }
 #navDots .dot {
@@ -418,6 +425,11 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
       <div class="progress-bar"><div class="fill" id="progressFill" style="width:0%"></div></div>
       <span id="navInfo"></span>
       <span class="tb-sep"></span>
+      <label class="arrow-scale-label" title="调整箭头显示大小">箭头
+        <input type="range" id="arrowScale" min="0.5" max="3" step="0.1" value="1" />
+        <span id="arrowScaleVal">1.0</span>
+      </label>
+      <span class="tb-sep"></span>
       <button id="btnPrev" class="ghost">← 上一条</button>
       <button id="btnNextItem" class="primary">下一条 →</button>
     </div>
@@ -570,6 +582,9 @@ const GESTURE = {
   LINE_MIN_LEN: 15,   // 划线删除的最小长度
 };
 
+// 箭头显示缩放（滑块控制，数据只存坐标点不变）
+let ARROW_SCALE = 1;
+
 // ===== 状态 =====
 const $ = (id) => document.getElementById(id);
 const svgB = $("svgB");
@@ -719,7 +734,7 @@ function renderSvg() {
       const cx = sx + sw / 2, cy = sy + sh / 2;
       const angle = Math.atan2(t.y - cy, t.x - cx);
       const perpX = -Math.sin(angle), perpY = Math.cos(angle);
-      const tailW = 10, headLen = 20, headW = 14;
+      const tailW = 10 * ARROW_SCALE, headLen = 20 * ARROW_SCALE, headW = 14 * ARROW_SCALE;
       const sx1 = cx + perpX * tailW, sy1 = cy + perpY * tailW;
       const sx2 = cx - perpX * tailW, sy2 = cy - perpY * tailW;
       const hbx = t.x - Math.cos(angle) * headLen, hby = t.y - Math.sin(angle) * headLen;
@@ -811,13 +826,13 @@ function renderSvg() {
 function render3DArrowOnSvg(g, box, sx, sy, sw, sh, color) {
   const cx = sx + sw / 2, cy = sy + sh / 2;
   const dir = box.dir3d || [1, 0, 0];
-  const r = Math.min(70, sw / 1.5, sh / 1.5);
+  const r = Math.min(70, sw / 1.5, sh / 1.5) * ARROW_SCALE;
 
   // 球体轮廓（加粗虚线圆）
   const circle = document.createElementNS(SVG_NS, "circle");
   circle.setAttribute("cx", cx); circle.setAttribute("cy", cy); circle.setAttribute("r", r);
   circle.setAttribute("fill", "rgba(0,0,0,0.15)");
-  circle.setAttribute("stroke", color); circle.setAttribute("stroke-width", "4");
+  circle.setAttribute("stroke", color); circle.setAttribute("stroke-width", String(4 * ARROW_SCALE));
   circle.setAttribute("stroke-dasharray", "8 5"); circle.setAttribute("opacity", "0.7");
   g.appendChild(circle);
 
@@ -829,14 +844,14 @@ function render3DArrowOnSvg(g, box, sx, sy, sw, sh, color) {
   const line = document.createElementNS(SVG_NS, "line");
   line.setAttribute("x1", cx); line.setAttribute("y1", cy);
   line.setAttribute("x2", ex); line.setAttribute("y2", ey);
-  line.setAttribute("stroke", color); line.setAttribute("stroke-width", "12");
+  line.setAttribute("stroke", color); line.setAttribute("stroke-width", String(12 * ARROW_SCALE));
   line.setAttribute("stroke-linecap", "round");
   if (dz > 0.3) line.setAttribute("stroke-dasharray", "14 8");
   g.appendChild(line);
 
   // 箭头头部（大三角）
   const angle = Math.atan2(ey - cy, ex - cx);
-  const headLen = 22, headWidth = 16;
+  const headLen = 22 * ARROW_SCALE, headWidth = 16 * ARROW_SCALE;
   const arrow = document.createElementNS(SVG_NS, "polygon");
   arrow.setAttribute("fill", color);
   arrow.setAttribute("points",
@@ -851,22 +866,22 @@ function render3DArrowOnSvg(g, box, sx, sy, sw, sh, color) {
   if (dz < -0.2) {
     // 朝向观察者：大圆 + 实心 + 白边
     const dot = document.createElementNS(SVG_NS, "circle");
-    dot.setAttribute("r", 14); dot.setAttribute("fill", color);
-    dot.setAttribute("stroke", "#fff"); dot.setAttribute("stroke-width", 3);
+    dot.setAttribute("r", String(14 * ARROW_SCALE)); dot.setAttribute("fill", color);
+    dot.setAttribute("stroke", "#fff"); dot.setAttribute("stroke-width", String(3 * ARROW_SCALE));
     marker.appendChild(dot);
   } else if (dz > 0.2) {
     // 远离观察者：X 标记
-    const xSize = 10;
+    const xSize = 10 * ARROW_SCALE;
     const xLine1 = document.createElementNS(SVG_NS, "line");
     xLine1.setAttribute("x1", -xSize); xLine1.setAttribute("y1", -xSize);
     xLine1.setAttribute("x2", xSize); xLine1.setAttribute("y2", xSize);
-    xLine1.setAttribute("stroke", "#fff"); xLine1.setAttribute("stroke-width", 4);
+    xLine1.setAttribute("stroke", "#fff"); xLine1.setAttribute("stroke-width", String(4 * ARROW_SCALE));
     xLine1.setAttribute("stroke-linecap", "round");
     marker.appendChild(xLine1);
     const xLine2 = document.createElementNS(SVG_NS, "line");
     xLine2.setAttribute("x1", xSize); xLine2.setAttribute("y1", -xSize);
     xLine2.setAttribute("x2", -xSize); xLine2.setAttribute("y2", xSize);
-    xLine2.setAttribute("stroke", "#fff"); xLine2.setAttribute("stroke-width", 4);
+    xLine2.setAttribute("stroke", "#fff"); xLine2.setAttribute("stroke-width", String(4 * ARROW_SCALE));
     xLine2.setAttribute("stroke-linecap", "round");
     marker.appendChild(xLine2);
   }
@@ -875,8 +890,8 @@ function render3DArrowOnSvg(g, box, sx, sy, sw, sh, color) {
   // 球心点
   const center = document.createElementNS(SVG_NS, "circle");
   center.setAttribute("cx", cx); center.setAttribute("cy", cy);
-  center.setAttribute("r", 6); center.setAttribute("fill", "#fff");
-  center.setAttribute("stroke", color); center.setAttribute("stroke-width", 2);
+  center.setAttribute("r", String(6 * ARROW_SCALE)); center.setAttribute("fill", "#fff");
+  center.setAttribute("stroke", color); center.setAttribute("stroke-width", String(2 * ARROW_SCALE));
   g.appendChild(center);
 }
 
@@ -1825,6 +1840,12 @@ async function init() {
     refreshPoolStats();
   };
   $("btnPrev").onclick = () => goToItem(STATE.batchIdx - 1);
+  // 箭头大小滑块
+  $("arrowScale").oninput = (e) => {
+    ARROW_SCALE = parseFloat(e.target.value);
+    $("arrowScaleVal").textContent = ARROW_SCALE.toFixed(1);
+    renderSvg();
+  };
   $("btnNextItem").onclick = () => {
     if (STATE.batchIdx < STATE.batch.length - 1) goToItem(STATE.batchIdx + 1);
     else { saveCurrentToLocal(); showToast("已是最后一条，请上传", "warn"); }
