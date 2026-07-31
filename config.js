@@ -30,8 +30,9 @@ window.ANNOTATE_CONFIG = {
   // file: JSON 文件名（放在仓库根目录或 web 目录下）
   // 新增数据集时：1) 生成 JSON 文件  2) 在此数组中加一条  3) 上传 JSON 到仓库
   datasets: [
-    { id: "ds500", name: "500 条（line 2504~13279）", file: "samples_500.json" },
     { id: "tests100", name: "测试集 100 条（line 2504~2847）", file: "tests_100.json" },
+    { id: "ds500", name: "500 条 ——0801（line 2504~13279）", file: "samples_500.json" },
+    
     // 示例：后续新增数据集只需在此追加
     // { id: "ds1000", name: "第二批 1000 条", file: "samples_1000.json" },
   ],
