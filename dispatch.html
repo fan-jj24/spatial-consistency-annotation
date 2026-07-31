@@ -140,9 +140,18 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
 
 /* 图片对 */
 #pair-area {
-  flex:0 0 auto; display:grid; grid-template-columns:1fr 1fr; gap:12px;
-  padding:12px 16px; background:var(--panel); border-bottom:1px solid var(--border);
+  flex:0 0 auto; padding:12px 16px; background:var(--panel); border-bottom:1px solid var(--border);
 }
+.pair-cells { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+/* 审核者可见：标注者信息条 */
+.annotator-badge {
+  display:flex; align-items:center; gap:8px; margin-bottom:10px;
+  padding:6px 12px; border-radius:6px; font-size:13px;
+  background:var(--accent-weak); border:1px solid #c3d9ff; color:var(--text);
+}
+.annotator-badge.hidden { display:none; }
+.annotator-badge b { color:var(--accent); }
+.annotator-badge-icon { font-size:16px; }
 .cell-wrap { position:relative; }
 .cell {
   position:relative; width:100%; height:320px; background:#111;
@@ -402,24 +411,31 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
     </div>
     <div class="right">
       <span id="uploadStatus"></span>
-      <button id="btnUpload">☁ 上传到仓库</button>
+      <button id="btnUpload">🏁 结束标注</button>
     </div>
   </div>
 
   <!-- 图片对 -->
   <div id="pair-area">
-    <div class="cell-wrap">
-      <div class="cell">
-        <img id="imgA" alt="A" />
-        <span class="label">A（参考）</span>
-      </div>
+    <!-- 审核者可见：标注者信息条 -->
+    <div class="annotator-badge hidden" id="annotatorBadge">
+      <span class="annotator-badge-icon">✍️</span>
+      <span>此图由 <b id="annotatorBadgeName">-</b> 标注</span>
     </div>
-    <div class="cell-wrap">
-      <div class="cell b-cell" id="cellB">
-        <img id="imgB" alt="B" />
-        <svg id="svgB" xmlns="http://www.w3.org/2000/svg"></svg>
-        <span class="label">B（标注）</span>
-        <span class="img-tip">拖拽画框 · 点框左侧✎可编辑</span>
+    <div class="pair-cells">
+      <div class="cell-wrap">
+        <div class="cell">
+          <img id="imgA" alt="A" />
+          <span class="label">A（参考）</span>
+        </div>
+      </div>
+      <div class="cell-wrap">
+        <div class="cell b-cell" id="cellB">
+          <img id="imgB" alt="B" />
+          <svg id="svgB" xmlns="http://www.w3.org/2000/svg"></svg>
+          <span class="label">B（标注）</span>
+          <span class="img-tip">拖拽画框 · 点框左侧✎可编辑</span>
+        </div>
       </div>
     </div>
   </div>
@@ -969,7 +985,17 @@ function saveCurrentToLocal() {
   const result = { boxes: JSON.parse(JSON.stringify(STATE.boxes)), note: $("globalNote").value.trim() };
   if (isReviewer()) { result.verdict = STATE.reviewVerdict; result.reason = $("reviewReason").value.trim(); }
   STATE.batchResults[line] = result;
-  STATE.batchDone.add(line);
+
+  // 只有有实际内容才算"已完成"
+  if (isReviewer()) {
+    // 审核者：必须有判定（正确/错误）
+    if (result.verdict) STATE.batchDone.add(line);
+    else STATE.batchDone.delete(line);
+  } else {
+    // 标注者：必须有框或有描述
+    if (result.boxes.length > 0 || result.note) STATE.batchDone.add(line);
+    else STATE.batchDone.delete(line);
+  }
   saveLocal();
 }
 
@@ -1015,9 +1041,14 @@ function loadCurrentSample() {
   const remotes = s.remotes || [];
   imgA.src = remotes[0] || ""; imgB.src = remotes[1] || "";
   $("navInfo").textContent = "Line " + s.line;
-  // 审核模式：显示标注者信息
+  // 审核模式：图片对上方显示标注者信息条
+  const badge = $("annotatorBadge");
   if (isReviewer() && s._annotatorName) {
+    badge.classList.remove("hidden");
+    $("annotatorBadgeName").textContent = s._annotatorName;
     $("reviewBy").textContent = "标注者：" + s._annotatorName;
+  } else {
+    badge.classList.add("hidden");
   }
   renderAll();
 }
@@ -1047,25 +1078,39 @@ function updateBatchUI() {
 }
 
 // ===== 上传 =====
-async function uploadToRepo() {
+// ===== 结束标注：确认 → 上传已完成的 → 释放未完成的 → 清空本地 → 回到领取 =====
+async function finishAnnotation() {
+  // 先保存当前条到本地
+  saveCurrentToLocal();
+
+  // 统计已完成和未完成的数量
+  const doneCount = STATE.batchDone.size;
+  const total = STATE.batch.length;
+  const undoneCount = total - doneCount;
+
+  // 确认弹窗
+  const msg = "确定要结束本次" + (isReviewer() ? "审核" : "标注") + "吗？\n\n"
+    + "✅ 已完成的 " + doneCount + " 条将保存到仓库\n"
+    + (undoneCount > 0 ? "↩️ 未完成的 " + undoneCount + " 条将返回池子\n" : "")
+    + "\n此操作不可撤销。";
+  if (!confirm(msg)) return;
+
   const btn = $("btnUpload");
   btn.disabled = true;
   const statusEl = $("uploadStatus");
-  statusEl.className = "syncing"; statusEl.textContent = "上传中...";
+  statusEl.className = "syncing"; statusEl.textContent = "正在结束...";
 
-  // 先保存当前条
-  saveCurrentToLocal();
-
+  // 构建要上传的结果
   const results = [];
   const username = window.GithubAuth.getAnnotatorId();
   for (const s of STATE.batch) {
     const r = STATE.batchResults[s.line];
     if (!r) continue;
     if (isReviewer()) {
-      if (!r.verdict) continue; // 未判定的跳过
+      if (!r.verdict) continue;
       results.push({ line: s.line, data: { line: s.line, verdict: r.verdict, reason: r.reason || "", annotator: s._annotatorName || "", reviewer: username, ts: Date.now() } });
     } else {
-      if (!r.boxes.length && !r.note) continue; // 空标注跳过
+      if (!r.boxes.length && !r.note) continue;
       results.push({ line: s.line, data: {
         line: s.line, remotes: s.remotes,
         objects: r.boxes.map((b) => {
@@ -1080,37 +1125,33 @@ async function uploadToRepo() {
     }
   }
 
-  if (!results.length) {
-    statusEl.className = ""; statusEl.textContent = "没有可上传的数据";
-    btn.disabled = false;
-    return;
-  }
-
   try {
-    const res = await window.GithubDispatch.uploadBatch(results, isReviewer());
-    statusEl.className = "synced";
-    statusEl.textContent = "已上传 " + res.saved + " 条 ✓";
-    showToast("成功上传 " + res.saved + " 条到仓库", "success");
-    // 清除已上传的本地数据
-    results.forEach((r) => { delete STATE.batchResults[r.line]; STATE.batchDone.delete(r.line); });
-    // 从 batch 中移除已上传的
-    const uploadedLines = new Set(results.map((r) => r.line));
-    STATE.batch = STATE.batch.filter((s) => !uploadedLines.has(s.line));
-    if (STATE.batch.length === 0) {
-      clearLocal();
-      showPhase("claim");
-      showToast("全部上传完成！🎉", "success");
-      return;
+    // 上传已完成的（uploadBatch 内部会：保存标注 + 从锁中移除已保存的行 + 释放剩余锁）
+    if (results.length > 0) {
+      await window.GithubDispatch.uploadBatch(results, isReviewer());
+    } else {
+      // 没有任何已完成的，直接释放全部锁
+      await window.GithubDispatch.releaseAll();
     }
-    STATE.batchIdx = Math.min(STATE.batchIdx, STATE.batch.length - 1);
-    loadCurrentFromLocal();
-    loadCurrentSample();
-    updateBatchUI();
-    saveLocal();
+
+    // 清空本地所有记录
+    clearLocal();
+    STATE.batch = [];
+    STATE.batchIdx = 0;
+    STATE.batchResults = {};
+    STATE.batchDone = new Set();
+
+    statusEl.className = "synced";
+    statusEl.textContent = "已结束 ✓";
+    showToast("已保存 " + results.length + " 条，释放 " + undoneCount + " 条回池子", "success");
+
+    // 回到领取界面
+    showPhase("claim");
+    refreshPoolStats();
   } catch (e) {
     statusEl.className = "error";
-    statusEl.textContent = "上传失败: " + e.message;
-    showToast("上传失败: " + e.message, "warn");
+    statusEl.textContent = "操作失败: " + e.message;
+    showToast("操作失败: " + e.message, "warn");
   }
   btn.disabled = false;
 }
@@ -1322,7 +1363,7 @@ async function init() {
   document.querySelectorAll('input[name="roleRadio"]').forEach((r) => {
     r.addEventListener("change", () => { if (window.GithubAuth.getToken()) refreshPoolStats(); });
   });
-  $("btnUpload").onclick = uploadToRepo;
+  $("btnUpload").onclick = finishAnnotation;
   $("btnBackToClaim").onclick = () => {
     saveCurrentToLocal();
     showPhase("claim");
