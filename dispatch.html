@@ -49,6 +49,14 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
 .muted { color:var(--muted); font-size:12px; }
 .tb-sep { width:1px; height:24px; background:var(--border); margin:0 2px; }
 #progressInfo { font-size:12px; color:var(--muted); }
+.dataset-picker {
+  display:flex; align-items:center; gap:4px; font-size:12px; color:var(--muted);
+}
+.dataset-picker select {
+  padding:3px 8px; border:1px solid var(--border); border-radius:4px;
+  font-size:12px; background:var(--panel); color:var(--text); cursor:pointer;
+}
+.dataset-picker select:focus { outline:none; border-color:var(--accent); }
 
 /* ===== 用户区 ===== */
 #user-area { display:flex; align-items:center; gap:6px; }
@@ -221,6 +229,11 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
 <header id="topbar">
   <div class="left">
     <span id="taskInfo">空间一致性标注 <span class="muted">·</span> <span class="line-no" id="lineInfo">--</span></span>
+    <span class="tb-sep"></span>
+    <label class="dataset-picker" title="切换数据集">
+      数据集
+      <select id="datasetSelect"></select>
+    </label>
     <span class="tb-sep"></span>
     <span id="progressInfo">
       已标 <b id="statDone">0</b>
@@ -1277,23 +1290,96 @@ async function startWorking() {
   await dispatchNext();
 }
 
+// ===== 数据集管理 =====
+let currentDatasetIdx = 0;
+
+function getDatasets() {
+  const ds = window.ANNOTATE_CONFIG.datasets;
+  if (ds && ds.length) return ds;
+  // 兼容旧配置：没有 datasets 时用 samplesFile
+  return [{ id: "default", name: "默认数据集", file: window.ANNOTATE_CONFIG.samplesFile || "samples.json" }];
+}
+
+function populateDatasetSelect() {
+  const sel = $("datasetSelect");
+  const datasets = getDatasets();
+  sel.innerHTML = "";
+  datasets.forEach((ds, i) => {
+    const opt = document.createElement("option");
+    opt.value = i;
+    opt.textContent = ds.name;
+    sel.appendChild(opt);
+  });
+  sel.value = currentDatasetIdx;
+}
+
+// 加载指定数据集的样本
+async function loadDataset(idx) {
+  const datasets = getDatasets();
+  if (idx < 0 || idx >= datasets.length) idx = 0;
+  currentDatasetIdx = idx;
+  const ds = datasets[idx];
+
+  // 设置分发模块的数据集隔离路径
+  window.GithubDispatch.setDataset(ds.id);
+
+  showLoading("正在加载数据集: " + ds.name + " ...");
+  try {
+    const resp = await fetch(ds.file);
+    if (!resp.ok) throw new Error("HTTP " + resp.status);
+    const data = await resp.json();
+    STATE.samples = data;
+    STATE.sampleByLine = {};
+    data.forEach((s) => { STATE.sampleByLine[s.line] = s; });
+  } catch (e) {
+    showLoading("数据集加载失败: " + e.message + "\n请确保 " + ds.file + " 存在");
+    return false;
+  }
+  hideLoading();
+  return true;
+}
+
+// 切换数据集
+async function switchDataset(idx) {
+  // 如果当前有未保存的标注，先释放锁
+  if (STATE.current) {
+    await window.GithubDispatch.releaseLock(STATE.current.line).catch(() => {});
+  }
+  STATE.current = null;
+  STATE.boxes = [];
+  STATE.undoStack = [];
+  STATE.editingBoxId = null;
+  STATE.dispatchedCount = 0;
+  $("statDispatched").textContent = "0";
+  $("globalNote").value = "";
+  imgA.src = ""; imgB.src = "";
+  renderAll();
+
+  const ok = await loadDataset(idx);
+  if (!ok) return;
+  $("datasetSelect").value = idx;
+
+  // 已登录则重新领任务
+  if (window.GithubAuth.getToken()) {
+    await refreshProgress();
+    await dispatchNext();
+  }
+}
+
 // ===== 初始化 =====
 async function init() {
   initModal3D();
 
-  // 加载样本
-  showLoading("正在加载样本数据...");
-  try {
-    const resp = await fetch(window.ANNOTATE_CONFIG.samplesFile);
-    if (!resp.ok) throw new Error("HTTP " + resp.status);
-    const data = await resp.json();
-    STATE.samples = data;
-    data.forEach((s) => { STATE.sampleByLine[s.line] = s; });
-  } catch (e) {
-    showLoading("样本数据加载失败: " + e.message + "\n请确保 " + window.ANNOTATE_CONFIG.samplesFile + " 存在");
-    return;
-  }
-  hideLoading();
+  // 初始化数据集选择器
+  currentDatasetIdx = window.ANNOTATE_CONFIG.defaultDataset || 0;
+  populateDatasetSelect();
+  $("datasetSelect").onchange = (e) => {
+    switchDataset(parseInt(e.target.value, 10));
+  };
+
+  // 加载默认数据集
+  const ok = await loadDataset(currentDatasetIdx);
+  if (!ok) return;
 
   // 按钮绑定
   $("btnNext").onclick = goNext;
