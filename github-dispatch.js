@@ -255,7 +255,7 @@
    * @returns {Promise<{sample:object, line:number, resumed?:boolean}|null>}
    */
   async function claimNext(samples) {
-    const username = (window.GithubAuth.getUser() || {}).login;
+    const username = window.GithubAuth.getAnnotatorId();
     if (!username) throw new Error("未登录");
     const allLines = samples.map((s) => s.line);
     const byLine = {};
