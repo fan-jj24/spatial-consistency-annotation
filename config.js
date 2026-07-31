@@ -19,8 +19,21 @@ window.ANNOTATE_CONFIG = {
     lockTTLMinutes: 30,             // 锁超时时间（分钟），超时视为过期可被抢占
   },
 
-  // ===== 样本数据文件 =====
-  samplesFile: "samples.json",
+  // ===== 数据集列表 =====
+  // 每个数据集对应一个 JSON 文件，标注员可在页面上切换
+  // id:   唯一标识（用于存储路径隔离，避免不同数据集行号冲突）
+  // name: 显示名称（标注员看到的）
+  // file: JSON 文件名（放在仓库根目录或 web 目录下）
+  // 新增数据集时：1) 生成 JSON 文件  2) 在此数组中加一条  3) 上传 JSON 到仓库
+  datasets: [
+    { id: "ds500", name: "500 条（line 2504~13279）", file: "samples_500.json" },
+    // 示例：后续新增数据集只需在此追加
+    // { id: "ds1000", name: "第二批 1000 条", file: "samples_1000.json" },
+    // { id: "dstest", name: "测试集 50 条", file: "samples_test.json" },
+  ],
+
+  // ===== 默认数据集（datasets 数组的索引，0 = 第一个）=====
+  defaultDataset: 0,
 
   // ===== 标注任务名称（显示用）=====
   taskName: "空间一致性 BBox 标注",
