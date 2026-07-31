@@ -114,7 +114,7 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
 .claim-msg { margin-top:12px; font-size:13px; color:var(--bad); display:none; }
 
 /* ===== 第二阶段：标注工作区 ===== */
-#phase-work { flex:1; display:none; flex-direction:column; min-height:0; }
+#phase-work { flex:1; display:none; flex-direction:column; min-height:0; overflow-y:auto; }
 #phase-work.active { display:flex; }
 
 /* 工作区顶栏 */
@@ -138,9 +138,10 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
 #uploadStatus.synced { color:var(--ok); }
 #uploadStatus.error { color:var(--bad); }
 
-/* 图片对 */
+/* 图片对 —— 固定在顶部，不随页面滚动消失 */
 #pair-area {
   flex:0 0 auto; padding:12px 16px; background:var(--panel); border-bottom:1px solid var(--border);
+  position:sticky; top:0; z-index:10;
 }
 .pair-cells { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
 /* 审核者可见：标注者信息条 */
@@ -154,7 +155,7 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
 .annotator-badge-icon { font-size:16px; }
 .cell-wrap { position:relative; }
 .cell {
-  position:relative; width:100%; height:320px; background:#111;
+  position:relative; width:100%; height:500px; background:#111;
   border-radius:8px; overflow:hidden; display:flex; align-items:center; justify-content:center;
 }
 .cell img { max-width:100%; max-height:100%; object-fit:contain; }
@@ -783,27 +784,6 @@ function renderSvg() {
       g.appendChild(dl);
     }
 
-    // 旋转图标（↻，右上角，可点击触发旋转动作）—— 仅标注模式、非编辑态显示
-    if (!isReviewer() && !isEditing) {
-      const ig = document.createElementNS(SVG_NS, "g");
-      ig.setAttribute("data-rotate", b.boxId);
-      ig.style.cursor = "pointer";
-      const rcx = sx + sw - 2, rcy = sy + 2;
-      const bg = document.createElementNS(SVG_NS, "circle");
-      bg.setAttribute("cx", rcx); bg.setAttribute("cy", rcy); bg.setAttribute("r", 9);
-      bg.setAttribute("fill", "rgba(255,255,255,0.85)");
-      bg.setAttribute("stroke", color); bg.setAttribute("stroke-width", 1.5);
-      ig.appendChild(bg);
-      const t = document.createElementNS(SVG_NS, "text");
-      t.setAttribute("x", rcx); t.setAttribute("y", rcy);
-      t.setAttribute("fill", color); t.setAttribute("font-size", "12");
-      t.setAttribute("text-anchor", "middle"); t.setAttribute("dominant-baseline", "central");
-      t.style.pointerEvents = "none";
-      t.textContent = "↻";
-      ig.appendChild(t);
-      g.appendChild(ig);
-    }
-
     // 编辑手柄
     if (isEditing) {
       const handles = ["nw","n","ne","e","se","s","sw","w"];
@@ -1035,14 +1015,6 @@ svgB.addEventListener("mousedown", (e) => {
   if (isReviewer()) return;
   const p = svgPoint(e);
 
-  // 旋转图标点击（↻）
-  const rotEl = e.target.getAttribute && e.target.getAttribute("data-rotate");
-  if (rotEl && e.button === 0) {
-    handleAction(parseInt(rotEl, 10), "rotate");
-    e.preventDefault();
-    return;
-  }
-
   // 右键点在框上 → 替换
   if (e.button === 2) {
     const hit = hitTestBox(p.x, p.y);
@@ -1052,6 +1024,17 @@ svgB.addEventListener("mousedown", (e) => {
   }
 
   if (e.button !== 0) return;
+
+  // 有 move 框且未设目标 → 框外点击设目标，不画新框
+  const pendingMove = STATE.boxes.find((b) => b.action === "move" && !b.target);
+  const hitMove = hitTestBox(p.x, p.y);
+  if (pendingMove && !hitMove) {
+    const img = svgToImg(p.x, p.y);
+    pendingMove.target = { x: img.x, y: img.y };
+    renderAll(); showToast("已设定移动目标", "success");
+    e.preventDefault();
+    return;
+  }
 
   // 编辑模式：缩放手柄 / 移动框
   if (STATE.editingBoxId != null) {
@@ -1164,17 +1147,6 @@ window.addEventListener("mouseup", (e) => {
 
 // 禁止画布默认右键菜单（替换手势需要）
 svgB.addEventListener("contextmenu", (e) => { e.preventDefault(); });
-
-// 框外点击 → 设定 move 目标
-svgB.addEventListener("click", (e) => {
-  if (isReviewer()) return;
-  const pending = STATE.boxes.find((b) => b.action === "move" && !b.target);
-  if (!pending) return;
-  if (e.target.closest && e.target.closest("g[data-boxid]")) return;
-  const p = svgPoint(e); const img = svgToImg(p.x, p.y);
-  pending.target = { x: img.x, y: img.y };
-  renderAll(); showToast("已设定移动目标", "success");
-});
 
 imgB.addEventListener("load", () => { STATE.imgNatW = imgB.naturalWidth; STATE.imgNatH = imgB.naturalHeight; renderSvg(); });
 
@@ -1928,4 +1900,3 @@ document.addEventListener("DOMContentLoaded", init);
 </script>
 </body>
 </html>
-
