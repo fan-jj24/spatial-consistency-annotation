@@ -1,12 +1,17 @@
 /**
- * GitHub 分发 / 锁 / 单行保存模块
+ * GitHub 批量分发 / 锁 / 上传模块（v2）
  *
- * 机制：
- * - 一行一个标注文件：annotations/line_XXXXXX__{username}.json
- * - 锁文件：locks/line_XXXXXX.json，内容 {username, ts}
- *   利用 GitHub "创建已存在文件会 409" 的特性实现抢锁
- * - 锁超过 LOCK_TTL 视为过期，可被他人覆盖抢占
- * - 用 Git Trees API 一次性列出全部文件，算出 已标注/已锁定 的行
+ * 核心变化：从"每行一个锁文件"改为"每人一个批量锁文件"
+ * - 锁文件：locks/{datasetId}/batch__{username}.json → {lines:[...], ts}
+ * - 标注结果：annotations/{datasetId}/line_XXXXXX__{username}.json（不变）
+ * - 审核结果：reviews/{datasetId}/line_XXXXXX__{reviewerName}.json（不变）
+ * - 审核锁：locks-review/{datasetId}/batch__{reviewerName}.json
+ *
+ * 流程：
+ * 1. claimBatch(count) → 扫描仓库 → 随机选 N 条空闲行 → 写入批量锁 → 返回样本
+ * 2. 本地标注（零 API 调用，存 localStorage）
+ * 3. uploadBatch(results) → 逐条保存标注/审核 → 更新批量锁（移除已完成的行）
+ * 4. releaseBatch() → 删除批量锁（全部释放回池子）
  */
 
 (function () {
@@ -16,7 +21,7 @@
   const API_BASE = "https://api.github.com";
   const LOCK_TTL = (CONFIG.lockTTLMinutes || 30) * 60 * 1000;
 
-  // 当前数据集 id（用于存储路径隔离，避免不同数据集行号冲突）
+  // 当前数据集 id
   let currentDatasetId = "default";
   function setDataset(id) { currentDatasetId = id || "default"; }
   function getDataset() { return currentDatasetId; }
@@ -33,16 +38,26 @@
 
   function pad6(n) { return String(n).padStart(6, "0"); }
   function lineFileName(line) { return "line_" + pad6(line); }
-  // 路径按数据集隔离：annotations/{datasetId}/line_XXXXXX__{username}.json
+
+  // ===== 路径函数 =====
   function annotationFilePath(line, username) {
     return CONFIG.linesDir + "/" + currentDatasetId + "/" + lineFileName(line) + "__" + username + ".json";
   }
-  function lockFilePath(line) {
-    return CONFIG.locksDir + "/" + currentDatasetId + "/" + lineFileName(line) + ".json";
+  function reviewFilePath(line, reviewerName) {
+    return CONFIG.reviewsDir + "/" + currentDatasetId + "/" + lineFileName(line) + "__" + reviewerName + ".json";
   }
-  // 当前数据集的目录前缀（用于扫描时过滤）
+  // 批量锁文件（每人每数据集一个）
+  function batchLockPath(username) {
+    return CONFIG.locksDir + "/" + currentDatasetId + "/batch__" + username + ".json";
+  }
+  function reviewBatchLockPath(reviewerName) {
+    return CONFIG.reviewLocksDir + "/" + currentDatasetId + "/batch__" + reviewerName + ".json";
+  }
+  // 目录前缀（用于扫描）
   function annoPrefix() { return CONFIG.linesDir + "/" + currentDatasetId + "/"; }
+  function reviewPrefix() { return CONFIG.reviewsDir + "/" + currentDatasetId + "/"; }
   function lockPrefix() { return CONFIG.locksDir + "/" + currentDatasetId + "/"; }
+  function reviewLockPrefix() { return CONFIG.reviewLocksDir + "/" + currentDatasetId + "/"; }
 
   // ===== Base64 UTF-8 安全编解码 =====
   function utf8ToBase64(str) {
@@ -58,10 +73,8 @@
     return new TextDecoder().decode(bytes);
   }
 
-  /**
-   * 一次性列出仓库全部文件路径（递归）
-   * 返回 [string]
-   */
+  // ===== GitHub API 基础操作 =====
+
   async function listAllFiles() {
     const url = API_BASE + "/repos/" + CONFIG.repoOwner + "/" + CONFIG.repoName
               + "/git/trees/" + encodeURIComponent(CONFIG.branch) + "?recursive=1";
@@ -71,44 +84,6 @@
     return (data.tree || []).filter((t) => t.type === "blob").map((t) => t.path);
   }
 
-  /**
-   * 从文件列表解析出 已标注行集合 和 锁映射
-   * @returns {{done:Set<number>, locks:Map<number,{username:string,ts:number}>, lockSha:Map<number,string>}}
-   */
-  async function scanStatus() {
-    const files = await listAllFiles();
-    const done = new Set();
-    const locks = new Map();
-    const lockSha = new Map();
-    const aPfx = annoPrefix();
-    const lPfx = lockPrefix();
-    for (const path of files) {
-      if (path.startsWith(aPfx) && path.endsWith(".json")) {
-        const m = path.slice(aPfx.length).match(/^line_(\d+)__/);
-        if (m) done.add(parseInt(m[1], 10));
-      }
-    }
-    // 锁文件需要读内容（含 username/ts）和 sha
-    const lockPaths = files.filter((p) => p.startsWith(lPfx) && p.endsWith(".json"));
-    for (const path of lockPaths) {
-      const m = path.slice(lPfx.length).match(/^line_(\d+)\.json$/);
-      if (!m) continue;
-      const line = parseInt(m[1], 10);
-      try {
-        const info = await getFileRaw(path);
-        if (info) {
-          locks.set(line, info.data);
-          lockSha.set(line, info.sha);
-        }
-      } catch (e) { /* 忽略单个锁读取失败 */ }
-    }
-    return { done, locks, lockSha };
-  }
-
-  /**
-   * 读取文件原始内容（base64 解码后 JSON 解析）
-   * 返回 { sha, data } 或 null
-   */
   async function getFileRaw(path) {
     const url = API_BASE + "/repos/" + CONFIG.repoOwner + "/" + CONFIG.repoName
               + "/contents/" + path.split("/").map(encodeURIComponent).join("/")
@@ -122,10 +97,6 @@
     return { sha: obj.sha, data };
   }
 
-  /**
-   * 写文件（创建或更新）。knownSha=null 表示创建。
-   * 返回 { ok, fileSha } 或 throw（409 冲突时 throw Error("conflict")）
-   */
   async function putFile(path, jsonData, knownSha, message) {
     const url = API_BASE + "/repos/" + CONFIG.repoOwner + "/" + CONFIG.repoName
               + "/contents/" + path.split("/").map(encodeURIComponent).join("/");
@@ -141,20 +112,14 @@
       body: JSON.stringify(body),
     });
     if (resp.status === 409) throw new Error("conflict");
-    if (resp.status === 401) { window.GithubAuth.logout(); throw new Error("登录已过期，请重新登录"); }
-    if (resp.status === 403) throw new Error("权限不足，请确认 PAT 有 Contents 写权限");
     if (!resp.ok) {
-      let msg = "HTTP " + resp.status;
-      try { const b = await resp.json(); if (b.message) msg += ": " + b.message; } catch (e) {}
-      throw new Error("写入失败: " + msg);
+      const err = await resp.json().catch(() => ({}));
+      throw new Error(err.message || "写入失败: HTTP " + resp.status);
     }
     const result = await resp.json();
-    return { ok: true, fileSha: result.content ? result.content.sha : null };
+    return { ok: true, fileSha: result.content.sha };
   }
 
-  /**
-   * 删除文件
-   */
   async function deleteFile(path, sha, message) {
     const url = API_BASE + "/repos/" + CONFIG.repoOwner + "/" + CONFIG.repoName
               + "/contents/" + path.split("/").map(encodeURIComponent).join("/");
@@ -163,158 +128,268 @@
       headers: authHeaders(),
       body: JSON.stringify({ message: message, sha: sha, branch: CONFIG.branch }),
     });
-    if (resp.status === 404) return { ok: true }; // 已不存在
-    if (!resp.ok) {
-      let msg = "HTTP " + resp.status;
-      try { const b = await resp.json(); if (b.message) msg += ": " + b.message; } catch (e) {}
-      throw new Error("删除失败: " + msg);
-    }
+    if (resp.status === 404) return { ok: true };
+    if (!resp.ok) throw new Error("删除失败: HTTP " + resp.status);
     return { ok: true };
   }
 
-  function isLockStale(lock) {
-    if (!lock || !lock.ts) return true;
-    return (Date.now() - lock.ts) > LOCK_TTL;
+  // ===== 锁过期判断 =====
+  function isLockStale(lockData) {
+    if (!lockData || !lockData.ts) return true;
+    return (Date.now() - lockData.ts) > LOCK_TTL;
   }
 
+  // ===== 扫描仓库状态 =====
   /**
-   * 抢锁。成功返回 {ok:true, sha}；被他人占用返回 {ok:false, by}
+   * 一次扫描获取全部状态
+   * @returns {{done:Set, reviewed:Set, lockedLines:Set, reviewLockedLines:Set, myLock:{lines,sha}|null, myReviewLock:{lines,sha}|null}}
    */
-  async function acquireLock(line, username) {
-    const path = lockFilePath(line);
-    let existing = null;
-    try { existing = await getFileRaw(path); } catch (e) {}
-    if (existing && existing.data) {
-      const mine = existing.data.username === username;
-      const stale = isLockStale(existing.data);
-      if (!mine && !stale) {
-        return { ok: false, by: existing.data.username };
+  async function scanStatus() {
+    const files = await listAllFiles();
+    const done = new Set();
+    const reviewed = new Set();
+    const lockedLines = new Set();       // 所有被锁定的标注行
+    const reviewLockedLines = new Set(); // 所有被锁定的审核行
+    let myLock = null;
+    let myReviewLock = null;
+
+    const username = window.GithubAuth.getAnnotatorId();
+    const aPfx = annoPrefix();
+    const rPfx = reviewPrefix();
+    const lPfx = lockPrefix();
+    const rlPfx = reviewLockPrefix();
+
+    // 解析已标注/已审核
+    for (const path of files) {
+      if (path.startsWith(aPfx) && path.endsWith(".json")) {
+        const m = path.slice(aPfx.length).match(/^line_(\d+)__/);
+        if (m) done.add(parseInt(m[1], 10));
       }
-      // 自己的锁 或 过期锁 → 覆盖更新
-      const res = await putFile(path, { username: username, ts: Date.now() }, existing.sha,
-        "锁定 line " + line + " by " + username);
-      return { ok: true, sha: res.fileSha };
+      if (path.startsWith(rPfx) && path.endsWith(".json")) {
+        const m = path.slice(rPfx.length).match(/^line_(\d+)__/);
+        if (m) reviewed.add(parseInt(m[1], 10));
+      }
     }
-    // 无锁 → 创建（可能被别人抢先 → 409）
-    try {
-      const res = await putFile(path, { username: username, ts: Date.now() }, null,
-        "锁定 line " + line + " by " + username);
-      return { ok: true, sha: res.fileSha };
-    } catch (e) {
-      if (e.message === "conflict") return { ok: false, by: "其他用户" };
-      throw e;
-    }
-  }
 
-  /**
-   * 释放锁（删除锁文件）
-   */
-  async function releaseLock(line, lockSha) {
-    if (!lockSha) {
-      // 没有 sha 就现查
+    // 解析批量锁文件
+    const lockPaths = files.filter((p) => p.startsWith(lPfx) && p.endsWith(".json"));
+    for (const path of lockPaths) {
+      const m = path.slice(lPfx.length).match(/^batch__(.+)\.json$/);
+      if (!m) continue;
       try {
-        const info = await getFileRaw(lockFilePath(line));
-        if (info) lockSha = info.sha;
+        const info = await getFileRaw(path);
+        if (!info || !info.data) continue;
+        const lockData = info.data;
+        if (isLockStale(lockData)) continue; // 过期锁忽略
+        const lines = lockData.lines || [];
+        if (m[1] === username) {
+          myLock = { lines: lines, sha: info.sha, path: path };
+        }
+        lines.forEach((l) => lockedLines.add(l));
       } catch (e) {}
     }
-    if (!lockSha) return { ok: true };
-    try {
-      return await deleteFile(lockFilePath(line), lockSha, "释放 line " + line);
-    } catch (e) {
-      console.warn("释放锁失败:", e);
-      return { ok: false };
+
+    // 解析审核批量锁文件
+    const reviewLockPaths = files.filter((p) => p.startsWith(rlPfx) && p.endsWith(".json"));
+    for (const path of reviewLockPaths) {
+      const m = path.slice(rlPfx.length).match(/^batch__(.+)\.json$/);
+      if (!m) continue;
+      try {
+        const info = await getFileRaw(path);
+        if (!info || !info.data) continue;
+        const lockData = info.data;
+        if (isLockStale(lockData)) continue;
+        const lines = lockData.lines || [];
+        if (m[1] === username) {
+          myReviewLock = { lines: lines, sha: info.sha, path: path };
+        }
+        lines.forEach((l) => reviewLockedLines.add(l));
+      } catch (e) {}
     }
+
+    return { done, reviewed, lockedLines, reviewLockedLines, myLock, myReviewLock };
   }
 
+  // ===== 池子统计 =====
   /**
-   * 保存一行标注
+   * 获取当前数据集的池子统计
+   * @param {Array<{line:number}>} samples
+   * @param {boolean} isReview - true=审核池, false=标注池
+   * @returns {Promise<{total, done, locked, available}>}
    */
-  async function saveLine(line, username, data) {
-    const path = annotationFilePath(line, username);
-    let sha = null;
-    try { const info = await getFileRaw(path); if (info) sha = info.sha; } catch (e) {}
-    const res = await putFile(path, data, sha,
-      "标注 line " + line + " by " + username + " @ " + new Date().toISOString());
-    return res;
-  }
-
-  /**
-   * 加载一行标注（可能是自己之前标的，用于恢复）
-   * 返回 data 或 null
-   */
-  async function loadLine(line, username) {
-    try {
-      const info = await getFileRaw(annotationFilePath(line, username));
-      return info ? info.data : null;
-    } catch (e) { return null; }
-  }
-
-  /**
-   * 高层封装：领取下一个空闲样本并加锁
-   * @param {Array<{line:number}>} samples - samples.json 全部样本
-   * @returns {Promise<{sample:object, line:number, resumed?:boolean}|null>}
-   */
-  async function claimNext(samples) {
-    const username = window.GithubAuth.getAnnotatorId();
-    if (!username) throw new Error("未登录");
-    const allLines = samples.map((s) => s.line);
-    const byLine = {};
-    samples.forEach((s) => { byLine[s.line] = s; });
-
-    // 最多尝试 N 次（应对并发抢锁失败）
-    const MAX_TRY = 8;
-    let tried = new Set();
-    for (let i = 0; i < MAX_TRY; i++) {
-      const free = await findNextFreeLine(allLines.filter((l) => !tried.has(l)), username);
-      if (!free) return null;
-      const line = free.line;
-      const lockRes = await acquireLock(line, username);
-      if (lockRes.ok) {
-        return { sample: byLine[line], line: line, resumed: !!free.resumed };
-      }
-      // 抢锁失败（被别人抢先）→ 标记已试，换下一行
-      tried.add(line);
-    }
-    return null;
-  }
-
-  /**
-   * 高层封装：统计进度
-   * @returns {Promise<{done:number, locked:number, total:number}>}
-   */
-  async function getStats(samples) {
+  async function getPoolStats(samples, isReview) {
     const allLines = samples.map((s) => s.line);
     const status = await scanStatus();
     let done = 0, locked = 0;
     for (const line of allLines) {
-      if (status.done.has(line)) { done++; continue; }
-      const lock = status.locks.get(line);
-      if (lock && !isLockStale(lock)) locked++;
-    }
-    return { done: done, locked: locked, total: allLines.length };
-  }
-
-  /**
-   * 找到第一个空闲行（未标注且未被有效锁定）
-   * @param {number[]} allLines - samples.json 里的全部行号
-   * @returns {Promise<{line:number}|{line:number, resumed:true}|null>}
-   */
-  async function findNextFreeLine(allLines, username) {
-    const status = await scanStatus();
-    // 1) 先看自己有没有遗留的锁（断点续标）
-    for (const [line, lock] of status.locks.entries()) {
-      if (lock.username === username && allLines.includes(line)) {
-        return { line: line, resumed: true };
+      if (isReview) {
+        if (status.reviewed.has(line)) { done++; continue; }
+        if (!status.done.has(line)) continue; // 未标注的不算审核池
+        if (status.reviewLockedLines.has(line)) locked++;
+      } else {
+        if (status.done.has(line)) { done++; continue; }
+        if (status.lockedLines.has(line)) locked++;
       }
     }
-    // 2) 找第一个 未标注 且 未被有效锁定 的行
-    for (const line of allLines) {
-      if (status.done.has(line)) continue;
-      const lock = status.locks.get(line);
-      if (lock && !isLockStale(lock) && lock.username !== username) continue;
-      return { line: line };
+    const total = isReview
+      ? allLines.filter((l) => status.done.has(l)).length  // 审核池 = 已标注的
+      : allLines.length;
+    const available = total - done - locked;
+    return { total, done, locked, available };
+  }
+
+  // ===== 批量领取 =====
+  /**
+   * 批量领取 N 条空闲样本并加锁
+   * @param {Array<{line,remotes,locals}>} samples - 全部样本
+   * @param {number} count - 要领取的数量
+   * @param {boolean} isReview - true=审核模式
+   * @returns {Promise<{samples: Array, lines: number[]}>}
+   */
+  async function claimBatch(samples, count, isReview) {
+    const username = window.GithubAuth.getAnnotatorId();
+    if (!username) throw new Error("未登录");
+
+    const status = await scanStatus();
+    const byLine = {};
+    samples.forEach((s) => { byLine[s.line] = s; });
+
+    // 收集候选行
+    const candidates = [];
+    for (const s of samples) {
+      const line = s.line;
+      if (isReview) {
+        if (!status.done.has(line)) continue;       // 必须已标注
+        if (status.reviewed.has(line)) continue;     // 已审核
+        if (status.reviewLockedLines.has(line)) continue; // 被锁
+      } else {
+        if (status.done.has(line)) continue;         // 已标注
+        if (status.lockedLines.has(line)) continue;  // 被锁
+      }
+      candidates.push(line);
     }
-    return null; // 全部标完
+
+    // 随机打乱，取前 count 条
+    for (let i = candidates.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [candidates[i], candidates[j]] = [candidates[j], candidates[i]];
+    }
+    const picked = candidates.slice(0, Math.min(count, candidates.length));
+    if (!picked.length) throw new Error("没有可用的数据了");
+
+    // 写入批量锁
+    const lockPath = isReview ? reviewBatchLockPath(username) : batchLockPath(username);
+    let existingLock = null;
+    try { existingLock = await getFileRaw(lockPath); } catch (e) {}
+
+    // 合并已有锁的行（断点续标场景）
+    const existingLines = (existingLock && existingLock.data && existingLock.data.lines) || [];
+    const allLockedLines = [...new Set([...existingLines, ...picked])];
+
+    await putFile(lockPath, { username, lines: allLockedLines, ts: Date.now() },
+      existingLock ? existingLock.sha : null,
+      (isReview ? "审核" : "标注") + "批量锁定 " + allLockedLines.length + " 行 by " + username);
+
+    return {
+      samples: picked.map((l) => byLine[l]),
+      lines: picked,
+    };
+  }
+
+  // ===== 批量上传 =====
+  /**
+   * 上传已完成的标注/审核结果，并更新批量锁
+   * @param {Array<{line, data}>} results - 已完成的结果 [{line, data}]
+   * @param {boolean} isReview
+   * @returns {Promise<{saved:number, released:number}>}
+   */
+  async function uploadBatch(results, isReview) {
+    const username = window.GithubAuth.getAnnotatorId();
+    if (!username) throw new Error("未登录");
+
+    let saved = 0;
+    for (const item of results) {
+      const path = isReview
+        ? reviewFilePath(item.line, username)
+        : annotationFilePath(item.line, username);
+      // 检查是否已存在（更新）
+      let sha = null;
+      try { const info = await getFileRaw(path); if (info) sha = info.sha; } catch (e) {}
+      await putFile(path, item.data, sha,
+        (isReview ? "审核" : "标注") + " line " + item.line + " by " + username);
+      saved++;
+    }
+
+    // 更新批量锁：移除已完成的行
+    const doneLines = new Set(results.map((r) => r.line));
+    const lockPath = isReview ? reviewBatchLockPath(username) : batchLockPath(username);
+    let lockInfo = null;
+    try { lockInfo = await getFileRaw(lockPath); } catch (e) {}
+    if (lockInfo && lockInfo.data) {
+      const remaining = (lockInfo.data.lines || []).filter((l) => !doneLines.has(l));
+      if (remaining.length > 0) {
+        await putFile(lockPath, { username, lines: remaining, ts: Date.now() },
+          lockInfo.sha, "更新批量锁: 剩余 " + remaining.length + " 行");
+      } else {
+        // 全部完成，删除锁文件
+        await deleteFile(lockPath, lockInfo.sha, "批量任务完成 by " + username);
+      }
+    }
+
+    return { saved, released: results.length };
+  }
+
+  // ===== 释放批量锁（全部释放回池子）=====
+  /**
+   * 释放指定行（未完成的行回到池子）
+   * @param {number[]} linesToRelease - 要释放的行号
+   * @param {boolean} isReview
+   */
+  async function releaseBatchLines(linesToRelease, isReview) {
+    const username = window.GithubAuth.getAnnotatorId();
+    if (!username || !linesToRelease.length) return;
+    const lockPath = isReview ? reviewBatchLockPath(username) : batchLockPath(username);
+    let lockInfo = null;
+    try { lockInfo = await getFileRaw(lockPath); } catch (e) {}
+    if (!lockInfo || !lockInfo.data) return;
+    const releaseSet = new Set(linesToRelease);
+    const remaining = (lockInfo.data.lines || []).filter((l) => !releaseSet.has(l));
+    if (remaining.length > 0) {
+      await putFile(lockPath, { username, lines: remaining, ts: Date.now() },
+        lockInfo.sha, "释放 " + linesToRelease.length + " 行回池子");
+    } else {
+      await deleteFile(lockPath, lockInfo.sha, "释放全部锁 by " + username);
+    }
+  }
+
+  // ===== 释放全部锁 =====
+  async function releaseAll(isReview) {
+    const username = window.GithubAuth.getAnnotatorId();
+    if (!username) return;
+    const lockPath = isReview ? reviewBatchLockPath(username) : batchLockPath(username);
+    let lockInfo = null;
+    try { lockInfo = await getFileRaw(lockPath); } catch (e) {}
+    if (lockInfo && lockInfo.sha) {
+      await deleteFile(lockPath, lockInfo.sha, "释放全部锁 by " + username);
+    }
+  }
+
+  // ===== 加载一行的已有标注（审核者查看用）=====
+  async function loadAnnotationForReview(line) {
+    const files = await listAllFiles();
+    const pfx = annoPrefix();
+    for (const path of files) {
+      if (path.startsWith(pfx) && path.endsWith(".json")) {
+        const m = path.slice(pfx.length).match(/^line_(\d+)__(.+)\.json$/);
+        if (m && parseInt(m[1], 10) === line) {
+          try {
+            const info = await getFileRaw(path);
+            if (info && info.data) return { data: info.data, annotatorName: m[2] };
+          } catch (e) {}
+        }
+      }
+    }
+    return null;
   }
 
   // ===== 暴露 API =====
@@ -323,15 +398,15 @@
     getDataset: getDataset,
     listAllFiles: listAllFiles,
     scanStatus: scanStatus,
-    findNextFreeLine: findNextFreeLine,
-    claimNext: claimNext,
-    getStats: getStats,
-    acquireLock: acquireLock,
-    releaseLock: releaseLock,
-    saveLine: saveLine,
-    loadLine: loadLine,
+    getPoolStats: getPoolStats,
+    claimBatch: claimBatch,
+    uploadBatch: uploadBatch,
+    releaseBatchLines: releaseBatchLines,
+    releaseAll: releaseAll,
+    loadAnnotationForReview: loadAnnotationForReview,
+    getFileRaw: getFileRaw,
     annotationFilePath: annotationFilePath,
-    lockFilePath: lockFilePath,
+    reviewFilePath: reviewFilePath,
     isLockStale: isLockStale,
   };
 })();
