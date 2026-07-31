@@ -326,22 +326,7 @@
       saved++;
     }
 
-    // 更新批量锁：移除已完成的行
-    const doneLines = new Set(results.map((r) => r.line));
-    const lockPath = isReview ? reviewBatchLockPath(username) : batchLockPath(username);
-    let lockInfo = null;
-    try { lockInfo = await getFileRaw(lockPath); } catch (e) {}
-    if (lockInfo && lockInfo.data) {
-      const remaining = (lockInfo.data.lines || []).filter((l) => !doneLines.has(l));
-      if (remaining.length > 0) {
-        await putFile(lockPath, { username, lines: remaining, ts: Date.now() },
-          lockInfo.sha, "更新批量锁: 剩余 " + remaining.length + " 行");
-      } else {
-        // 全部完成，删除锁文件
-        await deleteFile(lockPath, lockInfo.sha, "批量任务完成 by " + username);
-      }
-    }
-
+    // 不在这里碰锁文件 —— 统一由 releaseAll 删除，避免 sha 冲突
     return { saved, released: results.length };
   }
 
@@ -368,16 +353,15 @@
     }
   }
 
-  // ===== 释放全部锁 =====
+  // ===== 释放全部锁（只删当前角色的锁）=====
   async function releaseAll(isReview) {
     const username = window.GithubAuth.getAnnotatorId();
     if (!username) return;
     const lockPath = isReview ? reviewBatchLockPath(username) : batchLockPath(username);
-    let lockInfo = null;
-    try { lockInfo = await getFileRaw(lockPath); } catch (e) {}
-    if (lockInfo && lockInfo.sha) {
-      await deleteFile(lockPath, lockInfo.sha, "释放全部锁 by " + username);
-    }
+    try {
+      const info = await getFileRaw(lockPath);
+      if (info && info.sha) await deleteFile(lockPath, info.sha, "释放全部锁 by " + username);
+    } catch (e) {}
   }
 
   // ===== 加载一行的已有标注（审核者查看用）=====
