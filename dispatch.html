@@ -321,14 +321,29 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
   background:#0a0a18; border:1px solid #555; border-radius:12px;
   padding:16px; width:680px; max-width:95vw;
 }
-#modal-3d h3 { color:#fff; margin:0 0 12px; font-size:16px; }
-#modal-3d .modal-body { display:flex; gap:16px; }
-#modal-3d canvas { border-radius:8px; background:#111; }
-#modal-3d .preview-label { color:#888; font-size:11px; text-align:center; margin-top:4px; }
-#modal-3d .modal-info { color:#aaa; font-size:12px; margin-top:10px; }
-#modal-3d .modal-actions { display:flex; gap:10px; margin-top:14px; justify-content:flex-end; }
-#modal-3d .modal-actions button { border-radius:6px; padding:8px 20px; }
-#modal-3d .btn-ok { background:var(--ok); color:#fff; border-color:var(--ok); }
+#modal-3d h3 { color:#7ec8e3; margin:0 0 8px; font-size:16px; text-align:center; }
+#modal-3d .modal-body { display:flex; gap:12px; align-items:flex-start; }
+#modal-3d canvas { display:block; border-radius:8px; background:#0a0a18; }
+#modal-3d .preview-wrap { flex:0 0 240px; }
+#modal-3d .preview-wrap canvas { width:240px; height:240px; border:1px solid #444; border-radius:8px; }
+#modal-3d .preview-label { text-align:center; color:#999; font-size:11px; margin-top:4px; }
+#modal-3d .modal-info {
+  text-align:center; margin:8px 0; padding:6px; border-radius:6px;
+  font-size:13px; font-weight:bold; transition:all 0.15s;
+}
+#modal-3d .modal-tip { text-align:center; color:#999; font-size:11px; margin:6px 0; }
+#modal-3d .modal-btns { display:flex; gap:8px; justify-content:center; margin-top:10px; }
+#modal-3d .modal-btns button {
+  padding:8px 20px; border-radius:6px; border:2px solid #555;
+  background:rgba(30,30,50,0.8); color:#ddd; font-size:14px; font-weight:bold;
+  cursor:pointer; transition:all 0.15s;
+}
+#modal-3d .modal-btns button:hover { border-color:#888; color:#fff; }
+#modal-3d .modal-btns .btn-ok { border-color:#4af; color:#fff; background:rgba(40,80,140,0.6); }
+#modal-3d .legend3d {
+  font-size:11px; color:#888; line-height:1.6; margin-top:8px; padding-top:8px;
+  border-top:1px solid #333;
+}
 </style>
 <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
 <script src="config.js"></script>
@@ -514,13 +529,19 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
         <canvas id="canvas-3d" width="400" height="400"></canvas>
         <div class="preview-label">3D 球体（拖拽旋转）</div>
       </div>
-      <div>
+      <div class="preview-wrap">
         <canvas id="canvas-preview" width="240" height="240"></canvas>
         <div class="preview-label">框选区域原图</div>
       </div>
     </div>
     <div class="modal-info" id="modal-3d-info">朝向: 计算中...</div>
-    <div class="modal-actions">
+    <div class="modal-tip">左键拖拽 = 旋转球体 | 滚轮 = 缩放 | 右侧为框选区域原图</div>
+    <div class="legend3d">
+      <span style="color:#ff6666">●</span> 亮红/粗 = 箭头朝你(出屏) &nbsp;
+      <span style="color:#6666aa">●</span> 暗蓝/细 = 箭头远离你(入屏)<br>
+      <span style="color:#ffaa00">◆</span> 黄色菱形 = 箭头在球面切平面上
+    </div>
+    <div class="modal-btns">
       <button id="modal-3d-cancel">取消</button>
       <button id="modal-3d-ok" class="btn-ok">确定</button>
     </div>
@@ -539,14 +560,22 @@ const ACTION_COLORS = {
   replace:["#795548", "#8D6E63", "#A1887F", "#BCAAA4"],
   move:   ["#1565C0", "#2196F3", "#64B5F6", "#90CAF9"],
   move3d: ["#6A1B9A", "#8E24AA", "#AB47BC", "#CE93D8"],
-  cw:     ["#E65100", "#FF9800", "#FFB74D", "#FFCC80"],
-  ccw:    ["#E65100", "#FF9800", "#FFB74D", "#FFCC80"],
+  rotate: ["#E65100", "#FF9800", "#FFB74D", "#FFCC80"],
+  cw:     ["#E65100", "#FF9800", "#FFB74D", "#FFCC80"],  // 旧数据兼容
+  ccw:    ["#E65100", "#FF9800", "#FFB74D", "#FFCC80"],  // 旧数据兼容
   neutral:["#FFC107", "#FFB300", "#FFA000", "#FF8F00"],
   custom: ["#5D4037", "#795548", "#8D6E63", "#A1887F"],
 };
 const ACTION_LABELS = {
   add:"新增", delete:"删除", replace:"替换", move:"2D移动",
-  cw:"顺时针", ccw:"逆时针", move3d:"3D移动", custom:"自定义文字", neutral:"未指定"
+  rotate:"旋转", cw:"旋转", ccw:"旋转", move3d:"3D移动", custom:"自定义文字", neutral:"未指定"
+};
+// 手势阈值（与原始 3D 模板一致）
+const GESTURE = {
+  DRAG_THRESH: 5,     // 小于此距离视为点击而非拖拽
+  DBLCLICK_MS: 350,   // 双击间隔
+  DBLCLICK_MOVE: 6,   // 双击允许的最大位移
+  LINE_MIN_LEN: 15,   // 划线删除的最小长度
 };
 
 // ===== 状态 =====
@@ -572,6 +601,7 @@ const STATE = {
   nextBoxId: 1,
   undoStack: [],
   editingBoxId: null,
+  lastClick: null,      // 双击检测 { time, pos, boxId }
   // 审核
   reviewVerdict: null,
   reviewAnnotator: "",
@@ -692,29 +722,38 @@ function renderSvg() {
     g.appendChild(rect);
 
     if (act === "move" && b.target) {
+      // 2D 移动：粗锥形箭头（与原始模板一致）
       const t = imgToSvg(b.target.x, b.target.y);
       const cx = sx + sw / 2, cy = sy + sh / 2;
-      const line = document.createElementNS(SVG_NS, "line");
-      line.setAttribute("x1", cx); line.setAttribute("y1", cy);
-      line.setAttribute("x2", t.x); line.setAttribute("y2", t.y);
-      line.setAttribute("stroke", color); line.setAttribute("stroke-width", 2.5);
-      line.setAttribute("marker-end", "url(#ah)");
-      g.appendChild(line);
+      const angle = Math.atan2(t.y - cy, t.x - cx);
+      const perpX = -Math.sin(angle), perpY = Math.cos(angle);
+      const tailW = 10, headLen = 20, headW = 14;
+      const sx1 = cx + perpX * tailW, sy1 = cy + perpY * tailW;
+      const sx2 = cx - perpX * tailW, sy2 = cy - perpY * tailW;
+      const hbx = t.x - Math.cos(angle) * headLen, hby = t.y - Math.sin(angle) * headLen;
+      const hx1 = hbx + perpX * headW, hy1 = hby + perpY * headW;
+      const hx2 = hbx - perpX * headW, hy2 = hby - perpY * headW;
+      const arrowShape = document.createElementNS(SVG_NS, "polygon");
+      arrowShape.setAttribute("points",
+        sx1+","+sy1+" "+hx1+","+hy1+" "+t.x+","+t.y+" "+hx2+","+hy2+" "+sx2+","+sy2);
+      arrowShape.setAttribute("fill", color);
+      arrowShape.setAttribute("stroke", color);
+      arrowShape.setAttribute("stroke-width", "1");
+      arrowShape.setAttribute("stroke-linejoin", "round");
+      arrowShape.setAttribute("opacity", "0.85");
+      g.appendChild(arrowShape);
     } else if (act === "move3d" && b.dir3d) {
+      // 3D 移动：球体 + 法向量箭头的 2D 投影（与原始模板一致）
+      render3DArrowOnSvg(g, b, sx, sy, sw, sh, color);
+    } else if (act === "rotate" || act === "cw" || act === "ccw") {
+      // 旋转（cw/ccw 为旧数据兼容，统一显示旋转符号）
       const cx = sx + sw / 2, cy = sy + sh / 2;
       const txt = document.createElementNS(SVG_NS, "text");
       txt.setAttribute("x", cx); txt.setAttribute("y", cy);
-      txt.setAttribute("fill", color); txt.setAttribute("font-size", "16");
+      txt.setAttribute("fill", color); txt.setAttribute("font-size", "24");
+      txt.setAttribute("font-weight", "bold");
       txt.setAttribute("text-anchor", "middle"); txt.setAttribute("dominant-baseline", "middle");
-      txt.textContent = "3D→" + b.dir3d;
-      g.appendChild(txt);
-    } else if (act === "cw" || act === "ccw") {
-      const cx = sx + sw / 2, cy = sy + sh / 2;
-      const txt = document.createElementNS(SVG_NS, "text");
-      txt.setAttribute("x", cx); txt.setAttribute("y", cy);
-      txt.setAttribute("fill", color); txt.setAttribute("font-size", "20");
-      txt.setAttribute("text-anchor", "middle"); txt.setAttribute("dominant-baseline", "middle");
-      txt.textContent = act === "cw" ? "↻" : "↺";
+      txt.textContent = "↻";
       g.appendChild(txt);
     } else if (act === "custom" && b.text) {
       const txt = document.createElementNS(SVG_NS, "text");
@@ -732,6 +771,39 @@ function renderSvg() {
     numTxt.textContent = "#" + (STATE.boxes.indexOf(b) + 1);
     g.appendChild(numTxt);
 
+    // 删除框：渲染划线（手势划过的轨迹）
+    if (act === "delete" && b.line) {
+      const l0 = imgToSvg(b.line[0].x, b.line[0].y);
+      const l1 = imgToSvg(b.line[1].x, b.line[1].y);
+      const dl = document.createElementNS(SVG_NS, "line");
+      dl.setAttribute("x1", l0.x); dl.setAttribute("y1", l0.y);
+      dl.setAttribute("x2", l1.x); dl.setAttribute("y2", l1.y);
+      dl.setAttribute("stroke", color); dl.setAttribute("stroke-width", "3");
+      dl.setAttribute("stroke-linecap", "round");
+      g.appendChild(dl);
+    }
+
+    // 旋转图标（↻，右上角，可点击触发旋转动作）—— 仅标注模式、非编辑态显示
+    if (!isReviewer() && !isEditing) {
+      const ig = document.createElementNS(SVG_NS, "g");
+      ig.setAttribute("data-rotate", b.boxId);
+      ig.style.cursor = "pointer";
+      const rcx = sx + sw - 2, rcy = sy + 2;
+      const bg = document.createElementNS(SVG_NS, "circle");
+      bg.setAttribute("cx", rcx); bg.setAttribute("cy", rcy); bg.setAttribute("r", 9);
+      bg.setAttribute("fill", "rgba(255,255,255,0.85)");
+      bg.setAttribute("stroke", color); bg.setAttribute("stroke-width", 1.5);
+      ig.appendChild(bg);
+      const t = document.createElementNS(SVG_NS, "text");
+      t.setAttribute("x", rcx); t.setAttribute("y", rcy);
+      t.setAttribute("fill", color); t.setAttribute("font-size", "12");
+      t.setAttribute("text-anchor", "middle"); t.setAttribute("dominant-baseline", "central");
+      t.style.pointerEvents = "none";
+      t.textContent = "↻";
+      ig.appendChild(t);
+      g.appendChild(ig);
+    }
+
     // 编辑手柄
     if (isEditing) {
       const handles = ["nw","n","ne","e","se","s","sw","w"];
@@ -748,6 +820,93 @@ function renderSvg() {
     }
     svgB.appendChild(g);
   });
+
+  // 划线删除的临时视觉反馈（手势进行中）
+  if (tempDeleteLine) {
+    const f = imgToSvg(tempDeleteLine.from.x, tempDeleteLine.from.y);
+    const t = imgToSvg(tempDeleteLine.to.x, tempDeleteLine.to.y);
+    const tl = document.createElementNS(SVG_NS, "line");
+    tl.setAttribute("x1", f.x); tl.setAttribute("y1", f.y);
+    tl.setAttribute("x2", t.x); tl.setAttribute("y2", t.y);
+    tl.setAttribute("stroke", "#E53935"); tl.setAttribute("stroke-width", "3");
+    tl.setAttribute("stroke-linecap", "round");
+    tl.setAttribute("stroke-dasharray", "6 4");
+    tl.setAttribute("opacity", "0.9");
+    svgB.appendChild(tl);
+  }
+}
+
+// 3D 移动箭头在 SVG 上的 2D 投影（球体轮廓 + 法向量箭头 + 深度标记）
+function render3DArrowOnSvg(g, box, sx, sy, sw, sh, color) {
+  const cx = sx + sw / 2, cy = sy + sh / 2;
+  const dir = box.dir3d || [1, 0, 0];
+  const r = Math.min(70, sw / 1.5, sh / 1.5);
+
+  // 球体轮廓（加粗虚线圆）
+  const circle = document.createElementNS(SVG_NS, "circle");
+  circle.setAttribute("cx", cx); circle.setAttribute("cy", cy); circle.setAttribute("r", r);
+  circle.setAttribute("fill", "rgba(0,0,0,0.15)");
+  circle.setAttribute("stroke", color); circle.setAttribute("stroke-width", "4");
+  circle.setAttribute("stroke-dasharray", "8 5"); circle.setAttribute("opacity", "0.7");
+  g.appendChild(circle);
+
+  // 方向投影
+  const dx = dir[0], dy = dir[1], dz = dir[2];
+  const ex = cx + dx * r, ey = cy - dy * r;
+
+  // 箭杆（加粗）
+  const line = document.createElementNS(SVG_NS, "line");
+  line.setAttribute("x1", cx); line.setAttribute("y1", cy);
+  line.setAttribute("x2", ex); line.setAttribute("y2", ey);
+  line.setAttribute("stroke", color); line.setAttribute("stroke-width", "12");
+  line.setAttribute("stroke-linecap", "round");
+  if (dz > 0.3) line.setAttribute("stroke-dasharray", "14 8");
+  g.appendChild(line);
+
+  // 箭头头部（大三角）
+  const angle = Math.atan2(ey - cy, ex - cx);
+  const headLen = 22, headWidth = 16;
+  const arrow = document.createElementNS(SVG_NS, "polygon");
+  arrow.setAttribute("fill", color);
+  arrow.setAttribute("points",
+    ex + "," + ey + " " +
+    (ex - headLen * Math.cos(angle - Math.PI/6)) + "," + (ey - headLen * Math.sin(angle - Math.PI/6)) + " " +
+    (ex - headLen * Math.cos(angle + Math.PI/6)) + "," + (ey - headLen * Math.sin(angle + Math.PI/6)));
+  g.appendChild(arrow);
+
+  // 深度方向端点标记
+  const marker = document.createElementNS(SVG_NS, "g");
+  marker.setAttribute("transform", "translate(" + ex + "," + ey + ")");
+  if (dz < -0.2) {
+    // 朝向观察者：大圆 + 实心 + 白边
+    const dot = document.createElementNS(SVG_NS, "circle");
+    dot.setAttribute("r", 14); dot.setAttribute("fill", color);
+    dot.setAttribute("stroke", "#fff"); dot.setAttribute("stroke-width", 3);
+    marker.appendChild(dot);
+  } else if (dz > 0.2) {
+    // 远离观察者：X 标记
+    const xSize = 10;
+    const xLine1 = document.createElementNS(SVG_NS, "line");
+    xLine1.setAttribute("x1", -xSize); xLine1.setAttribute("y1", -xSize);
+    xLine1.setAttribute("x2", xSize); xLine1.setAttribute("y2", xSize);
+    xLine1.setAttribute("stroke", "#fff"); xLine1.setAttribute("stroke-width", 4);
+    xLine1.setAttribute("stroke-linecap", "round");
+    marker.appendChild(xLine1);
+    const xLine2 = document.createElementNS(SVG_NS, "line");
+    xLine2.setAttribute("x1", xSize); xLine2.setAttribute("y1", -xSize);
+    xLine2.setAttribute("x2", -xSize); xLine2.setAttribute("y2", xSize);
+    xLine2.setAttribute("stroke", "#fff"); xLine2.setAttribute("stroke-width", 4);
+    xLine2.setAttribute("stroke-linecap", "round");
+    marker.appendChild(xLine2);
+  }
+  g.appendChild(marker);
+
+  // 球心点
+  const center = document.createElementNS(SVG_NS, "circle");
+  center.setAttribute("cx", cx); center.setAttribute("cy", cy);
+  center.setAttribute("r", 6); center.setAttribute("fill", "#fff");
+  center.setAttribute("stroke", color); center.setAttribute("stroke-width", 2);
+  g.appendChild(center);
 }
 
 function renderAnnoRows() {
@@ -782,7 +941,7 @@ function renderAnnoRows() {
 
     const sel = document.createElement("select");
     sel.className = "action-select";
-    ["neutral","add","delete","replace","move","move3d","cw","ccw","custom"].forEach((k) => {
+    ["neutral","add","delete","replace","move","move3d","rotate","custom"].forEach((k) => {
       const opt = document.createElement("option");
       opt.value = k; opt.textContent = ACTION_LABELS[k];
       if (k === act) opt.selected = true;
@@ -835,17 +994,66 @@ function onActionChange(boxId, action) {
   if (action !== "move") delete b.target;
   if (action !== "move3d") delete b.dir3d;
   if (action !== "custom") delete b.text;
+  if (action !== "delete") delete b.line;
   if (action === "move3d" && !b.dir3d) { renderAll(); openModal3D(boxId); return; }
   renderAll();
 }
 
-// ===== 手势 =====
+// ===== 手势系统（与原始 3D 模板一致：双击新增 / 框内划线删除 / 右键替换 / 旋转图标）=====
 let gesture = null;
+let tempDeleteLine = null; // 划线删除时的临时视觉反馈
+
 function svgPoint(e) { const r = svgB.getBoundingClientRect(); return { x: e.clientX - r.left, y: e.clientY - r.top }; }
 
+// 命中检测：返回点击位置最上层的框（数组末尾 = 最上层）
+function hitTestBox(sx, sy) {
+  for (let i = STATE.boxes.length - 1; i >= 0; i--) {
+    const b = STATE.boxes[i];
+    const tl = imgToSvg(b.x, b.y), br = imgToSvg(b.x + b.w, b.y + b.h);
+    if (sx >= tl.x && sx <= br.x && sy >= tl.y && sy <= br.y) return b;
+  }
+  return null;
+}
+
+// 应用动作到框（手势与下拉框共用）
+function handleAction(boxId, action, extra) {
+  pushUndo();
+  const b = STATE.boxes.find((x) => x.boxId === boxId);
+  if (!b) return;
+  b.action = action;
+  if (action !== "move") delete b.target;
+  if (action !== "move3d") delete b.dir3d;
+  if (action !== "custom") delete b.text;
+  if (action !== "delete") delete b.line;
+  if (extra) Object.assign(b, extra);
+  if (action === "move3d" && !b.dir3d) { renderAll(); openModal3D(boxId); return; }
+  renderAll();
+  showToast((ACTION_LABELS[action] || action) + " ✓", "success");
+}
+
 svgB.addEventListener("mousedown", (e) => {
-  if (e.button !== 0 || isReviewer()) return;
+  if (isReviewer()) return;
   const p = svgPoint(e);
+
+  // 旋转图标点击（↻）
+  const rotEl = e.target.getAttribute && e.target.getAttribute("data-rotate");
+  if (rotEl && e.button === 0) {
+    handleAction(parseInt(rotEl, 10), "rotate");
+    e.preventDefault();
+    return;
+  }
+
+  // 右键点在框上 → 替换
+  if (e.button === 2) {
+    const hit = hitTestBox(p.x, p.y);
+    if (hit) { handleAction(hit.boxId, "replace"); }
+    e.preventDefault();
+    return;
+  }
+
+  if (e.button !== 0) return;
+
+  // 编辑模式：缩放手柄 / 移动框
   if (STATE.editingBoxId != null) {
     const b = STATE.boxes.find((x) => x.boxId === STATE.editingBoxId);
     if (!b) return;
@@ -855,6 +1063,16 @@ svgB.addEventListener("mousedown", (e) => {
     if (p.x >= tl.x && p.x <= br.x && p.y >= tl.y && p.y <= br.y) { pushUndo(); gesture = { mode:"moveBox", boxId:b.boxId, start:p, orig:{...b} }; e.preventDefault(); return; }
     return;
   }
+
+  // 点在已有框上 → 可能是划线删除 / 单击 / 双击
+  const hit = hitTestBox(p.x, p.y);
+  if (hit) {
+    gesture = { mode:"boxGesture", boxId:hit.boxId, start:p, startImg:svgToImg(p.x,p.y), moved:false };
+    e.preventDefault();
+    return;
+  }
+
+  // 空白处 → 画新框
   pushUndo();
   const img = svgToImg(p.x, p.y);
   const boxId = STATE.nextBoxId++;
@@ -866,6 +1084,18 @@ svgB.addEventListener("mousedown", (e) => {
 window.addEventListener("mousemove", (e) => {
   if (!gesture) return;
   const p = svgPoint(e);
+
+  // 框内手势：超过阈值 → 显示划线删除反馈
+  if (gesture.mode === "boxGesture") {
+    const dist = Math.hypot(p.x - gesture.start.x, p.y - gesture.start.y);
+    if (dist >= GESTURE.DRAG_THRESH) {
+      gesture.moved = true;
+      tempDeleteLine = { from: gesture.startImg, to: svgToImg(p.x, p.y) };
+      renderSvg();
+    }
+    return;
+  }
+
   const b = STATE.boxes.find((x) => x.boxId === gesture.boxId);
   if (!b) return;
   if (gesture.mode === "draw") {
@@ -891,14 +1121,51 @@ window.addEventListener("mousemove", (e) => {
   }
 });
 
-window.addEventListener("mouseup", () => {
-  if (gesture && gesture.mode === "draw") {
+window.addEventListener("mouseup", (e) => {
+  if (!gesture) return;
+  const p = svgPoint(e);
+
+  // 框内手势收尾
+  if (gesture.mode === "boxGesture") {
+    const g = gesture; gesture = null;
+    const endImg = svgToImg(p.x, p.y);
+    const imgLen = Math.hypot(endImg.x - g.startImg.x, endImg.y - g.startImg.y);
+    tempDeleteLine = null;
+
+    // 划线足够长 → 删除
+    if (g.moved && imgLen >= GESTURE.LINE_MIN_LEN) {
+      handleAction(g.boxId, "delete", { line: [g.startImg, endImg] });
+      return;
+    }
+
+    // 点击 / 双击检测
+    const dist = Math.hypot(p.x - g.start.x, p.y - g.start.y);
+    if (dist < GESTURE.DRAG_THRESH) {
+      const now = Date.now();
+      const lc = STATE.lastClick;
+      if (lc && (now - lc.time) < GESTURE.DBLCLICK_MS && lc.boxId === g.boxId &&
+          Math.hypot(p.x - lc.pos.x, p.y - lc.pos.y) < GESTURE.DBLCLICK_MOVE) {
+        STATE.lastClick = null;
+        handleAction(g.boxId, "add"); // 双击 → 新增
+        return;
+      }
+      STATE.lastClick = { time: now, pos: p, boxId: g.boxId };
+    }
+    renderSvg();
+    return;
+  }
+
+  if (gesture.mode === "draw") {
     const b = STATE.boxes.find((x) => x.boxId === gesture.boxId);
     if (b && b.w < 5 && b.h < 5) { STATE.boxes = STATE.boxes.filter((x) => x.boxId !== b.boxId); renderAll(); }
   }
   gesture = null;
 });
 
+// 禁止画布默认右键菜单（替换手势需要）
+svgB.addEventListener("contextmenu", (e) => { e.preventDefault(); });
+
+// 框外点击 → 设定 move 目标
 svgB.addEventListener("click", (e) => {
   if (isReviewer()) return;
   const pending = STATE.boxes.find((b) => b.action === "move" && !b.target);
@@ -911,71 +1178,295 @@ svgB.addEventListener("click", (e) => {
 
 imgB.addEventListener("load", () => { STATE.imgNatW = imgB.naturalWidth; STATE.imgNatH = imgB.naturalHeight; renderSvg(); });
 
-// ===== 3D 球体编辑器 =====
-const modal3D = { ctx:null, canvas:null, previewCtx:null, previewCanvas:null, R:150, rotX:0.3, rotY:0.5, zoom:1, boxId:-1, dragging:false, lx:0, ly:0 };
+// ===== 3D 球体编辑器（与原始模板一致：球体+经纬线+法向量箭头+深度着色）=====
+const modal3D = {
+  ctx: null, canvas: null, previewCtx: null, previewCanvas: null,
+  R: 150, rotX: 0.3, rotY: 0.5, zoom: 1,
+  boxId: -1, dragging: false, lx: 0, ly: 0,
+};
 
 function initModal3D() {
-  modal3D.canvas = $("canvas-3d"); modal3D.ctx = modal3D.canvas.getContext("2d");
-  modal3D.previewCanvas = $("canvas-preview"); modal3D.previewCtx = modal3D.previewCanvas.getContext("2d");
-  modal3D.canvas.addEventListener("mousedown", (e) => { modal3D.dragging = true; modal3D.lx = e.clientX; modal3D.ly = e.clientY; });
-  window.addEventListener("mousemove", (e) => {
-    if (!modal3D.dragging) return;
-    modal3D.rotY += (e.clientX - modal3D.lx) * 0.01;
-    modal3D.rotX += (e.clientY - modal3D.ly) * 0.01;
-    modal3D.rotX = clamp(modal3D.rotX, -Math.PI/2, Math.PI/2);
-    modal3D.lx = e.clientX; modal3D.ly = e.clientY;
-    draw3D();
+  modal3D.canvas = $("canvas-3d");
+  modal3D.ctx = modal3D.canvas.getContext("2d");
+  modal3D.previewCanvas = $("canvas-preview");
+  modal3D.previewCtx = modal3D.previewCanvas.getContext("2d");
+  const cv = modal3D.canvas;
+
+  cv.addEventListener("mousedown", (e) => {
+    modal3D.dragging = true; modal3D.lx = e.clientX; modal3D.ly = e.clientY;
+    cv.style.cursor = "grabbing";
   });
-  window.addEventListener("mouseup", () => { modal3D.dragging = false; });
-  modal3D.canvas.addEventListener("wheel", (e) => { e.preventDefault(); modal3D.zoom = clamp(modal3D.zoom - e.deltaY*0.001, 0.5, 2); draw3D(); });
-  $("modal-3d-cancel").onclick = () => { $("modal-3d-overlay").classList.remove("show"); };
+  document.addEventListener("mousemove", (e) => {
+    if (!modal3D.dragging) return;
+    modal3D.rotY += (e.clientX - modal3D.lx) * 0.008;
+    modal3D.rotX += (e.clientY - modal3D.ly) * 0.008;
+    modal3D.rotX = Math.max(-Math.PI * 0.49, Math.min(Math.PI * 0.49, modal3D.rotX));
+    modal3D.lx = e.clientX; modal3D.ly = e.clientY;
+    renderModal3D();
+  });
+  document.addEventListener("mouseup", () => { modal3D.dragging = false; cv.style.cursor = "default"; });
+  cv.addEventListener("wheel", (e) => {
+    e.preventDefault();
+    modal3D.zoom *= (1 - e.deltaY * 0.001);
+    modal3D.zoom = Math.max(0.3, Math.min(3, modal3D.zoom));
+    renderModal3D();
+  }, { passive: false });
+
   $("modal-3d-ok").onclick = () => {
-    const dir = screenDirToVec();
-    const b = STATE.boxes.find((x) => x.boxId === modal3D.boxId);
-    if (b && dir) { b.dir3d = dir; renderAll(); }
-    $("modal-3d-overlay").classList.remove("show");
+    const dir = computeArrowDir3D();
+    closeModal3D(true, dir);
   };
+  $("modal-3d-cancel").onclick = () => { closeModal3D(false, null); };
 }
 
-function draw3D() {
-  const ctx = modal3D.ctx, W = 400, H = 400, cx = W/2, cy = H/2, R = modal3D.R * modal3D.zoom;
-  ctx.clearRect(0, 0, W, H);
-  ctx.strokeStyle = "#333"; ctx.lineWidth = 1;
-  // 球体轮廓
-  ctx.beginPath(); ctx.arc(cx, cy, R, 0, Math.PI*2); ctx.stroke();
-  // 经纬线
-  for (let i = 1; i < 4; i++) {
-    const r = R * Math.sin(i * Math.PI / 4);
-    const off = R * Math.cos(i * Math.PI / 4) * Math.sin(modal3D.rotX);
-    ctx.beginPath(); ctx.ellipse(cx, cy + off, r, r * Math.abs(Math.cos(modal3D.rotX)), 0, 0, Math.PI*2); ctx.stroke();
-  }
-  // 方向箭头
-  const dir = screenDirToVec();
-  if (dir) {
-    const [dx, dy, dz] = dir;
-    const px = cx + dx * R * 0.8, py = cy - dy * R * 0.8;
-    ctx.strokeStyle = "#4CAF50"; ctx.lineWidth = 3;
-    ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(px, py); ctx.stroke();
-    ctx.fillStyle = "#4CAF50"; ctx.beginPath(); ctx.arc(px, py, 6, 0, Math.PI*2); ctx.fill();
-  }
-  $("modal-3d-info").textContent = "方向: " + (dir ? dir.join(", ") : "拖旋转选择");
+// 箭头方向固定 +X，通过 rotX/rotY 旋转变换得到世界空间方向
+function computeArrowDir3D() {
+  const cy = Math.cos(modal3D.rotY), sy = Math.sin(modal3D.rotY);
+  const cx = Math.cos(modal3D.rotX), sx = Math.sin(modal3D.rotX);
+  let x1 = cy, y1 = 0, z1 = -sy;
+  let y2 = y1 * cx - z1 * sx;
+  let z2 = y1 * sx + z1 * cx;
+  return [cy, y2, z2];
 }
 
-function screenDirToVec() {
-  const dx = Math.sin(modal3D.rotY) * Math.cos(modal3D.rotX);
-  const dy = Math.sin(modal3D.rotX);
-  const dz = Math.cos(modal3D.rotY) * Math.cos(modal3D.rotX);
-  const labels = [];
-  if (Math.abs(dx) > 0.3) labels.push(dx > 0 ? "右" : "左");
-  if (Math.abs(dy) > 0.3) labels.push(dy > 0 ? "上" : "下");
-  if (Math.abs(dz) > 0.3) labels.push(dz > 0 ? "前" : "后");
-  return labels.length ? labels : null;
+function project3D(x, y, z) {
+  const W = modal3D.canvas.width, H = modal3D.canvas.height;
+  const cy = Math.cos(modal3D.rotY), sy = Math.sin(modal3D.rotY);
+  const x1 = x * cy + z * sy, z1 = -x * sy + z * cy, y1 = y;
+  const cx = Math.cos(modal3D.rotX), sx = Math.sin(modal3D.rotX);
+  const y2 = y1 * cx - z1 * sx, z2 = y1 * sx + z1 * cx;
+  const d = 600 / modal3D.zoom;
+  const s = d / (d + z2);
+  return { x: W / 2 + x1 * s, y: H / 2 - y2 * s, z: z2, s: s };
+}
+
+function getArrowCameraZ() {
+  const cy = Math.cos(modal3D.rotY), sy = Math.sin(modal3D.rotY);
+  const z1 = -sy;
+  const cx = Math.cos(modal3D.rotX);
+  return z1 * cx;
+}
+
+function renderModal3D() {
+  const ctx = modal3D.ctx;
+  const W = modal3D.canvas.width, H = modal3D.canvas.height;
+  const R = modal3D.R;
+
+  ctx.fillStyle = "#0a0a18";
+  ctx.fillRect(0, 0, W, H);
+
+  // 经度环
+  for (let j = 0; j < 16; j++) {
+    const th = Math.PI * j / 16;
+    const pts = [];
+    for (let i = 0; i <= 64; i++) {
+      const phi = Math.PI * i / 64;
+      pts.push([R * Math.sin(phi) * Math.cos(th), R * Math.cos(phi), R * Math.sin(phi) * Math.sin(th)]);
+    }
+    for (let i = 0; i < pts.length - 1; i++) {
+      const p1 = project3D(pts[i][0], pts[i][1], pts[i][2]);
+      const p2 = project3D(pts[i+1][0], pts[i+1][1], pts[i+1][2]);
+      const avgZ = (p1.z + p2.z) / 2;
+      const t = Math.max(0, Math.min(1, (avgZ + R) / (2 * R)));
+      ctx.strokeStyle = "rgba(60,180,255," + (0.7 - t * 0.55) + ")";
+      ctx.lineWidth = 1.5 - t * 1.0;
+      ctx.beginPath(); ctx.moveTo(p1.x, p1.y); ctx.lineTo(p2.x, p2.y); ctx.stroke();
+    }
+  }
+  // 纬度环
+  for (let i = 1; i < 10; i++) {
+    const phi = Math.PI * i / 10;
+    const pts = [];
+    for (let j = 0; j <= 64; j++) {
+      const th = 2 * Math.PI * j / 64;
+      pts.push([R * Math.sin(phi) * Math.cos(th), R * Math.cos(phi), R * Math.sin(phi) * Math.sin(th)]);
+    }
+    for (let j = 0; j < pts.length - 1; j++) {
+      const p1 = project3D(pts[j][0], pts[j][1], pts[j][2]);
+      const p2 = project3D(pts[j+1][0], pts[j+1][1], pts[j+1][2]);
+      const avgZ = (p1.z + p2.z) / 2;
+      const t = Math.max(0, Math.min(1, (avgZ + R) / (2 * R)));
+      ctx.strokeStyle = "rgba(60,180,255," + (0.7 - t * 0.55) + ")";
+      ctx.lineWidth = 1.5 - t * 1.0;
+      ctx.beginPath(); ctx.moveTo(p1.x, p1.y); ctx.lineTo(p2.x, p2.y); ctx.stroke();
+    }
+  }
+
+  // 箭头（法向量）
+  const end = [R, 0, 0];
+  const p0 = project3D(0, 0, 0);
+  const p1 = project3D(end[0], end[1], end[2]);
+  const cz = getArrowCameraZ();
+  const depthT = Math.max(-1, Math.min(1, cz));
+  const t01 = (depthT + 1) / 2;
+
+  let r, g, b, lineW, alpha, glowSize = 0;
+  if (t01 < 0.5) {
+    const k = t01 / 0.5;
+    r = Math.round(255 - k * 55); g = Math.round(60 + k * 110); b = Math.round(30 + k * 20);
+    lineW = 4.5 - k * 1.5; alpha = 1.0 - k * 0.2; glowSize = (1 - k) * 20;
+  } else {
+    const k = (t01 - 0.5) / 0.5;
+    r = Math.round(200 - k * 140); g = Math.round(170 - k * 120); b = Math.round(50 + k * 150);
+    lineW = 3 - k * 1.5; alpha = 0.8 - k * 0.45; glowSize = 0;
+  }
+  const color = "rgba(" + r + "," + g + "," + b + "," + alpha + ")";
+
+  if (glowSize > 0) { ctx.save(); ctx.shadowColor = "rgba(255,80,30,0.7)"; ctx.shadowBlur = glowSize; }
+  ctx.strokeStyle = color; ctx.lineWidth = lineW;
+  if (depthT > 0.4) ctx.setLineDash([8, 5]); else ctx.setLineDash([]);
+  ctx.beginPath(); ctx.moveTo(p0.x, p0.y); ctx.lineTo(p1.x, p1.y); ctx.stroke();
+  ctx.setLineDash([]);
+  if (glowSize > 0) ctx.restore();
+
+  // 箭头三角（锥形头部）
+  const dx = 1, dy = 0, dz = 0;
+  const hL = R * 0.2;
+  const hR = hL * (0.35 + 0.3 * (1 - t01));
+  const up = [0, 1, 0];
+  let px = dy * up[2] - dz * up[1], py = dz * up[0] - dx * up[2], pz = dx * up[1] - dy * up[0];
+  const pl = Math.sqrt(px*px + py*py + pz*pz);
+  if (pl > 0) { px /= pl; py /= pl; pz /= pl; }
+  let qx = dy * pz - dz * py, qy = dz * px - dx * pz, qz = dx * py - dy * px;
+  const bx = end[0] - dx * hL, by = end[1] - dy * hL, bz = end[2] - dz * hL;
+  const nP = 8;
+  ctx.fillStyle = color;
+  for (let i = 0; i < nP; i++) {
+    const a = 2 * Math.PI * i / nP;
+    const ax2 = bx + (px * Math.cos(a) + qx * Math.sin(a)) * hR;
+    const ay2 = by + (py * Math.cos(a) + qy * Math.sin(a)) * hR;
+    const az2 = bz + (pz * Math.cos(a) + qz * Math.sin(a)) * hR;
+    const a1 = 2 * Math.PI * (i+1) / nP;
+    const ax1 = bx + (px * Math.cos(a1) + qx * Math.sin(a1)) * hR;
+    const ay1 = by + (py * Math.cos(a1) + qy * Math.sin(a1)) * hR;
+    const az1 = bz + (pz * Math.cos(a1) + qz * Math.sin(a1)) * hR;
+    const pc = project3D(ax2, ay2, az2);
+    const pn = project3D(ax1, ay1, az1);
+    ctx.beginPath(); ctx.moveTo(pc.x, pc.y); ctx.lineTo(pn.x, pn.y); ctx.lineTo(p1.x, p1.y);
+    ctx.closePath(); ctx.fill();
+  }
+
+  // 端点标记（深度指示）
+  if (depthT < -0.2) {
+    ctx.save(); ctx.shadowColor = "rgba(255,50,50,0.8)"; ctx.shadowBlur = 25;
+    ctx.fillStyle = "#ff3333";
+    ctx.beginPath(); ctx.arc(p1.x, p1.y, 12, 0, Math.PI * 2); ctx.fill();
+    ctx.restore();
+    ctx.strokeStyle = "#fff"; ctx.lineWidth = 3;
+    ctx.beginPath(); ctx.arc(p1.x, p1.y, 12, 0, Math.PI * 2); ctx.stroke();
+    ctx.fillStyle = "#fff"; ctx.font = "bold 16px sans-serif"; ctx.textAlign = "center"; ctx.textBaseline = "middle";
+    ctx.fillText("\u25b6", p1.x, p1.y);
+  } else if (depthT > 0.2) {
+    ctx.fillStyle = "rgba(80,80,160,0.6)";
+    ctx.beginPath(); ctx.arc(p1.x, p1.y, 5, 0, Math.PI * 2); ctx.fill();
+    ctx.setLineDash([3, 3]);
+    ctx.strokeStyle = "rgba(100,100,200,0.5)"; ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.arc(p1.x, p1.y, 10, 0, Math.PI * 2); ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.strokeStyle = "rgba(150,150,255,0.7)"; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.moveTo(p1.x - 7, p1.y - 7); ctx.lineTo(p1.x + 7, p1.y + 7); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(p1.x + 7, p1.y - 7); ctx.lineTo(p1.x - 7, p1.y + 7); ctx.stroke();
+  } else {
+    ctx.fillStyle = "#ffaa00";
+    ctx.beginPath();
+    ctx.moveTo(p1.x, p1.y - 10); ctx.lineTo(p1.x + 7, p1.y);
+    ctx.lineTo(p1.x, p1.y + 10); ctx.lineTo(p1.x - 7, p1.y);
+    ctx.closePath(); ctx.fill();
+    ctx.strokeStyle = "#fff"; ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    ctx.moveTo(p1.x, p1.y - 10); ctx.lineTo(p1.x + 7, p1.y);
+    ctx.lineTo(p1.x, p1.y + 10); ctx.lineTo(p1.x - 7, p1.y);
+    ctx.closePath(); ctx.stroke();
+  }
+  // 球心
+  ctx.fillStyle = "#fff";
+  ctx.beginPath(); ctx.arc(p0.x, p0.y, 4, 0, Math.PI * 2); ctx.fill();
+
+  // 更新指示器
+  const indEl = $("modal-3d-info");
+  if (depthT < -0.2) {
+    indEl.innerHTML = "\ud83d\udd34 \u25b6 箭头指向你(出屏)";
+    indEl.style.background = "rgba(255,40,40,0.35)"; indEl.style.color = "#ff6666";
+    indEl.style.border = "2px solid rgba(255,80,80,0.7)";
+  } else if (depthT > 0.2) {
+    indEl.innerHTML = "\ud83d\udd35 \u2717 箭头远离你(入屏)";
+    indEl.style.background = "rgba(40,40,120,0.35)"; indEl.style.color = "#8888ff";
+    indEl.style.border = "2px solid rgba(80,80,200,0.6)";
+  } else {
+    indEl.innerHTML = "\ud83d\udfe1 \u25c6 箭头在侧面";
+    indEl.style.background = "rgba(255,170,0,0.25)"; indEl.style.color = "#ffcc44";
+    indEl.style.border = "2px solid rgba(255,170,0,0.5)";
+  }
+}
+
+// 渲染 bbox 对应的原图区域到预览 canvas
+function renderPreview3D(boxId) {
+  const ctx = modal3D.previewCtx;
+  if (!ctx) return;
+  const W = modal3D.previewCanvas.width, H = modal3D.previewCanvas.height;
+  ctx.fillStyle = "#0a0a18"; ctx.fillRect(0, 0, W, H);
+
+  const box = STATE.boxes.find((b) => b.boxId === boxId);
+  if (!box) {
+    ctx.fillStyle = "#888"; ctx.font = "13px sans-serif"; ctx.textAlign = "center";
+    ctx.fillText("未找到框数据", W/2, H/2); return;
+  }
+  const { x, y, w, h } = box;
+  const src = imgB.dataset.currentSrc || imgB.src || "";
+  if (!src) return;
+  fetch(src).then((r) => r.blob()).then((blob) => {
+    const url = URL.createObjectURL(blob);
+    const tmpImg = new Image();
+    tmpImg.onload = () => {
+      URL.revokeObjectURL(url);
+      const nw = tmpImg.naturalWidth, nh = tmpImg.naturalHeight;
+      ctx.fillStyle = "#0a0a18"; ctx.fillRect(0, 0, W, H);
+      const scale = Math.min(W / nw, H / nh);
+      const dw = nw * scale, dh = nh * scale;
+      const dxo = (W - dw) / 2, dyo = (H - dh) / 2;
+      ctx.drawImage(tmpImg, 0, 0, nw, nh, dxo, dyo, dw, dh);
+      const bx = dxo + x * scale, by = dyo + y * scale, bw = w * scale, bh = h * scale;
+      ctx.fillStyle = "rgba(255,170,0,0.15)"; ctx.fillRect(bx, by, bw, bh);
+      ctx.strokeStyle = "#ffaa00"; ctx.lineWidth = 3; ctx.strokeRect(bx, by, bw, bh);
+    };
+    tmpImg.onerror = () => {
+      ctx.fillStyle = "#888"; ctx.font = "13px sans-serif"; ctx.textAlign = "center";
+      ctx.fillText("图片加载失败", W/2, H/2);
+    };
+    tmpImg.src = url;
+  }).catch(() => {});
+}
+
+function closeModal3D(confirmed, dir) {
+  $("modal-3d-overlay").classList.remove("show");
+  if (confirmed && dir) {
+    const len = Math.sqrt(dir[0]*dir[0] + dir[1]*dir[1] + dir[2]*dir[2]);
+    if (len > 0) { dir[0] /= len; dir[1] /= len; dir[2] /= len; }
+    const box = STATE.boxes.find((b) => b.boxId === modal3D.boxId);
+    if (box) {
+      box.action = "move3d";
+      box.dir3d = [Math.round(dir[0]*1000)/1000, Math.round(dir[1]*1000)/1000, Math.round(dir[2]*1000)/1000];
+    }
+    renderAll();
+  }
 }
 
 function openModal3D(boxId) {
+  gesture = null; // 清理手势残留
   modal3D.boxId = boxId;
+  // 如果已有 move3d 方向，恢复其旋转角度
+  const box = STATE.boxes.find((b) => b.boxId === boxId);
+  if (box && box.dir3d) {
+    const d = box.dir3d;
+    modal3D.rotY = Math.atan2(-d[2], d[0]);
+    modal3D.rotX = Math.atan2(d[1], Math.sqrt(d[0]*d[0] + d[2]*d[2]));
+  } else {
+    modal3D.rotX = 0.3; modal3D.rotY = 0.5;
+  }
+  modal3D.zoom = 1;
+  renderPreview3D(boxId);
   $("modal-3d-overlay").classList.add("show");
-  draw3D();
+  renderModal3D();
 }
 
 // ===== 批量任务：保存/恢复当前条 =====
@@ -1118,6 +1609,7 @@ async function finishAnnotation() {
           if (b.target) o.target = { x:Math.round(b.target.x), y:Math.round(b.target.y) };
           if (b.dir3d) o.dir3d = b.dir3d;
           if (b.text) o.text = b.text;
+          if (b.line) o.line = b.line.map((p) => ({ x:Math.round(p.x), y:Math.round(p.y) }));
           return o;
         }),
         note: r.note || "",
@@ -1126,13 +1618,12 @@ async function finishAnnotation() {
   }
 
   try {
-    // 上传已完成的（uploadBatch 内部会：保存标注 + 从锁中移除已保存的行 + 释放剩余锁）
+    // 1. 上传已完成的
     if (results.length > 0) {
       await window.GithubDispatch.uploadBatch(results, isReviewer());
-    } else {
-      // 没有任何已完成的，直接释放全部锁
-      await window.GithubDispatch.releaseAll();
     }
+    // 2. 释放全部剩余锁（未完成的行回到池子）
+    await window.GithubDispatch.releaseAll(isReviewer());
 
     // 清空本地所有记录
     clearLocal();
@@ -1286,6 +1777,7 @@ async function claimTasks() {
             if (obj.target) box.target = obj.target;
             if (obj.dir3d) box.dir3d = obj.dir3d;
             if (obj.text) box.text = obj.text;
+            if (obj.line) box.line = obj.line;
             boxes.push(box);
           });
           STATE.batchResults[s.line] = { boxes, note: s._annoData.note || "", verdict: null, reason: "" };
@@ -1436,3 +1928,4 @@ document.addEventListener("DOMContentLoaded", init);
 </script>
 </body>
 </html>
+
