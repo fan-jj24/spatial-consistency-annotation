@@ -82,6 +82,32 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
 .pool-stat .num { font-size:22px; font-weight:700; color:var(--accent); }
 .pool-stat .lbl { font-size:11px; color:var(--muted); margin-top:2px; }
 .pool-stat.locked .num { color:var(--warn); }
+.pool-stat.locked { cursor:pointer; position:relative; }
+.pool-stat.locked:hover { background:var(--warn-weak); }
+.pool-stat.locked::after {
+  content:"▶"; position:absolute; top:4px; right:6px; font-size:8px; color:var(--warn); opacity:.6;
+}
+/* 锁详情面板 */
+.lock-details {
+  margin-top:10px; border:1px solid var(--border); border-radius:8px;
+  background:#fffdf5; overflow:hidden;
+}
+.lock-details.hidden { display:none; }
+.lock-details-head {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:8px 12px; font-size:12px; font-weight:700; color:#8a6d1a;
+  border-bottom:1px solid #ead9a8; background:#fef9e7;
+}
+.lock-close { cursor:pointer; font-size:14px; color:var(--muted); }
+.lock-close:hover { color:var(--bad); }
+.lock-details-body { padding:10px 12px; font-size:12px; color:var(--text); max-height:160px; overflow-y:auto; }
+.lock-holder-row {
+  display:flex; align-items:center; gap:8px; padding:4px 0;
+  border-bottom:1px dashed var(--border);
+}
+.lock-holder-row:last-child { border-bottom:none; }
+.lock-holder-name { font-weight:600; color:var(--accent); min-width:80px; }
+.lock-holder-lines { color:var(--muted); }
 .pool-stat.done .num { color:var(--ok); }
 .claim-actions { margin-top:24px; display:flex; gap:10px; }
 .claim-actions button { flex:1; padding:12px; font-size:15px; }
@@ -340,8 +366,13 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
       <div class="pool-stats" id="poolStats">
         <div class="pool-stat"><div class="num" id="statTotal">-</div><div class="lbl">总数</div></div>
         <div class="pool-stat done"><div class="num" id="statDone">-</div><div class="lbl">已完成</div></div>
-        <div class="pool-stat locked"><div class="num" id="statLocked">-</div><div class="lbl">锁定中</div></div>
+        <div class="pool-stat locked" id="lockedStatBox"><div class="num" id="statLocked">-</div><div class="lbl">锁定中</div></div>
         <div class="pool-stat"><div class="num" id="statAvail">-</div><div class="lbl">可领取</div></div>
+      </div>
+      <!-- 锁详情（点击"锁定中"展开） -->
+      <div class="lock-details hidden" id="lockDetails">
+        <div class="lock-details-head">🔒 锁定详情 <span class="lock-close" id="lockDetailsClose">✕</span></div>
+        <div class="lock-details-body" id="lockDetailsBody">暂无锁定</div>
       </div>
     </div>
 
@@ -1122,6 +1153,8 @@ async function loadDatasetSamples(idx) {
   STATE.samples.forEach((s) => { STATE.sampleByLine[s.line] = s; });
 }
 
+let lastLockHolders = {}; // 缓存锁持有者信息，供展开面板用
+
 async function refreshPoolStats() {
   try {
     const isReview = (document.querySelector('input[name="roleRadio"]:checked') || {}).value === "reviewer";
@@ -1132,10 +1165,39 @@ async function refreshPoolStats() {
     $("statDone").textContent = stats.done;
     $("statLocked").textContent = stats.locked;
     $("statAvail").textContent = stats.available;
+    lastLockHolders = stats.lockHolders || {};
+    renderLockDetails();
   } catch (e) {
     hideLoading();
     showToast("统计失败: " + e.message, "warn");
   }
+}
+
+// 渲染锁详情面板内容
+function renderLockDetails() {
+  const body = $("lockDetailsBody");
+  const holders = lastLockHolders;
+  const lines = Object.keys(holders);
+  if (!lines.length) {
+    body.innerHTML = '<div style="color:var(--muted);text-align:center;padding:8px;">暂无锁定</div>';
+    return;
+  }
+  // 按持有者分组
+  const byHolder = {};
+  lines.forEach((l) => {
+    const name = holders[l];
+    if (!byHolder[name]) byHolder[name] = [];
+    byHolder[name].push(l);
+  });
+  let html = "";
+  for (const [name, ls] of Object.entries(byHolder)) {
+    const sorted = ls.map(Number).sort((a, b) => a - b);
+    const display = sorted.length <= 8
+      ? sorted.join(", ")
+      : sorted.slice(0, 8).join(", ") + " ... 等" + sorted.length + "条";
+    html += '<div class="lock-holder-row"><span class="lock-holder-name">' + name + '</span><span class="lock-holder-lines">' + sorted.length + ' 条：' + display + '</span></div>';
+  }
+  body.innerHTML = html;
 }
 
 async function claimTasks() {
@@ -1247,6 +1309,13 @@ async function init() {
     if (!window.GithubAuth.getToken()) { openLoginModal(); return; }
     claimTasks();
   };
+  // 锁详情面板：点击"锁定中"展开/关闭
+  $("lockedStatBox").onclick = () => {
+    $("lockDetails").classList.toggle("hidden");
+  };
+  $("lockDetailsClose").onclick = () => {
+    $("lockDetails").classList.add("hidden");
+  };
   $("datasetSelect").onchange = (e) => {
     loadDatasetSamples(parseInt(e.target.value, 10)).then(refreshPoolStats);
   };
@@ -1302,7 +1371,7 @@ async function init() {
     return;
   }
 
-  // 检查登录态
+  // 检查登录态（必须先登录才能看统计和领取）
   const saved = await window.GithubAuth.checkToken();
   if (saved) {
     refreshPoolStats();
@@ -1315,7 +1384,8 @@ async function init() {
       showToast("已恢复上次未完成的 " + STATE.batch.length + " 条任务", "success");
     }
   } else {
-    showPhase("claim");
+    // 未登录：直接弹出登录框
+    openLoginModal();
   }
 }
 
