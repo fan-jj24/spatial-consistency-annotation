@@ -16,6 +16,7 @@
 
   const TOKEN_KEY = "annotate_github_pat";
   const USER_KEY = "annotate_github_user";
+  const ANNOTATOR_KEY = "annotate_annotator_name";
 
   // ===== Token 存取（localStorage）=====
   function getToken() {
@@ -30,8 +31,36 @@
   function setUser(user) {
     try { localStorage.setItem(USER_KEY, JSON.stringify(user)); } catch (e) {}
   }
+
+  // ===== 标注员名字（手动输入，作为标注记录标识）=====
+  function getAnnotatorName() {
+    try { return localStorage.getItem(ANNOTATOR_KEY) || ""; } catch (e) { return ""; }
+  }
+  function setAnnotatorName(name) {
+    try { localStorage.setItem(ANNOTATOR_KEY, name); } catch (e) {}
+  }
+  // 文件名安全处理：保留中文/字母/数字/_/-，其余替换为 _
+  function sanitizeId(name) {
+    const s = (name || "").trim()
+      .replace(/[\\/:*?"<>|\s]+/g, "_")
+      .replace(/_+/g, "_")
+      .replace(/^_+|_+$/g, "");
+    return s || "anonymous";
+  }
+  // 标注记录标识：优先用手动输入的名字，否则回退到 GitHub login
+  function getAnnotatorId() {
+    const name = getAnnotatorName();
+    if (name) return sanitizeId(name);
+    const user = getUser();
+    return user ? user.login : "anonymous";
+  }
+
   function clearAuth() {
-    try { localStorage.removeItem(TOKEN_KEY); localStorage.removeItem(USER_KEY); } catch (e) {}
+    try {
+      localStorage.removeItem(TOKEN_KEY);
+      localStorage.removeItem(USER_KEY);
+      localStorage.removeItem(ANNOTATOR_KEY);
+    } catch (e) {}
   }
 
   /**
@@ -106,5 +135,8 @@
     getToken: getToken,
     getUser: getUser,
     logout: logout,
+    getAnnotatorName: getAnnotatorName,
+    setAnnotatorName: setAnnotatorName,
+    getAnnotatorId: getAnnotatorId,
   };
 })();
