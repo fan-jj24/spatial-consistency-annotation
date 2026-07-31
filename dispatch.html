@@ -1,0 +1,1341 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>空间一致性标注（分发模式）</title>
+<style>
+:root {
+  --bg:#f5f6f8; --panel:#fff; --border:#e3e5ea;
+  --text:#1f2328; --muted:#6a737d;
+  --accent:#3b7dfb; --accent-weak:#e5efff;
+  --ok:#2e9f5a; --ok-weak:#d8f2e3;
+  --bad:#d1453b; --bad-weak:#fde2e0;
+  --warn:#d97706; --warn-weak:#fef3c7;
+  --shadow:0 1px 3px rgba(0,0,0,.06);
+}
+* { box-sizing:border-box; }
+html, body { height:100%; margin:0; }
+body {
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  background:var(--bg); color:var(--text); font-size:14px;
+  display:flex; flex-direction:column; overflow:hidden;
+}
+button {
+  cursor:pointer; padding:6px 14px; border-radius:6px;
+  border:1px solid var(--border); background:#fff; color:var(--text);
+  font-size:13px; transition:background .15s,border-color .15s; user-select:none;
+}
+button:hover:not(:disabled) { background:var(--accent-weak); border-color:var(--accent); }
+button:disabled { opacity:.4; cursor:not-allowed; }
+button.primary { background:var(--accent); color:#fff; border-color:var(--accent); font-weight:600; }
+button.primary:hover:not(:disabled) { background:#2a6ae0; }
+button.success { background:var(--ok); color:#fff; border-color:var(--ok); font-weight:600; }
+button.success:hover:not(:disabled) { background:#268a4d; }
+button.ghost { background:#fff; }
+button.danger { color:var(--bad); }
+button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:var(--bad); }
+
+/* ===== Topbar ===== */
+#topbar {
+  display:flex; justify-content:space-between; align-items:center;
+  padding:8px 16px; background:var(--panel); border-bottom:1px solid var(--border);
+  box-shadow:var(--shadow); gap:12px; flex:0 0 auto;
+}
+#topbar .left, #topbar .right { display:flex; align-items:center; gap:8px; }
+#taskInfo { font-weight:600; font-size:15px; }
+#taskInfo .line-no { color:var(--accent); }
+.muted { color:var(--muted); font-size:12px; }
+.tb-sep { width:1px; height:24px; background:var(--border); margin:0 2px; }
+#progressInfo { font-size:12px; color:var(--muted); }
+
+/* ===== 用户区 ===== */
+#user-area { display:flex; align-items:center; gap:6px; }
+#user-area .avatar { width:26px; height:26px; border-radius:50%; border:1.5px solid var(--border); object-fit:cover; }
+#user-area .username { font-size:13px; font-weight:600; max-width:120px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+#user-area.hidden { display:none; }
+#btnLogin { background:var(--accent); color:#fff; border-color:var(--accent); font-weight:600; }
+#btnLogin:hover:not(:disabled) { background:#2a6ae0; }
+
+/* ===== 主工作区 ===== */
+#workspace { flex:1 1 auto; display:flex; flex-direction:column; min-height:0; overflow:hidden; }
+
+/* 图片对 */
+#pair-area {
+  flex:0 0 auto; display:grid; grid-template-columns:1fr 1fr; gap:12px;
+  padding:12px 16px; background:var(--panel); border-bottom:1px solid var(--border);
+}
+.cell-wrap { position:relative; }
+.cell {
+  border:1px solid var(--border); border-radius:6px; overflow:hidden;
+  background:#0d1117; display:flex; align-items:center; justify-content:center;
+  position:relative; min-height:200px;
+}
+.cell img { max-width:100%; max-height:46vh; object-fit:contain; display:block; }
+.cell .label {
+  position:absolute; top:6px; left:6px; padding:2px 8px; font-size:12px;
+  background:rgba(0,0,0,.6); color:#fff; border-radius:4px; z-index:5;
+}
+.cell.b-cell { user-select:none; -webkit-user-select:none; }
+.cell.b-cell img { pointer-events:none; }
+.cell.b-cell svg { position:absolute; top:0; left:0; width:100%; height:100%; cursor:crosshair; }
+.cell.b-cell, .cell.b-cell * { -webkit-user-drag:none; }
+.img-tip {
+  position:absolute; bottom:6px; left:6px; padding:2px 8px; font-size:11px;
+  background:rgba(0,0,0,.5); color:#fff; border-radius:4px; z-index:5;
+}
+
+/* ===== 标注行列表 ===== */
+#anno-panel {
+  flex:1 1 auto; overflow-y:auto; padding:12px 16px;
+}
+#anno-panel::-webkit-scrollbar { width:10px; }
+#anno-panel::-webkit-scrollbar-thumb { background:#cfd3da; border-radius:5px; }
+
+.anno-empty {
+  text-align:center; color:var(--muted); padding:40px 0; font-size:14px;
+}
+.anno-row {
+  display:flex; align-items:center; gap:8px; padding:8px 10px; margin-bottom:8px;
+  background:var(--panel); border:1px solid var(--border); border-radius:8px;
+  box-shadow:var(--shadow); transition:border-color .15s;
+}
+.anno-row.editing { border-color:var(--accent); box-shadow:0 0 0 2px var(--accent-weak); }
+.anno-row.invalid { border-color:var(--bad); box-shadow:0 0 0 2px var(--bad-weak); }
+.anno-row .color-dot { flex:0 0 14px; width:14px; height:14px; border-radius:3px; }
+.anno-row .edit-btn {
+  flex:0 0 auto; padding:4px 8px; font-size:12px; border-radius:4px;
+  border:1px solid var(--border); background:#fff; cursor:pointer;
+}
+.anno-row .edit-btn:hover { border-color:var(--accent); color:var(--accent); }
+.anno-row .edit-btn.active { background:var(--accent); color:#fff; border-color:var(--accent); }
+.anno-row .coord {
+  flex:0 0 auto; font-family:'SF Mono',Consolas,monospace; font-size:12px;
+  color:var(--muted); min-width:150px;
+}
+.anno-row .action-select {
+  flex:0 0 auto; padding:5px 8px; border:1px solid var(--border); border-radius:6px;
+  font-size:13px; background:#fff; cursor:pointer;
+}
+.anno-row .action-input {
+  flex:1 1 auto; padding:5px 10px; border:1px solid var(--border); border-radius:6px;
+  font-size:13px; font-family:inherit; min-width:120px;
+}
+.anno-row .action-input:focus, .anno-row .action-select:focus { outline:none; border-color:var(--accent); }
+.anno-row .dir3d-tag {
+  flex:0 0 auto; font-size:11px; color:#8E24AA; background:#f3e5f5;
+  padding:2px 6px; border-radius:4px;
+}
+.anno-row .del-btn {
+  flex:0 0 auto; padding:4px 8px; font-size:12px; border-radius:4px;
+  border:1px solid var(--border); background:#fff; color:var(--bad); cursor:pointer;
+}
+.anno-row .del-btn:hover { background:var(--bad-weak); border-color:var(--bad); }
+
+/* ===== 底部全局描述 + 操作 ===== */
+#bottom-bar {
+  flex:0 0 auto; background:var(--panel); border-top:1px solid var(--border);
+  padding:10px 16px; box-shadow:0 -1px 3px rgba(0,0,0,.04);
+}
+#global-note {
+  width:100%; padding:8px 12px; border:1px solid var(--border); border-radius:6px;
+  font-size:13px; font-family:inherit; resize:vertical; min-height:40px; margin-bottom:10px;
+}
+#global-note:focus { outline:none; border-color:var(--accent); }
+#bottom-actions { display:flex; align-items:center; gap:10px; }
+#bottom-actions .spacer { flex:1 1 auto; }
+#statusMsg { font-size:12px; color:var(--muted); }
+#statusMsg.error { color:var(--bad); }
+#statusMsg.success { color:var(--ok); }
+
+/* ===== Toast ===== */
+#toast {
+  position:fixed; bottom:80px; left:50%; transform:translateX(-50%);
+  padding:8px 20px; border-radius:6px; background:var(--bad); color:#fff;
+  font-size:13px; z-index:9999; opacity:0; transition:opacity .3s; pointer-events:none;
+}
+#toast.show { opacity:1; }
+#toast.success { background:var(--ok); }
+#toast.warn { background:var(--warn); }
+
+/* ===== 加载遮罩 ===== */
+#loading-overlay {
+  position:fixed; inset:0; background:rgba(255,255,255,0.88);
+  z-index:9999; display:flex; align-items:center; justify-content:center;
+  flex-direction:column; gap:16px;
+}
+#loading-overlay.hidden { display:none; }
+#loading-overlay .spinner {
+  width:40px; height:40px; border:4px solid var(--border);
+  border-top-color:var(--accent); border-radius:50%; animation:spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform:rotate(360deg); } }
+#loading-overlay .loading-text { color:var(--muted); font-size:14px; text-align:center; line-height:1.6; }
+
+/* ===== 登录模态框 ===== */
+#modal-login-overlay {
+  position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:9100;
+  display:none; align-items:center; justify-content:center;
+}
+#modal-login-overlay.show { display:flex; }
+#modal-login {
+  background:#fff; border-radius:12px; padding:32px; width:440px; max-width:90vw;
+  text-align:center; box-shadow:0 8px 32px rgba(0,0,0,0.2);
+}
+#modal-login h3 { margin:0 0 8px; font-size:18px; color:#24292f; }
+#modal-login .login-sub { color:var(--muted); font-size:13px; margin-bottom:20px; }
+#modal-login .login-error { color:var(--bad); font-size:13px; margin-top:12px; display:none; }
+#modal-login .login-cancel { margin-top:16px; font-size:13px; color:var(--muted); cursor:pointer; text-decoration:underline; }
+#patInput:focus { outline:none; border-color:var(--accent); }
+
+/* ===== 3D 球体编辑器模态框 ===== */
+#modal-3d-overlay {
+  position:fixed; inset:0; background:rgba(0,0,0,0.6); z-index:9000;
+  display:none; align-items:center; justify-content:center;
+}
+#modal-3d-overlay.show { display:flex; }
+#modal-3d { background:#0a0a18; border:1px solid #555; border-radius:12px; padding:16px; width:680px; max-width:95vw; }
+#modal-3d h3 { color:#7ec8e3; margin:0 0 8px; font-size:16px; text-align:center; }
+#modal-3d .modal-body { display:flex; gap:12px; align-items:flex-start; }
+#modal-3d canvas { display:block; border-radius:8px; background:#0a0a18; }
+#modal-3d .preview-wrap { flex:0 0 240px; }
+#modal-3d .preview-wrap canvas { width:240px; height:240px; border:1px solid #444; border-radius:8px; }
+#modal-3d .preview-label { text-align:center; color:#999; font-size:11px; margin-top:4px; }
+#modal-3d .modal-info { text-align:center; margin:8px 0; padding:6px; border-radius:6px; font-size:13px; font-weight:bold; transition:all 0.15s; }
+#modal-3d .modal-tip { text-align:center; color:#999; font-size:11px; margin:6px 0; }
+#modal-3d .modal-btns { display:flex; gap:8px; justify-content:center; margin-top:10px; }
+#modal-3d .modal-btns button { padding:8px 20px; border-radius:6px; border:2px solid #555; background:rgba(30,30,50,0.8); color:#ddd; font-size:14px; font-weight:bold; cursor:pointer; }
+#modal-3d .modal-btns button:hover { border-color:#888; color:#fff; }
+#modal-3d .modal-btns .btn-ok { border-color:#4af; color:#fff; background:rgba(40,80,140,0.6); }
+#modal-3d .legend3d { font-size:11px; color:#888; line-height:1.6; margin-top:8px; padding-top:8px; border-top:1px solid #333; }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+<script src="config.js"></script>
+<script src="github-auth.js"></script>
+<script src="github-storage.js"></script>
+<script src="github-dispatch.js"></script>
+</head>
+<body>
+
+<header id="topbar">
+  <div class="left">
+    <span id="taskInfo">空间一致性标注 <span class="muted">·</span> <span class="line-no" id="lineInfo">--</span></span>
+    <span class="tb-sep"></span>
+    <span id="progressInfo">
+      已标 <b id="statDone">0</b>
+      <span class="muted">·</span> 锁定 <b id="statLocked">0</b>
+      <span class="muted">·</span> 共 <b id="statTotal">0</b>
+      <span class="muted">·</span> 本次 <b id="statDispatched">0</b>
+    </span>
+  </div>
+  <div class="right">
+    <span id="statusMsg"></span>
+    <span class="tb-sep"></span>
+    <div id="user-area" class="hidden">
+      <img class="avatar" id="userAvatar" src="" alt="" />
+      <span class="username" id="userName"></span>
+      <button id="btnLogout" class="danger">退出</button>
+    </div>
+    <button id="btnLogin">🔑 GitHub 登录</button>
+  </div>
+</header>
+
+<main id="workspace">
+  <!-- 图片对 -->
+  <div id="pair-area">
+    <div class="cell-wrap">
+      <div class="cell">
+        <img id="imgA" alt="A" />
+        <span class="label">A（参考）</span>
+      </div>
+    </div>
+    <div class="cell-wrap">
+      <div class="cell b-cell" id="cellB">
+        <img id="imgB" alt="B" />
+        <svg id="svgB" xmlns="http://www.w3.org/2000/svg"></svg>
+        <span class="label">B（标注）</span>
+        <span class="img-tip">拖拽画框 · 点框左侧✎可编辑</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 标注行列表 -->
+  <div id="anno-panel">
+    <div class="anno-empty" id="annoEmpty">在右侧 B 图上拖拽画框，开始标注</div>
+  </div>
+
+  <!-- 底部全局描述 + 操作 -->
+  <div id="bottom-bar">
+    <textarea id="globalNote" placeholder="整体不一致描述（可选）：例如「整体背景色调不一致」「人物站位整体偏移」"></textarea>
+    <div id="bottom-actions">
+      <button id="btnUndo" class="ghost" title="撤销 (Ctrl+Z)">↶ 撤销</button>
+      <button id="btnClear" class="danger" title="清空本图所有框">✕ 清空</button>
+      <span class="spacer"></span>
+      <button id="btnSkip" class="ghost">⏭ 跳过（不保存）</button>
+      <button id="btnNext" class="success">✓ 保存并下一个 →</button>
+    </div>
+  </div>
+</main>
+
+<div id="toast"></div>
+
+<!-- 加载遮罩 -->
+<div id="loading-overlay">
+  <div class="spinner"></div>
+  <div class="loading-text" id="loadingText">正在加载...</div>
+</div>
+
+<!-- 登录模态框 -->
+<div id="modal-login-overlay">
+  <div id="modal-login">
+    <h3>🔑 GitHub 登录</h3>
+    <div class="login-sub">使用 Personal Access Token 认证，Token 仅保存在本地浏览器</div>
+    <div style="text-align:left;margin:16px 0;">
+      <label style="font-size:13px;font-weight:600;display:block;margin-bottom:6px;">Personal Access Token</label>
+      <input type="password" id="patInput" placeholder="ghp_xxxx 或 github_pat_xxxx"
+             style="width:100%;padding:10px 12px;border:1.5px solid var(--border);border-radius:6px;font-size:14px;font-family:monospace;box-sizing:border-box;" />
+      <div style="font-size:12px;color:var(--muted);margin-top:8px;line-height:1.6;">
+        需要 <b>Contents (Read and Write)</b> 权限。<br/>
+        创建方式：GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens
+      </div>
+    </div>
+    <button id="btnStartLogin" class="primary" style="font-size:15px;padding:10px 32px;width:100%;">验证并登录</button>
+    <div class="login-error" id="loginError"></div>
+    <div class="login-cancel" id="loginCancel">取消</div>
+  </div>
+</div>
+
+<!-- 3D 球体编辑器模态框 -->
+<div id="modal-3d-overlay">
+  <div id="modal-3d">
+    <h3>🎯 3D 移动方向标注</h3>
+    <div class="modal-body">
+      <div>
+        <canvas id="canvas-3d" width="400" height="400"></canvas>
+        <div class="preview-label">3D 球体（拖拽旋转）</div>
+      </div>
+      <div class="preview-wrap">
+        <canvas id="canvas-preview" width="240" height="240"></canvas>
+        <div class="preview-label">框选区域原图</div>
+      </div>
+    </div>
+    <div class="modal-info" id="modal-3d-info">朝向: 计算中...</div>
+    <div class="modal-tip">左键拖拽 = 旋转球体 | 滚轮 = 缩放 | 右侧为框选区域原图</div>
+    <div class="legend3d">
+      <span style="color:#ff6666">●</span> 亮红/粗 = 箭头朝你(出屏) &nbsp;
+      <span style="color:#6666aa">●</span> 暗蓝/细 = 箭头远离你(入屏)<br>
+      <span style="color:#ffaa00">◆</span> 黄色菱形 = 箭头在球面切平面上
+    </div>
+    <div class="modal-btns">
+      <button id="modal-3d-cancel">取消</button>
+      <button id="modal-3d-ok" class="btn-ok">确定</button>
+    </div>
+  </div>
+</div>
+
+<script>
+"use strict";
+(function () {
+
+// ===== 常量 =====
+const SVG_NS = "http://www.w3.org/2000/svg";
+const ACTION_COLORS = {
+  add:    ["#2E7D32", "#4CAF50", "#81C784", "#A5D6A7"],
+  delete: ["#C62828", "#E53935", "#EF5350", "#EF9A9A"],
+  replace:["#795548", "#8D6E63", "#A1887F", "#BCAAA4"],
+  move:   ["#1565C0", "#2196F3", "#64B5F6", "#90CAF9"],
+  move3d: ["#6A1B9A", "#8E24AA", "#AB47BC", "#CE93D8"],
+  cw:     ["#E65100", "#FF9800", "#FFB74D", "#FFCC80"],
+  ccw:    ["#E65100", "#FF9800", "#FFB74D", "#FFCC80"],
+  neutral:["#FFC107", "#FFB300", "#FFA000", "#FF8F00"],
+  custom: ["#5D4037", "#795548", "#8D6E63", "#A1887F"],
+};
+const ACTION_LABELS = {
+  add:"新增", delete:"删除", replace:"替换", move:"2D移动",
+  cw:"顺时针", ccw:"逆时针", move3d:"3D移动", custom:"自定义文字", neutral:"未指定"
+};
+
+// ===== 状态 =====
+const STATE = {
+  samples: [],          // 全部样本 [{line, remotes, locals}]
+  sampleByLine: {},     // { line: sample }
+  current: null,        // 当前样本 {line, remotes, locals}
+  boxes: [],            // 当前图的框 [{boxId, x, y, w, h, action, target, dir3d, text}]
+  nextBoxId: 1,
+  undoStack: [],        // 撤销栈（保存 boxes 快照）
+  editingBoxId: null,   // 正在编辑位置的框 id
+  globalNote: "",
+  imgNatW: 0,           // B 图自然宽
+  imgNatH: 0,           // B 图自然高
+  dispatchedCount: 0,   // 本次会话已标注数
+  totalDone: 0,         // 全局已完成数
+  totalSamples: 0,      // 总样本数
+};
+
+// DOM 引用
+const $ = (id) => document.getElementById(id);
+const svgB = $("svgB");
+const cellB = $("cellB");
+const imgB = $("imgB");
+const imgA = $("imgA");
+const annoPanel = $("anno-panel");
+
+// ===== 工具函数 =====
+function showToast(msg, type) {
+  const t = $("toast");
+  t.textContent = msg;
+  t.className = (type || "") + " show";
+  clearTimeout(t._timer);
+  t._timer = setTimeout(() => { t.className = ""; }, 2500);
+}
+function showLoading(text) {
+  $("loadingText").textContent = text || "加载中...";
+  $("loading-overlay").classList.remove("hidden");
+}
+function hideLoading() { $("loading-overlay").classList.add("hidden"); }
+function setStatus(msg, type) {
+  const el = $("statusMsg");
+  el.textContent = msg || "";
+  el.className = type || "";
+}
+
+function getBoxColor(boxId, action) {
+  const shades = ACTION_COLORS[action] || ACTION_COLORS.neutral;
+  let idx = 0;
+  for (const b of STATE.boxes) {
+    if ((b.action || "neutral") === (action || "neutral")) {
+      if (b.boxId === boxId) break;
+      idx++;
+    }
+  }
+  return shades[idx % shades.length];
+}
+
+function pushUndo() {
+  STATE.undoStack.push(JSON.parse(JSON.stringify(STATE.boxes)));
+  if (STATE.undoStack.length > 30) STATE.undoStack.shift();
+}
+function undo() {
+  if (!STATE.undoStack.length) { showToast("没有可撤销的操作", "warn"); return; }
+  STATE.boxes = STATE.undoStack.pop();
+  renderAll();
+}
+
+// 图片坐标 → SVG 坐标（B 图用 object-fit:contain 居中）
+function imgToSvg(ix, iy) {
+  const cw = cellB.clientWidth, ch = cellB.clientHeight;
+  const nw = STATE.imgNatW, nh = STATE.imgNatH;
+  if (!nw || !nh) return { x: ix, y: iy };
+  const scale = Math.min(cw / nw, ch / nh);
+  const dw = nw * scale, dh = nh * scale;
+  const ox = (cw - dw) / 2, oy = (ch - dh) / 2;
+  return { x: ox + ix * scale, y: oy + iy * scale };
+}
+// SVG 坐标 → 图片坐标
+function svgToImg(sx, sy) {
+  const cw = cellB.clientWidth, ch = cellB.clientHeight;
+  const nw = STATE.imgNatW, nh = STATE.imgNatH;
+  if (!nw || !nh) return { x: sx, y: sy };
+  const scale = Math.min(cw / nw, ch / nh);
+  const dw = nw * scale, dh = nh * scale;
+  const ox = (cw - dw) / 2, oy = (ch - dh) / 2;
+  return { x: (sx - ox) / scale, y: (sy - oy) / scale };
+}
+function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
+
+// ===== 渲染 =====
+function renderAll() {
+  renderSvg();
+  renderAnnoRows();
+}
+
+// 渲染 B 图上的 SVG 框
+function renderSvg() {
+  while (svgB.firstChild) svgB.removeChild(svgB.firstChild);
+  const defs = document.createElementNS(SVG_NS, "defs");
+  defs.innerHTML = '<marker id="ah" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto" markerUnits="strokeWidth"><polygon points="0 0,6 3,0 6" fill="currentColor"/></marker>';
+  svgB.appendChild(defs);
+
+  STATE.boxes.forEach((b) => {
+    const act = b.action || "neutral";
+    const color = getBoxColor(b.boxId, act);
+    const tl = imgToSvg(b.x, b.y);
+    const br = imgToSvg(b.x + b.w, b.y + b.h);
+    const sx = tl.x, sy = tl.y, sw = br.x - tl.x, sh = br.y - tl.y;
+    const isEditing = STATE.editingBoxId === b.boxId;
+
+    const g = document.createElementNS(SVG_NS, "g");
+    g.setAttribute("data-boxid", b.boxId);
+    g.style.cursor = isEditing ? "move" : "default";
+
+    // 框体
+    const rect = document.createElementNS(SVG_NS, "rect");
+    rect.setAttribute("x", sx); rect.setAttribute("y", sy);
+    rect.setAttribute("width", Math.max(0, sw)); rect.setAttribute("height", Math.max(0, sh));
+    rect.setAttribute("fill", "none");
+    rect.setAttribute("stroke", color);
+    rect.setAttribute("stroke-width", isEditing ? 3 : 2);
+    if (isEditing) rect.setAttribute("stroke-dasharray", "6 3");
+    g.appendChild(rect);
+
+    // 动作箭头/文字标签
+    if (act === "move" && b.target) {
+      const t = imgToSvg(b.target.x, b.target.y);
+      const cx = sx + sw / 2, cy = sy + sh / 2;
+      const line = document.createElementNS(SVG_NS, "line");
+      line.setAttribute("x1", cx); line.setAttribute("y1", cy);
+      line.setAttribute("x2", t.x); line.setAttribute("y2", t.y);
+      line.setAttribute("stroke", color); line.setAttribute("stroke-width", 2.5);
+      line.setAttribute("marker-end", "url(#ah)");
+      g.appendChild(line);
+    } else if (act === "move3d" && b.dir3d) {
+      const cx = sx + sw / 2, cy = sy + sh / 2;
+      const txt = document.createElementNS(SVG_NS, "text");
+      txt.setAttribute("x", cx); txt.setAttribute("y", cy);
+      txt.setAttribute("fill", color); txt.setAttribute("font-size", "16");
+      txt.setAttribute("text-anchor", "middle"); txt.setAttribute("dominant-baseline", "middle");
+      txt.textContent = "3D→" + b.dir3d;
+      g.appendChild(txt);
+    } else if (act === "cw" || act === "ccw") {
+      const cx = sx + sw / 2, cy = sy + sh / 2;
+      const txt = document.createElementNS(SVG_NS, "text");
+      txt.setAttribute("x", cx); txt.setAttribute("y", cy);
+      txt.setAttribute("fill", color); txt.setAttribute("font-size", "20");
+      txt.setAttribute("text-anchor", "middle"); txt.setAttribute("dominant-baseline", "middle");
+      txt.textContent = act === "cw" ? "↻" : "↺";
+      g.appendChild(txt);
+    } else if (act === "custom" && b.text) {
+      const txt = document.createElementNS(SVG_NS, "text");
+      txt.setAttribute("x", sx); txt.setAttribute("y", sy - 4);
+      txt.setAttribute("fill", color); txt.setAttribute("font-size", "12");
+      txt.textContent = b.text.length > 12 ? b.text.slice(0, 12) + "…" : b.text;
+      g.appendChild(txt);
+    }
+
+    // 序号标签
+    const idxLabel = document.createElementNS(SVG_NS, "text");
+    idxLabel.setAttribute("x", sx + 2); idxLabel.setAttribute("y", sy + 13);
+    idxLabel.setAttribute("fill", color); idxLabel.setAttribute("font-size", "11");
+    idxLabel.setAttribute("font-weight", "bold");
+    idxLabel.textContent = "#" + (STATE.boxes.indexOf(b) + 1);
+    g.appendChild(idxLabel);
+
+    // 编辑模式：8 个缩放手柄 + 移动
+    if (isEditing) {
+      const handles = [
+        ["nw", sx, sy], ["n", sx + sw / 2, sy], ["ne", sx + sw, sy],
+        ["w", sx, sy + sh / 2], ["e", sx + sw, sy + sh / 2],
+        ["sw", sx, sy + sh], ["s", sx + sw / 2, sy + sh], ["se", sx + sw, sy + sh],
+      ];
+      const cursorMap = { nw:"nwse-resize", se:"nwse-resize", ne:"nesw-resize", sw:"nesw-resize",
+        n:"ns-resize", s:"ns-resize", e:"ew-resize", w:"ew-resize" };
+      handles.forEach(([dir, hx, hy]) => {
+        const h = document.createElementNS(SVG_NS, "rect");
+        h.setAttribute("x", hx - 4); h.setAttribute("y", hy - 4);
+        h.setAttribute("width", 8); h.setAttribute("height", 8);
+        h.setAttribute("fill", "#fff"); h.setAttribute("stroke", color); h.setAttribute("stroke-width", 1.5);
+        h.setAttribute("data-handle", dir);
+        h.style.cursor = cursorMap[dir];
+        g.appendChild(h);
+      });
+    }
+    svgB.appendChild(g);
+  });
+}
+
+// 渲染标注行列表
+function renderAnnoRows() {
+  // 保留 empty 提示，重建行
+  annoPanel.querySelectorAll(".anno-row").forEach((n) => n.remove());
+  const empty = $("annoEmpty");
+  if (!STATE.boxes.length) {
+    empty.style.display = "";
+    return;
+  }
+  empty.style.display = "none";
+
+  STATE.boxes.forEach((b, i) => {
+    const act = b.action || "neutral";
+    const color = getBoxColor(b.boxId, act);
+    const row = document.createElement("div");
+    row.className = "anno-row" + (STATE.editingBoxId === b.boxId ? " editing" : "");
+    row.setAttribute("data-boxid", b.boxId);
+
+    // 颜色点
+    const dot = document.createElement("span");
+    dot.className = "color-dot";
+    dot.style.background = color;
+    row.appendChild(dot);
+
+    // 编辑按钮（最左侧）
+    const editBtn = document.createElement("button");
+    editBtn.className = "edit-btn" + (STATE.editingBoxId === b.boxId ? " active" : "");
+    editBtn.textContent = "✎";
+    editBtn.title = "编辑框位置/大小";
+    editBtn.onclick = () => toggleEdit(b.boxId);
+    row.appendChild(editBtn);
+
+    // 坐标
+    const coord = document.createElement("span");
+    coord.className = "coord";
+    coord.textContent = `#${i + 1}  x:${Math.round(b.x)} y:${Math.round(b.y)} ${Math.round(b.w)}×${Math.round(b.h)}`;
+    row.appendChild(coord);
+
+    // 动作下拉
+    const sel = document.createElement("select");
+    sel.className = "action-select";
+    ["neutral", "add", "delete", "replace", "move", "move3d", "cw", "ccw", "custom"].forEach((k) => {
+      const opt = document.createElement("option");
+      opt.value = k; opt.textContent = ACTION_LABELS[k];
+      if (k === act) opt.selected = true;
+      sel.appendChild(opt);
+    });
+    sel.onchange = () => onActionChange(b.boxId, sel.value);
+    row.appendChild(sel);
+
+    // 3D 方向标签（move3d 时显示）
+    if (act === "move3d" && b.dir3d) {
+      const tag = document.createElement("span");
+      tag.className = "dir3d-tag";
+      tag.textContent = "方向: " + b.dir3d;
+      row.appendChild(tag);
+    }
+
+    // 动作输入框（move 显示目标提示 / custom 显示文字输入）
+    if (act === "custom") {
+      const inp = document.createElement("input");
+      inp.className = "action-input";
+      inp.type = "text";
+      inp.placeholder = "输入自定义描述...";
+      inp.value = b.text || "";
+      inp.oninput = () => { b.text = inp.value; renderSvg(); };
+      row.appendChild(inp);
+    } else if (act === "move") {
+      const hint = document.createElement("span");
+      hint.className = "action-input";
+      hint.style.cssText = "border:none;color:var(--muted);font-size:12px;";
+      hint.textContent = b.target ? `目标: (${Math.round(b.target.x)},${Math.round(b.target.y)})` : "请在图上画箭头指向目标位置";
+      row.appendChild(hint);
+    } else if (act === "move3d") {
+      const hint = document.createElement("button");
+      hint.className = "ghost";
+      hint.style.cssText = "flex:0 0 auto;font-size:12px;";
+      hint.textContent = b.dir3d ? "重新选方向" : "选择3D方向";
+      hint.onclick = () => openModal3D(b.boxId);
+      row.appendChild(hint);
+    } else {
+      const spacer = document.createElement("span");
+      spacer.className = "action-input";
+      spacer.style.cssText = "border:none;";
+      row.appendChild(spacer);
+    }
+
+    // 删除按钮
+    const delBtn = document.createElement("button");
+    delBtn.className = "del-btn";
+    delBtn.textContent = "✕";
+    delBtn.title = "删除此框";
+    delBtn.onclick = () => deleteBox(b.boxId);
+    row.appendChild(delBtn);
+
+    annoPanel.appendChild(row);
+  });
+}
+
+function toggleEdit(boxId) {
+  STATE.editingBoxId = STATE.editingBoxId === boxId ? null : boxId;
+  renderAll();
+}
+function deleteBox(boxId) {
+  pushUndo();
+  STATE.boxes = STATE.boxes.filter((b) => b.boxId !== boxId);
+  if (STATE.editingBoxId === boxId) STATE.editingBoxId = null;
+  renderAll();
+}
+function onActionChange(boxId, action) {
+  pushUndo();
+  const b = STATE.boxes.find((x) => x.boxId === boxId);
+  if (!b) return;
+  b.action = action;
+  if (action !== "move") delete b.target;
+  if (action !== "move3d") delete b.dir3d;
+  if (action !== "custom") delete b.text;
+  if (action === "move3d" && !b.dir3d) {
+    renderAll();
+    openModal3D(boxId);
+    return;
+  }
+  renderAll();
+}
+
+// ===== 手势：画框 / 编辑框 / 画箭头 =====
+let gesture = null; // {mode, ...}
+
+function svgPoint(e) {
+  const r = svgB.getBoundingClientRect();
+  return { x: e.clientX - r.left, y: e.clientY - r.top };
+}
+
+svgB.addEventListener("mousedown", (e) => {
+  if (e.button !== 0) return;
+  const p = svgPoint(e);
+
+  // 编辑模式：缩放手柄 / 移动框
+  if (STATE.editingBoxId != null) {
+    const b = STATE.boxes.find((x) => x.boxId === STATE.editingBoxId);
+    if (!b) return;
+    const handleEl = e.target.getAttribute && e.target.getAttribute("data-handle");
+    if (handleEl) {
+      pushUndo();
+      gesture = { mode: "resize", boxId: b.boxId, handle: handleEl, start: p, orig: { ...b } };
+      e.preventDefault();
+      return;
+    }
+    // 点在框内 → 移动
+    const tl = imgToSvg(b.x, b.y), br = imgToSvg(b.x + b.w, b.y + b.h);
+    if (p.x >= tl.x && p.x <= br.x && p.y >= tl.y && p.y <= br.y) {
+      pushUndo();
+      gesture = { mode: "moveBox", boxId: b.boxId, start: p, orig: { ...b } };
+      e.preventDefault();
+      return;
+    }
+    return; // 编辑模式下点框外不画新框
+  }
+
+  // 普通模式：画新框
+  pushUndo();
+  const img = svgToImg(p.x, p.y);
+  const boxId = STATE.nextBoxId++;
+  const newBox = { boxId, x: img.x, y: img.y, w: 0, h: 0, action: "neutral" };
+  STATE.boxes.push(newBox);
+  gesture = { mode: "draw", boxId, startImg: img };
+  renderAll();
+  e.preventDefault();
+});
+
+window.addEventListener("mousemove", (e) => {
+  if (!gesture) return;
+  const p = svgPoint(e);
+  const b = STATE.boxes.find((x) => x.boxId === gesture.boxId);
+  if (!b) return;
+
+  if (gesture.mode === "draw") {
+    const img = svgToImg(p.x, p.y);
+    b.x = Math.min(gesture.startImg.x, img.x);
+    b.y = Math.min(gesture.startImg.y, img.y);
+    b.w = Math.abs(img.x - gesture.startImg.x);
+    b.h = Math.abs(img.y - gesture.startImg.y);
+    renderSvg();
+  } else if (gesture.mode === "moveBox") {
+    const dx = svgToImg(p.x, p.y).x - svgToImg(gesture.start.x, gesture.start.y).x;
+    const dy = svgToImg(p.x, p.y).y - svgToImg(gesture.start.x, gesture.start.y).y;
+    b.x = clamp(gesture.orig.x + dx, 0, STATE.imgNatW - b.w);
+    b.y = clamp(gesture.orig.y + dy, 0, STATE.imgNatH - b.h);
+    renderSvg();
+  } else if (gesture.mode === "resize") {
+    const img = svgToImg(p.x, p.y);
+    const o = gesture.orig;
+    let x1 = o.x, y1 = o.y, x2 = o.x + o.w, y2 = o.y + o.h;
+    const h = gesture.handle;
+    if (h.includes("w")) x1 = img.x;
+    if (h.includes("e")) x2 = img.x;
+    if (h.includes("n")) y1 = img.y;
+    if (h.includes("s")) y2 = img.y;
+    b.x = clamp(Math.min(x1, x2), 0, STATE.imgNatW);
+    b.y = clamp(Math.min(y1, y2), 0, STATE.imgNatH);
+    b.w = Math.abs(x2 - x1);
+    b.h = Math.abs(y2 - y1);
+    renderSvg();
+  }
+});
+
+window.addEventListener("mouseup", (e) => {
+  if (!gesture) return;
+  if (gesture.mode === "draw") {
+    const b = STATE.boxes.find((x) => x.boxId === gesture.boxId);
+    // 太小的框：可能是想画箭头（move）→ 删除
+    if (b && (b.w < 6 || b.h < 6)) {
+      // 视为点击/箭头意图：若已有 move 框待设目标则忽略，否则删除空框
+      STATE.boxes = STATE.boxes.filter((x) => x.boxId !== b.boxId);
+      STATE.undoStack.pop();
+    }
+    renderAll();
+  }
+  gesture = null;
+});
+
+// 双击框 → 进入编辑
+svgB.addEventListener("dblclick", (e) => {
+  const g = e.target.closest && e.target.closest("g[data-boxid]");
+  if (g) {
+    const boxId = parseInt(g.getAttribute("data-boxid"), 10);
+    STATE.editingBoxId = boxId;
+    renderAll();
+  }
+});
+
+// 画箭头设 move 目标：在 move 框上按住拖到目标点
+// 简化：选中 move 框后，在图上点击设定目标点
+svgB.addEventListener("click", (e) => {
+  // 找一个 action=move 且无 target 的框，点击图面设目标
+  const pending = STATE.boxes.find((b) => b.action === "move" && !b.target);
+  if (!pending) return;
+  if (e.target.closest && e.target.closest("g[data-boxid]")) return; // 点在框上不设目标
+  const p = svgPoint(e);
+  const img = svgToImg(p.x, p.y);
+  pending.target = { x: img.x, y: img.y };
+  renderAll();
+  showToast("已设定移动目标", "success");
+});
+
+// ===== 3D 球体编辑器模态框 =====
+const modal3D = {
+  ctx: null, canvas: null, previewCtx: null, previewCanvas: null,
+  R: 150, rotX: 0.3, rotY: 0.5, zoom: 1,
+  boxId: -1, dragging: false, lx: 0, ly: 0,
+};
+
+function initModal3D() {
+  modal3D.canvas = $("canvas-3d");
+  modal3D.ctx = modal3D.canvas.getContext("2d");
+  modal3D.previewCanvas = $("canvas-preview");
+  modal3D.previewCtx = modal3D.previewCanvas.getContext("2d");
+  const cv = modal3D.canvas;
+
+  cv.addEventListener("mousedown", (e) => {
+    modal3D.dragging = true; modal3D.lx = e.clientX; modal3D.ly = e.clientY;
+    cv.style.cursor = "grabbing";
+  });
+  document.addEventListener("mousemove", (e) => {
+    if (!modal3D.dragging) return;
+    modal3D.rotY += (e.clientX - modal3D.lx) * 0.008;
+    modal3D.rotX += (e.clientY - modal3D.ly) * 0.008;
+    modal3D.rotX = Math.max(-Math.PI * 0.49, Math.min(Math.PI * 0.49, modal3D.rotX));
+    modal3D.lx = e.clientX; modal3D.ly = e.clientY;
+    renderModal3D();
+  });
+  document.addEventListener("mouseup", () => { modal3D.dragging = false; cv.style.cursor = "default"; });
+  cv.addEventListener("wheel", (e) => {
+    e.preventDefault();
+    modal3D.zoom *= (1 - e.deltaY * 0.001);
+    modal3D.zoom = Math.max(0.3, Math.min(3, modal3D.zoom));
+    renderModal3D();
+  }, { passive: false });
+
+  $("modal-3d-ok").onclick = () => {
+    const dir = computeArrowDir3D();
+    closeModal3D(true, dir);
+  };
+  $("modal-3d-cancel").onclick = () => closeModal3D(false, null);
+}
+
+function computeArrowDir3D() {
+  const cy = Math.cos(modal3D.rotY), sy = Math.sin(modal3D.rotY);
+  const cx = Math.cos(modal3D.rotX), sx = Math.sin(modal3D.rotX);
+  const y1 = 0, z1 = -sy;
+  const y2 = y1 * cx - z1 * sx;
+  const z2 = y1 * sx + z1 * cx;
+  return [cy, y2, z2];
+}
+
+function project3D(x, y, z) {
+  const W = modal3D.canvas.width, H = modal3D.canvas.height;
+  const cy = Math.cos(modal3D.rotY), sy = Math.sin(modal3D.rotY);
+  const x1 = x * cy + z * sy, z1 = -x * sy + z * cy, y1 = y;
+  const cx = Math.cos(modal3D.rotX), sx = Math.sin(modal3D.rotX);
+  const y2 = y1 * cx - z1 * sx, z2 = y1 * sx + z1 * cx;
+  const d = 600 / modal3D.zoom;
+  const s = d / (d + z2);
+  return { x: W / 2 + x1 * s, y: H / 2 - y2 * s, z: z2, s: s };
+}
+
+function getArrowCameraZ() {
+  const sy = Math.sin(modal3D.rotY);
+  const z1 = -sy;
+  const cx = Math.cos(modal3D.rotX);
+  return z1 * cx;
+}
+
+function renderModal3D() {
+  const ctx = modal3D.ctx;
+  const W = modal3D.canvas.width, H = modal3D.canvas.height, R = modal3D.R;
+  ctx.fillStyle = "#0a0a18"; ctx.fillRect(0, 0, W, H);
+
+  // 经度环
+  for (let j = 0; j < 16; j++) {
+    const th = Math.PI * j / 16;
+    const pts = [];
+    for (let i = 0; i <= 64; i++) {
+      const phi = Math.PI * i / 64;
+      pts.push([R * Math.sin(phi) * Math.cos(th), R * Math.cos(phi), R * Math.sin(phi) * Math.sin(th)]);
+    }
+    for (let i = 0; i < pts.length - 1; i++) {
+      const p1 = project3D(pts[i][0], pts[i][1], pts[i][2]);
+      const p2 = project3D(pts[i+1][0], pts[i+1][1], pts[i+1][2]);
+      const t = Math.max(0, Math.min(1, ((p1.z + p2.z) / 2 + R) / (2 * R)));
+      ctx.strokeStyle = "rgba(60,180,255," + (0.7 - t * 0.55) + ")";
+      ctx.lineWidth = 1.5 - t * 1.0;
+      ctx.beginPath(); ctx.moveTo(p1.x, p1.y); ctx.lineTo(p2.x, p2.y); ctx.stroke();
+    }
+  }
+  // 纬度环
+  for (let i = 1; i < 10; i++) {
+    const phi = Math.PI * i / 10;
+    const pts = [];
+    for (let j = 0; j <= 64; j++) {
+      const th = 2 * Math.PI * j / 64;
+      pts.push([R * Math.sin(phi) * Math.cos(th), R * Math.cos(phi), R * Math.sin(phi) * Math.sin(th)]);
+    }
+    for (let j = 0; j < pts.length - 1; j++) {
+      const p1 = project3D(pts[j][0], pts[j][1], pts[j][2]);
+      const p2 = project3D(pts[j+1][0], pts[j+1][1], pts[j+1][2]);
+      const t = Math.max(0, Math.min(1, ((p1.z + p2.z) / 2 + R) / (2 * R)));
+      ctx.strokeStyle = "rgba(60,180,255," + (0.7 - t * 0.55) + ")";
+      ctx.lineWidth = 1.5 - t * 1.0;
+      ctx.beginPath(); ctx.moveTo(p1.x, p1.y); ctx.lineTo(p2.x, p2.y); ctx.stroke();
+    }
+  }
+
+  // 箭头
+  const end = [R, 0, 0];
+  const p0 = project3D(0, 0, 0);
+  const p1 = project3D(end[0], end[1], end[2]);
+  const cz = getArrowCameraZ();
+  const depthT = Math.max(-1, Math.min(1, cz));
+  const t01 = (depthT + 1) / 2;
+  let r, g, b, lineW, alpha, glowSize = 0;
+  if (t01 < 0.5) {
+    const k = t01 / 0.5;
+    r = Math.round(255 - k * 55); g = Math.round(60 + k * 110); b = Math.round(30 + k * 20);
+    lineW = 4.5 - k * 1.5; alpha = 1.0 - k * 0.2; glowSize = (1 - k) * 20;
+  } else {
+    const k = (t01 - 0.5) / 0.5;
+    r = Math.round(200 - k * 140); g = Math.round(170 - k * 120); b = Math.round(50 + k * 150);
+    lineW = 3 - k * 1.5; alpha = 0.8 - k * 0.45; glowSize = 0;
+  }
+  const color = "rgba(" + r + "," + g + "," + b + "," + alpha + ")";
+  if (glowSize > 0) { ctx.save(); ctx.shadowColor = "rgba(255,80,30,0.7)"; ctx.shadowBlur = glowSize; }
+  ctx.strokeStyle = color; ctx.lineWidth = lineW;
+  if (depthT > 0.4) ctx.setLineDash([8, 5]); else ctx.setLineDash([]);
+  ctx.beginPath(); ctx.moveTo(p0.x, p0.y); ctx.lineTo(p1.x, p1.y); ctx.stroke();
+  ctx.setLineDash([]);
+  if (glowSize > 0) ctx.restore();
+
+  // 箭头三角
+  const hL = R * 0.2, hR = hL * (0.35 + 0.3 * (1 - t01));
+  const px = 0, py = 0, pz = 1; // up = [0,1,0] cross [1,0,0] = [0,0,-1] → 取 [0,0,1]
+  const qx = 0, qy = 1, qz = 0;
+  const bx = end[0] - hL, by = end[1], bz = end[2];
+  const nP = 8;
+  ctx.fillStyle = color;
+  for (let i = 0; i < nP; i++) {
+    const a = 2 * Math.PI * i / nP;
+    const ax2 = bx + (px * Math.cos(a) + qx * Math.sin(a)) * hR;
+    const ay2 = by + (py * Math.cos(a) + qy * Math.sin(a)) * hR;
+    const az2 = bz + (pz * Math.cos(a) + qz * Math.sin(a)) * hR;
+    const a1 = 2 * Math.PI * (i+1) / nP;
+    const ax1 = bx + (px * Math.cos(a1) + qx * Math.sin(a1)) * hR;
+    const ay1 = by + (py * Math.cos(a1) + qy * Math.sin(a1)) * hR;
+    const az1 = bz + (pz * Math.cos(a1) + qz * Math.sin(a1)) * hR;
+    const pc = project3D(ax2, ay2, az2);
+    const pn = project3D(ax1, ay1, az1);
+    ctx.beginPath(); ctx.moveTo(pc.x, pc.y); ctx.lineTo(pn.x, pn.y); ctx.lineTo(p1.x, p1.y);
+    ctx.closePath(); ctx.fill();
+  }
+
+  // 端点标记
+  if (depthT < -0.2) {
+    ctx.save(); ctx.shadowColor = "rgba(255,50,50,0.8)"; ctx.shadowBlur = 25;
+    ctx.fillStyle = "#ff3333";
+    ctx.beginPath(); ctx.arc(p1.x, p1.y, 12, 0, Math.PI * 2); ctx.fill(); ctx.restore();
+    ctx.strokeStyle = "#fff"; ctx.lineWidth = 3;
+    ctx.beginPath(); ctx.arc(p1.x, p1.y, 12, 0, Math.PI * 2); ctx.stroke();
+    ctx.fillStyle = "#fff"; ctx.font = "bold 16px sans-serif"; ctx.textAlign = "center"; ctx.textBaseline = "middle";
+    ctx.fillText("\u25b6", p1.x, p1.y);
+  } else if (depthT > 0.2) {
+    ctx.fillStyle = "rgba(80,80,160,0.6)";
+    ctx.beginPath(); ctx.arc(p1.x, p1.y, 5, 0, Math.PI * 2); ctx.fill();
+    ctx.setLineDash([3, 3]); ctx.strokeStyle = "rgba(100,100,200,0.5)"; ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.arc(p1.x, p1.y, 10, 0, Math.PI * 2); ctx.stroke(); ctx.setLineDash([]);
+    ctx.strokeStyle = "rgba(150,150,255,0.7)"; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.moveTo(p1.x - 7, p1.y - 7); ctx.lineTo(p1.x + 7, p1.y + 7); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(p1.x + 7, p1.y - 7); ctx.lineTo(p1.x - 7, p1.y + 7); ctx.stroke();
+  } else {
+    ctx.fillStyle = "#ffaa00";
+    ctx.beginPath();
+    ctx.moveTo(p1.x, p1.y - 10); ctx.lineTo(p1.x + 7, p1.y);
+    ctx.lineTo(p1.x, p1.y + 10); ctx.lineTo(p1.x - 7, p1.y);
+    ctx.closePath(); ctx.fill();
+    ctx.strokeStyle = "#fff"; ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    ctx.moveTo(p1.x, p1.y - 10); ctx.lineTo(p1.x + 7, p1.y);
+    ctx.lineTo(p1.x, p1.y + 10); ctx.lineTo(p1.x - 7, p1.y);
+    ctx.closePath(); ctx.stroke();
+  }
+  ctx.fillStyle = "#fff";
+  ctx.beginPath(); ctx.arc(p0.x, p0.y, 4, 0, Math.PI * 2); ctx.fill();
+
+  // 指示器
+  const indEl = $("modal-3d-info");
+  if (depthT < -0.2) {
+    indEl.innerHTML = "\ud83d\udd34 \u25b6 箭头指向你(出屏)";
+    indEl.style.background = "rgba(255,40,40,0.35)"; indEl.style.color = "#ff6666";
+    indEl.style.border = "2px solid rgba(255,80,80,0.7)";
+  } else if (depthT > 0.2) {
+    indEl.innerHTML = "\ud83d\udd35 \u2717 箭头远离你(入屏)";
+    indEl.style.background = "rgba(40,40,120,0.35)"; indEl.style.color = "#8888ff";
+    indEl.style.border = "2px solid rgba(80,80,200,0.6)";
+  } else {
+    indEl.innerHTML = "\ud83d\udfe1 \u25c6 箭头在侧面";
+    indEl.style.background = "rgba(255,170,0,0.25)"; indEl.style.color = "#ffcc44";
+    indEl.style.border = "2px solid rgba(255,170,0,0.5)";
+  }
+}
+
+function openModal3D(boxId) {
+  modal3D.boxId = boxId;
+  const box = STATE.boxes.find((b) => b.boxId === boxId);
+  if (box && box.dir3d) {
+    const d = box.dir3d;
+    modal3D.rotY = Math.atan2(-d[2], d[0]);
+    modal3D.rotX = Math.atan2(d[1], Math.sqrt(d[0]*d[0] + d[2]*d[2]));
+  } else {
+    modal3D.rotX = 0.3; modal3D.rotY = 0.5;
+  }
+  modal3D.zoom = 1;
+  renderPreview3D(boxId);
+  $("modal-3d-overlay").classList.add("show");
+  renderModal3D();
+}
+
+function renderPreview3D(boxId) {
+  const ctx = modal3D.previewCtx;
+  if (!ctx) return;
+  const W = modal3D.previewCanvas.width, H = modal3D.previewCanvas.height;
+  ctx.fillStyle = "#0a0a18"; ctx.fillRect(0, 0, W, H);
+  const box = STATE.boxes.find((b) => b.boxId === boxId);
+  if (!box) {
+    ctx.fillStyle = "#888"; ctx.font = "13px sans-serif"; ctx.textAlign = "center";
+    ctx.fillText("未找到框数据", W/2, H/2); return;
+  }
+  const src = imgB.dataset.currentSrc || imgB.src || "";
+  if (!src) return;
+  fetch(src).then((r) => r.blob()).then((blob) => {
+    const url = URL.createObjectURL(blob);
+    const tmp = new Image();
+    tmp.onload = () => {
+      URL.revokeObjectURL(url);
+      const nw = tmp.naturalWidth, nh = tmp.naturalHeight;
+      ctx.fillStyle = "#0a0a18"; ctx.fillRect(0, 0, W, H);
+      const scale = Math.min(W / nw, H / nh);
+      const dw = nw * scale, dh = nh * scale;
+      const dx = (W - dw) / 2, dy = (H - dh) / 2;
+      ctx.drawImage(tmp, 0, 0, nw, nh, dx, dy, dw, dh);
+      ctx.fillStyle = "rgba(255,170,0,0.15)";
+      ctx.fillRect(dx + box.x * scale, dy + box.y * scale, box.w * scale, box.h * scale);
+      ctx.strokeStyle = "#ffaa00"; ctx.lineWidth = 3;
+      ctx.strokeRect(dx + box.x * scale, dy + box.y * scale, box.w * scale, box.h * scale);
+    };
+    tmp.onerror = () => {
+      ctx.fillStyle = "#888"; ctx.font = "13px sans-serif"; ctx.textAlign = "center";
+      ctx.fillText("图片加载失败", W/2, H/2);
+    };
+    tmp.src = url;
+  }).catch(() => {});
+}
+
+function closeModal3D(confirmed, dir) {
+  $("modal-3d-overlay").classList.remove("show");
+  if (confirmed && dir) {
+    const len = Math.sqrt(dir[0]*dir[0] + dir[1]*dir[1] + dir[2]*dir[2]);
+    if (len > 0) { dir[0] /= len; dir[1] /= len; dir[2] /= len; }
+    const box = STATE.boxes.find((b) => b.boxId === modal3D.boxId);
+    if (box) {
+      box.action = "move3d";
+      box.dir3d = [Math.round(dir[0]*1000)/1000, Math.round(dir[1]*1000)/1000, Math.round(dir[2]*1000)/1000];
+    }
+    renderAll();
+  }
+}
+
+// ===== 分发流程 =====
+
+// 把已保存的标注数据还原为 STATE.boxes
+function restoreBoxesFromData(data) {
+  STATE.boxes = [];
+  STATE.nextBoxId = 1;
+  if (!data || !Array.isArray(data.objects)) return;
+  for (const obj of data.objects) {
+    const box = {
+      boxId: STATE.nextBoxId++,
+      x: obj.box.x, y: obj.box.y, w: obj.box.w, h: obj.box.h,
+      action: obj.type || "neutral",
+    };
+    if (obj.target) box.target = obj.target;
+    if (obj.dir3d) box.dir3d = obj.dir3d;
+    if (obj.text) box.text = obj.text;
+    STATE.boxes.push(box);
+  }
+}
+
+// 加载一对图片到当前视图
+function loadCurrentSample() {
+  const s = STATE.current;
+  if (!s) return;
+  STATE.undoStack = [];
+  STATE.editingBoxId = null;
+  $("lineInfo").textContent = "Line " + s.line;
+
+  const remotes = s.remotes || [];
+  const aSrc = remotes[0] || "";
+  const bSrc = remotes[1] || "";
+  imgA.src = aSrc; imgA.dataset.currentSrc = aSrc;
+  imgB.src = bSrc; imgB.dataset.currentSrc = bSrc;
+  renderAll();
+}
+
+// B 图加载后记录自然尺寸并重绘
+imgB.addEventListener("load", () => {
+  STATE.imgNatW = imgB.naturalWidth;
+  STATE.imgNatH = imgB.naturalHeight;
+  renderSvg();
+});
+
+// 校验：是否有框未指定动作
+function validateBoxes() {
+  for (const b of STATE.boxes) {
+    if (!b.action || b.action === "neutral") {
+      showToast("有框未指定动作，请补齐后再提交", "warn");
+      return false;
+    }
+    if (b.action === "move" && !b.target) {
+      showToast("有移动框未设定目标点", "warn");
+      return false;
+    }
+    if (b.action === "move3d" && !b.dir3d) {
+      showToast("有 3D 移动框未选择方向", "warn");
+      return false;
+    }
+    if (b.action === "custom" && !(b.text && b.text.trim())) {
+      showToast("有自定义框未填写描述", "warn");
+      return false;
+    }
+  }
+  return true;
+}
+
+// 构建要保存的数据
+function buildLineData() {
+  return {
+    line: STATE.current.line,
+    remotes: STATE.current.remotes,
+    objects: STATE.boxes.map((b) => {
+      const o = { box: { x: Math.round(b.x), y: Math.round(b.y), w: Math.round(b.w), h: Math.round(b.h) }, type: b.action };
+      if (b.target) o.target = { x: Math.round(b.target.x), y: Math.round(b.target.y) };
+      if (b.dir3d) o.dir3d = b.dir3d;
+      if (b.text) o.text = b.text;
+      return o;
+    }),
+    note: $("globalNote").value.trim(),
+  };
+}
+
+// 下一个：校验 → 保存当前 → 释放锁 → 领下一个
+async function goNext() {
+  if (STATE.current) {
+    if (STATE.boxes.length && !validateBoxes()) return;
+    setStatus("保存中...", "syncing");
+    try {
+      if (STATE.boxes.length || $("globalNote").value.trim()) {
+        const username = (window.GithubAuth.getUser() || {}).login;
+        await window.GithubDispatch.saveLine(STATE.current.line, username, buildLineData());
+        STATE.dispatchedCount++;
+        $("statDispatched").textContent = STATE.dispatchedCount;
+      }
+      await window.GithubDispatch.releaseLock(STATE.current.line).catch(() => {});
+    } catch (e) {
+      setStatus("保存失败: " + e.message, "error");
+      showToast("保存失败，请重试", "warn");
+      return;
+    }
+  }
+  await dispatchNext();
+}
+
+// 跳过：释放锁，不保存
+async function goSkip() {
+  if (STATE.current) {
+    setStatus("跳过中...", "syncing");
+    await window.GithubDispatch.releaseLock(STATE.current.line).catch(() => {});
+  }
+  await dispatchNext();
+}
+
+// 领取下一个未标注、未锁定的样本
+async function dispatchNext() {
+  setStatus("正在分配任务...", "syncing");
+  showLoading("正在分配任务...");
+  try {
+    const result = await window.GithubDispatch.claimNext(STATE.samples);
+    if (!result) {
+      hideLoading();
+      setStatus("全部标注完成 🎉", "synced");
+      STATE.current = null;
+      imgA.src = ""; imgB.src = "";
+      STATE.boxes = [];
+      renderAll();
+      showToast("所有样本都已标注完成！", "success");
+      return;
+    }
+    STATE.current = result.sample;
+    hideLoading();
+    setStatus("已分配 Line " + result.sample.line, "synced");
+
+    // 重置标注状态
+    STATE.boxes = [];
+    STATE.undoStack = [];
+    STATE.editingBoxId = null;
+    $("globalNote").value = "";
+
+    // 若是恢复自己之前标过的行，加载已存数据
+    if (result.resumed) {
+      try {
+        const username = (window.GithubAuth.getUser() || {}).login;
+        const data = await window.GithubDispatch.loadLine(result.line, username);
+        if (data) {
+          restoreBoxesFromData(data);
+          if (data.note) $("globalNote").value = data.note;
+          showToast("已恢复你之前的标注进度", "success");
+        }
+      } catch (e) { /* 恢复失败则从空白开始 */ }
+    }
+
+    loadCurrentSample();
+    refreshProgress();
+  } catch (e) {
+    hideLoading();
+    setStatus("分配失败: " + e.message, "error");
+    showToast("分配任务失败: " + e.message, "warn");
+  }
+}
+
+// 刷新全局进度
+async function refreshProgress() {
+  try {
+    const st = await window.GithubDispatch.getStats(STATE.samples);
+    STATE.totalDone = st.done;
+    STATE.totalSamples = st.total;
+    $("statDone").textContent = st.done;
+    $("statLocked").textContent = st.locked;
+    $("statTotal").textContent = st.total;
+  } catch (e) { /* 忽略 */ }
+}
+
+// ===== 登录 UI =====
+function updateAuthUI() {
+  const user = window.GithubAuth.getUser();
+  if (user) {
+    $("user-area").classList.remove("hidden");
+    $("btnLogin").style.display = "none";
+    $("userAvatar").src = user.avatarUrl;
+    $("userName").textContent = user.name;
+  } else {
+    $("user-area").classList.add("hidden");
+    $("btnLogin").style.display = "";
+  }
+}
+function openLoginModal() {
+  $("modal-login-overlay").classList.add("show");
+  $("loginError").style.display = "none";
+  $("patInput").value = "";
+  $("patInput").focus();
+}
+function closeLoginModal() { $("modal-login-overlay").classList.remove("show"); }
+function startPatLogin() {
+  const token = $("patInput").value.trim();
+  const errEl = $("loginError");
+  errEl.style.display = "none";
+  if (!token) { errEl.textContent = "请输入 Token"; errEl.style.display = "block"; return; }
+  const btn = $("btnStartLogin");
+  btn.disabled = true; btn.textContent = "验证中...";
+  window.GithubAuth.login(token).then((result) => {
+    btn.disabled = false; btn.textContent = "验证并登录";
+    closeLoginModal();
+    updateAuthUI();
+    showToast("登录成功：欢迎，" + result.user.name, "success");
+    startWorking();
+  }).catch((err) => {
+    btn.disabled = false; btn.textContent = "验证并登录";
+    errEl.textContent = err.message; errEl.style.display = "block";
+  });
+}
+
+// 登录后开始工作：刷新进度 + 领任务
+async function startWorking() {
+  await refreshProgress();
+  await dispatchNext();
+}
+
+// ===== 初始化 =====
+async function init() {
+  initModal3D();
+
+  // 加载样本
+  showLoading("正在加载样本数据...");
+  try {
+    const resp = await fetch(window.ANNOTATE_CONFIG.samplesFile);
+    if (!resp.ok) throw new Error("HTTP " + resp.status);
+    const data = await resp.json();
+    STATE.samples = data;
+    data.forEach((s) => { STATE.sampleByLine[s.line] = s; });
+  } catch (e) {
+    showLoading("样本数据加载失败: " + e.message + "\n请确保 " + window.ANNOTATE_CONFIG.samplesFile + " 存在");
+    return;
+  }
+  hideLoading();
+
+  // 按钮绑定
+  $("btnNext").onclick = goNext;
+  $("btnSkip").onclick = goSkip;
+  $("btnUndo").onclick = undo;
+  $("btnClear").onclick = () => {
+    if (!STATE.boxes.length) return;
+    pushUndo();
+    STATE.boxes = [];
+    STATE.editingBoxId = null;
+    renderAll();
+  };
+  $("btnLogin").onclick = openLoginModal;
+  $("btnStartLogin").onclick = startPatLogin;
+  $("patInput").addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); startPatLogin(); } });
+  $("loginCancel").onclick = closeLoginModal;
+  $("btnLogout").onclick = () => {
+    window.GithubAuth.logout();
+    updateAuthUI();
+    showToast("已退出登录", "info");
+  };
+
+  // 快捷键
+  document.addEventListener("keydown", (e) => {
+    if (e.target.tagName === "INPUT" || e.target.tagName === "SELECT" || e.target.tagName === "TEXTAREA") return;
+    if ((e.ctrlKey || e.metaKey) && e.key === "z") { e.preventDefault(); undo(); }
+    if (e.key === "Enter" && !e.ctrlKey && !e.metaKey) { e.preventDefault(); goNext(); }
+  });
+
+  // 检查登录态
+  const saved = await window.GithubAuth.checkToken();
+  updateAuthUI();
+  if (saved) {
+    startWorking();
+  } else {
+    setStatus("请先登录 GitHub", "error");
+  }
+}
+
+document.addEventListener("DOMContentLoaded", init);
+
+})();
+</script>
+</body>
+</html>
