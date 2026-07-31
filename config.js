@@ -14,9 +14,13 @@ window.ANNOTATE_CONFIG = {
     annotationsPath: "annotations/{username}.json",
 
     // ===== 分发模式配置 =====
-    linesDir: "annotations",        // 单行标注文件目录：annotations/line_XXXXXX__{username}.json
-    locksDir: "locks",              // 锁文件目录：locks/line_XXXXXX.json
+    linesDir: "annotations",        // 单行标注文件目录：annotations/{datasetId}/line_XXXXXX__{username}.json
+    locksDir: "locks",              // 标注锁文件目录：locks/{datasetId}/line_XXXXXX.json
     lockTTLMinutes: 30,             // 锁超时时间（分钟），超时视为过期可被抢占
+
+    // ===== 审核模式配置（热更新：全新目录，不影响已有标注数据）=====
+    reviewsDir: "reviews",          // 审核结果目录：reviews/{datasetId}/line_XXXXXX__{reviewerName}.json
+    reviewLocksDir: "locks-review", // 审核锁目录：locks-review/{datasetId}/line_XXXXXX.json
   },
 
   // ===== 数据集列表 =====
