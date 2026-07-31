@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>空间一致性标注（分发模式）</title>
+<title>空间一致性标注（批量模式）</title>
 <style>
 :root {
   --bg:#f5f6f8; --panel:#fff; --border:#e3e5ea;
@@ -36,38 +36,81 @@ button.success:hover:not(:disabled) { background:#268a4d; }
 button.ghost { background:#fff; }
 button.danger { color:var(--bad); }
 button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:var(--bad); }
+.muted { color:var(--muted); font-size:12px; }
+.hidden { display:none !important; }
 
-/* ===== Topbar ===== */
-#topbar {
-  display:flex; justify-content:space-between; align-items:center;
+/* ===== 第一阶段：领取任务 ===== */
+#phase-claim {
+  flex:1; display:flex; align-items:center; justify-content:center;
+  padding:20px; overflow-y:auto;
+}
+.claim-card {
+  background:var(--panel); border-radius:16px; padding:32px 36px;
+  box-shadow:0 4px 24px rgba(0,0,0,.08); width:520px; max-width:95vw;
+}
+.claim-card h2 { margin:0 0 4px; font-size:20px; }
+.claim-card .subtitle { color:var(--muted); font-size:13px; margin-bottom:24px; }
+.claim-section { margin-bottom:20px; }
+.claim-section label { display:block; font-size:13px; font-weight:600; margin-bottom:8px; }
+.claim-section select, .claim-section input[type="number"] {
+  width:100%; padding:10px 12px; border:1.5px solid var(--border); border-radius:8px;
+  font-size:14px; background:#fff;
+}
+.claim-section select:focus, .claim-section input:focus { outline:none; border-color:var(--accent); }
+.role-picker { display:flex; gap:10px; }
+.role-card { flex:1; cursor:pointer; }
+.role-card input { display:none; }
+.role-card-body {
+  display:flex; flex-direction:column; gap:2px; padding:12px;
+  border:2px solid var(--border); border-radius:10px; transition:all .15s;
+}
+.role-card-body:hover { border-color:var(--accent); transform:translateY(-1px); }
+.role-card input:checked + .role-card-body {
+  border-color:var(--accent); background:var(--accent-weak);
+  box-shadow:0 2px 10px rgba(59,125,251,.18);
+}
+.role-card .role-emoji { font-size:22px; }
+.role-card .role-name { font-size:14px; font-weight:700; }
+.role-card .role-desc { font-size:11px; color:var(--muted); }
+.role-card input:checked + .role-card-body .role-name { color:var(--accent); }
+.pool-stats {
+  display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-top:12px;
+}
+.pool-stat {
+  text-align:center; padding:10px 6px; background:var(--bg); border-radius:8px;
+}
+.pool-stat .num { font-size:22px; font-weight:700; color:var(--accent); }
+.pool-stat .lbl { font-size:11px; color:var(--muted); margin-top:2px; }
+.pool-stat.locked .num { color:var(--warn); }
+.pool-stat.done .num { color:var(--ok); }
+.claim-actions { margin-top:24px; display:flex; gap:10px; }
+.claim-actions button { flex:1; padding:12px; font-size:15px; }
+.claim-msg { margin-top:12px; font-size:13px; color:var(--bad); display:none; }
+
+/* ===== 第二阶段：标注工作区 ===== */
+#phase-work { flex:1; display:none; flex-direction:column; min-height:0; }
+#phase-work.active { display:flex; }
+
+/* 工作区顶栏 */
+#work-topbar {
+  display:flex; align-items:center; justify-content:space-between;
   padding:8px 16px; background:var(--panel); border-bottom:1px solid var(--border);
   box-shadow:var(--shadow); gap:12px; flex:0 0 auto;
 }
-#topbar .left, #topbar .right { display:flex; align-items:center; gap:8px; }
-#taskInfo { font-weight:600; font-size:15px; }
-#taskInfo .line-no { color:var(--accent); }
-.muted { color:var(--muted); font-size:12px; }
-.tb-sep { width:1px; height:24px; background:var(--border); margin:0 2px; }
-#progressInfo { font-size:12px; color:var(--muted); }
-.dataset-picker {
-  display:flex; align-items:center; gap:4px; font-size:12px; color:var(--muted);
-}
-.dataset-picker select {
-  padding:3px 8px; border:1px solid var(--border); border-radius:4px;
-  font-size:12px; background:var(--panel); color:var(--text); cursor:pointer;
-}
-.dataset-picker select:focus { outline:none; border-color:var(--accent); }
-
-/* ===== 用户区 ===== */
-#user-area { display:flex; align-items:center; gap:6px; }
-#user-area .avatar { width:26px; height:26px; border-radius:50%; border:1.5px solid var(--border); object-fit:cover; }
-#user-area .username { font-size:13px; font-weight:600; max-width:120px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
-#user-area.hidden { display:none; }
-#btnLogin { background:var(--accent); color:#fff; border-color:var(--accent); font-weight:600; }
-#btnLogin:hover:not(:disabled) { background:#2a6ae0; }
-
-/* ===== 主工作区 ===== */
-#workspace { flex:1 1 auto; display:flex; flex-direction:column; min-height:0; overflow:hidden; }
+#work-topbar .left { display:flex; align-items:center; gap:10px; }
+#work-topbar .right { display:flex; align-items:center; gap:8px; }
+.batch-progress { font-size:13px; font-weight:600; }
+.batch-progress .cur { color:var(--accent); font-size:16px; }
+.progress-bar { width:120px; height:6px; background:var(--border); border-radius:3px; overflow:hidden; }
+.progress-bar .fill { height:100%; background:var(--ok); transition:width .3s; border-radius:3px; }
+#btnUpload { background:var(--ok); color:#fff; border-color:var(--ok); font-weight:700; font-size:14px; padding:8px 20px; }
+#btnUpload:hover:not(:disabled) { background:#268a4d; }
+#btnUpload:disabled { opacity:.5; }
+#btnBackToClaim { font-size:12px; }
+#uploadStatus { font-size:12px; color:var(--muted); }
+#uploadStatus.syncing { color:var(--warn); }
+#uploadStatus.synced { color:var(--ok); }
+#uploadStatus.error { color:var(--bad); }
 
 /* 图片对 */
 #pair-area {
@@ -76,34 +119,40 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
 }
 .cell-wrap { position:relative; }
 .cell {
-  border:1px solid var(--border); border-radius:6px; overflow:hidden;
-  background:#0d1117; display:flex; align-items:center; justify-content:center;
-  position:relative; min-height:200px;
+  position:relative; width:100%; height:320px; background:#111;
+  border-radius:8px; overflow:hidden; display:flex; align-items:center; justify-content:center;
 }
-.cell img { max-width:100%; max-height:46vh; object-fit:contain; display:block; }
+.cell img { max-width:100%; max-height:100%; object-fit:contain; }
 .cell .label {
-  position:absolute; top:6px; left:6px; padding:2px 8px; font-size:12px;
-  background:rgba(0,0,0,.6); color:#fff; border-radius:4px; z-index:5;
+  position:absolute; top:6px; left:8px; font-size:11px; font-weight:700;
+  color:#fff; background:rgba(0,0,0,.55); padding:2px 8px; border-radius:4px;
 }
-.cell.b-cell { user-select:none; -webkit-user-select:none; }
-.cell.b-cell img { pointer-events:none; }
-.cell.b-cell svg { position:absolute; top:0; left:0; width:100%; height:100%; cursor:crosshair; }
-.cell.b-cell, .cell.b-cell * { -webkit-user-drag:none; }
+.b-cell svg { position:absolute; inset:0; width:100%; height:100%; }
 .img-tip {
-  position:absolute; bottom:6px; left:6px; padding:2px 8px; font-size:11px;
-  background:rgba(0,0,0,.5); color:#fff; border-radius:4px; z-index:5;
+  position:absolute; bottom:6px; right:8px; font-size:10px; color:rgba(255,255,255,.6);
 }
 
-/* ===== 标注行列表 ===== */
-#anno-panel {
-  flex:1 1 auto; overflow-y:auto; padding:12px 16px;
+/* 整体不一致描述 */
+#note-bar {
+  flex:0 0 auto; background:var(--panel); border-bottom:1px solid var(--border);
+  padding:10px 16px 12px;
 }
+#note-bar .note-label { display:block; font-size:12px; font-weight:700; margin-bottom:6px; }
+#note-bar .note-label::before {
+  content:""; display:inline-block; width:4px; height:12px;
+  background:var(--accent); border-radius:2px; margin-right:6px; vertical-align:-1px;
+}
+#globalNote {
+  width:100%; padding:8px 12px; border:1px solid var(--border); border-radius:6px;
+  font-size:13px; font-family:inherit; resize:vertical; min-height:40px;
+}
+#globalNote:focus { outline:none; border-color:var(--accent); box-shadow:0 0 0 2px var(--accent-weak); }
+
+/* 标注行列表 */
+#anno-panel { flex:1 1 auto; overflow-y:auto; padding:12px 16px; }
 #anno-panel::-webkit-scrollbar { width:10px; }
 #anno-panel::-webkit-scrollbar-thumb { background:#cfd3da; border-radius:5px; }
-
-.anno-empty {
-  text-align:center; color:var(--muted); padding:40px 0; font-size:14px;
-}
+.anno-empty { text-align:center; color:var(--muted); padding:40px 0; font-size:14px; }
 .anno-row {
   display:flex; align-items:center; gap:8px; padding:8px 10px; margin-bottom:8px;
   background:var(--panel); border:1px solid var(--border); border-radius:8px;
@@ -141,21 +190,49 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
 }
 .anno-row .del-btn:hover { background:var(--bad-weak); border-color:var(--bad); }
 
-/* ===== 底部全局描述 + 操作 ===== */
+/* 审核面板 */
+#review-panel {
+  flex:0 0 auto; margin:0 16px 12px; padding:12px 14px;
+  background:linear-gradient(180deg, #fffdf5 0%, #fff 100%);
+  border:1px solid #ead9a8; border-left:4px solid var(--warn);
+  border-radius:8px; box-shadow:var(--shadow);
+}
+#review-panel .review-head { display:flex; align-items:center; gap:10px; margin-bottom:10px; }
+#review-panel .review-title { font-size:14px; font-weight:700; color:#8a6d1a; }
+#review-panel .review-by { font-size:12px; color:var(--muted); }
+#review-panel .verdict-row { display:flex; gap:10px; margin-bottom:10px; }
+#review-panel .verdict {
+  flex:1; padding:10px 0; font-size:15px; font-weight:700;
+  border-radius:8px; border:2px solid var(--border); background:#fff; transition:all .15s;
+}
+#review-panel .verdict.correct { color:var(--ok); }
+#review-panel .verdict.correct:hover { border-color:var(--ok); background:var(--ok-weak); }
+#review-panel .verdict.correct.active { background:var(--ok); border-color:var(--ok); color:#fff; }
+#review-panel .verdict.wrong { color:var(--bad); }
+#review-panel .verdict.wrong:hover { border-color:var(--bad); background:var(--bad-weak); }
+#review-panel .verdict.wrong.active { background:var(--bad); border-color:var(--bad); color:#fff; }
+#reviewReason {
+  width:100%; padding:8px 12px; border:1px solid var(--border); border-radius:6px;
+  font-size:13px; font-family:inherit; resize:vertical; min-height:40px;
+}
+#reviewReason:focus { outline:none; border-color:var(--warn); box-shadow:0 0 0 2px var(--warn-weak); }
+#reviewReason.invalid { border-color:var(--bad); box-shadow:0 0 0 2px var(--bad-weak); }
+
+/* 底部导航 */
 #bottom-bar {
   flex:0 0 auto; background:var(--panel); border-top:1px solid var(--border);
   padding:10px 16px; box-shadow:0 -1px 3px rgba(0,0,0,.04);
+  display:flex; align-items:center; gap:10px;
 }
-#global-note {
-  width:100%; padding:8px 12px; border:1px solid var(--border); border-radius:6px;
-  font-size:13px; font-family:inherit; resize:vertical; min-height:40px; margin-bottom:10px;
+#bottom-bar .spacer { flex:1; }
+#navInfo { font-size:12px; color:var(--muted); }
+#navDots { display:flex; gap:3px; flex-wrap:wrap; max-width:300px; }
+#navDots .dot {
+  width:10px; height:10px; border-radius:2px; background:var(--border); cursor:pointer;
+  transition:background .15s;
 }
-#global-note:focus { outline:none; border-color:var(--accent); }
-#bottom-actions { display:flex; align-items:center; gap:10px; }
-#bottom-actions .spacer { flex:1 1 auto; }
-#statusMsg { font-size:12px; color:var(--muted); }
-#statusMsg.error { color:var(--bad); }
-#statusMsg.success { color:var(--ok); }
+#navDots .dot.done { background:var(--ok); }
+#navDots .dot.current { background:var(--accent); box-shadow:0 0 0 2px var(--accent-weak); }
 
 /* ===== Toast ===== */
 #toast {
@@ -176,10 +253,11 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
 #loading-overlay.hidden { display:none; }
 #loading-overlay .spinner {
   width:40px; height:40px; border:4px solid var(--border);
-  border-top-color:var(--accent); border-radius:50%; animation:spin 0.8s linear infinite;
+  border-top-color:var(--accent); border-radius:50%;
+  animation:spin 0.8s linear infinite;
 }
 @keyframes spin { to { transform:rotate(360deg); } }
-#loading-overlay .loading-text { color:var(--muted); font-size:14px; text-align:center; line-height:1.6; }
+#loading-overlay .loading-text { color:var(--muted); font-size:14px; }
 
 /* ===== 登录模态框 ===== */
 #modal-login-overlay {
@@ -191,70 +269,112 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
   background:#fff; border-radius:12px; padding:32px; width:440px; max-width:90vw;
   text-align:center; box-shadow:0 8px 32px rgba(0,0,0,0.2);
 }
-#modal-login h3 { margin:0 0 8px; font-size:18px; color:#24292f; }
+#modal-login h3 { margin:0 0 8px; font-size:18px; }
 #modal-login .login-sub { color:var(--muted); font-size:13px; margin-bottom:20px; }
 #modal-login .login-error { color:var(--bad); font-size:13px; margin-top:12px; display:none; }
 #modal-login .login-cancel { margin-top:16px; font-size:13px; color:var(--muted); cursor:pointer; text-decoration:underline; }
-#patInput:focus { outline:none; border-color:var(--accent); }
+#patInput:focus, #annotatorNameInput:focus { outline:none; border-color:var(--accent); }
 
 /* ===== 3D 球体编辑器模态框 ===== */
 #modal-3d-overlay {
-  position:fixed; inset:0; background:rgba(0,0,0,0.6); z-index:9000;
+  position:fixed; top:0; left:0; width:100%; height:100%;
+  background:rgba(0,0,0,0.6); z-index:9000;
   display:none; align-items:center; justify-content:center;
 }
 #modal-3d-overlay.show { display:flex; }
-#modal-3d { background:#0a0a18; border:1px solid #555; border-radius:12px; padding:16px; width:680px; max-width:95vw; }
-#modal-3d h3 { color:#7ec8e3; margin:0 0 8px; font-size:16px; text-align:center; }
-#modal-3d .modal-body { display:flex; gap:12px; align-items:flex-start; }
-#modal-3d canvas { display:block; border-radius:8px; background:#0a0a18; }
-#modal-3d .preview-wrap { flex:0 0 240px; }
-#modal-3d .preview-wrap canvas { width:240px; height:240px; border:1px solid #444; border-radius:8px; }
-#modal-3d .preview-label { text-align:center; color:#999; font-size:11px; margin-top:4px; }
-#modal-3d .modal-info { text-align:center; margin:8px 0; padding:6px; border-radius:6px; font-size:13px; font-weight:bold; transition:all 0.15s; }
-#modal-3d .modal-tip { text-align:center; color:#999; font-size:11px; margin:6px 0; }
-#modal-3d .modal-btns { display:flex; gap:8px; justify-content:center; margin-top:10px; }
-#modal-3d .modal-btns button { padding:8px 20px; border-radius:6px; border:2px solid #555; background:rgba(30,30,50,0.8); color:#ddd; font-size:14px; font-weight:bold; cursor:pointer; }
-#modal-3d .modal-btns button:hover { border-color:#888; color:#fff; }
-#modal-3d .modal-btns .btn-ok { border-color:#4af; color:#fff; background:rgba(40,80,140,0.6); }
-#modal-3d .legend3d { font-size:11px; color:#888; line-height:1.6; margin-top:8px; padding-top:8px; border-top:1px solid #333; }
+#modal-3d {
+  background:#0a0a18; border:1px solid #555; border-radius:12px;
+  padding:16px; width:680px; max-width:95vw;
+}
+#modal-3d h3 { color:#fff; margin:0 0 12px; font-size:16px; }
+#modal-3d .modal-body { display:flex; gap:16px; }
+#modal-3d canvas { border-radius:8px; background:#111; }
+#modal-3d .preview-label { color:#888; font-size:11px; text-align:center; margin-top:4px; }
+#modal-3d .modal-info { color:#aaa; font-size:12px; margin-top:10px; }
+#modal-3d .modal-actions { display:flex; gap:10px; margin-top:14px; justify-content:flex-end; }
+#modal-3d .modal-actions button { border-radius:6px; padding:8px 20px; }
+#modal-3d .btn-ok { background:var(--ok); color:#fff; border-color:var(--ok); }
 </style>
 <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
 <script src="config.js"></script>
 <script src="github-auth.js"></script>
-<script src="github-storage.js"></script>
 <script src="github-dispatch.js"></script>
 </head>
 <body>
 
-<header id="topbar">
-  <div class="left">
-    <span id="taskInfo">空间一致性标注 <span class="muted">·</span> <span class="line-no" id="lineInfo">--</span></span>
-    <span class="tb-sep"></span>
-    <label class="dataset-picker" title="切换数据集">
-      数据集
-      <select id="datasetSelect"></select>
-    </label>
-    <span class="tb-sep"></span>
-    <span id="progressInfo">
-      已标 <b id="statDone">0</b>
-      <span class="muted">·</span> 锁定 <b id="statLocked">0</b>
-      <span class="muted">·</span> 共 <b id="statTotal">0</b>
-      <span class="muted">·</span> 本次 <b id="statDispatched">0</b>
-    </span>
-  </div>
-  <div class="right">
-    <span id="statusMsg"></span>
-    <span class="tb-sep"></span>
-    <div id="user-area" class="hidden">
-      <img class="avatar" id="userAvatar" src="" alt="" />
-      <span class="username" id="userName"></span>
-      <button id="btnLogout" class="danger">退出</button>
-    </div>
-    <button id="btnLogin">🔑 GitHub 登录</button>
-  </div>
-</header>
+<!-- ===== 第一阶段：领取任务 ===== -->
+<div id="phase-claim">
+  <div class="claim-card">
+    <h2>📋 领取标注任务</h2>
+    <div class="subtitle">选择角色和数据集，输入数量，批量领取到本地标注</div>
 
-<main id="workspace">
+    <div class="claim-section">
+      <label>你的角色</label>
+      <div class="role-picker">
+        <label class="role-card">
+          <input type="radio" name="roleRadio" value="annotator" checked />
+          <div class="role-card-body">
+            <span class="role-emoji">✍️</span>
+            <span class="role-name">标注者</span>
+            <span class="role-desc">领取未标注数据，画框填动作</span>
+          </div>
+        </label>
+        <label class="role-card">
+          <input type="radio" name="roleRadio" value="reviewer" />
+          <div class="role-card-body">
+            <span class="role-emoji">⚖️</span>
+            <span class="role-name">审核者</span>
+            <span class="role-desc">领取已标注数据，判定正确/错误</span>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <div class="claim-section">
+      <label>数据集</label>
+      <select id="datasetSelect"></select>
+    </div>
+
+    <div class="claim-section">
+      <label>池子状态</label>
+      <div class="pool-stats" id="poolStats">
+        <div class="pool-stat"><div class="num" id="statTotal">-</div><div class="lbl">总数</div></div>
+        <div class="pool-stat done"><div class="num" id="statDone">-</div><div class="lbl">已完成</div></div>
+        <div class="pool-stat locked"><div class="num" id="statLocked">-</div><div class="lbl">锁定中</div></div>
+        <div class="pool-stat"><div class="num" id="statAvail">-</div><div class="lbl">可领取</div></div>
+      </div>
+    </div>
+
+    <div class="claim-section">
+      <label>领取数量</label>
+      <input type="number" id="claimCount" min="1" max="200" value="10" placeholder="输入要领取的数量" />
+    </div>
+
+    <div class="claim-actions">
+      <button id="btnRefreshStats" class="ghost">🔄 刷新统计</button>
+      <button id="btnClaim" class="primary">📥 领取任务</button>
+    </div>
+    <div class="claim-msg" id="claimMsg"></div>
+  </div>
+</div>
+
+<!-- ===== 第二阶段：标注工作区 ===== -->
+<div id="phase-work">
+  <div id="work-topbar">
+    <div class="left">
+      <button id="btnBackToClaim" class="ghost">← 返回</button>
+      <span class="batch-progress">
+        <span class="cur" id="batchCur">0</span> / <span id="batchTotal">0</span> 已完成
+      </span>
+      <div class="progress-bar"><div class="fill" id="progressFill" style="width:0%"></div></div>
+      <span id="navInfo"></span>
+    </div>
+    <div class="right">
+      <span id="uploadStatus"></span>
+      <button id="btnUpload">☁ 上传到仓库</button>
+    </div>
+  </div>
+
   <!-- 图片对 -->
   <div id="pair-area">
     <div class="cell-wrap">
@@ -273,28 +393,43 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
     </div>
   </div>
 
+  <!-- 整体不一致描述 -->
+  <div id="note-bar">
+    <label class="note-label" for="globalNote">整体不一致描述</label>
+    <textarea id="globalNote" placeholder="描述两张图之间的整体不一致"></textarea>
+  </div>
+
   <!-- 标注行列表 -->
   <div id="anno-panel">
     <div class="anno-empty" id="annoEmpty">在右侧 B 图上拖拽画框，开始标注</div>
   </div>
 
-  <!-- 底部全局描述 + 操作 -->
-  <div id="bottom-bar">
-    <textarea id="globalNote" placeholder="整体不一致描述（可选）：例如「整体背景色调不一致」「人物站位整体偏移」"></textarea>
-    <div id="bottom-actions">
-      <button id="btnUndo" class="ghost" title="撤销 (Ctrl+Z)">↶ 撤销</button>
-      <button id="btnClear" class="danger" title="清空本图所有框">✕ 清空</button>
-      <span class="spacer"></span>
-      <button id="btnSkip" class="ghost">⏭ 跳过（不保存）</button>
-      <button id="btnNext" class="success">✓ 保存并下一个 →</button>
+  <!-- 审核面板 -->
+  <div id="review-panel" class="hidden">
+    <div class="review-head">
+      <span class="review-title">⚖ 审核判定</span>
+      <span class="review-by" id="reviewBy"></span>
     </div>
+    <div class="verdict-row">
+      <button id="btnVerdictCorrect" class="verdict correct">✓ 正确</button>
+      <button id="btnVerdictWrong" class="verdict wrong">✗ 错误</button>
+    </div>
+    <textarea id="reviewReason" placeholder="判定为错误时，请填写原因"></textarea>
   </div>
-</main>
+
+  <!-- 底部导航 -->
+  <div id="bottom-bar">
+    <button id="btnPrev" class="ghost">← 上一条</button>
+    <button id="btnNextItem" class="primary">下一条 →</button>
+    <span class="spacer"></span>
+    <div id="navDots"></div>
+  </div>
+</div>
 
 <div id="toast"></div>
 
 <!-- 加载遮罩 -->
-<div id="loading-overlay">
+<div id="loading-overlay" class="hidden">
   <div class="spinner"></div>
   <div class="loading-text" id="loadingText">正在加载...</div>
 </div>
@@ -309,17 +444,13 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
       <input type="password" id="patInput" placeholder="ghp_xxxx 或 github_pat_xxxx"
              style="width:100%;padding:10px 12px;border:1.5px solid var(--border);border-radius:6px;font-size:14px;font-family:monospace;box-sizing:border-box;" />
       <div style="font-size:12px;color:var(--muted);margin-top:8px;line-height:1.6;">
-        需要 <b>Contents (Read and Write)</b> 权限。<br/>
-        创建方式：GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens
+        需要 <b>Contents (Read and Write)</b> 权限（Classic PAT 勾 repo）
       </div>
     </div>
     <div style="text-align:left;margin:16px 0;">
       <label style="font-size:13px;font-weight:600;display:block;margin-bottom:6px;">你的名字（标注标识）</label>
       <input type="text" id="annotatorNameInput" placeholder="例如：张三、李四、annotator_01"
              style="width:100%;padding:10px 12px;border:1.5px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;" />
-      <div style="font-size:12px;color:var(--muted);margin-top:6px;">
-        此名字将作为标注记录的标识，用于区分不同标注员的结果
-      </div>
     </div>
     <button id="btnStartLogin" class="primary" style="font-size:15px;padding:10px 32px;width:100%;">验证并登录</button>
     <div class="login-error" id="loginError"></div>
@@ -336,19 +467,13 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
         <canvas id="canvas-3d" width="400" height="400"></canvas>
         <div class="preview-label">3D 球体（拖拽旋转）</div>
       </div>
-      <div class="preview-wrap">
+      <div>
         <canvas id="canvas-preview" width="240" height="240"></canvas>
         <div class="preview-label">框选区域原图</div>
       </div>
     </div>
     <div class="modal-info" id="modal-3d-info">朝向: 计算中...</div>
-    <div class="modal-tip">左键拖拽 = 旋转球体 | 滚轮 = 缩放 | 右侧为框选区域原图</div>
-    <div class="legend3d">
-      <span style="color:#ff6666">●</span> 亮红/粗 = 箭头朝你(出屏) &nbsp;
-      <span style="color:#6666aa">●</span> 暗蓝/细 = 箭头远离你(入屏)<br>
-      <span style="color:#ffaa00">◆</span> 黄色菱形 = 箭头在球面切平面上
-    </div>
-    <div class="modal-btns">
+    <div class="modal-actions">
       <button id="modal-3d-cancel">取消</button>
       <button id="modal-3d-ok" class="btn-ok">确定</button>
     </div>
@@ -378,29 +503,32 @@ const ACTION_LABELS = {
 };
 
 // ===== 状态 =====
-const STATE = {
-  samples: [],          // 全部样本 [{line, remotes, locals}]
-  sampleByLine: {},     // { line: sample }
-  current: null,        // 当前样本 {line, remotes, locals}
-  boxes: [],            // 当前图的框 [{boxId, x, y, w, h, action, target, dir3d, text}]
-  nextBoxId: 1,
-  undoStack: [],        // 撤销栈（保存 boxes 快照）
-  editingBoxId: null,   // 正在编辑位置的框 id
-  globalNote: "",
-  imgNatW: 0,           // B 图自然宽
-  imgNatH: 0,           // B 图自然高
-  dispatchedCount: 0,   // 本次会话已标注数
-  totalDone: 0,         // 全局已完成数
-  totalSamples: 0,      // 总样本数
-};
-
-// DOM 引用
 const $ = (id) => document.getElementById(id);
 const svgB = $("svgB");
 const cellB = $("cellB");
 const imgB = $("imgB");
 const imgA = $("imgA");
 const annoPanel = $("anno-panel");
+
+const STATE = {
+  role: "annotator",
+  samples: [],          // 当前数据集全部样本
+  sampleByLine: {},
+  // 批量任务
+  batch: [],            // 领取的样本列表 [{line, remotes, locals}]
+  batchIdx: 0,          // 当前正在标注的索引
+  batchResults: {},     // { line: {boxes, note, verdict, reason} } 本地暂存
+  batchDone: new Set(), // 已完成的行号
+  imgNatW: 0, imgNatH: 0,
+  // 当前图的框
+  boxes: [],
+  nextBoxId: 1,
+  undoStack: [],
+  editingBoxId: null,
+  // 审核
+  reviewVerdict: null,
+  reviewAnnotator: "",
+};
 
 // ===== 工具函数 =====
 function showToast(msg, type) {
@@ -415,11 +543,8 @@ function showLoading(text) {
   $("loading-overlay").classList.remove("hidden");
 }
 function hideLoading() { $("loading-overlay").classList.add("hidden"); }
-function setStatus(msg, type) {
-  const el = $("statusMsg");
-  el.textContent = msg || "";
-  el.className = type || "";
-}
+
+function isReviewer() { return STATE.role === "reviewer"; }
 
 function getBoxColor(boxId, action) {
   const shades = ACTION_COLORS[action] || ACTION_COLORS.neutral;
@@ -443,7 +568,6 @@ function undo() {
   renderAll();
 }
 
-// 图片坐标 → SVG 坐标（B 图用 object-fit:contain 居中）
 function imgToSvg(ix, iy) {
   const cw = cellB.clientWidth, ch = cellB.clientHeight;
   const nw = STATE.imgNatW, nh = STATE.imgNatH;
@@ -453,7 +577,6 @@ function imgToSvg(ix, iy) {
   const ox = (cw - dw) / 2, oy = (ch - dh) / 2;
   return { x: ox + ix * scale, y: oy + iy * scale };
 }
-// SVG 坐标 → 图片坐标
 function svgToImg(sx, sy) {
   const cw = cellB.clientWidth, ch = cellB.clientHeight;
   const nw = STATE.imgNatW, nh = STATE.imgNatH;
@@ -465,13 +588,35 @@ function svgToImg(sx, sy) {
 }
 function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
 
-// ===== 渲染 =====
-function renderAll() {
-  renderSvg();
-  renderAnnoRows();
+// ===== localStorage 暂存 =====
+const LS_KEY = "annotate_batch_local";
+function saveLocal() {
+  try {
+    const data = { batch: STATE.batch, batchIdx: STATE.batchIdx, batchResults: STATE.batchResults, batchDone: [...STATE.batchDone], role: STATE.role };
+    localStorage.setItem(LS_KEY, JSON.stringify(data));
+  } catch (e) {}
+}
+function loadLocal() {
+  try {
+    const raw = localStorage.getItem(LS_KEY);
+    if (!raw) return false;
+    const data = JSON.parse(raw);
+    if (!data.batch || !data.batch.length) return false;
+    STATE.batch = data.batch;
+    STATE.batchIdx = data.batchIdx || 0;
+    STATE.batchResults = data.batchResults || {};
+    STATE.batchDone = new Set(data.batchDone || []);
+    STATE.role = data.role || "annotator";
+    return true;
+  } catch (e) { return false; }
+}
+function clearLocal() {
+  try { localStorage.removeItem(LS_KEY); } catch (e) {}
 }
 
-// 渲染 B 图上的 SVG 框
+// ===== 渲染 =====
+function renderAll() { renderSvg(); renderAnnoRows(); }
+
 function renderSvg() {
   while (svgB.firstChild) svgB.removeChild(svgB.firstChild);
   const defs = document.createElementNS(SVG_NS, "defs");
@@ -490,7 +635,6 @@ function renderSvg() {
     g.setAttribute("data-boxid", b.boxId);
     g.style.cursor = isEditing ? "move" : "default";
 
-    // 框体
     const rect = document.createElementNS(SVG_NS, "rect");
     rect.setAttribute("x", sx); rect.setAttribute("y", sy);
     rect.setAttribute("width", Math.max(0, sw)); rect.setAttribute("height", Math.max(0, sh));
@@ -500,7 +644,6 @@ function renderSvg() {
     if (isEditing) rect.setAttribute("stroke-dasharray", "6 3");
     g.appendChild(rect);
 
-    // 动作箭头/文字标签
     if (act === "move" && b.target) {
       const t = imgToSvg(b.target.x, b.target.y);
       const cx = sx + sw / 2, cy = sy + sh / 2;
@@ -534,146 +677,109 @@ function renderSvg() {
       g.appendChild(txt);
     }
 
-    // 序号标签
-    const idxLabel = document.createElementNS(SVG_NS, "text");
-    idxLabel.setAttribute("x", sx + 2); idxLabel.setAttribute("y", sy + 13);
-    idxLabel.setAttribute("fill", color); idxLabel.setAttribute("font-size", "11");
-    idxLabel.setAttribute("font-weight", "bold");
-    idxLabel.textContent = "#" + (STATE.boxes.indexOf(b) + 1);
-    g.appendChild(idxLabel);
+    // 序号
+    const numTxt = document.createElementNS(SVG_NS, "text");
+    numTxt.setAttribute("x", sx + 2); numTxt.setAttribute("y", sy - 4);
+    numTxt.setAttribute("fill", color); numTxt.setAttribute("font-size", "10");
+    numTxt.setAttribute("font-weight", "bold");
+    numTxt.textContent = "#" + (STATE.boxes.indexOf(b) + 1);
+    g.appendChild(numTxt);
 
-    // 编辑模式：8 个缩放手柄 + 移动
+    // 编辑手柄
     if (isEditing) {
-      const handles = [
-        ["nw", sx, sy], ["n", sx + sw / 2, sy], ["ne", sx + sw, sy],
-        ["w", sx, sy + sh / 2], ["e", sx + sw, sy + sh / 2],
-        ["sw", sx, sy + sh], ["s", sx + sw / 2, sy + sh], ["se", sx + sw, sy + sh],
-      ];
-      const cursorMap = { nw:"nwse-resize", se:"nwse-resize", ne:"nesw-resize", sw:"nesw-resize",
-        n:"ns-resize", s:"ns-resize", e:"ew-resize", w:"ew-resize" };
-      handles.forEach(([dir, hx, hy]) => {
-        const h = document.createElementNS(SVG_NS, "rect");
-        h.setAttribute("x", hx - 4); h.setAttribute("y", hy - 4);
-        h.setAttribute("width", 8); h.setAttribute("height", 8);
-        h.setAttribute("fill", "#fff"); h.setAttribute("stroke", color); h.setAttribute("stroke-width", 1.5);
-        h.setAttribute("data-handle", dir);
-        h.style.cursor = cursorMap[dir];
-        g.appendChild(h);
+      const handles = ["nw","n","ne","e","se","s","sw","w"];
+      const pos = { nw:[sx,sy], n:[sx+sw/2,sy], ne:[sx+sw,sy], e:[sx+sw,sy+sh/2],
+                    se:[sx+sw,sy+sh], s:[sx+sw/2,sy+sh], sw:[sx,sy+sh], w:[sx,sy+sh/2] };
+      handles.forEach((h) => {
+        const c = document.createElementNS(SVG_NS, "circle");
+        c.setAttribute("cx", pos[h][0]); c.setAttribute("cy", pos[h][1]);
+        c.setAttribute("r", 5); c.setAttribute("fill", "#fff");
+        c.setAttribute("stroke", color); c.setAttribute("stroke-width", 2);
+        c.setAttribute("data-handle", h); c.style.cursor = h + "-resize";
+        g.appendChild(c);
       });
     }
     svgB.appendChild(g);
   });
 }
 
-// 渲染标注行列表
 function renderAnnoRows() {
-  // 保留 empty 提示，重建行
   annoPanel.querySelectorAll(".anno-row").forEach((n) => n.remove());
   const empty = $("annoEmpty");
-  if (!STATE.boxes.length) {
-    empty.style.display = "";
-    return;
-  }
+  if (!STATE.boxes.length) { empty.style.display = ""; return; }
   empty.style.display = "none";
+  const readonly = isReviewer();
 
   STATE.boxes.forEach((b, i) => {
     const act = b.action || "neutral";
     const color = getBoxColor(b.boxId, act);
     const row = document.createElement("div");
     row.className = "anno-row" + (STATE.editingBoxId === b.boxId ? " editing" : "");
-    row.setAttribute("data-boxid", b.boxId);
 
-    // 颜色点
     const dot = document.createElement("span");
-    dot.className = "color-dot";
-    dot.style.background = color;
+    dot.className = "color-dot"; dot.style.background = color;
     row.appendChild(dot);
 
-    // 编辑按钮（最左侧）
-    const editBtn = document.createElement("button");
-    editBtn.className = "edit-btn" + (STATE.editingBoxId === b.boxId ? " active" : "");
-    editBtn.textContent = "✎";
-    editBtn.title = "编辑框位置/大小";
-    editBtn.onclick = () => toggleEdit(b.boxId);
-    row.appendChild(editBtn);
+    if (!readonly) {
+      const editBtn = document.createElement("button");
+      editBtn.className = "edit-btn" + (STATE.editingBoxId === b.boxId ? " active" : "");
+      editBtn.textContent = "✎"; editBtn.title = "编辑框位置/大小";
+      editBtn.onclick = () => { STATE.editingBoxId = STATE.editingBoxId === b.boxId ? null : b.boxId; renderAll(); };
+      row.appendChild(editBtn);
+    }
 
-    // 坐标
     const coord = document.createElement("span");
     coord.className = "coord";
-    coord.textContent = `#${i + 1}  x:${Math.round(b.x)} y:${Math.round(b.y)} ${Math.round(b.w)}×${Math.round(b.h)}`;
+    coord.textContent = `#${i+1} x:${Math.round(b.x)} y:${Math.round(b.y)} ${Math.round(b.w)}×${Math.round(b.h)}`;
     row.appendChild(coord);
 
-    // 动作下拉
     const sel = document.createElement("select");
     sel.className = "action-select";
-    ["neutral", "add", "delete", "replace", "move", "move3d", "cw", "ccw", "custom"].forEach((k) => {
+    ["neutral","add","delete","replace","move","move3d","cw","ccw","custom"].forEach((k) => {
       const opt = document.createElement("option");
       opt.value = k; opt.textContent = ACTION_LABELS[k];
       if (k === act) opt.selected = true;
       sel.appendChild(opt);
     });
-    sel.onchange = () => onActionChange(b.boxId, sel.value);
+    if (readonly) { sel.disabled = true; sel.style.opacity = "0.75"; }
+    else { sel.onchange = () => onActionChange(b.boxId, sel.value); }
     row.appendChild(sel);
 
-    // 3D 方向标签（move3d 时显示）
     if (act === "move3d" && b.dir3d) {
       const tag = document.createElement("span");
-      tag.className = "dir3d-tag";
-      tag.textContent = "方向: " + b.dir3d;
+      tag.className = "dir3d-tag"; tag.textContent = "方向: " + b.dir3d;
       row.appendChild(tag);
     }
-
-    // 动作输入框（move 显示目标提示 / custom 显示文字输入）
     if (act === "custom") {
       const inp = document.createElement("input");
-      inp.className = "action-input";
-      inp.type = "text";
-      inp.placeholder = "输入自定义描述...";
+      inp.className = "action-input"; inp.type = "text";
+      inp.placeholder = readonly ? "" : "输入自定义描述...";
       inp.value = b.text || "";
-      inp.oninput = () => { b.text = inp.value; renderSvg(); };
+      if (readonly) { inp.readOnly = true; inp.style.cssText = "border:none;background:transparent;color:var(--muted);"; }
+      else { inp.oninput = () => { b.text = inp.value; renderSvg(); }; }
       row.appendChild(inp);
     } else if (act === "move") {
       const hint = document.createElement("span");
       hint.className = "action-input";
       hint.style.cssText = "border:none;color:var(--muted);font-size:12px;";
-      hint.textContent = b.target ? `目标: (${Math.round(b.target.x)},${Math.round(b.target.y)})` : "请在图上画箭头指向目标位置";
-      row.appendChild(hint);
-    } else if (act === "move3d") {
-      const hint = document.createElement("button");
-      hint.className = "ghost";
-      hint.style.cssText = "flex:0 0 auto;font-size:12px;";
-      hint.textContent = b.dir3d ? "重新选方向" : "选择3D方向";
-      hint.onclick = () => openModal3D(b.boxId);
+      hint.textContent = b.target ? `目标: (${Math.round(b.target.x)},${Math.round(b.target.y)})` : "请在图上点击设定目标";
       row.appendChild(hint);
     } else {
       const spacer = document.createElement("span");
-      spacer.className = "action-input";
-      spacer.style.cssText = "border:none;";
+      spacer.className = "action-input"; spacer.style.border = "none";
       row.appendChild(spacer);
     }
 
-    // 删除按钮
-    const delBtn = document.createElement("button");
-    delBtn.className = "del-btn";
-    delBtn.textContent = "✕";
-    delBtn.title = "删除此框";
-    delBtn.onclick = () => deleteBox(b.boxId);
-    row.appendChild(delBtn);
-
+    if (!readonly) {
+      const delBtn = document.createElement("button");
+      delBtn.className = "del-btn"; delBtn.textContent = "✕"; delBtn.title = "删除此框";
+      delBtn.onclick = () => { pushUndo(); STATE.boxes = STATE.boxes.filter((x) => x.boxId !== b.boxId); if (STATE.editingBoxId === b.boxId) STATE.editingBoxId = null; renderAll(); };
+      row.appendChild(delBtn);
+    }
     annoPanel.appendChild(row);
   });
 }
 
-function toggleEdit(boxId) {
-  STATE.editingBoxId = STATE.editingBoxId === boxId ? null : boxId;
-  renderAll();
-}
-function deleteBox(boxId) {
-  pushUndo();
-  STATE.boxes = STATE.boxes.filter((b) => b.boxId !== boxId);
-  if (STATE.editingBoxId === boxId) STATE.editingBoxId = null;
-  renderAll();
-}
 function onActionChange(boxId, action) {
   pushUndo();
   const b = STATE.boxes.find((x) => x.boxId === boxId);
@@ -682,57 +788,32 @@ function onActionChange(boxId, action) {
   if (action !== "move") delete b.target;
   if (action !== "move3d") delete b.dir3d;
   if (action !== "custom") delete b.text;
-  if (action === "move3d" && !b.dir3d) {
-    renderAll();
-    openModal3D(boxId);
-    return;
-  }
+  if (action === "move3d" && !b.dir3d) { renderAll(); openModal3D(boxId); return; }
   renderAll();
 }
 
-// ===== 手势：画框 / 编辑框 / 画箭头 =====
-let gesture = null; // {mode, ...}
-
-function svgPoint(e) {
-  const r = svgB.getBoundingClientRect();
-  return { x: e.clientX - r.left, y: e.clientY - r.top };
-}
+// ===== 手势 =====
+let gesture = null;
+function svgPoint(e) { const r = svgB.getBoundingClientRect(); return { x: e.clientX - r.left, y: e.clientY - r.top }; }
 
 svgB.addEventListener("mousedown", (e) => {
-  if (e.button !== 0) return;
+  if (e.button !== 0 || isReviewer()) return;
   const p = svgPoint(e);
-
-  // 编辑模式：缩放手柄 / 移动框
   if (STATE.editingBoxId != null) {
     const b = STATE.boxes.find((x) => x.boxId === STATE.editingBoxId);
     if (!b) return;
     const handleEl = e.target.getAttribute && e.target.getAttribute("data-handle");
-    if (handleEl) {
-      pushUndo();
-      gesture = { mode: "resize", boxId: b.boxId, handle: handleEl, start: p, orig: { ...b } };
-      e.preventDefault();
-      return;
-    }
-    // 点在框内 → 移动
-    const tl = imgToSvg(b.x, b.y), br = imgToSvg(b.x + b.w, b.y + b.h);
-    if (p.x >= tl.x && p.x <= br.x && p.y >= tl.y && p.y <= br.y) {
-      pushUndo();
-      gesture = { mode: "moveBox", boxId: b.boxId, start: p, orig: { ...b } };
-      e.preventDefault();
-      return;
-    }
-    return; // 编辑模式下点框外不画新框
+    if (handleEl) { pushUndo(); gesture = { mode:"resize", boxId:b.boxId, handle:handleEl, start:p, orig:{...b} }; e.preventDefault(); return; }
+    const tl = imgToSvg(b.x, b.y), br = imgToSvg(b.x+b.w, b.y+b.h);
+    if (p.x >= tl.x && p.x <= br.x && p.y >= tl.y && p.y <= br.y) { pushUndo(); gesture = { mode:"moveBox", boxId:b.boxId, start:p, orig:{...b} }; e.preventDefault(); return; }
+    return;
   }
-
-  // 普通模式：画新框
   pushUndo();
   const img = svgToImg(p.x, p.y);
   const boxId = STATE.nextBoxId++;
-  const newBox = { boxId, x: img.x, y: img.y, w: 0, h: 0, action: "neutral" };
-  STATE.boxes.push(newBox);
-  gesture = { mode: "draw", boxId, startImg: img };
-  renderAll();
-  e.preventDefault();
+  STATE.boxes.push({ boxId, x:img.x, y:img.y, w:0, h:0, action:"neutral" });
+  gesture = { mode:"draw", boxId, startImg:img };
+  renderAll(); e.preventDefault();
 });
 
 window.addEventListener("mousemove", (e) => {
@@ -740,698 +821,501 @@ window.addEventListener("mousemove", (e) => {
   const p = svgPoint(e);
   const b = STATE.boxes.find((x) => x.boxId === gesture.boxId);
   if (!b) return;
-
   if (gesture.mode === "draw") {
     const img = svgToImg(p.x, p.y);
-    b.x = Math.min(gesture.startImg.x, img.x);
-    b.y = Math.min(gesture.startImg.y, img.y);
-    b.w = Math.abs(img.x - gesture.startImg.x);
-    b.h = Math.abs(img.y - gesture.startImg.y);
+    b.x = Math.min(gesture.startImg.x, img.x); b.y = Math.min(gesture.startImg.y, img.y);
+    b.w = Math.abs(img.x - gesture.startImg.x); b.h = Math.abs(img.y - gesture.startImg.y);
     renderSvg();
   } else if (gesture.mode === "moveBox") {
-    const dx = svgToImg(p.x, p.y).x - svgToImg(gesture.start.x, gesture.start.y).x;
-    const dy = svgToImg(p.x, p.y).y - svgToImg(gesture.start.x, gesture.start.y).y;
+    const dx = svgToImg(p.x,p.y).x - svgToImg(gesture.start.x,gesture.start.y).x;
+    const dy = svgToImg(p.x,p.y).y - svgToImg(gesture.start.x,gesture.start.y).y;
     b.x = clamp(gesture.orig.x + dx, 0, STATE.imgNatW - b.w);
     b.y = clamp(gesture.orig.y + dy, 0, STATE.imgNatH - b.h);
     renderSvg();
   } else if (gesture.mode === "resize") {
-    const img = svgToImg(p.x, p.y);
-    const o = gesture.orig;
-    let x1 = o.x, y1 = o.y, x2 = o.x + o.w, y2 = o.y + o.h;
+    const img = svgToImg(p.x, p.y); const o = gesture.orig;
+    let x1=o.x, y1=o.y, x2=o.x+o.w, y2=o.y+o.h;
     const h = gesture.handle;
-    if (h.includes("w")) x1 = img.x;
-    if (h.includes("e")) x2 = img.x;
-    if (h.includes("n")) y1 = img.y;
-    if (h.includes("s")) y2 = img.y;
-    b.x = clamp(Math.min(x1, x2), 0, STATE.imgNatW);
-    b.y = clamp(Math.min(y1, y2), 0, STATE.imgNatH);
-    b.w = Math.abs(x2 - x1);
-    b.h = Math.abs(y2 - y1);
+    if (h.includes("w")) x1 = img.x; if (h.includes("e")) x2 = img.x;
+    if (h.includes("n")) y1 = img.y; if (h.includes("s")) y2 = img.y;
+    b.x = Math.min(x1,x2); b.y = Math.min(y1,y2);
+    b.w = Math.abs(x2-x1); b.h = Math.abs(y2-y1);
     renderSvg();
   }
 });
 
-window.addEventListener("mouseup", (e) => {
-  if (!gesture) return;
-  if (gesture.mode === "draw") {
+window.addEventListener("mouseup", () => {
+  if (gesture && gesture.mode === "draw") {
     const b = STATE.boxes.find((x) => x.boxId === gesture.boxId);
-    // 太小的框：可能是想画箭头（move）→ 删除
-    if (b && (b.w < 6 || b.h < 6)) {
-      // 视为点击/箭头意图：若已有 move 框待设目标则忽略，否则删除空框
-      STATE.boxes = STATE.boxes.filter((x) => x.boxId !== b.boxId);
-      STATE.undoStack.pop();
-    }
-    renderAll();
+    if (b && b.w < 5 && b.h < 5) { STATE.boxes = STATE.boxes.filter((x) => x.boxId !== b.boxId); renderAll(); }
   }
   gesture = null;
 });
 
-// 双击框 → 进入编辑
-svgB.addEventListener("dblclick", (e) => {
-  const g = e.target.closest && e.target.closest("g[data-boxid]");
-  if (g) {
-    const boxId = parseInt(g.getAttribute("data-boxid"), 10);
-    STATE.editingBoxId = boxId;
-    renderAll();
-  }
-});
-
-// 画箭头设 move 目标：在 move 框上按住拖到目标点
-// 简化：选中 move 框后，在图上点击设定目标点
 svgB.addEventListener("click", (e) => {
-  // 找一个 action=move 且无 target 的框，点击图面设目标
+  if (isReviewer()) return;
   const pending = STATE.boxes.find((b) => b.action === "move" && !b.target);
   if (!pending) return;
-  if (e.target.closest && e.target.closest("g[data-boxid]")) return; // 点在框上不设目标
-  const p = svgPoint(e);
-  const img = svgToImg(p.x, p.y);
+  if (e.target.closest && e.target.closest("g[data-boxid]")) return;
+  const p = svgPoint(e); const img = svgToImg(p.x, p.y);
   pending.target = { x: img.x, y: img.y };
-  renderAll();
-  showToast("已设定移动目标", "success");
+  renderAll(); showToast("已设定移动目标", "success");
 });
 
-// ===== 3D 球体编辑器模态框 =====
-const modal3D = {
-  ctx: null, canvas: null, previewCtx: null, previewCanvas: null,
-  R: 150, rotX: 0.3, rotY: 0.5, zoom: 1,
-  boxId: -1, dragging: false, lx: 0, ly: 0,
-};
+imgB.addEventListener("load", () => { STATE.imgNatW = imgB.naturalWidth; STATE.imgNatH = imgB.naturalHeight; renderSvg(); });
+
+// ===== 3D 球体编辑器 =====
+const modal3D = { ctx:null, canvas:null, previewCtx:null, previewCanvas:null, R:150, rotX:0.3, rotY:0.5, zoom:1, boxId:-1, dragging:false, lx:0, ly:0 };
 
 function initModal3D() {
-  modal3D.canvas = $("canvas-3d");
-  modal3D.ctx = modal3D.canvas.getContext("2d");
-  modal3D.previewCanvas = $("canvas-preview");
-  modal3D.previewCtx = modal3D.previewCanvas.getContext("2d");
-  const cv = modal3D.canvas;
-
-  cv.addEventListener("mousedown", (e) => {
-    modal3D.dragging = true; modal3D.lx = e.clientX; modal3D.ly = e.clientY;
-    cv.style.cursor = "grabbing";
-  });
-  document.addEventListener("mousemove", (e) => {
+  modal3D.canvas = $("canvas-3d"); modal3D.ctx = modal3D.canvas.getContext("2d");
+  modal3D.previewCanvas = $("canvas-preview"); modal3D.previewCtx = modal3D.previewCanvas.getContext("2d");
+  modal3D.canvas.addEventListener("mousedown", (e) => { modal3D.dragging = true; modal3D.lx = e.clientX; modal3D.ly = e.clientY; });
+  window.addEventListener("mousemove", (e) => {
     if (!modal3D.dragging) return;
-    modal3D.rotY += (e.clientX - modal3D.lx) * 0.008;
-    modal3D.rotX += (e.clientY - modal3D.ly) * 0.008;
-    modal3D.rotX = Math.max(-Math.PI * 0.49, Math.min(Math.PI * 0.49, modal3D.rotX));
+    modal3D.rotY += (e.clientX - modal3D.lx) * 0.01;
+    modal3D.rotX += (e.clientY - modal3D.ly) * 0.01;
+    modal3D.rotX = clamp(modal3D.rotX, -Math.PI/2, Math.PI/2);
     modal3D.lx = e.clientX; modal3D.ly = e.clientY;
-    renderModal3D();
+    draw3D();
   });
-  document.addEventListener("mouseup", () => { modal3D.dragging = false; cv.style.cursor = "default"; });
-  cv.addEventListener("wheel", (e) => {
-    e.preventDefault();
-    modal3D.zoom *= (1 - e.deltaY * 0.001);
-    modal3D.zoom = Math.max(0.3, Math.min(3, modal3D.zoom));
-    renderModal3D();
-  }, { passive: false });
-
+  window.addEventListener("mouseup", () => { modal3D.dragging = false; });
+  modal3D.canvas.addEventListener("wheel", (e) => { e.preventDefault(); modal3D.zoom = clamp(modal3D.zoom - e.deltaY*0.001, 0.5, 2); draw3D(); });
+  $("modal-3d-cancel").onclick = () => { $("modal-3d-overlay").classList.remove("show"); };
   $("modal-3d-ok").onclick = () => {
-    const dir = computeArrowDir3D();
-    closeModal3D(true, dir);
+    const dir = screenDirToVec();
+    const b = STATE.boxes.find((x) => x.boxId === modal3D.boxId);
+    if (b && dir) { b.dir3d = dir; renderAll(); }
+    $("modal-3d-overlay").classList.remove("show");
   };
-  $("modal-3d-cancel").onclick = () => closeModal3D(false, null);
 }
 
-function computeArrowDir3D() {
-  const cy = Math.cos(modal3D.rotY), sy = Math.sin(modal3D.rotY);
-  const cx = Math.cos(modal3D.rotX), sx = Math.sin(modal3D.rotX);
-  const y1 = 0, z1 = -sy;
-  const y2 = y1 * cx - z1 * sx;
-  const z2 = y1 * sx + z1 * cx;
-  return [cy, y2, z2];
+function draw3D() {
+  const ctx = modal3D.ctx, W = 400, H = 400, cx = W/2, cy = H/2, R = modal3D.R * modal3D.zoom;
+  ctx.clearRect(0, 0, W, H);
+  ctx.strokeStyle = "#333"; ctx.lineWidth = 1;
+  // 球体轮廓
+  ctx.beginPath(); ctx.arc(cx, cy, R, 0, Math.PI*2); ctx.stroke();
+  // 经纬线
+  for (let i = 1; i < 4; i++) {
+    const r = R * Math.sin(i * Math.PI / 4);
+    const off = R * Math.cos(i * Math.PI / 4) * Math.sin(modal3D.rotX);
+    ctx.beginPath(); ctx.ellipse(cx, cy + off, r, r * Math.abs(Math.cos(modal3D.rotX)), 0, 0, Math.PI*2); ctx.stroke();
+  }
+  // 方向箭头
+  const dir = screenDirToVec();
+  if (dir) {
+    const [dx, dy, dz] = dir;
+    const px = cx + dx * R * 0.8, py = cy - dy * R * 0.8;
+    ctx.strokeStyle = "#4CAF50"; ctx.lineWidth = 3;
+    ctx.beginPath(); ctx.moveTo(cx, cy); ctx.lineTo(px, py); ctx.stroke();
+    ctx.fillStyle = "#4CAF50"; ctx.beginPath(); ctx.arc(px, py, 6, 0, Math.PI*2); ctx.fill();
+  }
+  $("modal-3d-info").textContent = "方向: " + (dir ? dir.join(", ") : "拖旋转选择");
 }
 
-function project3D(x, y, z) {
-  const W = modal3D.canvas.width, H = modal3D.canvas.height;
-  const cy = Math.cos(modal3D.rotY), sy = Math.sin(modal3D.rotY);
-  const x1 = x * cy + z * sy, z1 = -x * sy + z * cy, y1 = y;
-  const cx = Math.cos(modal3D.rotX), sx = Math.sin(modal3D.rotX);
-  const y2 = y1 * cx - z1 * sx, z2 = y1 * sx + z1 * cx;
-  const d = 600 / modal3D.zoom;
-  const s = d / (d + z2);
-  return { x: W / 2 + x1 * s, y: H / 2 - y2 * s, z: z2, s: s };
-}
-
-function getArrowCameraZ() {
-  const sy = Math.sin(modal3D.rotY);
-  const z1 = -sy;
-  const cx = Math.cos(modal3D.rotX);
-  return z1 * cx;
-}
-
-function renderModal3D() {
-  const ctx = modal3D.ctx;
-  const W = modal3D.canvas.width, H = modal3D.canvas.height, R = modal3D.R;
-  ctx.fillStyle = "#0a0a18"; ctx.fillRect(0, 0, W, H);
-
-  // 经度环
-  for (let j = 0; j < 16; j++) {
-    const th = Math.PI * j / 16;
-    const pts = [];
-    for (let i = 0; i <= 64; i++) {
-      const phi = Math.PI * i / 64;
-      pts.push([R * Math.sin(phi) * Math.cos(th), R * Math.cos(phi), R * Math.sin(phi) * Math.sin(th)]);
-    }
-    for (let i = 0; i < pts.length - 1; i++) {
-      const p1 = project3D(pts[i][0], pts[i][1], pts[i][2]);
-      const p2 = project3D(pts[i+1][0], pts[i+1][1], pts[i+1][2]);
-      const t = Math.max(0, Math.min(1, ((p1.z + p2.z) / 2 + R) / (2 * R)));
-      ctx.strokeStyle = "rgba(60,180,255," + (0.7 - t * 0.55) + ")";
-      ctx.lineWidth = 1.5 - t * 1.0;
-      ctx.beginPath(); ctx.moveTo(p1.x, p1.y); ctx.lineTo(p2.x, p2.y); ctx.stroke();
-    }
-  }
-  // 纬度环
-  for (let i = 1; i < 10; i++) {
-    const phi = Math.PI * i / 10;
-    const pts = [];
-    for (let j = 0; j <= 64; j++) {
-      const th = 2 * Math.PI * j / 64;
-      pts.push([R * Math.sin(phi) * Math.cos(th), R * Math.cos(phi), R * Math.sin(phi) * Math.sin(th)]);
-    }
-    for (let j = 0; j < pts.length - 1; j++) {
-      const p1 = project3D(pts[j][0], pts[j][1], pts[j][2]);
-      const p2 = project3D(pts[j+1][0], pts[j+1][1], pts[j+1][2]);
-      const t = Math.max(0, Math.min(1, ((p1.z + p2.z) / 2 + R) / (2 * R)));
-      ctx.strokeStyle = "rgba(60,180,255," + (0.7 - t * 0.55) + ")";
-      ctx.lineWidth = 1.5 - t * 1.0;
-      ctx.beginPath(); ctx.moveTo(p1.x, p1.y); ctx.lineTo(p2.x, p2.y); ctx.stroke();
-    }
-  }
-
-  // 箭头
-  const end = [R, 0, 0];
-  const p0 = project3D(0, 0, 0);
-  const p1 = project3D(end[0], end[1], end[2]);
-  const cz = getArrowCameraZ();
-  const depthT = Math.max(-1, Math.min(1, cz));
-  const t01 = (depthT + 1) / 2;
-  let r, g, b, lineW, alpha, glowSize = 0;
-  if (t01 < 0.5) {
-    const k = t01 / 0.5;
-    r = Math.round(255 - k * 55); g = Math.round(60 + k * 110); b = Math.round(30 + k * 20);
-    lineW = 4.5 - k * 1.5; alpha = 1.0 - k * 0.2; glowSize = (1 - k) * 20;
-  } else {
-    const k = (t01 - 0.5) / 0.5;
-    r = Math.round(200 - k * 140); g = Math.round(170 - k * 120); b = Math.round(50 + k * 150);
-    lineW = 3 - k * 1.5; alpha = 0.8 - k * 0.45; glowSize = 0;
-  }
-  const color = "rgba(" + r + "," + g + "," + b + "," + alpha + ")";
-  if (glowSize > 0) { ctx.save(); ctx.shadowColor = "rgba(255,80,30,0.7)"; ctx.shadowBlur = glowSize; }
-  ctx.strokeStyle = color; ctx.lineWidth = lineW;
-  if (depthT > 0.4) ctx.setLineDash([8, 5]); else ctx.setLineDash([]);
-  ctx.beginPath(); ctx.moveTo(p0.x, p0.y); ctx.lineTo(p1.x, p1.y); ctx.stroke();
-  ctx.setLineDash([]);
-  if (glowSize > 0) ctx.restore();
-
-  // 箭头三角
-  const hL = R * 0.2, hR = hL * (0.35 + 0.3 * (1 - t01));
-  const px = 0, py = 0, pz = 1; // up = [0,1,0] cross [1,0,0] = [0,0,-1] → 取 [0,0,1]
-  const qx = 0, qy = 1, qz = 0;
-  const bx = end[0] - hL, by = end[1], bz = end[2];
-  const nP = 8;
-  ctx.fillStyle = color;
-  for (let i = 0; i < nP; i++) {
-    const a = 2 * Math.PI * i / nP;
-    const ax2 = bx + (px * Math.cos(a) + qx * Math.sin(a)) * hR;
-    const ay2 = by + (py * Math.cos(a) + qy * Math.sin(a)) * hR;
-    const az2 = bz + (pz * Math.cos(a) + qz * Math.sin(a)) * hR;
-    const a1 = 2 * Math.PI * (i+1) / nP;
-    const ax1 = bx + (px * Math.cos(a1) + qx * Math.sin(a1)) * hR;
-    const ay1 = by + (py * Math.cos(a1) + qy * Math.sin(a1)) * hR;
-    const az1 = bz + (pz * Math.cos(a1) + qz * Math.sin(a1)) * hR;
-    const pc = project3D(ax2, ay2, az2);
-    const pn = project3D(ax1, ay1, az1);
-    ctx.beginPath(); ctx.moveTo(pc.x, pc.y); ctx.lineTo(pn.x, pn.y); ctx.lineTo(p1.x, p1.y);
-    ctx.closePath(); ctx.fill();
-  }
-
-  // 端点标记
-  if (depthT < -0.2) {
-    ctx.save(); ctx.shadowColor = "rgba(255,50,50,0.8)"; ctx.shadowBlur = 25;
-    ctx.fillStyle = "#ff3333";
-    ctx.beginPath(); ctx.arc(p1.x, p1.y, 12, 0, Math.PI * 2); ctx.fill(); ctx.restore();
-    ctx.strokeStyle = "#fff"; ctx.lineWidth = 3;
-    ctx.beginPath(); ctx.arc(p1.x, p1.y, 12, 0, Math.PI * 2); ctx.stroke();
-    ctx.fillStyle = "#fff"; ctx.font = "bold 16px sans-serif"; ctx.textAlign = "center"; ctx.textBaseline = "middle";
-    ctx.fillText("\u25b6", p1.x, p1.y);
-  } else if (depthT > 0.2) {
-    ctx.fillStyle = "rgba(80,80,160,0.6)";
-    ctx.beginPath(); ctx.arc(p1.x, p1.y, 5, 0, Math.PI * 2); ctx.fill();
-    ctx.setLineDash([3, 3]); ctx.strokeStyle = "rgba(100,100,200,0.5)"; ctx.lineWidth = 1.5;
-    ctx.beginPath(); ctx.arc(p1.x, p1.y, 10, 0, Math.PI * 2); ctx.stroke(); ctx.setLineDash([]);
-    ctx.strokeStyle = "rgba(150,150,255,0.7)"; ctx.lineWidth = 2;
-    ctx.beginPath(); ctx.moveTo(p1.x - 7, p1.y - 7); ctx.lineTo(p1.x + 7, p1.y + 7); ctx.stroke();
-    ctx.beginPath(); ctx.moveTo(p1.x + 7, p1.y - 7); ctx.lineTo(p1.x - 7, p1.y + 7); ctx.stroke();
-  } else {
-    ctx.fillStyle = "#ffaa00";
-    ctx.beginPath();
-    ctx.moveTo(p1.x, p1.y - 10); ctx.lineTo(p1.x + 7, p1.y);
-    ctx.lineTo(p1.x, p1.y + 10); ctx.lineTo(p1.x - 7, p1.y);
-    ctx.closePath(); ctx.fill();
-    ctx.strokeStyle = "#fff"; ctx.lineWidth = 1.5;
-    ctx.beginPath();
-    ctx.moveTo(p1.x, p1.y - 10); ctx.lineTo(p1.x + 7, p1.y);
-    ctx.lineTo(p1.x, p1.y + 10); ctx.lineTo(p1.x - 7, p1.y);
-    ctx.closePath(); ctx.stroke();
-  }
-  ctx.fillStyle = "#fff";
-  ctx.beginPath(); ctx.arc(p0.x, p0.y, 4, 0, Math.PI * 2); ctx.fill();
-
-  // 指示器
-  const indEl = $("modal-3d-info");
-  if (depthT < -0.2) {
-    indEl.innerHTML = "\ud83d\udd34 \u25b6 箭头指向你(出屏)";
-    indEl.style.background = "rgba(255,40,40,0.35)"; indEl.style.color = "#ff6666";
-    indEl.style.border = "2px solid rgba(255,80,80,0.7)";
-  } else if (depthT > 0.2) {
-    indEl.innerHTML = "\ud83d\udd35 \u2717 箭头远离你(入屏)";
-    indEl.style.background = "rgba(40,40,120,0.35)"; indEl.style.color = "#8888ff";
-    indEl.style.border = "2px solid rgba(80,80,200,0.6)";
-  } else {
-    indEl.innerHTML = "\ud83d\udfe1 \u25c6 箭头在侧面";
-    indEl.style.background = "rgba(255,170,0,0.25)"; indEl.style.color = "#ffcc44";
-    indEl.style.border = "2px solid rgba(255,170,0,0.5)";
-  }
+function screenDirToVec() {
+  const dx = Math.sin(modal3D.rotY) * Math.cos(modal3D.rotX);
+  const dy = Math.sin(modal3D.rotX);
+  const dz = Math.cos(modal3D.rotY) * Math.cos(modal3D.rotX);
+  const labels = [];
+  if (Math.abs(dx) > 0.3) labels.push(dx > 0 ? "右" : "左");
+  if (Math.abs(dy) > 0.3) labels.push(dy > 0 ? "上" : "下");
+  if (Math.abs(dz) > 0.3) labels.push(dz > 0 ? "前" : "后");
+  return labels.length ? labels : null;
 }
 
 function openModal3D(boxId) {
   modal3D.boxId = boxId;
-  const box = STATE.boxes.find((b) => b.boxId === boxId);
-  if (box && box.dir3d) {
-    const d = box.dir3d;
-    modal3D.rotY = Math.atan2(-d[2], d[0]);
-    modal3D.rotX = Math.atan2(d[1], Math.sqrt(d[0]*d[0] + d[2]*d[2]));
-  } else {
-    modal3D.rotX = 0.3; modal3D.rotY = 0.5;
-  }
-  modal3D.zoom = 1;
-  renderPreview3D(boxId);
   $("modal-3d-overlay").classList.add("show");
-  renderModal3D();
+  draw3D();
 }
 
-function renderPreview3D(boxId) {
-  const ctx = modal3D.previewCtx;
-  if (!ctx) return;
-  const W = modal3D.previewCanvas.width, H = modal3D.previewCanvas.height;
-  ctx.fillStyle = "#0a0a18"; ctx.fillRect(0, 0, W, H);
-  const box = STATE.boxes.find((b) => b.boxId === boxId);
-  if (!box) {
-    ctx.fillStyle = "#888"; ctx.font = "13px sans-serif"; ctx.textAlign = "center";
-    ctx.fillText("未找到框数据", W/2, H/2); return;
-  }
-  const src = imgB.dataset.currentSrc || imgB.src || "";
-  if (!src) return;
-  fetch(src).then((r) => r.blob()).then((blob) => {
-    const url = URL.createObjectURL(blob);
-    const tmp = new Image();
-    tmp.onload = () => {
-      URL.revokeObjectURL(url);
-      const nw = tmp.naturalWidth, nh = tmp.naturalHeight;
-      ctx.fillStyle = "#0a0a18"; ctx.fillRect(0, 0, W, H);
-      const scale = Math.min(W / nw, H / nh);
-      const dw = nw * scale, dh = nh * scale;
-      const dx = (W - dw) / 2, dy = (H - dh) / 2;
-      ctx.drawImage(tmp, 0, 0, nw, nh, dx, dy, dw, dh);
-      ctx.fillStyle = "rgba(255,170,0,0.15)";
-      ctx.fillRect(dx + box.x * scale, dy + box.y * scale, box.w * scale, box.h * scale);
-      ctx.strokeStyle = "#ffaa00"; ctx.lineWidth = 3;
-      ctx.strokeRect(dx + box.x * scale, dy + box.y * scale, box.w * scale, box.h * scale);
-    };
-    tmp.onerror = () => {
-      ctx.fillStyle = "#888"; ctx.font = "13px sans-serif"; ctx.textAlign = "center";
-      ctx.fillText("图片加载失败", W/2, H/2);
-    };
-    tmp.src = url;
-  }).catch(() => {});
+// ===== 批量任务：保存/恢复当前条 =====
+function saveCurrentToLocal() {
+  if (!STATE.batch.length) return;
+  const line = STATE.batch[STATE.batchIdx].line;
+  const result = { boxes: JSON.parse(JSON.stringify(STATE.boxes)), note: $("globalNote").value.trim() };
+  if (isReviewer()) { result.verdict = STATE.reviewVerdict; result.reason = $("reviewReason").value.trim(); }
+  STATE.batchResults[line] = result;
+  STATE.batchDone.add(line);
+  saveLocal();
 }
 
-function closeModal3D(confirmed, dir) {
-  $("modal-3d-overlay").classList.remove("show");
-  if (confirmed && dir) {
-    const len = Math.sqrt(dir[0]*dir[0] + dir[1]*dir[1] + dir[2]*dir[2]);
-    if (len > 0) { dir[0] /= len; dir[1] /= len; dir[2] /= len; }
-    const box = STATE.boxes.find((b) => b.boxId === modal3D.boxId);
-    if (box) {
-      box.action = "move3d";
-      box.dir3d = [Math.round(dir[0]*1000)/1000, Math.round(dir[1]*1000)/1000, Math.round(dir[2]*1000)/1000];
+function loadCurrentFromLocal() {
+  const line = STATE.batch[STATE.batchIdx].line;
+  const saved = STATE.batchResults[line];
+  if (saved) {
+    STATE.boxes = saved.boxes || [];
+    STATE.nextBoxId = STATE.boxes.length ? Math.max(...STATE.boxes.map(b => b.boxId)) + 1 : 1;
+    $("globalNote").value = saved.note || "";
+    if (isReviewer()) {
+      STATE.reviewVerdict = saved.verdict || null;
+      $("reviewReason").value = saved.reason || "";
+      $("btnVerdictCorrect").classList.toggle("active", saved.verdict === "correct");
+      $("btnVerdictWrong").classList.toggle("active", saved.verdict === "wrong");
     }
-    renderAll();
+  } else {
+    STATE.boxes = []; STATE.nextBoxId = 1;
+    $("globalNote").value = "";
+    STATE.reviewVerdict = null;
+    $("reviewReason").value = "";
+    $("btnVerdictCorrect").classList.remove("active");
+    $("btnVerdictWrong").classList.remove("active");
   }
+  STATE.undoStack = []; STATE.editingBoxId = null;
 }
 
-// ===== 分发流程 =====
-
-// 把已保存的标注数据还原为 STATE.boxes
-function restoreBoxesFromData(data) {
-  STATE.boxes = [];
-  STATE.nextBoxId = 1;
-  if (!data || !Array.isArray(data.objects)) return;
-  for (const obj of data.objects) {
-    const box = {
-      boxId: STATE.nextBoxId++,
-      x: obj.box.x, y: obj.box.y, w: obj.box.w, h: obj.box.h,
-      action: obj.type || "neutral",
-    };
-    if (obj.target) box.target = obj.target;
-    if (obj.dir3d) box.dir3d = obj.dir3d;
-    if (obj.text) box.text = obj.text;
-    STATE.boxes.push(box);
-  }
+// ===== 批量导航 =====
+function goToItem(idx) {
+  if (idx < 0 || idx >= STATE.batch.length) return;
+  // 保存当前
+  saveCurrentToLocal();
+  STATE.batchIdx = idx;
+  loadCurrentFromLocal();
+  loadCurrentSample();
+  updateBatchUI();
+  saveLocal();
 }
 
-// 加载一对图片到当前视图
 function loadCurrentSample() {
-  const s = STATE.current;
+  const s = STATE.batch[STATE.batchIdx];
   if (!s) return;
-  STATE.undoStack = [];
-  STATE.editingBoxId = null;
-  $("lineInfo").textContent = "Line " + s.line;
-
   const remotes = s.remotes || [];
-  const aSrc = remotes[0] || "";
-  const bSrc = remotes[1] || "";
-  imgA.src = aSrc; imgA.dataset.currentSrc = aSrc;
-  imgB.src = bSrc; imgB.dataset.currentSrc = bSrc;
+  imgA.src = remotes[0] || ""; imgB.src = remotes[1] || "";
+  $("navInfo").textContent = "Line " + s.line;
+  // 审核模式：显示标注者信息
+  if (isReviewer() && s._annotatorName) {
+    $("reviewBy").textContent = "标注者：" + s._annotatorName;
+  }
   renderAll();
 }
 
-// B 图加载后记录自然尺寸并重绘
-imgB.addEventListener("load", () => {
-  STATE.imgNatW = imgB.naturalWidth;
-  STATE.imgNatH = imgB.naturalHeight;
-  renderSvg();
-});
+function updateBatchUI() {
+  const done = STATE.batchDone.size;
+  const total = STATE.batch.length;
+  $("batchCur").textContent = done;
+  $("batchTotal").textContent = total;
+  $("progressFill").style.width = (total ? (done/total*100) : 0) + "%";
+  // 导航点
+  const dots = $("navDots");
+  dots.innerHTML = "";
+  STATE.batch.forEach((s, i) => {
+    const d = document.createElement("span");
+    d.className = "dot" + (STATE.batchDone.has(s.line) ? " done" : "") + (i === STATE.batchIdx ? " current" : "");
+    d.title = "Line " + s.line;
+    d.onclick = () => goToItem(i);
+    dots.appendChild(d);
+  });
+  // 审核面板显隐
+  $("review-panel").classList.toggle("hidden", !isReviewer());
+  // 图片提示
+  document.querySelector(".img-tip").textContent = isReviewer()
+    ? "查看标注结果 · 在下方判定正确或错误"
+    : "拖拽画框 · 点框左侧✎可编辑";
+}
 
-// 校验：是否有框未指定动作
-function validateBoxes() {
-  for (const b of STATE.boxes) {
-    if (!b.action || b.action === "neutral") {
-      showToast("有框未指定动作，请补齐后再提交", "warn");
-      return false;
-    }
-    if (b.action === "move" && !b.target) {
-      showToast("有移动框未设定目标点", "warn");
-      return false;
-    }
-    if (b.action === "move3d" && !b.dir3d) {
-      showToast("有 3D 移动框未选择方向", "warn");
-      return false;
-    }
-    if (b.action === "custom" && !(b.text && b.text.trim())) {
-      showToast("有自定义框未填写描述", "warn");
-      return false;
+// ===== 上传 =====
+async function uploadToRepo() {
+  const btn = $("btnUpload");
+  btn.disabled = true;
+  const statusEl = $("uploadStatus");
+  statusEl.className = "syncing"; statusEl.textContent = "上传中...";
+
+  // 先保存当前条
+  saveCurrentToLocal();
+
+  const results = [];
+  const username = window.GithubAuth.getAnnotatorId();
+  for (const s of STATE.batch) {
+    const r = STATE.batchResults[s.line];
+    if (!r) continue;
+    if (isReviewer()) {
+      if (!r.verdict) continue; // 未判定的跳过
+      results.push({ line: s.line, data: { line: s.line, verdict: r.verdict, reason: r.reason || "", annotator: s._annotatorName || "", reviewer: username, ts: Date.now() } });
+    } else {
+      if (!r.boxes.length && !r.note) continue; // 空标注跳过
+      results.push({ line: s.line, data: {
+        line: s.line, remotes: s.remotes,
+        objects: r.boxes.map((b) => {
+          const o = { box: { x:Math.round(b.x), y:Math.round(b.y), w:Math.round(b.w), h:Math.round(b.h) }, type: b.action || "neutral" };
+          if (b.target) o.target = { x:Math.round(b.target.x), y:Math.round(b.target.y) };
+          if (b.dir3d) o.dir3d = b.dir3d;
+          if (b.text) o.text = b.text;
+          return o;
+        }),
+        note: r.note || "",
+      }});
     }
   }
-  return true;
-}
 
-// 构建要保存的数据
-function buildLineData() {
-  return {
-    line: STATE.current.line,
-    remotes: STATE.current.remotes,
-    objects: STATE.boxes.map((b) => {
-      const o = { box: { x: Math.round(b.x), y: Math.round(b.y), w: Math.round(b.w), h: Math.round(b.h) }, type: b.action };
-      if (b.target) o.target = { x: Math.round(b.target.x), y: Math.round(b.target.y) };
-      if (b.dir3d) o.dir3d = b.dir3d;
-      if (b.text) o.text = b.text;
-      return o;
-    }),
-    note: $("globalNote").value.trim(),
-  };
-}
-
-// 下一个：校验 → 保存当前 → 释放锁 → 领下一个
-async function goNext() {
-  if (STATE.current) {
-    if (STATE.boxes.length && !validateBoxes()) return;
-    setStatus("保存中...", "syncing");
-    try {
-      if (STATE.boxes.length || $("globalNote").value.trim()) {
-        const username = window.GithubAuth.getAnnotatorId();
-        await window.GithubDispatch.saveLine(STATE.current.line, username, buildLineData());
-        STATE.dispatchedCount++;
-        $("statDispatched").textContent = STATE.dispatchedCount;
-      }
-      await window.GithubDispatch.releaseLock(STATE.current.line).catch(() => {});
-    } catch (e) {
-      setStatus("保存失败: " + e.message, "error");
-      showToast("保存失败，请重试", "warn");
-      return;
-    }
+  if (!results.length) {
+    statusEl.className = ""; statusEl.textContent = "没有可上传的数据";
+    btn.disabled = false;
+    return;
   }
-  await dispatchNext();
-}
 
-// 跳过：释放锁，不保存
-async function goSkip() {
-  if (STATE.current) {
-    setStatus("跳过中...", "syncing");
-    await window.GithubDispatch.releaseLock(STATE.current.line).catch(() => {});
-  }
-  await dispatchNext();
-}
-
-// 领取下一个未标注、未锁定的样本
-async function dispatchNext() {
-  setStatus("正在分配任务...", "syncing");
-  showLoading("正在分配任务...");
   try {
-    const result = await window.GithubDispatch.claimNext(STATE.samples);
-    if (!result) {
-      hideLoading();
-      setStatus("全部标注完成 🎉", "synced");
-      STATE.current = null;
-      imgA.src = ""; imgB.src = "";
-      STATE.boxes = [];
-      renderAll();
-      showToast("所有样本都已标注完成！", "success");
+    const res = await window.GithubDispatch.uploadBatch(results, isReviewer());
+    statusEl.className = "synced";
+    statusEl.textContent = "已上传 " + res.saved + " 条 ✓";
+    showToast("成功上传 " + res.saved + " 条到仓库", "success");
+    // 清除已上传的本地数据
+    results.forEach((r) => { delete STATE.batchResults[r.line]; STATE.batchDone.delete(r.line); });
+    // 从 batch 中移除已上传的
+    const uploadedLines = new Set(results.map((r) => r.line));
+    STATE.batch = STATE.batch.filter((s) => !uploadedLines.has(s.line));
+    if (STATE.batch.length === 0) {
+      clearLocal();
+      showPhase("claim");
+      showToast("全部上传完成！🎉", "success");
       return;
     }
-    STATE.current = result.sample;
-    hideLoading();
-    setStatus("已分配 Line " + result.sample.line, "synced");
-
-    // 重置标注状态
-    STATE.boxes = [];
-    STATE.undoStack = [];
-    STATE.editingBoxId = null;
-    $("globalNote").value = "";
-
-    // 若是恢复自己之前标过的行，加载已存数据
-    if (result.resumed) {
-      try {
-        const username = window.GithubAuth.getAnnotatorId();
-        const data = await window.GithubDispatch.loadLine(result.line, username);
-        if (data) {
-          restoreBoxesFromData(data);
-          if (data.note) $("globalNote").value = data.note;
-          showToast("已恢复你之前的标注进度", "success");
-        }
-      } catch (e) { /* 恢复失败则从空白开始 */ }
-    }
-
+    STATE.batchIdx = Math.min(STATE.batchIdx, STATE.batch.length - 1);
+    loadCurrentFromLocal();
     loadCurrentSample();
-    refreshProgress();
+    updateBatchUI();
+    saveLocal();
+  } catch (e) {
+    statusEl.className = "error";
+    statusEl.textContent = "上传失败: " + e.message;
+    showToast("上传失败: " + e.message, "warn");
+  }
+  btn.disabled = false;
+}
+
+// ===== 阶段切换 =====
+function showPhase(phase) {
+  $("phase-claim").style.display = phase === "claim" ? "flex" : "none";
+  $("phase-work").classList.toggle("active", phase === "work");
+}
+
+// ===== 第一阶段逻辑 =====
+let currentDatasetIdx = 0;
+function getDatasets() {
+  const ds = window.ANNOTATE_CONFIG.datasets;
+  if (ds && ds.length) return ds;
+  return [{ id:"default", name:"默认数据集", file: window.ANNOTATE_CONFIG.samplesFile || "samples.json" }];
+}
+
+function populateDatasetSelect() {
+  const sel = $("datasetSelect");
+  sel.innerHTML = "";
+  getDatasets().forEach((ds, i) => {
+    const opt = document.createElement("option");
+    opt.value = i; opt.textContent = ds.name;
+    sel.appendChild(opt);
+  });
+  sel.value = currentDatasetIdx;
+}
+
+async function loadDatasetSamples(idx) {
+  const datasets = getDatasets();
+  if (idx < 0 || idx >= datasets.length) idx = 0;
+  currentDatasetIdx = idx;
+  const ds = datasets[idx];
+  window.GithubDispatch.setDataset(ds.id);
+  const resp = await fetch(ds.file);
+  if (!resp.ok) throw new Error("HTTP " + resp.status);
+  STATE.samples = await resp.json();
+  STATE.sampleByLine = {};
+  STATE.samples.forEach((s) => { STATE.sampleByLine[s.line] = s; });
+}
+
+async function refreshPoolStats() {
+  try {
+    const isReview = (document.querySelector('input[name="roleRadio"]:checked') || {}).value === "reviewer";
+    showLoading("正在统计池子状态...");
+    const stats = await window.GithubDispatch.getPoolStats(STATE.samples, isReview);
+    hideLoading();
+    $("statTotal").textContent = stats.total;
+    $("statDone").textContent = stats.done;
+    $("statLocked").textContent = stats.locked;
+    $("statAvail").textContent = stats.available;
   } catch (e) {
     hideLoading();
-    setStatus("分配失败: " + e.message, "error");
-    showToast("分配任务失败: " + e.message, "warn");
+    showToast("统计失败: " + e.message, "warn");
   }
 }
 
-// 刷新全局进度
-async function refreshProgress() {
+async function claimTasks() {
+  const count = parseInt($("claimCount").value, 10) || 10;
+  const isReview = (document.querySelector('input[name="roleRadio"]:checked') || {}).value === "reviewer";
+  STATE.role = isReview ? "reviewer" : "annotator";
+  window.GithubAuth.setRole(STATE.role);
+
+  const msgEl = $("claimMsg");
+  msgEl.style.display = "none";
+
+  showLoading("正在领取 " + count + " 条任务...");
   try {
-    const st = await window.GithubDispatch.getStats(STATE.samples);
-    STATE.totalDone = st.done;
-    STATE.totalSamples = st.total;
-    $("statDone").textContent = st.done;
-    $("statLocked").textContent = st.locked;
-    $("statTotal").textContent = st.total;
-  } catch (e) { /* 忽略 */ }
+    const result = await window.GithubDispatch.claimBatch(STATE.samples, count, isReview);
+    hideLoading();
+
+    // 审核模式：加载每行的标注数据
+    if (isReview) {
+      showLoading("正在加载标注数据...");
+      for (const s of result.samples) {
+        try {
+          const anno = await window.GithubDispatch.loadAnnotationForReview(s.line);
+          if (anno && anno.data) {
+            s._annoData = anno.data;
+            s._annotatorName = anno.annotatorName;
+          }
+        } catch (e) {}
+      }
+      hideLoading();
+    }
+
+    STATE.batch = result.samples;
+    STATE.batchIdx = 0;
+    STATE.batchResults = {};
+    STATE.batchDone = new Set();
+
+    // 审核模式：预填 boxes
+    if (isReview) {
+      STATE.batch.forEach((s) => {
+        if (s._annoData) {
+          const boxes = [];
+          let bid = 1;
+          (s._annoData.objects || []).forEach((obj) => {
+            const box = { boxId: bid++, x:obj.box.x, y:obj.box.y, w:obj.box.w, h:obj.box.h, action:obj.type||"neutral" };
+            if (obj.target) box.target = obj.target;
+            if (obj.dir3d) box.dir3d = obj.dir3d;
+            if (obj.text) box.text = obj.text;
+            boxes.push(box);
+          });
+          STATE.batchResults[s.line] = { boxes, note: s._annoData.note || "", verdict: null, reason: "" };
+        }
+      });
+    }
+
+    saveLocal();
+    showPhase("work");
+    loadCurrentFromLocal();
+    loadCurrentSample();
+    updateBatchUI();
+    showToast("已领取 " + result.samples.length + " 条任务", "success");
+  } catch (e) {
+    hideLoading();
+    msgEl.textContent = e.message;
+    msgEl.style.display = "block";
+  }
 }
 
-// ===== 登录 UI =====
-function updateAuthUI() {
-  const user = window.GithubAuth.getUser();
-  const annotatorName = window.GithubAuth.getAnnotatorName();
-  if (user) {
-    $("user-area").classList.remove("hidden");
-    $("btnLogin").style.display = "none";
-    $("userAvatar").src = user.avatarUrl;
-    // 优先显示手动输入的标注员名字
-    $("userName").textContent = annotatorName || user.name;
-  } else {
-    $("user-area").classList.add("hidden");
-    $("btnLogin").style.display = "";
-  }
+// ===== 登录 =====
+function updateLoginUI() {
+  // 领取页面不需要单独的登录区，登录在领取前完成
 }
 function openLoginModal() {
   $("modal-login-overlay").classList.add("show");
   $("loginError").style.display = "none";
   $("patInput").value = "";
-  // 回填上次输入的标注员名字
   $("annotatorNameInput").value = window.GithubAuth.getAnnotatorName() || "";
   $("patInput").focus();
 }
 function closeLoginModal() { $("modal-login-overlay").classList.remove("show"); }
 function startPatLogin() {
   const token = $("patInput").value.trim();
-  const annotatorName = $("annotatorNameInput").value.trim();
+  const name = $("annotatorNameInput").value.trim();
   const errEl = $("loginError");
   errEl.style.display = "none";
   if (!token) { errEl.textContent = "请输入 Token"; errEl.style.display = "block"; return; }
-  if (!annotatorName) { errEl.textContent = "请输入你的名字（标注标识）"; errEl.style.display = "block"; return; }
+  if (!name) { errEl.textContent = "请输入你的名字"; errEl.style.display = "block"; return; }
   const btn = $("btnStartLogin");
   btn.disabled = true; btn.textContent = "验证中...";
-  window.GithubAuth.login(token).then((result) => {
-    // 保存标注员名字
-    window.GithubAuth.setAnnotatorName(annotatorName);
+  window.GithubAuth.login(token).then(() => {
+    window.GithubAuth.setAnnotatorName(name);
     btn.disabled = false; btn.textContent = "验证并登录";
     closeLoginModal();
-    updateAuthUI();
-    showToast("登录成功：欢迎，" + annotatorName, "success");
-    startWorking();
+    showToast("登录成功：欢迎，" + name, "success");
+    refreshPoolStats();
   }).catch((err) => {
     btn.disabled = false; btn.textContent = "验证并登录";
     errEl.textContent = err.message; errEl.style.display = "block";
   });
 }
 
-// 登录后开始工作：刷新进度 + 领任务
-async function startWorking() {
-  await refreshProgress();
-  await dispatchNext();
-}
-
-// ===== 数据集管理 =====
-let currentDatasetIdx = 0;
-
-function getDatasets() {
-  const ds = window.ANNOTATE_CONFIG.datasets;
-  if (ds && ds.length) return ds;
-  // 兼容旧配置：没有 datasets 时用 samplesFile
-  return [{ id: "default", name: "默认数据集", file: window.ANNOTATE_CONFIG.samplesFile || "samples.json" }];
-}
-
-function populateDatasetSelect() {
-  const sel = $("datasetSelect");
-  const datasets = getDatasets();
-  sel.innerHTML = "";
-  datasets.forEach((ds, i) => {
-    const opt = document.createElement("option");
-    opt.value = i;
-    opt.textContent = ds.name;
-    sel.appendChild(opt);
-  });
-  sel.value = currentDatasetIdx;
-}
-
-// 加载指定数据集的样本
-async function loadDataset(idx) {
-  const datasets = getDatasets();
-  if (idx < 0 || idx >= datasets.length) idx = 0;
-  currentDatasetIdx = idx;
-  const ds = datasets[idx];
-
-  // 设置分发模块的数据集隔离路径
-  window.GithubDispatch.setDataset(ds.id);
-
-  showLoading("正在加载数据集: " + ds.name + " ...");
-  try {
-    const resp = await fetch(ds.file);
-    if (!resp.ok) throw new Error("HTTP " + resp.status);
-    const data = await resp.json();
-    STATE.samples = data;
-    STATE.sampleByLine = {};
-    data.forEach((s) => { STATE.sampleByLine[s.line] = s; });
-  } catch (e) {
-    showLoading("数据集加载失败: " + e.message + "\n请确保 " + ds.file + " 存在");
-    return false;
-  }
-  hideLoading();
-  return true;
-}
-
-// 切换数据集
-async function switchDataset(idx) {
-  // 如果当前有未保存的标注，先释放锁
-  if (STATE.current) {
-    await window.GithubDispatch.releaseLock(STATE.current.line).catch(() => {});
-  }
-  STATE.current = null;
-  STATE.boxes = [];
-  STATE.undoStack = [];
-  STATE.editingBoxId = null;
-  STATE.dispatchedCount = 0;
-  $("statDispatched").textContent = "0";
-  $("globalNote").value = "";
-  imgA.src = ""; imgB.src = "";
-  renderAll();
-
-  const ok = await loadDataset(idx);
-  if (!ok) return;
-  $("datasetSelect").value = idx;
-
-  // 已登录则重新领任务
-  if (window.GithubAuth.getToken()) {
-    await refreshProgress();
-    await dispatchNext();
-  }
-}
-
 // ===== 初始化 =====
 async function init() {
   initModal3D();
-
-  // 初始化数据集选择器
-  currentDatasetIdx = window.ANNOTATE_CONFIG.defaultDataset || 0;
   populateDatasetSelect();
-  $("datasetSelect").onchange = (e) => {
-    switchDataset(parseInt(e.target.value, 10));
-  };
-
-  // 加载默认数据集
-  const ok = await loadDataset(currentDatasetIdx);
-  if (!ok) return;
 
   // 按钮绑定
-  $("btnNext").onclick = goNext;
-  $("btnSkip").onclick = goSkip;
-  $("btnUndo").onclick = undo;
-  $("btnClear").onclick = () => {
-    if (!STATE.boxes.length) return;
-    pushUndo();
-    STATE.boxes = [];
-    STATE.editingBoxId = null;
-    renderAll();
+  $("btnRefreshStats").onclick = refreshPoolStats;
+  $("btnClaim").onclick = () => {
+    if (!window.GithubAuth.getToken()) { openLoginModal(); return; }
+    claimTasks();
   };
-  $("btnLogin").onclick = openLoginModal;
+  $("datasetSelect").onchange = (e) => {
+    loadDatasetSamples(parseInt(e.target.value, 10)).then(refreshPoolStats);
+  };
+  document.querySelectorAll('input[name="roleRadio"]').forEach((r) => {
+    r.addEventListener("change", () => { if (window.GithubAuth.getToken()) refreshPoolStats(); });
+  });
+  $("btnUpload").onclick = uploadToRepo;
+  $("btnBackToClaim").onclick = () => {
+    saveCurrentToLocal();
+    showPhase("claim");
+    refreshPoolStats();
+  };
+  $("btnPrev").onclick = () => goToItem(STATE.batchIdx - 1);
+  $("btnNextItem").onclick = () => {
+    if (STATE.batchIdx < STATE.batch.length - 1) goToItem(STATE.batchIdx + 1);
+    else { saveCurrentToLocal(); showToast("已是最后一条，请上传", "warn"); }
+  };
+  $("btnVerdictCorrect").onclick = () => {
+    STATE.reviewVerdict = "correct";
+    $("btnVerdictCorrect").classList.add("active");
+    $("btnVerdictWrong").classList.remove("active");
+    $("reviewReason").classList.remove("invalid");
+  };
+  $("btnVerdictWrong").onclick = () => {
+    STATE.reviewVerdict = "wrong";
+    $("btnVerdictWrong").classList.add("active");
+    $("btnVerdictCorrect").classList.remove("active");
+    $("reviewReason").focus();
+  };
+  $("reviewReason").addEventListener("input", () => { if ($("reviewReason").value.trim()) $("reviewReason").classList.remove("invalid"); });
+
+  // 登录模态框
   $("btnStartLogin").onclick = startPatLogin;
   $("patInput").addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); startPatLogin(); } });
   $("loginCancel").onclick = closeLoginModal;
-  $("btnLogout").onclick = () => {
-    window.GithubAuth.logout();
-    updateAuthUI();
-    showToast("已退出登录", "info");
-  };
 
   // 快捷键
   document.addEventListener("keydown", (e) => {
     if (e.target.tagName === "INPUT" || e.target.tagName === "SELECT" || e.target.tagName === "TEXTAREA") return;
     if ((e.ctrlKey || e.metaKey) && e.key === "z") { e.preventDefault(); undo(); }
-    if (e.key === "Enter" && !e.ctrlKey && !e.metaKey) { e.preventDefault(); goNext(); }
+    if (e.key === "ArrowRight" || e.key === "Enter") { e.preventDefault(); if ($("phase-work").classList.contains("active")) { if (STATE.batchIdx < STATE.batch.length - 1) goToItem(STATE.batchIdx + 1); } }
+    if (e.key === "ArrowLeft") { e.preventDefault(); if ($("phase-work").classList.contains("active")) goToItem(STATE.batchIdx - 1); }
   });
+
+  // 加载默认数据集
+  showLoading("正在加载数据集...");
+  try {
+    await loadDatasetSamples(window.ANNOTATE_CONFIG.defaultDataset || 0);
+    hideLoading();
+  } catch (e) {
+    hideLoading();
+    showToast("数据集加载失败: " + e.message, "warn");
+    return;
+  }
 
   // 检查登录态
   const saved = await window.GithubAuth.checkToken();
-  updateAuthUI();
   if (saved) {
-    startWorking();
+    refreshPoolStats();
+    // 检查是否有未完成的本地批量任务
+    if (loadLocal()) {
+      showPhase("work");
+      loadCurrentFromLocal();
+      loadCurrentSample();
+      updateBatchUI();
+      showToast("已恢复上次未完成的 " + STATE.batch.length + " 条任务", "success");
+    }
   } else {
-    setStatus("请先登录 GitHub", "error");
+    showPhase("claim");
   }
 }
 
@@ -1441,4 +1325,3 @@ document.addEventListener("DOMContentLoaded", init);
 </script>
 </body>
 </html>
-
