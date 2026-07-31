@@ -313,6 +313,14 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
         创建方式：GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens
       </div>
     </div>
+    <div style="text-align:left;margin:16px 0;">
+      <label style="font-size:13px;font-weight:600;display:block;margin-bottom:6px;">你的名字（标注标识）</label>
+      <input type="text" id="annotatorNameInput" placeholder="例如：张三、李四、annotator_01"
+             style="width:100%;padding:10px 12px;border:1.5px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;" />
+      <div style="font-size:12px;color:var(--muted);margin-top:6px;">
+        此名字将作为标注记录的标识，用于区分不同标注员的结果
+      </div>
+    </div>
     <button id="btnStartLogin" class="primary" style="font-size:15px;padding:10px 32px;width:100%;">验证并登录</button>
     <div class="login-error" id="loginError"></div>
     <div class="login-cancel" id="loginCancel">取消</div>
@@ -1161,7 +1169,7 @@ async function goNext() {
     setStatus("保存中...", "syncing");
     try {
       if (STATE.boxes.length || $("globalNote").value.trim()) {
-        const username = (window.GithubAuth.getUser() || {}).login;
+        const username = window.GithubAuth.getAnnotatorId();
         await window.GithubDispatch.saveLine(STATE.current.line, username, buildLineData());
         STATE.dispatchedCount++;
         $("statDispatched").textContent = STATE.dispatchedCount;
@@ -1214,7 +1222,7 @@ async function dispatchNext() {
     // 若是恢复自己之前标过的行，加载已存数据
     if (result.resumed) {
       try {
-        const username = (window.GithubAuth.getUser() || {}).login;
+        const username = window.GithubAuth.getAnnotatorId();
         const data = await window.GithubDispatch.loadLine(result.line, username);
         if (data) {
           restoreBoxesFromData(data);
@@ -1248,11 +1256,13 @@ async function refreshProgress() {
 // ===== 登录 UI =====
 function updateAuthUI() {
   const user = window.GithubAuth.getUser();
+  const annotatorName = window.GithubAuth.getAnnotatorName();
   if (user) {
     $("user-area").classList.remove("hidden");
     $("btnLogin").style.display = "none";
     $("userAvatar").src = user.avatarUrl;
-    $("userName").textContent = user.name;
+    // 优先显示手动输入的标注员名字
+    $("userName").textContent = annotatorName || user.name;
   } else {
     $("user-area").classList.add("hidden");
     $("btnLogin").style.display = "";
@@ -1262,21 +1272,27 @@ function openLoginModal() {
   $("modal-login-overlay").classList.add("show");
   $("loginError").style.display = "none";
   $("patInput").value = "";
+  // 回填上次输入的标注员名字
+  $("annotatorNameInput").value = window.GithubAuth.getAnnotatorName() || "";
   $("patInput").focus();
 }
 function closeLoginModal() { $("modal-login-overlay").classList.remove("show"); }
 function startPatLogin() {
   const token = $("patInput").value.trim();
+  const annotatorName = $("annotatorNameInput").value.trim();
   const errEl = $("loginError");
   errEl.style.display = "none";
   if (!token) { errEl.textContent = "请输入 Token"; errEl.style.display = "block"; return; }
+  if (!annotatorName) { errEl.textContent = "请输入你的名字（标注标识）"; errEl.style.display = "block"; return; }
   const btn = $("btnStartLogin");
   btn.disabled = true; btn.textContent = "验证中...";
   window.GithubAuth.login(token).then((result) => {
+    // 保存标注员名字
+    window.GithubAuth.setAnnotatorName(annotatorName);
     btn.disabled = false; btn.textContent = "验证并登录";
     closeLoginModal();
     updateAuthUI();
-    showToast("登录成功：欢迎，" + result.user.name, "success");
+    showToast("登录成功：欢迎，" + annotatorName, "success");
     startWorking();
   }).catch((err) => {
     btn.disabled = false; btn.textContent = "验证并登录";
@@ -1425,3 +1441,4 @@ document.addEventListener("DOMContentLoaded", init);
 </script>
 </body>
 </html>
+
