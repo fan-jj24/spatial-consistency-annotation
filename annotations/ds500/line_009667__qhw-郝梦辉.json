@@ -1,0 +1,43 @@
+{
+  "line": 9667,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009667_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477442&Signature=QAY0zeJEpeGK0waH%2FM7qE7HcLRI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009667_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477442&Signature=BJUSz8YWcGY%2FrkaMxV6uFAS35G0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 463,
+        "y": 131,
+        "w": 130,
+        "h": 364
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.523,
+        0.071,
+        0.849
+      ]
+    },
+    {
+      "box": {
+        "x": 597,
+        "y": 23,
+        "w": 269,
+        "h": 524
+      },
+      "type": "rotate"
+    },
+    {
+      "box": {
+        "x": 311,
+        "y": 144,
+        "w": 128,
+        "h": 361
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "白外套红卫衣男子位置发生变化，朝向发生变化\n紫裙子女子朝向发生变化\n牛仔裤女子朝向发生变化",
+  "bg_global": false
+}
