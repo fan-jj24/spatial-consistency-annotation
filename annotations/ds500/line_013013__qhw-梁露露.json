@@ -1,0 +1,39 @@
+{
+  "line": 13013,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013013_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=B2khhHxTvQ6bXpmajJqFMBrQx3s%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013013_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=7Clr2TpuAI9Qaz7nyQ2zp0A2RZE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -4,
+        "y": 1080,
+        "w": 763,
+        "h": 187
+      },
+      "type": "add"
+    },
+    {
+      "box": {
+        "x": -11,
+        "y": 325,
+        "w": 435,
+        "h": 945
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 122,
+          "y": 527
+        },
+        {
+          "x": 250,
+          "y": 973
+        }
+      ]
+    }
+  ],
+  "note": "少了桌子\n多出一名衬衫男子",
+  "bg_global": false
+}
