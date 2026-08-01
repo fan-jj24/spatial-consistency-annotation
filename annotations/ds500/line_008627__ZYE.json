@@ -1,0 +1,46 @@
+{
+  "line": 8627,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008627_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477436&Signature=3hMK5OtDfo%2FhxCGEc3n7K1NR4PA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008627_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477436&Signature=6nE1XObyRj0XMR%2Bh7neOmfHs77U%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 69,
+        "y": 390,
+        "w": 159,
+        "h": 387
+      },
+      "type": "move",
+      "target": {
+        "x": 146,
+        "y": 856
+      }
+    },
+    {
+      "box": {
+        "x": 589,
+        "y": 567,
+        "w": 118,
+        "h": 241
+      },
+      "type": "move",
+      "target": {
+        "x": 655,
+        "y": 439
+      }
+    },
+    {
+      "box": {
+        "x": 303,
+        "y": 741,
+        "w": 182,
+        "h": 51
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "青衣女和蓝衣女高度发生变化；茶水杯子下面背景不一致",
+  "bg_global": false
+}
