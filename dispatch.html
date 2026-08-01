@@ -261,6 +261,14 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
   width:80px; cursor:pointer; accent-color:var(--accent);
 }
 #arrowScaleVal { font-size:11px; min-width:24px; text-align:center; }
+.bg-btn {
+  font-size:12px; padding:5px 10px; border:1px solid var(--border);
+  border-radius:6px; background:#fff; cursor:pointer;
+  transition:all .15s;
+}
+.bg-btn:hover:not(:disabled) { border-color:#009688; background:#e0f5f3; }
+.bg-btn.active { background:#009688; color:#fff; border-color:#009688; font-weight:600; }
+.bg-btn:disabled { display:none; }
 #navInfo { font-size:12px; color:var(--muted); }
 #navDots { display:flex; gap:3px; flex-wrap:wrap; max-width:300px; }
 #navDots .dot {
@@ -432,6 +440,9 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
       <span class="tb-sep"></span>
       <button id="btnPrev" class="ghost">← 上一条</button>
       <button id="btnNextItem" class="primary">下一条 →</button>
+      <span class="tb-sep"></span>
+      <button id="btnBgGlobal" class="bg-btn" title="整体背景不一致">整体背景</button>
+      <button id="btnBgLocal" class="bg-btn" title="激活后下一个框标记为局部背景">局部背景</button>
     </div>
     <div class="right">
       <div id="navDots"></div>
@@ -569,6 +580,7 @@ const ACTION_COLORS = {
   ccw:    ["#E65100", "#FF9800", "#FFB74D", "#FFCC80"],  // 旧数据兼容
   neutral:["#FFC107", "#FFB300", "#FFA000", "#FF8F00"],
   custom: ["#5D4037", "#795548", "#8D6E63", "#A1887F"],
+  bg_local:["#009688", "#26A69A", "#4DB6AC", "#80CBC4"],  // 青绿色系（背景框）
 };
 const ACTION_LABELS = {
   add:"新增", delete:"删除", replace:"替换", move:"2D移动",
@@ -600,7 +612,7 @@ const STATE = {
   // 批量任务
   batch: [],            // 领取的样本列表 [{line, remotes, locals}]
   batchIdx: 0,          // 当前正在标注的索引
-  batchResults: {},     // { line: {boxes, note, verdict, reason} } 本地暂存
+  batchResults: {},     // { line: {boxes, note, verdict, reason, bgGlobal, bgLocalMode} } 本地暂存
   batchDone: new Set(), // 已完成的行号
   imgNatW: 0, imgNatH: 0,
   // 当前图的框
@@ -609,6 +621,9 @@ const STATE = {
   undoStack: [],
   editingBoxId: null,
   lastClick: null,      // 双击检测 { time, pos, boxId }
+  // 背景不一致
+  bgGlobal: false,      // 整体背景不一致
+  bgLocalMode: false,   // 局部背景模式：激活后下一个框自动成为 bg_local 类型
   // 审核
   reviewVerdict: null,
   reviewAnnotator: "",
@@ -629,6 +644,24 @@ function showLoading(text) {
 function hideLoading() { $("loading-overlay").classList.add("hidden"); }
 
 function isReviewer() { return STATE.role === "reviewer"; }
+
+// ===== 背景不一致 =====
+function toggleBgGlobal() {
+  STATE.bgGlobal = !STATE.bgGlobal;
+  if (STATE.bgGlobal) STATE.bgLocalMode = false; // 互斥
+  updateBgBtnUI();
+  renderAll();
+}
+function toggleBgLocalMode() {
+  STATE.bgLocalMode = !STATE.bgLocalMode;
+  if (STATE.bgLocalMode) STATE.bgGlobal = false; // 互斥
+  updateBgBtnUI();
+  showToast(STATE.bgLocalMode ? "局部背景已激活，下一个框将标记为背景" : "局部背景已关闭", "info");
+}
+function updateBgBtnUI() {
+  $("btnBgGlobal").classList.toggle("active", STATE.bgGlobal);
+  $("btnBgLocal").classList.toggle("active", STATE.bgLocalMode);
+}
 
 function getBoxColor(boxId, action) {
   const shades = ACTION_COLORS[action] || ACTION_COLORS.neutral;
@@ -704,12 +737,24 @@ function renderAll() { renderSvg(); renderAnnoRows(); }
 function renderSvg() {
   while (svgB.firstChild) svgB.removeChild(svgB.firstChild);
   const defs = document.createElementNS(SVG_NS, "defs");
-  defs.innerHTML = '<marker id="ah" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto" markerUnits="strokeWidth"><polygon points="0 0,6 3,0 6" fill="currentColor"/></marker>';
+  defs.innerHTML = '<marker id="ah" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto" markerUnits="strokeWidth"><polygon points="0 0,6 3,0 6" fill="currentColor"/></marker>'
+    + '<pattern id="bgp" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="12" stroke="#009688" stroke-width="3" opacity="0.35"/></pattern>';
   svgB.appendChild(defs);
+
+  // 整体背景不一致：斜线 pattern 覆盖全图
+  if (STATE.bgGlobal) {
+    const overlay = document.createElementNS(SVG_NS, "rect");
+    overlay.setAttribute("x", 0); overlay.setAttribute("y", 0);
+    overlay.setAttribute("width", "100%"); overlay.setAttribute("height", "100%");
+    overlay.setAttribute("fill", "url(#bgp)");
+    svgB.appendChild(overlay);
+  }
 
   STATE.boxes.forEach((b) => {
     const act = b.action || "neutral";
-    const color = getBoxColor(b.boxId, act);
+    const isBgLocal = !!b.bgLocal;
+    const colorKey = isBgLocal ? "bg_local" : act;
+    const color = getBoxColor(b.boxId, colorKey);
     const tl = imgToSvg(b.x, b.y);
     const br = imgToSvg(b.x + b.w, b.y + b.h);
     const sx = tl.x, sy = tl.y, sw = br.x - tl.x, sh = br.y - tl.y;
@@ -722,11 +767,24 @@ function renderSvg() {
     const rect = document.createElementNS(SVG_NS, "rect");
     rect.setAttribute("x", sx); rect.setAttribute("y", sy);
     rect.setAttribute("width", Math.max(0, sw)); rect.setAttribute("height", Math.max(0, sh));
-    rect.setAttribute("fill", "none");
-    rect.setAttribute("stroke", color);
-    rect.setAttribute("stroke-width", isEditing ? 3 : 2);
-    if (isEditing) rect.setAttribute("stroke-dasharray", "6 3");
+    // 局部背景框：用斜线 pattern 填充
+    if (isBgLocal) {
+      rect.setAttribute("fill", "url(#bgp)");
+      rect.setAttribute("stroke", color);
+      rect.setAttribute("stroke-width", "2.5");
+    } else {
+      rect.setAttribute("fill", "none");
+      rect.setAttribute("stroke", color);
+      rect.setAttribute("stroke-width", isEditing ? 3 : 2);
+      if (isEditing) rect.setAttribute("stroke-dasharray", "6 3");
+    }
     g.appendChild(rect);
+
+    // 局部背景框不画箭头等动作元素
+    if (isBgLocal) {
+      svgB.appendChild(g);
+      return;
+    }
 
     if (act === "move" && b.target) {
       // 2D 移动：粗锥形箭头（与原始模板一致）
@@ -1065,7 +1123,14 @@ svgB.addEventListener("mousedown", (e) => {
   pushUndo();
   const img = svgToImg(p.x, p.y);
   const boxId = STATE.nextBoxId++;
-  STATE.boxes.push({ boxId, x:img.x, y:img.y, w:0, h:0, action:"neutral" });
+  const newBox = { boxId, x:img.x, y:img.y, w:0, h:0, action:"neutral" };
+  // 局部背景模式：新框自动标记为 bg_local，画完自动关闭模式
+  if (STATE.bgLocalMode) {
+    newBox.bgLocal = true;
+    STATE.bgLocalMode = false;
+    updateBgBtnUI();
+  }
+  STATE.boxes.push(newBox);
   gesture = { mode:"draw", boxId, startImg:img };
   renderAll(); e.preventDefault();
 });
@@ -1452,6 +1517,7 @@ function saveCurrentToLocal() {
   if (!STATE.batch.length) return;
   const line = STATE.batch[STATE.batchIdx].line;
   const result = { boxes: JSON.parse(JSON.stringify(STATE.boxes)), note: $("globalNote").value.trim() };
+  result.bgGlobal = STATE.bgGlobal;
   if (isReviewer()) { result.verdict = STATE.reviewVerdict; result.reason = $("reviewReason").value.trim(); }
   STATE.batchResults[line] = result;
 
@@ -1461,8 +1527,8 @@ function saveCurrentToLocal() {
     if (result.verdict) STATE.batchDone.add(line);
     else STATE.batchDone.delete(line);
   } else {
-    // 标注者：必须有框或有描述
-    if (result.boxes.length > 0 || result.note) STATE.batchDone.add(line);
+    // 标注者：必须有框、有描述、或有背景标注
+    if (result.boxes.length > 0 || result.note || result.bgGlobal) STATE.batchDone.add(line);
     else STATE.batchDone.delete(line);
   }
   saveLocal();
@@ -1474,6 +1540,8 @@ function loadCurrentFromLocal() {
   if (saved) {
     STATE.boxes = saved.boxes || [];
     STATE.nextBoxId = STATE.boxes.length ? Math.max(...STATE.boxes.map(b => b.boxId)) + 1 : 1;
+    STATE.bgGlobal = !!saved.bgGlobal;
+    STATE.bgLocalMode = false;
     $("globalNote").value = saved.note || "";
     if (isReviewer()) {
       STATE.reviewVerdict = saved.verdict || null;
@@ -1483,6 +1551,7 @@ function loadCurrentFromLocal() {
     }
   } else {
     STATE.boxes = []; STATE.nextBoxId = 1;
+    STATE.bgGlobal = false; STATE.bgLocalMode = false;
     $("globalNote").value = "";
     STATE.reviewVerdict = null;
     $("reviewReason").value = "";
@@ -1490,6 +1559,7 @@ function loadCurrentFromLocal() {
     $("btnVerdictWrong").classList.remove("active");
   }
   STATE.undoStack = []; STATE.editingBoxId = null;
+  updateBgBtnUI();
 }
 
 // ===== 批量导航 =====
@@ -1540,6 +1610,9 @@ function updateBatchUI() {
   });
   // 审核面板显隐
   $("review-panel").classList.toggle("hidden", !isReviewer());
+  // 背景按钮：审核者隐藏（只读）
+  $("btnBgGlobal").disabled = isReviewer();
+  $("btnBgLocal").disabled = isReviewer();
   // 图片提示
   document.querySelector(".img-tip").textContent = isReviewer()
     ? "查看标注结果 · 在下方判定正确或错误"
@@ -1579,11 +1652,11 @@ async function finishAnnotation() {
       if (!r.verdict) continue;
       results.push({ line: s.line, data: { line: s.line, verdict: r.verdict, reason: r.reason || "", annotator: s._annotatorName || "", reviewer: username, ts: Date.now() } });
     } else {
-      if (!r.boxes.length && !r.note) continue;
+      if (!r.boxes.length && !r.note && !r.bgGlobal) continue;
       results.push({ line: s.line, data: {
         line: s.line, remotes: s.remotes,
         objects: r.boxes.map((b) => {
-          const o = { box: { x:Math.round(b.x), y:Math.round(b.y), w:Math.round(b.w), h:Math.round(b.h) }, type: b.action || "neutral" };
+          const o = { box: { x:Math.round(b.x), y:Math.round(b.y), w:Math.round(b.w), h:Math.round(b.h) }, type: b.bgLocal ? "bg_local" : (b.action || "neutral") };
           if (b.target) o.target = { x:Math.round(b.target.x), y:Math.round(b.target.y) };
           if (b.dir3d) o.dir3d = b.dir3d;
           if (b.text) o.text = b.text;
@@ -1591,6 +1664,7 @@ async function finishAnnotation() {
           return o;
         }),
         note: r.note || "",
+        bg_global: !!r.bgGlobal,
       }});
     }
   }
@@ -1752,13 +1826,14 @@ async function claimTasks() {
           let bid = 1;
           (s._annoData.objects || []).forEach((obj) => {
             const box = { boxId: bid++, x:obj.box.x, y:obj.box.y, w:obj.box.w, h:obj.box.h, action:obj.type||"neutral" };
+            if (obj.type === "bg_local") { box.bgLocal = true; box.action = "neutral"; }
             if (obj.target) box.target = obj.target;
             if (obj.dir3d) box.dir3d = obj.dir3d;
             if (obj.text) box.text = obj.text;
             if (obj.line) box.line = obj.line;
             boxes.push(box);
           });
-          STATE.batchResults[s.line] = { boxes, note: s._annoData.note || "", verdict: null, reason: "" };
+          STATE.batchResults[s.line] = { boxes, note: s._annoData.note || "", bgGlobal: !!s._annoData.bg_global, verdict: null, reason: "" };
         }
       });
     }
@@ -1840,6 +1915,8 @@ async function init() {
     refreshPoolStats();
   };
   $("btnPrev").onclick = () => goToItem(STATE.batchIdx - 1);
+  $("btnBgGlobal").onclick = toggleBgGlobal;
+  $("btnBgLocal").onclick = toggleBgLocalMode;
   // 箭头大小滑块
   $("arrowScale").oninput = (e) => {
     ARROW_SCALE = parseFloat(e.target.value);
