@@ -289,6 +289,9 @@ async function loadAllRecords() {
   showLoading("正在加载全部记录...");
   try {
     records = await window.GithubDispatch.listAllRecords();
+    // 过滤：只保留当前数据集 samples.json 范围内的行（与统计页保持一致）
+    const sampleLines = new Set(samples.map((s) => s.line));
+    records = records.filter((r) => sampleLines.has(r.line));
     hideLoading();
     $("statsText").textContent = "共 " + records.length + " 条记录";
     if (!records.length) {
