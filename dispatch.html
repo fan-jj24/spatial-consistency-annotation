@@ -113,6 +113,30 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
 .claim-actions button { flex:1; padding:12px; font-size:15px; }
 .claim-msg { margin-top:12px; font-size:13px; color:var(--bad); display:none; }
 
+/* 我的标注记录 */
+.my-records-section { margin-top:8px; }
+.my-records-panel {
+  margin-top:8px; border:1px solid var(--border); border-radius:8px; overflow:hidden; background:#fff;
+}
+.my-records-panel.hidden { display:none; }
+.my-records-head {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:8px 12px; font-size:13px; font-weight:700; border-bottom:1px solid var(--border);
+  background:var(--accent-weak);
+}
+.my-records-close { cursor:pointer; font-size:14px; color:var(--muted); }
+.my-records-close:hover { color:var(--bad); }
+.my-records-body { padding:8px 12px; max-height:280px; overflow-y:auto; font-size:12px; }
+.record-row {
+  display:flex; align-items:center; gap:8px; padding:6px 0;
+  border-bottom:1px dashed var(--border);
+}
+.record-row:last-child { border-bottom:none; }
+.record-line { font-weight:700; color:var(--accent); min-width:70px; }
+.record-info { color:var(--muted); flex:1 1 auto; }
+.record-edit-btn { font-size:12px; padding:3px 10px; }
+.my-records-empty { text-align:center; color:var(--muted); padding:16px 0; }
+
 /* ===== 第二阶段：标注工作区 ===== */
 #phase-work { flex:1; display:none; flex-direction:column; min-height:0; overflow-y:auto; }
 #phase-work.active { display:flex; }
@@ -419,6 +443,15 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
       <button id="btnClaim" class="primary">📥 领取任务</button>
     </div>
     <div class="claim-msg" id="claimMsg"></div>
+
+    <!-- 我的标注记录 -->
+    <div class="my-records-section">
+      <button id="btnMyRecords" class="ghost" style="width:100%;margin-top:8px;">📋 我的标注记录</button>
+      <div class="my-records-panel hidden" id="myRecordsPanel">
+        <div class="my-records-head">我的标注记录 <span class="my-records-close" id="myRecordsClose">✕</span></div>
+        <div class="my-records-body" id="myRecordsBody">加载中...</div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -449,6 +482,7 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
       <span class="tb-sep"></span>
       <span id="uploadStatus"></span>
       <button id="btnUpload">🏁 结束标注</button>
+      <button id="btnEditSave" class="primary" style="display:none;">💾 保存修改</button>
     </div>
   </div>
 
@@ -624,6 +658,11 @@ const STATE = {
   // 背景不一致
   bgGlobal: false,      // 整体背景不一致
   bgLocalMode: false,   // 局部背景模式：激活后下一个框自动成为 bg_local 类型
+  // 编辑模式
+  editMode: false,      // true=正在修改已提交的记录
+  editLine: null,       // 正在编辑的行号
+  editSha: null,        // 已有文件的 sha（用于覆盖更新）
+  editIsReview: false,  // 正在编辑的是审核还是标注
   // 审核
   reviewVerdict: null,
   reviewAnnotator: "",
@@ -1851,6 +1890,199 @@ async function claimTasks() {
   }
 }
 
+// ===== 我的标注记录 =====
+async function loadMyRecords() {
+  const isReview = (document.querySelector('input[name="roleRadio"]:checked') || {}).value === "reviewer";
+  const panel = $("myRecordsPanel");
+  const body = $("myRecordsBody");
+  panel.classList.remove("hidden");
+  body.innerHTML = '<div style="text-align:center;color:var(--muted);padding:8px;">加载中...</div>';
+
+  try {
+    const records = await window.GithubDispatch.listMyAnnotations(isReview);
+    if (!records.length) {
+      body.innerHTML = '<div class="my-records-empty">暂无记录</div>';
+      return;
+    }
+    body.innerHTML = "";
+    records.forEach((r) => {
+      const row = document.createElement("div");
+      row.className = "record-row";
+      const sample = STATE.sampleByLine[r.line];
+      const lineEl = document.createElement("span");
+      lineEl.className = "record-line";
+      lineEl.textContent = "Line " + r.line;
+      row.appendChild(lineEl);
+      const info = document.createElement("span");
+      info.className = "record-info";
+      if (isReview) {
+        info.textContent = "审核记录";
+      } else {
+        const objCount = sample ? "?" : "?";
+        info.textContent = "标注记录";
+      }
+      row.appendChild(info);
+      const editBtn = document.createElement("button");
+      editBtn.className = "record-edit-btn primary";
+      editBtn.textContent = "✎ 修改";
+      editBtn.onclick = () => startEditRecord(r.line, isReview, r.path);
+      row.appendChild(editBtn);
+      body.appendChild(row);
+    });
+  } catch (e) {
+    body.innerHTML = '<div style="color:var(--bad);text-align:center;padding:8px;">加载失败: ' + e.message + '</div>';
+  }
+}
+
+// 从记录列表点击修改 → 加载到 phase-work（复用 DOM）
+async function startEditRecord(line, isReview, filePath) {
+  showLoading("正在加载标注数据...");
+  try {
+    const result = await window.GithubDispatch.loadMyAnnotation(line, isReview);
+    hideLoading();
+    if (!result || !result.data) { showToast("加载失败", "warn"); return; }
+
+    // 进入编辑模式
+    STATE.editMode = true;
+    STATE.editLine = line;
+    STATE.editSha = result.sha;
+    STATE.editIsReview = isReview;
+    STATE.role = isReview ? "reviewer" : "annotator";
+
+    // 加载图片
+    const sample = STATE.sampleByLine[line];
+    STATE.current = sample;
+    STATE.batch = [sample];
+    STATE.batchIdx = 0;
+
+    // 恢复 boxes
+    STATE.boxes = [];
+    STATE.nextBoxId = 1;
+    STATE.bgGlobal = !!result.data.bg_global;
+    STATE.bgLocalMode = false;
+    STATE.editingBoxId = null;
+    STATE.undoStack = [];
+
+    if (result.data.objects) {
+      result.data.objects.forEach((obj) => {
+        const box = { boxId: STATE.nextBoxId++, x:obj.box.x, y:obj.box.y, w:obj.box.w, h:obj.box.h, action:obj.type||"neutral" };
+        if (obj.type === "bg_local") { box.bgLocal = true; box.action = "neutral"; }
+        if (obj.target) box.target = obj.target;
+        if (obj.dir3d) box.dir3d = obj.dir3d;
+        if (obj.text) box.text = obj.text;
+        if (obj.line) box.line = obj.line;
+        STATE.boxes.push(box);
+      });
+    }
+
+    $("globalNote").value = result.data.note || "";
+
+    // 如果是审核记录，恢复 verdict
+    if (isReview && result.data.verdict) {
+      STATE.reviewVerdict = result.data.verdict;
+      $("reviewReason").value = result.data.reason || "";
+      $("btnVerdictCorrect").classList.toggle("active", result.data.verdict === "correct");
+      $("btnVerdictWrong").classList.toggle("active", result.data.verdict === "wrong");
+    }
+
+    // 加载图片
+    const remotes = (sample && sample.remotes) || [];
+    imgA.src = remotes[0] || ""; imgA.dataset.currentSrc = remotes[0] || "";
+    imgB.src = remotes[1] || ""; imgB.dataset.currentSrc = remotes[1] || "";
+
+    // 切换到工作区，适配编辑模式 UI
+    showPhase("work");
+    applyEditUI();
+    updateBgBtnUI();
+    renderAll();
+
+    showToast("已加载 Line " + line + "，修改后点保存", "success");
+  } catch (e) {
+    hideLoading();
+    showToast("加载失败: " + e.message, "warn");
+  }
+}
+
+// 编辑模式 UI：隐藏导航/结束按钮，显示保存按钮
+function applyEditUI() {
+  const editing = STATE.editMode;
+  // 隐藏批量导航相关
+  $("btnPrev").style.display = editing ? "none" : "";
+  $("btnNextItem").style.display = editing ? "none" : "";
+  $("navDots").style.display = editing ? "none" : "";
+  $("btnUpload").style.display = editing ? "none" : "";
+  $("btnBackToClaim").style.display = editing ? "none" : "";
+  // 显示保存按钮
+  $("btnEditSave").style.display = editing ? "" : "none";
+  // 显示信息
+  if (editing) {
+    $("navInfo").textContent = "修改 Line " + STATE.editLine;
+  }
+}
+
+// 保存修改
+async function saveEdit() {
+  if (!STATE.editMode || !STATE.current) return;
+
+  if (isReviewer()) {
+    if (!STATE.reviewVerdict) { showToast("请先选择判定", "warn"); return; }
+    const reason = $("reviewReason").value.trim();
+    if (STATE.reviewVerdict === "wrong" && !reason) {
+      $("reviewReason").classList.add("invalid");
+      showToast("判定错误时请填写原因", "warn"); return;
+    }
+  } else {
+    if (STATE.boxes.length && !validateBoxes()) return;
+  }
+
+  const btn = $("btnEditSave");
+  btn.disabled = true; btn.textContent = "保存中...";
+  const statusEl = $("uploadStatus");
+  statusEl.className = "syncing"; statusEl.textContent = "保存中...";
+
+  try {
+    const username = window.GithubAuth.getAnnotatorId();
+    let data;
+    if (STATE.editIsReview) {
+      data = { line: STATE.editLine, verdict: STATE.reviewVerdict, reason: $("reviewReason").value.trim(),
+               annotator: STATE.reviewAnnotator || "", reviewer: username, ts: Date.now() };
+    } else {
+      data = { line: STATE.editLine, remotes: STATE.current.remotes,
+        objects: STATE.boxes.map((b) => {
+          const o = { box: { x:Math.round(b.x), y:Math.round(b.y), w:Math.round(b.w), h:Math.round(b.h) }, type: b.bgLocal ? "bg_local" : (b.action || "neutral") };
+          if (b.target) o.target = { x:Math.round(b.target.x), y:Math.round(b.target.y) };
+          if (b.dir3d) o.dir3d = b.dir3d;
+          if (b.text) o.text = b.text;
+          if (b.line) o.line = b.line.map((p) => ({ x:Math.round(p.x), y:Math.round(p.y) }));
+          return o;
+        }),
+        note: $("globalNote").value.trim(),
+        bg_global: STATE.bgGlobal,
+      };
+    }
+
+    await window.GithubDispatch.updateMyAnnotation(STATE.editLine, data, STATE.editIsReview, STATE.editSha);
+
+    statusEl.className = "synced"; statusEl.textContent = "已保存 ✓";
+    showToast("修改已保存", "success");
+
+    // 退出编辑模式，回到领取界面
+    STATE.editMode = false;
+    STATE.editLine = null;
+    STATE.editSha = null;
+    btn.disabled = false; btn.textContent = "💾 保存修改";
+    setTimeout(() => {
+      showPhase("claim");
+      $("myRecordsPanel").classList.add("hidden");
+      refreshPoolStats();
+    }, 800);
+  } catch (e) {
+    statusEl.className = "error"; statusEl.textContent = "保存失败";
+    showToast("保存失败: " + e.message, "warn");
+  }
+  btn.disabled = false; btn.textContent = "💾 保存修改";
+}
+
 // ===== 登录 =====
 function updateLoginUI() {
   // 领取页面不需要单独的登录区，登录在领取前完成
@@ -1895,6 +2127,12 @@ async function init() {
     if (!window.GithubAuth.getToken()) { openLoginModal(); return; }
     claimTasks();
   };
+  // 我的标注记录
+  $("btnMyRecords").onclick = () => {
+    if (!window.GithubAuth.getToken()) { openLoginModal(); return; }
+    loadMyRecords();
+  };
+  $("myRecordsClose").onclick = () => { $("myRecordsPanel").classList.add("hidden"); };
   // 锁详情面板：点击"锁定中"展开/关闭
   $("lockedStatBox").onclick = () => {
     $("lockDetails").classList.toggle("hidden");
@@ -1909,6 +2147,7 @@ async function init() {
     r.addEventListener("change", () => { if (window.GithubAuth.getToken()) refreshPoolStats(); });
   });
   $("btnUpload").onclick = finishAnnotation;
+  $("btnEditSave").onclick = saveEdit;
   $("btnBackToClaim").onclick = () => {
     saveCurrentToLocal();
     showPhase("claim");
