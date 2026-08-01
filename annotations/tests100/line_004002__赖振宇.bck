@@ -1,0 +1,46 @@
+{
+  "line": 4002,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004002_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477408&Signature=oLgv8lR57htL9%2FhEtoDeXah6Oik%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004002_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477408&Signature=h50E4zSCEUfOYJ4z7tkHSH5aELM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 334,
+        "y": 1101,
+        "w": 376,
+        "h": 141
+      },
+      "type": "add"
+    },
+    {
+      "box": {
+        "x": 20,
+        "y": 73,
+        "w": 333,
+        "h": 1032
+      },
+      "type": "move",
+      "target": {
+        "x": 389,
+        "y": 597
+      }
+    },
+    {
+      "box": {
+        "x": 409,
+        "y": 134,
+        "w": 326,
+        "h": 950
+      },
+      "type": "move",
+      "target": {
+        "x": 382,
+        "y": 741
+      }
+    }
+  ],
+  "note": "黑衣男子与粉衣女子位置变化，需新增倒地青衣人",
+  "bg_global": false
+}
