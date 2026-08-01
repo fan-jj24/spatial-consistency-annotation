@@ -1,0 +1,38 @@
+{
+  "line": 11956,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011956_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479811&Signature=wJCZtY3YwsobKk8cJnjNNRXUMGU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011956_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479811&Signature=Q5Rz%2BTIIPAWkOM2skzvk6hhHyBg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 186,
+        "y": 293,
+        "w": 457,
+        "h": 996
+      },
+      "type": "rotate"
+    },
+    {
+      "box": {
+        "x": 353,
+        "y": 214,
+        "w": 333,
+        "h": 1067
+      },
+      "type": "add"
+    },
+    {
+      "box": {
+        "x": 392,
+        "y": 110,
+        "w": 373,
+        "h": 772
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "黄衣男子朝向发生变化\n少了一名红衣男子\n局部背景发生变化",
+  "bg_global": false
+}
