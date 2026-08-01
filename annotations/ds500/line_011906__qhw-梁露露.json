@@ -1,0 +1,30 @@
+{
+  "line": 11906,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011906_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479811&Signature=fnuXrY3ZeIZifQ%2FbTetmmCuELB0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011906_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479811&Signature=gXPJ5HUEkm8pOsIECrR73mO6dVY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 119,
+        "y": 484,
+        "w": 358,
+        "h": 179
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 183,
+          "y": 525
+        },
+        {
+          "x": 380,
+          "y": 645
+        }
+      ]
+    }
+  ],
+  "note": "画面整体背景不一致\n多出两名女子",
+  "bg_global": true
+}
