@@ -2156,7 +2156,6 @@ async function loadMyRecords() {
       if (isReview) {
         info.textContent = "审核记录";
       } else {
-        const objCount = sample ? "?" : "?";
         info.textContent = "标注记录";
       }
       row.appendChild(info);
@@ -2187,11 +2186,8 @@ async function startEditRecord(line, isReview, filePath) {
     STATE.editIsReview = isReview;
     STATE.role = isReview ? "reviewer" : "annotator";
 
-    // 加载图片
-    const sample = STATE.sampleByLine[line];
-    STATE.current = sample;
-    STATE.batch = [sample];
-    STATE.batchIdx = 0;
+    // 加载样本（samples.json 缺该行时，下面用记录自带的 remotes 兜底重建）
+    let sample = STATE.sampleByLine[line];
 
     // 恢复 boxes
     STATE.boxes = [];
@@ -2201,7 +2197,7 @@ async function startEditRecord(line, isReview, filePath) {
     STATE.undoStack = [];
 
     // 决定 boxes/note/bg 的数据来源：
-    // - 标注记录：直接用 result.data（标注文件本身含 objects）
+    // - 标注记录：直接用 result.data（标注文件本身含 objects + remotes）
     // - 审核记录：审核文件不含 objects，需额外加载原始标注数据来渲染框
     let boxesSource = result.data;
     if (isReview) {
@@ -2215,6 +2211,17 @@ async function startEditRecord(line, isReview, filePath) {
       } catch (e) {}
       hideLoading();
     }
+
+    // 兜底：samples.json 没有该行时（如历史脏数据/跨数据集行），
+    // 用记录自带的 remotes 重建样本，保证图片能显示、保存时 STATE.current 不为空
+    if (!sample) {
+      const remotes = (boxesSource && boxesSource.remotes) || [];
+      sample = { line: line, remotes: remotes, locals: ["", ""] };
+      STATE.sampleByLine[line] = sample;
+    }
+    STATE.current = sample;
+    STATE.batch = [sample];
+    STATE.batchIdx = 0;
 
     STATE.bgGlobal = !!boxesSource.bg_global;
     if (boxesSource.objects) {
@@ -2281,9 +2288,38 @@ function applyEditUI() {
   }
 }
 
+// 校验所有框是否都填完整（适配 dispatch 数据模型）
+// 返回 false 表示有未完成的框，并给出提示
+function validateBoxes() {
+  for (const b of STATE.boxes) {
+    if (b.bgLocal) continue; // 局部背景框不需要动作
+    const act = b.action || "neutral";
+    if (act === "neutral") {
+      showToast("有框未指定动作，请补齐或删掉该框", "warn");
+      return false;
+    }
+    if (act === "move" && !b.target) {
+      showToast("有移动框未设定目标点", "warn");
+      return false;
+    }
+    if (act === "move3d" && !b.dir3d) {
+      showToast("有 3D 移动框未选择方向", "warn");
+      return false;
+    }
+    if (act === "custom" && !(b.text && b.text.trim())) {
+      showToast("有自定义框未填写描述", "warn");
+      return false;
+    }
+  }
+  return true;
+}
+
 // 保存修改
 async function saveEdit() {
-  if (!STATE.editMode || !STATE.current) return;
+  if (!STATE.editMode || !STATE.current) {
+    showToast("编辑数据未就绪，请重新打开该记录", "warn");
+    return;
+  }
 
   if (isReviewer()) {
     if (!STATE.reviewVerdict) { showToast("请先选择判定", "warn"); return; }
