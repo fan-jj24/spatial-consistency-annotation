@@ -1,0 +1,34 @@
+{
+  "line": 11533,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011533_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477452&Signature=WVQXLTboQPobgCL%2BhLd0hGZTCPg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011533_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477452&Signature=r81U4PGm9Z%2B4TEzh%2FQrcIMm0U6I%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 60,
+        "y": 130,
+        "w": 369,
+        "h": 980
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.994,
+        -0.001,
+        0.108
+      ]
+    },
+    {
+      "box": {
+        "x": 508,
+        "y": 188,
+        "w": 200,
+        "h": 681
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "浅灰男位置和朝向发生变化；深灰男朝向发生变化",
+  "bg_global": false
+}
