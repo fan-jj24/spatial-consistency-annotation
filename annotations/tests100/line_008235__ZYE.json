@@ -1,0 +1,59 @@
+{
+  "line": 8235,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008235_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477434&Signature=myz4K5UV7U5VgCnqizATk0fi88c%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008235_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477434&Signature=7k25zxvp93HajA%2B7aA4qtH0%2BdLY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1226,
+        "y": 470,
+        "w": 218,
+        "h": 349
+      },
+      "type": "move",
+      "target": {
+        "x": 1009,
+        "y": 704
+      }
+    },
+    {
+      "box": {
+        "x": 1482,
+        "y": 479,
+        "w": 317,
+        "h": 490
+      },
+      "type": "move",
+      "target": {
+        "x": 236,
+        "y": 763
+      }
+    },
+    {
+      "box": {
+        "x": 471,
+        "y": 44,
+        "w": 442,
+        "h": 501
+      },
+      "type": "move",
+      "target": {
+        "x": 1833,
+        "y": 741
+      }
+    },
+    {
+      "box": {
+        "x": 233,
+        "y": 471,
+        "w": 219,
+        "h": 169
+      },
+      "type": "add"
+    }
+  ],
+  "note": "少了一辆红色车子，蓝色、黄色、白色物体位置和朝向发生变化",
+  "bg_global": false
+}
