@@ -1,0 +1,62 @@
+{
+  "line": 2834,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002834_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477401&Signature=tiDj9H4GNgXqFjfllNUHApTjCNA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002834_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477401&Signature=Gw1WyF9TxzMSsic5JOEb7P9mS2M%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 147,
+        "y": 295,
+        "w": 433,
+        "h": 868
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.015,
+        0.363,
+        0.932
+      ]
+    },
+    {
+      "box": {
+        "x": 323,
+        "y": 208,
+        "w": 90,
+        "h": 95
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 359,
+          "y": 229
+        },
+        {
+          "x": 377,
+          "y": 272
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 587,
+        "y": 521,
+        "w": 128,
+        "h": 422
+      },
+      "type": "rotate"
+    },
+    {
+      "box": {
+        "x": 472,
+        "y": 830,
+        "w": 137,
+        "h": 131
+      },
+      "type": "add"
+    }
+  ],
+  "note": "黑色铁甲兽位置发生变化\n多出一名粉衣女子\n粉衣女子朝向发生变化\n少了一只黑色小豹",
+  "bg_global": false
+}
