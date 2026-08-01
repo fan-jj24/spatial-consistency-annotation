@@ -1,0 +1,25 @@
+{
+  "line": 12431,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_012431_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=coW7IEAIeCTCwsxB%2FvAXm5knA2k%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_012431_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=U9G9bGYZFCDqqMHaQ37URxNXGP8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 529,
+        "y": 154,
+        "w": 266,
+        "h": 1152
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.291,
+        0.065,
+        0.955
+      ]
+    }
+  ],
+  "note": "绿色衣服人物位置发生变化",
+  "bg_global": false
+}
