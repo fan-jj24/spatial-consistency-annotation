@@ -1,0 +1,20 @@
+{
+  "line": 8022,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008022_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477433&Signature=EkyS5AOJNAa3M%2FBgH06xKB6RB58%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008022_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477433&Signature=2ADldXvtntK6xzoAOp75TqPX8og%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 877,
+        "y": 296,
+        "w": 313,
+        "h": 787
+      },
+      "type": "add"
+    }
+  ],
+  "note": "少一个盲人女孩",
+  "bg_global": false
+}
