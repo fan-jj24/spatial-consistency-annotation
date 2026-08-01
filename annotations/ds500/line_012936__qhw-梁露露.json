@@ -1,0 +1,20 @@
+{
+  "line": 12936,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_012936_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=c6u5PqLHsIvhBPXQpsZUUOFHuYk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_012936_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=%2BEUB23Nj4kRdjsgvXm0bSqK2REo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 50,
+        "y": 374,
+        "w": 653,
+        "h": 901
+      },
+      "type": "neutral"
+    }
+  ],
+  "note": "人物群体需要重组",
+  "bg_global": true
+}
