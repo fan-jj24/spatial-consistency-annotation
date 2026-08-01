@@ -1,0 +1,33 @@
+{
+  "line": 12270,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_012270_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479811&Signature=%2Fo8PgonGGcDbVQJROn5kLdbE0%2BU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_012270_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479811&Signature=ZH8WkpQi6jfhSiZD%2BFA9IwQ03xs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 137,
+        "y": 115,
+        "w": 589,
+        "h": 1185
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.449,
+        0.125,
+        0.885
+      ]
+    },
+    {
+      "box": {
+        "x": 580,
+        "y": 18,
+        "w": 148,
+        "h": 788
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "绿衣女子的位置发生了变化，高度发生了变化\n红衣女子的朝向发生了变化"
+}
