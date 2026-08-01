@@ -1,0 +1,29 @@
+{
+  "line": 7630,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007630_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477431&Signature=Eom%2FUa2sMgPWb0%2BHxvCvpU15h5k%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007630_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477431&Signature=LttLfiNxk0xdOMhiX7iQhsYSvDA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -74,
+        "y": 6,
+        "w": 720,
+        "h": 708
+      },
+      "type": "rotate"
+    },
+    {
+      "box": {
+        "x": 245,
+        "y": 228,
+        "w": 943,
+        "h": 577
+      },
+      "type": "add"
+    }
+  ],
+  "note": "黄色吊车朝向发生变化，位置发生变化\n少了黄色出租车",
+  "bg_global": false
+}
