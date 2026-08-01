@@ -1,0 +1,19 @@
+{
+  "line": 11287,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011287_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477451&Signature=QRDC5ch7XRE9JTPfpzQKdu01U28%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011287_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477451&Signature=d29CKiLNXuAgMTRzEE5mr%2Fd59uc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 127,
+        "y": 36,
+        "w": 371,
+        "h": 1239
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "黑衣女子朝向发生变化"
+}
