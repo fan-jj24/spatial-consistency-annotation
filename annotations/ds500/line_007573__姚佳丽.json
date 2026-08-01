@@ -1,0 +1,20 @@
+{
+  "line": 7573,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007573_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477430&Signature=3jtDdUEhFTeURKfc4JcNKlZ7gF0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007573_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477430&Signature=r%2FQKqoB5muMbVNQxI1bZdwHG6FE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1767,
+        "y": 275,
+        "w": 435,
+        "h": 661
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "多了一个手持琵琶的男子",
+  "bg_global": false
+}
