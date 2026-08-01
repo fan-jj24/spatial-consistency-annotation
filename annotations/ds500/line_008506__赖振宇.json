@@ -1,0 +1,20 @@
+{
+  "line": 8506,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008506_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477435&Signature=r38PSM6ucaMPCCJb%2FTNyulG%2BHj0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008506_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477435&Signature=9hFKezkpCEgfT0SAOOMR8Lm6cAI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -1,
+        "y": 416,
+        "w": 719,
+        "h": 852
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "人物群体朝向变化",
+  "bg_global": false
+}
