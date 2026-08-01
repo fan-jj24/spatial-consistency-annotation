@@ -1,0 +1,65 @@
+{
+  "line": 11836,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011836_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477454&Signature=ZjfHrlnOZ5W9%2B6jB0dwPwrTiG5o%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011836_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477454&Signature=WBecSU5xEYDhefxCEFnOcPoZ9l8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 218,
+        "y": 694,
+        "w": 238,
+        "h": 207
+      },
+      "type": "move",
+      "target": {
+        "x": 369,
+        "y": 1053
+      }
+    },
+    {
+      "box": {
+        "x": 438,
+        "y": 523,
+        "w": 259,
+        "h": 279
+      },
+      "type": "replace"
+    },
+    {
+      "box": {
+        "x": 359,
+        "y": 641,
+        "w": 108,
+        "h": 74
+      },
+      "type": "move",
+      "target": {
+        "x": 364,
+        "y": 623
+      }
+    },
+    {
+      "box": {
+        "x": 287,
+        "y": 607,
+        "w": 88,
+        "h": 110
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 313,
+          "y": 625
+        },
+        {
+          "x": 339,
+          "y": 669
+        }
+      ]
+    }
+  ],
+  "note": "蓝衣男子位置发生变化\n紫衣群体被红衣群体替换\n红裤男子位置发生变化，朝向发生变化\n多了一名紫衣人物",
+  "bg_global": false
+}
