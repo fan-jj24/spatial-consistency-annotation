@@ -247,10 +247,9 @@
       : allLines.length;
     const available = total - done - locked;
 
-    // 审核模式：统计每个标注者的待审核数量（排除自己标注的），供定向筛选用
+    // 审核模式：统计每个标注者的待审核数量，供定向筛选用
     const pendingByAnnotator = {};
     if (isReview) {
-      const username = window.GithubAuth.getAnnotatorId();
       for (const line of allLines) {
         if (status.reviewed.has(line)) continue;       // 已审核
         if (!status.done.has(line)) continue;          // 未标注
