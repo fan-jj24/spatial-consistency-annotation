@@ -1,0 +1,58 @@
+{
+  "line": 3409,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003409_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477404&Signature=5TA22vJJkwnP16B5%2Fvr%2Bn%2BEKBj8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003409_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477404&Signature=Qffw5za%2BwkqNYO080kgEQbrqZGw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 455,
+        "y": 489,
+        "w": 276,
+        "h": 356
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 544,
+          "y": 604
+        },
+        {
+          "x": 606,
+          "y": 681
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 242,
+        "y": 492,
+        "w": 100,
+        "h": 259
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 278,
+          "y": 568
+        },
+        {
+          "x": 304,
+          "y": 653
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 5,
+        "y": 853,
+        "w": 655,
+        "h": 420
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "多了人物群体\n多了一名绿衣人物\n烛台被桌子替换",
+  "bg_global": false
+}
