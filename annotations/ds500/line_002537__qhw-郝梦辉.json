@@ -1,0 +1,53 @@
+{
+  "line": 2537,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002537_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477399&Signature=bDdif79%2BrFQk6YpCbCR69dK4BAw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002537_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477399&Signature=WkmConmMKkndLD5JRRY29lmKBBs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 233,
+        "y": 464,
+        "w": 115,
+        "h": 307
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 261,
+          "y": 513
+        },
+        {
+          "x": 318,
+          "y": 658
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 320,
+        "y": 433,
+        "w": 248,
+        "h": 750
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.025,
+        0.06,
+        0.998
+      ]
+    },
+    {
+      "box": {
+        "x": 228,
+        "y": 374,
+        "w": 300,
+        "h": 274
+      },
+      "type": "add"
+    }
+  ],
+  "note": "红衣男子位置发生变化\n多了一名白衣男子\n少了穿盔甲的人物群体",
+  "bg_global": false
+}
