@@ -1,0 +1,20 @@
+{
+  "line": 11592,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011592_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477452&Signature=Px02aAJlAtT4AOub%2BV4tg7%2FaE2k%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011592_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477452&Signature=ZehrG3fyJym28Wc5pUppCBhozmI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 432,
+        "y": 453,
+        "w": 92,
+        "h": 92
+      },
+      "type": "add"
+    }
+  ],
+  "note": "少了一名戴眼镜男子",
+  "bg_global": false
+}
