@@ -1,0 +1,39 @@
+{
+  "line": 2897,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002897_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477401&Signature=JtRz8ZBeXg0ygsHpT7NkCrB5tGk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002897_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477401&Signature=9wemYEe9EDULaswUkEaWNPhfNNc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 210,
+        "y": 354,
+        "w": 343,
+        "h": 855
+      },
+      "type": "neutral"
+    },
+    {
+      "box": {
+        "x": 3,
+        "y": 469,
+        "w": 763,
+        "h": 668
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 599,
+          "y": 653
+        },
+        {
+          "x": 750,
+          "y": 909
+        }
+      ]
+    }
+  ],
+  "note": "整体背景发生变化\n红衣女子高度发生变化\n多了三名粉衣女子",
+  "bg_global": true
+}
