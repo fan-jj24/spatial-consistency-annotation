@@ -156,11 +156,16 @@
     const lPfx = lockPrefix();
     const rlPfx = reviewLockPrefix();
 
-    // 解析已标注/已审核
+    // 解析已标注/已审核（同时记录每行的标注者，用于审核分发时排除自己标的）
+    const annotatorByLine = new Map(); // line → username
     for (const path of files) {
       if (path.startsWith(aPfx) && path.endsWith(".json")) {
-        const m = path.slice(aPfx.length).match(/^line_(\d+)__/);
-        if (m) done.add(parseInt(m[1], 10));
+        const m = path.slice(aPfx.length).match(/^line_(\d+)__(.+)\.json$/);
+        if (m) {
+          const lineNum = parseInt(m[1], 10);
+          done.add(lineNum);
+          annotatorByLine.set(lineNum, m[2]);
+        }
       }
       if (path.startsWith(rPfx) && path.endsWith(".json")) {
         const m = path.slice(rPfx.length).match(/^line_(\d+)__/);
@@ -206,7 +211,7 @@
       } catch (e) {}
     }
 
-    return { done, reviewed, lockedLines, reviewLockedLines, lockHolders, reviewLockHolders, myLock, myReviewLock };
+    return { done, reviewed, lockedLines, reviewLockedLines, lockHolders, reviewLockHolders, annotatorByLine, myLock, myReviewLock };
   }
 
   // ===== 池子统计 =====
@@ -268,6 +273,9 @@
         if (!status.done.has(line)) continue;       // 必须已标注
         if (status.reviewed.has(line)) continue;     // 已审核
         if (status.reviewLockedLines.has(line)) continue; // 被锁
+        // 审核分发排除自己标注的数据
+        const annotator = status.annotatorByLine.get(line);
+        if (annotator && annotator === username) continue;
       } else {
         if (status.done.has(line)) continue;         // 已标注
         if (status.lockedLines.has(line)) continue;  // 被锁
@@ -382,6 +390,105 @@
     return null;
   }
 
+  // ===== 列出我已提交的标注/审核记录 =====
+  async function listMyAnnotations(isReview) {
+    const username = window.GithubAuth.getAnnotatorId();
+    if (!username) throw new Error("未登录");
+    const files = await listAllFiles();
+    const results = [];
+    if (isReview) {
+      const pfx = reviewPrefix();
+      for (const path of files) {
+        if (path.startsWith(pfx) && path.endsWith(".json")) {
+          const m = path.slice(pfx.length).match(/^line_(\d+)__(.+)\.json$/);
+          if (m && m[2] === username) {
+            results.push({ line: parseInt(m[1], 10), path: path, isReview: true });
+          }
+        }
+      }
+    } else {
+      const pfx = annoPrefix();
+      for (const path of files) {
+        if (path.startsWith(pfx) && path.endsWith(".json")) {
+          const m = path.slice(pfx.length).match(/^line_(\d+)__(.+)\.json$/);
+          if (m && m[2] === username) {
+            results.push({ line: parseInt(m[1], 10), path: path, isReview: false });
+          }
+        }
+      }
+    }
+    results.sort((a, b) => a.line - b.line);
+    return results;
+  }
+
+  // ===== 加载我的某条标注数据（用于修改）=====
+  async function loadMyAnnotation(line, isReview) {
+    const username = window.GithubAuth.getAnnotatorId();
+    const path = isReview ? reviewFilePath(line, username) : annotationFilePath(line, username);
+    try {
+      const info = await getFileRaw(path);
+      return info ? { data: info.data, sha: info.sha, path: path } : null;
+    } catch (e) { return null; }
+  }
+
+  // ===== 更新我已提交的标注（覆盖同名文件）=====
+  async function updateMyAnnotation(line, data, isReview, knownSha) {
+    const username = window.GithubAuth.getAnnotatorId();
+    const path = isReview ? reviewFilePath(line, username) : annotationFilePath(line, username);
+    let sha = knownSha;
+    if (!sha) {
+      try { const info = await getFileRaw(path); if (info) sha = info.sha; } catch (e) {}
+    }
+    await putFile(path, data, sha,
+      (isReview ? "审核修改" : "标注修改") + " line " + line + " by " + username);
+  }
+
+  // ===== 列出全部标注+审核记录（综合审阅用）=====
+  // 返回 [{line, annotator, annotation, reviewer, review}]
+  async function listAllRecords() {
+    const files = await listAllFiles();
+    const aPfx = annoPrefix();
+    const rPfx = reviewPrefix();
+    const records = {}; // { line: {annotator, annotation, reviewer, review} }
+
+    for (const path of files) {
+      // 标注文件
+      if (path.startsWith(aPfx) && path.endsWith(".json")) {
+        const m = path.slice(aPfx.length).match(/^line_(\d+)__(.+)\.json$/);
+        if (m) {
+          const line = parseInt(m[1], 10);
+          if (!records[line]) records[line] = {};
+          try {
+            const info = await getFileRaw(path);
+            if (info && info.data) {
+              records[line].annotator = m[2];
+              records[line].annotation = info.data;
+            }
+          } catch (e) {}
+        }
+      }
+      // 审核文件
+      if (path.startsWith(rPfx) && path.endsWith(".json")) {
+        const m = path.slice(rPfx.length).match(/^line_(\d+)__(.+)\.json$/);
+        if (m) {
+          const line = parseInt(m[1], 10);
+          if (!records[line]) records[line] = {};
+          try {
+            const info = await getFileRaw(path);
+            if (info && info.data) {
+              records[line].reviewer = m[2];
+              records[line].review = info.data;
+            }
+          } catch (e) {}
+        }
+      }
+    }
+
+    return Object.keys(records).map(Number).sort((a, b) => a - b).map((line) => ({
+      line, ...records[line]
+    }));
+  }
+
   // ===== 暴露 API =====
   window.GithubDispatch = {
     setDataset: setDataset,
@@ -394,6 +501,10 @@
     releaseBatchLines: releaseBatchLines,
     releaseAll: releaseAll,
     loadAnnotationForReview: loadAnnotationForReview,
+    listMyAnnotations: listMyAnnotations,
+    loadMyAnnotation: loadMyAnnotation,
+    updateMyAnnotation: updateMyAnnotation,
+    listAllRecords: listAllRecords,
     getFileRaw: getFileRaw,
     annotationFilePath: annotationFilePath,
     reviewFilePath: reviewFilePath,
