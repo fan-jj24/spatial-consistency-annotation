@@ -1,0 +1,37 @@
+{
+  "line": 12456,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_012456_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=WzCsdd8Xm68xu1eytkyl7CuoCtg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_012456_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=5OkW5wO8lUt68r4UsiFsBQviFkA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 45,
+        "y": 151,
+        "w": 459,
+        "h": 564
+      },
+      "type": "move",
+      "target": {
+        "x": 523,
+        "y": 477
+      }
+    },
+    {
+      "box": {
+        "x": 564,
+        "y": 26,
+        "w": 693,
+        "h": 642
+      },
+      "type": "move",
+      "target": {
+        "x": 531,
+        "y": 351
+      }
+    }
+  ],
+  "note": "红衣小孩和红衣女子位置变化",
+  "bg_global": false
+}
