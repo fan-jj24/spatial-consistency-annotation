@@ -1,0 +1,24 @@
+{
+  "line": 8706,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008706_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477436&Signature=f0yDlWzJCsF%2B2yj2Wft8%2Fv1iG%2FU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008706_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477436&Signature=%2FtxtjCsg7icP6sXjgRYqmejJG9s%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 544,
+        "y": 292,
+        "w": 96,
+        "h": 367
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.025,
+        -0.147,
+        -0.989
+      ]
+    }
+  ],
+  "note": "穿盔甲女子位置发生变化"
+}
