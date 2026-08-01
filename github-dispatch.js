@@ -246,7 +246,22 @@
       ? allLines.filter((l) => status.done.has(l)).length  // 审核池 = 已标注的
       : allLines.length;
     const available = total - done - locked;
-    return { total, done, locked, available, lockHolders };
+
+    // 审核模式：统计每个标注者的待审核数量（排除自己标注的），供定向筛选用
+    const pendingByAnnotator = {};
+    if (isReview) {
+      const username = window.GithubAuth.getAnnotatorId();
+      for (const line of allLines) {
+        if (status.reviewed.has(line)) continue;       // 已审核
+        if (!status.done.has(line)) continue;          // 未标注
+        if (status.reviewLockedLines.has(line)) continue; // 被锁
+        const annotator = status.annotatorByLine.get(line);
+        if (!annotator || annotator === username) continue;
+        pendingByAnnotator[annotator] = (pendingByAnnotator[annotator] || 0) + 1;
+      }
+    }
+
+    return { total, done, locked, available, lockHolders, pendingByAnnotator };
   }
 
   // ===== 批量领取 =====
@@ -255,15 +270,18 @@
    * @param {Array<{line,remotes,locals}>} samples - 全部样本
    * @param {number} count - 要领取的数量
    * @param {boolean} isReview - true=审核模式
+   * @param {string[]|null} annotatorFilter - 审核模式下定向筛选的标注者列表（空/null=不筛选）
    * @returns {Promise<{samples: Array, lines: number[]}>}
    */
-  async function claimBatch(samples, count, isReview) {
+  async function claimBatch(samples, count, isReview, annotatorFilter) {
     const username = window.GithubAuth.getAnnotatorId();
     if (!username) throw new Error("未登录");
 
     const status = await scanStatus();
     const byLine = {};
     samples.forEach((s) => { byLine[s.line] = s; });
+
+    const filterSet = (annotatorFilter && annotatorFilter.length) ? new Set(annotatorFilter) : null;
 
     // 收集候选行
     const candidates = [];
@@ -276,6 +294,8 @@
         // 审核分发排除自己标注的数据
         const annotator = status.annotatorByLine.get(line);
         if (annotator && annotator === username) continue;
+        // 定向筛选：只领取指定标注者的数据
+        if (filterSet && (!annotator || !filterSet.has(annotator))) continue;
       } else {
         if (status.done.has(line)) continue;         // 已标注
         if (status.lockedLines.has(line)) continue;  // 被锁
