@@ -1,0 +1,44 @@
+{
+  "line": 3976,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003976_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477407&Signature=nGoF9Zic%2FMTYiA0CCRl8UR11YcM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003976_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477407&Signature=6og1nhNYWTXyC9XztrxqO5nVilI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 2,
+        "y": 1027,
+        "w": 730,
+        "h": 238
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 235,
+          "y": 1073
+        },
+        {
+          "x": 368,
+          "y": 1211
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 547,
+        "y": 328,
+        "w": 164,
+        "h": 660
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.53,
+        0.283,
+        0.799
+      ]
+    }
+  ],
+  "note": "多出一组桌椅\n黄衣持刀男子位置发生变化",
+  "bg_global": false
+}
