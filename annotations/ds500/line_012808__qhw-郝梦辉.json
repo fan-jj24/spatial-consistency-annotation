@@ -1,0 +1,39 @@
+{
+  "line": 12808,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_012808_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=y9STttvpNtOHZ%2FMLHqlooJrJpeM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_012808_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=Sh3UidRZYLONFovIx89lhbvbppM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 466,
+        "y": 397,
+        "w": 230,
+        "h": 456
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.535,
+        0.131,
+        -0.835
+      ]
+    },
+    {
+      "box": {
+        "x": 15,
+        "y": 113,
+        "w": 581,
+        "h": 1254
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.475,
+        0.213,
+        0.854
+      ]
+    }
+  ],
+  "note": "长发女子的位置发生变化\n棕衣男子的位置发生变化",
+  "bg_global": false
+}
