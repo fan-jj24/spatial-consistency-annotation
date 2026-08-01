@@ -147,6 +147,18 @@ button.ghost { background:#fff; }
 .case-objects { color:var(--muted); }
 .case-note { color:var(--text); font-size:11px; max-width:200px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
 
+/* 图片对缩略图 */
+.thumb-pair { display:flex; gap:3px; }
+.thumb-pair .thumb {
+  width:44px; height:32px; object-fit:cover; border-radius:4px;
+  border:1px solid var(--border); background:#111; cursor:zoom-in;
+  transition:transform .18s ease, box-shadow .18s ease;
+}
+.thumb-pair .thumb:hover {
+  transform:scale(2.6); box-shadow:0 6px 20px rgba(0,0,0,.35);
+  position:relative; z-index:50;
+}
+
 /* 空状态 */
 .empty-state { text-align:center; padding:60px 20px; color:var(--muted); }
 .empty-state h3 { font-size:18px; margin:0 0 8px; }
@@ -219,6 +231,7 @@ button.ghost { background:#fff; }
 const $ = (id) => document.getElementById(id);
 
 let samples = [];
+let sampleByLine = {};
 let currentDatasetIdx = 0;
 let allRecords = [];
 let lockStatus = null;
@@ -235,6 +248,19 @@ function hideLoading() { $("loading-overlay").classList.add("hidden"); }
 function esc(s) {
   if (!s) return "";
   return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+
+// 生成一对图片的缩略图 HTML（A + B 并排，悬停放大）
+function thumbHtml(line) {
+  const s = sampleByLine[line];
+  if (!s || !s.remotes || !s.remotes.length) return '<span class="muted">—</span>';
+  const a = s.remotes[0] || "";
+  const b = s.remotes[1] || "";
+  let h = '<div class="thumb-pair">';
+  if (a) h += '<img class="thumb" src="' + a + '" alt="A" loading="lazy" />';
+  if (b) h += '<img class="thumb" src="' + b + '" alt="B" loading="lazy" />';
+  h += '</div>';
+  return h;
 }
 
 function getDatasets() {
@@ -259,6 +285,8 @@ async function loadDataset(idx) {
   const resp = await fetch(ds.file);
   if (!resp.ok) throw new Error("HTTP " + resp.status);
   samples = await resp.json();
+  sampleByLine = {};
+  samples.forEach((s) => { sampleByLine[s.line] = s; });
 }
 
 // ===== 加载全部数据 =====
@@ -280,12 +308,16 @@ async function loadAllData() {
 // ===== 渲染统计 =====
 function renderStats() {
   const totalLines = samples.length;
+  // 只统计当前数据集 samples.json 范围内的行
+  const sampleLines = new Set(samples.map((s) => s.line));
 
   // 按 annotation / review / lock 分组到用户
   const byUser = {}; // { name: { annotations: [], reviews: [], lockedLines: [] } }
 
-  // 标注记录
-  allRecords.forEach((r) => {
+  // 标注记录（过滤：只保留当前数据集范围内的，用局部变量避免污染全局）
+  const records = allRecords.filter((r) => sampleLines.has(r.line));
+
+  records.forEach((r) => {
     if (r.annotator) {
       if (!byUser[r.annotator]) byUser[r.annotator] = { annotations: [], reviews: [], lockedLines: [] };
       byUser[r.annotator].annotations.push(r);
@@ -296,30 +328,39 @@ function renderStats() {
     }
   });
 
-  // 锁定记录（标注锁）
+  // 锁定记录（标注锁，过滤范围）
   if (lockStatus && lockStatus.lockHolders) {
     for (const [line, holder] of lockStatus.lockHolders.entries()) {
+      const ln = parseInt(line, 10);
+      if (!sampleLines.has(ln)) continue;
       if (!byUser[holder]) byUser[holder] = { annotations: [], reviews: [], lockedLines: [] };
-      byUser[holder].lockedLines.push(parseInt(line, 10));
+      byUser[holder].lockedLines.push(ln);
     }
   }
-  // 锁定记录（审核锁）
+  // 锁定记录（审核锁，过滤范围）
   if (lockStatus && lockStatus.reviewLockHolders) {
     for (const [line, holder] of lockStatus.reviewLockHolders.entries()) {
+      const ln = parseInt(line, 10);
+      if (!sampleLines.has(ln)) continue;
       if (!byUser[holder]) byUser[holder] = { annotations: [], reviews: [], lockedLines: [] };
-      byUser[holder].lockedLines.push(parseInt(line, 10));
+      byUser[holder].lockedLines.push(ln);
     }
   }
 
-  // 总览数字
+  // 总览数字（基于过滤后的 records，确保只统计当前数据集范围）
   let totalAnnotated = 0, totalReviewed = 0, totalLocked = 0;
-  allRecords.forEach((r) => {
+  records.forEach((r) => {
     if (r.annotation) totalAnnotated++;
     if (r.review) totalReviewed++;
   });
   if (lockStatus) {
-    totalLocked = (lockStatus.lockedLines ? lockStatus.lockedLines.size : 0)
-                + (lockStatus.reviewLockedLines ? lockStatus.reviewLockedLines.size : 0);
+    // 锁定数也要按数据集范围过滤
+    if (lockStatus.lockedLines) {
+      for (const ln of lockStatus.lockedLines) { if (sampleLines.has(ln)) totalLocked++; }
+    }
+    if (lockStatus.reviewLockedLines) {
+      for (const ln of lockStatus.reviewLockedLines) { if (sampleLines.has(ln)) totalLocked++; }
+    }
   }
   const available = totalLines - totalAnnotated;
 
@@ -369,7 +410,7 @@ function renderStats() {
 
     // 标注 case
     if (annoCount) {
-      html += '<table class="case-table"><thead><tr><th>Line</th><th>类型</th><th>对象数</th><th>整体背景</th><th>Note</th><th>审核状态</th></tr></thead><tbody>';
+      html += '<table class="case-table"><thead><tr><th>Line</th><th>图片</th><th>类型</th><th>对象数</th><th>整体背景</th><th>Note</th><th>审核状态</th></tr></thead><tbody>';
       u.annotations.forEach((r) => {
         const anno = r.annotation || {};
         const objCount = (anno.objects || []).length;
@@ -380,7 +421,7 @@ function renderStats() {
           if (r.review.verdict === "correct") reviewStatus = '<span class="case-verdict-correct">✓ 正确</span>';
           else if (r.review.verdict === "wrong") reviewStatus = '<span class="case-verdict-wrong">✗ 错误</span>';
         }
-        html += '<tr><td class="case-line">' + r.line + '</td><td><span class="case-type annotation">标注</span></td>';
+        html += '<tr><td class="case-line">' + r.line + '</td><td>' + thumbHtml(r.line) + '</td><td><span class="case-type annotation">标注</span></td>';
         html += '<td class="case-objects">' + objCount + '</td><td>' + hasBg + '</td>';
         html += '<td class="case-note" title="' + note + '">' + note + '</td><td>' + reviewStatus + '</td></tr>';
       });
@@ -389,7 +430,7 @@ function renderStats() {
 
     // 审核 case
     if (revCount) {
-      html += '<table class="case-table" style="margin-top:12px;"><thead><tr><th>Line</th><th>类型</th><th>判定</th><th>原因</th><th>原标注者</th></tr></thead><tbody>';
+      html += '<table class="case-table" style="margin-top:12px;"><thead><tr><th>Line</th><th>图片</th><th>类型</th><th>判定</th><th>原因</th><th>原标注者</th></tr></thead><tbody>';
       u.reviews.forEach((r) => {
         const rev = r.review || {};
         let verdict = "—";
@@ -397,7 +438,7 @@ function renderStats() {
         else if (rev.verdict === "wrong") verdict = '<span class="case-verdict-wrong">✗ 错误</span>';
         const reason = rev.reason ? esc(rev.reason) : "—";
         const origAnnotator = r.annotator ? esc(r.annotator) : "—";
-        html += '<tr><td class="case-line">' + r.line + '</td><td><span class="case-type review">审核</span></td>';
+        html += '<tr><td class="case-line">' + r.line + '</td><td>' + thumbHtml(r.line) + '</td><td><span class="case-type review">审核</span></td>';
         html += '<td>' + verdict + '</td><td class="case-note" title="' + reason + '">' + reason + '</td><td>' + origAnnotator + '</td></tr>';
       });
       html += '</tbody></table>';
@@ -406,9 +447,9 @@ function renderStats() {
     // 锁定 case
     if (lockCount) {
       const sortedLocks = u.lockedLines.slice().sort((a, b) => a - b);
-      html += '<table class="case-table" style="margin-top:12px;"><thead><tr><th>Line</th><th>类型</th><th>状态</th></tr></thead><tbody>';
+      html += '<table class="case-table" style="margin-top:12px;"><thead><tr><th>Line</th><th>图片</th><th>类型</th><th>状态</th></tr></thead><tbody>';
       sortedLocks.forEach((line) => {
-        html += '<tr><td class="case-line">' + line + '</td><td><span class="case-type locked">锁定</span></td><td>未提交</td></tr>';
+        html += '<tr><td class="case-line">' + line + '</td><td>' + thumbHtml(line) + '</td><td><span class="case-type locked">锁定</span></td><td>未提交</td></tr>';
       });
       html += '</tbody></table>';
     }
@@ -437,9 +478,11 @@ window.toggleUser = function(name) {
 function exportCsv() {
   const lines = [];
   lines.push("用户,类型,Line,对象数,整体背景,Note,判定,原因,原标注者");
-  // 重新遍历 byUser 逻辑（简化版）
+  // 只导出当前数据集范围内的记录
+  const sampleLines = new Set(samples.map((s) => s.line));
+  const records = allRecords.filter((r) => sampleLines.has(r.line));
   const byUser = {};
-  allRecords.forEach((r) => {
+  records.forEach((r) => {
     if (r.annotator) {
       if (!byUser[r.annotator]) byUser[r.annotator] = { annotations: [], reviews: [], lockedLines: [] };
       byUser[r.annotator].annotations.push(r);
@@ -451,8 +494,10 @@ function exportCsv() {
   });
   if (lockStatus && lockStatus.lockHolders) {
     for (const [line, holder] of lockStatus.lockHolders.entries()) {
+      const ln = parseInt(line, 10);
+      if (!sampleLines.has(ln)) continue;
       if (!byUser[holder]) byUser[holder] = { annotations: [], reviews: [], lockedLines: [] };
-      byUser[holder].lockedLines.push(parseInt(line, 10));
+      byUser[holder].lockedLines.push(ln);
     }
   }
   Object.keys(byUser).sort().forEach((name) => {
