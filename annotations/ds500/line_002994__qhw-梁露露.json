@@ -1,0 +1,25 @@
+{
+  "line": 2994,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002994_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477402&Signature=By2Qn7Rru5t5qW33kFisMyzfotQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002994_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477402&Signature=%2FAzZRbn2MQHLntyVgmDuMk%2Fwws4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 85,
+        "y": 121,
+        "w": 571,
+        "h": 1144
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.047,
+        0.436,
+        0.899
+      ]
+    }
+  ],
+  "note": "灰色西装女子位置发生变化",
+  "bg_global": false
+}
