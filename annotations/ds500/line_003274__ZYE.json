@@ -1,0 +1,51 @@
+{
+  "line": 3274,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003274_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477403&Signature=ZOSjFmrXWv1Eb4R9poDPSjTSj%2Bs%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003274_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477403&Signature=P6zCYnCTyiDvp2YRV09Bak%2Fnm4c%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 287,
+        "y": 226,
+        "w": 195,
+        "h": 852
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.737,
+        -0.041,
+        -0.675
+      ]
+    },
+    {
+      "box": {
+        "x": 56,
+        "y": 221,
+        "w": 164,
+        "h": 791
+      },
+      "type": "move",
+      "target": {
+        "x": 617,
+        "y": 400
+      }
+    },
+    {
+      "box": {
+        "x": 497,
+        "y": 226,
+        "w": 241,
+        "h": 755
+      },
+      "type": "move",
+      "target": {
+        "x": 16,
+        "y": 426
+      }
+    }
+  ],
+  "note": "人物群体需要重组",
+  "bg_global": false
+}
