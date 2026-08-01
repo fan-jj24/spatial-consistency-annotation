@@ -1,0 +1,30 @@
+{
+  "line": 11881,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011881_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477454&Signature=ihPnTktdcnfoOuk1Gg2S6pIzhso%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011881_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477454&Signature=CbxZJ%2BRe6yUvnDr86Q%2FbAxnhB%2FE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 235,
+        "y": 502,
+        "w": 874,
+        "h": 210
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 574,
+          "y": 608
+        },
+        {
+          "x": 862,
+          "y": 710
+        }
+      ]
+    }
+  ],
+  "note": "多了一双手",
+  "bg_global": false
+}
