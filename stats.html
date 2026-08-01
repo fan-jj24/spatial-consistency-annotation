@@ -1,0 +1,554 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>全局统计</title>
+<style>
+:root {
+  --bg:#f5f6f8; --panel:#fff; --border:#e3e5ea;
+  --text:#1f2328; --muted:#6a737d;
+  --accent:#3b7dfb; --accent-weak:#e5efff;
+  --ok:#2e9f5a; --ok-weak:#d8f2e3;
+  --bad:#d1453b; --bad-weak:#fde2e0;
+  --warn:#d97706; --warn-weak:#fef3c7;
+  --shadow:0 1px 3px rgba(0,0,0,.06);
+}
+* { box-sizing:border-box; }
+html, body { height:100%; margin:0; }
+body {
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  background:var(--bg); color:var(--text); font-size:14px;
+  display:flex; flex-direction:column; overflow:hidden;
+}
+button {
+  cursor:pointer; padding:6px 14px; border-radius:6px;
+  border:1px solid var(--border); background:#fff; color:var(--text);
+  font-size:13px; transition:background .15s,border-color .15s;
+}
+button:hover:not(:disabled) { background:var(--accent-weak); border-color:var(--accent); }
+button.primary { background:var(--accent); color:#fff; border-color:var(--accent); font-weight:600; }
+button.primary:hover:not(:disabled) { background:#2a6ae0; }
+button.ghost { background:#fff; }
+.hidden { display:none !important; }
+.muted { color:var(--muted); font-size:12px; }
+
+/* 顶栏 */
+#topbar {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:8px 16px; background:var(--panel); border-bottom:1px solid var(--border);
+  box-shadow:var(--shadow); flex:0 0 auto; gap:12px;
+}
+#topbar .left, #topbar .right { display:flex; align-items:center; gap:8px; }
+.tb-sep { width:1px; height:20px; background:var(--border); margin:0 2px; }
+
+/* 登录区 */
+#user-area { display:flex; align-items:center; gap:6px; }
+#user-area.hidden { display:none; }
+#user-area .avatar { width:24px; height:24px; border-radius:50%; border:1.5px solid var(--border); }
+#user-area .username { font-size:13px; font-weight:600; }
+#btnLogin { background:var(--accent); color:#fff; border-color:var(--accent); font-weight:600; }
+
+/* 登录遮罩 */
+#login-overlay {
+  position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:9100;
+  display:flex; align-items:center; justify-content:center;
+}
+#login-overlay.hidden { display:none; }
+#login-box {
+  background:#fff; border-radius:12px; padding:32px; width:440px; max-width:90vw;
+  box-shadow:0 8px 32px rgba(0,0,0,0.2); text-align:center;
+}
+#login-box h3 { margin:0 0 8px; font-size:18px; }
+#login-box .sub { color:var(--muted); font-size:13px; margin-bottom:20px; }
+#login-box input {
+  width:100%; padding:10px 12px; border:1.5px solid var(--border); border-radius:6px;
+  font-size:14px; box-sizing:border-box; margin-bottom:12px;
+}
+#login-box input:focus { outline:none; border-color:var(--accent); }
+#login-box .login-error { color:var(--bad); font-size:13px; margin-top:8px; display:none; }
+#login-box .login-cancel { margin-top:12px; font-size:13px; color:var(--muted); cursor:pointer; text-decoration:underline; }
+
+/* 加载遮罩 */
+#loading-overlay {
+  position:fixed; inset:0; background:rgba(255,255,255,0.88);
+  z-index:9999; display:flex; align-items:center; justify-content:center;
+  flex-direction:column; gap:16px;
+}
+#loading-overlay.hidden { display:none; }
+.spinner {
+  width:40px; height:40px; border:4px solid var(--border);
+  border-top-color:var(--accent); border-radius:50%;
+  animation:spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform:rotate(360deg); } }
+
+/* 内容区 */
+#content { flex:1; overflow-y:auto; padding:16px; }
+
+/* 总览卡片 */
+.overview-bar {
+  display:flex; gap:12px; margin-bottom:20px; flex-wrap:wrap;
+}
+.overview-card {
+  flex:1 1 auto; min-width:120px; padding:16px 20px; background:var(--panel);
+  border:1px solid var(--border); border-radius:12px; text-align:center;
+  box-shadow:var(--shadow);
+}
+.overview-card .num { font-size:28px; font-weight:800; }
+.overview-card .lbl { font-size:12px; color:var(--muted); margin-top:4px; }
+.overview-card.total .num { color:var(--accent); }
+.overview-card.done .num { color:var(--ok); }
+.overview-card.locked .num { color:var(--warn); }
+.overview-card.avail .num { color:var(--text); }
+.overview-card.reviewed .num { color:#8E24AA; }
+
+/* 用户卡片 */
+.user-card {
+  background:var(--panel); border:1px solid var(--border); border-radius:12px;
+  margin-bottom:12px; overflow:hidden; box-shadow:var(--shadow);
+}
+.user-head {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:12px 16px; cursor:pointer; transition:background .15s;
+}
+.user-head:hover { background:var(--bg); }
+.user-head .name { font-size:15px; font-weight:700; }
+.user-head .avatar-sm { width:28px; height:28px; border-radius:50%; margin-right:8px; vertical-align:middle; }
+.user-head .badges { display:flex; gap:6px; }
+.user-badge {
+  font-size:11px; font-weight:700; padding:3px 10px; border-radius:10px;
+}
+.user-badge.anno { background:var(--accent-weak); color:var(--accent); }
+.user-badge.rev { background:#f3e5f5; color:#8E24AA; }
+.user-badge.lock { background:var(--warn-weak); color:var(--warn); }
+.user-head .arrow { font-size:12px; color:var(--muted); transition:transform .2s; }
+.user-head.expanded .arrow { transform:rotate(90deg); }
+
+.user-body { display:none; padding:0 16px 12px; }
+.user-body.show { display:block; }
+
+/* case 列表 */
+.case-table { width:100%; border-collapse:collapse; font-size:12px; margin-top:8px; }
+.case-table th {
+  text-align:left; padding:6px 8px; border-bottom:2px solid var(--border);
+  font-weight:600; color:var(--muted); font-size:11px;
+}
+.case-table td { padding:5px 8px; border-bottom:1px solid var(--border); }
+.case-table tr:hover td { background:var(--bg); }
+.case-line { font-weight:700; color:var(--accent); }
+.case-type { padding:1px 6px; border-radius:3px; font-size:11px; }
+.case-type.annotation { background:var(--accent-weak); color:var(--accent); }
+.case-type.review { background:#f3e5f5; color:#8E24AA; }
+.case-type.locked { background:var(--warn-weak); color:var(--warn); }
+.case-verdict-correct { color:var(--ok); font-weight:600; }
+.case-verdict-wrong { color:var(--bad); font-weight:600; }
+.case-objects { color:var(--muted); }
+.case-note { color:var(--text); font-size:11px; max-width:200px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+
+/* 空状态 */
+.empty-state { text-align:center; padding:60px 20px; color:var(--muted); }
+.empty-state h3 { font-size:18px; margin:0 0 8px; }
+
+/* 导出区 */
+.export-bar { margin-bottom:16px; display:flex; gap:8px; align-items:center; }
+.export-bar select { padding:5px 10px; border:1px solid var(--border); border-radius:6px; font-size:13px; }
+
+/* toast */
+#toast {
+  position:fixed; bottom:80px; left:50%; transform:translateX(-50%);
+  padding:8px 20px; border-radius:6px; background:var(--bad); color:#fff;
+  font-size:13px; z-index:9999; opacity:0; transition:opacity .3s; pointer-events:none;
+}
+#toast.show { opacity:1; }
+#toast.success { background:var(--ok); }
+</style>
+<script src="config.js"></script>
+<script src="github-auth.js"></script>
+<script src="github-dispatch.js"></script>
+</head>
+<body>
+
+<div id="topbar">
+  <div class="left">
+    <b>📊 全局统计</b>
+    <span class="tb-sep"></span>
+    <select id="datasetSelect"></select>
+    <span class="tb-sep"></span>
+    <button id="btnRefresh" class="ghost">🔄 刷新</button>
+  </div>
+  <div class="right">
+    <div id="user-area" class="hidden">
+      <img class="avatar" id="userAvatar" src="" alt="" />
+      <span class="username" id="userName"></span>
+    </div>
+    <button id="btnLogin">🔑 GitHub 登录</button>
+  </div>
+</div>
+
+<div id="content">
+  <div class="empty-state" id="emptyState">
+    <h3>登录后选择数据集查看全局统计</h3>
+    <p>按用户分组统计标注数、审核数、锁定数，可展开查看每条 case 详情</p>
+  </div>
+</div>
+
+<div id="toast"></div>
+<div id="loading-overlay" class="hidden">
+  <div class="spinner"></div>
+  <div id="loadingText">加载中...</div>
+</div>
+
+<!-- 登录模态框 -->
+<div id="login-overlay" class="hidden">
+  <div id="login-box">
+    <h3>🔑 GitHub 登录</h3>
+    <div class="sub">使用 PAT 登录查看全局统计</div>
+    <input type="password" id="patInput" placeholder="ghp_xxxx 或 github_pat_xxxx" />
+    <input type="text" id="annotatorNameInput" placeholder="你的名字" />
+    <button id="btnStartLogin" class="primary" style="width:100%;padding:10px;font-size:15px;">验证并登录</button>
+    <div class="login-error" id="loginError"></div>
+    <div class="login-cancel" id="loginCancel">取消</div>
+  </div>
+</div>
+
+<script>
+"use strict";
+(function () {
+const $ = (id) => document.getElementById(id);
+
+let samples = [];
+let currentDatasetIdx = 0;
+let allRecords = [];
+let lockStatus = null;
+
+// ===== 工具 =====
+function showToast(msg, type) {
+  const t = $("toast");
+  t.textContent = msg; t.className = (type||"")+" show";
+  clearTimeout(t._timer);
+  t._timer = setTimeout(()=>{t.className="";}, 2500);
+}
+function showLoading(text) { $("loadingText").textContent = text||"加载中..."; $("loading-overlay").classList.remove("hidden"); }
+function hideLoading() { $("loading-overlay").classList.add("hidden"); }
+function esc(s) {
+  if (!s) return "";
+  return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+
+function getDatasets() {
+  const ds = window.ANNOTATE_CONFIG.datasets;
+  return (ds && ds.length) ? ds : [{id:"default",name:"默认",file:window.ANNOTATE_CONFIG.samplesFile||"samples.json"}];
+}
+function populateDatasetSelect() {
+  const sel = $("datasetSelect");
+  sel.innerHTML = "";
+  getDatasets().forEach((ds, i) => {
+    const opt = document.createElement("option");
+    opt.value = i; opt.textContent = ds.name;
+    sel.appendChild(opt);
+  });
+}
+async function loadDataset(idx) {
+  const datasets = getDatasets();
+  if (idx < 0 || idx >= datasets.length) idx = 0;
+  currentDatasetIdx = idx;
+  const ds = datasets[idx];
+  window.GithubDispatch.setDataset(ds.id);
+  const resp = await fetch(ds.file);
+  if (!resp.ok) throw new Error("HTTP " + resp.status);
+  samples = await resp.json();
+}
+
+// ===== 加载全部数据 =====
+async function loadAllData() {
+  showLoading("正在加载全部记录...");
+  try {
+    allRecords = await window.GithubDispatch.listAllRecords();
+    showLoading("正在扫描锁定状态...");
+    lockStatus = await window.GithubDispatch.scanStatus();
+    hideLoading();
+    renderStats();
+  } catch (e) {
+    hideLoading();
+    showToast("加载失败: " + e.message, "");
+    $("content").innerHTML = '<div class="empty-state"><h3>加载失败</h3><p>' + esc(e.message) + '</p></div>';
+  }
+}
+
+// ===== 渲染统计 =====
+function renderStats() {
+  const totalLines = samples.length;
+
+  // 按 annotation / review / lock 分组到用户
+  const byUser = {}; // { name: { annotations: [], reviews: [], lockedLines: [] } }
+
+  // 标注记录
+  allRecords.forEach((r) => {
+    if (r.annotator) {
+      if (!byUser[r.annotator]) byUser[r.annotator] = { annotations: [], reviews: [], lockedLines: [] };
+      byUser[r.annotator].annotations.push(r);
+    }
+    if (r.reviewer) {
+      if (!byUser[r.reviewer]) byUser[r.reviewer] = { annotations: [], reviews: [], lockedLines: [] };
+      byUser[r.reviewer].reviews.push(r);
+    }
+  });
+
+  // 锁定记录（标注锁）
+  if (lockStatus && lockStatus.lockHolders) {
+    for (const [line, holder] of lockStatus.lockHolders.entries()) {
+      if (!byUser[holder]) byUser[holder] = { annotations: [], reviews: [], lockedLines: [] };
+      byUser[holder].lockedLines.push(parseInt(line, 10));
+    }
+  }
+  // 锁定记录（审核锁）
+  if (lockStatus && lockStatus.reviewLockHolders) {
+    for (const [line, holder] of lockStatus.reviewLockHolders.entries()) {
+      if (!byUser[holder]) byUser[holder] = { annotations: [], reviews: [], lockedLines: [] };
+      byUser[holder].lockedLines.push(parseInt(line, 10));
+    }
+  }
+
+  // 总览数字
+  let totalAnnotated = 0, totalReviewed = 0, totalLocked = 0;
+  allRecords.forEach((r) => {
+    if (r.annotation) totalAnnotated++;
+    if (r.review) totalReviewed++;
+  });
+  if (lockStatus) {
+    totalLocked = (lockStatus.lockedLines ? lockStatus.lockedLines.size : 0)
+                + (lockStatus.reviewLockedLines ? lockStatus.reviewLockedLines.size : 0);
+  }
+  const available = totalLines - totalAnnotated;
+
+  let html = '';
+
+  // 总览卡片
+  html += '<div class="overview-bar">';
+  html += '<div class="overview-card total"><div class="num">' + totalLines + '</div><div class="lbl">总样本数</div></div>';
+  html += '<div class="overview-card done"><div class="num">' + totalAnnotated + '</div><div class="lbl">已标注</div></div>';
+  html += '<div class="overview-card reviewed"><div class="num">' + totalReviewed + '</div><div class="lbl">已审核</div></div>';
+  html += '<div class="overview-card locked"><div class="num">' + totalLocked + '</div><div class="lbl">锁定中</div></div>';
+  html += '<div class="overview-card avail"><div class="num">' + Math.max(0, available) + '</div><div class="lbl">未标注</div></div>';
+  html += '</div>';
+
+  // 导出按钮
+  html += '<div class="export-bar">';
+  html += '<button id="btnExportCsv" class="ghost">📥 导出 CSV</button>';
+  html += '<span class="muted">按用户分组，点击展开查看每条 case 详情</span>';
+  html += '</div>';
+
+  // 用户卡片
+  const userNames = Object.keys(byUser).sort();
+  if (!userNames.length) {
+    html += '<div class="empty-state"><h3>暂无数据</h3><p>该数据集还没有任何标注或审核记录</p></div>';
+    $("content").innerHTML = html;
+    return;
+  }
+
+  userNames.forEach((name) => {
+    const u = byUser[name];
+    const annoCount = u.annotations.length;
+    const revCount = u.reviews.length;
+    const lockCount = u.lockedLines.length;
+
+    html += '<div class="user-card">';
+    html += '<div class="user-head" id="head-' + esc(name) + '" onclick="toggleUser(\'' + esc(name) + '\')">';
+    html += '<div><span class="name">' + esc(name) + '</span></div>';
+    html += '<div class="badges">';
+    if (annoCount) html += '<span class="user-badge anno">标注 ' + annoCount + '</span>';
+    if (revCount) html += '<span class="user-badge rev">审核 ' + revCount + '</span>';
+    if (lockCount) html += '<span class="user-badge lock">锁定 ' + lockCount + '</span>';
+    html += '<span class="arrow">▶</span>';
+    html += '</div></div>';
+
+    // 展开内容
+    html += '<div class="user-body" id="body-' + esc(name) + '">';
+
+    // 标注 case
+    if (annoCount) {
+      html += '<table class="case-table"><thead><tr><th>Line</th><th>类型</th><th>对象数</th><th>整体背景</th><th>Note</th><th>审核状态</th></tr></thead><tbody>';
+      u.annotations.forEach((r) => {
+        const anno = r.annotation || {};
+        const objCount = (anno.objects || []).length;
+        const hasBg = anno.bg_global ? "✅" : "—";
+        const note = anno.note ? esc(anno.note) : "—";
+        let reviewStatus = "未审核";
+        if (r.review) {
+          if (r.review.verdict === "correct") reviewStatus = '<span class="case-verdict-correct">✓ 正确</span>';
+          else if (r.review.verdict === "wrong") reviewStatus = '<span class="case-verdict-wrong">✗ 错误</span>';
+        }
+        html += '<tr><td class="case-line">' + r.line + '</td><td><span class="case-type annotation">标注</span></td>';
+        html += '<td class="case-objects">' + objCount + '</td><td>' + hasBg + '</td>';
+        html += '<td class="case-note" title="' + note + '">' + note + '</td><td>' + reviewStatus + '</td></tr>';
+      });
+      html += '</tbody></table>';
+    }
+
+    // 审核 case
+    if (revCount) {
+      html += '<table class="case-table" style="margin-top:12px;"><thead><tr><th>Line</th><th>类型</th><th>判定</th><th>原因</th><th>原标注者</th></tr></thead><tbody>';
+      u.reviews.forEach((r) => {
+        const rev = r.review || {};
+        let verdict = "—";
+        if (rev.verdict === "correct") verdict = '<span class="case-verdict-correct">✓ 正确</span>';
+        else if (rev.verdict === "wrong") verdict = '<span class="case-verdict-wrong">✗ 错误</span>';
+        const reason = rev.reason ? esc(rev.reason) : "—";
+        const origAnnotator = r.annotator ? esc(r.annotator) : "—";
+        html += '<tr><td class="case-line">' + r.line + '</td><td><span class="case-type review">审核</span></td>';
+        html += '<td>' + verdict + '</td><td class="case-note" title="' + reason + '">' + reason + '</td><td>' + origAnnotator + '</td></tr>';
+      });
+      html += '</tbody></table>';
+    }
+
+    // 锁定 case
+    if (lockCount) {
+      const sortedLocks = u.lockedLines.slice().sort((a, b) => a - b);
+      html += '<table class="case-table" style="margin-top:12px;"><thead><tr><th>Line</th><th>类型</th><th>状态</th></tr></thead><tbody>';
+      sortedLocks.forEach((line) => {
+        html += '<tr><td class="case-line">' + line + '</td><td><span class="case-type locked">锁定</span></td><td>未提交</td></tr>';
+      });
+      html += '</tbody></table>';
+    }
+
+    html += '</div></div>';
+  });
+
+  $("content").innerHTML = html;
+
+  // 绑定导出
+  const exportBtn = $("btnExportCsv");
+  if (exportBtn) exportBtn.onclick = exportCsv;
+}
+
+// 展开/收起用户
+window.toggleUser = function(name) {
+  const body = $("body-" + name);
+  const head = $("head-" + name);
+  if (!body) return;
+  const show = !body.classList.contains("show");
+  body.classList.toggle("show", show);
+  head.classList.toggle("expanded", show);
+};
+
+// 导出 CSV
+function exportCsv() {
+  const lines = [];
+  lines.push("用户,类型,Line,对象数,整体背景,Note,判定,原因,原标注者");
+  // 重新遍历 byUser 逻辑（简化版）
+  const byUser = {};
+  allRecords.forEach((r) => {
+    if (r.annotator) {
+      if (!byUser[r.annotator]) byUser[r.annotator] = { annotations: [], reviews: [], lockedLines: [] };
+      byUser[r.annotator].annotations.push(r);
+    }
+    if (r.reviewer) {
+      if (!byUser[r.reviewer]) byUser[r.reviewer] = { annotations: [], reviews: [], lockedLines: [] };
+      byUser[r.reviewer].reviews.push(r);
+    }
+  });
+  if (lockStatus && lockStatus.lockHolders) {
+    for (const [line, holder] of lockStatus.lockHolders.entries()) {
+      if (!byUser[holder]) byUser[holder] = { annotations: [], reviews: [], lockedLines: [] };
+      byUser[holder].lockedLines.push(parseInt(line, 10));
+    }
+  }
+  Object.keys(byUser).sort().forEach((name) => {
+    const u = byUser[name];
+    u.annotations.forEach((r) => {
+      const anno = r.annotation || {};
+      lines.push([name, "标注", r.line, (anno.objects||[]).length, anno.bg_global?"是":"否", '"' + (anno.note||"").replace(/"/g,'""') + '"', "", "", ""].join(","));
+    });
+    u.reviews.forEach((r) => {
+      const rev = r.review || {};
+      lines.push([name, "审核", r.line, "", "", "", rev.verdict||"", '"' + (rev.reason||"").replace(/"/g,'""') + '"', r.annotator||""].join(","));
+    });
+    u.lockedLines.forEach((line) => {
+      lines.push([name, "锁定", line, "", "", "", "", "", ""].join(","));
+    });
+  });
+  const csv = "\uFEFF" + lines.join("\n");
+  const blob = new Blob([csv], { type: "text/csv;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "stats_" + getDatasets()[currentDatasetIdx].id + ".csv";
+  a.click();
+  URL.revokeObjectURL(url);
+  showToast("已导出 CSV", "success");
+}
+
+// ===== 登录 =====
+function openLoginModal() {
+  $("login-overlay").classList.remove("hidden");
+  $("loginError").style.display = "none";
+  $("patInput").value = "";
+  $("annotatorNameInput").value = window.GithubAuth.getAnnotatorName() || "";
+  $("patInput").focus();
+}
+function closeLoginModal() { $("login-overlay").classList.add("hidden"); }
+function startPatLogin() {
+  const token = $("patInput").value.trim();
+  const name = $("annotatorNameInput").value.trim();
+  const err = $("loginError");
+  err.style.display = "none";
+  if (!token) { err.textContent = "请输入 Token"; err.style.display = "block"; return; }
+  if (!name) { err.textContent = "请输入名字"; err.style.display = "block"; return; }
+  const btn = $("btnStartLogin");
+  btn.disabled = true; btn.textContent = "验证中...";
+  window.GithubAuth.login(token).then(() => {
+    window.GithubAuth.setAnnotatorName(name);
+    btn.disabled = false; btn.textContent = "验证并登录";
+    closeLoginModal();
+    updateAuthUI();
+    showToast("登录成功", "success");
+    onLoginSuccess();
+  }).catch((e) => {
+    btn.disabled = false; btn.textContent = "验证并登录";
+    err.textContent = e.message; err.style.display = "block";
+  });
+}
+function updateAuthUI() {
+  const user = window.GithubAuth.getUser();
+  if (user) {
+    $("user-area").classList.remove("hidden");
+    $("btnLogin").style.display = "none";
+    $("userAvatar").src = user.avatarUrl;
+    $("userName").textContent = window.GithubAuth.getAnnotatorName() || user.name;
+  } else {
+    $("user-area").classList.add("hidden");
+    $("btnLogin").style.display = "";
+  }
+}
+async function onLoginSuccess() {
+  try { await loadDataset(0); await loadAllData(); }
+  catch (e) { showToast("加载失败: " + e.message, ""); }
+}
+
+// ===== 初始化 =====
+async function init() {
+  populateDatasetSelect();
+  $("btnLogin").onclick = openLoginModal;
+  $("btnStartLogin").onclick = startPatLogin;
+  $("patInput").addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); startPatLogin(); } });
+  $("loginCancel").onclick = closeLoginModal;
+  $("btnRefresh").onclick = () => { if (window.GithubAuth.getToken()) loadAllData(); };
+  $("datasetSelect").onchange = async (e) => {
+    if (!window.GithubAuth.getToken()) { openLoginModal(); return; }
+    try { await loadDataset(parseInt(e.target.value, 10)); await loadAllData(); }
+    catch (e2) { showToast("切换失败: " + e2.message, ""); }
+  };
+
+  const saved = await window.GithubAuth.checkToken();
+  updateAuthUI();
+  if (saved) { await loadDataset(0); await loadAllData(); }
+  else { openLoginModal(); }
+}
+
+document.addEventListener("DOMContentLoaded", init);
+})();
+</script>
+</body>
+</html>
