@@ -1,0 +1,52 @@
+{
+  "line": 12806,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_012806_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=Y7jB%2FVniR%2FIi3Iy60oyrp387HbA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_012806_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=pRjl6Gpt7dXELv33vnCFhCyI7RE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 741,
+        "y": 173,
+        "w": 158,
+        "h": 248
+      },
+      "type": "replace"
+    },
+    {
+      "box": {
+        "x": 855,
+        "y": 107,
+        "w": 104,
+        "h": 196
+      },
+      "type": "move",
+      "target": {
+        "x": 987,
+        "y": 240
+      }
+    },
+    {
+      "box": {
+        "x": 1003,
+        "y": 171,
+        "w": 173,
+        "h": 226
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 1063,
+          "y": 252
+        },
+        {
+          "x": 1114,
+          "y": 317
+        }
+      ]
+    }
+  ],
+  "note": "棕色衣服大叔被藏青色衣服男子替换\n棕色衣服人物位置发生变化\n多了一名棕色衣服大妈",
+  "bg_global": false
+}
