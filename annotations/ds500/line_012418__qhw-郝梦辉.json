@@ -1,0 +1,39 @@
+{
+  "line": 12418,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_012418_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=rJwtB29%2FpieVQiA2CSI7ORI3VUg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_012418_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=K9vXPVmlxXUBrxH0%2FAlADW52E0I%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 178,
+        "y": 8,
+        "w": 558,
+        "h": 922
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 375,
+          "y": 146
+        },
+        {
+          "x": 537,
+          "y": 428
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 209,
+        "y": 346,
+        "w": 307,
+        "h": 860
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "多了一个穿盔甲的人\n马的朝向发生变化，高度发生变化",
+  "bg_global": false
+}
