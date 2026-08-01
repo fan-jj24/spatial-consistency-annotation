@@ -1,0 +1,38 @@
+{
+  "line": 9025,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009025_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477438&Signature=EsKiytCyCAWfgn2JumfUCjB7QzI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009025_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477438&Signature=Ji5M4ZPbORW%2BW0C74vpBvc4Z4%2Fw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -1,
+        "y": 576,
+        "w": 193,
+        "h": 143
+      },
+      "type": "add"
+    },
+    {
+      "box": {
+        "x": 112,
+        "y": 6,
+        "w": 304,
+        "h": 137
+      },
+      "type": "replace"
+    },
+    {
+      "box": {
+        "x": 588,
+        "y": 7,
+        "w": 442,
+        "h": 138
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "奖杯被花束替代\n车具模型朝向发生变化\n少了黄色生物",
+  "bg_global": false
+}
