@@ -1,0 +1,25 @@
+{
+  "line": 9391,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009391_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477440&Signature=dOj5TMxAQAqaqOZm9gg1SZSq3AU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009391_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477440&Signature=HwMVZghcQmZGeEIthzx8Tidn6hw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 9,
+        "y": 43,
+        "w": 518,
+        "h": 658
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.904,
+        0.002,
+        -0.427
+      ]
+    }
+  ],
+  "note": "灰色的羊位置变化",
+  "bg_global": false
+}
