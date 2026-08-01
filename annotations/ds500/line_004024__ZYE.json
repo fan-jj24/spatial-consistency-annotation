@@ -1,0 +1,38 @@
+{
+  "line": 4024,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004024_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477408&Signature=cBawctztWB18emdUUYD5XSn2Kao%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004024_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477408&Signature=IdAqhsSFfvT7rMobv0f4r2YmlhY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 282,
+        "y": 305,
+        "w": 184,
+        "h": 809
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.079,
+        -0.012,
+        0.997
+      ]
+    },
+    {
+      "box": {
+        "x": 535,
+        "y": 508,
+        "w": 136,
+        "h": 320
+      },
+      "type": "move",
+      "target": {
+        "x": 604,
+        "y": 904
+      }
+    }
+  ],
+  "note": "粉衣女位置和高度发生变化，蓝衣女高度发生变化",
+  "bg_global": false
+}
