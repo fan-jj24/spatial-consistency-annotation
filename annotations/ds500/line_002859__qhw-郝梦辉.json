@@ -1,0 +1,38 @@
+{
+  "line": 2859,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002859_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477401&Signature=ogHsAwHemz0k9LAgjTF3NEG5K%2Fg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002859_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477401&Signature=3%2FUJekNd86oLHm1Bj6nhozHjCWM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -19,
+        "y": 282,
+        "w": 38,
+        "h": 986
+      },
+      "type": "add"
+    },
+    {
+      "box": {
+        "x": 127,
+        "y": 177,
+        "w": 650,
+        "h": 1093
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 393,
+          "y": 686
+        },
+        {
+          "x": 547,
+          "y": 1021
+        }
+      ]
+    }
+  ],
+  "note": "少了一名穿灰色西装的人物\n多了一名穿藏青色套装的男子"
+}
