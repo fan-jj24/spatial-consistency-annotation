@@ -1,0 +1,20 @@
+{
+  "line": 12945,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_012945_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=RnzQ32sUIvRFJzmcm6DRH30AdsU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_012945_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=%2FZBUHwBoF6FbLXaPjjF8pz1qVSE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 453,
+        "y": 351,
+        "w": 246,
+        "h": 914
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "整体背景发生变化\n绿衣女子被灰衣女子替换",
+  "bg_global": true
+}
