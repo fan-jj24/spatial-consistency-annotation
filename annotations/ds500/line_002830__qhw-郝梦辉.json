@@ -1,0 +1,42 @@
+{
+  "line": 2830,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002830_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477400&Signature=r%2FnvJNXWnBLS4cfMa5vHT2kM4ZU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002830_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477400&Signature=I%2FEAAU5gu28U1vaHFzWIjfWqQAk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 327,
+        "y": 612,
+        "w": 131,
+        "h": 172
+      },
+      "type": "move",
+      "target": {
+        "x": 401,
+        "y": 947
+      }
+    },
+    {
+      "box": {
+        "x": -14,
+        "y": 1039,
+        "w": 819,
+        "h": 195
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 227,
+          "y": 1042
+        },
+        {
+          "x": 588,
+          "y": 1206
+        }
+      ]
+    }
+  ],
+  "note": "红衣女子和红衣男子的位置发生了变化\n多了一张桌子"
+}
