@@ -256,7 +256,7 @@
         if (!status.done.has(line)) continue;          // 未标注
         if (status.reviewLockedLines.has(line)) continue; // 被锁
         const annotator = status.annotatorByLine.get(line);
-        if (!annotator || annotator === username) continue;
+        if (!annotator) continue;
         pendingByAnnotator[annotator] = (pendingByAnnotator[annotator] || 0) + 1;
       }
     }
@@ -291,9 +291,7 @@
         if (!status.done.has(line)) continue;       // 必须已标注
         if (status.reviewed.has(line)) continue;     // 已审核
         if (status.reviewLockedLines.has(line)) continue; // 被锁
-        // 审核分发排除自己标注的数据
         const annotator = status.annotatorByLine.get(line);
-        if (annotator && annotator === username) continue;
         // 定向筛选：只领取指定标注者的数据
         if (filterSet && (!annotator || !filterSet.has(annotator))) continue;
       } else {
