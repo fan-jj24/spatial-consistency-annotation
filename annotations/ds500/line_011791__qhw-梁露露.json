@@ -1,0 +1,20 @@
+{
+  "line": 11791,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011791_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477454&Signature=FST8toBaZFJnfl%2Bkfgy7kP642As%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011791_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477454&Signature=4rBaFD18Q2nXSGVceBEssVb5Ej4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 602,
+        "y": 710,
+        "w": 120,
+        "h": 476
+      },
+      "type": "add"
+    }
+  ],
+  "note": "少桌子和香炉",
+  "bg_global": false
+}
