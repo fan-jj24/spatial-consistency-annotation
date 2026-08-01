@@ -1,0 +1,25 @@
+{
+  "line": 13136,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013136_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=RD1jIAEZL2M4cVo0NEeCr2wetf8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013136_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=8Q%2Fai0BLMp4%2FFNcw4VUjBvyuyI0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 318,
+        "y": 487,
+        "w": 148,
+        "h": 218
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.001,
+        -0.341,
+        -0.94
+      ]
+    }
+  ],
+  "note": "抱着人的男人位置发生变化",
+  "bg_global": false
+}
