@@ -1,0 +1,20 @@
+{
+  "line": 8507,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008507_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477435&Signature=uXsR2Q%2BYRtwvPHiUUp7gNBJ%2BuLk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008507_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477435&Signature=IIkQ%2FQJUKkD%2BZzZzQ0phTgcmyiw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 32,
+        "y": 182,
+        "w": 374,
+        "h": 1060
+      },
+      "type": "add"
+    }
+  ],
+  "note": "少了一名黑衣男子",
+  "bg_global": false
+}
