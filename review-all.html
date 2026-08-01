@@ -1,0 +1,592 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>综合审阅</title>
+<style>
+:root {
+  --bg:#f5f6f8; --panel:#fff; --border:#e3e5ea;
+  --text:#1f2328; --muted:#6a737d;
+  --accent:#3b7dfb; --accent-weak:#e5efff;
+  --ok:#2e9f5a; --ok-weak:#d8f2e3;
+  --bad:#d1453b; --bad-weak:#fde2e0;
+  --warn:#d97706; --warn-weak:#fef3c7;
+  --shadow:0 1px 3px rgba(0,0,0,.06);
+}
+* { box-sizing:border-box; }
+html, body { height:100%; margin:0; }
+body {
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  background:var(--bg); color:var(--text); font-size:14px;
+  display:flex; flex-direction:column; overflow:hidden;
+}
+button {
+  cursor:pointer; padding:6px 14px; border-radius:6px;
+  border:1px solid var(--border); background:#fff; color:var(--text);
+  font-size:13px; transition:background .15s,border-color .15s;
+}
+button:hover:not(:disabled) { background:var(--accent-weak); border-color:var(--accent); }
+button.primary { background:var(--accent); color:#fff; border-color:var(--accent); font-weight:600; }
+button.primary:hover:not(:disabled) { background:#2a6ae0; }
+button.ghost { background:#fff; }
+.hidden { display:none !important; }
+.muted { color:var(--muted); font-size:12px; }
+
+/* ===== 顶栏 ===== */
+#topbar {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:8px 16px; background:var(--panel); border-bottom:1px solid var(--border);
+  box-shadow:var(--shadow); flex:0 0 auto; gap:12px;
+}
+#topbar .left, #topbar .right { display:flex; align-items:center; gap:8px; }
+.tb-sep { width:1px; height:20px; background:var(--border); margin:0 2px; }
+
+/* 登录区 */
+#user-area { display:flex; align-items:center; gap:6px; }
+#user-area.hidden { display:none; }
+#user-area .avatar { width:24px; height:24px; border-radius:50%; border:1.5px solid var(--border); }
+#user-area .username { font-size:13px; font-weight:600; }
+#btnLogin { background:var(--accent); color:#fff; border-color:var(--accent); font-weight:600; }
+
+/* ===== 登录遮罩 ===== */
+#login-overlay {
+  position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:9100;
+  display:flex; align-items:center; justify-content:center;
+}
+#login-overlay.hidden { display:none; }
+#login-box {
+  background:#fff; border-radius:12px; padding:32px; width:440px; max-width:90vw;
+  box-shadow:0 8px 32px rgba(0,0,0,0.2); text-align:center;
+}
+#login-box h3 { margin:0 0 8px; font-size:18px; }
+#login-box .sub { color:var(--muted); font-size:13px; margin-bottom:20px; }
+#login-box input {
+  width:100%; padding:10px 12px; border:1.5px solid var(--border); border-radius:6px;
+  font-size:14px; box-sizing:border-box; margin-bottom:12px;
+}
+#login-box input:focus { outline:none; border-color:var(--accent); }
+#login-box .login-error { color:var(--bad); font-size:13px; margin-top:8px; display:none; }
+#login-box .login-cancel { margin-top:12px; font-size:13px; color:var(--muted); cursor:pointer; text-decoration:underline; }
+
+/* ===== 加载遮罩 ===== */
+#loading-overlay {
+  position:fixed; inset:0; background:rgba(255,255,255,0.88);
+  z-index:9999; display:flex; align-items:center; justify-content:center;
+  flex-direction:column; gap:16px;
+}
+#loading-overlay.hidden { display:none; }
+.spinner {
+  width:40px; height:40px; border:4px solid var(--border);
+  border-top-color:var(--accent); border-radius:50%;
+  animation:spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform:rotate(360deg); } }
+
+/* ===== 内容区 ===== */
+#content { flex:1; overflow-y:auto; padding:16px; }
+
+/* 记录卡片 */
+.record-card {
+  background:var(--panel); border:1px solid var(--border); border-radius:12px;
+  margin-bottom:16px; overflow:hidden; box-shadow:var(--shadow);
+}
+.record-head {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:10px 16px; background:var(--bg); border-bottom:1px solid var(--border);
+}
+.record-head .line-no { font-weight:700; font-size:15px; color:var(--accent); }
+.record-head .meta { display:flex; align-items:center; gap:12px; font-size:12px; }
+.record-head .meta .annotator-tag { color:var(--ok); font-weight:600; }
+.record-head .meta .reviewer-tag { color:var(--warn); font-weight:600; }
+.record-head .verdict-badge {
+  font-size:11px; font-weight:700; padding:2px 10px; border-radius:10px;
+}
+.verdict-badge.correct { background:var(--ok-weak); color:var(--ok); }
+.verdict-badge.wrong { background:var(--bad-weak); color:var(--bad); }
+
+.record-body { display:flex; gap:16px; padding:16px; }
+.record-imgs { display:flex; gap:12px; flex:0 0 auto; }
+.record-imgs .cell {
+  position:relative; width:400px; height:400px; background:#111;
+  border-radius:8px; overflow:hidden; display:flex; align-items:center; justify-content:center;
+}
+.record-imgs .cell img { max-width:100%; max-height:100%; object-fit:contain; }
+.record-imgs .cell svg { position:absolute; inset:0; width:100%; height:100%; }
+.record-imgs .cell .label {
+  position:absolute; top:6px; left:8px; font-size:11px; font-weight:700;
+  color:#fff; background:rgba(0,0,0,.55); padding:2px 8px; border-radius:4px;
+}
+
+.record-details { flex:1 1 auto; min-width:0; }
+.detail-section { margin-bottom:12px; }
+.detail-section h4 { margin:0 0 6px; font-size:12px; color:var(--muted); font-weight:600; }
+.detail-section .detail-list { font-size:13px; line-height:1.8; }
+.detail-section .detail-list .obj-row {
+  display:flex; align-items:center; gap:8px; padding:4px 0;
+  border-bottom:1px dashed var(--border);
+}
+.detail-section .obj-row:last-child { border-bottom:none; }
+.detail-section .obj-num { font-weight:700; color:var(--accent); min-width:24px; }
+.detail-section .obj-type { font-size:12px; padding:2px 8px; border-radius:4px; background:var(--accent-weak); color:var(--accent); }
+.detail-section .obj-coord { font-family:monospace; font-size:11px; color:var(--muted); }
+.detail-section .obj-extra { font-size:12px; color:var(--text); }
+.detail-section .note-text { padding:8px 12px; background:var(--bg); border-radius:6px; font-size:13px; }
+.detail-section .bg-global-tag {
+  display:inline-block; padding:2px 8px; border-radius:4px;
+  background:#e0f5f3; color:#009688; font-size:12px; font-weight:600;
+}
+
+/* 审核结果区 */
+.review-result { padding:10px 12px; border-radius:8px; margin-bottom:8px; }
+.review-result.correct { background:var(--ok-weak); border-left:4px solid var(--ok); }
+.review-result.wrong { background:var(--bad-weak); border-left:4px solid var(--bad); }
+.review-result .verdict-text { font-weight:700; font-size:14px; }
+.review-result .reason-text { font-size:13px; color:var(--text); margin-top:4px; }
+
+/* 空状态 */
+.empty-state { text-align:center; padding:60px 20px; color:var(--muted); }
+.empty-state h3 { font-size:18px; margin:0 0 8px; }
+
+/* 导航 */
+.record-nav {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:8px 16px; background:var(--panel); border-top:1px solid var(--border);
+  position:sticky; bottom:0; z-index:5;
+}
+.record-nav .nav-info { font-size:13px; font-weight:600; }
+
+#toast {
+  position:fixed; bottom:80px; left:50%; transform:translateX(-50%);
+  padding:8px 20px; border-radius:6px; background:var(--bad); color:#fff;
+  font-size:13px; z-index:9999; opacity:0; transition:opacity .3s; pointer-events:none;
+}
+#toast.show { opacity:1; }
+#toast.success { background:var(--ok); }
+</style>
+<script src="config.js"></script>
+<script src="github-auth.js"></script>
+<script src="github-dispatch.js"></script>
+</head>
+<body>
+
+<div id="topbar">
+  <div class="left">
+    <b>📋 综合审阅</b>
+    <span class="tb-sep"></span>
+    <select id="datasetSelect"></select>
+    <span class="tb-sep"></span>
+    <button id="btnRefresh" class="ghost">🔄 刷新</button>
+    <span class="tb-sep"></span>
+    <span id="statsText" class="muted"></span>
+  </div>
+  <div class="right">
+    <div id="user-area" class="hidden">
+      <img class="avatar" id="userAvatar" src="" alt="" />
+      <span class="username" id="userName"></span>
+    </div>
+    <button id="btnLogin">🔑 GitHub 登录</button>
+  </div>
+</div>
+
+<div id="content">
+  <div class="empty-state" id="emptyState">
+    <h3>登录后选择数据集查看全部记录</h3>
+    <p>展示所有标注和审核结果，只读不可修改</p>
+  </div>
+</div>
+
+<div id="recordNav" class="record-nav hidden">
+  <button id="btnPrev" class="ghost">← 上一条</button>
+  <span class="nav-info" id="navInfo">0 / 0</span>
+  <button id="btnNext" class="primary">下一条 →</button>
+</div>
+
+<div id="toast"></div>
+<div id="loading-overlay" class="hidden">
+  <div class="spinner"></div>
+  <div id="loadingText">加载中...</div>
+</div>
+
+<!-- 登录模态框 -->
+<div id="login-overlay" class="hidden">
+  <div id="login-box">
+    <h3>🔑 GitHub 登录</h3>
+    <div class="sub">使用 PAT 登录查看全部记录</div>
+    <input type="password" id="patInput" placeholder="ghp_xxxx 或 github_pat_xxxx" />
+    <input type="text" id="annotatorNameInput" placeholder="你的名字" />
+    <button id="btnStartLogin" class="primary" style="width:100%;padding:10px;font-size:15px;">验证并登录</button>
+    <div class="login-error" id="loginError"></div>
+    <div class="login-cancel" id="loginCancel">取消</div>
+  </div>
+</div>
+
+<script>
+"use strict";
+(function () {
+const $ = (id) => document.getElementById(id);
+const SVG_NS = "http://www.w3.org/2000/svg";
+
+const ACTION_COLORS = {
+  add:["#2E7D32","#4CAF50"], delete:["#C62828","#E53935"], replace:["#795548","#8D6E63"],
+  move:["#1565C0","#2196F3"], move3d:["#6A1B9A","#8E24AA"], rotate:["#E65100","#FF9800"],
+  cw:["#E65100","#FF9800"], ccw:["#E65100","#FF9800"],
+  neutral:["#FFC107","#FFB300"], custom:["#5D4037","#795548"],
+  bg_local:["#009688","#26A69A"],
+};
+const ACTION_LABELS = {
+  add:"新增", delete:"删除", replace:"替换", move:"2D移动",
+  rotate:"旋转", cw:"旋转", ccw:"旋转", move3d:"3D移动", custom:"自定义", neutral:"未指定", bg_local:"局部背景",
+};
+
+let samples = [];
+let sampleByLine = {};
+let records = [];
+let curIdx = 0;
+let currentDatasetIdx = 0;
+
+// ===== 工具 =====
+function showToast(msg, type) {
+  const t = $("toast");
+  t.textContent = msg; t.className = (type||"")+" show";
+  clearTimeout(t._timer);
+  t._timer = setTimeout(()=>{t.className="";}, 2500);
+}
+function showLoading(text) { $("loadingText").textContent = text||"加载中..."; $("loading-overlay").classList.remove("hidden"); }
+function hideLoading() { $("loading-overlay").classList.add("hidden"); }
+
+function getDatasets() {
+  const ds = window.ANNOTATE_CONFIG.datasets;
+  return (ds && ds.length) ? ds : [{id:"default",name:"默认",file:window.ANNOTATE_CONFIG.samplesFile||"samples.json"}];
+}
+function populateDatasetSelect() {
+  const sel = $("datasetSelect");
+  sel.innerHTML = "";
+  getDatasets().forEach((ds, i) => {
+    const opt = document.createElement("option");
+    opt.value = i; opt.textContent = ds.name;
+    sel.appendChild(opt);
+  });
+}
+
+// 加载数据集样本
+async function loadDataset(idx) {
+  const datasets = getDatasets();
+  if (idx < 0 || idx >= datasets.length) idx = 0;
+  currentDatasetIdx = idx;
+  const ds = datasets[idx];
+  window.GithubDispatch.setDataset(ds.id);
+  const resp = await fetch(ds.file);
+  if (!resp.ok) throw new Error("HTTP " + resp.status);
+  samples = await resp.json();
+  sampleByLine = {};
+  samples.forEach((s) => { sampleByLine[s.line] = s; });
+}
+
+// ===== 加载全部记录 =====
+async function loadAllRecords() {
+  showLoading("正在加载全部记录...");
+  try {
+    records = await window.GithubDispatch.listAllRecords();
+    hideLoading();
+    $("statsText").textContent = "共 " + records.length + " 条记录";
+    if (!records.length) {
+      $("content").innerHTML = '<div class="empty-state"><h3>暂无记录</h3><p>该数据集还没有标注数据</p></div>';
+      $("recordNav").classList.add("hidden");
+      return;
+    }
+    curIdx = 0;
+    renderRecord();
+    $("recordNav").classList.remove("hidden");
+  } catch (e) {
+    hideLoading();
+    showToast("加载失败: " + e.message, "");
+    $("content").innerHTML = '<div class="empty-state"><h3>加载失败</h3><p>' + e.message + '</p></div>';
+  }
+}
+
+// ===== 图片坐标 → SVG 坐标 =====
+function imgToSvg(ix, iy, cw, ch, nw, nh) {
+  if (!nw || !nh) return { x: ix, y: iy };
+  const scale = Math.min(cw / nw, ch / nh);
+  const dw = nw * scale, dh = nh * scale;
+  const ox = (cw - dw) / 2, oy = (ch - dh) / 2;
+  return { x: ox + ix * scale, y: oy + iy * scale };
+}
+
+// ===== 渲染 SVG 框（只读）=====
+function renderSvgBoxes(svgEl, imgEl, objects, bgGlobal) {
+  // 等图片加载
+  if (!imgEl.naturalWidth) { setTimeout(() => renderSvgBoxes(svgEl, imgEl, objects, bgGlobal), 200); return; }
+  const cw = imgEl.parentElement.clientWidth, ch = imgEl.parentElement.clientHeight;
+  const nw = imgEl.naturalWidth, nh = imgEl.naturalHeight;
+  while (svgEl.firstChild) svgEl.removeChild(svgEl.firstChild);
+
+  // defs
+  const defs = document.createElementNS(SVG_NS, "defs");
+  defs.innerHTML = '<pattern id="bgp-'+svgEl.id+'" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="12" stroke="#009688" stroke-width="3" opacity="0.35"/></pattern>';
+  svgEl.appendChild(defs);
+
+  // 整体背景
+  if (bgGlobal) {
+    const ov = document.createElementNS(SVG_NS, "rect");
+    ov.setAttribute("x",0); ov.setAttribute("y",0);
+    ov.setAttribute("width","100%"); ov.setAttribute("height","100%");
+    ov.setAttribute("fill","url(#bgp-"+svgEl.id+")");
+    svgEl.appendChild(ov);
+  }
+
+  (objects || []).forEach((obj, i) => {
+    const isBgLocal = obj.type === "bg_local";
+    const act = isBgLocal ? "bg_local" : (obj.type || "neutral");
+    const color = (ACTION_COLORS[act] || ACTION_COLORS.neutral)[0];
+    const tl = imgToSvg(obj.box.x, obj.box.y, cw, ch, nw, nh);
+    const br = imgToSvg(obj.box.x+obj.box.w, obj.box.y+obj.box.h, cw, ch, nw, nh);
+    const sx = tl.x, sy = tl.y, sw = br.x-tl.x, sh = br.y-tl.y;
+    const g = document.createElementNS(SVG_NS, "g");
+
+    const rect = document.createElementNS(SVG_NS, "rect");
+    rect.setAttribute("x",sx); rect.setAttribute("y",sy);
+    rect.setAttribute("width",Math.max(0,sw)); rect.setAttribute("height",Math.max(0,sh));
+    if (isBgLocal) { rect.setAttribute("fill","url(#bgp-"+svgEl.id+")"); rect.setAttribute("stroke",color); rect.setAttribute("stroke-width","2.5"); }
+    else { rect.setAttribute("fill","none"); rect.setAttribute("stroke",color); rect.setAttribute("stroke-width","2"); }
+    g.appendChild(rect);
+
+    if (isBgLocal) { svgEl.appendChild(g); return; }
+
+    // 2D移动箭头
+    if (act === "move" && obj.target) {
+      const t = imgToSvg(obj.target.x, obj.target.y, cw, ch, nw, nh);
+      const cx = sx+sw/2, cy = sy+sh/2;
+      const angle = Math.atan2(t.y-cy, t.x-cx);
+      const perpX = -Math.sin(angle), perpY = Math.cos(angle);
+      const tailW=8, headLen=16, headW=12;
+      const sx1=cx+perpX*tailW, sy1=cy+perpY*tailW, sx2=cx-perpX*tailW, sy2=cy-perpY*tailW;
+      const hbx=t.x-Math.cos(angle)*headLen, hby=t.y-Math.sin(angle)*headLen;
+      const hx1=hbx+perpX*headW, hy1=hby+perpY*headW, hx2=hbx-perpX*headW, hy2=hby-perpY*headW;
+      const arr = document.createElementNS(SVG_NS, "polygon");
+      arr.setAttribute("points", sx1+","+sy1+" "+hx1+","+hy1+" "+t.x+","+t.y+" "+hx2+","+hy2+" "+sx2+","+sy2);
+      arr.setAttribute("fill",color); arr.setAttribute("stroke",color); arr.setAttribute("stroke-width","1");
+      arr.setAttribute("opacity","0.85"); g.appendChild(arr);
+    }
+    // 3D方向
+    if (act === "move3d" && obj.dir3d) {
+      const r = Math.min(50, sw/1.5, sh/1.5);
+      const circ = document.createElementNS(SVG_NS, "circle");
+      circ.setAttribute("cx",sx+sw/2); circ.setAttribute("cy",sy+sh/2); circ.setAttribute("r",r);
+      circ.setAttribute("fill","rgba(0,0,0,0.1)"); circ.setAttribute("stroke",color); circ.setAttribute("stroke-width","3");
+      circ.setAttribute("stroke-dasharray","6 4"); circ.setAttribute("opacity","0.7");
+      g.appendChild(circ);
+      const dx=obj.dir3d[0], dy=obj.dir3d[1];
+      const ex=sx+sw/2+dx*r, ey=sy+sh/2-dy*r;
+      const ln = document.createElementNS(SVG_NS, "line");
+      ln.setAttribute("x1",sx+sw/2); ln.setAttribute("y1",sy+sh/2);
+      ln.setAttribute("x2",ex); ln.setAttribute("y2",ey);
+      ln.setAttribute("stroke",color); ln.setAttribute("stroke-width","8"); ln.setAttribute("stroke-linecap","round");
+      g.appendChild(ln);
+      const dirTxt = document.createElementNS(SVG_NS, "text");
+      dirTxt.setAttribute("x",ex); dirTxt.setAttribute("y",ey-8);
+      dirTxt.setAttribute("fill",color); dirTxt.setAttribute("font-size","11");
+      dirTxt.setAttribute("text-anchor","middle");
+      dirTxt.textContent = obj.dir3d.join(",");
+      g.appendChild(dirTxt);
+    }
+    // 旋转
+    if (act === "rotate" || act === "cw" || act === "ccw") {
+      const txt = document.createElementNS(SVG_NS, "text");
+      txt.setAttribute("x",sx+sw/2); txt.setAttribute("y",sy+sh/2);
+      txt.setAttribute("fill",color); txt.setAttribute("font-size","20");
+      txt.setAttribute("font-weight","bold");
+      txt.setAttribute("text-anchor","middle"); txt.setAttribute("dominant-baseline","middle");
+      txt.textContent = "↻"; g.appendChild(txt);
+    }
+    // 序号
+    const num = document.createElementNS(SVG_NS, "text");
+    num.setAttribute("x",sx+2); num.setAttribute("y",sy+14);
+    num.setAttribute("fill","#fff"); num.setAttribute("font-size","11"); num.setAttribute("font-weight","bold");
+    num.style.pointerEvents = "none";
+    num.textContent = "#"+(i+1); g.appendChild(num);
+
+    svgEl.appendChild(g);
+  });
+}
+
+// ===== 渲染一条记录 =====
+function renderRecord() {
+  const r = records[curIdx];
+  if (!r) return;
+  const sample = sampleByLine[r.line] || {};
+  const remotes = sample.remotes || (r.annotation && r.annotation.remotes) || [];
+  const anno = r.annotation;
+  const rev = r.review;
+
+  // 构建 HTML
+  let html = '<div class="record-card">';
+  // 头部
+  html += '<div class="record-head">';
+  html += '<span class="line-no">Line ' + r.line + '</span>';
+  html += '<div class="meta">';
+  if (r.annotator) html += '<span class="annotator-tag">✍️ 标注: ' + r.annotator + '</span>';
+  if (r.reviewer) {
+    html += '<span class="reviewer-tag">⚖️ 审核: ' + r.reviewer + '</span>';
+    if (rev && rev.verdict) {
+      const vc = rev.verdict === "correct" ? "correct" : "wrong";
+      const vt = rev.verdict === "correct" ? "✓ 正确" : "✗ 错误";
+      html += '<span class="verdict-badge ' + vc + '">' + vt + '</span>';
+    }
+  }
+  html += '</div></div>';
+
+  // 图片对
+  html += '<div class="record-body">';
+  html += '<div class="record-imgs">';
+  html += '<div class="cell"><img id="rImgA" src="' + (remotes[0]||"") + '" alt="A" /><span class="label">A</span><svg id="rSvgA" xmlns="http://www.w3.org/2000/svg"></svg></div>';
+  html += '<div class="cell"><img id="rImgB" src="' + (remotes[1]||"") + '" alt="B" /><span class="label">B（标注）</span><svg id="rSvgB" xmlns="http://www.w3.org/2000/svg"></svg></div>';
+  html += '</div>';
+
+  // 详情
+  html += '<div class="record-details">';
+  if (anno) {
+    // 标注对象列表
+    html += '<div class="detail-section"><h4>标注对象 (' + (anno.objects||[]).length + ')</h4><div class="detail-list">';
+    if (anno.bg_global) html += '<div class="obj-row"><span class="obj-num">BG</span><span class="obj-type bg-global-tag">整体背景不一致</span></div>';
+    (anno.objects || []).forEach((obj, i) => {
+      const t = obj.type || "neutral";
+      const label = ACTION_LABELS[t] || t;
+      html += '<div class="obj-row"><span class="obj-num">#' + (i+1) + '</span>';
+      html += '<span class="obj-type">' + label + '</span>';
+      html += '<span class="obj-coord">x:' + Math.round(obj.box.x) + ' y:' + Math.round(obj.box.y) + ' ' + Math.round(obj.box.w) + '×' + Math.round(obj.box.h) + '</span>';
+      if (obj.target) html += '<span class="obj-extra">→ (' + Math.round(obj.target.x) + ',' + Math.round(obj.target.y) + ')</span>';
+      if (obj.dir3d) html += '<span class="obj-extra">3D: ' + obj.dir3d.join(",") + '</span>';
+      if (obj.text) html += '<span class="obj-extra">📝 ' + obj.text + '</span>';
+      html += '</div>';
+    });
+    html += '</div></div>';
+    // note
+    if (anno.note) html += '<div class="detail-section"><h4>整体不一致描述</h4><div class="note-text">' + anno.note + '</div></div>';
+  } else {
+    html += '<div class="detail-section muted">暂无标注数据</div>';
+  }
+
+  // 审核结果
+  if (rev) {
+    const vc = rev.verdict === "correct" ? "correct" : "wrong";
+    const vt = rev.verdict === "correct" ? "✓ 正确" : "✗ 错误";
+    html += '<div class="detail-section"><h4>审核结果</h4>';
+    html += '<div class="review-result ' + vc + '"><div class="verdict-text">' + vt + '</div>';
+    if (rev.reason) html += '<div class="reason-text">原因: ' + rev.reason + '</div>';
+    html += '</div></div>';
+  } else if (r.annotator) {
+    html += '<div class="detail-section muted">暂未审核</div>';
+  }
+
+  html += '</div></div></div>';
+
+  $("content").innerHTML = html;
+  $("navInfo").textContent = (curIdx+1) + " / " + records.length;
+
+  // 渲染 SVG 框
+  const imgB = $("rImgB");
+  if (imgB && anno) {
+    const renderBoxes = () => renderSvgBoxes($("rSvgB"), imgB, anno.objects, anno.bg_global);
+    if (imgB.complete && imgB.naturalWidth) renderBoxes();
+    else imgB.onload = renderBoxes;
+  }
+}
+
+// ===== 导航 =====
+function goPrev() { if (curIdx > 0) { curIdx--; renderRecord(); } }
+function goNext() { if (curIdx < records.length - 1) { curIdx++; renderRecord(); } }
+
+// ===== 登录 =====
+function openLoginModal() {
+  $("login-overlay").classList.remove("hidden");
+  $("loginError").style.display = "none";
+  $("patInput").value = "";
+  $("annotatorNameInput").value = window.GithubAuth.getAnnotatorName() || "";
+  $("patInput").focus();
+}
+function closeLoginModal() { $("login-overlay").classList.add("hidden"); }
+function startPatLogin() {
+  const token = $("patInput").value.trim();
+  const name = $("annotatorNameInput").value.trim();
+  const err = $("loginError");
+  err.style.display = "none";
+  if (!token) { err.textContent = "请输入 Token"; err.style.display = "block"; return; }
+  if (!name) { err.textContent = "请输入名字"; err.style.display = "block"; return; }
+  const btn = $("btnStartLogin");
+  btn.disabled = true; btn.textContent = "验证中...";
+  window.GithubAuth.login(token).then(() => {
+    window.GithubAuth.setAnnotatorName(name);
+    btn.disabled = false; btn.textContent = "验证并登录";
+    closeLoginModal();
+    updateAuthUI();
+    showToast("登录成功", "success");
+    onLoginSuccess();
+  }).catch((e) => {
+    btn.disabled = false; btn.textContent = "验证并登录";
+    err.textContent = e.message; err.style.display = "block";
+  });
+}
+function updateAuthUI() {
+  const user = window.GithubAuth.getUser();
+  if (user) {
+    $("user-area").classList.remove("hidden");
+    $("btnLogin").style.display = "none";
+    $("userAvatar").src = user.avatarUrl;
+    $("userName").textContent = window.GithubAuth.getAnnotatorName() || user.name;
+  } else {
+    $("user-area").classList.add("hidden");
+    $("btnLogin").style.display = "";
+  }
+}
+
+async function onLoginSuccess() {
+  try {
+    await loadDataset(currentDatasetIdx);
+    await loadAllRecords();
+  } catch (e) {
+    showToast("加载失败: " + e.message, "");
+  }
+}
+
+// ===== 初始化 =====
+async function init() {
+  populateDatasetSelect();
+  $("btnLogin").onclick = openLoginModal;
+  $("btnStartLogin").onclick = startPatLogin;
+  $("patInput").addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); startPatLogin(); } });
+  $("loginCancel").onclick = closeLoginModal;
+  $("btnRefresh").onclick = () => { if (window.GithubAuth.getToken()) loadAllRecords(); };
+  $("datasetSelect").onchange = async (e) => {
+    if (!window.GithubAuth.getToken()) { openLoginModal(); return; }
+    try { await loadDataset(parseInt(e.target.value, 10)); await loadAllRecords(); }
+    catch (e2) { showToast("切换失败: " + e2.message, ""); }
+  };
+  $("btnPrev").onclick = goPrev;
+  $("btnNext").onclick = goNext;
+
+  // 快捷键
+  document.addEventListener("keydown", (e) => {
+    if (e.target.tagName === "INPUT" || e.target.tagName === "SELECT") return;
+    if (e.key === "ArrowLeft") { e.preventDefault(); goPrev(); }
+    if (e.key === "ArrowRight" || e.key === "Enter") { e.preventDefault(); goNext(); }
+  });
+
+  // 检查登录态
+  const saved = await window.GithubAuth.checkToken();
+  updateAuthUI();
+  if (saved) {
+    await loadDataset(0);
+    await loadAllRecords();
+  } else {
+    openLoginModal();
+  }
+}
+
+document.addEventListener("DOMContentLoaded", init);
+})();
+</script>
+</body>
+</html>
