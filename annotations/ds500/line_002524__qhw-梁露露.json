@@ -1,0 +1,39 @@
+{
+  "line": 2524,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002524_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477399&Signature=sIGOuFzuK278%2FSe1gFkJgHfddis%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002524_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477399&Signature=M00gpOEj8ZUVD7Ulb%2FsEZnVCmHE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 357,
+        "y": 205,
+        "w": 335,
+        "h": 950
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 442,
+          "y": 387
+        },
+        {
+          "x": 644,
+          "y": 873
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 2,
+        "y": 1098,
+        "w": 717,
+        "h": 182
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "多出一名红衣女子\n黑衣男子朝向发生变化",
+  "bg_global": false
+}
