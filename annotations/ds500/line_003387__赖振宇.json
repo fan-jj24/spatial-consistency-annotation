@@ -1,0 +1,39 @@
+{
+  "line": 3387,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003387_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477404&Signature=tUPntKjVear8ChaKEdk%2FyKs56no%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003387_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477404&Signature=636otjusNqV1jHm3wlPzxPp1c3U%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 373,
+        "y": 6,
+        "w": 348,
+        "h": 812
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.815,
+        0.197,
+        0.544
+      ]
+    },
+    {
+      "box": {
+        "x": 69,
+        "y": 185,
+        "w": 284,
+        "h": 1024
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.806,
+        0.12,
+        0.58
+      ]
+    }
+  ],
+  "note": "蓝衣女子和青衣女子位置变化，青衣女子高度变化",
+  "bg_global": false
+}
