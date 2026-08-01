@@ -1,0 +1,39 @@
+{
+  "line": 2779,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002779_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477400&Signature=z23C4smCVdPihWIvoaj9Aew2ybI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002779_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477400&Signature=m0oYcVq3Djg%2BP%2FhrS0ZqxOb%2BKNc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 205,
+        "y": 648,
+        "w": 397,
+        "h": 581
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 310,
+          "y": 792
+        },
+        {
+          "x": 484,
+          "y": 1032
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 100,
+        "y": 334,
+        "w": 550,
+        "h": 241
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "多了白衣男，蓝衣女和墨衣女朝向发生改变",
+  "bg_global": false
+}
