@@ -1,0 +1,29 @@
+{
+  "line": 12546,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_012546_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=G0B%2BBw6y0ZmPOM5%2Fr6g9AqvbO1s%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_012546_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=DQut0jQnQL%2B7FGkENWrtkWqc5U8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 133,
+        "y": 1,
+        "w": 498,
+        "h": 708
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 353,
+          "y": 177
+        },
+        {
+          "x": 496,
+          "y": 471
+        }
+      ]
+    }
+  ],
+  "note": "多了一名绿衣女子"
+}
