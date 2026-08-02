@@ -1,0 +1,30 @@
+{
+  "line": 3462,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003462_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477404&Signature=91wFbPkiXLsSgIJf9Qtx98QT5UA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003462_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477404&Signature=cu7guCTyAyVa0T25EyUpomF82dM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 48,
+        "y": 128,
+        "w": 474,
+        "h": 694
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 140,
+          "y": 261
+        },
+        {
+          "x": 252,
+          "y": 504
+        }
+      ]
+    }
+  ],
+  "note": "金衣女身后多了一位红衣女。",
+  "bg_global": false
+}
