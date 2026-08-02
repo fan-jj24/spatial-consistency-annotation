@@ -1,0 +1,66 @@
+{
+  "line": 9574,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009574_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477441&Signature=lcVWMGwjiWZn8Cm5feGjfX8PAKo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009574_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477441&Signature=K2QoVoDb7JKwV%2B3Pb3NIOPon9Qs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 835,
+        "y": 217,
+        "w": 379,
+        "h": 711
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.974,
+        0.026,
+        0.225
+      ]
+    },
+    {
+      "box": {
+        "x": 1533,
+        "y": 149,
+        "w": 336,
+        "h": 796
+      },
+      "type": "move",
+      "target": {
+        "x": 1350,
+        "y": 550
+      }
+    },
+    {
+      "box": {
+        "x": 1214,
+        "y": 120,
+        "w": 302,
+        "h": 865
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.555,
+        -0.129,
+        -0.822
+      ]
+    },
+    {
+      "box": {
+        "x": 434,
+        "y": 43,
+        "w": 375,
+        "h": 847
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.91,
+        0.051,
+        0.412
+      ]
+    }
+  ],
+  "note": "人物站位发生了重组。",
+  "bg_global": false
+}
