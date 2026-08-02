@@ -1,0 +1,40 @@
+{
+  "line": 11050,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011050_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477449&Signature=8%2BZkBtSIIATJK81Ll3ZyBuhAKGE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011050_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477449&Signature=xxl1LskD5d92Pp57PvfjVcnRiTA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 512,
+        "y": 160,
+        "w": 215,
+        "h": 507
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 586,
+          "y": 293
+        },
+        {
+          "x": 704,
+          "y": 560
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 778,
+        "y": 140,
+        "w": 168,
+        "h": 539
+      },
+      "type": "custom",
+      "text": "向前移动并旋转"
+    }
+  ],
+  "note": "多了一位蓝衣男。\n白衣男朝向变了，与路灯的距离发生变化。",
+  "bg_global": false
+}
