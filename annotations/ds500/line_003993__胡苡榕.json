@@ -1,0 +1,30 @@
+{
+  "line": 3993,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003993_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477408&Signature=CHVPoZJpm9AGDUQajXITmNQqi6I%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003993_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477408&Signature=GNCvgVksXk1h5Bz2D3U%2ByK41MOU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 55,
+        "y": 174,
+        "w": 502,
+        "h": 1083
+      },
+      "type": "custom",
+      "text": "向后移动并旋转"
+    },
+    {
+      "box": {
+        "x": 485,
+        "y": 340,
+        "w": 223,
+        "h": 845
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "蓝袍男与白衣男的距离发生了变化，且朝向变了。\n白衣男的朝向发生了变化。",
+  "bg_global": false
+}
