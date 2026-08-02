@@ -1,0 +1,30 @@
+{
+  "line": 7523,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007523_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477430&Signature=OnSPZfhIl315t%2BGDn8EKb2K2zq0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007523_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477430&Signature=NMxqFvqLDYHbm5ZxvWNfPWm5Gl4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 596,
+        "y": 36,
+        "w": 576,
+        "h": 692
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 773,
+          "y": 219
+        },
+        {
+          "x": 892,
+          "y": 464
+        }
+      ]
+    }
+  ],
+  "note": "多了一位老人。",
+  "bg_global": false
+}
