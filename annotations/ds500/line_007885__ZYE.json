@@ -1,1 +1,34 @@
-{"line":7885,"remotes":["https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007885_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477432&Signature=wUpBAICzHLBtUd5m%2FWrsOOCyjJU%3D","https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007885_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477432&Signature=pJUBJ9m%2FDIzWkDVdL4VbpqR%2FJes%3D"],"objects":[{"box":{"x":713,"y":289,"w":54,"h":94},"type":"add"}],"note":"少了一位灰西装男","bg_global":false,"_migrated_from":"tests100"}
+{
+  "line": 7885,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007885_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477432&Signature=wUpBAICzHLBtUd5m%2FWrsOOCyjJU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007885_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477432&Signature=pJUBJ9m%2FDIzWkDVdL4VbpqR%2FJes%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 713,
+        "y": 289,
+        "w": 54,
+        "h": 94
+      },
+      "type": "add"
+    },
+    {
+      "box": {
+        "x": 355,
+        "y": 253,
+        "w": 354,
+        "h": 290
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.466,
+        -0.095,
+        -0.88
+      ]
+    }
+  ],
+  "note": "少了一位灰白西装男，人物群体位置发生变化",
+  "bg_global": false
+}
