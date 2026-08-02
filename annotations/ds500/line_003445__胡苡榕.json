@@ -1,0 +1,44 @@
+{
+  "line": 3445,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003445_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477404&Signature=tSyqS5XUROKKsFhXajjiGOWoLec%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003445_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477404&Signature=j882jgKS05ZzlAnNMAlIqP38jc8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 101,
+        "y": 579,
+        "w": 453,
+        "h": 686
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.361,
+        0.063,
+        0.93
+      ]
+    },
+    {
+      "box": {
+        "x": 501,
+        "y": 1137,
+        "w": 215,
+        "h": 138
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 611,
+          "y": 1165
+        },
+        {
+          "x": 670,
+          "y": 1242
+        }
+      ]
+    }
+  ],
+  "note": "红衣女与黑衣男的距离发生变化。\n画面右下角多了两个人物。",
+  "bg_global": false
+}
