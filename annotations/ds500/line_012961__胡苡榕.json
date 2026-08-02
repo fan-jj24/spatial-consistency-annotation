@@ -1,0 +1,39 @@
+{
+  "line": 12961,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_012961_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=NyePdXzF%2BKXTq6QEGZrwbNrpTWs%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_012961_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=Mx2yPNp6Df89%2BvfVyJdEq6gTwtA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 186,
+        "y": 474,
+        "w": 156,
+        "h": 320
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 212,
+          "y": 504
+        },
+        {
+          "x": 311,
+          "y": 740
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 316,
+        "y": 387,
+        "w": 218,
+        "h": 540
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "黑衣男右侧多出两位女子。\n白衣女与黑衣男的位置发生置换。",
+  "bg_global": false
+}
