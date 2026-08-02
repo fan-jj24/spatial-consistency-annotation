@@ -1,0 +1,25 @@
+{
+  "line": 3439,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003439_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477404&Signature=NcxlvcdskAUAb4W13Kz9AofFS3M%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003439_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477404&Signature=Q%2F6gJq%2B9yrRn%2BJPDt8TfYGx6SdA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 116,
+        "y": 196,
+        "w": 591,
+        "h": 1024
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.02,
+        -0.092,
+        -0.996
+      ]
+    }
+  ],
+  "note": "红衣女子位置和高度发生变化",
+  "bg_global": false
+}
