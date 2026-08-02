@@ -1,0 +1,25 @@
+{
+  "line": 8198,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008198_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477434&Signature=qMUhhU0hQ4TH7SB%2F0ggL01wKvJM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008198_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477434&Signature=rf%2FPd1Teo%2FRwsn8%2FQv7RCucXRyQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 423,
+        "y": 66,
+        "w": 739,
+        "h": 665
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.517,
+        -0.147,
+        -0.844
+      ]
+    }
+  ],
+  "note": "黑衣男与沙发的距离发生了变化。",
+  "bg_global": false
+}
