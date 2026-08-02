@@ -1,0 +1,30 @@
+{
+  "line": 2569,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002569_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477399&Signature=UuAzMZpSQ%2F7QMbPnjhQy76AX4oE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002569_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477399&Signature=wmMND7vZxCJfGm9S%2Bnbx88BM8Xc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -11,
+        "y": 527,
+        "w": 276,
+        "h": 753
+      },
+      "type": "custom",
+      "text": "粉衣女应向左移动并旋转"
+    },
+    {
+      "box": {
+        "x": 9,
+        "y": 366,
+        "w": 236,
+        "h": 835
+      },
+      "type": "add"
+    }
+  ],
+  "note": "粉衣女与绿衣男的距离发生变化，朝向变化。\n绿衣男右侧缺少一位蓝衣女。",
+  "bg_global": false
+}
