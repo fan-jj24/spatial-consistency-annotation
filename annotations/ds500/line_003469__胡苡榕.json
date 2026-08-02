@@ -1,0 +1,25 @@
+{
+  "line": 3469,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003469_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477404&Signature=jxZD5e2gfuxMyGAFUZo5gbWy8RI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003469_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477404&Signature=YQc3Lm9FH4y6zZMvys1rWdIg7wA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 286,
+        "y": 474,
+        "w": 125,
+        "h": 312
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.071,
+        -0.287,
+        -0.955
+      ]
+    }
+  ],
+  "note": "黑衣男从门口移动到房间中央。",
+  "bg_global": false
+}
