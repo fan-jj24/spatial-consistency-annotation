@@ -1,0 +1,21 @@
+{
+  "line": 2540,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002540_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477399&Signature=T1Wgal0hrxRVCu44%2BfK7VJdipr4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002540_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477399&Signature=xQBPLFrgSjzCZkNla%2B%2FVxr2s6tY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 89,
+        "y": 128,
+        "w": 602,
+        "h": 1142
+      },
+      "type": "custom",
+      "text": "黑衣男应变矮"
+    }
+  ],
+  "note": "黑衣男的高度变高了。",
+  "bg_global": false
+}
