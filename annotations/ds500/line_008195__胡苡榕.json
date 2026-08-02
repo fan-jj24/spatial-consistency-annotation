@@ -1,0 +1,24 @@
+{
+  "line": 8195,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008195_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477434&Signature=d5mOc69X%2FU%2BW1Y6otWOBojKvq7g%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008195_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477434&Signature=DAOlLYzLf5hMw%2BjiSHC6NTOQybM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1205,
+        "y": 544,
+        "w": 211,
+        "h": 489
+      },
+      "type": "move",
+      "target": {
+        "x": 1675,
+        "y": 681
+      }
+    }
+  ],
+  "note": "白衣女与画面右侧大树的距离发生变化。",
+  "bg_global": false
+}
