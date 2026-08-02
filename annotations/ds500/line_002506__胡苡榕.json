@@ -1,0 +1,21 @@
+{
+  "line": 2506,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002506_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477399&Signature=NjNGg29H1oWrzgz0xFCBfRnW7F0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002506_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477399&Signature=3SnuKk%2F%2BMRblbN2RIWPbGHBk2Q4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 401,
+        "y": 13,
+        "w": 323,
+        "h": 1262
+      },
+      "type": "custom",
+      "text": "向右移动并旋转，高度应变高"
+    }
+  ],
+  "note": "粉衣女从床尾到床上，朝向发生了变化，高度变矮了。",
+  "bg_global": false
+}
