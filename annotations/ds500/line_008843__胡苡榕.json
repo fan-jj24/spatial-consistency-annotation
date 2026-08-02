@@ -1,0 +1,25 @@
+{
+  "line": 8843,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008843_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477437&Signature=ls4qOxHnJnW1GUXSEK28de%2B4AsY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008843_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477437&Signature=rgQOdyBk7SxCIblQTpw8gdhkcLw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 514,
+        "y": -13,
+        "w": 512,
+        "h": 497
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.376,
+        0.209,
+        0.903
+      ]
+    }
+  ],
+  "note": "灰衣男与桌子的距离发生变化。",
+  "bg_global": false
+}
