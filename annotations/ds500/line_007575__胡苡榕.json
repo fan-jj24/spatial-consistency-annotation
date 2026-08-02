@@ -1,0 +1,51 @@
+{
+  "line": 7575,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007575_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477430&Signature=OeHeKalhz3Djnnmi1BPMW6qHi%2Bw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007575_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477430&Signature=pFamycShn0uONDSVjQRy%2BneXeH0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 677,
+        "y": -8,
+        "w": 481,
+        "h": 962
+      },
+      "type": "move",
+      "target": {
+        "x": 247,
+        "y": 477
+      }
+    },
+    {
+      "box": {
+        "x": 17,
+        "y": 120,
+        "w": 464,
+        "h": 818
+      },
+      "type": "move",
+      "target": {
+        "x": 1376,
+        "y": 528
+      }
+    },
+    {
+      "box": {
+        "x": 1273,
+        "y": 107,
+        "w": 439,
+        "h": 839
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.316,
+        -0.095,
+        -0.944
+      ]
+    }
+  ],
+  "note": "人物群体位置发生重组。",
+  "bg_global": false
+}
