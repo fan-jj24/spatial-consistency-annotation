@@ -1,0 +1,37 @@
+{
+  "line": 8293,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008293_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477434&Signature=FsB0yHphxkRuVyeWwazEfom4BIo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008293_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477434&Signature=gHOiLbdatqJMjNN3qAmf%2BEku4Yk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 124,
+        "y": 433,
+        "w": 179,
+        "h": 474
+      },
+      "type": "move",
+      "target": {
+        "x": 22,
+        "y": 666
+      }
+    },
+    {
+      "box": {
+        "x": 419,
+        "y": 422,
+        "w": 212,
+        "h": 507
+      },
+      "type": "move",
+      "target": {
+        "x": 675,
+        "y": 678
+      }
+    }
+  ],
+  "note": "两人间的距离变近了。",
+  "bg_global": false
+}
