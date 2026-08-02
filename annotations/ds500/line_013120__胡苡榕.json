@@ -1,0 +1,20 @@
+{
+  "line": 13120,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013120_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=g0N01XDQHaG6ImubYY4s%2FKFRHrM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013120_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=Q33mCzAgquvW4R95MQ4L4teR%2Fjg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 22,
+        "y": 225,
+        "w": 620,
+        "h": 1024
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "灰衣女的位置被灰衣男占据了。",
+  "bg_global": false
+}
