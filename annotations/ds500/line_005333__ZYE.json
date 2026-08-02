@@ -1,0 +1,39 @@
+{
+  "line": 5333,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_005333_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477417&Signature=zoFqNbxng3URRM3Zl%2FGlpH7JJtY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_005333_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477417&Signature=b3l%2F8vWNbQcyHuLRl8M0YtRCO5g%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 16,
+        "y": 495,
+        "w": 719,
+        "h": 558
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 183,
+          "y": 578
+        },
+        {
+          "x": 587,
+          "y": 962
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": -5,
+        "y": 14,
+        "w": 727,
+        "h": 612
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "多了一双手、一沓纸和照片，墙面局部背景不一致",
+  "bg_global": false
+}
