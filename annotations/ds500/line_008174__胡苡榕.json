@@ -1,0 +1,31 @@
+{
+  "line": 8174,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008174_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477434&Signature=yO5asMxJsJSpWhOzASRuZNkdKFM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008174_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477434&Signature=E2gOt%2BojsctzokivWiB5jZI7jBo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 289,
+        "y": 140,
+        "w": 348,
+        "h": 536
+      },
+      "type": "custom",
+      "text": "向后移动并旋转"
+    },
+    {
+      "box": {
+        "x": 247,
+        "y": 422,
+        "w": 178,
+        "h": 203
+      },
+      "type": "custom",
+      "text": "向前移动并旋转"
+    }
+  ],
+  "note": "蓝衣男与白衣女的距离发生了变化，且朝向变了。\n黄色宠物的朝向变了，且与地毯边缘的距离发生了一点点变化。",
+  "bg_global": false
+}
