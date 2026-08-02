@@ -1,0 +1,39 @@
+{
+  "line": 12453,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_012453_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=oqOwVypmT0FQItI8bT5R%2B4Ij9Y8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_012453_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=aRetZN7fDigxwTlf1g6CsPZIjig%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 471,
+        "y": 446,
+        "w": 111,
+        "h": 430
+      },
+      "type": "rotate"
+    },
+    {
+      "box": {
+        "x": 602,
+        "y": 428,
+        "w": 115,
+        "h": 576
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 643,
+          "y": 567
+        },
+        {
+          "x": 681,
+          "y": 782
+        }
+      ]
+    }
+  ],
+  "note": "多了白衣盘发女，白衣散发女朝向发生变化",
+  "bg_global": false
+}
