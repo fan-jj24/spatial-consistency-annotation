@@ -1,0 +1,24 @@
+{
+  "line": 12496,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_012496_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=iEnfPhO5VpCXt3sOit7OkNBKu5s%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_012496_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=9r0982IEycs5z461Qqlrum9SmIU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 76,
+        "y": 417,
+        "w": 95,
+        "h": 458
+      },
+      "type": "move",
+      "target": {
+        "x": 288,
+        "y": 566
+      }
+    }
+  ],
+  "note": "披发女与白衣男的距离发生变化。",
+  "bg_global": false
+}
