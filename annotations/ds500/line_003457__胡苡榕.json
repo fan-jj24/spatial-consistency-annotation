@@ -1,0 +1,30 @@
+{
+  "line": 3457,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003457_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477404&Signature=USXzxVtAg0zecz3AxV7cW1KSnfA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003457_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477404&Signature=qsmWtwX6v%2BjG5LjRgmfGKywhEIQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 137,
+        "y": 220,
+        "w": 200,
+        "h": 1032
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 204,
+          "y": 558
+        },
+        {
+          "x": 293,
+          "y": 801
+        }
+      ]
+    }
+  ],
+  "note": "粉衣女身侧多了一位粉衣男。",
+  "bg_global": false
+}
