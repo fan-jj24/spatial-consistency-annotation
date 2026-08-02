@@ -1,0 +1,30 @@
+{
+  "line": 8536,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008536_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477436&Signature=EOBp9rdUWcaLniGZec0C9E4C9DU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008536_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477436&Signature=ZQ8VQ2y%2BiEM%2F9kEnbtulbgHqp58%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -19,
+        "y": 138,
+        "w": 302,
+        "h": 1132
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 91,
+          "y": 456
+        },
+        {
+          "x": 109,
+          "y": 852
+        }
+      ]
+    }
+  ],
+  "note": "多了粉衣人和白衣人，",
+  "bg_global": false
+}
