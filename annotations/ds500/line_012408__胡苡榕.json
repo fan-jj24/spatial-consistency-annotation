@@ -1,0 +1,30 @@
+{
+  "line": 12408,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_012408_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479811&Signature=eV%2FUNCEw5oF%2BdPeFt1TDhmgtgsg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_012408_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479811&Signature=7Rb%2F5nVzGih2B8JrjMTMfg4C9uM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 478,
+        "y": 77,
+        "w": 251,
+        "h": 714
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 557,
+          "y": 236
+        },
+        {
+          "x": 660,
+          "y": 589
+        }
+      ]
+    }
+  ],
+  "note": "蓝衣女身后多了一位黑衣男。",
+  "bg_global": false
+}
