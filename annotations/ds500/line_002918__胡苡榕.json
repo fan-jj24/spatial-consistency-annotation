@@ -1,0 +1,53 @@
+{
+  "line": 2918,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002918_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477401&Signature=B9lIb98U2NoRpoDF4wQ9HB7%2F3ck%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002918_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477401&Signature=fu67D%2BW7eC%2F2EJDBQe8ifSvzucI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 217,
+        "y": 458,
+        "w": 141,
+        "h": 251
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 240,
+          "y": 509
+        },
+        {
+          "x": 316,
+          "y": 622
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 319,
+        "y": 340,
+        "w": 271,
+        "h": 540
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.523,
+        0.139,
+        0.841
+      ]
+    },
+    {
+      "box": {
+        "x": 301,
+        "y": 397,
+        "w": 92,
+        "h": 330
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "紫色帘子前多出一位绿衣男。\n白衣男从水池中央移动到水池边。\n水池旁缺少金色烛台和白色蜡烛。",
+  "bg_global": false
+}
