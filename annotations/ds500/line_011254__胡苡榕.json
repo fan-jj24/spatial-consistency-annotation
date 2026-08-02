@@ -1,0 +1,29 @@
+{
+  "line": 11254,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011254_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477451&Signature=CkgfeO%2FP0hOTLUwGVq%2B64IZ%2BKzY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011254_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477451&Signature=PKFEnBuW%2B0JzDfrUDunE2Ee5IXs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 332,
+        "y": 404,
+        "w": 146,
+        "h": 384
+      },
+      "type": "add"
+    },
+    {
+      "box": {
+        "x": 32,
+        "y": 428,
+        "w": 681,
+        "h": 371
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "黑衣女身后少了一位黑衣白衬女。\n黑衣女身后背景由空旷地变为饮水台和饮水机。",
+  "bg_global": false
+}
