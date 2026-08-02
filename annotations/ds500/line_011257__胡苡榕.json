@@ -1,0 +1,24 @@
+{
+  "line": 11257,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011257_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477451&Signature=zFAFqF%2B13wT5w19DzdlKWqDyJuQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011257_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477451&Signature=ZkcfV7TT4dkzBpgoDJ2fewxie1E%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 255,
+        "y": 573,
+        "w": 90,
+        "h": 238
+      },
+      "type": "move",
+      "target": {
+        "x": 424,
+        "y": 758
+      }
+    }
+  ],
+  "note": "白衣女由画面地毯右侧移动到画面地毯左侧。",
+  "bg_global": false
+}
