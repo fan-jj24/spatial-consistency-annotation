@@ -1,0 +1,44 @@
+{
+  "line": 9534,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009534_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477441&Signature=C2kfTdlKP96X8OZVu%2BJ0S2cfgNQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009534_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477441&Signature=oM1cf4P9EOGSh2iSRWw2lkWZDPw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 796,
+        "y": 10,
+        "w": 484,
+        "h": 471
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 908,
+          "y": 109
+        },
+        {
+          "x": 1131,
+          "y": 320
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 495,
+        "y": 310,
+        "w": 278,
+        "h": 256
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.055,
+        -0.194,
+        0.979
+      ]
+    }
+  ],
+  "note": "黄色出租车位置发生变化，多了一个绿色物体",
+  "bg_global": false
+}
