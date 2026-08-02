@@ -1,0 +1,34 @@
+{
+  "line": 5389,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_005389_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477417&Signature=Yn53KQgO1TjmFEzCy9S751A63Co%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_005389_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477417&Signature=DgrA0vZPlXigtRGgB3ORyMLH0nI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 534,
+        "y": 90,
+        "w": 184,
+        "h": 1183
+      },
+      "type": "rotate"
+    },
+    {
+      "box": {
+        "x": 2,
+        "y": 74,
+        "w": 556,
+        "h": 1208
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.434,
+        0.061,
+        0.899
+      ]
+    }
+  ],
+  "note": "白衣男的朝向变了。\n粉衣女和白衣男的距离发生变化。",
+  "bg_global": false
+}
