@@ -1,0 +1,25 @@
+{
+  "line": 2777,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002777_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477400&Signature=ldamua8w4Z1sav6oHshnrTVSeTY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002777_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477400&Signature=vFQPtOPP6wcCgP1b8ycYgo4%2Bhpo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 107,
+        "y": -10,
+        "w": 479,
+        "h": 1265
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.405,
+        0.192,
+        0.894
+      ]
+    }
+  ],
+  "note": "白裙女从门口移动到屋内。",
+  "bg_global": false
+}
