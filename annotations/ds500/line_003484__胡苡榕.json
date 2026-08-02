@@ -1,0 +1,31 @@
+{
+  "line": 3484,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003484_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477404&Signature=76JwNI%2BgqcU1wi%2Ble6kxibvpg3Q%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003484_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477404&Signature=XtbKL7g9q1vauwjpAMMN%2FaWbr3Y%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 22,
+        "y": 476,
+        "w": 197,
+        "h": 799
+      },
+      "type": "custom",
+      "text": "红衣女应向右前方移动并旋转"
+    },
+    {
+      "box": {
+        "x": 493,
+        "y": 428,
+        "w": 220,
+        "h": 847
+      },
+      "type": "custom",
+      "text": "绿衣女应向前移动并旋转"
+    }
+  ],
+  "note": "红衣女和绿衣女的站位和朝向发生了重组。",
+  "bg_global": false
+}
