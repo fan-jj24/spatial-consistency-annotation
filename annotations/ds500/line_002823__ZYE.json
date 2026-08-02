@@ -1,1 +1,44 @@
-{"line":2823,"remotes":["https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002823_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477400&Signature=F%2BQeQU%2F%2BWC2vfgwnTtJMcD%2FMSxM%3D","https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002823_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477400&Signature=lARahEG01vLfR2nZbFu5gk0PV2E%3D"],"objects":[{"box":{"x":458,"y":313,"w":253,"h":914},"type":"delete","line":[{"x":538,"y":482},{"x":620,"y":892}]},{"box":{"x":26,"y":206,"w":315,"h":1014},"type":"rotate"}],"note":"多了一位红衣女子，红衣男子朝向和位置发生变化","bg_global":false,"_migrated_from":"tests100"}
+{
+  "line": 2823,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002823_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477400&Signature=F%2BQeQU%2F%2BWC2vfgwnTtJMcD%2FMSxM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002823_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477400&Signature=lARahEG01vLfR2nZbFu5gk0PV2E%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 458,
+        "y": 313,
+        "w": 253,
+        "h": 914
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 538,
+          "y": 482
+        },
+        {
+          "x": 620,
+          "y": 892
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 23,
+        "y": 216,
+        "w": 379,
+        "h": 1027
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.025,
+        0.179,
+        -0.984
+      ]
+    }
+  ],
+  "note": "多了一位红衣女子，红衣男子位置和朝向发生变化",
+  "bg_global": false
+}
