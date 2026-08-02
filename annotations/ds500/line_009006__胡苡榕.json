@@ -1,0 +1,21 @@
+{
+  "line": 9006,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009006_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477438&Signature=0efvoT438DqsGYGM18AVP2MMzr4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009006_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477438&Signature=VN4lwi94OR1jJeJMMfVaHVpsCSA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 586,
+        "y": 123,
+        "w": 578,
+        "h": 596
+      },
+      "type": "custom",
+      "text": "向左前方移动并旋转"
+    }
+  ],
+  "note": "男子与女子的距离发生了变化，且朝向改变了。",
+  "bg_global": false
+}
