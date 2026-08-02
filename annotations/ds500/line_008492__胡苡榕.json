@@ -1,0 +1,30 @@
+{
+  "line": 8492,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008492_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477435&Signature=OpwgYuiNYrTR1FmTQY92denqNak%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008492_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477435&Signature=%2FsiNNfLCIfyL3FTeY5PEqGtdelg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 707,
+        "y": 316,
+        "w": 230,
+        "h": 393
+      },
+      "type": "custom",
+      "text": "向前移动并旋转"
+    },
+    {
+      "box": {
+        "x": 413,
+        "y": 303,
+        "w": 287,
+        "h": 356
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "白衣女与白衣男的距离发生了变化。\n二人的朝向均发生了变化。",
+  "bg_global": false
+}
