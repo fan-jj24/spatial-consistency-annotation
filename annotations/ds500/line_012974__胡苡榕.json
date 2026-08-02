@@ -1,0 +1,30 @@
+{
+  "line": 12974,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_012974_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=kAPo8p0rFKlSXxl5gs%2BH4aFIOqg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_012974_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=WALTghB73WGaTUMpSV3PJ%2B08c%2F4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 424,
+        "y": 269,
+        "w": 269,
+        "h": 819
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 557,
+          "y": 476
+        },
+        {
+          "x": 596,
+          "y": 673
+        }
+      ]
+    }
+  ],
+  "note": "多了一位黑衣男。\n整体背景发生了变化，如从女生身后单一房檐、两个石灯，变为多个房檐、带有假山等。",
+  "bg_global": true
+}
