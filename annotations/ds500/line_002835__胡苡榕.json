@@ -1,0 +1,20 @@
+{
+  "line": 2835,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002835_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477401&Signature=E1DGnRNxkqn%2Ba1U%2BO6mAJ09%2F4MY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002835_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477401&Signature=8i%2B2dngRUNyayR8jqFPgUPaUnD0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -4,
+        "y": 110,
+        "w": 730,
+        "h": 1144
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "男女生的位置发生置换。",
+  "bg_global": false
+}
