@@ -1,0 +1,21 @@
+{
+  "line": 7834,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007834_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477432&Signature=xbJpJ4wJSVBS%2BIAifGt603W5FMk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007834_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477432&Signature=ezJxaEUANtd84%2B8LMLSytIyl984%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 499,
+        "y": 101,
+        "w": 726,
+        "h": 638
+      },
+      "type": "custom",
+      "text": "向右移动并旋转"
+    }
+  ],
+  "note": "狗狗从女生左侧到右侧，朝向变了。",
+  "bg_global": false
+}
