@@ -1,0 +1,38 @@
+{
+  "line": 3182,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003182_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477403&Signature=urzIN81YK2MhWBoPdU2J4d%2F%2BOhI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003182_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477403&Signature=ggIp0vE%2Ba7UyzJ4SAMxFGVsBR9Q%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -14,
+        "y": 402,
+        "w": 138,
+        "h": 492
+      },
+      "type": "move",
+      "target": {
+        "x": 508,
+        "y": 906
+      }
+    },
+    {
+      "box": {
+        "x": 242,
+        "y": 338,
+        "w": 192,
+        "h": 525
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.129,
+        -0.044,
+        -0.991
+      ]
+    }
+  ],
+  "note": "粉衣女应向后移动。\n蓝衣女应向右移动。",
+  "bg_global": false
+}
