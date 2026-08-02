@@ -1,0 +1,29 @@
+{
+  "line": 12429,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_012429_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=7QS3Eb55hLmWDXGg4rcz%2Fs6D4GQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_012429_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=f1EER0R%2BhEsEDsblpFi9G7J%2FnHk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 283,
+        "y": 632,
+        "w": 182,
+        "h": 525
+      },
+      "type": "add"
+    },
+    {
+      "box": {
+        "x": 296,
+        "y": 732,
+        "w": 233,
+        "h": 108
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "绿衣女左侧桌边缺少了一位粉衣女。\n桌子上的菜品、煤油灯位置发生了变化。",
+  "bg_global": false
+}
