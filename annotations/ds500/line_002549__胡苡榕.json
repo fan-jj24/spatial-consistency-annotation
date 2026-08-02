@@ -1,0 +1,31 @@
+{
+  "line": 2549,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002549_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477399&Signature=cM6hCgjY7duxoJ%2BBQ4U%2FM6gWYk4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002549_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477399&Signature=ady7Rnhv6Qc3Jr3WphN5OFYnYFc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 309,
+        "y": 218,
+        "w": 320,
+        "h": 1057
+      },
+      "type": "custom",
+      "text": "向后移动并变矮"
+    },
+    {
+      "box": {
+        "x": 78,
+        "y": 159,
+        "w": 246,
+        "h": 1021
+      },
+      "type": "custom",
+      "text": "旋转并变矮"
+    }
+  ],
+  "note": "粉衣女与白衣男的距离发生变化；白衣男的朝向变化；两人的高度发生变化。",
+  "bg_global": false
+}
