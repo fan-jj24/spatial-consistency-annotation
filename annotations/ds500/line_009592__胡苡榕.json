@@ -1,0 +1,21 @@
+{
+  "line": 9592,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009592_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477441&Signature=%2FftVDtirQK3EWzkgRiIUJH%2F1nqg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009592_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477441&Signature=MqtxzswYWp52xS7jeWajfhAhoWg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 163,
+        "y": 370,
+        "w": 341,
+        "h": 289
+      },
+      "type": "custom",
+      "text": "人物群体应向后移动并旋转"
+    }
+  ],
+  "note": "人物群体与桌子的距离发生变化，且朝向变了。",
+  "bg_global": false
+}
