@@ -1,0 +1,20 @@
+{
+  "line": 13247,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013247_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479813&Signature=MscxU2HOZCWnDfRl8rXUSuFwGrI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013247_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479813&Signature=os8WLWnJDD1buSq5uzyvt89iAyk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 250,
+        "y": 548,
+        "w": 223,
+        "h": 438
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "整体背景发生了变化，如远处的高楼大厦变少了、河边的栏杆变了等等。\n两人的朝向均发生了变化。",
+  "bg_global": true
+}
