@@ -1,0 +1,21 @@
+{
+  "line": 2776,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002776_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477400&Signature=I0NSIJKA%2BHLKPVi81eYnBwCV1gs%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002776_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477400&Signature=shYL7ru80IArQn6BYWHmRrKY904%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 63,
+        "y": 177,
+        "w": 246,
+        "h": 1034
+      },
+      "type": "custom",
+      "text": "向后移动并旋转"
+    }
+  ],
+  "note": "灰衣男与蓝裙女的距离发生变化、朝向变了。",
+  "bg_global": false
+}
