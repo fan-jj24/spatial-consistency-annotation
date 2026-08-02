@@ -1,0 +1,87 @@
+{
+  "line": 8406,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008406_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477435&Signature=8E%2Fo639v3SrOtX2QrRzFLV%2BYHmw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008406_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477435&Signature=ukC7K%2BlAs5i99f6JZA6ww7lsbhU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 119,
+        "y": 172,
+        "w": 146,
+        "h": 389
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 158,
+          "y": 251
+        },
+        {
+          "x": 217,
+          "y": 387
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 434,
+        "y": 207,
+        "w": 205,
+        "h": 346
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 547,
+          "y": 358
+        },
+        {
+          "x": 583,
+          "y": 468
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 578,
+        "y": 566,
+        "w": 164,
+        "h": 694
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 657,
+          "y": 786
+        },
+        {
+          "x": 718,
+          "y": 1032
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": -19,
+        "y": 517,
+        "w": 164,
+        "h": 735
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 17,
+          "y": 732
+        },
+        {
+          "x": 135,
+          "y": 1024
+        }
+      ]
+    }
+  ],
+  "note": "多了四位橙衣男。",
+  "bg_global": false
+}
