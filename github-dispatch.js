@@ -506,6 +506,98 @@
     }));
   }
 
+  // ===== 小型并发池（限制并行请求数，避免触发 GitHub 限流）=====
+  async function runPool(items, worker, concurrency) {
+    let idx = 0;
+    const lanes = [];
+    for (let i = 0; i < Math.min(concurrency || 4, items.length); i++) {
+      lanes.push((async () => {
+        while (idx < items.length) {
+          const cur = idx++;
+          await worker(items[cur], cur);
+        }
+      })());
+    }
+    await Promise.all(lanes);
+  }
+
+  // ===== 记录状态徽章（"我的记录"面板用）=====
+  // 标注者视角：查每条标注对应的审核结论 → correct / wrong / 未审核
+  // 审核者视角：查被审标注是否在审核之后被修改过 → outdated（灰色）
+  // records: [{ line, ... }]
+  async function getRecordBadges(records, isReview) {
+    const username = window.GithubAuth.getAnnotatorId();
+    const badges = {};
+
+    if (!isReview) {
+      // 一次 git tree 列目录，筛出自己的审核文件，避免逐条请求
+      const files = await listAllFiles();
+      const pfx = reviewPrefix();
+      const paths = [];
+      for (const path of files) {
+        if (!path.startsWith(pfx) || !path.endsWith(".json")) continue;
+        const m = path.slice(pfx.length).match(/^line_(\d+)__(.+)\.json$/);
+        if (m && m[2] === username) paths.push({ line: parseInt(m[1], 10), path });
+      }
+      await runPool(paths, async ({ line, path }) => {
+        try {
+          const info = await getFileRaw(path);
+          if (info && info.data) {
+            badges[line] = { verdict: info.data.verdict || null,
+                             reason: info.data.reason || "",
+                             reviewer: info.data.reviewer || "" };
+          }
+        } catch (e) {}
+      }, 4);
+    } else {
+      // 审核者：逐条对比 审核ts 与 标注ts
+      // 先一次性列出标注目录，建立 line → path 索引，避免循环内重复列目录
+      const files = await listAllFiles();
+      const aPfx = annoPrefix();
+      const annoPathByLine = {};
+      for (const p of files) {
+        if (!p.startsWith(aPfx) || !p.endsWith(".json")) continue;
+        const m = p.slice(aPfx.length).match(/^line_(\d+)__(.+)\.json$/);
+        if (m) annoPathByLine[parseInt(m[1], 10)] = p;
+      }
+      await runPool(records, async (r) => {
+        try {
+          const reviewInfo = await getFileRaw(reviewFilePath(r.line, username));
+          if (!reviewInfo || !reviewInfo.data) return;
+          const reviewTs = reviewInfo.data.ts || 0;
+          const badge = { verdict: reviewInfo.data.verdict || null, reason: reviewInfo.data.reason || "" };
+          const annoPath = annoPathByLine[r.line];
+          if (annoPath) {
+            const annoInfo = await getFileRaw(annoPath);
+            const annoTs = (annoInfo && annoInfo.data && annoInfo.data.ts) || 0;
+            // 旧数据没有 ts 字段（annoTs=0），视为"未被修改过"，不标灰
+            if (annoTs > 0 && annoTs > reviewTs) badge.outdated = true;
+          }
+          badges[r.line] = badge;
+        } catch (e) {}
+      }, 4);
+    }
+    return badges;
+  }
+
+  // ===== 按行读取标注数据（审核视角对比用）=====
+  async function loadAnnotationByLine(line) {
+    const files = await listAllFiles();
+    const pfx = annoPrefix();
+    for (const path of files) {
+      if (!path.startsWith(pfx) || !path.endsWith(".json")) continue;
+      const m = path.slice(pfx.length).match(/^line_(\d+)__(.+)\.json$/);
+      if (m && parseInt(m[1], 10) === line) {
+        try {
+          const info = await getFileRaw(path);
+          if (info) return { data: info.data, annotatorName: m[2] };
+        } catch (e) {}
+        return null;
+      }
+    }
+    return null;
+  }
+
   // ===== 暴露 API =====
   window.GithubDispatch = {
     setDataset: setDataset,
@@ -521,6 +613,7 @@
     listMyAnnotations: listMyAnnotations,
     loadMyAnnotation: loadMyAnnotation,
     updateMyAnnotation: updateMyAnnotation,
+    getRecordBadges: getRecordBadges,
     listAllRecords: listAllRecords,
     getFileRaw: getFileRaw,
     annotationFilePath: annotationFilePath,
