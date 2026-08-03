@@ -1,0 +1,35 @@
+{
+  "line": 7769,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007769_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477431&Signature=whYnKhGPz%2B31g%2Bmq87vq%2BtlnSos%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007769_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477431&Signature=2kOd7HyHH2tIewTMnfOIfsH1Xq0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 646,
+        "y": 212,
+        "w": 60,
+        "h": 82
+      },
+      "type": "move",
+      "target": {
+        "x": 585,
+        "y": 236
+      }
+    },
+    {
+      "box": {
+        "x": 525,
+        "y": 170,
+        "w": 78,
+        "h": 69
+      },
+      "type": "custom",
+      "text": "一个人物需要旋转，一个人物需要后退并旋转"
+    }
+  ],
+  "note": "人物群体位置发生变化\n画面中心人物位置发生变化",
+  "bg_global": false,
+  "ts": 1785741671763
+}
