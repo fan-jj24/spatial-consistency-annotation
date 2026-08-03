@@ -1,1 +1,41 @@
-{"line":2830,"remotes":["https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002830_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314628&Signature=PYF0gzp6D9GhwRo3SoO%2FC0Bnw9w%3D","https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002830_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314628&Signature=fXkDjlVth7TYxEOJnQmKZ562n3o%3D"],"objects":[{"box":{"x":316,"y":594,"w":172,"h":218},"type":"move","target":{"x":421,"y":986}},{"box":{"x":37,"y":1055,"w":648,"h":172},"type":"delete","line":[{"x":235,"y":1165},{"x":670,"y":1129}]}],"note":"红衣男和红衣女位置发生变化\n多了桌台","_migrated_from":"tests100"}
+{
+  "line": 2830,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002830_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477400&Signature=r%2FnvJNXWnBLS4cfMa5vHT2kM4ZU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002830_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477400&Signature=I%2FEAAU5gu28U1vaHFzWIjfWqQAk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 316,
+        "y": 594,
+        "w": 172,
+        "h": 218
+      },
+      "type": "custom",
+      "text": "红衣男、红衣女需要旋转并后退"
+    },
+    {
+      "box": {
+        "x": 37,
+        "y": 1055,
+        "w": 648,
+        "h": 172
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 235,
+          "y": 1165
+        },
+        {
+          "x": 670,
+          "y": 1129
+        }
+      ]
+    }
+  ],
+  "note": "红衣男和红衣女朝向、位置发生变化\n多了桌台",
+  "bg_global": false,
+  "ts": 1785750798924
+}
