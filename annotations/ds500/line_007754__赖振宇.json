@@ -1,0 +1,25 @@
+{
+  "line": 7754,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007754_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477431&Signature=%2Bc1rc1DJ7owIUmqS75MF6NQNKv8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007754_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477431&Signature=E2i1N%2FBK5zVEEOFFiL5RD5o3sbE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 397,
+        "y": 214,
+        "w": 494,
+        "h": 470
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.063,
+        -0.194,
+        -0.979
+      ]
+    }
+  ],
+  "note": "车辆整体位置变化",
+  "bg_global": false
+}
