@@ -1,0 +1,37 @@
+{
+  "line": 2967,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002967_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477401&Signature=QK1K5Qs6Jau80G6IzYufwqeEZX0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002967_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477401&Signature=3SKajOrKqyuOfRoOU0AFVnesM0w%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 271,
+        "y": 438,
+        "w": 195,
+        "h": 276
+      },
+      "type": "move",
+      "target": {
+        "x": 351,
+        "y": 277
+      }
+    },
+    {
+      "box": {
+        "x": 141,
+        "y": 364,
+        "w": 115,
+        "h": 333
+      },
+      "type": "move",
+      "target": {
+        "x": 69,
+        "y": 474
+      }
+    }
+  ],
+  "note": "青红衣女子和红衣男子高度变化，青衣男子位置变化",
+  "bg_global": false
+}
