@@ -1,1 +1,54 @@
-{"line":2587,"remotes":["https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002587_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314627&Signature=hK5Ed1Wu%2FQRkL%2FFini6IkV75oBE%3D","https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002587_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314627&Signature=1EcXLJR8FMG59nqCemcFQHbl0qY%3D"],"objects":[{"box":{"x":311,"y":484,"w":438,"h":527},"type":"move3d","dir3d":[-0.598,0.237,0.766]}],"note":"粉衣女子位置变化，高度变化","_migrated_from":"tests100"}
+{
+  "line": 2587,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002587_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314627&Signature=hK5Ed1Wu%2FQRkL%2FFini6IkV75oBE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002587_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314627&Signature=1EcXLJR8FMG59nqCemcFQHbl0qY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 311,
+        "y": 484,
+        "w": 438,
+        "h": 527
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.598,
+        0.237,
+        0.766
+      ]
+    },
+    {
+      "box": {
+        "x": 124,
+        "y": 82,
+        "w": 182,
+        "h": 625
+      },
+      "type": "move3d",
+      "dir3d": [
+        -1,
+        -0.001,
+        -0.006
+      ]
+    },
+    {
+      "box": {
+        "x": 462,
+        "y": 225,
+        "w": 166,
+        "h": 251
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.557,
+        0.245,
+        0.793
+      ]
+    }
+  ],
+  "note": "粉衣女子和俩个甲胄侍卫位置变化，高度变化，画面左侧甲胄侍卫朝向变化",
+  "bg_global": false,
+  "ts": 1785742025458
+}
