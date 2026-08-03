@@ -1,1 +1,45 @@
-{"line":2841,"remotes":["https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002841_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477401&Signature=SDXHt9IzVTokgwlhNeBIl63UdKw%3D","https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002841_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477401&Signature=D3bXJNep1xKDvxmHzN%2BnolF7K%2FQ%3D"],"objects":[{"box":{"x":-27,"y":576,"w":77,"h":538},"type":"add"},{"box":{"x":50,"y":192,"w":435,"h":940},"type":"move3d","dir3d":[-0.145,-0.028,0.989]},{"box":{"x":498,"y":346,"w":261,"h":643},"type":"delete","line":[{"x":688,"y":468},{"x":601,"y":755}]}],"note":"蓝衣男子和画面左边多位黄衣侍卫向位置发生变化；少了一位蓝衣女子；多了画面右边多位黄衣侍卫","bg_global":false,"_migrated_from":"tests100"}
+{
+  "line": 2841,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002841_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477401&Signature=SDXHt9IzVTokgwlhNeBIl63UdKw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002841_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477401&Signature=D3bXJNep1xKDvxmHzN%2BnolF7K%2FQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 498,
+        "y": 346,
+        "w": 261,
+        "h": 643
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 688,
+          "y": 468
+        },
+        {
+          "x": 601,
+          "y": 755
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 20,
+        "y": 110,
+        "w": 463,
+        "h": 1088
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.041,
+        -0.012,
+        0.999
+      ]
+    }
+  ],
+  "note": "蓝衣男、蓝衣女、画面左边多位黄衣侍卫向位置发生变化；多了画面右边多位黄衣侍卫",
+  "bg_global": false,
+  "ts": 1785747120911
+}
