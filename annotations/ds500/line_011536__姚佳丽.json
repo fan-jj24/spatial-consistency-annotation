@@ -1,0 +1,52 @@
+{
+  "line": 11536,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011536_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477452&Signature=rvrOlph6Cbdkno%2FdQelRSJMjG4Y%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011536_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477452&Signature=Ij64oTSQ2Ymw1Kw7h4OKW1ElMK4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 6,
+        "y": 316,
+        "w": 253,
+        "h": 755
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.407,
+        -0.069,
+        0.911
+      ]
+    },
+    {
+      "box": {
+        "x": 280,
+        "y": 311,
+        "w": 331,
+        "h": 800
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.742,
+        -0.099,
+        0.663
+      ]
+    },
+    {
+      "box": {
+        "x": 621,
+        "y": 757,
+        "w": 85,
+        "h": 386
+      },
+      "type": "move",
+      "target": {
+        "x": 49,
+        "y": 1129
+      }
+    }
+  ],
+  "note": "白衣女子和黑衣男子与狗位置变化",
+  "bg_global": false
+}
