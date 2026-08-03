@@ -1,0 +1,37 @@
+{
+  "line": 8237,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008237_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477434&Signature=PIVCwsz3b50Nh8VJqsPzqLHNR%2BQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008237_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477434&Signature=XM9a3RH6mtCz%2FDwZPH%2B24rWfS98%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 906,
+        "y": 524,
+        "w": 220,
+        "h": 380
+      },
+      "type": "move",
+      "target": {
+        "x": 547,
+        "y": 556
+      }
+    },
+    {
+      "box": {
+        "x": 798,
+        "y": 418,
+        "w": 89,
+        "h": 149
+      },
+      "type": "move",
+      "target": {
+        "x": 679,
+        "y": 800
+      }
+    }
+  ],
+  "note": "灰色小熊和白色机器位置变化，高度变化",
+  "bg_global": false
+}
