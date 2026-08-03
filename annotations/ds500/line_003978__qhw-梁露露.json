@@ -12,7 +12,11 @@
         "w": 438,
         "h": 614
       },
-      "type": "neutral"
+      "type": "move",
+      "target": {
+        "x": 410,
+        "y": 230
+      }
     },
     {
       "box": {
@@ -35,5 +39,6 @@
     }
   ],
   "note": "风衣女子高度发生变化\n多出两名黑衣男子",
-  "bg_global": false
+  "bg_global": false,
+  "ts": 1785750489315
 }
