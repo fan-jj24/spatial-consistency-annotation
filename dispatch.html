@@ -168,6 +168,17 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
 .record-edit-btn { font-size:12px; padding:3px 10px; }
 .my-records-empty { text-align:center; color:var(--muted); padding:16px 0; }
 
+/* 记录状态徽章 */
+.record-badge {
+  font-size:11px; font-weight:600; padding:2px 8px; border-radius:10px;
+  white-space:nowrap; cursor:default; flex-shrink:0;
+}
+.record-badge.loading { color:var(--muted); background:transparent; }
+.record-badge.correct { color:var(--ok); background:var(--ok-weak); }
+.record-badge.wrong { color:var(--bad); background:var(--bad-weak); cursor:help; }
+.record-badge.pending { color:var(--warn); background:var(--warn-weak); }
+.record-badge.outdated { color:var(--muted); background:#eceef1; cursor:help; }
+
 /* ===== 第二阶段：标注工作区 ===== */
 #phase-work { flex:1; display:none; flex-direction:column; min-height:0; overflow-y:auto; }
 #phase-work.active { display:flex; }
@@ -1861,6 +1872,7 @@ async function finishAnnotation() {
         }),
         note: r.note || "",
         bg_global: !!r.bgGlobal,
+        ts: Date.now(),
       }});
     }
   }
@@ -2142,22 +2154,27 @@ async function loadMyRecords() {
       body.innerHTML = '<div class="my-records-empty">暂无记录</div>';
       return;
     }
+
+    // 先渲染列表骨架（徽章稍后异步填充，避免阻塞列表显示）
     body.innerHTML = "";
     records.forEach((r) => {
       const row = document.createElement("div");
       row.className = "record-row";
-      const sample = STATE.sampleByLine[r.line];
       const lineEl = document.createElement("span");
       lineEl.className = "record-line";
       lineEl.textContent = "Line " + r.line;
       row.appendChild(lineEl);
+
+      // 徽章占位
+      const badgeEl = document.createElement("span");
+      badgeEl.className = "record-badge loading";
+      badgeEl.textContent = "...";
+      badgeEl.dataset.line = r.line;
+      row.appendChild(badgeEl);
+
       const info = document.createElement("span");
       info.className = "record-info";
-      if (isReview) {
-        info.textContent = "审核记录";
-      } else {
-        info.textContent = "标注记录";
-      }
+      info.textContent = isReview ? "审核记录" : "标注记录";
       row.appendChild(info);
       const editBtn = document.createElement("button");
       editBtn.className = "record-edit-btn primary";
@@ -2165,6 +2182,45 @@ async function loadMyRecords() {
       editBtn.onclick = () => startEditRecord(r.line, isReview, r.path);
       row.appendChild(editBtn);
       body.appendChild(row);
+    });
+
+    // 异步查询徽章状态并回填
+    const badges = await window.GithubDispatch.getRecordBadges(records, isReview);
+    records.forEach((r) => {
+      const el = body.querySelector('.record-badge[data-line="' + r.line + '"]');
+      if (!el) return;
+      el.classList.remove("loading");
+      const b = badges[r.line];
+      if (isReview) {
+        // 审核者视角：被审标注在审核后被修改过 → 灰色（审核结论已过时）
+        if (b && b.outdated) {
+          el.className = "record-badge outdated";
+          el.textContent = "⚪ 标注已修改，需重审";
+          el.title = "标注者在你审核之后修改了这条标注，你当时的结论可能已不适用";
+        } else if (b && b.verdict === "correct") {
+          el.className = "record-badge correct";
+          el.textContent = "✓ 我判了正确";
+        } else if (b && b.verdict === "wrong") {
+          el.className = "record-badge wrong";
+          el.textContent = "✗ 我判了错误";
+          el.title = b.reason || "";
+        } else {
+          el.textContent = "";
+        }
+      } else {
+        // 标注者视角：显示审核结论（绿=正确，红=错误，无=未审核）
+        if (!b || !b.verdict) {
+          el.className = "record-badge pending";
+          el.textContent = "○ 待审核";
+        } else if (b.verdict === "correct") {
+          el.className = "record-badge correct";
+          el.textContent = "✓ 审核通过";
+        } else {
+          el.className = "record-badge wrong";
+          el.textContent = "✗ 审核驳回";
+          el.title = (b.reason ? "原因：" + b.reason : "");
+        }
+      }
     });
   } catch (e) {
     body.innerHTML = '<div style="color:var(--bad);text-align:center;padding:8px;">加载失败: ' + e.message + '</div>';
@@ -2355,6 +2411,7 @@ async function saveEdit() {
         }),
         note: $("globalNote").value.trim(),
         bg_global: STATE.bgGlobal,
+        ts: Date.now(),
       };
     }
 
