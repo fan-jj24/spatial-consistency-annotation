@@ -1,0 +1,21 @@
+{
+  "line": 2789,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002789_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314627&Signature=50vIyssdCZD4wG0vw8mYIKXe1RA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002789_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314627&Signature=l2eztKE4CPH08k%2BAcHJXfEgHhuE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 372,
+        "y": 230,
+        "w": 323,
+        "h": 1027
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "男子旁边的女子多了",
+  "bg_global": false,
+  "ts": 1785750543491
+}
