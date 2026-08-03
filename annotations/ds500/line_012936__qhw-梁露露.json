@@ -12,9 +12,15 @@
         "w": 653,
         "h": 901
       },
-      "type": "neutral"
+      "type": "move3d",
+      "dir3d": [
+        0.381,
+        0.363,
+        0.85
+      ]
     }
   ],
-  "note": "人物群体需要重组",
-  "bg_global": true
+  "note": "两名女子位置和朝向发生变化",
+  "bg_global": false,
+  "ts": 1785753001799
 }
