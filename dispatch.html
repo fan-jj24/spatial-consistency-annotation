@@ -886,7 +886,10 @@ function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
 // ===== localStorage 暂存 =====
 const LS_KEY = "annotate_batch_local";
 // 获取当前数据集 ID（用于 localStorage 校验和上传校验）
+// 注意：必须用 currentDataset（可见列表中实际加载的对象），不能用完整列表+下标反查，
+// 因为过滤后下标会错位
 function getCurrentDatasetId() {
+  if (currentDataset) return currentDataset.id;
   const ds = getDatasets();
   return ds[currentDatasetIdx] ? ds[currentDatasetIdx].id : "default";
 }
@@ -1917,28 +1920,147 @@ function showPhase(phase) {
 
 // ===== 第一阶段逻辑 =====
 let currentDatasetIdx = 0;
-function getDatasets() {
+
+// SHA256 十六进制（用于 PAT 可见性过滤）
+// 优先用浏览器原生 crypto.subtle（仅 HTTPS/localhost 可用）；
+// 非安全上下文（http://）下回退到纯 JS 实现，避免页面初始化中断
+async function sha256Hex(str) {
+  if (window.crypto && window.crypto.subtle && window.crypto.subtle.digest) {
+    const buf = await window.crypto.subtle.digest("SHA-256", new TextEncoder().encode(str));
+    return Array.from(new Uint8Array(buf)).map((b) => b.toString(16).padStart(2, "0")).join("");
+  }
+  return sha256HexJs(str);
+}
+
+// 纯 JS SHA-256（兜底实现，结果与原生 crypto.subtle 完全一致）
+function sha256HexJs(str) {
+  const K = [
+    0x428a2f98,0x71374491,0xb5c0fbcf,0xe9b5dba5,0x3956c25b,0x59f111f1,0x923f82a4,0xab1c5ed5,
+    0xd807aa98,0x12835b01,0x243185be,0x550c7dc3,0x72be5d74,0x80deb1fe,0x9bdc06a7,0xc19bf174,
+    0xe49b69c1,0xefbe4786,0x0fc19dc6,0x240ca1cc,0x2de92c6f,0x4a7484aa,0x5cb0a9dc,0x76f988da,
+    0x983e5152,0xa831c66d,0xb00327c8,0xbf597fc7,0xc6e00bf3,0xd5a79147,0x06ca6351,0x14292967,
+    0x27b70a85,0x2e1b2138,0x4d2c6dfc,0x53380d13,0x650a7354,0x766a0abb,0x81c2c92e,0x92722c85,
+    0xa2bfe8a1,0xa81a664b,0xc24b8b70,0xc76c51a3,0xd192e819,0xd6990624,0xf40e3585,0x106aa070,
+    0x19a4c116,0x1e376c08,0x2748774c,0x34b0bcb5,0x391c0cb3,0x4ed8aa4a,0x5b9cca4f,0x682e6ff3,
+    0x748f82ee,0x78a5636f,0x84c87814,0x8cc70208,0x90befffa,0xa4506ceb,0xbef9a3f7,0xc67178f2
+  ];
+  const msg = unescape(encodeURIComponent(str)); // UTF-8 编码
+  const bytes = [];
+  for (let i = 0; i < msg.length; i++) bytes.push(msg.charCodeAt(i));
+  const bitLen = bytes.length * 8;
+  bytes.push(0x80);
+  while (bytes.length % 64 !== 56) bytes.push(0);
+  for (let i = 0; i < 4; i++) bytes.push(0); // 长度高 32 位（token 远小于 2^32 位）
+  for (let i = 3; i >= 0; i--) bytes.push((bitLen >>> (i * 8)) & 0xff);
+  let h0=0x6a09e667,h1=0xbb67ae85,h2=0x3c6ef372,h3=0xa54ff53a,h4=0x510e527f,h5=0x9b05688c,h6=0x1f83d9ab,h7=0x5be0cd19;
+  const w = new Array(64);
+  const rotr = (x, n) => (x >>> n) | (x << (32 - n));
+  for (let off = 0; off < bytes.length; off += 64) {
+    for (let i = 0; i < 16; i++) {
+      w[i] = (bytes[off+i*4]<<24) | (bytes[off+i*4+1]<<16) | (bytes[off+i*4+2]<<8) | bytes[off+i*4+3];
+    }
+    for (let i = 16; i < 64; i++) {
+      const s0 = rotr(w[i-15],7) ^ rotr(w[i-15],18) ^ (w[i-15]>>>3);
+      const s1 = rotr(w[i-2],17) ^ rotr(w[i-2],19) ^ (w[i-2]>>>10);
+      w[i] = (w[i-16] + s0 + w[i-7] + s1) | 0;
+    }
+    let a=h0,b=h1,c=h2,d=h3,e=h4,f=h5,g=h6,h=h7;
+    for (let i = 0; i < 64; i++) {
+      const S1 = rotr(e,6) ^ rotr(e,11) ^ rotr(e,25);
+      const ch = (e & f) ^ (~e & g);
+      const t1 = (h + S1 + ch + K[i] + w[i]) | 0;
+      const S0 = rotr(a,2) ^ rotr(a,13) ^ rotr(a,22);
+      const maj = (a & b) ^ (a & c) ^ (b & c);
+      const t2 = (S0 + maj) | 0;
+      h=g; g=f; f=e; e=(d+t1)|0; d=c; c=b; b=a; a=(t1+t2)|0;
+    }
+    h0=(h0+a)|0; h1=(h1+b)|0; h2=(h2+c)|0; h3=(h3+d)|0; h4=(h4+e)|0; h5=(h5+f)|0; h6=(h6+g)|0; h7=(h7+h)|0;
+  }
+  const hex = (x) => (x >>> 0).toString(16).padStart(8, "0");
+  return hex(h0)+hex(h1)+hex(h2)+hex(h3)+hex(h4)+hex(h5)+hex(h6)+hex(h7);
+}
+
+function getDatasets() { // 同步版：返回全部数据集（兼容旧调用点）
   const ds = window.ANNOTATE_CONFIG.datasets;
   if (ds && ds.length) return ds;
   return [{ id:"default", name:"默认数据集", file: window.ANNOTATE_CONFIG.samplesFile || "samples.json" }];
 }
 
-function populateDatasetSelect() {
+// 按当前登录 PAT 的哈希过滤出可见数据集（visibleTo 未配置或含 "*" 视为共用池）
+// 所有角色（标注员/审核员）一律按 PAT 哈希过滤，不做角色例外
+async function getVisibleDatasets() {
+  const ds = window.ANNOTATE_CONFIG.datasets;
+  if (!ds || !ds.length) {
+    return [{ id:"default", name:"默认数据集", file: window.ANNOTATE_CONFIG.samplesFile || "samples.json" }];
+  }
+  const token = window.GithubAuth.getToken();
+  const hash = token ? await sha256Hex(token) : null;
+  return ds.filter((d) => {
+    if (!d.visibleTo || d.visibleTo.includes("*")) return true;
+    return hash && d.visibleTo.includes(hash);
+  });
+}
+
+async function populateDatasetSelect() {
   const sel = $("datasetSelect");
+  const datasets = await getVisibleDatasets();
   sel.innerHTML = "";
-  getDatasets().forEach((ds, i) => {
+  datasets.forEach((ds, i) => {
     const opt = document.createElement("option");
     opt.value = i; opt.textContent = ds.name;
     sel.appendChild(opt);
   });
+  if (currentDatasetIdx >= datasets.length) currentDatasetIdx = 0;
   sel.value = currentDatasetIdx;
 }
 
+let currentDataset = null; // 当前选中的数据集对象（可见列表中的）
+
+// 只读探查 localStorage 中未完成批次的数据集 ID（不清除、不加载）
+function peekLocalBatchDatasetId() {
+  try {
+    const raw = localStorage.getItem(LS_KEY);
+    if (!raw) return null;
+    const data = JSON.parse(raw);
+    if (!data.batch || !data.batch.length) return null;
+    return data.datasetId || data.batchDatasetId || null;
+  } catch (e) { return null; }
+}
+
+// 选择登录后的默认池，优先级：
+// 1) 有未完成本地批次的池（防止 loadLocal 因数据集不匹配而静默丢弃批次）
+// 2) "只对我可见"的私有池
+// 3) 全局 defaultDataset
+async function pickDefaultVisibleIdx() {
+  const datasets = await getVisibleDatasets();
+  const token = window.GithubAuth.getToken();
+  const hash = token ? await sha256Hex(token) : null;
+  // 1) 未完成批次所在的池（若它仍对我可见）
+  const pendingDsId = peekLocalBatchDatasetId();
+  if (pendingDsId) {
+    const i = datasets.findIndex((d) => d.id === pendingDsId);
+    if (i >= 0) return i;
+  }
+  // 2) 可见列表中"私有且归我"的池子（所有角色一致）
+  for (let i = 0; i < datasets.length; i++) {
+    const d = datasets[i];
+    if (d.visibleTo && !d.visibleTo.includes("*") && hash && d.visibleTo.includes(hash)) return i;
+  }
+  // 3) 回退到全局默认（若它在可见列表里）
+  const def = window.ANNOTATE_CONFIG.defaultDataset || 0;
+  return def < datasets.length ? def : 0;
+}
+
 async function loadDatasetSamples(idx) {
-  const datasets = getDatasets();
+  const datasets = await getVisibleDatasets();
+  if (!datasets.length) {
+    // 可见池为空：当前 PAT 未配置任何可见池（且无共用池）。给出明确提示而非 undefined 崩溃
+    throw new Error("当前 Token 没有可见的数据集池子，请联系管理员在 config.js 的 visibleTo 中添加你的 PAT 哈希");
+  }
   if (idx < 0 || idx >= datasets.length) idx = 0;
   currentDatasetIdx = idx;
   const ds = datasets[idx];
+  currentDataset = ds;
   window.GithubDispatch.setDataset(ds.id);
   const resp = await fetch(ds.file);
   if (!resp.ok) throw new Error("HTTP " + resp.status);
@@ -2479,6 +2601,7 @@ function closeConfirm(result) {
   if (confirmResolver) { confirmResolver(result); confirmResolver = null; }
 }
 function getCurrentDatasetName() {
+  if (currentDataset) return currentDataset.name;
   const ds = getDatasets();
   return ds[currentDatasetIdx] ? ds[currentDatasetIdx].name : "—";
 }
@@ -2491,11 +2614,14 @@ function startPatLogin() {
   if (!name) { errEl.textContent = "请输入你的名字"; errEl.style.display = "block"; return; }
   const btn = $("btnStartLogin");
   btn.disabled = true; btn.textContent = "验证中...";
-  window.GithubAuth.login(token).then(() => {
+  window.GithubAuth.login(token).then(async () => {
     window.GithubAuth.setAnnotatorName(name);
     btn.disabled = false; btn.textContent = "验证并登录";
     closeLoginModal();
     showToast("登录成功：欢迎，" + name, "success");
+    // 登录成功后按该 PAT 的哈希重建可见池子，并默认落在自己的专属池
+    await populateDatasetSelect();
+    await loadDatasetSamples(await pickDefaultVisibleIdx());
     refreshPoolStats();
   }).catch((err) => {
     btn.disabled = false; btn.textContent = "验证并登录";
@@ -2506,7 +2632,9 @@ function startPatLogin() {
 // ===== 初始化 =====
 async function init() {
   initModal3D();
-  populateDatasetSelect();
+  // 必须 await：确保下拉框先按当前登录态（未登录=仅共用池）渲染完成，
+  // 再加载默认数据集，避免下拉框选中项与实际加载的数据集不一致
+  await populateDatasetSelect();
 
   // 按钮绑定
   $("btnRefreshStats").onclick = refreshPoolStats;
@@ -2621,6 +2749,9 @@ async function init() {
   // 检查登录态（必须先登录才能看统计和领取）
   const saved = await window.GithubAuth.checkToken();
   if (saved) {
+    // 登录态确认：按该 PAT 的哈希重建可见池子，默认落在自己的专属池
+    await populateDatasetSelect();
+    await loadDatasetSamples(await pickDefaultVisibleIdx());
     refreshPoolStats();
     // 检查是否有未完成的本地批量任务
     if (loadLocal()) {
