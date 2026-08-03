@@ -1,0 +1,39 @@
+{
+  "line": 4053,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004053_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477408&Signature=6vuQlKh3VGrm00h6IRv8MkZh6l0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004053_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477408&Signature=WToLujmiT8ZWrt0sR0YL2u1K6wU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 130,
+        "y": 190,
+        "w": 535,
+        "h": 1042
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.724,
+        -0.047,
+        -0.688
+      ]
+    },
+    {
+      "box": {
+        "x": 680,
+        "y": 620,
+        "w": 44,
+        "h": 95
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.669,
+        -0.086,
+        -0.739
+      ]
+    }
+  ],
+  "note": "粉衣女子和蓝衣女子位置朝向变化",
+  "bg_global": false
+}
