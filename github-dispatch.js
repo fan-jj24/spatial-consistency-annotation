@@ -530,14 +530,34 @@
     const badges = {};
 
     if (!isReview) {
-      // 一次 git tree 列目录，筛出自己的审核文件，避免逐条请求
+      // 标注者视角：需要查"谁审核了我的标注"。
+      // 审核文件名是 line_XXXX__审核员名字.json，不以标注者命名，
+      // 所以不能按 username 过滤，要先收集所有审核文件，
+      // 再逐个读取，匹配其中的 annotator 字段 === 标注者名字。
+      // 但这样太慢（要读所有审核文件）。更高效的做法：
+      // 从 listMyAnnotations 返回的 records 里有 line 列表，
+      // 直接按行号找对应的审核文件（不关心是谁审的）。
       const files = await listAllFiles();
       const pfx = reviewPrefix();
-      const paths = [];
+      // 建立 line → 所有审核文件路径的索引（一条可能被多人审核）
+      const reviewPathsByLine = {};
       for (const path of files) {
         if (!path.startsWith(pfx) || !path.endsWith(".json")) continue;
         const m = path.slice(pfx.length).match(/^line_(\d+)__(.+)\.json$/);
-        if (m && m[2] === username) paths.push({ line: parseInt(m[1], 10), path });
+        if (m) {
+          const line = parseInt(m[1], 10);
+          if (!reviewPathsByLine[line]) reviewPathsByLine[line] = [];
+          reviewPathsByLine[line].push(path);
+        }
+      }
+      // 从 records 提取标注者的行号列表
+      const myLines = new Set(records.map(r => r.line));
+      const paths = [];
+      for (const [line, ps] of Object.entries(reviewPathsByLine)) {
+        const ln = parseInt(line, 10);
+        if (myLines.has(ln)) {
+          for (const p of ps) paths.push({ line: ln, path: p });
+        }
       }
       await runPool(paths, async ({ line, path }) => {
         try {
