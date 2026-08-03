@@ -1,1 +1,41 @@
-{"line":2825,"remotes":["https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002825_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477401&Signature=V5%2Bq1WvfrGDSi1U6LW31poWKslY%3D","https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002825_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477401&Signature=U8zrQXx8dmj6yAw2FMN9Qh1DP54%3D"],"objects":[{"box":{"x":-15,"y":753,"w":148,"h":522},"type":"delete","line":[{"x":26,"y":917},{"x":92,"y":1155}]},{"box":{"x":151,"y":613,"w":468,"h":522},"type":"move3d","dir3d":[-0.004,-0.187,-0.982]}],"note":"多了黄金护卫；红衣男、白衣男和多位黑衣士兵位置发生变化；红衣男前面两位黑衣士兵朝向发生变化","bg_global":false,"_migrated_from":"tests100"}
+{
+  "line": 2825,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002825_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477401&Signature=V5%2Bq1WvfrGDSi1U6LW31poWKslY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002825_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477401&Signature=U8zrQXx8dmj6yAw2FMN9Qh1DP54%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -15,
+        "y": 753,
+        "w": 148,
+        "h": 522
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 26,
+          "y": 917
+        },
+        {
+          "x": 92,
+          "y": 1155
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 27,
+        "y": 583,
+        "w": 592,
+        "h": 552
+      },
+      "type": "custom",
+      "text": "人物群体需要向后退，红衣男前面两位黑衣士兵需要旋转"
+    }
+  ],
+  "note": "多了黄金护卫；红衣男、白衣男和多位黑衣士兵位置发生变化；红衣男前面两位黑衣士兵朝向发生变化",
+  "bg_global": false,
+  "ts": 1785746670632
+}
