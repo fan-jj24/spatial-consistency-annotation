@@ -38,7 +38,7 @@ window.ANNOTATE_CONFIG = {
     { id: "tests100", name: "测试集 100 条（line 2504~2847）", file: "tests_100.json",
       visibleTo: ["*"] },
     { id: "ds500_1000", name: "1000条 ——0805（line 13280~15078）", file: "samples_500_1000.json",
-      visibleTo: ["d21a8e1324b281f343e56e2b61d203c38b3bd445c55642ba3012fc8f574c183d"] },
+      visibleTo: ["a66afe3a6c09a67abcb833de04fde0a3e0635bb131dc51f032b9631f8c0cc6a9"] },
     // 哈希对照：
     //   a66afe3a6c09a67abcb833de04fde0a3e0635bb131dc51f032b9631f8c0cc6a9  <- PAT ghp_zTGa...（标注员A）
     //   d21a8e1324b281f343e56e2b61d203c38b3bd445c55642ba3012fc8f574c183d <- PAT ghp_jp3M...（标注员B）
