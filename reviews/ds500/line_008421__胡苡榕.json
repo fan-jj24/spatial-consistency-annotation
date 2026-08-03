@@ -1,0 +1,8 @@
+{
+  "line": 8421,
+  "verdict": "wrong",
+  "reason": "黄色的宠物也移动了，需要标注写出",
+  "annotator": "ZYE",
+  "reviewer": "胡苡榕",
+  "ts": 1785726996102
+}
