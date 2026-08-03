@@ -1,0 +1,56 @@
+{
+  "line": 13095,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013095_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=MoYDafBqkPWsnzwf4ayET2CMHXI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013095_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=vAwoBTnwo5ZVRgJNPgqqwxXmusQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 60,
+        "y": 274,
+        "w": 184,
+        "h": 855
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 204,
+          "y": 458
+        },
+        {
+          "x": 96,
+          "y": 758
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 288,
+        "y": 266,
+        "w": 133,
+        "h": 893
+      },
+      "type": "move",
+      "target": {
+        "x": 460,
+        "y": 727
+      }
+    },
+    {
+      "box": {
+        "x": 519,
+        "y": 276,
+        "w": 164,
+        "h": 891
+      },
+      "type": "move",
+      "target": {
+        "x": 460,
+        "y": 525
+      }
+    }
+  ],
+  "note": "青衣女子和橙衣女子位置变化，整体背景变化，多了一个紫衣女子",
+  "bg_global": true
+}
