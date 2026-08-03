@@ -1,1 +1,68 @@
-{"line":11159,"remotes":["https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011159_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477450&Signature=QUx%2FtLGv4VTUP8VvCuhfoGrxscQ%3D","https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011159_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477450&Signature=z4EUgtfU8FKewwZ4oGV7KteS8o0%3D"],"objects":[{"box":{"x":322,"y":561,"w":97,"h":412},"type":"add"}],"note":"少了一位黑衣女子","bg_global":false,"_migrated_from":"tests100"}
+{
+  "line": 11159,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011159_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477450&Signature=QUx%2FtLGv4VTUP8VvCuhfoGrxscQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011159_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477450&Signature=z4EUgtfU8FKewwZ4oGV7KteS8o0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 322,
+        "y": 526,
+        "w": 97,
+        "h": 304
+      },
+      "type": "add"
+    },
+    {
+      "box": {
+        "x": 193,
+        "y": 797,
+        "w": 399,
+        "h": 481
+      },
+      "type": "bg_local"
+    },
+    {
+      "box": {
+        "x": 4,
+        "y": 521,
+        "w": 154,
+        "h": 579
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 116,
+          "y": 590
+        },
+        {
+          "x": 101,
+          "y": 920
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 557,
+        "y": 551,
+        "w": 179,
+        "h": 584
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 633,
+          "y": 649
+        },
+        {
+          "x": 705,
+          "y": 815
+        }
+      ]
+    }
+  ],
+  "note": "少了一位黑衣女子，多了两排红衣、蓝衣大臣，局部地板背景不一致",
+  "bg_global": false,
+  "ts": 1785749703820
+}
