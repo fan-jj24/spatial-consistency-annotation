@@ -591,6 +591,7 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
       <span class="tb-sep"></span>
       <button id="btnBgGlobal" class="bg-btn" title="整体背景不一致">整体背景</button>
       <button id="btnBgLocal" class="bg-btn" title="激活后下一个框标记为局部背景">局部背景</button>
+      <button id="btnBgAmbiguous" class="bg-btn" title="无法判断或背景一致">无法判断/一致</button>
     </div>
     <div class="right">
       <div id="navDots"></div>
@@ -797,6 +798,7 @@ const STATE = {
   // 背景不一致
   bgGlobal: false,      // 整体背景不一致
   bgLocalMode: false,   // 局部背景模式：激活后下一个框自动成为 bg_local 类型
+  bgAmbiguous: false,   // 无法判断/一致（全局标记，和 bgGlobal 同层面）
   // 编辑模式
   editMode: false,      // true=正在修改已提交的记录
   editLine: null,       // 正在编辑的行号
@@ -826,19 +828,26 @@ function isReviewer() { return STATE.role === "reviewer"; }
 // ===== 背景不一致 =====
 function toggleBgGlobal() {
   STATE.bgGlobal = !STATE.bgGlobal;
-  if (STATE.bgGlobal) STATE.bgLocalMode = false; // 互斥
+  if (STATE.bgGlobal) { STATE.bgLocalMode = false; STATE.bgAmbiguous = false; }
   updateBgBtnUI();
   renderAll();
 }
 function toggleBgLocalMode() {
   STATE.bgLocalMode = !STATE.bgLocalMode;
-  if (STATE.bgLocalMode) STATE.bgGlobal = false; // 互斥
+  if (STATE.bgLocalMode) { STATE.bgGlobal = false; STATE.bgAmbiguous = false; }
   updateBgBtnUI();
   showToast(STATE.bgLocalMode ? "局部背景已激活，下一个框将标记为背景" : "局部背景已关闭", "info");
+}
+function toggleBgAmbiguous() {
+  STATE.bgAmbiguous = !STATE.bgAmbiguous;
+  if (STATE.bgAmbiguous) { STATE.bgGlobal = false; STATE.bgLocalMode = false; }
+  updateBgBtnUI();
+  renderAll();
 }
 function updateBgBtnUI() {
   $("btnBgGlobal").classList.toggle("active", STATE.bgGlobal);
   $("btnBgLocal").classList.toggle("active", STATE.bgLocalMode);
+  $("btnBgAmbiguous").classList.toggle("active", STATE.bgAmbiguous);
 }
 
 function getBoxColor(boxId, action) {
@@ -930,7 +939,8 @@ function renderSvg() {
   while (svgB.firstChild) svgB.removeChild(svgB.firstChild);
   const defs = document.createElementNS(SVG_NS, "defs");
   defs.innerHTML = '<marker id="ah" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto" markerUnits="strokeWidth"><polygon points="0 0,6 3,0 6" fill="currentColor"/></marker>'
-    + '<pattern id="bgp" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="12" stroke="#009688" stroke-width="3" opacity="0.35"/></pattern>';
+    + '<pattern id="bgp" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="12" stroke="#009688" stroke-width="3" opacity="0.35"/></pattern>'
+    + '<pattern id="bgp_amb" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><line x1="0" y1="0" x2="0" y2="12" stroke="#888" stroke-width="3" opacity="0.30"/></pattern>';
   svgB.appendChild(defs);
 
   // 整体背景不一致：斜线 pattern 覆盖全图
@@ -939,6 +949,15 @@ function renderSvg() {
     overlay.setAttribute("x", 0); overlay.setAttribute("y", 0);
     overlay.setAttribute("width", "100%"); overlay.setAttribute("height", "100%");
     overlay.setAttribute("fill", "url(#bgp)");
+    svgB.appendChild(overlay);
+  }
+
+  // 无法判断/一致：反向斜线 pattern 覆盖全图（灰色，区别于整体背景的绿色）
+  if (STATE.bgAmbiguous) {
+    const overlay = document.createElementNS(SVG_NS, "rect");
+    overlay.setAttribute("x", 0); overlay.setAttribute("y", 0);
+    overlay.setAttribute("width", "100%"); overlay.setAttribute("height", "100%");
+    overlay.setAttribute("fill", "url(#bgp_amb)");
     svgB.appendChild(overlay);
   }
 
@@ -1710,6 +1729,7 @@ function saveCurrentToLocal() {
   const line = STATE.batch[STATE.batchIdx].line;
   const result = { boxes: JSON.parse(JSON.stringify(STATE.boxes)), note: $("globalNote").value.trim() };
   result.bgGlobal = STATE.bgGlobal;
+  result.bgAmbiguous = STATE.bgAmbiguous;
   if (isReviewer()) { result.verdict = STATE.reviewVerdict; result.reason = $("reviewReason").value.trim(); }
   STATE.batchResults[line] = result;
 
@@ -1720,7 +1740,7 @@ function saveCurrentToLocal() {
     else STATE.batchDone.delete(line);
   } else {
     // 标注者：必须有框、有描述、或有背景标注
-    if (result.boxes.length > 0 || result.note || result.bgGlobal) STATE.batchDone.add(line);
+    if (result.boxes.length > 0 || result.note || result.bgGlobal || result.bgAmbiguous) STATE.batchDone.add(line);
     else STATE.batchDone.delete(line);
   }
   saveLocal();
@@ -1733,6 +1753,7 @@ function loadCurrentFromLocal() {
     STATE.boxes = saved.boxes || [];
     STATE.nextBoxId = STATE.boxes.length ? Math.max(...STATE.boxes.map(b => b.boxId)) + 1 : 1;
     STATE.bgGlobal = !!saved.bgGlobal;
+    STATE.bgAmbiguous = !!saved.bgAmbiguous;
     STATE.bgLocalMode = false;
     $("globalNote").value = saved.note || "";
     if (isReviewer()) {
@@ -1743,7 +1764,7 @@ function loadCurrentFromLocal() {
     }
   } else {
     STATE.boxes = []; STATE.nextBoxId = 1;
-    STATE.bgGlobal = false; STATE.bgLocalMode = false;
+    STATE.bgGlobal = false; STATE.bgAmbiguous = false; STATE.bgLocalMode = false;
     $("globalNote").value = "";
     STATE.reviewVerdict = null;
     $("reviewReason").value = "";
@@ -1862,7 +1883,7 @@ async function finishAnnotation() {
       if (!r.verdict) continue;
       results.push({ line: s.line, data: { line: s.line, verdict: r.verdict, reason: r.reason || "", annotator: s._annotatorName || "", reviewer: username, ts: Date.now() } });
     } else {
-      if (!r.boxes.length && !r.note && !r.bgGlobal) continue;
+      if (!r.boxes.length && !r.note && !r.bgGlobal && !r.bgAmbiguous) continue;
       results.push({ line: s.line, data: {
         line: s.line, remotes: s.remotes,
         objects: r.boxes.map((b) => {
@@ -1875,6 +1896,7 @@ async function finishAnnotation() {
         }),
         note: r.note || "",
         bg_global: !!r.bgGlobal,
+        bg_ambiguous: !!r.bgAmbiguous,
         ts: Date.now(),
       }});
     }
@@ -2244,7 +2266,7 @@ async function claimTasks() {
             if (obj.line) box.line = obj.line;
             boxes.push(box);
           });
-          STATE.batchResults[s.line] = { boxes, note: s._annoData.note || "", bgGlobal: !!s._annoData.bg_global, verdict: null, reason: "" };
+          STATE.batchResults[s.line] = { boxes, note: s._annoData.note || "", bgGlobal: !!s._annoData.bg_global, bgAmbiguous: !!s._annoData.bg_ambiguous, verdict: null, reason: "" };
         }
       });
     }
@@ -2402,6 +2424,7 @@ async function startEditRecord(line, isReview, filePath) {
     STATE.batchIdx = 0;
 
     STATE.bgGlobal = !!boxesSource.bg_global;
+    STATE.bgAmbiguous = !!boxesSource.bg_ambiguous;
     if (boxesSource.objects) {
       boxesSource.objects.forEach((obj) => {
         const box = { boxId: STATE.nextBoxId++, x:obj.box.x, y:obj.box.y, w:obj.box.w, h:obj.box.h, action:obj.type||"neutral" };
@@ -2533,6 +2556,7 @@ async function saveEdit() {
         }),
         note: $("globalNote").value.trim(),
         bg_global: STATE.bgGlobal,
+        bg_ambiguous: STATE.bgAmbiguous,
         ts: Date.now(),
       };
     }
@@ -2686,6 +2710,7 @@ async function init() {
   $("btnPrev").onclick = () => goToItem(STATE.batchIdx - 1);
   $("btnBgGlobal").onclick = toggleBgGlobal;
   $("btnBgLocal").onclick = toggleBgLocalMode;
+  $("btnBgAmbiguous").onclick = toggleBgAmbiguous;
   // 箭头大小滑块
   $("arrowScale").oninput = (e) => {
     ARROW_SCALE = parseFloat(e.target.value);
