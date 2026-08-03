@@ -1,0 +1,38 @@
+{
+  "line": 12994,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_012994_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=KsDklaNagw7j%2FGGiPnTK7TPmZvw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_012994_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785479812&Signature=%2FvYNqdo7Uw3CLXrwtv5y1X4UUCQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 5,
+        "y": 1061,
+        "w": 712,
+        "h": 207
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.537,
+        -0.639,
+        -0.55
+      ]
+    },
+    {
+      "box": {
+        "x": -3,
+        "y": 689,
+        "w": 77,
+        "h": 230
+      },
+      "type": "move",
+      "target": {
+        "x": 655,
+        "y": 592
+      }
+    }
+  ],
+  "note": "青衣女子和纸位置变化，纸高度变化",
+  "bg_global": false
+}
