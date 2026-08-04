@@ -1,0 +1,35 @@
+{
+  "line": 2836,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002836_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314628&Signature=RGn%2Fh%2FRrklpdLeISjWx%2BRDelJvE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002836_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314628&Signature=EFmmQPAErvwNkk5BpoCKBig4UzA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 450,
+        "y": 108,
+        "w": 220,
+        "h": 307
+      },
+      "type": "delete"
+    },
+    {
+      "box": {
+        "x": 473,
+        "y": 433,
+        "w": 248,
+        "h": 837
+      },
+      "type": "move",
+      "target": {
+        "x": 258,
+        "y": 205
+      }
+    }
+  ],
+  "note": "主角背后多出白衣男子，戴护士帽女子位置和高度均有变化（从主角背后到面前，且从站立变为坐姿）",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785822184000
+}
