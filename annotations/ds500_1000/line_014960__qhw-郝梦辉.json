@@ -1,0 +1,23 @@
+{
+  "line": 14960,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014960_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758018&Signature=pUTl7RTFYqAFdHOluwB2SNlnoLc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014960_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758018&Signature=8VHLgNooRaIt%2BxmsIESDL1%2Bz9No%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 89,
+        "y": 41,
+        "w": 637,
+        "h": 1293
+      },
+      "type": "custom",
+      "text": "白衣男子需要移动并旋转"
+    }
+  ],
+  "note": "白衣男子位置发生变化，朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785833443647
+}
