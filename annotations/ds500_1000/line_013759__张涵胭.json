@@ -1,0 +1,22 @@
+{
+  "line": 13759,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013759_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757981&Signature=nt09tLuqQTmG7O9yUdfzVS2nZ7g%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013759_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757981&Signature=xrAndsYnN2L7ke01mTLV6RsiR4o%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 451,
+        "y": 231,
+        "w": 228,
+        "h": 704
+      },
+      "type": "add"
+    }
+  ],
+  "note": "少了灰衣男，整体背景的桌子上的菜和后面灯具、门不一致",
+  "bg_global": true,
+  "bg_ambiguous": false,
+  "ts": 1785813133161
+}
