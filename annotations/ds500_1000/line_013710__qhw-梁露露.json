@@ -1,0 +1,27 @@
+{
+  "line": 13710,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013710_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757980&Signature=GgWKGvdrhClC%2FDSmlnQ4Cn18uK4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013710_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757980&Signature=03tEd6FEpsrIFlOU06KfJct9NkU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 851,
+        "y": 282,
+        "w": 107,
+        "h": 310
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.745,
+        0.329,
+        0.58
+      ]
+    }
+  ],
+  "note": "蓝衣眼罩人物位置发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785834052582
+}
