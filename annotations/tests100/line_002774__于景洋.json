@@ -1,0 +1,26 @@
+{
+  "line": 2774,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002774_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314627&Signature=MQHTTW4CceYmqBkNKST6i3kIF5c%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002774_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314627&Signature=1d%2BJfIRmoidIme8pYICNiW4ZszA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 311,
+        "y": 852,
+        "w": 100,
+        "h": 389
+      },
+      "type": "move",
+      "target": {
+        "x": 511,
+        "y": 1034
+      }
+    }
+  ],
+  "note": "整体背景由窗户和园林变成仅有窗户；黑衣男子的位置由在红衣女子左侧变成了站在红衣女子右侧",
+  "bg_global": true,
+  "bg_ambiguous": false,
+  "ts": 1785819826886
+}
