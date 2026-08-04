@@ -4,19 +4,9 @@
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002830_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314628&Signature=PYF0gzp6D9GhwRo3SoO%2FC0Bnw9w%3D",
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002830_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314628&Signature=fXkDjlVth7TYxEOJnQmKZ562n3o%3D"
   ],
-  "objects": [
-    {
-      "box": {
-        "x": 347,
-        "y": 637,
-        "w": 110,
-        "h": 133
-      },
-      "type": "rotate"
-    }
-  ],
-  "note": "婚服男女由肩并肩变为面对面",
-  "bg_global": false,
+  "objects": [],
+  "note": "男女由并肩变成面对面，相对位置由台阶下变为台阶上，场景中的门消失",
+  "bg_global": true,
   "bg_ambiguous": false,
-  "ts": 1785821195627
+  "ts": 1785834797044
 }
