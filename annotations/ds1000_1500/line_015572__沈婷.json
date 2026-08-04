@@ -1,0 +1,23 @@
+{
+  "line": 15572,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015572_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778000&Signature=Jl9%2FtmUof3%2BABL437lC5k3TeHc8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015572_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778000&Signature=kRiq962e2SCARu2q483YIQoo58Q%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 127,
+        "y": 184,
+        "w": 591,
+        "h": 1091
+      },
+      "type": "custom",
+      "text": "人物相对位置和局部背景发生变化"
+    }
+  ],
+  "note": "3人位置关系完全错误，地面和身后的局部背景不一致",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785838596544
+}
