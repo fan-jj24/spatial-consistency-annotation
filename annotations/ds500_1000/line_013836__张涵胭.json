@@ -1,0 +1,23 @@
+{
+  "line": 13836,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013836_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757984&Signature=pVRjitS7uwB17As0C9rsGnqQAAY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013836_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757984&Signature=vhcZI1wvq85thPjXycIRD8d3kJc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 80,
+        "y": 480,
+        "w": 251,
+        "h": 604
+      },
+      "type": "custom",
+      "text": "白衣女需要高度变高，往前并旋转"
+    }
+  ],
+  "note": "白衣女位置、朝向、高度发生变化，整体背景的椅子、帘子、龙图腾不一致",
+  "bg_global": true,
+  "bg_ambiguous": false,
+  "ts": 1785813133161
+}
