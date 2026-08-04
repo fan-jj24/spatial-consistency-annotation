@@ -1,0 +1,32 @@
+{
+  "line": 14438,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014438_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758004&Signature=T2K%2Bf59yR6KNy4kYVBsgqqKLqAM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014438_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758003&Signature=kfiTCHyfgzGgZMHeoeYX4Ernffk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 609,
+        "y": 203,
+        "w": 97,
+        "h": 957
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 632,
+          "y": 505
+        },
+        {
+          "x": 673,
+          "y": 638
+        }
+      ]
+    }
+  ],
+  "note": "整体背景发生变化\n多出一个抱婴儿的男人",
+  "bg_global": true,
+  "bg_ambiguous": false,
+  "ts": 1785813196782
+}
