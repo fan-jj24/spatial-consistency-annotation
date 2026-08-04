@@ -1,0 +1,32 @@
+{
+  "line": 14932,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014932_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758018&Signature=XBFg9vNG2p2owTAUAk%2B4ltErAIw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014932_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758018&Signature=ua7EhjKqntm3nrVJ%2BomSPwc9%2F%2BM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 592,
+        "y": 445,
+        "w": 137,
+        "h": 440
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 596,
+          "y": 463
+        },
+        {
+          "x": 706,
+          "y": 847
+        }
+      ]
+    }
+  ],
+  "note": "多了灰衣女",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785811222699
+}
