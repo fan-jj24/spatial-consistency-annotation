@@ -1,0 +1,58 @@
+{
+  "line": 13478,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013478_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757977&Signature=S5nTIT%2B3INc04hYhnqaNfAjFEFA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013478_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757977&Signature=b4EmAxu3LGevQ5WMQakMN3eIApk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1072,
+        "y": 323,
+        "w": 210,
+        "h": 281
+      },
+      "type": "move",
+      "target": {
+        "x": 965,
+        "y": 667
+      }
+    },
+    {
+      "box": {
+        "x": 257,
+        "y": 189,
+        "w": 292,
+        "h": 516
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 433,
+          "y": 300
+        },
+        {
+          "x": 483,
+          "y": 523
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 535,
+        "y": 118,
+        "w": 302,
+        "h": 553
+      },
+      "type": "move",
+      "target": {
+        "x": 1292,
+        "y": 563
+      }
+    }
+  ],
+  "note": "红衣小孩的位置发生变化\n红衣女子的位置发生变化\n多了一名绿衣女孩",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785829658039
+}
