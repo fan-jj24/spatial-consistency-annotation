@@ -1,0 +1,31 @@
+{
+  "line": 2583,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002583_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314627&Signature=rY6qARtffZHmGZKRmzZI%2B6ccrBE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002583_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314627&Signature=r2K19Cqm5xBmOskw%2Fttwqb%2F6PqQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 20,
+        "y": 282,
+        "w": 215,
+        "h": 993
+      },
+      "type": "add"
+    },
+    {
+      "box": {
+        "x": 522,
+        "y": 264,
+        "w": 189,
+        "h": 1011
+      },
+      "type": "add"
+    }
+  ],
+  "note": "红衣男子左右侧2个女子消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785820897490
+}
