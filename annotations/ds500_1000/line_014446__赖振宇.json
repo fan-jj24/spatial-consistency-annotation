@@ -1,0 +1,50 @@
+{
+  "line": 14446,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014446_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758003&Signature=Q1fHE86kI6gdGTygbwrf8OGnoFE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014446_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758004&Signature=U%2BC38JiPMLY6xJMzVS5%2Fr06PNcY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 66,
+        "y": 162,
+        "w": 602,
+        "h": 1068
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.654,
+        0.252,
+        0.713
+      ]
+    },
+    {
+      "box": {
+        "x": 670,
+        "y": 541,
+        "w": 54,
+        "h": 676
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.187,
+        0.214,
+        0.959
+      ]
+    },
+    {
+      "box": {
+        "x": 5,
+        "y": 546,
+        "w": 119,
+        "h": 468
+      },
+      "type": "add"
+    }
+  ],
+  "note": "棕衣女子与米色衣女子位置朝向变化，少了一个白衣女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785834702940
+}
