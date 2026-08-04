@@ -12,7 +12,8 @@
         "w": 446,
         "h": 541
       },
-      "type": "neutral"
+      "type": "custom",
+      "text": "蓝衣男孩需要移动，高度需要变高"
     },
     {
       "box": {
@@ -42,5 +43,7 @@
     }
   ],
   "note": "蓝衣男孩高度发生变化，位置发生变化\n黄色生物角色位置发生变化\n蓝色生物角色位置发生变化",
-  "bg_global": false
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785831787735
 }
