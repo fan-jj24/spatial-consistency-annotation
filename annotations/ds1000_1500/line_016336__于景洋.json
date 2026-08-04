@@ -1,0 +1,26 @@
+{
+  "line": 16336,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016336_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778021&Signature=xAVPVgOxiDMWCEk030qJjp3vl9Q%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016336_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778021&Signature=1V%2FxkXGMWJmD0BadCr0luCG2nvY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 2,
+        "y": 381,
+        "w": 166,
+        "h": 666
+      },
+      "type": "move",
+      "target": {
+        "x": 306,
+        "y": 486
+      }
+    }
+  ],
+  "note": "粉丝衣服的阿姨由站在绿色短袖大叔的左后方到绿色短袖大叔的右前方",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785839774429
+}
