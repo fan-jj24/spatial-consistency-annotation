@@ -1,0 +1,64 @@
+{
+  "line": 14443,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014443_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758003&Signature=QAAIYeohklGU4IdGf8N76amLRf4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014443_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758003&Signature=N%2BpZ9kz8%2FbJlOX8C5XlRr4BHBC4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 21,
+        "y": 384,
+        "w": 270,
+        "h": 850
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 63,
+          "y": 466
+        },
+        {
+          "x": 217,
+          "y": 1108
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 324,
+        "y": 169,
+        "w": 142,
+        "h": 287
+      },
+      "type": "move",
+      "target": {
+        "x": 313,
+        "y": 381
+      }
+    },
+    {
+      "box": {
+        "x": 11,
+        "y": 195,
+        "w": 274,
+        "h": 243
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 28,
+          "y": 225
+        },
+        {
+          "x": 267,
+          "y": 415
+        }
+      ]
+    }
+  ],
+  "note": "多了紫衣男和两名兽衣壮汉；黑衣男位置变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785812444508
+}
