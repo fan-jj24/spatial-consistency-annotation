@@ -1,0 +1,36 @@
+{
+  "line": 2834,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002834_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314628&Signature=gCG40UBaT6LrLIOD1VnFNVFlEDg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002834_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314628&Signature=ZdSjW3EQIF3KRWiLzkz5OllvuaA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 130,
+        "y": 210,
+        "w": 456,
+        "h": 963
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.017,
+        0.195,
+        0.981
+      ]
+    },
+    {
+      "box": {
+        "x": 424,
+        "y": 968,
+        "w": 251,
+        "h": 225
+      },
+      "type": "add"
+    }
+  ],
+  "note": "怪物位置离房间更近了，黑色小怪物消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785811329853
+}
