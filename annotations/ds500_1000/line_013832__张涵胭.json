@@ -1,0 +1,23 @@
+{
+  "line": 13832,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013832_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757983&Signature=O3%2BkrmJ%2BdIb35%2B1qyeyBoxD8khQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013832_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757983&Signature=6M23rjGSWM2EVEXWvUWVYc%2BJuTA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 117,
+        "y": 182,
+        "w": 571,
+        "h": 1039
+      },
+      "type": "custom",
+      "text": "灰衣女、蓝衣男需要后退并旋转"
+    }
+  ],
+  "note": "灰衣女、蓝衣男位置和朝向发生变化，整体背景的楼梯、墙面不一致",
+  "bg_global": true,
+  "bg_ambiguous": false,
+  "ts": 1785813133161
+}
