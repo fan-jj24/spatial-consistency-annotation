@@ -1,0 +1,22 @@
+{
+  "line": 13833,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013833_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757983&Signature=ugoUv%2Bd6A6Fbqyw%2F7yS1TSX293A%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013833_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757983&Signature=jZCacRO78gTsPQfF%2F%2FNPiq9Fhpc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 154,
+        "y": 105,
+        "w": 253,
+        "h": 599
+      },
+      "type": "add"
+    }
+  ],
+  "note": "少一名灰衣女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785832786565
+}
