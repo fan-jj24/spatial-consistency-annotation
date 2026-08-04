@@ -1,0 +1,31 @@
+{
+  "line": 13436,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013436_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757977&Signature=ikXPHU86y4DQbUUHN%2FOpVurGzTM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013436_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757977&Signature=81XJHJ0zVcNwZLxVh1Gg%2BILB93Q%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 3,
+        "y": 93,
+        "w": 698,
+        "h": 630
+      },
+      "type": "rotate"
+    },
+    {
+      "box": {
+        "x": 157,
+        "y": 73,
+        "w": 193,
+        "h": 641
+      },
+      "type": "add"
+    }
+  ],
+  "note": "绿衣女子的朝向发生变化\n粉衣女子的朝向和位置发生变化\n少了一个中年男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785811518911
+}
