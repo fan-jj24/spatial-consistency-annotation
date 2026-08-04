@@ -1,0 +1,23 @@
+{
+  "line": 14730,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014730_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758010&Signature=9mB8r%2F09HY50FCAKDK%2FMophtRa8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014730_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758010&Signature=aeTO18UdHLQOapqKrFA%2BRi%2FZ89M%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -11,
+        "y": 164,
+        "w": 317,
+        "h": 1083
+      },
+      "type": "custom",
+      "text": "牛仔衣男子需要移动并旋转"
+    }
+  ],
+  "note": "牛仔衣男子位置发生变化，朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785834351063
+}
