@@ -21,14 +21,16 @@
     },
     {
       "box": {
-        "x": -4,
-        "y": 23,
-        "w": 438,
-        "h": 1126
+        "x": -28,
+        "y": 18,
+        "w": 430,
+        "h": 169
       },
       "type": "bg_local"
     }
   ],
   "note": "蓝衣男与粉衣女的距离发生变化。\n角落的书架消失。",
-  "bg_global": false
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785821073673
 }
