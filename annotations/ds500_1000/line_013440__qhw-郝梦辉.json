@@ -1,0 +1,32 @@
+{
+  "line": 13440,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013440_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757977&Signature=nRBwepMTKJAZcf2VRaqDGVGaXOk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013440_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757977&Signature=WkekdzDX0JXDafSzLAguK%2BA3b%2BQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 237,
+        "y": 438,
+        "w": 340,
+        "h": 704
+      },
+      "type": "custom",
+      "text": "蓝衣带白花女子需要位移和旋转"
+    },
+    {
+      "box": {
+        "x": 455,
+        "y": 428,
+        "w": 215,
+        "h": 684
+      },
+      "type": "add"
+    }
+  ],
+  "note": "少了一名蓝衣带蓝花女子\n蓝衣带白花女子的位置发生变化，朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785831540687
+}
