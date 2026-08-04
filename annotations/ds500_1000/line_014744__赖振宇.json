@@ -1,0 +1,46 @@
+{
+  "line": 14744,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014744_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758011&Signature=plA%2FrCzpqYsgLirWIjrVG0eDnMA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014744_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758011&Signature=dJ4e3uquFumD7cbTGLL5u0%2FD57k%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 56,
+        "y": 380,
+        "w": 251,
+        "h": 876
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.974,
+        -0.048,
+        -0.221
+      ]
+    },
+    {
+      "box": {
+        "x": 404,
+        "y": 282,
+        "w": 282,
+        "h": 893
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 547,
+          "y": 510
+        },
+        {
+          "x": 509,
+          "y": 956
+        }
+      ]
+    }
+  ],
+  "note": "青白衣女子位置朝向变化，多了一个红衣男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785831571966
+}
