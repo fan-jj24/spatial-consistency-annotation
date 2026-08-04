@@ -1,0 +1,40 @@
+{
+  "line": 2815,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002815_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314627&Signature=hFw4GvHhduccsz8iM8yPScQU5AE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002815_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314627&Signature=anJUT0mPDO9P9MPZIINGXnUka00%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 73,
+        "y": 287,
+        "w": 522,
+        "h": 858
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.007,
+        0.179,
+        0.984
+      ]
+    },
+    {
+      "box": {
+        "x": 357,
+        "y": 236,
+        "w": 225,
+        "h": 648
+      },
+      "type": "move",
+      "target": {
+        "x": 20,
+        "y": 558
+      }
+    }
+  ],
+  "note": "两人从门外进入门里，两人相对位置互换",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785811329853
+}
