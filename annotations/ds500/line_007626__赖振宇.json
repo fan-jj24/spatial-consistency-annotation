@@ -15,6 +15,8 @@
       "type": "rotate"
     }
   ],
-  "note": "眼睛男和蓝衣男朝向变化",
-  "bg_global": false
+  "note": "褐衣男和蓝衣男朝向变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785827161784
 }
