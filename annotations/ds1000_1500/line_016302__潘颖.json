@@ -1,0 +1,22 @@
+{
+  "line": 16302,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016302_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778020&Signature=G8SpC3y1vp874tBoJhA4e7Wd3iU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016302_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778020&Signature=feYiEY9NA8ItVdJmz7Ea0hhh3nQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 186,
+        "y": 658,
+        "w": 108,
+        "h": 282
+      },
+      "type": "add"
+    }
+  ],
+  "note": "图片担架前面左边男子消失了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785839181340
+}
