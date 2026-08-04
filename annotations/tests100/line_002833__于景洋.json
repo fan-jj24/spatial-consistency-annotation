@@ -1,0 +1,27 @@
+{
+  "line": 2833,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002833_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314628&Signature=SVVzMgKXM0jRNy2NQfIGZvFZHUk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002833_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314628&Signature=4fABjKqnAVx7iVihT897tYXyaWo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 309,
+        "y": 371,
+        "w": 138,
+        "h": 264
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.306,
+        -0.011,
+        0.952
+      ]
+    }
+  ],
+  "note": "女子由坐在帘子后面变成了站立在打开的帘子前面",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785813919705
+}
