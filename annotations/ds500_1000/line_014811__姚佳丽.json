@@ -1,0 +1,22 @@
+{
+  "line": 14811,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014811_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758013&Signature=6YAM6JQHkcUTYsr4%2BbQufn71RZk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014811_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758014&Signature=gxDBDAxlPBAHjDfZut9W5iIhWhc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 89,
+        "y": 154,
+        "w": 538,
+        "h": 1103
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "带眼罩女子替换为不带眼罩女子，整体背景变化",
+  "bg_global": true,
+  "bg_ambiguous": false,
+  "ts": 1785838315879
+}
