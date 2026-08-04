@@ -12,11 +12,8 @@
         "w": 144,
         "h": 148
       },
-      "type": "move",
-      "target": {
-        "x": 918,
-        "y": 559
-      }
+      "type": "custom",
+      "text": "黄色小车需要移动并旋转"
     },
     {
       "box": {
@@ -48,5 +45,7 @@
     }
   ],
   "note": "黄色吊车朝向发生变化\n黄色小车位置发生变化，朝向发生变化\n多了一个绿色车",
-  "bg_global": false
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785826822159
 }
