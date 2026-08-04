@@ -1,0 +1,22 @@
+{
+  "line": 14722,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014722_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758010&Signature=QOp3wF7Wwvc2bbA5fzIXCWvShMI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014722_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758010&Signature=n3tdG81fbPBXOo1CUWXTVgJ2H3Y%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 17,
+        "y": 528,
+        "w": 262,
+        "h": 719
+      },
+      "type": "add"
+    }
+  ],
+  "note": "整体背景发生变化\n少了一名蓝衣女子",
+  "bg_global": true,
+  "bg_ambiguous": false,
+  "ts": 1785829680799
+}
