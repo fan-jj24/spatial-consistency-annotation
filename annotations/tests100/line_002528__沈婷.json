@@ -1,0 +1,31 @@
+{
+  "line": 2528,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002528_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314626&Signature=OqC%2B5aEregtkIv4YHfnZYjhbFVM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002528_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314626&Signature=FvAZXoEN%2FY0JN8ABVSErwjNsAAw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 550,
+        "y": 220,
+        "w": 166,
+        "h": 1055
+      },
+      "type": "add"
+    },
+    {
+      "box": {
+        "x": 92,
+        "y": 184,
+        "w": 461,
+        "h": 1091
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "右侧白衣男子消失，女子角度从侧身变为正面",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785810098073
+}
