@@ -1,0 +1,27 @@
+{
+  "line": 2773,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002773_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314627&Signature=WcSJWqGCg2XYpqkNAoYjkZmWmss%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002773_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314627&Signature=Na2A%2FyxqHr2181tXRYEOKA0oflw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -9,
+        "y": 8,
+        "w": 737,
+        "h": 1265
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.351,
+        -0.724,
+        -0.594
+      ]
+    }
+  ],
+  "note": "女子姿势由趴着变为上半身直立",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785827566011
+}
