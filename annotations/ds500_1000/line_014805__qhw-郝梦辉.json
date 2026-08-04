@@ -1,0 +1,22 @@
+{
+  "line": 14805,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014805_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758013&Signature=WlDC8bBAim9TjxpDEuijCtkfzxo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014805_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758013&Signature=EWgpM44hyGfRy32pJwjtQi2DOdg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -9,
+        "y": 297,
+        "w": 346,
+        "h": 371
+      },
+      "type": "add"
+    }
+  ],
+  "note": "少一名白裙女子和一名蓝西装男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785835019306
+}
