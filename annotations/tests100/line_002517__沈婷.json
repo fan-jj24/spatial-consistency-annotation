@@ -1,0 +1,23 @@
+{
+  "line": 2517,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002517_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314626&Signature=B0JTZMSi8gXCbnDr84HuPyHwxR0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002517_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314626&Signature=8AiC5Z9PF3EyufT95MQTaGPzMqA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 217,
+        "y": 392,
+        "w": 407,
+        "h": 786
+      },
+      "type": "custom",
+      "text": "三人相对位置和朝向发生了变化"
+    }
+  ],
+  "note": "灰西装男子和黄裙女子要与蓝西装男子成一排站立，蓝西装男子面向前方，灰西装男子和黄裙女子女子面对面站立",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785810098073
+}
