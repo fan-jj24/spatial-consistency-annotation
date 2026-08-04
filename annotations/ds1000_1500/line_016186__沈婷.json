@@ -1,0 +1,22 @@
+{
+  "line": 16186,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016186_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778016&Signature=mSAb8b3vqqOH%2Fs%2BWwnRuQfKKp1I%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016186_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778016&Signature=PvrDQXRtRTbRAZdZKdhKRJAO%2Fro%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 49,
+        "y": 123,
+        "w": 665,
+        "h": 1022
+      },
+      "type": "custom"
+    }
+  ],
+  "note": "多个人物相对位置和动作变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785838596544
+}
