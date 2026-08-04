@@ -7,14 +7,21 @@
   "objects": [
     {
       "box": {
-        "x": 411,
-        "y": 369,
-        "w": 123,
-        "h": 410
+        "x": 184,
+        "y": 366,
+        "w": 125,
+        "h": 428
       },
-      "type": "move"
+      "type": "move3d",
+      "dir3d": [
+        -0.001,
+        -0.226,
+        -0.974
+      ]
     }
   ],
-  "note": "黑衣男子位置和朝向发生变化",
-  "bg_global": false
+  "note": "蓝裙女位置发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785835718367
 }
