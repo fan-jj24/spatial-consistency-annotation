@@ -35,7 +35,8 @@
       ]
     }
   ],
-  "note": "人物需要重组",
+  "note": "人物群体需要重组",
   "bg_global": false,
-  "ts": 1785751948296
+  "bg_ambiguous": false,
+  "ts": 1785814902845
 }
