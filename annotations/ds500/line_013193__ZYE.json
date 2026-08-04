@@ -7,31 +7,16 @@
   "objects": [
     {
       "box": {
-        "x": 190,
-        "y": 167,
-        "w": 215,
-        "h": 737
+        "x": 200,
+        "y": 123,
+        "w": 476,
+        "h": 627
       },
-      "type": "move",
-      "target": {
-        "x": 712,
-        "y": 666
-      }
-    },
-    {
-      "box": {
-        "x": 425,
-        "y": 113,
-        "w": 271,
-        "h": 812
-      },
-      "type": "move",
-      "target": {
-        "x": 120,
-        "y": 487
-      }
+      "type": "replace"
     }
   ],
-  "note": "白衣男和蓝衣女位置和朝向发生变化",
-  "bg_global": false
+  "note": "白衣男和蓝衣女位置互换",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785833646285
 }
