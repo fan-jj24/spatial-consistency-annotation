@@ -15,8 +15,8 @@
       "type": "add"
     }
   ],
-  "note": "整体背景发生变化\n少一名黑衣男子",
-  "bg_global": true,
+  "note": "少一名黑衣男子",
+  "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785811518911
+  "ts": 1785826231718
 }
