@@ -1,1 +1,23 @@
-{"line":11164,"remotes":["https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011164_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477450&Signature=41n7JTlyFf469gniqD0inMaTD8E%3D","https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011164_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477450&Signature=LzZNW1SXquwOi4yQKt%2FMQre3NVo%3D"],"objects":[{"box":{"x":-33,"y":24,"w":333,"h":1160},"type":"move3d","dir3d":[0.878,-0.025,-0.479]},{"box":{"x":412,"y":177,"w":284,"h":829},"type":"rotate"}],"note":"黑衣男子位置和朝向发生变化；红衣女子朝向发生变化","bg_global":false,"_migrated_from":"tests100"}
+{
+  "line": 11164,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011164_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477450&Signature=41n7JTlyFf469gniqD0inMaTD8E%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011164_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477450&Signature=LzZNW1SXquwOi4yQKt%2FMQre3NVo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 46,
+        "y": 57,
+        "w": 571,
+        "h": 1085
+      },
+      "type": "custom",
+      "text": "黑衣男需要向前并旋转，红衣女需要后退并旋转"
+    }
+  ],
+  "note": "黑衣男子位置和朝向发生变化；红衣女子朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785833318922
+}
