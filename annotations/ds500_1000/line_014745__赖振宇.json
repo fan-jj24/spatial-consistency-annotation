@@ -1,0 +1,23 @@
+{
+  "line": 14745,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014745_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758011&Signature=AU6wSe2tWjVRiBiK5AUVNd%2FE%2Btg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014745_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758011&Signature=Bmz8D9xnhYJXPs2wKgVb%2BBgnv58%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 71,
+        "y": 393,
+        "w": 604,
+        "h": 735
+      },
+      "type": "custom",
+      "text": "白衣男子、白衣女子、蓝衣男子、蓝衣女子位置回退，需旋转，蓝衣女子需站起"
+    }
+  ],
+  "note": "人物需要重组",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785826987883
+}
