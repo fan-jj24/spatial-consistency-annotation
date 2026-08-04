@@ -1,0 +1,31 @@
+{
+  "line": 14640,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014640_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758007&Signature=tgjvsDoYQtR4efS3OKZAnzvjdFU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014640_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758007&Signature=uAW1N3ok7frci6tAjtksb8DFzjI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 471,
+        "y": 275,
+        "w": 200,
+        "h": 812
+      },
+      "type": "replace"
+    },
+    {
+      "box": {
+        "x": 381,
+        "y": 303,
+        "w": 79,
+        "h": 315
+      },
+      "type": "add"
+    }
+  ],
+  "note": "中年甲胄男子替换了青年甲胄男子，少了一个黑衣男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785834702940
+}
