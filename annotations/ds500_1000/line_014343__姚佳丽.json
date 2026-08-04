@@ -1,0 +1,35 @@
+{
+  "line": 14343,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014343_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757999&Signature=AW%2FUWrhnIh7x9upFZgwAJnSu6mQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014343_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757999&Signature=UXhzj1IGMOCMj09j%2BXi%2FhAZekpg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 9,
+        "y": 264,
+        "w": 264,
+        "h": 988
+      },
+      "type": "move",
+      "target": {
+        "x": 462,
+        "y": 1206
+      }
+    },
+    {
+      "box": {
+        "x": 460,
+        "y": 289,
+        "w": 266,
+        "h": 210
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "深蓝色衣男子位置变化，洞口旁四个女子替换了洞口前三个女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785834656571
+}
