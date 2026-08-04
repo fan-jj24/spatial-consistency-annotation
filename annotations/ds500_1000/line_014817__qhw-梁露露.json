@@ -1,0 +1,41 @@
+{
+  "line": 14817,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014817_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758014&Signature=K02rDIa6KgUdcj6%2Fg7dyNOTui9U%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014817_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758014&Signature=gDOJUS2BFVMQQiuSpeInpmVX8uc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 448,
+        "y": 280,
+        "w": 179,
+        "h": 430
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 527,
+          "y": 415
+        },
+        {
+          "x": 545,
+          "y": 612
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 264,
+        "y": 39,
+        "w": 461,
+        "h": 361
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "多出一个蓝衣男\n局部背景发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785833636944
+}
