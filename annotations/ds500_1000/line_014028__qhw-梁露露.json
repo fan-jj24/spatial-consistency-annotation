@@ -1,0 +1,26 @@
+{
+  "line": 14028,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014028_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757989&Signature=Gx2b3emT%2BG7cUZbHIAjJ8sT3TUM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014028_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757989&Signature=s5B1yid9KE%2F7uG32N93os23sgY8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 31,
+        "y": 610,
+        "w": 202,
+        "h": 655
+      },
+      "type": "move",
+      "target": {
+        "x": 113,
+        "y": 469
+      }
+    }
+  ],
+  "note": "紫色花衣女高度发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785833189038
+}
