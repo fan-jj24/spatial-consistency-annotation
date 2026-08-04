@@ -1,0 +1,40 @@
+{
+  "line": 14681,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014681_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758008&Signature=xf5vq3OdllSbSF4GYJ6dsLJqqcI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014681_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758008&Signature=ICMPzEx5MSHUW1eBsV7tdZ3mzOw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 9,
+        "y": 338,
+        "w": 353,
+        "h": 737
+      },
+      "type": "move",
+      "target": {
+        "x": 409,
+        "y": 932
+      }
+    },
+    {
+      "box": {
+        "x": 442,
+        "y": 361,
+        "w": 274,
+        "h": 724
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.8,
+        -0.15,
+        0.581
+      ]
+    }
+  ],
+  "note": "白衣男子和衬衫男子位置变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785830940271
+}
