@@ -1,0 +1,22 @@
+{
+  "line": 15485,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015485_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777998&Signature=c39qshNkoGAEJYGutjVvkIk%2FU2E%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015485_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777998&Signature=LAE0maHrqDpBKDhmqo0lhlkwJuA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 401,
+        "y": 640,
+        "w": 61,
+        "h": 133
+      },
+      "type": "add"
+    }
+  ],
+  "note": "白衣夫人缺失了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785838575214
+}
