@@ -12,11 +12,11 @@
         "w": 448,
         "h": 973
       },
-      "type": "rotate"
+      "type": "replace"
     }
   ],
-  "note": "女子与男子从并排变为相对",
+  "note": "粉衣女子替换为蓝衣女子",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785811329853
+  "ts": 1785822335602
 }
