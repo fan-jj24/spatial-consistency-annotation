@@ -1,0 +1,23 @@
+{
+  "line": 13487,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013487_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757977&Signature=6eRaGVf4acRDkgSTlXkNVnKBA1E%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013487_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757977&Signature=sIp2OCOoY4rb9YgI58zN5XT8Q4Q%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 260,
+        "y": 274,
+        "w": 279,
+        "h": 855
+      },
+      "type": "custom",
+      "text": "紫衣戴帽男子需要位移并旋转"
+    }
+  ],
+  "note": "紫衣戴帽男子的位置发生变化，朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785831651303
+}
