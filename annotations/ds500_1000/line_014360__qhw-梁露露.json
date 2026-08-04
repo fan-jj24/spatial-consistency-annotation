@@ -1,0 +1,32 @@
+{
+  "line": 14360,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014360_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758000&Signature=TRRSQw4BzMLRKcmcpuyG%2Bk8Ra%2B4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014360_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758000&Signature=omsLN9zZLQGuWDVj5wWvgbgPELQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 597,
+        "y": 26,
+        "w": 118,
+        "h": 1239
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 650,
+          "y": 216
+        },
+        {
+          "x": 684,
+          "y": 454
+        }
+      ]
+    }
+  ],
+  "note": "整体背景发生变化\n多出一个男人",
+  "bg_global": true,
+  "bg_ambiguous": false,
+  "ts": 1785814750393
+}
