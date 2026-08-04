@@ -1,0 +1,27 @@
+{
+  "line": 16250,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016250_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778018&Signature=wajSSG7HjjvzDod%2BA7Z%2BNcdj6cw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016250_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778018&Signature=S1m%2FbYPlNqunW2NAJp%2F18zHgU2Y%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 84,
+        "y": 113,
+        "w": 548,
+        "h": 1165
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.338,
+        0.109,
+        0.935
+      ]
+    }
+  ],
+  "note": "男子的头探出到了门外",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785811492787
+}
