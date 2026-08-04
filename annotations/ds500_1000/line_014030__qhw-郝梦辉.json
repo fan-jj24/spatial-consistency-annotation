@@ -1,0 +1,45 @@
+{
+  "line": 14030,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014030_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757990&Signature=BuUjL5zwYLf7po3PsjdHRu%2B4xj4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014030_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757990&Signature=Zz6KzXGl%2BohR2pYIAgnsWMS%2FZW0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 22,
+        "y": 335,
+        "w": 366,
+        "h": 806
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.508,
+        -0.045,
+        -0.86
+      ]
+    },
+    {
+      "box": {
+        "x": 363,
+        "y": 374,
+        "w": 266,
+        "h": 494
+      },
+      "type": "add"
+    },
+    {
+      "box": {
+        "x": 137,
+        "y": 881,
+        "w": 694,
+        "h": 371
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "黑衣男子位置发生变化，朝向发生变化\n少了一名黑衣女子\n倒地人物朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785813027277
+}
