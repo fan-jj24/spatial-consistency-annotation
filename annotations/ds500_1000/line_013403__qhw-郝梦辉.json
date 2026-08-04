@@ -1,0 +1,23 @@
+{
+  "line": 13403,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013403_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757976&Signature=Ea3F5DeBQGF8NBFmcK9LIROuGnQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013403_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757977&Signature=EmbFjc3dOqotnMiDkOHAWFuyhjs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 22,
+        "y": 294,
+        "w": 717,
+        "h": 968
+      },
+      "type": "custom",
+      "text": "蓝衣男子需要位移，高度需要变高"
+    }
+  ],
+  "note": "蓝衣男子的位置发生变化，高度发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785831523151
+}
