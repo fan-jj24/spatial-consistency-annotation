@@ -1,0 +1,27 @@
+{
+  "line": 15083,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015083_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777993&Signature=OZ18MHyVo3sOtfNV3%2BTKOA3FA7c%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015083_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777993&Signature=1kysFIi6YK%2B9dnTvax34RAHv7n0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 97,
+        "y": 348,
+        "w": 251,
+        "h": 799
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.023,
+        0.234,
+        0.972
+      ]
+    }
+  ],
+  "note": "男子与龙椅的位置变远",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785838596544
+}
