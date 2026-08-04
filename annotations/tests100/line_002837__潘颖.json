@@ -1,0 +1,27 @@
+{
+  "line": 2837,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002837_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314628&Signature=0MesfwGvhM6hzlVUgF4GU5tI9Nc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002837_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314628&Signature=y5MCsIRYtd3GegXdHkOgnnobicw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 71,
+        "y": 410,
+        "w": 650,
+        "h": 668
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.007,
+        0.052,
+        0.999
+      ]
+    }
+  ],
+  "note": "图中人物由门外变为门里",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785820899724
+}
