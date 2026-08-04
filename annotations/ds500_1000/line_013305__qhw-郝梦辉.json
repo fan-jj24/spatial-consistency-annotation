@@ -12,11 +12,16 @@
         "w": 381,
         "h": 986
       },
-      "type": "rotate"
+      "type": "move3d",
+      "dir3d": [
+        -0.575,
+        0.036,
+        -0.817
+      ]
     }
   ],
-  "note": "整体背景发生变化\n黑衣女子朝向发生变化",
-  "bg_global": true,
+  "note": "黑衣女子位置发生变化，朝向发生变化",
+  "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785813420293
+  "ts": 1785824930607
 }
