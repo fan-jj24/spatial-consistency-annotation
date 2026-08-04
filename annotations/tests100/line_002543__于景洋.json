@@ -1,0 +1,27 @@
+{
+  "line": 2543,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002543_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314627&Signature=RbCa5cljWG94sYepF88v2tpY4Z4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002543_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314627&Signature=p1Pxrqteu5Hp32vY%2FfzqPDrpZZY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 122,
+        "y": 369,
+        "w": 207,
+        "h": 556
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.544,
+        0.057,
+        -0.837
+      ]
+    }
+  ],
+  "note": "绿色衣服女子由面对面男子变成了背对并远离男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785813919705
+}
