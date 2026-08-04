@@ -1,0 +1,22 @@
+{
+  "line": 15997,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015997_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778010&Signature=uzMpqi453V%2FX%2BpR3%2FzAK9Nqjwkk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015997_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778010&Signature=EdUrQ9hT%2Bqy5sQMqz%2BMpsnbcj1I%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 40,
+        "y": 788,
+        "w": 174,
+        "h": 489
+      },
+      "type": "add"
+    }
+  ],
+  "note": "图中老婆子消失了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785839181340
+}
