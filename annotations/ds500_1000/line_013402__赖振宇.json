@@ -1,0 +1,27 @@
+{
+  "line": 13402,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013402_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757976&Signature=Kkt7T2bJd2CzlD9nVt%2FytuXedgo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013402_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757977&Signature=5a%2FUWlGXquKivQQ9s9Iz5bomsx0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 76,
+        "y": 39,
+        "w": 614,
+        "h": 1208
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.879,
+        0.082,
+        0.47
+      ]
+    }
+  ],
+  "note": "人物从左侧房子里出来了，黑色西装男位置、朝向变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785826987883
+}
