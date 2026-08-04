@@ -1,0 +1,45 @@
+{
+  "line": 2537,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002537_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314626&Signature=8pW5FYuzyZmdL%2BJk4uvS2m9zEg4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002537_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314626&Signature=Xsn04wck5TDB7mrNlGowD0O3qU8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 293,
+        "y": 430,
+        "w": 251,
+        "h": 732
+      },
+      "type": "move",
+      "target": {
+        "x": 370,
+        "y": 379
+      }
+    },
+    {
+      "box": {
+        "x": 242,
+        "y": 479,
+        "w": 108,
+        "h": 333
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 286,
+          "y": 548
+        },
+        {
+          "x": 247,
+          "y": 632
+        }
+      ]
+    }
+  ],
+  "note": "红衣男子由靠近宫殿门前变成了远离宫殿门；白衣男子多了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785819826886
+}
