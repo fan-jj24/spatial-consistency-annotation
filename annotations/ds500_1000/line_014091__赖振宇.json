@@ -1,0 +1,49 @@
+{
+  "line": 14091,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014091_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757992&Signature=Y4STj4wPEVkGcp3KLC7dhMybftw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014091_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757992&Signature=0whnYsM2Csl%2BqhT8sW9zoAiRy6Y%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 102,
+        "y": 26,
+        "w": 576,
+        "h": 340
+      },
+      "type": "bg_local"
+    },
+    {
+      "box": {
+        "x": 235,
+        "y": 387,
+        "w": 210,
+        "h": 742
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.073,
+        0.068,
+        -0.995
+      ]
+    },
+    {
+      "box": {
+        "x": 10,
+        "y": 369,
+        "w": 140,
+        "h": 783
+      },
+      "type": "move",
+      "target": {
+        "x": 208,
+        "y": 899
+      }
+    }
+  ],
+  "note": "狼头帽男子，猫头鹰帽男子位置变化，猫头鹰帽男子朝向变化，局部背景变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785827079369
+}
