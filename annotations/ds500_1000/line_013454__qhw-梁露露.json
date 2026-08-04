@@ -1,0 +1,26 @@
+{
+  "line": 13454,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013454_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757977&Signature=lUJJY9FIXaQtuOqIAyJY1gdPaIk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013454_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757977&Signature=5t9icSTmmEpYh42ncs5Mz%2BOH0MI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 238,
+        "y": 474,
+        "w": 404,
+        "h": 801
+      },
+      "type": "move",
+      "target": {
+        "x": 21,
+        "y": 884
+      }
+    }
+  ],
+  "note": "小男孩和小女孩位置发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785822039768
+}
