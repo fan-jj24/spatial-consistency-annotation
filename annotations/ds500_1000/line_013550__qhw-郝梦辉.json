@@ -1,0 +1,45 @@
+{
+  "line": 13550,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013550_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757978&Signature=0OtE5rKN68YIVQ%2BTrvlIXavttFg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013550_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757978&Signature=mnaT%2BV%2FTzH4lLlyHAbFExCuMtlc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 134,
+        "y": 334,
+        "w": 181,
+        "h": 557
+      },
+      "type": "move",
+      "target": {
+        "x": 350,
+        "y": 710
+      }
+    },
+    {
+      "box": {
+        "x": 280,
+        "y": 196,
+        "w": 206,
+        "h": 930
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 340,
+          "y": 479
+        },
+        {
+          "x": 428,
+          "y": 798
+        }
+      ]
+    }
+  ],
+  "note": "医生位置发生变化\n多了一名穿驼色衣服的人物",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785813027277
+}
