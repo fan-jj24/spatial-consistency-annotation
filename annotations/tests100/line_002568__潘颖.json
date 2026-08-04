@@ -1,0 +1,22 @@
+{
+  "line": 2568,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002568_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314627&Signature=%2FkSOsFL3f0FIU5SPPTWi%2BuAOfh0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002568_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314627&Signature=Nxu9TG4Tx9WcPNoMHBC8XdU1Kms%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 273,
+        "y": 307,
+        "w": 448,
+        "h": 973
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "女子与男子从并排变为相对",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785811329853
+}
