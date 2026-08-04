@@ -15,8 +15,8 @@
       "type": "rotate"
     }
   ],
-  "note": "黑衣女子朝向发生变化",
-  "bg_global": false,
+  "note": "整体背景发生变化\n黑衣女子朝向发生变化",
+  "bg_global": true,
   "bg_ambiguous": false,
-  "ts": 1785813027277
+  "ts": 1785813420293
 }
