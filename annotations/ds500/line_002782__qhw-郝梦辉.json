@@ -25,6 +25,8 @@
       ]
     }
   ],
-  "note": "整体背景发生变化\n多了一个穿黑衣的人物手部",
-  "bg_global": true
+  "note": "多了一个穿黑衣的人物手部",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785838442137
 }
