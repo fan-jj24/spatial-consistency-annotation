@@ -1,0 +1,46 @@
+{
+  "line": 14196,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014196_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757995&Signature=QZ9JieiLazx38ynjRoKXwtMQIyY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014196_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757995&Signature=Biv3XIU5z15VQ3ecimYm2EbT%2BO8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 27,
+        "y": 269,
+        "w": 384,
+        "h": 919
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.182,
+        -0.059,
+        -0.982
+      ]
+    },
+    {
+      "box": {
+        "x": 396,
+        "y": 113,
+        "w": 315,
+        "h": 1078
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 580,
+          "y": 425
+        },
+        {
+          "x": 565,
+          "y": 755
+        }
+      ]
+    }
+  ],
+  "note": "红衣男子位置变化，多了一个蓝衣男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785838315879
+}
