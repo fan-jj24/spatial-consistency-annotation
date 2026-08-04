@@ -1,0 +1,23 @@
+{
+  "line": 13511,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013511_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757977&Signature=AgJxwr6qxXrMgiWnSlFFaUX25zc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013511_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757977&Signature=BPZ7WsdOViSSj5tN9wFIT0C4ZFo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 370,
+        "y": 259,
+        "w": 317,
+        "h": 947
+      },
+      "type": "custom",
+      "text": "粉衣女子需要移动并旋转"
+    }
+  ],
+  "note": "粉衣女子位置发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785833443647
+}
