@@ -1,0 +1,23 @@
+{
+  "line": 2775,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002775_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314627&Signature=V%2BqYqzx2HFD2hHMk5N2lj2hmJrs%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002775_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314627&Signature=gfJuJBns%2FH33WOjoDV9Tf6%2FHOgo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -4,
+        "y": 41,
+        "w": 722,
+        "h": 1249
+      },
+      "type": "custom",
+      "text": "粉衣女子相对高度变化，绷带男子与粉衣女子的相对位置以及朝向都发生变化"
+    }
+  ],
+  "note": "粉衣女子相对高度变低，本身为站立位，绷带男子在左粉衣女子在右，绷带男子与粉衣女子是前后错位不是面对面",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785814651951
+}
