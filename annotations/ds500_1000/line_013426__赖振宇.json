@@ -1,0 +1,27 @@
+{
+  "line": 13426,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013426_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757977&Signature=0V70ythanWubNEhylpj58he8fHY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013426_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757977&Signature=Sd8O2HpHGbo%2Fj6Vd%2B3h3kp%2FgMW4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 181,
+        "y": 188,
+        "w": 520,
+        "h": 1042
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.934,
+        0.145,
+        0.325
+      ]
+    }
+  ],
+  "note": "布衣老者位置朝向变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785838762512
+}
