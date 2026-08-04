@@ -1,0 +1,32 @@
+{
+  "line": 14064,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014064_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757991&Signature=K9xqiVncQA8xymkfQI6337FrLZU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014064_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757991&Signature=aSwb96ReRjJqjHAuOKjA24QGOrA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 77,
+        "y": 387,
+        "w": 379,
+        "h": 847
+      },
+      "type": "custom",
+      "text": "绿衣女高度需要变高并旋转"
+    },
+    {
+      "box": {
+        "x": 18,
+        "y": 241,
+        "w": 143,
+        "h": 673
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "局部背景发生变化\n绿衣女高度和朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785833189038
+}
