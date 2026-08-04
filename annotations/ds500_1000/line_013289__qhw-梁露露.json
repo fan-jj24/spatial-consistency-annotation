@@ -1,0 +1,22 @@
+{
+  "line": 13289,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013289_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757976&Signature=Jl9jYT7y7EBgP2%2FrV0IRgU3%2FORM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013289_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757976&Signature=femCicjgGfAW0NXfjzAiFXuGOPI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 59,
+        "y": 845,
+        "w": 660,
+        "h": 410
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "桌子被洗衣盆替换",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785833189038
+}
