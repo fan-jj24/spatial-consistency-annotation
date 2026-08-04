@@ -1,0 +1,32 @@
+{
+  "line": 14146,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014146_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757994&Signature=53hU1yJiLP75LyoP2Vzog29EiO8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014146_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757994&Signature=UPwqN8rj%2B0uId%2FSOKJkJTjWyId4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 135,
+        "y": 190,
+        "w": 543,
+        "h": 1021
+      },
+      "type": "custom",
+      "text": "黑衣男子和米色衣女子相对位置替换，需躺在沙发上"
+    },
+    {
+      "box": {
+        "x": -6,
+        "y": 144,
+        "w": 125,
+        "h": 975
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "黑衣男子和米色衣女子位置替换，高度变化，局部背景变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785838762512
+}
