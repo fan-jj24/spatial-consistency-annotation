@@ -1,0 +1,22 @@
+{
+  "line": 13868,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013868_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757985&Signature=9OYjqSJ%2BIt%2FnHepSkUuaISUhYPk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013868_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757985&Signature=Q3gyy81567PnX4mxJvuK6VgMrFs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 540,
+        "y": 172,
+        "w": 179,
+        "h": 1103
+      },
+      "type": "add"
+    }
+  ],
+  "note": "整体背景发生变化\n少一名黑衣男子",
+  "bg_global": true,
+  "bg_ambiguous": false,
+  "ts": 1785811518911
+}
