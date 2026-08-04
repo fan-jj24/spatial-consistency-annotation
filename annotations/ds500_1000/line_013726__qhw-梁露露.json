@@ -1,0 +1,36 @@
+{
+  "line": 13726,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013726_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757980&Signature=4qrpKGPmY1N98KpPJ2%2BGYXw3NG0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013726_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757980&Signature=4GhOb7ISf6c0jU8TMPBBR4jx%2FZc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 256,
+        "y": 413,
+        "w": 420,
+        "h": 863
+      },
+      "type": "rotate"
+    },
+    {
+      "box": {
+        "x": 23,
+        "y": 241,
+        "w": 635,
+        "h": 1029
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.001,
+        0.187,
+        0.982
+      ]
+    }
+  ],
+  "note": "微胖男朝向和位置发生变化\n两人位置发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785825861378
+}
