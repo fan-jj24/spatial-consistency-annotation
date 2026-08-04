@@ -1,0 +1,41 @@
+{
+  "line": 13735,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013735_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757980&Signature=6Nd3p87R4Yzvq7X6wxKask%2FbsAM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013735_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757980&Signature=UzXwcD3scgNR4%2BCXEh5oQE%2FlT%2FU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 209,
+        "y": 765,
+        "w": 230,
+        "h": 486
+      },
+      "type": "replace"
+    },
+    {
+      "box": {
+        "x": 84,
+        "y": 243,
+        "w": 650,
+        "h": 420
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 391,
+          "y": 335
+        },
+        {
+          "x": 685,
+          "y": 568
+        }
+      ]
+    }
+  ],
+  "note": "穿麻衣的小孩被粉衣小女孩替换\n多了青衣女子、黑衣男子和藏青色衣服男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785813027277
+}
