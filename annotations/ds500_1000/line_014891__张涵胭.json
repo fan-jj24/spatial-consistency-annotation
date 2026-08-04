@@ -1,0 +1,23 @@
+{
+  "line": 14891,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014891_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758016&Signature=xhBJkFzN%2BNzx7ycZKrHVSWe8xK0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014891_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758016&Signature=yatCCSKWLd1mnRYE879m0eFchlQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 19,
+        "y": -1,
+        "w": 699,
+        "h": 1236
+      },
+      "type": "custom",
+      "text": "白衣男需要向左移动，灰衣男需要向右后方移动并旋转，戴帽男需要删除，其余周围群众也发生变化"
+    }
+  ],
+  "note": "人物群体需要重组",
+  "bg_global": true,
+  "bg_ambiguous": false,
+  "ts": 1785813133161
+}
