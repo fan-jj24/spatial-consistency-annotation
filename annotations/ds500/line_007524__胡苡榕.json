@@ -4,7 +4,20 @@
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007524_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477430&Signature=RPMgVXtkUC6kS9XC5dKya3chuBk%3D",
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007524_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477430&Signature=8QSMC%2FNpxDWJqPH%2FqBICOcuxbQI%3D"
   ],
-  "objects": [],
-  "note": "整体背景发生了变化，如蓝衣男面前的门店变成了笔直的街道等。",
-  "bg_global": true
+  "objects": [
+    {
+      "box": {
+        "x": 455,
+        "y": 125,
+        "w": 422,
+        "h": 640
+      },
+      "type": "custom",
+      "text": "蓝衣男需要旋转并后退"
+    }
+  ],
+  "note": "蓝衣男位置和朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785820851233
 }
