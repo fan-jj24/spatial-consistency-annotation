@@ -1,0 +1,31 @@
+{
+  "line": 14277,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014277_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757997&Signature=qP%2FJkyAU5e2Xvlu%2FK0jWdNmpTxQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014277_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757998&Signature=ZmFjV0oQs0Y821uJ5%2ButRcrsgGU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 26,
+        "y": 296,
+        "w": 156,
+        "h": 440
+      },
+      "type": "replace"
+    },
+    {
+      "box": {
+        "x": 320,
+        "y": 377,
+        "w": 324,
+        "h": 457
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "黑衣女子与褐衣男子位置替换",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785834656571
+}
