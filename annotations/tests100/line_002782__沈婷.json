@@ -1,0 +1,31 @@
+{
+  "line": 2782,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002782_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314627&Signature=44uOiSOMglm9xIwmEImHrUiU0WA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002782_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314627&Signature=xWWUXceWNoy0zAkQN%2F2M%2F6LwvF0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -11,
+        "y": 712,
+        "w": 364,
+        "h": 463
+      },
+      "type": "delete"
+    },
+    {
+      "box": {
+        "x": 10,
+        "y": 241,
+        "w": 701,
+        "h": 712
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "黑衣男子左侧多出一个人，黑衣男子身后背影由窗户变成烛台",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785820897490
+}
