@@ -1,0 +1,22 @@
+{
+  "line": 2582,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002582_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314627&Signature=Tu2%2BXrQVJ5KXWXKIdMCV3xjPOtw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002582_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314627&Signature=8xSdU0lQwjK%2BFaZ9UcLlz7oQ9z8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 181,
+        "y": 59,
+        "w": 448,
+        "h": 1219
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "花衣男子从面对绿衣男子变为侧对绿衣男子，花衣男子高度变高了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785814677867
+}
