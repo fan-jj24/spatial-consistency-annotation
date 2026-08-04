@@ -12,7 +12,11 @@
         "w": 605,
         "h": 691
       },
-      "type": "neutral"
+      "type": "move",
+      "target": {
+        "x": 562,
+        "y": 721
+      }
     },
     {
       "box": {
@@ -35,5 +39,7 @@
     }
   ],
   "note": "蓝衣男孩高度发生变化\n多出一个黄色生物",
-  "bg_global": false
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785830817190
 }
