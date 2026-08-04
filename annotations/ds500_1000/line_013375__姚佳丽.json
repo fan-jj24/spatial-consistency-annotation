@@ -1,0 +1,23 @@
+{
+  "line": 13375,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013375_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757976&Signature=TEOMa%2FdT9AeDQaHatqNHLjetxss%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013375_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757976&Signature=87tPcvZwK2Ib53QbtX1zibsC4EQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 2,
+        "y": 356,
+        "w": 701,
+        "h": 740
+      },
+      "type": "custom",
+      "text": "紫衣女子到花衣女子左侧的位置，黑衣男子到紫衣女子的位置"
+    }
+  ],
+  "note": "人物重组",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785838315879
+}
