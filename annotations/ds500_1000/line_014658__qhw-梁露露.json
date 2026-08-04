@@ -1,0 +1,22 @@
+{
+  "line": 14658,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014658_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758007&Signature=iW4spHiGFVYWj3%2B0Z%2BSukSpcbEU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014658_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758007&Signature=4YugJ2oJI%2FBflTZ3UnrKcZCFM2A%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 64,
+        "y": 326,
+        "w": 579,
+        "h": 914
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "整体背景发生变化\n白衣男子和白衣小孩被粉衣男子和布衣小孩替换，并且朝向发生变化",
+  "bg_global": true,
+  "bg_ambiguous": false,
+  "ts": 1785822039768
+}
