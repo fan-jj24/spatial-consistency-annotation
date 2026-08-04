@@ -12,15 +12,11 @@
         "w": 387,
         "h": 645
       },
-      "type": "move",
-      "target": {
-        "x": 306,
-        "y": 323
-      }
+      "type": "rotate"
     }
   ],
-  "note": "白衣男子由半躺变为跪地，高度变高了",
+  "note": "白衣男子朝向变了",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785814651951
+  "ts": 1785831535266
 }
