@@ -1,0 +1,22 @@
+{
+  "line": 13548,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013548_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757978&Signature=A7bCg1AJn9KgAosh2DOOzhYs2IA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013548_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757978&Signature=YZC0bmmom8towkFMJom4QwFZZeA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 3,
+        "y": 907,
+        "w": 599,
+        "h": 369
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "桌子案板被石磨替换",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785811518911
+}
