@@ -1,0 +1,54 @@
+{
+  "line": 15566,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015566_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777999&Signature=IEJRiQKbgOb7XpTQl8iHodwW9YQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015566_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777999&Signature=Vobfuz5EcnP1noXWJkR1l%2F6DBWY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 742,
+        "y": 228,
+        "w": 449,
+        "h": 495
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 1003,
+          "y": 380
+        },
+        {
+          "x": 903,
+          "y": 596
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 1150,
+        "y": 20,
+        "w": 101,
+        "h": 697
+      },
+      "type": "move",
+      "target": {
+        "x": 705,
+        "y": 351
+      }
+    },
+    {
+      "box": {
+        "x": 1026,
+        "y": 55,
+        "w": 158,
+        "h": 360
+      },
+      "type": "add"
+    }
+  ],
+  "note": "蓝衣男子左侧多了一只鹰；红衣女子与蓝衣男子的距离变远；红衣女子右侧后方的男子缺失了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785811492787
+}
