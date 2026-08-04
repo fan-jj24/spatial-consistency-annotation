@@ -1,0 +1,22 @@
+{
+  "line": 14452,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014452_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758004&Signature=D3wAatrFNLZFPL3K6fmb6HH2C4I%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014452_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758004&Signature=0QVn3nv1TWK35MHDuPQ1cgCMO7Q%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 154,
+        "y": 2,
+        "w": 997,
+        "h": 712
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "盘发女被束发男替换",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785833614409
+}
