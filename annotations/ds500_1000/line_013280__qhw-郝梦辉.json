@@ -1,0 +1,36 @@
+{
+  "line": 13280,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013280_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757976&Signature=PgiFV3E4dWLyRpIrLjsJFmHWiI0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013280_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757976&Signature=gVYfr8pCLnyo5%2FCuWZmF45%2BQwjU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 749,
+        "y": 16,
+        "w": 233,
+        "h": 598
+      },
+      "type": "add"
+    },
+    {
+      "box": {
+        "x": 234,
+        "y": -29,
+        "w": 413,
+        "h": 739
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.726,
+        -0.24,
+        -0.645
+      ]
+    }
+  ],
+  "note": "黑衣男子位置发生变化\n少了一名红衣男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785834351063
+}
