@@ -1,0 +1,97 @@
+{
+  "line": 13374,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013374_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757976&Signature=aERzwXEyHgQq4EtdT35jB62KINI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013374_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757976&Signature=YdPeFPi%2B5ibrfzQbeHEywQQr3fI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 898,
+        "y": 263,
+        "w": 86,
+        "h": 209
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 920,
+          "y": 284
+        },
+        {
+          "x": 966,
+          "y": 463
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 1049,
+        "y": 203,
+        "w": 153,
+        "h": 498
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.145,
+        -0.122,
+        -0.982
+      ]
+    },
+    {
+      "box": {
+        "x": 1224,
+        "y": 248,
+        "w": 65,
+        "h": 484
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 1271,
+          "y": 710
+        },
+        {
+          "x": 1230,
+          "y": 267
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 7,
+        "y": 261,
+        "w": 147,
+        "h": 121
+      },
+      "type": "move",
+      "target": {
+        "x": 190,
+        "y": 319
+      }
+    },
+    {
+      "box": {
+        "x": 326,
+        "y": -7,
+        "w": 71,
+        "h": 415
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 332,
+          "y": 10
+        },
+        {
+          "x": 386,
+          "y": 390
+        }
+      ]
+    }
+  ],
+  "note": "多了两名蓝衣侍卫和一名红衣大臣；白发红衣大臣与蓝衣大臣距离变宽；绿缸位置变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785812444508
+}
