@@ -1,0 +1,22 @@
+{
+  "line": 2549,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002549_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314627&Signature=ZLrAjS04XB2DcgOApquGHsAX%2BvM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002549_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314627&Signature=X3Xbpgxg1G0887HYnK1DTCgyCI0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 59,
+        "y": 149,
+        "w": 282,
+        "h": 1126
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "男子方向从与女子背对背变为两人同一个方向，两人高度变高了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785814677867
+}
