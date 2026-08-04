@@ -1,0 +1,41 @@
+{
+  "line": 14235,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014235_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757996&Signature=CXzrAQPHCBoPjYIx8yqT5BOnDaM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014235_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757996&Signature=u556pNf2ejdVNGtDDvouO4FCsSE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 462,
+        "y": 141,
+        "w": 468,
+        "h": 561
+      },
+      "type": "rotate"
+    },
+    {
+      "box": {
+        "x": 1009,
+        "y": 109,
+        "w": 260,
+        "h": 601
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 1094,
+          "y": 291
+        },
+        {
+          "x": 1154,
+          "y": 487
+        }
+      ]
+    }
+  ],
+  "note": "黑衣男朝向发生变化\n多出一个紫衣男",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785830419067
+}
