@@ -1,0 +1,32 @@
+{
+  "line": 14896,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014896_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758016&Signature=X8KhghR7EeScF4V2VnsdIRHcIV0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014896_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758016&Signature=VnSHx0U9YaNa4GHu1eei0Pq35jA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 418,
+        "y": 114,
+        "w": 176,
+        "h": 441
+      },
+      "type": "custom",
+      "text": "黑衣戴帽男子需要移动并旋转，高度需要变低"
+    },
+    {
+      "box": {
+        "x": 230,
+        "y": 228,
+        "w": 189,
+        "h": 344
+      },
+      "type": "add"
+    }
+  ],
+  "note": "少了一名黑衣男子\n黑衣戴帽男子位置和朝向发生变化，高度发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785834365663
+}
