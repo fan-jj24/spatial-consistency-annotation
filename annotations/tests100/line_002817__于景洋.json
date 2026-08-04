@@ -1,0 +1,27 @@
+{
+  "line": 2817,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002817_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314627&Signature=jsi858atWbTUaM5aywNahlMWU0U%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002817_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314627&Signature=n643XkQdRuXtpkutv2Z5Z4OMuyc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -4,
+        "y": 676,
+        "w": 82,
+        "h": 376
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.519,
+        0.146,
+        0.842
+      ]
+    }
+  ],
+  "note": "男子右侧的女子由远离男子变成了脸部贴近在男子肩膀处",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785813919705
+}
