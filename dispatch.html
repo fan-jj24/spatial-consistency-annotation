@@ -109,6 +109,38 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
 .lock-holder-name { font-weight:600; color:var(--accent); min-width:80px; }
 .lock-holder-lines { color:var(--muted); }
 .pool-stat.done .num { color:var(--ok); }
+/* +N 重复徽章 */
+.dup-badge {
+  display:inline-block; margin-left:6px; padding:1px 7px; font-size:12px;
+  font-weight:700; color:#b45309; background:var(--warn-weak);
+  border:1px solid #f2d8a7; border-radius:10px; vertical-align:middle;
+}
+.dup-badge.hidden { display:none; }
+.pool-stat.done.clickable { cursor:pointer; position:relative; }
+.pool-stat.done.clickable:hover { background:var(--warn-weak); }
+.pool-stat.done.clickable::after {
+  content:"▶"; position:absolute; top:4px; right:6px; font-size:8px; color:var(--warn); opacity:.6;
+}
+/* 重复详情面板 */
+.dup-details {
+  margin-top:10px; border:1px solid var(--border); border-radius:8px;
+  background:#fdf6f0; overflow:hidden;
+}
+.dup-details.hidden { display:none; }
+.dup-details-head {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:8px 12px; font-size:12px; font-weight:700; color:#b45309;
+  border-bottom:1px solid #f0d9c0; background:#fdf0e2;
+}
+.dup-details-body { padding:10px 12px; font-size:12px; color:var(--text); max-height:220px; overflow-y:auto; }
+.dup-holder-row {
+  display:flex; align-items:flex-start; gap:8px; padding:5px 0;
+  border-bottom:1px dashed var(--border);
+}
+.dup-holder-row:last-child { border-bottom:none; }
+.dup-holder-name { font-weight:600; color:#b45309; min-width:110px; flex-shrink:0; }
+.dup-holder-lines { color:var(--text); word-break:break-all; }
+.dup-shown { color:var(--muted); }
 .claim-actions { margin-top:24px; display:flex; gap:10px; }
 .claim-actions button { flex:1; padding:12px; font-size:15px; }
 .claim-msg { margin-top:12px; font-size:13px; color:var(--bad); display:none; }
@@ -524,7 +556,10 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
       <label>池子状态</label>
       <div class="pool-stats" id="poolStats">
         <div class="pool-stat"><div class="num" id="statTotal">-</div><div class="lbl">总数</div></div>
-        <div class="pool-stat done"><div class="num" id="statDone">-</div><div class="lbl">已完成</div></div>
+        <div class="pool-stat done" id="doneStatBox">
+          <div class="num"><span id="statDone">-</span><span class="dup-badge hidden" id="dupBadge">+0</span></div>
+          <div class="lbl">已完成</div>
+        </div>
         <div class="pool-stat locked" id="lockedStatBox"><div class="num" id="statLocked">-</div><div class="lbl">锁定中</div></div>
         <div class="pool-stat"><div class="num" id="statAvail">-</div><div class="lbl">可领取</div></div>
       </div>
@@ -532,6 +567,11 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
       <div class="lock-details hidden" id="lockDetails">
         <div class="lock-details-head">🔒 锁定详情 <span class="lock-close" id="lockDetailsClose">✕</span></div>
         <div class="lock-details-body" id="lockDetailsBody">暂无锁定</div>
+      </div>
+      <!-- 重复详情（点击"已完成"的 +N 徽章展开） -->
+      <div class="dup-details hidden" id="dupDetails">
+        <div class="dup-details-head">⚠️ 重复提交详情 <span class="muted" style="font-weight:400;">（主界面未显示的副本）</span> <span class="lock-close" id="dupDetailsClose">✕</span></div>
+        <div class="dup-details-body" id="dupDetailsBody">暂无重复</div>
       </div>
     </div>
 
@@ -2092,6 +2132,8 @@ async function loadDatasetSamples(idx) {
 }
 
 let lastLockHolders = {}; // 缓存锁持有者信息，供展开面板用
+let lastHiddenDupes = {}; // 缓存被覆盖的副本 { line: { hidden:[...], shown } }
+let lastHiddenCount = 0;  // 被覆盖副本总数
 
 async function refreshPoolStats() {
   try {
@@ -2105,6 +2147,20 @@ async function refreshPoolStats() {
     $("statAvail").textContent = stats.available;
     lastLockHolders = stats.lockHolders || {};
     renderLockDetails();
+    // +N 重复徽章
+    lastHiddenDupes = stats.hidden || {};
+    lastHiddenCount = stats.hiddenCount || 0;
+    const badge = $("dupBadge");
+    const doneBox = $("doneStatBox");
+    if (lastHiddenCount > 0) {
+      badge.textContent = "+" + lastHiddenCount;
+      badge.classList.remove("hidden");
+      doneBox.classList.add("clickable");
+    } else {
+      badge.classList.add("hidden");
+      doneBox.classList.remove("clickable");
+    }
+    renderDupDetails();
     // 审核模式：渲染定向筛选标注者 chip
     if (isReview) renderAnnotatorChips(stats.pendingByAnnotator || {});
   } catch (e) {
@@ -2136,6 +2192,38 @@ function renderLockDetails() {
       ? sorted.join(", ")
       : sorted.slice(0, 8).join(", ") + " ... 等" + sorted.length + "条";
     html += '<div class="lock-holder-row"><span class="lock-holder-name">' + name + '</span><span class="lock-holder-lines">' + sorted.length + ' 条：' + display + '</span></div>';
+  }
+  body.innerHTML = html;
+}
+
+// 渲染重复提交详情面板（按被覆盖者名字分组，完整列出，不省略）
+function renderDupDetails() {
+  const body = $("dupDetailsBody");
+  const dupes = lastHiddenDupes;
+  const lines = Object.keys(dupes);
+  if (!lines.length) {
+    body.innerHTML = '<div style="color:var(--muted);text-align:center;padding:8px;">暂无重复提交</div>';
+    return;
+  }
+  // 按"被覆盖的作者"分组：name → [{line, shown}]
+  const byAuthor = {};
+  lines.forEach((l) => {
+    const info = dupes[l];
+    info.hidden.forEach((name) => {
+      if (!byAuthor[name]) byAuthor[name] = [];
+      byAuthor[name].push({ line: Number(l), shown: info.shown });
+    });
+  });
+  let html = "";
+  for (const [name, items] of Object.entries(byAuthor)) {
+    items.sort((a, b) => a.line - b.line);
+    // 完整列出所有行号 + 每行当前显示的是谁
+    const detail = items.map((it) => {
+      let s = "Line " + it.line;
+      if (it.shown && it.shown !== name) s += "（现显示：" + it.shown + "）";
+      return s;
+    }).join("、");
+    html += '<div class="dup-holder-row"><span class="dup-holder-name">' + name + '</span><span class="dup-holder-lines">被覆盖 ' + items.length + ' 份：' + detail + '</span></div>';
   }
   body.innerHTML = html;
 }
@@ -2678,6 +2766,13 @@ async function init() {
   };
   $("lockDetailsClose").onclick = () => {
     $("lockDetails").classList.add("hidden");
+  };
+  // 重复详情面板：点击"已完成"格子展开/关闭（仅有重复时可点）
+  $("doneStatBox").onclick = () => {
+    if (lastHiddenCount > 0) $("dupDetails").classList.toggle("hidden");
+  };
+  $("dupDetailsClose").onclick = () => {
+    $("dupDetails").classList.add("hidden");
   };
   $("datasetSelect").onchange = (e) => {
     loadDatasetSamples(parseInt(e.target.value, 10)).then(refreshPoolStats);
