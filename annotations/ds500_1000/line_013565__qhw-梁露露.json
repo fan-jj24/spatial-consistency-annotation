@@ -1,0 +1,41 @@
+{
+  "line": 13565,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013565_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757978&Signature=38iMMO8rKNUDVchcFcsiZ6Msrb0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013565_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757978&Signature=HBD5M6VUdGRIfVnSsHVXR%2F5VcCQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 328,
+        "y": 264,
+        "w": 328,
+        "h": 1004
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 420,
+          "y": 541
+        },
+        {
+          "x": 527,
+          "y": 786
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": -2,
+        "y": 31,
+        "w": 474,
+        "h": 1242
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "多出一个蓝衣女子\n紫衣女子的朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785814750393
+}
