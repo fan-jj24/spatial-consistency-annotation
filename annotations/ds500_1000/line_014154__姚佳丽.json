@@ -1,0 +1,23 @@
+{
+  "line": 14154,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014154_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757994&Signature=i713Rra60K6%2FMaOlh4r1ti077tE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014154_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757994&Signature=kjVtgg8J8Aiz0ohwMjhW3U6qj7I%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -1,
+        "y": 166,
+        "w": 737,
+        "h": 1070
+      },
+      "type": "custom",
+      "text": "米色衣女子与红衣女子应回退左侧沙发，黑衣男子应回退左侧板凳"
+    }
+  ],
+  "note": "人物需重组",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785830940272
+}
