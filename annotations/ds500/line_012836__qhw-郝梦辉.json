@@ -12,9 +12,12 @@
         "w": 1269,
         "h": 721
       },
-      "type": "rotate"
+      "type": "custom",
+      "text": "男子需要旋转并移动，女子手部需要移动"
     }
   ],
-  "note": "黑衣男子位置发生变化，朝向发生变化",
-  "bg_global": false
+  "note": "黑衣男子位置发生变化，朝向发生变化\n女子手部位置发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785805721646
 }
