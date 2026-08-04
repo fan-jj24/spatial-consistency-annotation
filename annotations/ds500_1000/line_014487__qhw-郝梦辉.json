@@ -13,10 +13,19 @@
         "h": 1067
       },
       "type": "rotate"
+    },
+    {
+      "box": {
+        "x": -21,
+        "y": 25,
+        "w": 732,
+        "h": 518
+      },
+      "type": "bg_local"
     }
   ],
-  "note": "整体背景发生变化\n黑衣男子朝向发生变化",
-  "bg_global": true,
+  "note": "局部背景的墙壁和屋檐发生变化\n黑衣男子朝向发生变化",
+  "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785813027277
+  "ts": 1785826490031
 }
