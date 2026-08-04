@@ -1,0 +1,22 @@
+{
+  "line": 14084,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014084_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757991&Signature=W4md9PIHM0XPkNEavK8mMnBZrQQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014084_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757991&Signature=jLdIrKAAaXZgBWUCMRaERk%2BRu54%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -60,
+        "y": 102,
+        "w": 353,
+        "h": 891
+      },
+      "type": "neutral"
+    }
+  ],
+  "note": "穿校服人物群体被替换",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785833443647
+}
