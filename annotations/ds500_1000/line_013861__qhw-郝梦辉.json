@@ -1,0 +1,23 @@
+{
+  "line": 13861,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013861_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757985&Signature=ZSGwflCfs1%2BpIIB7hK%2FLmldCRsA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013861_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757985&Signature=IF%2FqMbNqvKH55P0MUv%2BmFJBFGMA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 288,
+        "y": 532,
+        "w": 215,
+        "h": 243
+      },
+      "type": "custom",
+      "text": "人物群体需要位移并旋转"
+    }
+  ],
+  "note": "人物群体位置发生变化，朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785829680799
+}
