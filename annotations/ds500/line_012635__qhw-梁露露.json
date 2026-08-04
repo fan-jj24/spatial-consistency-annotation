@@ -12,9 +12,15 @@
         "w": 599,
         "h": 901
       },
-      "type": "neutral"
+      "type": "move",
+      "target": {
+        "x": 366,
+        "y": 289
+      }
     }
   ],
   "note": "整体背景发生变化\n两名女子的高度发生变化",
-  "bg_global": true
+  "bg_global": true,
+  "bg_ambiguous": false,
+  "ts": 1785808177957
 }
