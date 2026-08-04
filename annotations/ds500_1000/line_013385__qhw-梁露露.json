@@ -1,0 +1,26 @@
+{
+  "line": 13385,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013385_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757976&Signature=CMwHJ3HjQbSk7QKg4ZgKp8oJj48%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013385_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757976&Signature=dx2t0XEyqDBGasBLREe0Z9cp1h4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 184,
+        "y": 579,
+        "w": 164,
+        "h": 420
+      },
+      "type": "move",
+      "target": {
+        "x": 103,
+        "y": 786
+      }
+    }
+  ],
+  "note": "白衬衫男子位置和高度发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785814750393
+}
