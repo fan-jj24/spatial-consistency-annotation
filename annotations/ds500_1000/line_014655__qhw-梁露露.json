@@ -1,0 +1,32 @@
+{
+  "line": 14655,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014655_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758007&Signature=UZFbxdCAdbzSWqoUBoA%2Bv4Y4PYY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014655_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758007&Signature=2eKzrpE3y8DEDp2K7SdpxZSNnQA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 466,
+        "y": 392,
+        "w": 225,
+        "h": 658
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 499,
+          "y": 633
+        },
+        {
+          "x": 602,
+          "y": 889
+        }
+      ]
+    }
+  ],
+  "note": "多出一个黑衣不戴面具男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785827002067
+}
