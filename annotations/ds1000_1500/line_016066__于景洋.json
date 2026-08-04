@@ -1,0 +1,22 @@
+{
+  "line": 16066,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016066_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778013&Signature=Vy2kBrLFE7%2FsRNLP3QgTOW5s9uo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016066_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778013&Signature=C0z8nNwL0%2FamR9S%2Bdq0w5f7qGtk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 442,
+        "y": 712,
+        "w": 276,
+        "h": 558
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "女子左手边的桌子多余",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785839774429
+}
