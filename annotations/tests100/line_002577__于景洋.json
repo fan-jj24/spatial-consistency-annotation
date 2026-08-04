@@ -1,0 +1,23 @@
+{
+  "line": 2577,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002577_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314627&Signature=tz3nZC4vO3FA8ZEsAw6Al6cIOoo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002577_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314627&Signature=spnlHR5kNQC8j3tg0kE%2F2%2BajRtw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 50,
+        "y": 172,
+        "w": 617,
+        "h": 817
+      },
+      "type": "custom",
+      "text": "女子应站在男子左侧"
+    }
+  ],
+  "note": "红衣女子由在黑衣男子的左侧肩并肩变成了在黑衣男子的上方，黑衣男子由站立状态变成弓步出剑的状态",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785828493946
+}
