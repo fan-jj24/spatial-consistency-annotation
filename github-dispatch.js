@@ -157,7 +157,10 @@
     const rlPfx = reviewLockPrefix();
 
     // 解析已标注/已审核（同时记录每行的标注者，用于审核分发时排除自己标的）
-    const annotatorByLine = new Map(); // line → username
+    const annotatorByLine = new Map(); // line → username（显示用 = 最后读到的）
+    const annoAuthorsByLine = new Map();   // line → [提交者...] 按读取顺序（用于重复检测）
+    const reviewerByLine = new Map();      // line → username（显示用 = 最后读到的）
+    const reviewAuthorsByLine = new Map(); // line → [提交者...] 按读取顺序
     for (const path of files) {
       if (path.startsWith(aPfx) && path.endsWith(".json")) {
         const m = path.slice(aPfx.length).match(/^line_(\d+)__(.+)\.json$/);
@@ -165,12 +168,31 @@
           const lineNum = parseInt(m[1], 10);
           done.add(lineNum);
           annotatorByLine.set(lineNum, m[2]);
+          if (!annoAuthorsByLine.has(lineNum)) annoAuthorsByLine.set(lineNum, []);
+          annoAuthorsByLine.get(lineNum).push(m[2]);
         }
       }
       if (path.startsWith(rPfx) && path.endsWith(".json")) {
-        const m = path.slice(rPfx.length).match(/^line_(\d+)__/);
-        if (m) reviewed.add(parseInt(m[1], 10));
+        const m = path.slice(rPfx.length).match(/^line_(\d+)__(.+)\.json$/);
+        if (m) {
+          const lineNum = parseInt(m[1], 10);
+          reviewed.add(lineNum);
+          reviewerByLine.set(lineNum, m[2]);
+          if (!reviewAuthorsByLine.has(lineNum)) reviewAuthorsByLine.set(lineNum, []);
+          reviewAuthorsByLine.get(lineNum).push(m[2]);
+        }
       }
+    }
+
+    // 提取被覆盖的副本：同一行有多份时，最后读到的为"显示份"（主界面可见），
+    // 其余为"被覆盖份"（主界面不显示，仅在重复详情中列出）
+    const hiddenAnnotations = {}; // line → { hidden:[被覆盖的标注者], shown:当前显示者 }
+    for (const [line, names] of annoAuthorsByLine) {
+      if (names.length > 1) hiddenAnnotations[line] = { hidden: names.slice(0, -1), shown: names[names.length - 1] };
+    }
+    const hiddenReviews = {};
+    for (const [line, names] of reviewAuthorsByLine) {
+      if (names.length > 1) hiddenReviews[line] = { hidden: names.slice(0, -1), shown: names[names.length - 1] };
     }
 
     // 解析批量锁文件（不过期，由持有者上传后释放）
@@ -211,7 +233,7 @@
       } catch (e) {}
     }
 
-    return { done, reviewed, lockedLines, reviewLockedLines, lockHolders, reviewLockHolders, annotatorByLine, myLock, myReviewLock };
+    return { done, reviewed, lockedLines, reviewLockedLines, lockHolders, reviewLockHolders, annotatorByLine, reviewerByLine, hiddenAnnotations, hiddenReviews, myLock, myReviewLock };
   }
 
   // ===== 池子统计 =====
@@ -260,7 +282,19 @@
       }
     }
 
-    return { total, done, locked, available, lockHolders, pendingByAnnotator };
+    // 当前数据集范围内被覆盖的副本（同一行有多份提交时，主界面只显示最后一份）
+    // 标注池看标注副本，审核池看审核副本；只统计 samples.json 定义内的行
+    const hidden = {};
+    let hiddenCount = 0;
+    const hiddenSrc = isReview ? status.hiddenReviews : status.hiddenAnnotations;
+    for (const line of allLines) {
+      if (hiddenSrc[line]) {
+        hidden[line] = hiddenSrc[line];
+        hiddenCount += hiddenSrc[line].hidden.length;
+      }
+    }
+
+    return { total, done, locked, available, lockHolders, pendingByAnnotator, hidden, hiddenCount };
   }
 
   // ===== 批量领取 =====
