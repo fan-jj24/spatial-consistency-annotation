@@ -1,0 +1,23 @@
+{
+  "line": 14313,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014313_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757998&Signature=1ITsQs1mJeHV5VKLNMh%2FTRuycx0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014313_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757998&Signature=64M%2Fve%2BC5C%2Fdkt5%2B9eQeu7JI1j4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 438,
+        "y": 445,
+        "w": 165,
+        "h": 492
+      },
+      "type": "custom",
+      "text": "向后退，旋转"
+    }
+  ],
+  "note": "白衣男朝向、位置改变",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785812444508
+}
