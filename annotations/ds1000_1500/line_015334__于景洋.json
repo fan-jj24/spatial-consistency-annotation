@@ -1,0 +1,46 @@
+{
+  "line": 15334,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015334_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777996&Signature=4T%2FcpspMtkSCdfhIa42oVHVjUik%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015334_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777996&Signature=s%2FtwQF0SNFrwid2LAqd5WdZwO14%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 345,
+        "y": 453,
+        "w": 374,
+        "h": 824
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.041,
+        0.999,
+        0.031
+      ]
+    },
+    {
+      "box": {
+        "x": 7,
+        "y": 15,
+        "w": 351,
+        "h": 1262
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 255,
+          "y": 297
+        },
+        {
+          "x": 160,
+          "y": 817
+        }
+      ]
+    }
+  ],
+  "note": "整体背景由门框边的墙面变成了带有窗帘的窗户；披头发的女子由站立变成了坐在床上；多了一位女管家",
+  "bg_global": true,
+  "bg_ambiguous": false,
+  "ts": 1785811492787
+}
