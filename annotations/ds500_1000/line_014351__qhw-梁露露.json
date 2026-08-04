@@ -1,0 +1,32 @@
+{
+  "line": 14351,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014351_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757999&Signature=ua4odjVfsFfdhE8IYPncCeOo2fs%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014351_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757999&Signature=Es6WZhNMk9SL%2B3pJ4Lv6jl%2FwIoo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 940,
+        "y": 170,
+        "w": 331,
+        "h": 553
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 1043,
+          "y": 329
+        },
+        {
+          "x": 1126,
+          "y": 578
+        }
+      ]
+    }
+  ],
+  "note": "多出一个盔甲男",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785829645433
+}
