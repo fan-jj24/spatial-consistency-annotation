@@ -1,0 +1,31 @@
+{
+  "line": 13852,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013852_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757985&Signature=vgpACE7l1wY9vilGxrUqQ40wg0c%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013852_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757985&Signature=BZqMrXOgIJVITCcHj0UVPreYwic%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 253,
+        "y": 351,
+        "w": 175,
+        "h": 752
+      },
+      "type": "add"
+    },
+    {
+      "box": {
+        "x": 413,
+        "y": 290,
+        "w": 300,
+        "h": 907
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "少了一名蓝白衣服女子\n白衣人物被白衣带毛披肩的女子替换",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785829680799
+}
