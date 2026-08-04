@@ -1,0 +1,31 @@
+{
+  "line": 2825,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002825_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314628&Signature=H9nwdpFhGJ0QC1lIhRGqCO0G%2Fwc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002825_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314628&Signature=ATC6tZtdcgP%2BmkpHuy%2B9MUGRfPM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 209,
+        "y": 596,
+        "w": 102,
+        "h": 261
+      },
+      "type": "rotate"
+    },
+    {
+      "box": {
+        "x": 398,
+        "y": 602,
+        "w": 108,
+        "h": 223
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "红衣男子左前方的士兵由背对红衣男子变成了面向；红衣男子右前方的士兵由背对红衣男子变成了面向",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785813919705
+}
