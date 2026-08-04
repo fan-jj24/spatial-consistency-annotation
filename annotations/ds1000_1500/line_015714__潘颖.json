@@ -1,0 +1,27 @@
+{
+  "line": 15714,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015714_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778003&Signature=Q%2Bu3Uwo9g0N5G97l7HJbjgDJXXg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015714_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778003&Signature=bqEkrMfd%2Fxi1rgr00sg6GcH6nxk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -1,
+        "y": 384,
+        "w": 527,
+        "h": 878
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.819,
+        0.089,
+        0.568
+      ]
+    }
+  ],
+  "note": "女子从房间里面变成房间外面",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785839181340
+}
