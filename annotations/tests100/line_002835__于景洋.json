@@ -1,0 +1,22 @@
+{
+  "line": 2835,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002835_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314628&Signature=e5z7F%2BYfgONoyMUq3KHXbguw6Do%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002835_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314628&Signature=FRw2tA1kRdjWrf0HnbKUKo67k0A%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -6,
+        "y": 77,
+        "w": 730,
+        "h": 1196
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "男子与女子的相对位置朝向相反，由女子在下方男子在上方变成女子在上方男子在下方",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785828493946
+}
