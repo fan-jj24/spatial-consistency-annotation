@@ -1,0 +1,27 @@
+{
+  "line": 14151,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014151_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757994&Signature=Z9VtPq6mQOxRc%2FegQDxs7Ihnt%2F4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014151_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757994&Signature=2tHUT6gusYBjvoMxlklWlPo8y6c%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 115,
+        "y": 379,
+        "w": 461,
+        "h": 709
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.996,
+        0.012,
+        0.089
+      ]
+    }
+  ],
+  "note": "黄衣小孩位置发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785831926245
+}
