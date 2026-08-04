@@ -19,6 +19,8 @@
       }
     }
   ],
-  "note": "花篮与右侧树木的距离发生变化。",
-  "bg_global": false
+  "note": "花篮的高度需要变高",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785831707884
 }
