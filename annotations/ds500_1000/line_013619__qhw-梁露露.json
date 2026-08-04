@@ -1,0 +1,41 @@
+{
+  "line": 13619,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013619_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757979&Signature=gFZhAVnmzJ04dgDc8K2SlXmP7p0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013619_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757979&Signature=Stlwb%2FsC8VXdWBmMApZEH%2Bfjk6Y%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 466,
+        "y": 336,
+        "w": 256,
+        "h": 184
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 533,
+          "y": 367
+        },
+        {
+          "x": 586,
+          "y": 459
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 200,
+        "y": 443,
+        "w": 261,
+        "h": 284
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "多出一个男厨师和女服务生\n黑西装男子被白衬衫男子替换",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785827031266
+}
