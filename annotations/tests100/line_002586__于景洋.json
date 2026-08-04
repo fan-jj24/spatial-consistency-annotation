@@ -1,0 +1,36 @@
+{
+  "line": 2586,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002586_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314627&Signature=3qShrxTrJaV3BnurGO78dDFKfno%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002586_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314627&Signature=xhkPsoiMYp100zlr1oPdCgxLSOA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 365,
+        "y": 571,
+        "w": 320,
+        "h": 182
+      },
+      "type": "bg_local"
+    },
+    {
+      "box": {
+        "x": 347,
+        "y": 394,
+        "w": 184,
+        "h": 246
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.475,
+        -0.624,
+        -0.621
+      ]
+    }
+  ],
+  "note": "女子前面的桌子变成了蜡烛台；女子的姿势由弯腰捂肚子变成了弯身扛麻袋",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785813919705
+}
