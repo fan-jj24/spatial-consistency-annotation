@@ -1,0 +1,41 @@
+{
+  "line": 13485,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013485_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757977&Signature=UXB07hdDkI%2FhKKjymYwsJopogUo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013485_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757977&Signature=2ZQNxo5KqOO2OKqlq3FKA%2FHMbng%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 696,
+        "y": 267,
+        "w": 172,
+        "h": 249
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 743,
+          "y": 348
+        },
+        {
+          "x": 789,
+          "y": 424
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 1153,
+        "y": 307,
+        "w": 90,
+        "h": 78
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "多出一个白衣女和一个黑衣男\n局部背景少了房子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785831926245
+}
