@@ -1,0 +1,26 @@
+{
+  "line": 15419,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015419_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777997&Signature=hU9A5zc9II40tFx9pdBa5%2FUJU%2Fo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015419_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777997&Signature=wfsgfdJPZd3rv5pLYSFJxDxuQvg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 79,
+        "y": 461,
+        "w": 502,
+        "h": 438
+      },
+      "type": "move",
+      "target": {
+        "x": 348,
+        "y": 297
+      }
+    }
+  ],
+  "note": "女子高度由坐着变为躺着",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785839957238
+}
