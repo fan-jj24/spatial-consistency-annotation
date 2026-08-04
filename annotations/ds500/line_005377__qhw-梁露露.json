@@ -25,5 +25,7 @@
     }
   ],
   "note": "整体背景发生变化\n白衣女子朝向发生变化\n少了三个话筒",
-  "bg_global": true
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785826007501
 }
