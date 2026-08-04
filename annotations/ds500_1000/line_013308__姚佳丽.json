@@ -1,0 +1,26 @@
+{
+  "line": 13308,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013308_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757976&Signature=Oc74sbPewmphl1VzXljzYFSuOy4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013308_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757976&Signature=1y6CeCQvjSXxwaxgAlkFKriZfNo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 561,
+        "y": 233,
+        "w": 138,
+        "h": 314
+      },
+      "type": "move",
+      "target": {
+        "x": 765,
+        "y": 557
+      }
+    }
+  ],
+  "note": "蓝衣中长发男子位置朝向变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785834656571
+}
