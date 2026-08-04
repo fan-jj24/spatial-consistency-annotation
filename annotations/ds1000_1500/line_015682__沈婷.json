@@ -1,0 +1,22 @@
+{
+  "line": 15682,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015682_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778002&Signature=mEa%2Fl2AANWOskX5ThRLqZry2vI8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015682_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778001&Signature=mx5LV9Z6%2BRurLjiOG0U05Akl%2Fj0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -1,
+        "y": 189,
+        "w": 312,
+        "h": 1091
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "腰带男子右侧多出3个男人",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785838596544
+}
