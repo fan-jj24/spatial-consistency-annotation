@@ -1,0 +1,32 @@
+{
+  "line": 14332,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014332_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757999&Signature=1yM5z5dIrgutFLprhwU2Ro2YF5o%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014332_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757999&Signature=zgWhoz5cceN2gzK1LJ2IkeALb%2B4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 448,
+        "y": 468,
+        "w": 140,
+        "h": 604
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 473,
+          "y": 502
+        },
+        {
+          "x": 583,
+          "y": 1060
+        }
+      ]
+    }
+  ],
+  "note": "多了灰衣男",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785812444508
+}
