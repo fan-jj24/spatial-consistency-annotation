@@ -1,0 +1,31 @@
+{
+  "line": 14587,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014587_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758006&Signature=4YQYqSqQB3rBgewq6hgHFwqvOeQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014587_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758006&Signature=G57mcOeeTpV4uJBMEtKrgP8ya8M%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 266,
+        "y": 344,
+        "w": 448,
+        "h": 919
+      },
+      "type": "replace"
+    },
+    {
+      "box": {
+        "x": 0,
+        "y": 510,
+        "w": 230,
+        "h": 717
+      },
+      "type": "add"
+    }
+  ],
+  "note": "整体背景发生变化\n蓝衣老人被黑衣男子替换\n少了一个灰色西装女子",
+  "bg_global": true,
+  "bg_ambiguous": false,
+  "ts": 1785822039768
+}
