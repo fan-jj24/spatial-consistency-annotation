@@ -1,0 +1,22 @@
+{
+  "line": 16383,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016383_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778023&Signature=hT2rQDHjIVgpuaGfsYcvQ8%2FYTKA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016383_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778023&Signature=bq26eAlU5YpSwK%2BdLh%2BtUOP3Ayw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 5,
+        "y": 317,
+        "w": 84,
+        "h": 274
+      },
+      "type": "add"
+    }
+  ],
+  "note": "灰背心女子右后侧的女子消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785838596544
+}
