@@ -1,0 +1,33 @@
+{
+  "line": 14929,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014929_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758017&Signature=4Ck%2BjtPTdL1MK4a2rPtIklNMARo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014929_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758017&Signature=H2h%2FWIuCL8MdDgfbtNpMfAhwYVc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 49,
+        "y": 399,
+        "w": 255,
+        "h": 817
+      },
+      "type": "custom",
+      "text": "高度变矮，旋转，向右移动"
+    },
+    {
+      "box": {
+        "x": 352,
+        "y": 358,
+        "w": 347,
+        "h": 865
+      },
+      "type": "custom",
+      "text": "高度变矮，向左移动"
+    }
+  ],
+  "note": "狼头男高度、朝向改变；鹰头男高度变化；两人间距变宽",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785811222699
+}
