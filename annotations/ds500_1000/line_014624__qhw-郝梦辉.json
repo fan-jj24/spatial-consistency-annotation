@@ -1,0 +1,22 @@
+{
+  "line": 14624,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014624_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758006&Signature=quWyRzdVV7sKE1CmB4%2FXX8984tA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014624_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758006&Signature=OzaJbDXyNsxq9rO%2FRgt98Hak9AA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 135,
+        "y": 274,
+        "w": 371,
+        "h": 1006
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "香槟金裙子女子朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785833443647
+}
