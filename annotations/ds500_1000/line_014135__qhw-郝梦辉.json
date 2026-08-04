@@ -1,0 +1,32 @@
+{
+  "line": 14135,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014135_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757993&Signature=n2x5m%2FwFiAPRlbC7RljD64AFafI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014135_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757993&Signature=Vf9gL2qjdxntaxS1Q38Bryrb%2B00%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 48,
+        "y": 210,
+        "w": 719,
+        "h": 504
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 598,
+          "y": 282
+        },
+        {
+          "x": 708,
+          "y": 532
+        }
+      ]
+    }
+  ],
+  "note": "多了黑西装男子后面的人物群体",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785829680799
+}
