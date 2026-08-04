@@ -10,9 +10,13 @@
         "x": 172,
         "y": 313,
         "w": 264,
-        "h": 947
+        "h": 875
       },
-      "type": "neutral"
+      "type": "move",
+      "target": {
+        "x": 295,
+        "y": 1231
+      }
     },
     {
       "box": {
@@ -42,5 +46,7 @@
     }
   ],
   "note": "绿衣女子高度发生变化\n桌子位置发生变化\n盒子位置发生变化",
-  "bg_global": false
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785808132320
 }
