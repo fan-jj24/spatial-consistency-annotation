@@ -1,0 +1,31 @@
+{
+  "line": 14404,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014404_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758001&Signature=Vs3dFVHH9cdzMH24cAf%2F0B8pkOs%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014404_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758001&Signature=DAQV%2BU5d5tq35SyvAUYCtRAjOT4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 263,
+        "y": 466,
+        "w": 259,
+        "h": 778
+      },
+      "type": "replace"
+    },
+    {
+      "box": {
+        "x": 145,
+        "y": 123,
+        "w": 215,
+        "h": 538
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "年轻红衣女子位置被中年红衣女子替换\n中年红衣女子位置被年轻红衣女子替换",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785834351063
+}
