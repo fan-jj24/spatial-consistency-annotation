@@ -1,0 +1,31 @@
+{
+  "line": 13522,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013522_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757977&Signature=Mn5Zmewvqih2SGkBrtL8JyHQzhE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013522_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757977&Signature=ViGvo8%2FYixvo2aNvOyYJ2HEfDOQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 203,
+        "y": 30,
+        "w": 241,
+        "h": 678
+      },
+      "type": "add"
+    },
+    {
+      "box": {
+        "x": 930,
+        "y": 128,
+        "w": 320,
+        "h": 400
+      },
+      "type": "add"
+    }
+  ],
+  "note": "少一个白衣女子和三个汗衫男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785822081372
+}
