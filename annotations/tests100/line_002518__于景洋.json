@@ -1,0 +1,27 @@
+{
+  "line": 2518,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002518_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314626&Signature=ztJ0gbFDN3u70IfLA1KwCRpUsE8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2Fline_002518_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785314626&Signature=5lsuBu%2FGox5%2BW4rjGeNMN0c5w0Q%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 2,
+        "y": 166,
+        "w": 532,
+        "h": 676
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.69,
+        0.043,
+        0.723
+      ]
+    }
+  ],
+  "note": "女子由远离躺着的男子变为靠近并趴在躺着的男子身上",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785827566011
+}
