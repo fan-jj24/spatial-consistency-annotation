@@ -1,0 +1,41 @@
+{
+  "line": 14629,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014629_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758007&Signature=0laREZLxziXdzrAbBFkXY0DTh%2BY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014629_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758007&Signature=F4YUrqF5NfL8fGMYDaJnA7JOguM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 299,
+        "y": 325,
+        "w": 218,
+        "h": 481
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 352,
+          "y": 404
+        },
+        {
+          "x": 455,
+          "y": 717
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 40,
+        "y": 287,
+        "w": 297,
+        "h": 689
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "多了一名额头上有疤的黑衣男子\n半束发男子朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785813027277
+}
