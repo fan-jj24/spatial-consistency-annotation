@@ -1,0 +1,27 @@
+{
+  "line": 14129,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014129_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757993&Signature=G7rc8ex6j55U0750m7PEJFsvgRc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014129_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757993&Signature=FhRDqmVQw6wnuIU9cuUfTppDwxs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 550,
+        "y": 262,
+        "w": 166,
+        "h": 1004
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.15,
+        0.012,
+        -0.989
+      ]
+    }
+  ],
+  "note": "红衣女子从房子里走出来了，红衣女子位置变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785834702940
+}
