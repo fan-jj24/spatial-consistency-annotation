@@ -14,12 +14,14 @@
       },
       "type": "move3d",
       "dir3d": [
-        0.982,
-        0.035,
-        0.184
+        -0.451,
+        -0.202,
+        -0.869
       ]
     }
   ],
   "note": "黑衣男子位置发生变化",
-  "bg_global": false
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785807920295
 }
