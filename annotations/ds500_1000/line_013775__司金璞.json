@@ -1,0 +1,22 @@
+{
+  "line": 13775,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013775_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757982&Signature=6wVEr%2FaMeDq5qXpMeWdd9PX8MlA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013775_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757982&Signature=89e7lTB%2FoxTX1NqWgBdVPgsWVuc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 118,
+        "y": 425,
+        "w": 383,
+        "h": 358
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "车朝向改变",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785812444508
+}
