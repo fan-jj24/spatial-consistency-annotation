@@ -1,0 +1,27 @@
+{
+  "line": 13570,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013570_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757978&Signature=NPFl%2FrZJ%2Fvasf0n%2F25xFxVFYtJA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013570_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757978&Signature=p0m7O%2B7ytFDZcqSCnAcTqvUrsyY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 7,
+        "y": 182,
+        "w": 287,
+        "h": 980
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.966,
+        0.046,
+        -0.253
+      ]
+    }
+  ],
+  "note": "穿甲男子位置朝向变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785834656571
+}
