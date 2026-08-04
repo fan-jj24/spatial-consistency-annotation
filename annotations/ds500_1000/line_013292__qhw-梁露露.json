@@ -1,0 +1,27 @@
+{
+  "line": 13292,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013292_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757976&Signature=jI45A3jX5sOeuoisDyIKzLW2epY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013292_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757976&Signature=Vxu9dj8GNNxQrzFowUjlsv4KlCk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 246,
+        "y": 379,
+        "w": 328,
+        "h": 358
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.966,
+        0.066,
+        0.248
+      ]
+    }
+  ],
+  "note": "军装男子和石碑位置发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785813196782
+}
