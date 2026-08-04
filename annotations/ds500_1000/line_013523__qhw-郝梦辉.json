@@ -1,0 +1,46 @@
+{
+  "line": 13523,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013523_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757977&Signature=wiKsLHW1Pz7yBeVoCORS9IoOxpg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013523_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757977&Signature=YoHF7uh07zUZ6CMmEOBHx5FJJ0Q%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 176,
+        "y": 159,
+        "w": 525,
+        "h": 1137
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.836,
+        0.158,
+        0.525
+      ]
+    },
+    {
+      "box": {
+        "x": 667,
+        "y": 67,
+        "w": 274,
+        "h": 1160
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 685,
+          "y": 120
+        },
+        {
+          "x": 846,
+          "y": 399
+        }
+      ]
+    }
+  ],
+  "note": "白衣女子位置发生变化\n多了一名人物",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785833443647
+}
