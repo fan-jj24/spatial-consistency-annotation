@@ -1,0 +1,26 @@
+{
+  "line": 14211,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014211_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757996&Signature=1UUTc0pJ11Amaw2w6nKXW3pSmTk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014211_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757996&Signature=Da%2FH5JFo5Ddx8M9UbgAWPZWIBMk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 619,
+        "y": 440,
+        "w": 159,
+        "h": 812
+      },
+      "type": "move",
+      "target": {
+        "x": 393,
+        "y": 553
+      }
+    }
+  ],
+  "note": "麻花辫女子位置发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785813027277
+}
