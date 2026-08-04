@@ -1,0 +1,32 @@
+{
+  "line": 14113,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014113_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757992&Signature=8jZbbRJT%2FxdMqQ7MYsN3Or3JJSQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014113_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757993&Signature=pU%2F%2FJquHP6dB%2FplboStfJfsQCOU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 311,
+        "y": 673,
+        "w": 87,
+        "h": 307
+      },
+      "type": "custom",
+      "text": "黑衣男子需要位移并旋转"
+    },
+    {
+      "box": {
+        "x": 84,
+        "y": 522,
+        "w": 72,
+        "h": 118
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "黑衣男子位置发生变化，朝向发生变化\n局部背景缺失鸟笼",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785831523151
+}
