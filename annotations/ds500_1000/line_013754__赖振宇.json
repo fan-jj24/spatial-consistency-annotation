@@ -1,0 +1,36 @@
+{
+  "line": 13754,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013754_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757981&Signature=RP92OUlM7YGePMSQmrOao2ywKG0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013754_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757981&Signature=6sh3scodqOztJed6FCKOLJjQFl4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 92,
+        "y": 195,
+        "w": 522,
+        "h": 1006
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.252,
+        0.112,
+        0.961
+      ]
+    },
+    {
+      "box": {
+        "x": 645,
+        "y": 513,
+        "w": 72,
+        "h": 210
+      },
+      "type": "add"
+    }
+  ],
+  "note": "灰衣女子位置变化，少了一个银发男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785827079369
+}
