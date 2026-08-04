@@ -1,0 +1,23 @@
+{
+  "line": 14954,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014954_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758018&Signature=UZr8YqHIMGYn56tWWFbDvkTbYKg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014954_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758018&Signature=R91GivXkkfPcgf0bFafn5FquMVs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 174,
+        "y": 523,
+        "w": 102,
+        "h": 384
+      },
+      "type": "custom",
+      "text": "紫衣女高度需要变低并移动"
+    }
+  ],
+  "note": "紫衣女高度和位置发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785831926245
+}
