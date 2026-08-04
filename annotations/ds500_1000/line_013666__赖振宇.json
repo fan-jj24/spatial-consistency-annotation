@@ -1,0 +1,23 @@
+{
+  "line": 13666,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013666_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757979&Signature=9mueUNsty9QByBRFv6r0B23Y0sA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013666_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757979&Signature=62FttoBSTzX7mQalOiA0tg6gBps%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 409,
+        "y": 469,
+        "w": 192,
+        "h": 648
+      },
+      "type": "custom",
+      "text": "四六分头发蓝衣男子与紫衣老奶位置需往左后回退，需坐下，需旋转"
+    }
+  ],
+  "note": "四六分头发蓝衣男子与紫衣老奶位置、朝向高度变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785831571966
+}
