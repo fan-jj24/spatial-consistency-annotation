@@ -7,14 +7,16 @@
   "objects": [
     {
       "box": {
-        "x": -17,
-        "y": 408,
-        "w": 1325,
-        "h": 334
+        "x": -27,
+        "y": -69,
+        "w": 1312,
+        "h": 387
       },
-      "type": "replace"
+      "type": "bg_local"
     }
   ],
-  "note": "整体背景发生变化\n黄色桌子被黑色桌子替换",
-  "bg_global": true
+  "note": "局部背景的窗户被墙替换",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785912325959
 }
