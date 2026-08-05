@@ -1,0 +1,23 @@
+{
+  "line": 14092,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014092_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757992&Signature=2FrdAAVQdJ0ClEDNKQut7pK4QTQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014092_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757992&Signature=FN8VUqaf3QL%2BDrXG0QAsrejCsTc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -4,
+        "y": 60,
+        "w": 727,
+        "h": 1034
+      },
+      "type": "custom",
+      "text": "白衣男子与青衣女子相对位置替换，青衣女子需坐下"
+    }
+  ],
+  "note": "青衣女子和白衣男子位置变化，青衣女子高度变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785893036384
+}
