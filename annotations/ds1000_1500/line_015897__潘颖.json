@@ -1,0 +1,23 @@
+{
+  "line": 15897,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015897_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778007&Signature=DhCkBdAugKaolsYWKjZ1Rxi1r1U%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015897_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778008&Signature=3nFSlHS5c%2FmiID8%2BjMVXoQVau04%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 116,
+        "y": 16,
+        "w": 1145,
+        "h": 701
+      },
+      "type": "custom",
+      "text": "铠甲男子与背后的人消失了，蓝衣男子朝向变了，多出了一个蓝帽仆从"
+    }
+  ],
+  "note": "铠甲男子与背后的人消失了，蓝衣男子朝向变了，多出了一个蓝帽仆从",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785923626162
+}
