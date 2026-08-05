@@ -7,16 +7,25 @@
   "objects": [
     {
       "box": {
-        "x": 3,
-        "y": 907,
-        "w": 599,
-        "h": 369
+        "x": 179,
+        "y": 36,
+        "w": 522,
+        "h": 389
       },
-      "type": "replace"
+      "type": "bg_local"
+    },
+    {
+      "box": {
+        "x": 3,
+        "y": 919,
+        "w": 586,
+        "h": 312
+      },
+      "type": "bg_local"
     }
   ],
-  "note": "桌子案板被石磨替换",
+  "note": "背景中的树和石磨不一致",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785811518911
+  "ts": 1785926992642
 }
