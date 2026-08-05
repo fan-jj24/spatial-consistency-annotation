@@ -12,11 +12,12 @@
         "w": 596,
         "h": 1172
       },
-      "type": "rotate"
+      "type": "custom",
+      "text": "黑衣男子需要向左前方移动并旋转"
     }
   ],
-  "note": "黑衣男子朝向发生变化",
+  "note": "黑衣男子位置和朝向发生变化",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785813027277
+  "ts": 1785928380168
 }
