@@ -4,9 +4,19 @@
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009328_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477440&Signature=rWIFOVBpOjt6N4DTyiWq9zLvkY4%3D",
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009328_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477440&Signature=BvAm8TS7CaZs2WYqomX%2BdbLXprg%3D"
   ],
-  "objects": [],
-  "note": "整体背景发生变化",
-  "bg_global": true,
+  "objects": [
+    {
+      "box": {
+        "x": 29,
+        "y": 0,
+        "w": 1215,
+        "h": 203
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "局部背景发生变化",
+  "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785897229290
+  "ts": 1785899125766
 }
