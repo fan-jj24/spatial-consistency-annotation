@@ -7,16 +7,16 @@
   "objects": [
     {
       "box": {
-        "x": -5,
-        "y": 330,
-        "w": 696,
-        "h": 909
+        "x": 79,
+        "y": 87,
+        "w": 635,
+        "h": 251
       },
-      "type": "rotate"
+      "type": "bg_local"
     }
   ],
-  "note": "人物群体需集体旋转",
+  "note": "局部背景变化",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785909293080
+  "ts": 1785913584800
 }
