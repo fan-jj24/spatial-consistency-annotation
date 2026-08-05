@@ -1,0 +1,27 @@
+{
+  "line": 16192,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016192_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778016&Signature=srObVgJVI6D2YTyY6LebM4Z49Lg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016192_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778016&Signature=v4scW42o44EwZoOnxNaGOJEDxXU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 252,
+        "y": 282,
+        "w": 297,
+        "h": 827
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.009,
+        0.574,
+        0.818
+      ]
+    }
+  ],
+  "note": "男生由在医院门外变化到在医院楼内，并远离了医院门",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785900535506
+}
