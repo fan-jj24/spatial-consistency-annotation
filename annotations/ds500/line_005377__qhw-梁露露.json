@@ -4,37 +4,9 @@
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_005377_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477417&Signature=Jov6P8b5AeM%2BfChVZ2yEuaJHsxk%3D",
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_005377_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477417&Signature=JWKIQ9MbS0nZXabFEP6x%2B3r7iYs%3D"
   ],
-  "objects": [
-    {
-      "box": {
-        "x": 64,
-        "y": 111,
-        "w": 576,
-        "h": 1157
-      },
-      "type": "rotate"
-    },
-    {
-      "box": {
-        "x": 8,
-        "y": 684,
-        "w": 594,
-        "h": 369
-      },
-      "type": "add"
-    },
-    {
-      "box": {
-        "x": -20,
-        "y": 5,
-        "w": 730,
-        "h": 333
-      },
-      "type": "bg_local"
-    }
-  ],
-  "note": "局部背景发生变化\n白衣女子朝向发生变化\n少了三个话筒",
+  "objects": [],
+  "note": "",
   "bg_global": false,
-  "bg_ambiguous": false,
-  "ts": 1785835606445
+  "bg_ambiguous": true,
+  "ts": 1785894215056
 }
