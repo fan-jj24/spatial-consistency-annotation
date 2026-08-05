@@ -1,0 +1,27 @@
+{
+  "line": 14742,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014742_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758011&Signature=izq%2B2KWe%2FXSvj8ScgJc4kvIrQVI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014742_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758011&Signature=P2FvP3zcyHmaDMnIx%2F6Plumqyl4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 152,
+        "y": 213,
+        "w": 461,
+        "h": 748
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.388,
+        -0.099,
+        -0.916
+      ]
+    }
+  ],
+  "note": "甲胄男子位置高度变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785893036384
+}
