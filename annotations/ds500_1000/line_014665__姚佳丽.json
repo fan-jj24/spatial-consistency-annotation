@@ -1,0 +1,40 @@
+{
+  "line": 14665,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014665_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758008&Signature=t7Gp%2FhujHvPnFBREMXgttNEJ70k%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014665_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758008&Signature=vm6rVYBPwrDndsk3%2FLNU%2BZazkhw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 252,
+        "y": 396,
+        "w": 456,
+        "h": 502
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.336,
+        -0.004,
+        -0.942
+      ]
+    },
+    {
+      "box": {
+        "x": 39,
+        "y": 201,
+        "w": 178,
+        "h": 695
+      },
+      "type": "move",
+      "target": {
+        "x": 104,
+        "y": 968
+      }
+    }
+  ],
+  "note": "紫衣女子和米白色女子位置朝向变化，整体人物坐下",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785893933319
+}
