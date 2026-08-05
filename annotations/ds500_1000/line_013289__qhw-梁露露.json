@@ -7,16 +7,16 @@
   "objects": [
     {
       "box": {
-        "x": 59,
-        "y": 845,
-        "w": 660,
-        "h": 410
+        "x": 5,
+        "y": 894,
+        "w": 722,
+        "h": 343
       },
-      "type": "replace"
+      "type": "bg_local"
     }
   ],
-  "note": "桌子被洗衣盆替换",
+  "note": "局部背景中桌子发生变化",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785833189038
+  "ts": 1785902287252
 }
