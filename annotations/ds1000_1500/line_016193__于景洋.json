@@ -1,0 +1,22 @@
+{
+  "line": 16193,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016193_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778016&Signature=tCYeMJoKuwgvr1jr6xtWr1YhYSM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016193_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778017&Signature=hb08ncb4D5CZssIcNcK4H8VJvO0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -1,
+        "y": 8,
+        "w": 466,
+        "h": 553
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "带黑色领带男士的背后由百叶窗变成带有字画的白墙",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785910740341
+}
