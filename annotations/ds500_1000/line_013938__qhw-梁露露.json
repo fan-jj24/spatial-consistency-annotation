@@ -1,0 +1,23 @@
+{
+  "line": 13938,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013938_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757987&Signature=QgUS3ot3BA22tYioZ7eqHAtt38Y%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013938_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757987&Signature=P%2BdMbYbwUogHi2WjmO4qWlkCPSQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 74,
+        "y": 116,
+        "w": 307,
+        "h": 748
+      },
+      "type": "custom",
+      "text": "绿衣女的高度需要变低，需要旋转并向后退"
+    }
+  ],
+  "note": "绿衣女的高度、朝向和位置发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785923409367
+}
