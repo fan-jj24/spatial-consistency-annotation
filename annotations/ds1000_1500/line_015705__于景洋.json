@@ -1,0 +1,22 @@
+{
+  "line": 15705,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015705_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778003&Signature=RJYb4vxj9F2fFZng%2FTK1deNgpPo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015705_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778003&Signature=A6q0mfXhzbZh8SqVSXGG5%2B3P45I%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -1,
+        "y": 445,
+        "w": 366,
+        "h": 827
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "蓝紫色女子由背对金色柱子的大殿变成侧对殿外空旷的室外",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785914370603
+}
