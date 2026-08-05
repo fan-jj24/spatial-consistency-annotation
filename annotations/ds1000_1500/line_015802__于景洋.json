@@ -1,0 +1,32 @@
+{
+  "line": 15802,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015802_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778006&Signature=WgugXj4V4KwU5WVUTZqDcD%2FkEMc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015802_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778006&Signature=UPYZcXI8sT%2BWFVWiWCXT15F1hsg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 219,
+        "y": 179,
+        "w": 297,
+        "h": 750
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 421,
+          "y": 358
+        },
+        {
+          "x": 368,
+          "y": 645
+        }
+      ]
+    }
+  ],
+  "note": "黑色衣服的男生多了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785897627093
+}
