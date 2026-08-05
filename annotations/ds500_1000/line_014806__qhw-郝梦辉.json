@@ -12,11 +12,12 @@
         "w": 356,
         "h": 1183
       },
-      "type": "rotate"
+      "type": "custom",
+      "text": "黑衣女子需要向右后方移动并旋转"
     }
   ],
-  "note": "黑衣女子朝向发生变化",
+  "note": "黑衣女子位置和朝向发生变化",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785833443647
+  "ts": 1785929027246
 }
