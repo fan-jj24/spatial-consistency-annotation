@@ -4,9 +4,20 @@
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014812_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758014&Signature=7laL3hLFamhDZ6P%2Bvq7KP0oDbxQ%3D",
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014812_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758014&Signature=ZlHzh9dF4k7fP8JfPVuy9XCl0cg%3D"
   ],
-  "objects": [],
-  "note": "整体背景变化",
+  "objects": [
+    {
+      "box": {
+        "x": 109,
+        "y": 264,
+        "w": 535,
+        "h": 888
+      },
+      "type": "custom",
+      "text": "白衣男子与红衣女子位置互换，白衣男子需站起"
+    }
+  ],
+  "note": "白衣男子与红衣女子位置高度变化，整体背景变化",
   "bg_global": true,
   "bg_ambiguous": false,
-  "ts": 1785893346920
+  "ts": 1785903029292
 }
