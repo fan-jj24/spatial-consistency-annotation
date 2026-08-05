@@ -1,0 +1,23 @@
+{
+  "line": 16364,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016364_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778023&Signature=w4wI%2BzPegv6CWoZ727bl2p29Brg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016364_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778023&Signature=qx6%2BmKWaSsLbzqmEoYgUuTAe7GI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -1,
+        "y": 297,
+        "w": 410,
+        "h": 366
+      },
+      "type": "custom",
+      "text": "黑衣衣服的男士与戴帽子老头的位置相互靠近一点，后面的两人需要替换"
+    }
+  ],
+  "note": "人物群体相对位置变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785917140891
+}
