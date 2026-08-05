@@ -1,0 +1,27 @@
+{
+  "line": 15770,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015770_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778005&Signature=W5n1%2FzD3xG7qeOjIThmf%2BVw802U%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015770_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778004&Signature=%2FOw8pOa3MupHZr3EsX2yxSlqRD8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 613,
+        "y": 48,
+        "w": 294,
+        "h": 672
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.832,
+        0.21,
+        0.513
+      ]
+    }
+  ],
+  "note": "女主由在房间内靠近电视墙变成仅在房门处还未走进去",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785922824400
+}
