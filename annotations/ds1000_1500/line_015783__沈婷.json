@@ -1,0 +1,23 @@
+{
+  "line": 15783,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015783_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778006&Signature=DU8e%2B9RM5L001Jk1mGwS1SfoWq4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015783_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778005&Signature=JNpxKieAj05p0ynZgq%2FFbkNBNoo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 250,
+        "y": 384,
+        "w": 399,
+        "h": 422
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向变化，需要重排"
+    }
+  ],
+  "note": "夹克衫男子身后的人群相对位置和朝向发生变化，由正对变为背对",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785922276946
+}
