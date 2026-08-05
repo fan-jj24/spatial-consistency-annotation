@@ -1,0 +1,23 @@
+{
+  "line": 15624,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015624_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778000&Signature=CAQsd4UQQmuJTFxO%2F9rOkx7YaY0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015624_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778000&Signature=xyFqOKUpiVQ3CMjoQHNFVbB2yWk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 2,
+        "y": 0,
+        "w": 704,
+        "h": 1277
+      },
+      "type": "custom",
+      "text": "画面色调变了，女子的相对高度变低了，女子的朝向变了，背景多了凳子"
+    }
+  ],
+  "note": "画面色调变了，女子的相对高度和朝向变了，背景多了凳子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785919689954
+}
