@@ -1,0 +1,23 @@
+{
+  "line": 15318,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015318_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777996&Signature=USVc%2FosjYvy4fPRPMi13dyJg6Tc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015318_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777996&Signature=%2BgEIOwkZnFyGC%2BftIalt34%2BiBpE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 4,
+        "y": 102,
+        "w": 648,
+        "h": 1042
+      },
+      "type": "custom",
+      "text": "小女孩改到女子的右手处，男子和女子和小女孩三人一起远离门口往里面移动"
+    }
+  ],
+  "note": "小女孩由在女子的右手处变到了左手处，男子和女子和小女孩三人的位置离门口处近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785910740341
+}
