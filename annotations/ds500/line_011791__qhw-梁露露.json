@@ -7,14 +7,16 @@
   "objects": [
     {
       "box": {
-        "x": 602,
-        "y": 710,
-        "w": 120,
-        "h": 476
+        "x": 581,
+        "y": 766,
+        "w": 138,
+        "h": 246
       },
-      "type": "add"
+      "type": "bg_local"
     }
   ],
-  "note": "少桌子和香炉",
-  "bg_global": false
+  "note": "局部背景发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785899312351
 }
