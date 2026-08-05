@@ -42,17 +42,10 @@
           "y": 653
         }
       ]
-    },
-    {
-      "box": {
-        "x": 5,
-        "y": 853,
-        "w": 655,
-        "h": 420
-      },
-      "type": "replace"
     }
   ],
-  "note": "多了人物群体\n多了一名绿衣人物\n烛台被桌子替换",
-  "bg_global": false
+  "note": "多了人物群体\n多了一名绿衣人物",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785901706648
 }
