@@ -1,0 +1,23 @@
+{
+  "line": 15925,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015925_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778009&Signature=WtVYOtVJgJzXvHJ%2F1kMeBpreKm8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015925_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778009&Signature=6jDA7LAVnxfiHsW%2BIo%2BbzjTz96s%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 2,
+        "y": 10,
+        "w": 712,
+        "h": 1254
+      },
+      "type": "custom",
+      "text": "主要角色为男女主，参考图中不见其站位，需要删除男女主，后侧人群站位也需要变化"
+    }
+  ],
+  "note": "可见宴会厅的吊顶灯，场景可能一致，但人物群体相对位置变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785914370603
+}
