@@ -15,8 +15,8 @@
       "type": "bg_local"
     }
   ],
-  "note": "局部背景发生变化",
+  "note": "局部背景少了桌子",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785899312351
+  "ts": 1785917094118
 }
