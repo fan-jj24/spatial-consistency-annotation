@@ -1,0 +1,46 @@
+{
+  "line": 16004,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016004_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778011&Signature=XUB7RhSpAcZ4FGGPxNGbEzTJkHM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016004_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778011&Signature=%2BBmnNGaJTNfw%2BziALmCQhTnn830%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 457,
+        "y": 468,
+        "w": 166,
+        "h": 660
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.924,
+        0.002,
+        0.384
+      ]
+    },
+    {
+      "box": {
+        "x": 263,
+        "y": 507,
+        "w": 172,
+        "h": 571
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 404,
+          "y": 599
+        },
+        {
+          "x": 327,
+          "y": 914
+        }
+      ]
+    }
+  ],
+  "note": "白衣男子由站在亭子外并远离台阶，变成站到了亭子里，女子多余",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785924059319
+}
