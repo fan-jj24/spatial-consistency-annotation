@@ -1,0 +1,12 @@
+{
+  "line": 16185,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016185_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778016&Signature=L8Rkk05b%2Fiz1pLw3hNNQP5vJWPY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016185_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778016&Signature=UQ%2BYFnnCpWqUda2yfcUan5DoSvw%3D"
+  ],
+  "objects": [],
+  "note": "两张图的整体背景环境不同，A图在大门口（人物背后是房屋外墙），B图在户外（人物背后是土地土路和杂草树木）",
+  "bg_global": true,
+  "bg_ambiguous": false,
+  "ts": 1785900535506
+}
