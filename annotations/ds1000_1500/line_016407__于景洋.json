@@ -1,0 +1,27 @@
+{
+  "line": 16407,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016407_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778023&Signature=zDUIbNzvzZv9QoNJb%2Bp6NUNb%2Fiw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016407_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778024&Signature=xIIPMMawkkF6Jg4IUoP65Aa%2FeSM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 247,
+        "y": 566,
+        "w": 451,
+        "h": 492
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.849,
+        0.45,
+        0.276
+      ]
+    }
+  ],
+  "note": "骑马女子背后的男子和狼群距离女子近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785914370603
+}
