@@ -1,0 +1,23 @@
+{
+  "line": 14915,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014915_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758017&Signature=wRPfb6JT656%2Fi4OxnJXi4e%2BA8p8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014915_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758017&Signature=Bi%2FCV86WAwPN1EGiSUIxuuWZe%2B4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 249,
+        "y": 16,
+        "w": 620,
+        "h": 695
+      },
+      "type": "custom",
+      "text": "白衣女需要旋转并向左移动，绿衣女需要旋转并后退"
+    }
+  ],
+  "note": "白衣女和绿衣女的位置和朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785922345593
+}
