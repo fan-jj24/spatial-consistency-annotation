@@ -14,12 +14,14 @@
       },
       "type": "move3d",
       "dir3d": [
-        0.291,
-        0.065,
-        0.955
+        -0.879,
+        0.299,
+        0.372
       ]
     }
   ],
   "note": "绿色衣服人物位置发生变化",
-  "bg_global": false
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785912431502
 }
