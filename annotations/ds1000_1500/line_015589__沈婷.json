@@ -1,0 +1,27 @@
+{
+  "line": 15589,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015589_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778000&Signature=g6tDiyIm7XNX2Omx4p9VbsG3iH0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015589_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778000&Signature=KoSHrjR3mkM1PYbec0%2FUxHBsNbk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 511,
+        "y": 338,
+        "w": 205,
+        "h": 458
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.089,
+        0.413,
+        0.906
+      ]
+    }
+  ],
+  "note": "中年男子位置发生变化，从蓝衣男子身后变为并排",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785916582687
+}
