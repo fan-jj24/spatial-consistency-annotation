@@ -13,17 +13,10 @@
         "h": 1114
       },
       "type": "add"
-    },
-    {
-      "box": {
-        "x": 41,
-        "y": 138,
-        "w": 1029,
-        "h": 1763
-      },
-      "type": "rotate"
     }
   ],
-  "note": "少了一名红衣男子\n灰衣男子的朝向发生变化",
-  "bg_global": false
+  "note": "少了一名红衣男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785900353313
 }
