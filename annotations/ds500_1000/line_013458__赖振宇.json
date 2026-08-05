@@ -1,0 +1,23 @@
+{
+  "line": 13458,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013458_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757977&Signature=ZDfUCOzNybpNfaVghDMBwD7ri%2Fc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013458_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757977&Signature=yHWTqCSWQoZI2nOg%2FQGsOZrulGc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 260,
+        "y": 321,
+        "w": 453,
+        "h": 832
+      },
+      "type": "custom",
+      "text": "黑衣女子需回退至灰衣老者右方，灰衣长袍男子旋转，黑衣带帽侍卫需回退旋转"
+    }
+  ],
+  "note": "黑衣女子，黑衣带帽侍卫位置朝向变化，灰衣长袍男子朝向变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785893036384
+}
