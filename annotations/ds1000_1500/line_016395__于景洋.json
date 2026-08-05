@@ -1,0 +1,26 @@
+{
+  "line": 16395,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016395_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778023&Signature=5R1tswro9HGB%2F%2Boi2zg8Ko1wG%2B0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016395_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778023&Signature=ZSR4GqJS%2Fyya%2BEXNg0%2Fd4VHyabU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 191,
+        "y": 282,
+        "w": 325,
+        "h": 883
+      },
+      "type": "move",
+      "target": {
+        "x": 572,
+        "y": 663
+      }
+    }
+  ],
+  "note": "白衣年轻男子离白胡子老头远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785907600823
+}
