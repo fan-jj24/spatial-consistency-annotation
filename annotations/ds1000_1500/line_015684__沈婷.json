@@ -4,9 +4,19 @@
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015684_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778002&Signature=qEIqP8g2RNRPdkXy8gpvZ0RL73g%3D",
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015684_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778002&Signature=RB%2F52aR%2FF7FS2PKHY6SIghGwCn8%3D"
   ],
-  "objects": [],
-  "note": "图A和图B人物相对位置、方向和背景基本一致",
+  "objects": [
+    {
+      "box": {
+        "x": 414,
+        "y": 857,
+        "w": 133,
+        "h": 164
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "小狗方向发生变化",
   "bg_global": false,
-  "bg_ambiguous": true,
-  "ts": 1785906767535
+  "bg_ambiguous": false,
+  "ts": 1785906866959
 }
