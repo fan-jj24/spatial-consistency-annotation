@@ -1,0 +1,22 @@
+{
+  "line": 15457,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015457_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777997&Signature=UVR1MhYIuxW8G%2BN0HGAJk4oar8M%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015457_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777997&Signature=kBfGB5AFohtHNUXo7EC1s%2BNuRLA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 409,
+        "y": 38,
+        "w": 297,
+        "h": 1239
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "女子的前方多出一名男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785922164301
+}
