@@ -12,9 +12,16 @@
         "w": 385,
         "h": 535
       },
-      "type": "rotate"
+      "type": "move3d",
+      "dir3d": [
+        -0.801,
+        0.154,
+        0.578
+      ]
     }
   ],
-  "note": "戴墨镜的男人位置和朝向发生变化",
-  "bg_global": false
+  "note": "墨镜男位置和朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785896713979
 }
