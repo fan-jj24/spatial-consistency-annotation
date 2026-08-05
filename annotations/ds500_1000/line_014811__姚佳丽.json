@@ -7,16 +7,16 @@
   "objects": [
     {
       "box": {
-        "x": 89,
-        "y": 154,
-        "w": 538,
-        "h": 1103
+        "x": 59,
+        "y": 13,
+        "w": 655,
+        "h": 133
       },
-      "type": "replace"
+      "type": "bg_local"
     }
   ],
-  "note": "带眼罩女子替换为不带眼罩女子，整体背景变化",
-  "bg_global": true,
+  "note": "局部背景不一致",
+  "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785838315879
+  "ts": 1785938857105
 }
