@@ -1,0 +1,39 @@
+{
+  "line": 13581,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013581_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757978&Signature=3vtA3jSbVLCPtT1iOO7NogyHfh8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013581_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757978&Signature=C8vB2v%2FCBYzsXNX7xOj74N2QMbI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 218,
+        "y": 148,
+        "w": 230,
+        "h": 425
+      },
+      "type": "move",
+      "target": {
+        "x": 297,
+        "y": 78
+      }
+    },
+    {
+      "box": {
+        "x": 827,
+        "y": 135,
+        "w": 199,
+        "h": 501
+      },
+      "type": "move",
+      "target": {
+        "x": 929,
+        "y": 73
+      }
+    }
+  ],
+  "note": "白衣男子和黑衣男子站起来了，整体背景变化",
+  "bg_global": true,
+  "bg_ambiguous": false,
+  "ts": 1785893346920
+}
