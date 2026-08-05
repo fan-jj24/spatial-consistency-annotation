@@ -7,18 +7,17 @@
   "objects": [
     {
       "box": {
-        "x": -22,
-        "y": 50,
-        "w": 212,
-        "h": 746
+        "x": -21,
+        "y": 55,
+        "w": 229,
+        "h": 649
       },
-      "type": "move",
-      "target": {
-        "x": 1007,
-        "y": 612
-      }
+      "type": "custom",
+      "text": "灰西装女子需要移动并旋转"
     }
   ],
-  "note": "灰色西装女子位置发生变化",
-  "bg_global": false
+  "note": "灰色西装女子位置发生变化，朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785893952257
 }
