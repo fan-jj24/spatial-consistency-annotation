@@ -1,0 +1,27 @@
+{
+  "line": 16081,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016081_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778014&Signature=13IQKZ%2FuNAt6ClAfdKOcciB8uqI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016081_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778014&Signature=RJLlQrLIXU7OAvtz2%2FTA4RcD17c%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 74,
+        "y": 223,
+        "w": 561,
+        "h": 1042
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.858,
+        -0.019,
+        0.514
+      ]
+    }
+  ],
+  "note": "男子与女子距离座椅位置变近",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785901709379
+}
