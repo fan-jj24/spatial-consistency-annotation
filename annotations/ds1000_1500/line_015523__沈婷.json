@@ -1,0 +1,23 @@
+{
+  "line": 15523,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015523_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777999&Signature=uPRNX8ho%2FMUCTGu4P7VVM%2BjjgwY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015523_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777999&Signature=uUJWLGR2hOA%2BVhtE83k17v7SHBA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 117,
+        "y": 179,
+        "w": 530,
+        "h": 1096
+      },
+      "type": "custom",
+      "text": "人物相对位置和动作变化，角色缺失，需要重排"
+    }
+  ],
+  "note": "男子与女子距离变近，动作发生变化，中间的小孩消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785922104258
+}
