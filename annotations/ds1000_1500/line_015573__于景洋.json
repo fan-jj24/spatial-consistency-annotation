@@ -1,0 +1,45 @@
+{
+  "line": 15573,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015573_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778000&Signature=tPRubqcBdTjZL8tGgkVfmHVewnY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015573_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778000&Signature=JeY4yxG%2F74qxKhv9LGahnKN0vUA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 869,
+        "y": 266,
+        "w": 157,
+        "h": 454
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 968,
+          "y": 397
+        },
+        {
+          "x": 945,
+          "y": 504
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 256,
+        "y": 157,
+        "w": 540,
+        "h": 562
+      },
+      "type": "move",
+      "target": {
+        "x": 1066,
+        "y": 416
+      }
+    }
+  ],
+  "note": "蓝衣男子右侧的白衣丸子头男子多余，白衣背剑男子与蓝衣男子面对面的距离远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785917140891
+}
