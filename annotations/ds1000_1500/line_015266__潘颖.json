@@ -1,0 +1,27 @@
+{
+  "line": 15266,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015266_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777995&Signature=6uGj6GpavQ8Hz6N5P37METxGuUM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015266_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777995&Signature=cdLz2W8gCDvWGbBiuM2MR%2FU1kuQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 142,
+        "y": 141,
+        "w": 481,
+        "h": 1137
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.733,
+        -0.052,
+        0.678
+      ]
+    }
+  ],
+  "note": "女子的相对位置变了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785913703315
+}
