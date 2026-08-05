@@ -1,0 +1,12 @@
+{
+  "line": 16367,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016367_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778023&Signature=uDh2%2Fhp8sAfa3PEEw9%2BYesOKjVM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016367_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778023&Signature=y6%2B54LvXz9Uhb0SaKs3LOLETJJo%3D"
+  ],
+  "objects": [],
+  "note": "两张图的整体背景环境不同，A图男子站在悬崖边，B图站在土地上，四周不见山峰边缘",
+  "bg_global": true,
+  "bg_ambiguous": false,
+  "ts": 1785897627093
+}
