@@ -1,0 +1,26 @@
+{
+  "line": 13400,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013400_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757976&Signature=SArEO4AvpY2C6QDczqVroCCN4kA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013400_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757976&Signature=3%2F7poCaCSnwaSu59Cq5B1caDQD4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 53,
+        "y": 445,
+        "w": 120,
+        "h": 468
+      },
+      "type": "move",
+      "target": {
+        "x": 214,
+        "y": 696
+      }
+    }
+  ],
+  "note": "黑衣男子位置变化，坐下来了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785893346920
+}
