@@ -1,0 +1,22 @@
+{
+  "line": 15703,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015703_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778002&Signature=SHPHu17e6JAgypC7ig0%2FyxBg6N0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015703_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778003&Signature=ZkyP%2F5Ua%2BlSEHBecVOwrQJ3Jqeo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -4,
+        "y": 41,
+        "w": 648,
+        "h": 776
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "坐轮椅男子和黑色礼服女士背后的背景由宴会厅大门和桌子变成宴会厅舞台",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785907600823
+}
