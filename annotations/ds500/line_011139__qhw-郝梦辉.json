@@ -7,14 +7,16 @@
   "objects": [
     {
       "box": {
-        "x": -73,
-        "y": 389,
-        "w": 891,
-        "h": 412
+        "x": 43,
+        "y": 128,
+        "w": 671,
+        "h": 1024
       },
-      "type": "add"
+      "type": "rotate"
     }
   ],
-  "note": "少了人物群体",
-  "bg_global": false
+  "note": "藏青色衣服男子朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785910388774
 }
