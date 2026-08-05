@@ -4,9 +4,28 @@
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014509_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758005&Signature=XLX9z2CGqhXQAsjOwM5n7eP1rNA%3D",
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014509_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758005&Signature=iShkgOl8VaQT2KTVhhs4Ms9y140%3D"
   ],
-  "objects": [],
-  "note": "背景窗帘、电视、墙壁上挂的照片、桌子和沙发不一致",
-  "bg_global": true,
+  "objects": [
+    {
+      "box": {
+        "x": 31,
+        "y": 6,
+        "w": 691,
+        "h": 108
+      },
+      "type": "bg_local"
+    },
+    {
+      "box": {
+        "x": 21,
+        "y": 395,
+        "w": 69,
+        "h": 338
+      },
+      "type": "add"
+    }
+  ],
+  "note": "少了深蓝衣中老年；局部背景窗帘和电视不一致",
+  "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785813995419
+  "ts": 1785926412063
 }
