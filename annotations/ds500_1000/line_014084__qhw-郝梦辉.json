@@ -12,11 +12,11 @@
         "w": 353,
         "h": 891
       },
-      "type": "neutral"
+      "type": "replace"
     }
   ],
   "note": "穿校服人物群体被替换",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785833443647
+  "ts": 1785927854319
 }
