@@ -1,0 +1,22 @@
+{
+  "line": 16377,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016377_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778023&Signature=5Uub6CqW79LK%2Fp6RVbkI1lD%2F%2Bxw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016377_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778023&Signature=HXohErXATBFML%2Bb%2B1KdrlYw3gcA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 51,
+        "y": 0,
+        "w": 666,
+        "h": 1275
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "男子朝向发生变化，女子手拉的应是男子左手",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785919944199
+}
