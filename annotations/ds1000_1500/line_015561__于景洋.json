@@ -1,0 +1,27 @@
+{
+  "line": 15561,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015561_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777999&Signature=GtsT7uq4zwkyiXlNN3sKe998sjg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015561_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777999&Signature=9Gkxo%2BBYTs7LvFvxvnffMkBq8cw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 4,
+        "y": 233,
+        "w": 430,
+        "h": 1039
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.523,
+        -0.105,
+        -0.846
+      ]
+    }
+  ],
+  "note": "花色上衣的壮汉由在远离年轻男子的左前方变成站在年轻男子的右侧并靠近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785917140891
+}
