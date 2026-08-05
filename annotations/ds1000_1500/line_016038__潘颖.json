@@ -1,0 +1,27 @@
+{
+  "line": 16038,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016038_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778012&Signature=Kqq%2BpTuc1oLPzi%2B%2FHXmrnUeaEpM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016038_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778012&Signature=XVwIqeDiAbrnLo0jTWBEVJ3276Y%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -4,
+        "y": 660,
+        "w": 133,
+        "h": 617
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.841,
+        0.024,
+        0.541
+      ]
+    }
+  ],
+  "note": "小男孩相对位置发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785922164301
+}
