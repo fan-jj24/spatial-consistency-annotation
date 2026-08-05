@@ -1,0 +1,27 @@
+{
+  "line": 16283,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016283_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778019&Signature=w5%2BCwovtlSGTjpmbvTzWxHpBpf0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016283_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778019&Signature=bf995ARP9BD9MFDXX%2BZxExNrJpo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 954,
+        "y": 7,
+        "w": 330,
+        "h": 688
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.992,
+        -0.009,
+        -0.123
+      ]
+    }
+  ],
+  "note": "穿西装的年轻总裁离黑色短袖的壮汉和戴眼镜男士近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785897627093
+}
