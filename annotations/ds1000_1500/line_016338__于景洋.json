@@ -1,0 +1,26 @@
+{
+  "line": 16338,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016338_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778021&Signature=pBqaJ7C%2FggEa7KD1Z2JPJbnkEHE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016338_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778021&Signature=1%2BlKOk4X%2B4ahCQNNFLBc7xae1Ek%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 299,
+        "y": 325,
+        "w": 425,
+        "h": 955
+      },
+      "type": "move",
+      "target": {
+        "x": 4,
+        "y": 637
+      }
+    }
+  ],
+  "note": "穿盔甲的女士由站在白衣男子右侧变化到站在白衣男子的左侧",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785907600823
+}
