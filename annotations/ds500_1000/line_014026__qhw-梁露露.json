@@ -1,0 +1,23 @@
+{
+  "line": 14026,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014026_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757989&Signature=CtCCok9Qo%2B0NOfmxv9Q%2BfzL2fCY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014026_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757989&Signature=xwFR%2Fkz4x5oiJj4vvI66f8JvrHI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 279,
+        "y": 93,
+        "w": 412,
+        "h": 786
+      },
+      "type": "custom",
+      "text": "短发女需要旋转并后退"
+    }
+  ],
+  "note": "短发女的朝向和位置发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785922345593
+}
