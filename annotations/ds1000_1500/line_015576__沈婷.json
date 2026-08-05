@@ -1,0 +1,22 @@
+{
+  "line": 15576,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015576_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778000&Signature=4A31ri6xhDtj%2BPV29XjO%2BxDbH6A%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015576_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778000&Signature=1qKd%2FtE1usvg8p4KBAOEdbrAmHs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 440,
+        "y": 187,
+        "w": 282,
+        "h": 1093
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "长辫女子左侧多出一个人",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785897931143
+}
