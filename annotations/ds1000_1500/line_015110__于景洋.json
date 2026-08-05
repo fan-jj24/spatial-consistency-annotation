@@ -1,0 +1,22 @@
+{
+  "line": 15110,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015110_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777993&Signature=OXUNUKdfQkRENpEn4dVLMoyOY1M%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015110_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777993&Signature=whQhjI%2BY8W2TUahgTF30a%2BRgQno%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 101,
+        "y": 156,
+        "w": 522,
+        "h": 1111
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "女士由面对墙面变成左侧对墙面",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785920124032
+}
