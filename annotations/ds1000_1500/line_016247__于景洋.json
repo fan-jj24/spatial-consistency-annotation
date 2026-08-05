@@ -4,9 +4,19 @@
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016247_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778018&Signature=CkYBkrOz%2BY88cTvnI2Hu04HuBy0%3D",
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016247_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778018&Signature=7OmJKFqhbLOlXbxqlmZI1S9KWi4%3D"
   ],
-  "objects": [],
+  "objects": [
+    {
+      "box": {
+        "x": 7,
+        "y": 732,
+        "w": 177,
+        "h": 512
+      },
+      "type": "add"
+    }
+  ],
   "note": "穿盔甲人物面前的农民们缺失",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785839774429
+  "ts": 1785893879678
 }
