@@ -1,0 +1,22 @@
+{
+  "line": 15528,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015528_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777999&Signature=g%2BrohgBElU%2FTrC6rIPpB8sGX9CA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015528_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777999&Signature=y0zNKnvbMy%2F7ewLbj0GAde2iTig%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 363,
+        "y": 266,
+        "w": 353,
+        "h": 1009
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "年轻男子的面前由白发老头变成了年轻女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785907600823
+}
