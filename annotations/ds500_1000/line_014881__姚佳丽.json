@@ -12,16 +12,11 @@
         "w": 451,
         "h": 674
       },
-      "type": "move3d",
-      "dir3d": [
-        -0.012,
-        0.004,
-        1
-      ]
+      "type": "rotate"
     }
   ],
-  "note": "紫衣女子位置变化",
+  "note": "紫衣女子朝向变化",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785935181992
+  "ts": 1785938626580
 }
