@@ -1,0 +1,35 @@
+{
+  "line": 15618,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015618_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778001&Signature=q%2Bhdvvuv5ugqtGbfcfj%2ByJijx%2BU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015618_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778000&Signature=yQc%2BXwKeNnGg1%2BNf2szBym3Vk7o%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 232,
+        "y": 253,
+        "w": 256,
+        "h": 1024
+      },
+      "type": "delete"
+    },
+    {
+      "box": {
+        "x": 496,
+        "y": 233,
+        "w": 225,
+        "h": 1042
+      },
+      "type": "move",
+      "target": {
+        "x": 199,
+        "y": 781
+      }
+    }
+  ],
+  "note": "黑西装女子和男子距离变远，2人中间多出一个粉衣女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785901709380
+}
