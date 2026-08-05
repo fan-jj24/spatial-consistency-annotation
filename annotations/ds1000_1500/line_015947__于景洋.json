@@ -1,0 +1,26 @@
+{
+  "line": 15947,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015947_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778009&Signature=macQQdX90kSCdx%2FkO82ZsCiFfKY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015947_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778009&Signature=p2Vh6iNb9yBdhekeJOucMJYzgA8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 43,
+        "y": 100,
+        "w": 374,
+        "h": 1180
+      },
+      "type": "move",
+      "target": {
+        "x": 598,
+        "y": 847
+      }
+    }
+  ],
+  "note": "男子由站在女子的前面变化为站在女子右侧",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785900535506
+}
