@@ -1,0 +1,22 @@
+{
+  "line": 16208,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016208_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778017&Signature=QcwfIzUU9xSLZT9553Q0S8J88fM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016208_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778017&Signature=tH7ffpTtKB6fo2GTqgwj1lbttN0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -1,
+        "y": 84,
+        "w": 430,
+        "h": 1198
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "多出来一个男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785894247366
+}
