@@ -1,0 +1,23 @@
+{
+  "line": 15517,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015517_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777998&Signature=t73pKazBCm2FVr3%2FvgVHvV86uCM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015517_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777998&Signature=acglQjcupNcVfMYD2UMazLVuKj4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -4,
+        "y": 138,
+        "w": 719,
+        "h": 1144
+      },
+      "type": "custom",
+      "text": "男主和女主相对位置变了，距离变了，朝向变了"
+    }
+  ],
+  "note": "男主和女主相对位置反了，距离远了，朝向需要旋转",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785909521451
+}
