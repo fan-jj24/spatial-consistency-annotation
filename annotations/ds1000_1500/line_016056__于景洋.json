@@ -1,0 +1,26 @@
+{
+  "line": 16056,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016056_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778012&Signature=9%2B2eMJXN%2BD6c6QC8C3kmOOE3oug%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016056_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778013&Signature=iGysgry6gS2wt4SZMNNj9z4fCdY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 119,
+        "y": 397,
+        "w": 161,
+        "h": 404
+      },
+      "type": "move",
+      "target": {
+        "x": 447,
+        "y": 532
+      }
+    }
+  ],
+  "note": "扎丸子头的妇女由站在蓝色双辫子女主的左侧变成站在女主右侧",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785924059319
+}
