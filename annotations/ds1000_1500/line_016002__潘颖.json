@@ -1,0 +1,23 @@
+{
+  "line": 16002,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016002_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778011&Signature=qXdj2UEg5y0yRMUa7SVWz3mjLX4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016002_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778011&Signature=Rl75tlrs%2F3uojLnSS2VP78LF9p4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 2,
+        "y": 212,
+        "w": 737,
+        "h": 717
+      },
+      "type": "custom",
+      "text": "黄衣男子移到栅栏内，西装男子移到栅栏边"
+    }
+  ],
+  "note": "黄衣男子移到栅栏内，西装男子移到栅栏边",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785919689954
+}
