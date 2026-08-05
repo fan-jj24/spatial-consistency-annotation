@@ -1,0 +1,23 @@
+{
+  "line": 15985,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015985_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778010&Signature=FN6BOjBsN%2BcqizJwIgDakCpJqwE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015985_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778010&Signature=bOfiwpNR4S79mhrdJiRfHEOLZG8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -11,
+        "y": 28,
+        "w": 737,
+        "h": 1249
+      },
+      "type": "custom",
+      "text": "男人和女人整体旋转一下并移动到书桌旁，呈现出女人在画面左侧男人在右侧并共同站立状态"
+    }
+  ],
+  "note": "男人与女人的相对位置调换，两人共同远离了书桌，且男人高度发生了变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785922824400
+}
