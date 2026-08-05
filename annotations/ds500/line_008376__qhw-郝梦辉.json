@@ -16,5 +16,7 @@
     }
   ],
   "note": "整体背景发生变化\n黄衣女子和粉衣女子的朝向发生变化",
-  "bg_global": true
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785907803967
 }
