@@ -1,0 +1,22 @@
+{
+  "line": 16248,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016248_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778018&Signature=kx6r%2BIu6EcWJv4YvkgEb7wdPkTc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016248_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778018&Signature=nqt2QeWyGAC1bMmhfKQ9a5ceRLo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 365,
+        "y": 32,
+        "w": 590,
+        "h": 681
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "紫色官服男子由与棕色衣服的老头面对面变成背对老头",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785910740341
+}
