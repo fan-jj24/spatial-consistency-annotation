@@ -1,0 +1,27 @@
+{
+  "line": 15648,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015648_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778001&Signature=WwX1X9KOCbGcgNN4rD6qiViehmA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015648_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778001&Signature=I2IvR%2BibwkGPiQOOA9Hdg4UTbZE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 9,
+        "y": 0,
+        "w": 492,
+        "h": 1254
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.55,
+        -0.328,
+        -0.768
+      ]
+    }
+  ],
+  "note": "白衣女子由站在红衣女子的前方并隔着桌子的距离，变成到红衣女子的右侧边距离近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785920124032
+}
