@@ -1,0 +1,27 @@
+{
+  "line": 15736,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015736_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778004&Signature=PeDVx84AuNW9ig%2BUfzHDpdzCBAg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015736_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778004&Signature=ru0iUlMHilcwxV83UNpHvPZYfKc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 378,
+        "y": 343,
+        "w": 159,
+        "h": 499
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.636,
+        -0.089,
+        -0.767
+      ]
+    }
+  ],
+  "note": "男子由在女子对面变成在女子的右后方并远离女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785917140891
+}
