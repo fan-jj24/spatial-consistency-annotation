@@ -1,0 +1,22 @@
+{
+  "line": 16013,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016013_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778011&Signature=1jU13FgOPewf1rD%2BF91%2FZ8h1wFM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016013_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778011&Signature=phv5Q3uVdbhtc0gBlqcxMynGVtY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 45,
+        "y": 115,
+        "w": 499,
+        "h": 1162
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "紫色裙子的女生变成了红色裙子的女生",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785897627093
+}
