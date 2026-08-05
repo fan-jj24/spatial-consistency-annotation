@@ -1,0 +1,22 @@
+{
+  "line": 15778,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015778_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778005&Signature=PrvfqxWCULBpYsMBoo5stJV5GSo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015778_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778005&Signature=%2Bvl5S%2Bgtq553Xk51AWFVd7OmWWU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 291,
+        "y": 253,
+        "w": 438,
+        "h": 1027
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "女子左侧多出一个西装男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785901709380
+}
