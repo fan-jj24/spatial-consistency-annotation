@@ -1,0 +1,12 @@
+{
+  "line": 16270,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016270_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778019&Signature=H7bzzA8Bue9nnynqyjmsFvWLXas%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016270_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778019&Signature=lX0y0GZfquWFldqRsGCbF13i5Ok%3D"
+  ],
+  "objects": [],
+  "note": "两张图的整体背景环境不同，A图为整洁干净的庭院，B图为破旧冷清的房屋建筑",
+  "bg_global": true,
+  "bg_ambiguous": false,
+  "ts": 1785914370603
+}
