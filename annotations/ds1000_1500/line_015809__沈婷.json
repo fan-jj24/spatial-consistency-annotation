@@ -1,0 +1,23 @@
+{
+  "line": 15809,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015809_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778006&Signature=%2F7WUEkgqzpd4CjtM18iY%2BvY2fq0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015809_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778006&Signature=chqPyDNcNreBcxrhpvNOeq7en9A%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 468,
+        "y": 246,
+        "w": 246,
+        "h": 1032
+      },
+      "type": "custom",
+      "text": "2人相对位置发生变化"
+    }
+  ],
+  "note": "黄发男子和女子相对位置要更换，黄发男子在西装男子和女子中间",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785901709379
+}
