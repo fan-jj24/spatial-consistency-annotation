@@ -1,0 +1,27 @@
+{
+  "line": 15195,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015195_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777994&Signature=EZGUkGcMDYLTws60dKS6YrUVRpc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015195_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777994&Signature=JySeR85abguKeihAz%2F3EmDY9xPw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 7,
+        "y": 215,
+        "w": 704,
+        "h": 1060
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.398,
+        -0.04,
+        -0.917
+      ]
+    }
+  ],
+  "note": "男士由在远离铁桶的左前方变成在靠近铁桶的左侧处",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785920124032
+}
