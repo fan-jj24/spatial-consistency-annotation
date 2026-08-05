@@ -1,0 +1,22 @@
+{
+  "line": 15272,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015272_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777995&Signature=GBDOmkdeNFVIt%2FlL2IUQQ9w%2FKcA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015272_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777995&Signature=YBU0Dmu%2FC5RkejitUroZKTNY3D4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 158,
+        "y": 151,
+        "w": 105,
+        "h": 407
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "棉衣男子身后多了一个帽子男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785919944199
+}
