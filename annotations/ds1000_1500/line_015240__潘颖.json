@@ -1,0 +1,22 @@
+{
+  "line": 15240,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015240_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777994&Signature=rPQLGR1suV958JKZOSnG0%2B73%2F7k%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015240_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777995&Signature=W4sUCgBLAh01UXW1Z9wlorS8qiY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 40,
+        "y": 189,
+        "w": 358,
+        "h": 1091
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "红衣女子替换为黑衣女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785900570915
+}
