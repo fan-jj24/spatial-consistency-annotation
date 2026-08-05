@@ -1,0 +1,22 @@
+{
+  "line": 16389,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016389_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778023&Signature=SEPku1xjVmPMSsg4lHcqdQTK1Ng%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016389_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778023&Signature=W0DTe8cwDO2%2BQbeYJURlT3Ms3HI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -4,
+        "y": 108,
+        "w": 210,
+        "h": 1172
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "红衣男子替换为蓝衣男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785923626162
+}
