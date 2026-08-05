@@ -1,0 +1,27 @@
+{
+  "line": 15775,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015775_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778005&Signature=btb4d5y%2Bp%2BkfOwsk%2FUAn1AEagBU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015775_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778005&Signature=ewtoOXVD7Vi%2F%2BU%2BJafeTyRC3n%2Fo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 471,
+        "y": 474,
+        "w": 210,
+        "h": 668
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.566,
+        0.218,
+        0.795
+      ]
+    }
+  ],
+  "note": "灰西装男子与黄衣男子距离变远",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785923402225
+}
