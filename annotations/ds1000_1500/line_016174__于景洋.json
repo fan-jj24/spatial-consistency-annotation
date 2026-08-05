@@ -1,0 +1,12 @@
+{
+  "line": 16174,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016174_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778016&Signature=LvYDxe9htI1TD3MqoGy2YXBYUEE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016174_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778016&Signature=OP0Ce%2BdhBjeSCdJMOmD2pKDv76A%3D"
+  ],
+  "objects": [],
+  "note": "两张图的整体背景环境不同，A图站立的室内，B图坐在沙发上，没有相似可参照的道具，场景不同",
+  "bg_global": true,
+  "bg_ambiguous": false,
+  "ts": 1785922824400
+}
