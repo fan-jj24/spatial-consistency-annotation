@@ -1,0 +1,22 @@
+{
+  "line": 15696,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015696_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778002&Signature=2pX493%2FNP5NiyYFt73BoNTF3reA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015696_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778002&Signature=svxWR5ija6xTbseKjKqfKUujO18%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -4,
+        "y": 18,
+        "w": 392,
+        "h": 1260
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "女子替换成男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785897439369
+}
