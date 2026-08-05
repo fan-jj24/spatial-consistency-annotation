@@ -1,0 +1,23 @@
+{
+  "line": 14799,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014799_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758013&Signature=6S6NOvPhoif0OTdu36o8uS7DTxw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014799_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758013&Signature=0mu2o4xatgCj6r1T2TN4jZEU69I%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 458,
+        "y": 82,
+        "w": 248,
+        "h": 1180
+      },
+      "type": "custom",
+      "text": "黑衣女需要向后退并旋转"
+    }
+  ],
+  "note": "整体背景由室内变到室外\n黑衣女的位置和朝向发生变化",
+  "bg_global": true,
+  "bg_ambiguous": false,
+  "ts": 1785922345593
+}
