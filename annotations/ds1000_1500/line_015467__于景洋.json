@@ -1,0 +1,32 @@
+{
+  "line": 15467,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015467_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777997&Signature=4Ej71V7a3Y30g2%2FVAAN7gv1j%2FL4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015467_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777998&Signature=lIbSR9tBWcwe4VxDfeawAr5SMa0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 240,
+        "y": 323,
+        "w": 146,
+        "h": 440
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 319,
+          "y": 484
+        },
+        {
+          "x": 283,
+          "y": 632
+        }
+      ]
+    }
+  ],
+  "note": "黄色头发男子对面的白色短袖男子多余",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785917140891
+}
