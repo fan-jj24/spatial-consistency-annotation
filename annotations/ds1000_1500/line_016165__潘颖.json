@@ -1,0 +1,23 @@
+{
+  "line": 16165,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016165_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778016&Signature=oEis5HCuJycbChQzXpqEV90B2ns%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016165_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778016&Signature=Awe%2BWltH694BL9HwWBmCwHGDMQo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 50,
+        "y": 297,
+        "w": 655,
+        "h": 988
+      },
+      "type": "custom",
+      "text": "胡子男和沙发相对位置变了，蓝衣男子消失了"
+    }
+  ],
+  "note": "胡子男和沙发相对位置变了，蓝衣男子消失了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785919689954
+}
