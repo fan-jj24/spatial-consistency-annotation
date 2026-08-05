@@ -7,16 +7,16 @@
   "objects": [
     {
       "box": {
-        "x": 11,
-        "y": 182,
-        "w": 191,
-        "h": 502
+        "x": 226,
+        "y": 175,
+        "w": 384,
+        "h": 988
       },
-      "type": "add"
+      "type": "rotate"
     }
   ],
-  "note": "少了一位灰衣男",
+  "note": "黄衣女朝向发生变化",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785812444508
+  "ts": 1785924580174
 }
