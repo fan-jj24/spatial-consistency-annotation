@@ -4,9 +4,50 @@
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013599_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757978&Signature=JcUD58Ir06xkuUU%2FE%2BFzWoe1N0s%3D",
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013599_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757979&Signature=VY4rqAz2riQnkpKm9F7ygomid5g%3D"
   ],
-  "objects": [],
-  "note": "整个背景的床、墙壁、灯光、浴室和衣帽间都不一致",
-  "bg_global": true,
+  "objects": [
+    {
+      "box": {
+        "x": 0,
+        "y": 259,
+        "w": 166,
+        "h": 151
+      },
+      "type": "bg_local"
+    },
+    {
+      "box": {
+        "x": 338,
+        "y": 638,
+        "w": 95,
+        "h": 256
+      },
+      "type": "bg_local"
+    },
+    {
+      "box": {
+        "x": 497,
+        "y": 423,
+        "w": 184,
+        "h": 824
+      },
+      "type": "move",
+      "target": {
+        "x": 297,
+        "y": 822
+      }
+    },
+    {
+      "box": {
+        "x": 90,
+        "y": 428,
+        "w": 177,
+        "h": 791
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "黑衣女朝向发生变化，白衣女位置发生变化；背景的床、衣帽间不一致",
+  "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785811222699
+  "ts": 1785923411711
 }
