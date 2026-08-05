@@ -1,0 +1,31 @@
+{
+  "line": 14986,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014986_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758019&Signature=Sl1Dg%2BS7IpVijz8b26utBJvRWwM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014986_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758019&Signature=WU145e9bA5HVtz4OySh4MEhY3Ek%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 286,
+        "y": 307,
+        "w": 312,
+        "h": 212
+      },
+      "type": "bg_local"
+    },
+    {
+      "box": {
+        "x": 493,
+        "y": 604,
+        "w": 210,
+        "h": 612
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "B图老奶奶替换成A图老爷爷，局部背景变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785893346920
+}
