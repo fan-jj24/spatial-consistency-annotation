@@ -1,0 +1,23 @@
+{
+  "line": 16387,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016387_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778023&Signature=5USnupY%2FLp%2B7h413FMePxHg3VJ4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016387_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778023&Signature=yo%2BCjfTQtvnSJizCFSst1R4naag%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 158,
+        "y": 72,
+        "w": 561,
+        "h": 986
+      },
+      "type": "custom",
+      "text": "删除黑色上衣的壮汉，蓝色背心的年轻男子移到倒地老头的右后方"
+    }
+  ],
+  "note": "人物群体相对位置变化，黑色上衣的壮汉多余，蓝色背心的年轻男子由蹲在倒地老头的背后变成在老头的右前方与其面对面",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785917140891
+}
