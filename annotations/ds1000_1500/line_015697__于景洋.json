@@ -1,0 +1,22 @@
+{
+  "line": 15697,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015697_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778002&Signature=xt%2Bj957QUXJzJpdHkmK27oM7oyk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015697_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778002&Signature=IsZIos9wXs77YIu%2BJf7ioGHQpFY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -1,
+        "y": 333,
+        "w": 215,
+        "h": 387
+      },
+      "type": "add"
+    }
+  ],
+  "note": "女主右后方的人物缺失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785924059319
+}
