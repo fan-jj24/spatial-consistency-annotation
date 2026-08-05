@@ -4,9 +4,19 @@
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014913_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758017&Signature=Pb7LfU35BafThnyRT2%2FcgOGrOUY%3D",
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014913_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758017&Signature=s3XvrhDDT0BoDFvwMHTeGKj6rXk%3D"
   ],
-  "objects": [],
-  "note": "整体背景发生变化",
-  "bg_global": true,
+  "objects": [
+    {
+      "box": {
+        "x": 5,
+        "y": 397,
+        "w": 550,
+        "h": 873
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "白衣女的朝向发生变化",
+  "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785822081372
+  "ts": 1785929749234
 }
