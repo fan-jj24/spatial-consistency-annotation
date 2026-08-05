@@ -1,0 +1,40 @@
+{
+  "line": 13940,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013940_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757987&Signature=bqWrctJbnntYOuPco9avbMudaAs%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013940_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757987&Signature=CxGAk47b4wvq3uTull%2FdtBrWHAw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 242,
+        "y": 371,
+        "w": 161,
+        "h": 228
+      },
+      "type": "add"
+    },
+    {
+      "box": {
+        "x": 675,
+        "y": 364,
+        "w": 41,
+        "h": 358
+      },
+      "type": "add"
+    },
+    {
+      "box": {
+        "x": 9,
+        "y": 369,
+        "w": 218,
+        "h": 343
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "少了一个青绿衣女子和一个红衣女子，腰系红绳的青衣女子被替换",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785893346920
+}
