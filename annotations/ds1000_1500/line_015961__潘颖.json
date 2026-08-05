@@ -1,0 +1,23 @@
+{
+  "line": 15961,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015961_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778010&Signature=5ma7MeeUyehp1PUcBQZ3ivchIZA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015961_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778010&Signature=LsB3Cl9RAF2w2yLxnBar5UF7wxM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -6,
+        "y": 292,
+        "w": 735,
+        "h": 858
+      },
+      "type": "custom",
+      "text": "相对高度变低了，背景的池塘消失了，多出了桌椅和假山"
+    }
+  ],
+  "note": "男子和女子的相对高度变低了，背景的池塘消失了，多出了桌椅和假山",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785913818219
+}
