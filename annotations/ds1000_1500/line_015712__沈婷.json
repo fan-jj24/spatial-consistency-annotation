@@ -7,6 +7,6 @@
   "objects": [],
   "note": "图A和图B人物相对位置、方向和背景基本一致",
   "bg_global": false,
-  "bg_ambiguous": false,
-  "ts": 1785901709380
+  "bg_ambiguous": true,
+  "ts": 1785906895383
 }
