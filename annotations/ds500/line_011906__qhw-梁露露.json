@@ -23,8 +23,19 @@
           "y": 645
         }
       ]
+    },
+    {
+      "box": {
+        "x": 0,
+        "y": 102,
+        "w": 315,
+        "h": 330
+      },
+      "type": "bg_local"
     }
   ],
-  "note": "画面整体背景不一致\n多出两名女子",
-  "bg_global": true
+  "note": "局部背景发生变化\n多出两名女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785900325092
 }
