@@ -7,14 +7,16 @@
   "objects": [
     {
       "box": {
-        "x": 338,
-        "y": 779,
-        "w": 445,
-        "h": 302
+        "x": 432,
+        "y": 806,
+        "w": 294,
+        "h": 251
       },
-      "type": "replace"
+      "type": "bg_local"
     }
   ],
-  "note": "整体背景发生变化\n石桌被鼎替换",
-  "bg_global": true
+  "note": "局部背景的石桌被鼎替换",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785910296408
 }
