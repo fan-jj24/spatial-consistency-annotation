@@ -12,11 +12,16 @@
         "w": 525,
         "h": 1073
       },
-      "type": "rotate"
+      "type": "move3d",
+      "dir3d": [
+        1,
+        -0.006,
+        0.019
+      ]
     }
   ],
-  "note": "红衣女子朝向变化",
+  "note": "红衣女子位置朝向变化",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785893346920
+  "ts": 1785902311396
 }
