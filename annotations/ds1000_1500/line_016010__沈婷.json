@@ -1,0 +1,26 @@
+{
+  "line": 16010,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016010_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778012&Signature=8mTw5FJJXLgARo%2B%2Fa6EIrJh1vp0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016010_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778011&Signature=rJD3Dcg5hycaXYDiUf1zGIqKRes%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -3,
+        "y": 256,
+        "w": 150,
+        "h": 996
+      },
+      "type": "move",
+      "target": {
+        "x": 345,
+        "y": 747
+      }
+    }
+  ],
+  "note": "灰短袖男子位置发生变化，应在女子和白短袖男子中间位置",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785919944199
+}
