@@ -4,9 +4,19 @@
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014358_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758000&Signature=X2fnJhZTyOTt9o6SSq71xeY0sUA%3D",
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014358_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758000&Signature=OUkK5AknE%2F%2B3QrYNzmoQHCSY968%3D"
   ],
-  "objects": [],
-  "note": "面对面觉得无变化",
+  "objects": [
+    {
+      "box": {
+        "x": 654,
+        "y": 407,
+        "w": 59,
+        "h": 691
+      },
+      "type": "add"
+    }
+  ],
+  "note": "少了一个粉衣女子",
   "bg_global": false,
-  "bg_ambiguous": true,
-  "ts": 1785830940271
+  "bg_ambiguous": false,
+  "ts": 1785921846991
 }
