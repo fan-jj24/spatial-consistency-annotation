@@ -1,0 +1,27 @@
+{
+  "line": 16233,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016233_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778017&Signature=RXM40Nrhxu1euiHESFG1EY1L1W4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016233_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778017&Signature=QhCmkNZx%2FVgNVElYnJhSmlLt7VA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 4,
+        "y": 428,
+        "w": 197,
+        "h": 840
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.76,
+        -0.08,
+        -0.645
+      ]
+    }
+  ],
+  "note": "肤色上衣的女生由站在蓝色上衣女生的右后侧变化站到了男生的右后侧",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785897627093
+}
