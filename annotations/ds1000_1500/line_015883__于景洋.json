@@ -1,0 +1,26 @@
+{
+  "line": 15883,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015883_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778007&Signature=GHqPUsFWcqfW6Shb1uXnbPvOfXg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015883_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778007&Signature=9YYuSSzF53GGykImd2a55NvOPdk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 380,
+        "y": 343,
+        "w": 187,
+        "h": 492
+      },
+      "type": "move",
+      "target": {
+        "x": 524,
+        "y": 863
+      }
+    }
+  ],
+  "note": "丫鬟由站在黑衣女子右后方变化到了黑衣女子的右前方",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785907600823
+}
