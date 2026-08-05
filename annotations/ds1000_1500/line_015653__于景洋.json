@@ -1,0 +1,12 @@
+{
+  "line": 15653,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015653_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778001&Signature=xuVQG5NbjYXIiuAn5ZOxkVEHqh4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015653_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778001&Signature=36%2FgheQOKkAFIYrX9GKo2FWx%2B2s%3D"
+  ],
+  "objects": [],
+  "note": "两张图的整体背景环境不同，A图在客厅，B图在书房",
+  "bg_global": true,
+  "bg_ambiguous": false,
+  "ts": 1785900535506
+}
