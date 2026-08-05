@@ -1,0 +1,23 @@
+{
+  "line": 15948,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015948_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778009&Signature=6N16uBH2Ercd2Ikoz9iB3xHxQII%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015948_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778009&Signature=0VmsqqfzGz1C513rwY7uiQ9e46Q%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 2,
+        "y": 292,
+        "w": 719,
+        "h": 980
+      },
+      "type": "custom",
+      "text": "紫衣女子向前移动到与橙衣女子并排，三人共同往屋子里前移，距离门口远一些"
+    }
+  ],
+  "note": "紫衣女子离粉衣女子远了，三人距离门口近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785922802503
+}
