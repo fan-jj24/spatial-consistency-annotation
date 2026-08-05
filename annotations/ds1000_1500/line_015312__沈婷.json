@@ -1,0 +1,26 @@
+{
+  "line": 15312,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015312_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777995&Signature=v%2B382ELSUIR%2FMrReAJ2xXx7rkGk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015312_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777995&Signature=IblYg9CwonQi7qt3k%2BPAfcBV7QQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 284,
+        "y": 269,
+        "w": 376,
+        "h": 1004
+      },
+      "type": "move",
+      "target": {
+        "x": 143,
+        "y": 763
+      }
+    }
+  ],
+  "note": "格子衫男子位置变化，应在白背心男子右侧",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785922104258
+}
