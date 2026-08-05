@@ -1,0 +1,12 @@
+{
+  "line": 15855,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015855_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778007&Signature=YlqNs%2FAsXsClZN3mppv%2BIxVgEFA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015855_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778006&Signature=abNqmUXe%2BxIox1Se%2FURM%2B8Zp8pA%3D"
+  ],
+  "objects": [],
+  "note": "两张图的整体背景环境不同，A图在餐桌旁，B图在灶台旁",
+  "bg_global": true,
+  "bg_ambiguous": false,
+  "ts": 1785897627093
+}
