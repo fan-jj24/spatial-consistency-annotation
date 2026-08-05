@@ -7,14 +7,27 @@
   "objects": [
     {
       "box": {
-        "x": 3,
-        "y": 244,
-        "w": 707,
-        "h": 1029
+        "x": -5,
+        "y": 241,
+        "w": 397,
+        "h": 1037
       },
-      "type": "neutral"
+      "type": "custom",
+      "text": "群体人物位置需要移动"
+    },
+    {
+      "box": {
+        "x": 346,
+        "y": 389,
+        "w": 361,
+        "h": 870
+      },
+      "type": "custom",
+      "text": "粉衣女子高度需要变高并旋转"
     }
   ],
-  "note": "人物群体需要重组",
-  "bg_global": false
+  "note": "群体人物位置发生变化\n粉衣女子朝向和高度发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785900655247
 }
