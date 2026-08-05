@@ -1,0 +1,22 @@
+{
+  "line": 15640,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015640_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778001&Signature=OuoloGxjCntg0ihycRv5wxrfugg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015640_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778001&Signature=ygybUmH5ngJBKJ6chKZ19JQXX4Y%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 437,
+        "y": 392,
+        "w": 279,
+        "h": 883
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "白衣女子由站在小女孩的右侧与其侧对面变成在小女孩右侧面向相反",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785917140891
+}
