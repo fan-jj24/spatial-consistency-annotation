@@ -1,0 +1,12 @@
+{
+  "line": 16007,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016007_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778011&Signature=xyEHzp5Z%2Bn1f%2FQv4rf%2FQd0qUQCc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016007_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778011&Signature=y4Z542H9jqb03U4MkLkFX6ciueY%3D"
+  ],
+  "objects": [],
+  "note": "两图盔甲相同，但B图无人穿着此服饰，无法判断是否场景及人物站位一致",
+  "bg_global": false,
+  "bg_ambiguous": true,
+  "ts": 1785910740341
+}
