@@ -1,0 +1,12 @@
+{
+  "line": 15122,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015122_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777993&Signature=URVs8K7930ufrMaYZQVFjIGvXNQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015122_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777993&Signature=WFUAnIn4YCN53G9lrWlqzf9g31o%3D"
+  ],
+  "objects": [],
+  "note": "两张图的整体背景环境不同，A图在室外的路上，B图在室内",
+  "bg_global": true,
+  "bg_ambiguous": false,
+  "ts": 1785897627093
+}
