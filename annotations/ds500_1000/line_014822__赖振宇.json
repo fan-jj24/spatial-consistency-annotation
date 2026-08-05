@@ -1,0 +1,26 @@
+{
+  "line": 14822,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014822_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758014&Signature=N8yL1V3uAqVw5lzR7p309KoH0%2BI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014822_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758014&Signature=xjSHZs3utSEXIwNckdIx%2BLhUn4Q%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 367,
+        "y": 398,
+        "w": 294,
+        "h": 671
+      },
+      "type": "move",
+      "target": {
+        "x": 441,
+        "y": 195
+      }
+    }
+  ],
+  "note": "蓝衣未持剑男子高度变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785893662943
+}
