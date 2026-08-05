@@ -1,0 +1,23 @@
+{
+  "line": 16073,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016073_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778013&Signature=vbEDqGtcPqgJcXEicCCvRUMGjTo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016073_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778013&Signature=42lP9gQoZtbYBBE96XeGuuVm%2Bg4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 2,
+        "y": 97,
+        "w": 714,
+        "h": 1175
+      },
+      "type": "custom",
+      "text": "粉衣女子需要转向面对栏杆，其余人物多余"
+    }
+  ],
+  "note": "人物群体相对位置变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785922802503
+}
