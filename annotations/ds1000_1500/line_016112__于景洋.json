@@ -1,0 +1,26 @@
+{
+  "line": 16112,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016112_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778014&Signature=haHuEIJatsA0DKklzRXYyTgWmIM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016112_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778014&Signature=IVMLHs3oHXu8aetbrA7hbdX9rjI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 127,
+        "y": 259,
+        "w": 279,
+        "h": 940
+      },
+      "type": "move",
+      "target": {
+        "x": 68,
+        "y": 566
+      }
+    }
+  ],
+  "note": "女主由在出租车侧门处变成在车头",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785924059319
+}
