@@ -18,17 +18,10 @@
         0.586,
         0.807
       ]
-    },
-    {
-      "box": {
-        "x": 313,
-        "y": 30,
-        "w": 517,
-        "h": 759
-      },
-      "type": "neutral"
     }
   ],
-  "note": "绿西装男子位置发生变化\n紫衣女子高度发生变化",
-  "bg_global": false
+  "note": "绿西装男子位置发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785910059782
 }
