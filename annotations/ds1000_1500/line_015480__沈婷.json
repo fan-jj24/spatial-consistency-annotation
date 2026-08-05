@@ -1,0 +1,23 @@
+{
+  "line": 15480,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015480_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777998&Signature=QvHpin5WMVcDchx1LT3YIRYxMVc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015480_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777998&Signature=xK6u1y2TaKy19nVdGOGmdx%2BiU1c%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 23,
+        "y": 225,
+        "w": 694,
+        "h": 1047
+      },
+      "type": "custom",
+      "text": "角色不一致，人物相对位置和朝向变化"
+    }
+  ],
+  "note": "两个女子角色变化，2人相对位置和朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785893591270
+}
