@@ -1,0 +1,23 @@
+{
+  "line": 15771,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015771_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778005&Signature=7tXirKOBbPUFoeE9Sh48SzVARfI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015771_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778005&Signature=1rbZ9Q1EDfwjPT6gzI61MYQ75Fc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -9,
+        "y": 394,
+        "w": 730,
+        "h": 837
+      },
+      "type": "custom",
+      "text": "白天变成黑夜，床周围多出三个人"
+    }
+  ],
+  "note": "白天变成黑夜，床周围的三个人消失了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785913703315
+}
