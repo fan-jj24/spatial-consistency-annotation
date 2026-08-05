@@ -1,0 +1,23 @@
+{
+  "line": 16210,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016210_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778017&Signature=C4mBYOg1Eb6YZahcKrlUPQbJsOc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016210_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778017&Signature=h9JWYAqalPjwzd9MPWxEbHUCfbM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -6,
+        "y": 28,
+        "w": 724,
+        "h": 1247
+      },
+      "type": "custom",
+      "text": "女主对面的男主成站立状态，男主与女主齐肩，女主后面人群多余"
+    }
+  ],
+  "note": "人物群体相对位置变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785922824400
+}
