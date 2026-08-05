@@ -12,11 +12,12 @@
         "w": 665,
         "h": 1022
       },
-      "type": "custom"
+      "type": "custom",
+      "text": "人物相对位置和局部背景发生变化"
     }
   ],
   "note": "多个人物相对位置和动作变化",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785838596544
+  "ts": 1785894241655
 }
