@@ -1,0 +1,36 @@
+{
+  "line": 15651,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015651_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778001&Signature=EtMlqY1E0YWckMfnPvYalMKf380%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015651_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778001&Signature=9VYtc%2B3HJKsN1yHB6RDhV8RgFPU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 281,
+        "y": 100,
+        "w": 420,
+        "h": 1175
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.728,
+        -0.003,
+        0.686
+      ]
+    },
+    {
+      "box": {
+        "x": 2,
+        "y": 358,
+        "w": 110,
+        "h": 914
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "粉衣女子身后多出一个婚纱女子，男子与粉衣女子距离变近",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785922104258
+}
