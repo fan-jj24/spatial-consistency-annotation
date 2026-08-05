@@ -1,0 +1,27 @@
+{
+  "line": 16366,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016366_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778023&Signature=Vy73mi2HSzlx0OscpLqzcZ0Zvaw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016366_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778023&Signature=vuYlUslxp%2BTmsmJ2KFdMP2S3my0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 56,
+        "y": 625,
+        "w": 325,
+        "h": 653
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.111,
+        0.286,
+        0.952
+      ]
+    }
+  ],
+  "note": "年轻女子与老年女子距离变远",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785922276946
+}
