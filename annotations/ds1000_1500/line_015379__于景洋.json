@@ -1,0 +1,23 @@
+{
+  "line": 15379,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015379_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777997&Signature=yafOFjOfPzTkzeXAKo9c0CqS7A0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015379_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777997&Signature=ZwWE7Rc7KDdbwwNRvLM9Qacx67Y%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 265,
+        "y": 458,
+        "w": 456,
+        "h": 422
+      },
+      "type": "custom",
+      "text": "小黑熊向大黑熊靠近，绿色衣服的年轻男子向后移到两只黑熊的后面"
+    }
+  ],
+  "note": "人物群体相对位置变化，小黑熊离大黑熊的距离远了，绿色衣服的年轻男子由站在两只黑熊的后面变成与两只黑熊并排",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785914370603
+}
