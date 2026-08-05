@@ -4,29 +4,9 @@
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014738_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758010&Signature=9lltNUU%2Bb4pAdnc3h4LksmSdTos%3D",
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014738_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758010&Signature=Fyd1YRwmLUsZfbw0hDhQy5IgsWw%3D"
   ],
-  "objects": [
-    {
-      "box": {
-        "x": -27,
-        "y": 768,
-        "w": 143,
-        "h": 320
-      },
-      "type": "delete",
-      "line": [
-        {
-          "x": 27,
-          "y": 865
-        },
-        {
-          "x": 86,
-          "y": 1016
-        }
-      ]
-    }
-  ],
-  "note": "多了一个剑尖",
+  "objects": [],
+  "note": "",
   "bg_global": false,
-  "bg_ambiguous": false,
-  "ts": 1785810606733
+  "bg_ambiguous": true,
+  "ts": 1785928756225
 }
