@@ -1,0 +1,31 @@
+{
+  "line": 15631,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015631_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778001&Signature=wjRd9yIrQTjK0DolCkoLwvjT7JA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015631_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778000&Signature=HUd4jGrpSQa6Np7XuhwoqTkDuB8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -1,
+        "y": 3,
+        "w": 714,
+        "h": 573
+      },
+      "type": "bg_local"
+    },
+    {
+      "box": {
+        "x": 488,
+        "y": 604,
+        "w": 228,
+        "h": 673
+      },
+      "type": "add"
+    }
+  ],
+  "note": "白衣男子背后的大门和茅草堆变成了绿植，白衣男子左前方的将军缺失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785914370603
+}
