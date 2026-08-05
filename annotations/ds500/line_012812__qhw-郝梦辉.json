@@ -23,8 +23,19 @@
           "y": 888
         }
       ]
+    },
+    {
+      "box": {
+        "x": -44,
+        "y": -18,
+        "w": 809,
+        "h": 179
+      },
+      "type": "bg_local"
     }
   ],
-  "note": "多了一个白衣女子\n整体背景发生变化",
-  "bg_global": true
+  "note": "多了一个白衣女子\n局部背景的帘子被屋檐替换",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785912977110
 }
