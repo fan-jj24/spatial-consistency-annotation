@@ -1,0 +1,31 @@
+{
+  "line": 14884,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014884_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758016&Signature=A0n8Qm4YDYqalEa9kwh6jQdFc%2FM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014884_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758016&Signature=PKdRPe6RJ81hWVK3tO8UWD4REDs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 370,
+        "y": 27,
+        "w": 317,
+        "h": 561
+      },
+      "type": "bg_local"
+    },
+    {
+      "box": {
+        "x": 11,
+        "y": 224,
+        "w": 333,
+        "h": 634
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "白衣女子和黑衣无领带男子替换了黑衣女子和白衣女子，局部背景变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785893036384
+}
