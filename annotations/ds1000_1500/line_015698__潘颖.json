@@ -1,0 +1,27 @@
+{
+  "line": 15698,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015698_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778002&Signature=zzi9lqWbkse%2F0bVPGzbaPMjaoLI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015698_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778002&Signature=ZyI68ue0W3Rdsb51MCL%2BjiL6DKM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -19,
+        "y": 59,
+        "w": 282,
+        "h": 1211
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.849,
+        0.036,
+        0.527
+      ]
+    }
+  ],
+  "note": "两女子的距离变远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785922164301
+}
