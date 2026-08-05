@@ -1,0 +1,32 @@
+{
+  "line": 15829,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015829_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778006&Signature=Kg9Kqdgmwm6yOIWhNCm9fuMLEsU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015829_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778006&Signature=4YoLhQjUZOj8Uh4dD%2FJaV8qM4Gs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 516,
+        "y": 0,
+        "w": 197,
+        "h": 1280
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 639,
+          "y": 274
+        },
+        {
+          "x": 639,
+          "y": 614
+        }
+      ]
+    }
+  ],
+  "note": "女子左侧的男子多余",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785920124032
+}
