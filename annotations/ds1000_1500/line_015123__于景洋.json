@@ -1,0 +1,27 @@
+{
+  "line": 15123,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015123_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777993&Signature=9PDzYmHFVxRZNIwzGBLdvuVAqhM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015123_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777993&Signature=sGY8xVLGhw2AwmHWzPS%2Fv4zL%2FLM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 514,
+        "y": 143,
+        "w": 200,
+        "h": 1137
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.482,
+        0.081,
+        0.873
+      ]
+    }
+  ],
+  "note": "棕红色衬衫男士左侧的壮汉由站在其左后方变成了左前方",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785910740341
+}
