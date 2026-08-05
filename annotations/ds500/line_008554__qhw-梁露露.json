@@ -33,6 +33,8 @@
       "type": "add"
     }
   ],
-  "note": "整体背景发生变化\n少一名黄衣男子和一只黑豹\n粉衣女子朝向发生变化",
-  "bg_global": true
+  "note": "少一名黄衣男子和一只黑豹\n粉衣女子朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785895256237
 }
