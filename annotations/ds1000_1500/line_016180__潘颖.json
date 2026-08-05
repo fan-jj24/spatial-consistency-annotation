@@ -1,0 +1,22 @@
+{
+  "line": 16180,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016180_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778016&Signature=7QXU4mvc5huiPmAu0cA9YwGh1%2FY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016180_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778016&Signature=xGQQ1N7eL6m5ljfflge6GMoEAV8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 570,
+        "y": 443,
+        "w": 159,
+        "h": 778
+      },
+      "type": "add"
+    }
+  ],
+  "note": "女子左手边的人消失了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785897439369
+}
