@@ -12,12 +12,12 @@
         "w": 195,
         "h": 584
       },
-      "type": "move",
-      "target": {
-        "x": 465,
-        "y": 509
-      }
+      "type": "custom",
+      "text": "红衣女子需要向左侧移动并旋转"
     }
   ],
-  "note": "红衣女子位置发生了变化"
+  "note": "红衣女子位置发生变化，朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785901988560
 }
