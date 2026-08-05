@@ -1,0 +1,22 @@
+{
+  "line": 15178,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015178_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777994&Signature=S6b9LIYKxwhEQftqbPIC%2Fou7bZw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015178_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777995&Signature=DlBSvG8NoRDER%2ByuESb2ikH8%2Fe0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 7,
+        "y": 184,
+        "w": 394,
+        "h": 1091
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "棕色马甲男士对面由戴帽子的保安变成不戴帽子的男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785914370603
+}
