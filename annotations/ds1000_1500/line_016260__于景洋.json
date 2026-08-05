@@ -1,0 +1,27 @@
+{
+  "line": 16260,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016260_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778019&Signature=UCVO1JvA2Eu5U%2FFTxiA2q6z8%2Ba4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016260_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778018&Signature=i3fhYb2r5wHt1Z2WUBDNsP12Llg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -9,
+        "y": 141,
+        "w": 686,
+        "h": 1137
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.676,
+        0.268,
+        0.686
+      ]
+    }
+  ],
+  "note": "女子和老头距离房屋前的台阶和柱子远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785920124032
+}
