@@ -1,0 +1,23 @@
+{
+  "line": 15898,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015898_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778008&Signature=EtCiaGbJh%2FDG0LrVK0WV%2F%2Bx4ngE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015898_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778008&Signature=Vk3fa3ncQo9gGMJTV99b%2Fu0aeHo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -1,
+        "y": 128,
+        "w": 712,
+        "h": 1147
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和高度变化，需要重排"
+    }
+  ],
+  "note": "西装女子、白衣男子、皮衣男子、针织衫女子等多人相对位置和方向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785919944199
+}
