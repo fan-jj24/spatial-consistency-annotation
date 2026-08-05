@@ -1,0 +1,26 @@
+{
+  "line": 15820,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015820_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778006&Signature=AQ8Xpl84yrQmQsc58z2K3DodT0s%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015820_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778006&Signature=dGFF9YJDE1YbDk6T9YYeiVazZOw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 96,
+        "y": 18,
+        "w": 361,
+        "h": 945
+      },
+      "type": "move",
+      "target": {
+        "x": 496,
+        "y": 366
+      }
+    }
+  ],
+  "note": "卡其色大衣女士离破旧衣服女士的距离远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785910740341
+}
