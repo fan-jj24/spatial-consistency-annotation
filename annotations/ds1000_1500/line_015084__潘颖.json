@@ -1,0 +1,23 @@
+{
+  "line": 15084,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015084_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777993&Signature=CFeKlGOSCmKt2qzIAGUMKfC5HTM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015084_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777993&Signature=Rvfv%2BxSKkR6TIACoe82dtqFoWEo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 227,
+        "y": 218,
+        "w": 479,
+        "h": 696
+      },
+      "type": "custom",
+      "text": "女主的相对位置变了，相对高度变低了"
+    }
+  ],
+  "note": "女主距离货架远了，相对高度变了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785916223407
+}
