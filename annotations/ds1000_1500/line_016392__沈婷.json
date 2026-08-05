@@ -1,0 +1,31 @@
+{
+  "line": 16392,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016392_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778023&Signature=gJBaPI7e%2FjNsXH%2F0rqonLWRVWu8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016392_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778023&Signature=khy6qzg5fuj28eqKoKB5OQK1PSg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 286,
+        "y": 701,
+        "w": 82,
+        "h": 210
+      },
+      "type": "rotate"
+    },
+    {
+      "box": {
+        "x": 202,
+        "y": 732,
+        "w": 77,
+        "h": 156
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "蓝衣服男子方向变化，灰衣服老年人替换为图A的灰衣男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785919944199
+}
