@@ -1,0 +1,22 @@
+{
+  "line": 15431,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015431_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777997&Signature=C5IExt%2BClLqhXawlYF%2Fd90nu1t0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015431_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777997&Signature=sOo9y0nGJmE9SEH8VhEEYfkI0BQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 185,
+        "y": 266,
+        "w": 523,
+        "h": 350
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "马车由框架变为带顶棚，由光板变成带座位",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785913818219
+}
