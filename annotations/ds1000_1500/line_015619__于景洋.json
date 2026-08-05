@@ -1,0 +1,27 @@
+{
+  "line": 15619,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015619_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778001&Signature=Rif1InrSOQZ%2BXL1h0TxawjJtL1c%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015619_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778000&Signature=X2Khr2fwlNMrd5STcgWQGLHN2pA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -4,
+        "y": 225,
+        "w": 655,
+        "h": 1050
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.889,
+        0.086,
+        0.45
+      ]
+    }
+  ],
+  "note": "男女主由靠近沙发坐着变成远离沙发并隔着茶几",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785922824400
+}
