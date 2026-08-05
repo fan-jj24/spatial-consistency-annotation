@@ -1,0 +1,22 @@
+{
+  "line": 15711,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015711_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778003&Signature=ElpfT2qWBuULdTqQWP6C840iZ8w%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015711_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778003&Signature=cK31GVPbGPf13RFcUZUjCEeA5wU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 190,
+        "y": 4,
+        "w": 812,
+        "h": 715
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "女子由侧身对后厨变为背对后厨",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785901709380
+}
