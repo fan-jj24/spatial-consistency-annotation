@@ -1,0 +1,23 @@
+{
+  "line": 15170,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015170_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777993&Signature=oWq09r72O45zFnk0cp7RS3heaqg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015170_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777993&Signature=%2FnWIXSF9HKvBlZu2NxNFWZjaT5g%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 43,
+        "y": 397,
+        "w": 463,
+        "h": 507
+      },
+      "type": "custom",
+      "text": "多个人物相对位置变化，需要重排"
+    }
+  ],
+  "note": "老年男子和绿衣男子位置发生变化，老年女子变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785916582687
+}
