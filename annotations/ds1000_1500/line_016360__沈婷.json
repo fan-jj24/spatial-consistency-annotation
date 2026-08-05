@@ -1,0 +1,22 @@
+{
+  "line": 16360,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016360_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778023&Signature=AEf2p5Vui3oi9Tdv7hPS9Jv2tgk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016360_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778022&Signature=y%2FK%2Fx%2F%2FvwFyr%2FqOwbCx5c0ZuqHA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1045,
+        "y": 61,
+        "w": 217,
+        "h": 664
+      },
+      "type": "add"
+    }
+  ],
+  "note": "黑衣男子左侧的灰衣男子消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785922276946
+}
