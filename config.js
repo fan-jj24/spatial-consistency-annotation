@@ -41,6 +41,8 @@ window.ANNOTATE_CONFIG = {
       visibleTo: ["a66afe3a6c09a67abcb833de04fde0a3e0635bb131dc51f032b9631f8c0cc6a9"] },
     { id: "ds1000_1500", name: "500条 ——0805", file: "samples_1000_1500.json",
       visibleTo: ["d21a8e1324b281f343e56e2b61d203c38b3bd445c55642ba3012fc8f574c183d"] },
+    { id: "ds1500_2000", name: "1500条 ——0806", file: "samples_1500_2000.json",
+      visibleTo: ["a66afe3a6c09a67abcb833de04fde0a3e0635bb131dc51f032b9631f8c0cc6a9"] },
     // 哈希对照：
     //   a66afe3a6c09a67abcb833de04fde0a3e0635bb131dc51f032b9631f8c0cc6a9  <- PAT ghp_zTGa...（标注员A）
     //   d21a8e1324b281f343e56e2b61d203c38b3bd445c55642ba3012fc8f574c183d <- PAT ghp_jp3M...（标注员B）
