@@ -1,0 +1,23 @@
+{
+  "line": 15319,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015319_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777996&Signature=CWQGzNXr7udOrxBwONXz%2FWxt%2FIM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015319_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785777996&Signature=dmBD3043sIRMwarnsGbkZ8qvrlM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 247,
+        "y": 225,
+        "w": 410,
+        "h": 824
+      },
+      "type": "custom",
+      "text": "男子旋转到右侧对着柜台，女子移到男子正后方并右侧对着柜台"
+    }
+  ],
+  "note": "男子和女子的相对位置变化，两人由相近的前后站位及同时右侧对着柜台，变成男子面对柜台和女子，同时女子远离了男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785917140891
+}
