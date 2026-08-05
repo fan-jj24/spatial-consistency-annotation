@@ -1,0 +1,32 @@
+{
+  "line": 14352,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014352_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757999&Signature=LZbuECDOVx69Lr8VjJ%2BSsU%2BWMSw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014352_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757999&Signature=lOb%2F4WxgTkfqOvvDDhQ6X7hmL%2Bc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 436,
+        "y": 674,
+        "w": 246,
+        "h": 563
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 549,
+          "y": 897
+        },
+        {
+          "x": 511,
+          "y": 1135
+        }
+      ]
+    }
+  ],
+  "note": "多了一个灰衣双丸子头发小孩",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785893662943
+}
