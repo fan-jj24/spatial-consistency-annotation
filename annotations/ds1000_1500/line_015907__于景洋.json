@@ -1,0 +1,27 @@
+{
+  "line": 15907,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015907_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778008&Signature=5vDnlqZLr169Pl%2BeN0EbQJlgfuk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015907_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778008&Signature=7nHflqo9Q4imW98GFntr65glEwM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 267,
+        "y": 4,
+        "w": 857,
+        "h": 711
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.735,
+        0.211,
+        0.645
+      ]
+    }
+  ],
+  "note": "女子和男子由在裁缝铺店内变到裁缝铺店门口外",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785917140891
+}
