@@ -4,9 +4,20 @@
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014786_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758012&Signature=DJwtAtCOFg%2FkFoSJUKhUv%2FT%2FKRs%3D",
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014786_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785758012&Signature=WFtcNy4pQjmUeEMDbQM4bqwsFHw%3D"
   ],
-  "objects": [],
-  "note": "背景两层楼房和挖掘机的朝向位置都不一致",
+  "objects": [
+    {
+      "box": {
+        "x": 17,
+        "y": 388,
+        "w": 717,
+        "h": 503
+      },
+      "type": "custom",
+      "text": "黑衣西装男和后方白衣人物群体需要删除，灰衣西装男需要向前并旋转，灰衣西装男旁增加黑衣男，左右两边人群需要替换"
+    }
+  ],
+  "note": "人物群体需要重组",
   "bg_global": false,
-  "bg_ambiguous": true,
-  "ts": 1785824868634
+  "bg_ambiguous": false,
+  "ts": 1785927611012
 }
