@@ -12,11 +12,12 @@
         "w": 678,
         "h": 1188
       },
-      "type": "rotate"
+      "type": "custom",
+      "text": "绿衣男的高度需要变高，向后退并旋转"
     }
   ],
   "note": "绿衣男子的朝向、位置和高度发生变化",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785814750393
+  "ts": 1785928187831
 }
