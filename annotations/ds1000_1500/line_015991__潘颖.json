@@ -1,0 +1,22 @@
+{
+  "line": 15991,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015991_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778011&Signature=AZ2%2B%2B%2FTPHplgtVS5Zldn714ikLk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_015991_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785778010&Signature=nT2Qfd1yo4czVYFPrkBt0Ms9HqM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 55,
+        "y": 1,
+        "w": 769,
+        "h": 719
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "多出了一个人",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785897439369
+}
