@@ -31,12 +31,15 @@
         "w": 172,
         "h": 646
       },
-      "type": "custom",
-      "text": "黑衣女需要旋转并向后退"
+      "type": "move",
+      "target": {
+        "x": 512,
+        "y": 424
+      }
     }
   ],
   "note": "多出一个抱萝卜的男人\n黑衣女的位置和朝向发生变化",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785995369000
+  "ts": 1785998635125
 }
