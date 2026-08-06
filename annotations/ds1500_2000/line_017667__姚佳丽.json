@@ -1,0 +1,22 @@
+{
+  "line": 17667,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017667_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863821&Signature=rKhJKRkfqEL6HgZpllEbvjIeSxQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017667_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863821&Signature=bPaTAo9tVMHjcnXYmCQqUh5H34Y%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 55,
+        "y": 412,
+        "w": 243,
+        "h": 320
+      },
+      "type": "add"
+    }
+  ],
+  "note": "少了一个布衣女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786000096542
+}
