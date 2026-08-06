@@ -1,0 +1,22 @@
+{
+  "line": 17362,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017362_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863817&Signature=LqWZeckDQkSezqd64L4BIxccczQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017362_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863817&Signature=ipYWn6YC%2F0ADt7iMjgf0fjU%2BFoQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 719,
+        "y": 199,
+        "w": 194,
+        "h": 330
+      },
+      "type": "add"
+    }
+  ],
+  "note": "少了一个黑衣篮领男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786003588998
+}
