@@ -1,0 +1,32 @@
+{
+  "line": 6451,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006451_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865853&Signature=erhzVnsYx8TmTEHyp3GJPRkeJdk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006451_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865858&Signature=ptwIDyXD0Cskhr8qw9hGieMZRBc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 638,
+        "y": 195,
+        "w": 352,
+        "h": 567
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 789,
+          "y": 336
+        },
+        {
+          "x": 845,
+          "y": 499
+        }
+      ]
+    }
+  ],
+  "note": "多了一位绿色怪人。",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785988776970
+}
