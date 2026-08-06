@@ -1,0 +1,22 @@
+{
+  "line": 17756,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017756_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863822&Signature=7miEp5KW3mrni0NA%2BorCsEfzTz0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017756_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863822&Signature=vLV2TZlsGeklYy5rnVmUCYGcpNo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 247,
+        "y": 520,
+        "w": 146,
+        "h": 323
+      },
+      "type": "add"
+    }
+  ],
+  "note": "少了一个白衣孩童，整体背景变化由院子变为池塘边",
+  "bg_global": true,
+  "bg_ambiguous": false,
+  "ts": 1786004912106
+}
