@@ -1,0 +1,22 @@
+{
+  "line": 6601,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006601_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865863&Signature=jvaB6Q5um%2Fmwu8fygJCvYLsuKjI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006601_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865866&Signature=F8N7o1Od7zR1Zs0XnUWJo0xXU98%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 491,
+        "y": 449,
+        "w": 121,
+        "h": 229
+      },
+      "type": "add"
+    }
+  ],
+  "note": "少了一名浅黄色衣服人物",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785996307156
+}
