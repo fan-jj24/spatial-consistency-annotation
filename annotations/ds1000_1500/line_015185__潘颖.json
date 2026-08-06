@@ -15,8 +15,8 @@
       "type": "replace"
     }
   ],
-  "note": "白色条纹男子变成黑色条纹男子",
+  "note": "黑色条纹男子替换为白色条纹男子",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785839181340
+  "ts": 1785983797529
 }
