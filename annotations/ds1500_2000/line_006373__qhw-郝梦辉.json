@@ -1,0 +1,35 @@
+{
+  "line": 6373,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006373_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865847&Signature=ahYjNBGU0S9AtXHeND%2Bo2kx%2BXqo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006373_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865847&Signature=bzlc%2BtEm3mdTcLwiZID4d0upjeQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1,
+        "y": 69,
+        "w": 836,
+        "h": 1017
+      },
+      "type": "move",
+      "target": {
+        "x": 1120,
+        "y": 598
+      }
+    },
+    {
+      "box": {
+        "x": 712,
+        "y": 9,
+        "w": 363,
+        "h": 596
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "黑衣男子位置发生变化\n局部背景的书架被窗户替换",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786000670435
+}
