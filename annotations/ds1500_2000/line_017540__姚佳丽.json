@@ -1,0 +1,23 @@
+{
+  "line": 17540,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017540_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863820&Signature=GM8W46M4TzCbg8r1qA13tkJD9pk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017540_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863820&Signature=Nd%2FaGfpp92PxwRnleAPFdFzMzbY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -1,
+        "y": 41,
+        "w": 712,
+        "h": 1216
+      },
+      "type": "custom",
+      "text": "黑衣男子和灰衣女子位置互换，需旋转"
+    }
+  ],
+  "note": "黑衣男子和灰衣女子朝向位置变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786010746175
+}
