@@ -1,0 +1,22 @@
+{
+  "line": 6621,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006621_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865871&Signature=nXJSZ2Um60gIYUzdzMjI44yKsew%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006621_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865873&Signature=%2BOOj4HCcmzZzgIDZXNbG%2F2uRuvs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 930,
+        "y": 374,
+        "w": 175,
+        "h": 603
+      },
+      "type": "add"
+    }
+  ],
+  "note": "少了一个头戴金色头饰的男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786010746175
+}
