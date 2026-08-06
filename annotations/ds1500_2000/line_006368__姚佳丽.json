@@ -1,0 +1,22 @@
+{
+  "line": 6368,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006368_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865846&Signature=t02ZzzADPIQvw4%2BA1AXEAgE6u4c%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006368_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865846&Signature=gCTF6cyvsp8%2B7elN8F%2B3ZlRaJzY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1083,
+        "y": 590,
+        "w": 285,
+        "h": 387
+      },
+      "type": "add"
+    }
+  ],
+  "note": "多了一个衬衫男子和白衣孩童",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785999815366
+}
