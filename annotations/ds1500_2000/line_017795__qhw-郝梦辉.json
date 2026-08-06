@@ -1,0 +1,22 @@
+{
+  "line": 17795,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017795_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863823&Signature=rNiM89VEoOgbT6kleB%2BCcE7s6w8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017795_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863823&Signature=MdDQs0S2evjzrQZ4avIpYzmkQZk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 391,
+        "y": 916,
+        "w": 445,
+        "h": 428
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "灰短袖男子被藏青色衣服人物替换",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786003515219
+}
