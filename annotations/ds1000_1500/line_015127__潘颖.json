@@ -15,8 +15,8 @@
       "type": "bg_local"
     }
   ],
-  "note": "背景中的鸡蛋壳消失了，多出了几个箱子",
+  "note": "背景中地上的鸡蛋壳消失了，多出了几个箱子",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785923626162
+  "ts": 1785982948914
 }
