@@ -1,0 +1,31 @@
+{
+  "line": 18077,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_018077_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863827&Signature=GhfWNnkAi9FiPCKYKD5r72qrEEM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_018077_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863827&Signature=LrSDw%2BNwfy7WY%2F5Lqd494Sbh%2BV0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 355,
+        "y": 159,
+        "w": 330,
+        "h": 1050
+      },
+      "type": "replace"
+    },
+    {
+      "box": {
+        "x": -16,
+        "y": 937,
+        "w": 538,
+        "h": 330
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "灰衣男应替换为白衣女。\n地上应该有地毯。",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785985844173
+}
