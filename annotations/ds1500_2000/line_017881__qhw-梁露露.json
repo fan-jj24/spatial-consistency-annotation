@@ -1,0 +1,60 @@
+{
+  "line": 17881,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017881_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863824&Signature=ZutJNnTaQS%2FNQZGihYJkUBcELfk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017881_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863824&Signature=J9fGxetolH98AHWqS2wb761QM88%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 6,
+        "y": 380,
+        "w": 251,
+        "h": 876
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 129,
+          "y": 877
+        },
+        {
+          "x": 190,
+          "y": 1079
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 252,
+        "y": 211,
+        "w": 310,
+        "h": 1062
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.047,
+        0.108,
+        0.993
+      ]
+    },
+    {
+      "box": {
+        "x": 541,
+        "y": 226,
+        "w": 177,
+        "h": 1034
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.907,
+        -0.008,
+        -0.42
+      ]
+    }
+  ],
+  "note": "黑夹克男生的位置发生变化\n黑棉衣男子的位置和朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786004925043
+}
