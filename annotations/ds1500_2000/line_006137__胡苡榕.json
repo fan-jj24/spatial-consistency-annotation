@@ -1,0 +1,40 @@
+{
+  "line": 6137,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006137_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865828&Signature=cvCenpikbCCN5OLxF2sNr0nnv6Q%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006137_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865828&Signature=8xaqqLXWfYQ6HCMa3VkLHp3qwEo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 827,
+        "y": 214,
+        "w": 259,
+        "h": 738
+      },
+      "type": "move",
+      "target": {
+        "x": 1334,
+        "y": 596
+      }
+    },
+    {
+      "box": {
+        "x": 1071,
+        "y": 384,
+        "w": 397,
+        "h": 526
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.992,
+        -0.006,
+        -0.126
+      ]
+    }
+  ],
+  "note": "两人与画面左侧男子的距离发生变化。",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785987968131
+}
