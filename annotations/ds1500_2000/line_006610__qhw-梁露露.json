@@ -1,0 +1,42 @@
+{
+  "line": 6610,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006610_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865867&Signature=S8TAFbl%2BZUcQwDB5F3zNeJukv1s%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006610_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865868&Signature=XWxWO4jkENSskHgrJtzjkHPESMw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 603,
+        "y": 210,
+        "w": 222,
+        "h": 594
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 723,
+          "y": 425
+        },
+        {
+          "x": 734,
+          "y": 536
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 832,
+        "y": 160,
+        "w": 172,
+        "h": 646
+      },
+      "type": "custom",
+      "text": "黑衣女需要旋转并向后退"
+    }
+  ],
+  "note": "多出一个抱萝卜的男人\n黑衣女的位置和朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785995369000
+}
