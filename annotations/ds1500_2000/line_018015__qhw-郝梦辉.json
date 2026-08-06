@@ -1,0 +1,22 @@
+{
+  "line": 18015,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_018015_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863826&Signature=Rh3ESLdGi0wP3qijtKWLlW%2F8BxU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_018015_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863826&Signature=4Px5mazcuQWNt%2FiEEon2%2B6ers7A%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 250,
+        "y": 312,
+        "w": 282,
+        "h": 940
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "棕色兽衣女子被卡其色兽衣女子替换",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785979583338
+}
