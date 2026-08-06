@@ -1,0 +1,31 @@
+{
+  "line": 17563,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017563_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863820&Signature=0JTSdvWHligXmliuBiWdZ2Mse7c%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017563_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863820&Signature=w9eHxZSyZ0JvkjTbfgQuGAYRcXQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 229,
+        "y": 197,
+        "w": 279,
+        "h": 1062
+      },
+      "type": "rotate"
+    },
+    {
+      "box": {
+        "x": 432,
+        "y": 392,
+        "w": 276,
+        "h": 822
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "人物群体发生重组。",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785984646697
+}
