@@ -1,0 +1,23 @@
+{
+  "line": 6768,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006768_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865886&Signature=eKSUYO1CbUolVz%2BROIBtjaJv%2Bp0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006768_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865886&Signature=OYR%2FeLKYQdisiPN9Z%2FnIjFnMrAs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 782,
+        "y": 586,
+        "w": 331,
+        "h": 390
+      },
+      "type": "custom",
+      "text": "黄色生物的高度需要变高，需要向右后方移动"
+    }
+  ],
+  "note": "黄色生物的位置和高度发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785995369000
+}
