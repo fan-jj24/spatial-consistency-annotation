@@ -1,0 +1,26 @@
+{
+  "line": 17084,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017084_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863814&Signature=EKZMbM2AtFc1%2FiuiaemkrpgpfIw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017084_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863814&Signature=JAdCm3LHAndMbOULSVCZRK7yfec%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 258,
+        "y": 197,
+        "w": 371,
+        "h": 778
+      },
+      "type": "move",
+      "target": {
+        "x": 424,
+        "y": 74
+      }
+    }
+  ],
+  "note": "酒红西装男子高度发生变化，朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785996307156
+}
