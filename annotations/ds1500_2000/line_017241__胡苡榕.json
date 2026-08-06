@@ -1,0 +1,23 @@
+{
+  "line": 17241,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017241_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863816&Signature=RbnkSvk62SGDAiXu565GC1VPGvE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017241_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863816&Signature=d7GtEXra2PTlLLjQbfN7HY7RA58%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 222,
+        "y": 38,
+        "w": 494,
+        "h": 1226
+      },
+      "type": "custom",
+      "text": "向左移动并旋转"
+    }
+  ],
+  "note": "红衣女与绿衣女的距离发生变化，且红衣女的朝向发生改变。",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785984646697
+}
