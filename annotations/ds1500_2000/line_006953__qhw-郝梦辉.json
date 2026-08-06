@@ -1,0 +1,32 @@
+{
+  "line": 6953,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006953_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865901&Signature=zcgIsbeHE2KCX982U9m%2B3vLeH9Q%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006953_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865899&Signature=I3laF%2FfB5BsP9S%2Bec9RgAxdxug0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 204,
+        "y": 94,
+        "w": 130,
+        "h": 559
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 241,
+          "y": 239
+        },
+        {
+          "x": 284,
+          "y": 445
+        }
+      ]
+    }
+  ],
+  "note": "多了一名绿短袖人物",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785996307156
+}
