@@ -1,0 +1,22 @@
+{
+  "line": 6146,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006146_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865832&Signature=eJzFFxilAzWn8PnTA1fh5tgwyk4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006146_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865828&Signature=w0642%2FiLMAvbhEoQix1CeoGg%2B6Q%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 547,
+        "y": 240,
+        "w": 294,
+        "h": 309
+      },
+      "type": "add"
+    }
+  ],
+  "note": "少了一个卷发斜刘海男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785999252254
+}
