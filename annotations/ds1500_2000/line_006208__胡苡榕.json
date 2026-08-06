@@ -1,0 +1,46 @@
+{
+  "line": 6208,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006208_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865835&Signature=A9gOWA0bjlHp%2F2O650vwPcn5IXw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006208_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865835&Signature=qozkYIkuAzNg64XqCFYVetZ2oY8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 314,
+        "y": 126,
+        "w": 356,
+        "h": 968
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 422,
+          "y": 354
+        },
+        {
+          "x": 523,
+          "y": 645
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 740,
+        "y": 99,
+        "w": 279,
+        "h": 701
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.82,
+        0.048,
+        0.571
+      ]
+    }
+  ],
+  "note": "多了一位蓝衣男。\n灰衣男与书架的位置发生变化，且朝向发生改变。",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785988776970
+}
