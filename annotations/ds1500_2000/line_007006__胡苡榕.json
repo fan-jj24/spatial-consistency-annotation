@@ -1,0 +1,54 @@
+{
+  "line": 7006,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007006_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785931331&Signature=bRAZKUHYmkqa7mKE6SLOspTMBeU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007006_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785931331&Signature=IL2swf7hkxF96bXN%2BK9zZGAN%2BdA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 886,
+        "y": 58,
+        "w": 360,
+        "h": 682
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 1012,
+          "y": 192
+        },
+        {
+          "x": 1145,
+          "y": 547
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 448,
+        "y": 203,
+        "w": 311,
+        "h": 608
+      },
+      "type": "move",
+      "target": {
+        "x": 801,
+        "y": 963
+      }
+    },
+    {
+      "box": {
+        "x": 1813,
+        "y": 40,
+        "w": 152,
+        "h": 471
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "蓝发男身边多了一位橙衣男。\n滥发男与8号球衣男的距离发生变化。\n画面右侧背景中多了一处物品。",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785980955173
+}
