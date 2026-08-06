@@ -1,0 +1,32 @@
+{
+  "line": 16541,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016541_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863809&Signature=D3I7k58jouYiICar57Ip9u4SDrY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016541_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863809&Signature=HCDQzzmSR%2F%2FMkVhtgGavMc0aFVE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 159,
+        "y": 70,
+        "w": 558,
+        "h": 607
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 356,
+          "y": 274
+        },
+        {
+          "x": 471,
+          "y": 459
+        }
+      ]
+    }
+  ],
+  "note": "多出一个丸子头女生",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785998123094
+}
