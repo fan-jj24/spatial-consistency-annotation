@@ -1,0 +1,26 @@
+{
+  "line": 7015,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007015_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785931333&Signature=Zo3Y0A7G3f89S%2BvmaJ6C%2FgehpPw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007015_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785931337&Signature=UA9y4thrUe%2FAAP3WxV78zlnmPGE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 692,
+        "y": 45,
+        "w": 428,
+        "h": 616
+      },
+      "type": "move",
+      "target": {
+        "x": 569,
+        "y": 402
+      }
+    }
+  ],
+  "note": "流朱从甄嬛右侧移动到左侧。",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785984646697
+}
