@@ -1,0 +1,23 @@
+{
+  "line": 16866,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016866_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863811&Signature=wL%2FPIjQxWDscHaVIKxp%2Fb0DrFP4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016866_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863811&Signature=XU65kqdgPcZSdTRbwP%2BQoOBWQjU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -8,
+        "y": 436,
+        "w": 724,
+        "h": 778
+      },
+      "type": "custom",
+      "text": "灰衣男子移动到花衣女子位置，蓝衣女子移动到灰衣男子位置，花衣女子移动到蓝衣女子位置"
+    }
+  ],
+  "note": "人物需要重组",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786003588998
+}
