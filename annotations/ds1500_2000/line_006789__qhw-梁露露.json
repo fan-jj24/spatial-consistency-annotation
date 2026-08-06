@@ -1,0 +1,22 @@
+{
+  "line": 6789,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006789_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865888&Signature=VrSNbRahx5mBE4ufGnVJymJGFmo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006789_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865889&Signature=0Va3141fCW8u5%2B9XfPSDCS%2FMpE4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 394,
+        "y": 296,
+        "w": 388,
+        "h": 583
+      },
+      "type": "add"
+    }
+  ],
+  "note": "少一个穿棉衣的女人",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785979064618
+}
