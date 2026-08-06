@@ -1,0 +1,70 @@
+{
+  "line": 17468,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017468_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863819&Signature=Uqr6avW9pqWhrxiKymHcbzb%2Fazs%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017468_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863819&Signature=Ql%2FHvnCHH%2FyFPk07cK%2B7KvGZ%2BMc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -36,
+        "y": 121,
+        "w": 796,
+        "h": 338
+      },
+      "type": "bg_local"
+    },
+    {
+      "box": {
+        "x": 184,
+        "y": 157,
+        "w": 307,
+        "h": 1124
+      },
+      "type": "custom",
+      "text": "向右移动并旋转"
+    },
+    {
+      "box": {
+        "x": -12,
+        "y": 328,
+        "w": 244,
+        "h": 582
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 98,
+          "y": 545
+        },
+        {
+          "x": 135,
+          "y": 663
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 499,
+        "y": 24,
+        "w": 223,
+        "h": 1093
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 646,
+          "y": 605
+        },
+        {
+          "x": 682,
+          "y": 849
+        }
+      ]
+    }
+  ],
+  "note": "画面左右两侧多出了几位男子。\n女子与路沿的距离发生变化，且朝向发生改变。\n背景缺少一辆公交车，远处的房屋应换为带有广告牌的高楼。",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785984646697
+}
