@@ -1,0 +1,22 @@
+{
+  "line": 6758,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006758_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865885&Signature=2CshvhG36EUroFOYMtAEahQsjyk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006758_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865885&Signature=qxpnDUBwRd0YerT6jHMi4fpjLUs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 122,
+        "y": 80,
+        "w": 1184,
+        "h": 974
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "三人朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785999279188
+}
