@@ -1,0 +1,26 @@
+{
+  "line": 6209,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006209_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865835&Signature=bhRRmkXYwk015tmYIEe5%2FWHybC4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006209_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865836&Signature=kq9H7T7uApfLXhRKM3dcRT%2BRrEo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 796,
+        "y": 279,
+        "w": 458,
+        "h": 622
+      },
+      "type": "move",
+      "target": {
+        "x": 476,
+        "y": 629
+      }
+    }
+  ],
+  "note": "衬衫男子位置朝向变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785998876678
+}
