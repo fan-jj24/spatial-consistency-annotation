@@ -12,11 +12,15 @@
         "w": 340,
         "h": 893
       },
-      "type": "rotate"
+      "type": "move",
+      "target": {
+        "x": 501,
+        "y": 814
+      }
     }
   ],
-  "note": "蓝衣男子朝向发生变化",
+  "note": "蓝衣男子位置发生变化，朝向发生变化",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785997343316
+  "ts": 1786012548757
 }
