@@ -1,0 +1,23 @@
+{
+  "line": 7069,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007069_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785931337&Signature=stYYL385QlLQH3iZ4BZfk9Qs3GA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007069_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785931337&Signature=5aMcnHR7ao5ywIydU4M%2FjiG6dYU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1133,
+        "y": 418,
+        "w": 109,
+        "h": 496
+      },
+      "type": "custom",
+      "text": "灰衣男高度需要变低，需要旋转并向后退"
+    }
+  ],
+  "note": "灰衣男的高度、朝向和位置发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785996787291
+}
