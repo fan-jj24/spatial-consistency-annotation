@@ -1,0 +1,23 @@
+{
+  "line": 17461,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017461_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863819&Signature=xgpsnlEWA0LeuaEGBk0j6PpNEgE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017461_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863819&Signature=7W7%2FLj2GyaCX695%2BXvTxFH8DyGw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 15,
+        "y": 167,
+        "w": 630,
+        "h": 1014
+      },
+      "type": "custom",
+      "text": "蓝衣男子需旋转，蓝衣男子和白衣女子和花衣小孩需往左退"
+    }
+  ],
+  "note": "人物需重组",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786006570965
+}
