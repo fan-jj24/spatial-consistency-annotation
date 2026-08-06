@@ -1,0 +1,8 @@
+{
+  "line": 17387,
+  "verdict": "wrong",
+  "reason": "局部背景的道路和树内石碑替换",
+  "annotator": "qhw-梁露露",
+  "reviewer": "qhw-郝梦辉",
+  "ts": 1786009760841
+}
