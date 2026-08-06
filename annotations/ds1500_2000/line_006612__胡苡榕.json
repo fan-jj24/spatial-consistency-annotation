@@ -1,0 +1,46 @@
+{
+  "line": 6612,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006612_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865870&Signature=BasX37HfLfTs4LSUQspJxAKhWYE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006612_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865868&Signature=T6ouReFCOcGgqJfsSHM0yUhKjbs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 973,
+        "y": 229,
+        "w": 426,
+        "h": 832
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 1165,
+          "y": 538
+        },
+        {
+          "x": 1310,
+          "y": 812
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 577,
+        "y": 372,
+        "w": 382,
+        "h": 706
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.717,
+        -0.097,
+        -0.691
+      ]
+    }
+  ],
+  "note": "和尚与男子的距离发生变化，朝向发生改变。\n男子面前多了一位女子。",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785999960810
+}
