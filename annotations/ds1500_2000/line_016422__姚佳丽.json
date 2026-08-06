@@ -1,0 +1,32 @@
+{
+  "line": 16422,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016422_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863809&Signature=2t4u4EssedVqwT5CiHG3Mld%2FPNA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016422_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863809&Signature=SICvEYz0chgrtQu3G78FqczTNH0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -29,
+        "y": 35,
+        "w": 243,
+        "h": 1091
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 46,
+          "y": 233
+        },
+        {
+          "x": 157,
+          "y": 908
+        }
+      ]
+    }
+  ],
+  "note": "多了一个黑衣男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785998876678
+}
