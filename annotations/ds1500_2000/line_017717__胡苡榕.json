@@ -1,0 +1,22 @@
+{
+  "line": 17717,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017717_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863821&Signature=JU5JwIvInZj7nexqZjbrLbt%2FeOg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017717_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863821&Signature=rDrhL7Zdt8FZffmE4iTUsJ3JGyQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 498,
+        "y": 576,
+        "w": 218,
+        "h": 678
+      },
+      "type": "add"
+    }
+  ],
+  "note": "缺少了一位小孩。",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785987968131
+}
