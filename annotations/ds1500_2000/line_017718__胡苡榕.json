@@ -1,0 +1,82 @@
+{
+  "line": 17718,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017718_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863821&Signature=SxN57kNqNryAkqFjY7NBWByhr4M%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017718_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863821&Signature=k%2BXOzEERrJRCc8cg6a3HK%2BzAX%2BA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 73,
+        "y": 742,
+        "w": 141,
+        "h": 527
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.849,
+        0.172,
+        0.499
+      ]
+    },
+    {
+      "box": {
+        "x": 227,
+        "y": 717,
+        "w": 113,
+        "h": 489
+      },
+      "type": "move",
+      "target": {
+        "x": 32,
+        "y": 1078
+      }
+    },
+    {
+      "box": {
+        "x": 347,
+        "y": 753,
+        "w": 159,
+        "h": 479
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.833,
+        -0.086,
+        -0.546
+      ]
+    },
+    {
+      "box": {
+        "x": -4,
+        "y": 742,
+        "w": 90,
+        "h": 522
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 32,
+          "y": 899
+        },
+        {
+          "x": 12,
+          "y": 1011
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 342,
+        "y": 817,
+        "w": 128,
+        "h": 433
+      },
+      "type": "add"
+    }
+  ],
+  "note": "人物群体发生重组。",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785984646697
+}
