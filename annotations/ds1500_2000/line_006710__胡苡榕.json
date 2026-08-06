@@ -1,0 +1,32 @@
+{
+  "line": 6710,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006710_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865879&Signature=DfXJ4qYVnuTOgxY8Ozvg5z6obdI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006710_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865880&Signature=knvFtpca9WlM9IB1O5URXws5jjU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1171,
+        "y": 131,
+        "w": 663,
+        "h": 867
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 1564,
+          "y": 502
+        },
+        {
+          "x": 1631,
+          "y": 713
+        }
+      ]
+    }
+  ],
+  "note": "多了一位警服男。",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785985844173
+}
