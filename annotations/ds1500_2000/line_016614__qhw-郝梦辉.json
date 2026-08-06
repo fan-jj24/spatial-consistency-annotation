@@ -1,0 +1,26 @@
+{
+  "line": 16614,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016614_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863809&Signature=x2DIrVUEMfePGmmtOSAgqIdi0qc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016614_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863809&Signature=jHXYRDqMVb5UMqdYxjNCawUmIcM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 311,
+        "y": 468,
+        "w": 182,
+        "h": 563
+      },
+      "type": "move",
+      "target": {
+        "x": 99,
+        "y": 845
+      }
+    }
+  ],
+  "note": "背包男子位置和朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785999984251
+}
