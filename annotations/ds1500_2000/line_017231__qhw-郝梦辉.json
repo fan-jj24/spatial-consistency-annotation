@@ -1,0 +1,26 @@
+{
+  "line": 17231,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017231_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863816&Signature=Xs7Mpf6%2B%2FJhxHe8nOuqfchcgC9E%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017231_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863816&Signature=Dj7OpKedovEF8S5s2jygzUOO6Qk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 361,
+        "y": 49,
+        "w": 225,
+        "h": 665
+      },
+      "type": "move",
+      "target": {
+        "x": 1141,
+        "y": 664
+      }
+    }
+  ],
+  "note": "白裙女子位置和朝向发生变化，高度发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785999984251
+}
