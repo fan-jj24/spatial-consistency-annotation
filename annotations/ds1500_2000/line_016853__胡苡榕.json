@@ -1,0 +1,32 @@
+{
+  "line": 16853,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016853_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863811&Signature=1CtKKUfQ%2B2unln4vdDKviTsFaLQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016853_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863811&Signature=0Wr4jYZIUL6I%2FrnP1hKfkziOKC0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 232,
+        "y": 246,
+        "w": 279,
+        "h": 1019
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 332,
+          "y": 589
+        },
+        {
+          "x": 398,
+          "y": 901
+        }
+      ]
+    }
+  ],
+  "note": "多了一个女人。",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785980955173
+}
