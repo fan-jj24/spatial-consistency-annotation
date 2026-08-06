@@ -1,0 +1,58 @@
+{
+  "line": 6909,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006909_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865897&Signature=0uLRAa8mf1i5ycDIZD7OmSbyoqk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006909_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865900&Signature=G%2Bl%2FJttajuwhm%2B%2FaSIT7RzuoyNQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 608,
+        "y": 551,
+        "w": 615,
+        "h": 578
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 871,
+          "y": 677
+        },
+        {
+          "x": 1016,
+          "y": 874
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 30,
+        "y": -5,
+        "w": 808,
+        "h": 1093
+      },
+      "type": "move",
+      "target": {
+        "x": 1364,
+        "y": 410
+      }
+    },
+    {
+      "box": {
+        "x": 1194,
+        "y": -9,
+        "w": 719,
+        "h": 1090
+      },
+      "type": "move",
+      "target": {
+        "x": 841,
+        "y": 332
+      }
+    }
+  ],
+  "note": "多了一位蓝发男。\n红发男与黄发男的位置发生了置换。",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785988776970
+}
