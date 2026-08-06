@@ -1,0 +1,23 @@
+{
+  "line": 17899,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017899_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863825&Signature=wutY5394zPgmq7zTq30ET%2Fcazh0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017899_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863825&Signature=No50S215Cet%2BXCWUcD6dVRv8C34%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -11,
+        "y": 46,
+        "w": 725,
+        "h": 1144
+      },
+      "type": "custom",
+      "text": "白衣女子和蓝衣男子，灰衣男子需坐下，蓝衣男子需往左前退，紫衣女子需往左后退，灰衣男子需往左后回退"
+    }
+  ],
+  "note": "人物重组",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786007134422
+}
