@@ -1,0 +1,22 @@
+{
+  "line": 18003,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_018003_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863826&Signature=o0yYmgVtIR5J5PlreGOZwI%2FtM6s%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_018003_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863826&Signature=y0j1u1H9uLpreKaxCDImtYsPKNI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1035,
+        "y": 131,
+        "w": 235,
+        "h": 493
+      },
+      "type": "add"
+    }
+  ],
+  "note": "少一个13号球员",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786004925043
+}
