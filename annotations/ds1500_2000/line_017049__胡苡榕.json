@@ -1,0 +1,27 @@
+{
+  "line": 17049,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017049_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863814&Signature=L54tJPxW7KrCgt%2FiByBx9GtnNSI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017049_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863813&Signature=bgX3mCU3TI1Q7LKBpjW0udzaKmE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 68,
+        "y": 143,
+        "w": 655,
+        "h": 1132
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.579,
+        -0.203,
+        -0.79
+      ]
+    }
+  ],
+  "note": "两人与椅子的距离发生变化、朝向改变、高度变矮。",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785985844173
+}
