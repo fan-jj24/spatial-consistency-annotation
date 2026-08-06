@@ -1,0 +1,32 @@
+{
+  "line": 18058,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_018058_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863826&Signature=vtKBBy9E9a1msDgrkPL%2BRDGK1LA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_018058_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863826&Signature=wp4laRIzXiHfJSehqN8t%2FJH%2BY1Q%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 382,
+        "y": 413,
+        "w": 174,
+        "h": 428
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 469,
+          "y": 541
+        },
+        {
+          "x": 497,
+          "y": 733
+        }
+      ]
+    }
+  ],
+  "note": "多出一个红衣华服女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785995916377
+}
