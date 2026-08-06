@@ -1,0 +1,41 @@
+{
+  "line": 6815,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006815_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865892&Signature=6eKipVC%2FazNKO73zXpsoOJ27vms%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006815_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865892&Signature=7r3y9soE1xg9HU5opdoLyXUhxs0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 7,
+        "y": 135,
+        "w": 678,
+        "h": 805
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 319,
+          "y": 418
+        },
+        {
+          "x": 397,
+          "y": 631
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 546,
+        "y": 142,
+        "w": 161,
+        "h": 186
+      },
+      "type": "add"
+    }
+  ],
+  "note": "多出一个黑衣白发男子\n少了一个黑衣法官",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785995916377
+}
