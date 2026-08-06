@@ -1,0 +1,50 @@
+{
+  "line": 6807,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006807_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865891&Signature=TaZnx7jTTjE7pCpsm%2BkuayCUN3k%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006807_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865893&Signature=ARErKeX3BTksq7Rq8L%2BP2jmOa74%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 150,
+        "y": 39,
+        "w": 376,
+        "h": 717
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 249,
+          "y": 227
+        },
+        {
+          "x": 361,
+          "y": 467
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 739,
+        "y": 376,
+        "w": 341,
+        "h": 365
+      },
+      "type": "add"
+    },
+    {
+      "box": {
+        "x": 1312,
+        "y": 164,
+        "w": 207,
+        "h": 348
+      },
+      "type": "add"
+    }
+  ],
+  "note": "多了一名棕色衣服男子\n少了一名扎马尾女子和一名浅棕色衣服人物",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785996307156
+}
