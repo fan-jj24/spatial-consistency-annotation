@@ -6,7 +6,7 @@
   ],
   "objects": [],
   "note": "两张图的整体背景环境不同",
-  "bg_global": false,
+  "bg_global": true,
   "bg_ambiguous": false,
-  "ts": 1785993805444
+  "ts": 1785995092294
 }
