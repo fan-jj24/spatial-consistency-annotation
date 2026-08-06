@@ -1,0 +1,39 @@
+{
+  "line": 17459,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017459_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863818&Signature=48UXbjgzjl2Mox7hndeuWEsP9Zw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017459_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863819&Signature=UqjnTexjtGgHbut4E9OAW9yHO6s%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 524,
+        "y": 448,
+        "w": 187,
+        "h": 530
+      },
+      "type": "move",
+      "target": {
+        "x": 488,
+        "y": 701
+      }
+    },
+    {
+      "box": {
+        "x": 217,
+        "y": 556,
+        "w": 95,
+        "h": 256
+      },
+      "type": "move",
+      "target": {
+        "x": 355,
+        "y": 658
+      }
+    }
+  ],
+  "note": "西装男和白衬女  与沙发的距离发生变化。且白衬女的朝向发生些许改变。",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785988776970
+}
