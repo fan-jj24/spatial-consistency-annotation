@@ -1,0 +1,27 @@
+{
+  "line": 17117,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017117_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863814&Signature=spXFqT2SnC2quUEb1PM6WazB6yU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017117_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863814&Signature=RaCsghCRVKKsEK5hJtcgkZQnPbE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -2,
+        "y": 129,
+        "w": 192,
+        "h": 1103
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.937,
+        -0.084,
+        -0.338
+      ]
+    }
+  ],
+  "note": "戴银色项链的男生位置和朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786003763414
+}
