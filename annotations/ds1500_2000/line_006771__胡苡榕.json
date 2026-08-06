@@ -1,0 +1,32 @@
+{
+  "line": 6771,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006771_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865889&Signature=W8vvl4jxjLmUSpZ8J94uPaKYSY4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006771_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865887&Signature=Hhej3saDHdpNitQH2f5J%2Bd7L9Sc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 956,
+        "y": 221,
+        "w": 919,
+        "h": 856
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 1301,
+          "y": 507
+        },
+        {
+          "x": 1442,
+          "y": 755
+        }
+      ]
+    }
+  ],
+  "note": "黑衣男左侧多了一位和尚。",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785984646697
+}
