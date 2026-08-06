@@ -1,0 +1,39 @@
+{
+  "line": 16753,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016753_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863810&Signature=vUTvovFjaEAuE5a5q77JsRGm500%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016753_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863810&Signature=qosmA%2BRZVkpRgf3qLUTLjiHXM7s%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 4,
+        "y": 566,
+        "w": 264,
+        "h": 681
+      },
+      "type": "move",
+      "target": {
+        "x": 286,
+        "y": 730
+      }
+    },
+    {
+      "box": {
+        "x": 457,
+        "y": 512,
+        "w": 241,
+        "h": 361
+      },
+      "type": "move",
+      "target": {
+        "x": 60,
+        "y": 515
+      }
+    }
+  ],
+  "note": "米白西装女子位置发生变化，朝向发生变化\n藏青色西装男子位置和朝向发生变化，高度发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785995228828
+}
