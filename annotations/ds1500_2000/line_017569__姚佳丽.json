@@ -1,0 +1,31 @@
+{
+  "line": 17569,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017569_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863820&Signature=GLNiPizm5NvKPWW8%2B7%2FsmjA82do%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017569_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863820&Signature=Jr8nXC019SCNDAVdgAP5epuNNeE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 48,
+        "y": 138,
+        "w": 223,
+        "h": 1108
+      },
+      "type": "replace"
+    },
+    {
+      "box": {
+        "x": 480,
+        "y": 394,
+        "w": 184,
+        "h": 607
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "灰衣男子与棕衣男子位置互换",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786004399899
+}
