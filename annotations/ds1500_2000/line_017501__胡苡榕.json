@@ -1,0 +1,22 @@
+{
+  "line": 17501,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017501_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863819&Signature=OFuN4L14ZeRs3ziyddOiUS9jqmw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017501_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863819&Signature=qXPfXZnagHO%2FR7HBG0WU7US3zQU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -11,
+        "y": 330,
+        "w": 195,
+        "h": 735
+      },
+      "type": "add"
+    }
+  ],
+  "note": "少了一位深色衣服的老人。",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785986147492
+}
