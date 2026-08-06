@@ -1,0 +1,31 @@
+{
+  "line": 16549,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016549_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863809&Signature=3J2pHlNAiBIxVmBx6vOlr%2FYgQHA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016549_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863809&Signature=iA7pGG6QZtWHSrYn3x2CgAIpDbM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -11,
+        "y": 259,
+        "w": 125,
+        "h": 389
+      },
+      "type": "replace"
+    },
+    {
+      "box": {
+        "x": 537,
+        "y": 248,
+        "w": 207,
+        "h": 384
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "年轻男人身后的人物不同。",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785980955173
+}
