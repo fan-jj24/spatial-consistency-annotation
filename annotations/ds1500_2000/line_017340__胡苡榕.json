@@ -1,0 +1,22 @@
+{
+  "line": 17340,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017340_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863817&Signature=lpNxsE2ZrrcH2Hh7xRdPmF0SZ1Q%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017340_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863817&Signature=69rVX6HWIH6adeFkmdOJb4wUPkQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -14,
+        "y": 343,
+        "w": 143,
+        "h": 919
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "黄发男右侧身后应为白衣男或黑色背心男。",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785985844173
+}
