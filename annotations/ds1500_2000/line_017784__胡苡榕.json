@@ -1,0 +1,36 @@
+{
+  "line": 17784,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017784_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863823&Signature=xV3uYDOgWQgecxT6iQO8sWgphJ0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017784_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863823&Signature=R8zaqW06Zjh1GSCEqwcBTBMh6%2B8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 124,
+        "y": 169,
+        "w": 392,
+        "h": 1108
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.3,
+        0.193,
+        0.934
+      ]
+    },
+    {
+      "box": {
+        "x": 470,
+        "y": 404,
+        "w": 138,
+        "h": 366
+      },
+      "type": "add"
+    }
+  ],
+  "note": "蓝衣女与椅子的距离发生变化。\n少了一位盔甲男。",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785999014139
+}
