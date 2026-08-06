@@ -1,0 +1,46 @@
+{
+  "line": 17940,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017940_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863825&Signature=jYbrrrFg%2Fw3FQ2OLFoBedZwXgbM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017940_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863825&Signature=DLzfzryzIYyKBNbNlHuYjGzn2hE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 2,
+        "y": 328,
+        "w": 315,
+        "h": 916
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.126,
+        0.301,
+        0.945
+      ]
+    },
+    {
+      "box": {
+        "x": 398,
+        "y": 422,
+        "w": 225,
+        "h": 676
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 475,
+          "y": 609
+        },
+        {
+          "x": 565,
+          "y": 827
+        }
+      ]
+    }
+  ],
+  "note": "两人与饮水机的位置发生变化，且女子的朝向发生改变。\n多了两位男子。",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785984646697
+}
