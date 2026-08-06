@@ -1,0 +1,23 @@
+{
+  "line": 6256,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006256_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865839&Signature=5VC9%2FWOA%2FqO%2B%2B%2Fp3mzRdCYeCM%2FU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006256_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865838&Signature=qSel4LzVIEct0PVg0XapJdkp0xw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 11,
+        "y": 19,
+        "w": 816,
+        "h": 1059
+      },
+      "type": "custom",
+      "text": "光头男需要向右前方移动并旋转"
+    }
+  ],
+  "note": "光头男的位置和朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785996787291
+}
