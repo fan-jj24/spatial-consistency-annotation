@@ -1,0 +1,22 @@
+{
+  "line": 6201,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006201_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865835&Signature=41%2BuH1A60CQw%2B2qPh8PC6DtzmOw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006201_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865833&Signature=vvzjPRXfHhL1thM%2F1AJZbzrE77o%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 686,
+        "y": 442,
+        "w": 410,
+        "h": 667
+      },
+      "type": "add"
+    }
+  ],
+  "note": "少了一个鸟人",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785998876678
+}
