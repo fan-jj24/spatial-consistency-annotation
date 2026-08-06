@@ -1,0 +1,22 @@
+{
+  "line": 17759,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017759_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863822&Signature=h0iKM%2Fg%2BXiNd1iOt3AsmxgV87Qg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017759_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863822&Signature=umZN1Ygle57Vu1qP8lmbVlixtOw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 316,
+        "y": 254,
+        "w": 356,
+        "h": 852
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "白衣男孩、红衣女、粉衣女孩被紫衣女替换",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786005293195
+}
