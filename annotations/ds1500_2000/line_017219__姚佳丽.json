@@ -1,0 +1,23 @@
+{
+  "line": 17219,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017219_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863815&Signature=AoduwomRKGpSNTU8HB8LiIg7sWs%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017219_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863816&Signature=XY4vBGtmlSI0s0UKZsLG2bCzlUE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -14,
+        "y": 41,
+        "w": 699,
+        "h": 1190
+      },
+      "type": "custom",
+      "text": "灰衣男子位置向前，灰衣男子左侧白衣黑发男子替换为黑衣，周围人物群体位置有变化。"
+    }
+  ],
+  "note": "人物需要重组",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786012991061
+}
