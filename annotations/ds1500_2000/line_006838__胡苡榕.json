@@ -1,0 +1,26 @@
+{
+  "line": 6838,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006838_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865893&Signature=IFUNcj%2BHX5%2Bh%2BNmxPfu7CoePYOE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006838_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865893&Signature=tWsTeLR%2Fm2r0Rx8BmzmdUgoUi%2F8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 494,
+        "y": 378,
+        "w": 619,
+        "h": 711
+      },
+      "type": "move",
+      "target": {
+        "x": 346,
+        "y": 772
+      }
+    }
+  ],
+  "note": "红衣男与蓝衣男的距离发生变化，且高度变矮。",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785988776970
+}
