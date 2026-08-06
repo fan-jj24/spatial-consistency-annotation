@@ -1,0 +1,26 @@
+{
+  "line": 17237,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017237_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863816&Signature=OcgIwWO6c6jChu8zPkUKmy4OuNI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017237_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863816&Signature=wwqSRtMx5oy8Lu5dMzbr0hCv8UA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 219,
+        "y": 507,
+        "w": 125,
+        "h": 259
+      },
+      "type": "move",
+      "target": {
+        "x": 452,
+        "y": 658
+      }
+    }
+  ],
+  "note": "紫衣女与白衣女的距离发生变化。",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785980955173
+}
