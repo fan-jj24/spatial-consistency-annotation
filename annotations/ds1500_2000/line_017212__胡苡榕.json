@@ -1,0 +1,46 @@
+{
+  "line": 17212,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017212_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863815&Signature=x41yW4NAaphecDetclo%2BpEF5Xh0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017212_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863815&Signature=JN4Q2vqv3sbChOUsEfqJR3d3lxM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 122,
+        "y": 261,
+        "w": 259,
+        "h": 1001
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.964,
+        0.039,
+        0.262
+      ]
+    },
+    {
+      "box": {
+        "x": 406,
+        "y": 189,
+        "w": 238,
+        "h": 1039
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 511,
+          "y": 530
+        },
+        {
+          "x": 544,
+          "y": 722
+        }
+      ]
+    }
+  ],
+  "note": "棕衣男与门的距离发生变化，且朝向发生改变。\n多了一位黑衣男。",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785999014139
+}
