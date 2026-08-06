@@ -1,0 +1,51 @@
+{
+  "line": 6171,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006171_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865830&Signature=QYYF%2BJvL79WdQQ9ejaLyGlBB0BU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_006171_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785865830&Signature=TXQbufG21z6PzOU3cRqQOdaGgtU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 225,
+        "y": 31,
+        "w": 373,
+        "h": 331
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 418,
+          "y": 137
+        },
+        {
+          "x": 461,
+          "y": 254
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 791,
+        "y": 54,
+        "w": 151,
+        "h": 160
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 839,
+          "y": 97
+        },
+        {
+          "x": 864,
+          "y": 154
+        }
+      ]
+    }
+  ],
+  "note": "多出一个黄衣男\n多出一个黑衣女\n多出一个蓝衣女",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785979064618
+}
