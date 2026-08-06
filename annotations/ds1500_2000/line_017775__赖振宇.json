@@ -1,0 +1,31 @@
+{
+  "line": 17775,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017775_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863823&Signature=Qzo%2B3sDrKX0mhvAhRVQvsO092L8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017775_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863823&Signature=5f4jS9vpudWBhvlcEcytrafuYAI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 81,
+        "y": 295,
+        "w": 617,
+        "h": 932
+      },
+      "type": "replace"
+    },
+    {
+      "box": {
+        "x": 87,
+        "y": 44,
+        "w": 504,
+        "h": 228
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "白衣女子和红衣女子位置互换，高度变化，局部窗户变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786007383769
+}
