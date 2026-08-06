@@ -1,0 +1,27 @@
+{
+  "line": 17574,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017574_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863820&Signature=QbTiDcRsdZJduu6JP3T3mtbsnbY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017574_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863821&Signature=w0nYEi2WrBojFYgcIDyR8J1cJks%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 483,
+        "y": 620,
+        "w": 125,
+        "h": 381
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.27,
+        -0.24,
+        -0.932
+      ]
+    }
+  ],
+  "note": "女子与深色衣服男子的距离发生变化。",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1785984646697
+}
