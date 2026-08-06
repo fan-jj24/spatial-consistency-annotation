@@ -1,0 +1,22 @@
+{
+  "line": 17774,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017774_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863822&Signature=W%2BSleAUu4IL1GVV0ox6Rq0ewUiw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017774_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863823&Signature=A4ZnA5JIlNcVjhpPjnjfJBZuxJU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 291,
+        "y": 51,
+        "w": 133,
+        "h": 991
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "局部背景的走廊缺失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786000670435
+}
