@@ -1,0 +1,41 @@
+{
+  "line": 1004,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001004_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999873&Signature=mgKwMafaHVnQl0Rfc9skBe9l6nw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001004_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999878&Signature=WO6SrbEBfKdQZ%2BJObuFYpCeSdc0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 646,
+        "y": 145,
+        "w": 324,
+        "h": 575
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 769,
+          "y": 235
+        },
+        {
+          "x": 873,
+          "y": 542
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 894,
+        "y": 732,
+        "w": 404,
+        "h": 341
+      },
+      "type": "add"
+    }
+  ],
+  "note": "多了一名白衣女子\n少了一名白衣男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786083061748
+}
