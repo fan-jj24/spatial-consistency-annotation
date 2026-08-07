@@ -1,0 +1,22 @@
+{
+  "line": 387,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000387_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999786&Signature=cQLmcl9ioV3hRFI%2BIgxTOdactr0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000387_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999788&Signature=q0msEGXO8UWc5D4%2BHA0gT5fojHc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 822,
+        "y": 113,
+        "w": 175,
+        "h": 643
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "白衣带耳环女子朝向发生变化，位置发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786068575175
+}
