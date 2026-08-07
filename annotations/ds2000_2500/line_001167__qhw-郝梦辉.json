@@ -1,0 +1,46 @@
+{
+  "line": 1167,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001167_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999923&Signature=4U9Tyl0j6p15iI%2Fh1x%2B1pbWaW%2BU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001167_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999931&Signature=4LL4p6%2Bo4loGtyEP5k58mAf%2F%2FUs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 27,
+        "y": 78,
+        "w": 473,
+        "h": 1004
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.995,
+        -0.021,
+        -0.1
+      ]
+    },
+    {
+      "box": {
+        "x": 543,
+        "y": 341,
+        "w": 192,
+        "h": 272
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 584,
+          "y": 341
+        },
+        {
+          "x": 670,
+          "y": 445
+        }
+      ]
+    }
+  ],
+  "note": "黄衣戴帽男位置发生变化，朝向发生变化\n多了一名蓝衣男子\n整体背景的红墙黄花被竹林替换",
+  "bg_global": true,
+  "bg_ambiguous": false,
+  "ts": 1786088943531
+}
