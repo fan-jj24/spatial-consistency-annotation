@@ -1,0 +1,27 @@
+{
+  "line": 7103,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007103_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785986592&Signature=Pbv0ruqhQ%2BUGrlgdUdxNOu0tw7c%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007103_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785986592&Signature=O6y%2BG0NMpx3zDkJdh2qERX3KMl4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1052,
+        "y": 187,
+        "w": 233,
+        "h": 719
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.984,
+        -0.083,
+        -0.156
+      ]
+    }
+  ],
+  "note": "灰衣女子位置变化，需坐下",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786083731251
+}
