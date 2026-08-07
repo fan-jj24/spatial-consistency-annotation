@@ -1,0 +1,27 @@
+{
+  "line": 972,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000972_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999867&Signature=NyGxnX87PFFvXgJxVsx69Hw%2BW9c%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000972_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999869&Signature=fnJlKJMnaNIvk5ipUxkLfZPXDVQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 109,
+        "y": 65,
+        "w": 529,
+        "h": 981
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.94,
+        -0.149,
+        0.307
+      ]
+    }
+  ],
+  "note": "白衣男子位置朝向变化，高度变矮",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786083321552
+}
