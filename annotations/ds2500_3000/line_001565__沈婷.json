@@ -1,0 +1,27 @@
+{
+  "line": 1565,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001565_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035366&Signature=F%2FwjX8am4bfqi7Y0oHxGbripgg0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001565_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035367&Signature=YyVeGA5hSFwDlGHqpchPCKnZGHo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1388,
+        "y": 351,
+        "w": 522,
+        "h": 723
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.926,
+        -0.011,
+        0.378
+      ]
+    }
+  ],
+  "note": "花衣女子与胡子男距离变近",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786077734843
+}
