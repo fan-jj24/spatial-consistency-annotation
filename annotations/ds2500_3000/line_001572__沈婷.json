@@ -1,0 +1,27 @@
+{
+  "line": 1572,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001572_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035368&Signature=0U6u0ouWuy4tXZEGmorNiqxJvFo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001572_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035370&Signature=m0UN5FGCosDx77l7KSy2%2BAArwNk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -1,
+        "y": 4,
+        "w": 598,
+        "h": 1077
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.711,
+        -0.003,
+        0.703
+      ]
+    }
+  ],
+  "note": "头巾人与女子距离变远",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786070741775
+}
