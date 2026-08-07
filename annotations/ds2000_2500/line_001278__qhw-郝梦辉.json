@@ -1,0 +1,27 @@
+{
+  "line": 1278,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001278_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999955&Signature=Nd9NB88WXkfC%2Fd71qD2flSyVlR4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001278_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999957&Signature=mPgUfarbdYBhdohBwWaWFBER9js%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 883,
+        "y": 9,
+        "w": 482,
+        "h": 1009
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.544,
+        -0.07,
+        -0.836
+      ]
+    }
+  ],
+  "note": "深灰衣服男位置发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786066061352
+}
