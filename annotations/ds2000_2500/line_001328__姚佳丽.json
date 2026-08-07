@@ -1,0 +1,39 @@
+{
+  "line": 1328,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001328_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999972&Signature=lGj07oLa2mm5dP0aBv%2Bk%2BwCRjHU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001328_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999973&Signature=Y2X0lXo9ja9D6pz2Sut1IsAUVZE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 988,
+        "y": 430,
+        "w": 227,
+        "h": 430
+      },
+      "type": "move",
+      "target": {
+        "x": 804,
+        "y": 635
+      }
+    },
+    {
+      "box": {
+        "x": 1306,
+        "y": 518,
+        "w": 184,
+        "h": 335
+      },
+      "type": "move",
+      "target": {
+        "x": 731,
+        "y": 933
+      }
+    }
+  ],
+  "note": "整体蓝衣女子位置变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786099155601
+}
