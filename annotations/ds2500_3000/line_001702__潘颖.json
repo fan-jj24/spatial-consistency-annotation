@@ -1,0 +1,12 @@
+{
+  "line": 1702,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001702_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035409&Signature=3U%2FKQSNrxGNwFkeTZFhQ1%2BXk8%2Bo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001702_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035412&Signature=MKWClqi1UXn7%2BOLmf%2BPej3vWUMQ%3D"
+  ],
+  "objects": [],
+  "note": "图A和图B人物相对位置、朝向和背景基本一致",
+  "bg_global": false,
+  "bg_ambiguous": true,
+  "ts": 1786099532295
+}
