@@ -1,0 +1,51 @@
+{
+  "line": 1086,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001086_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999902&Signature=74s9LsOv1czDJz0gIgXzXSPYyC0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001086_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999903&Signature=3aku%2BduiTE5iJ7q3jR2021ZCXus%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 266,
+        "y": 259,
+        "w": 320,
+        "h": 819
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 356,
+          "y": 348
+        },
+        {
+          "x": 464,
+          "y": 950
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 1203,
+        "y": 194,
+        "w": 426,
+        "h": 905
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 1320,
+          "y": 259
+        },
+        {
+          "x": 1551,
+          "y": 879
+        }
+      ]
+    }
+  ],
+  "note": "多了一名白衣人物和一名粉头发人物",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786083061748
+}
