@@ -1,0 +1,46 @@
+{
+  "line": 1239,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001239_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999946&Signature=L88JS3jmC0RRVILTTiRDiukb2pQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001239_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999945&Signature=VuLI%2F6SuXRBhhgC38S%2BBSnNl2g0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 564,
+        "y": 309,
+        "w": 748,
+        "h": 759
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.814,
+        -0.039,
+        0.58
+      ]
+    },
+    {
+      "box": {
+        "x": 1371,
+        "y": 28,
+        "w": 501,
+        "h": 995
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 1553,
+          "y": 377
+        },
+        {
+          "x": 1666,
+          "y": 627
+        }
+      ]
+    }
+  ],
+  "note": "红衣男的位置发生变化\n多出一个黑衣男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786075053987
+}
