@@ -1,0 +1,27 @@
+{
+  "line": 1717,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001717_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035413&Signature=NUoAzLYnjxNHsziiW%2BXqzl4KNsQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001717_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035415&Signature=gpta9C1zjIdi6bo%2BLOW7jZEsjGM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 98,
+        "y": 315,
+        "w": 406,
+        "h": 689
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.705,
+        -0.003,
+        0.709
+      ]
+    }
+  ],
+  "note": "条纹猫咪相对位置变了，应在箱子后面",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786079472338
+}
