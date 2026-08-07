@@ -1,0 +1,31 @@
+{
+  "line": 1889,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001889_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035463&Signature=gPZK4ZeBp%2BVrCjtwcCDAqwvTC0E%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001889_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035463&Signature=d4t7NtADP1oEJVwziTYGYnzLYBs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 445,
+        "y": 272,
+        "w": 270,
+        "h": 284
+      },
+      "type": "delete"
+    },
+    {
+      "box": {
+        "x": 810,
+        "y": 110,
+        "w": 148,
+        "h": 323
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "橙衣女孩和褐色男孩旁边多出2个人",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786080680268
+}
