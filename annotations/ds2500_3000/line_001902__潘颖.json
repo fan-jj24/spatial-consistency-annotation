@@ -1,0 +1,23 @@
+{
+  "line": 1902,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001902_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035468&Signature=r5%2BBvoKXZ9fiPlRU%2FzCBmf3RoT0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001902_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035470&Signature=KpV7FlDDGAKvsUJQJhbhW8BPrV0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 796,
+        "y": 240,
+        "w": 778,
+        "h": 829
+      },
+      "type": "custom",
+      "text": "两男子相对位置变了"
+    }
+  ],
+  "note": "两男子相对位置变近了，红衣男子应在胡子男的左前方",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786072498922
+}
