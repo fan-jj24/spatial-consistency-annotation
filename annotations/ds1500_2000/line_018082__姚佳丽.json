@@ -1,0 +1,31 @@
+{
+  "line": 18082,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_018082_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863827&Signature=8VbF74H9YBLuwC8ubWfMBySUt2A%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_018082_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863827&Signature=xBamO4TcT3mm2WeokK4TgvXcq7E%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 158,
+        "y": 817,
+        "w": 154,
+        "h": 256
+      },
+      "type": "add"
+    },
+    {
+      "box": {
+        "x": 409,
+        "y": 822,
+        "w": 113,
+        "h": 276
+      },
+      "type": "add"
+    }
+  ],
+  "note": "少了一个红花衣女子和蓝花衣女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786070089154
+}
