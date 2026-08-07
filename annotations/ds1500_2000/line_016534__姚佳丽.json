@@ -1,0 +1,46 @@
+{
+  "line": 16534,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016534_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863809&Signature=nso536oSVCGcjkx6yqC5sg6VmeM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_016534_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863809&Signature=IlAxuOYW3uvLKzaA6%2BU2iMRAiMM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 468,
+        "y": 591,
+        "w": 264,
+        "h": 655
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 549,
+          "y": 660
+        },
+        {
+          "x": 624,
+          "y": 1055
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 299,
+        "y": 82,
+        "w": 348,
+        "h": 481
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.041,
+        -0.012,
+        -0.999
+      ]
+    }
+  ],
+  "note": "多了一个蓝衣老人，蓝衣女子位置朝向变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786070089154
+}
