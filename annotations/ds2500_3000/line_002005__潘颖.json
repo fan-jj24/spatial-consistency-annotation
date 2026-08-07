@@ -1,0 +1,26 @@
+{
+  "line": 2005,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002005_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035501&Signature=Xgv6eM1Nr%2FdLS770jwAIFM8M2qY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002005_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035503&Signature=FLhzEf12aE1BaiESm8Eu6sCJ1So%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 904,
+        "y": 309,
+        "w": 1022,
+        "h": 341
+      },
+      "type": "move",
+      "target": {
+        "x": 1440,
+        "y": 80
+      }
+    }
+  ],
+  "note": "男主的相对位置变低了，由坐变躺了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786099532295
+}
