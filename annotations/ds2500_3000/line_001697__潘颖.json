@@ -1,0 +1,22 @@
+{
+  "line": 1697,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001697_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035409&Signature=iIEwRZDrAu3S53DbZ%2BQ8DczzL08%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001697_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035410&Signature=9Da4B7hRhvEHSu%2FueUlNJrris0E%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1025,
+        "y": 310,
+        "w": 74,
+        "h": 560
+      },
+      "type": "add"
+    }
+  ],
+  "note": "黄衣男子旁边的花胡子男子消失了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786099532295
+}
