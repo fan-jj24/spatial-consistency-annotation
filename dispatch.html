@@ -252,6 +252,19 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
 .annotator-badge.hidden { display:none; }
 .annotator-badge b { color:var(--accent); }
 .annotator-badge-icon { font-size:16px; }
+/* 回扫模式：审核意见条 */
+.review-badge {
+  display:flex; align-items:center; gap:8px; margin-bottom:10px;
+  padding:6px 12px; border-radius:6px; font-size:13px;
+  background:#f2f8f4; border:1px solid #bfe3c9; color:var(--text);
+}
+.review-badge.hidden { display:none; }
+.review-badge-icon { font-size:16px; }
+.review-badge .rb-verdict { font-weight:700; }
+.review-badge .rb-verdict.ok { color:var(--ok); }
+.review-badge .rb-verdict.bad { color:var(--bad); }
+.review-badge .rb-reason { color:var(--muted); }
+.review-badge.wrong { background:#fdf3f2; border-color:#f0c3bf; }
 .cell-wrap { position:relative; }
 .cell {
   position:relative; width:100%; height:500px; background:#111;
@@ -652,6 +665,11 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
     <div class="annotator-badge hidden" id="annotatorBadge">
       <span class="annotator-badge-icon">✍️</span>
       <span>此图由 <b id="annotatorBadgeName">-</b> 标注</span>
+    </div>
+    <!-- 回扫模式可见：审核者意见条 -->
+    <div class="review-badge hidden" id="reviewBadge">
+      <span class="review-badge-icon">⚖️</span>
+      <span>审核意见：<b class="rb-verdict" id="rbVerdict">-</b><span class="rb-reason" id="rbReason"></span></span>
     </div>
     <div class="pair-cells">
       <div class="cell-wrap">
@@ -1849,6 +1867,19 @@ function loadCurrentSample() {
   } else {
     badge.classList.add("hidden");
   }
+  // 回扫模式（标注者）：显示审核者意见
+  const rb = $("reviewBadge");
+  if (STATE.reclaimMode && !isReviewer() && s._reviewBadge) {
+    const b = s._reviewBadge;
+    rb.classList.remove("hidden");
+    rb.classList.toggle("wrong", b.verdict === "wrong");
+    const vEl = $("rbVerdict");
+    vEl.textContent = b.verdict === "correct" ? "✓ 通过" : (b.verdict === "wrong" ? "✗ 驳回" : "待审核");
+    vEl.className = "rb-verdict " + (b.verdict === "correct" ? "ok" : b.verdict === "wrong" ? "bad" : "");
+    $("rbReason").textContent = b.reason ? " 原因：" + b.reason : "";
+  } else {
+    rb.classList.add("hidden");
+  }
   renderAll();
 }
 
@@ -2367,6 +2398,7 @@ async function claimTasks() {
     STATE.batchIdx = 0;
     STATE.batchResults = {};
     STATE.batchDone = new Set();
+    STATE.reclaimMode = false;  // 正常领取，清除可能残留的回扫标记
 
     // 审核模式：预填 boxes
     if (isReview) {
@@ -2578,6 +2610,19 @@ async function reclaimAllRecords() {
       return;
     }
 
+    // 标注者回扫：拉取审核意见，挂到对应 sample 上（失败不影响回扫本身）
+    if (!isReview) {
+      showLoading("正在加载审核意见...");
+      try {
+        const badges = await window.GithubDispatch.getRecordBadges(records, false);
+        batch.forEach((s) => {
+          const b = badges[s.line];
+          if (b && b.verdict) s._reviewBadge = b;
+        });
+      } catch (e) {}
+      hideLoading();
+    }
+
     // 进入工作区（和领取流程一样）
     STATE.batch = batch;
     STATE.batchDatasetId = getCurrentDatasetId();
@@ -2686,6 +2731,8 @@ async function startEditRecord(line, isReview, filePath) {
     const remotes = (sample && sample.remotes) || [];
     imgA.src = remotes[0] || ""; imgA.dataset.currentSrc = remotes[0] || "";
     imgB.src = remotes[1] || ""; imgB.dataset.currentSrc = remotes[1] || "";
+    // 单条编辑模式：隐藏回扫的审核意见条，避免残留
+    $("reviewBadge").classList.add("hidden");
 
     // 切换到工作区，适配编辑模式 UI
     showPhase("work");
