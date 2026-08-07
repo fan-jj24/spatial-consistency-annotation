@@ -1,0 +1,26 @@
+{
+  "line": 1596,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001596_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035376&Signature=T%2FrfFxdFy1%2FgxZFcWYQ35V2l3HA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001596_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035378&Signature=LW0y6HwoCyKx6Z%2BdrpC%2BV7HLr%2FI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 778,
+        "y": 156,
+        "w": 154,
+        "h": 449
+      },
+      "type": "move",
+      "target": {
+        "x": 215,
+        "y": 830
+      }
+    }
+  ],
+  "note": "老太太相对位置发生变化，应在老头右后方",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786099532295
+}
