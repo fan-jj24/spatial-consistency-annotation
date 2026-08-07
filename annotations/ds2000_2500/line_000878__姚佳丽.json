@@ -1,0 +1,35 @@
+{
+  "line": 878,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000878_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999838&Signature=iZKcWWBK%2FsLBVkMlFW5uHxsgkrI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000878_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999842&Signature=6OVK5l4oLyde3TN%2Fu6E0rzM4QcM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 825,
+        "y": 248,
+        "w": 432,
+        "h": 737
+      },
+      "type": "rotate"
+    },
+    {
+      "box": {
+        "x": 324,
+        "y": 467,
+        "w": 248,
+        "h": 292
+      },
+      "type": "move",
+      "target": {
+        "x": 421,
+        "y": 341
+      }
+    }
+  ],
+  "note": "红衣女子、条纹女子、黑衣男子朝向变化，黑衣男子高度变高",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786099155601
+}
