@@ -1,0 +1,22 @@
+{
+  "line": 1679,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001679_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035400&Signature=ImPx2feUsgVkPnT7SsoLVYRVHcs%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001679_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035402&Signature=HudYLA5Ld5%2FPfDIs%2FZsRzKhImb4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1,
+        "y": 391,
+        "w": 888,
+        "h": 551
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "红发人朝向变化，由面对帽子男变为背对",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786070741775
+}
