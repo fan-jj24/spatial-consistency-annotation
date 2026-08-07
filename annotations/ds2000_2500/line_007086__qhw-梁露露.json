@@ -1,0 +1,22 @@
+{
+  "line": 7086,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007086_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785986592&Signature=5BAj3JSPa8RnY%2FT4PG9UVsKyQGY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007086_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785986592&Signature=GA0jylRvctgaeXjhYZlDg1f12U8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 16,
+        "y": -1,
+        "w": 986,
+        "h": 1088
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "绿衣男朝向和高度发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786087599210
+}
