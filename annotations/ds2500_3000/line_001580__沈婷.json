@@ -1,0 +1,26 @@
+{
+  "line": 1580,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001580_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035371&Signature=YQ8f9%2FJgEQHE5qRCcKOrt7MtbL0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001580_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035372&Signature=wtqEbgw9nTFDPBsD8bO%2F%2BT9RQ08%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1115,
+        "y": 166,
+        "w": 788,
+        "h": 915
+      },
+      "type": "move",
+      "target": {
+        "x": 836,
+        "y": 662
+      }
+    }
+  ],
+  "note": "蝴蝶结短发女子与背包女子距离变远，高度变低，朝向变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786077734843
+}
