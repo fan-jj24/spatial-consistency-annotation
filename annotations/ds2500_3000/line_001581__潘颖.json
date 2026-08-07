@@ -1,0 +1,27 @@
+{
+  "line": 1581,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001581_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035371&Signature=gkNV0lY1vqtn7NIbh8%2BcJDwZ2ls%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001581_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035373&Signature=IQlVbjdEQAq%2BX3N%2Fzv%2Bv%2BN3JmKU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 207,
+        "y": 209,
+        "w": 495,
+        "h": 557
+      },
+      "type": "move3d",
+      "dir3d": [
+        1,
+        0,
+        0.004
+      ]
+    }
+  ],
+  "note": "白衣男子与刘海女子的相对位置变了，刘海女子应在白衣男子左前方",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786072498922
+}
