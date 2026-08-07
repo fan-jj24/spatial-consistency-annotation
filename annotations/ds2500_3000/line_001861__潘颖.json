@@ -1,0 +1,23 @@
+{
+  "line": 1861,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001861_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035455&Signature=NzZSo1MF8lS7EHvnu%2Fx1dpzatqI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001861_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035456&Signature=dfeURXe%2FyHjI%2BfomGKUN5zinTaE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 109,
+        "y": 17,
+        "w": 1564,
+        "h": 1021
+      },
+      "type": "custom",
+      "text": "红衣女子与花衣男子的相对距离与相对位置都变了"
+    }
+  ],
+  "note": "红衣女子与花衣男子的相对距离变近了，红衣女子与花衣男子的相对位置需互换",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786086596060
+}
