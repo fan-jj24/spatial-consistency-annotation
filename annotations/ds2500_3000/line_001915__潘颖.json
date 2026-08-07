@@ -1,0 +1,22 @@
+{
+  "line": 1915,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001915_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035472&Signature=K4L%2BRrsyhIFDLs6IDCk9EAw84nM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001915_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035473&Signature=gcroqHnwN00y4VIWduoYWYdXqrM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 5,
+        "y": -4,
+        "w": 1153,
+        "h": 810
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "白衣男子前面多出一个黑衣男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786099532295
+}
