@@ -1,0 +1,27 @@
+{
+  "line": 527,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000527_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999795&Signature=K2QPO%2BuRP%2BAubiA6OZhKEES0jLc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000527_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999800&Signature=SXQG2wUbhw3KtzcNJQtP4Nkt2OU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 451,
+        "y": 167,
+        "w": 276,
+        "h": 642
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.025,
+        0.341,
+        0.94
+      ]
+    }
+  ],
+  "note": "豹纹黑衣男的位置和朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786072916582
+}
