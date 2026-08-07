@@ -1,0 +1,23 @@
+{
+  "line": 1507,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001507_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035349&Signature=DwLMYJtMxPSXkDvc46z59obIGJk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001507_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035350&Signature=7FB5JAqd3ZFiMoF%2FrpGJazs9lpE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 384,
+        "y": 87,
+        "w": 657,
+        "h": 997
+      },
+      "type": "custom",
+      "text": "蓝衣女子与西装男子的相对位置变了，蓝衣女子的朝向变了"
+    }
+  ],
+  "note": "蓝衣女子与西装男子的相对位置变了，两人位置互换，同时将蓝衣女子的180°旋转",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786099532295
+}
