@@ -1,0 +1,26 @@
+{
+  "line": 1850,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001850_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035453&Signature=iHUJsLsXeP6LEfBVricv%2BVOq9dA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001850_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035459&Signature=EfLfUDEJipnaUz0MmzNt4vlKMwg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -4,
+        "y": 26,
+        "w": 477,
+        "h": 1063
+      },
+      "type": "move",
+      "target": {
+        "x": 743,
+        "y": 644
+      }
+    }
+  ],
+  "note": "绿衣男子与皇上的距离变远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786099532295
+}
