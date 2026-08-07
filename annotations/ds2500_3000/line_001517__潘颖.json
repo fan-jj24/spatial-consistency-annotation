@@ -1,0 +1,26 @@
+{
+  "line": 1517,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001517_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035352&Signature=MvL0eMbfcfJso7JcSAedT2ojvzQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001517_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035357&Signature=07k22cV3tfwbOKV%2BOPSoqylGpf4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1205,
+        "y": 100,
+        "w": 388,
+        "h": 871
+      },
+      "type": "move",
+      "target": {
+        "x": 1097,
+        "y": 534
+      }
+    }
+  ],
+  "note": "白衣男子与蓝衣男子的相对距离变远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786099532295
+}
