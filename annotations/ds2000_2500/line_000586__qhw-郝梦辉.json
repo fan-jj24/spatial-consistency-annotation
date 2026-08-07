@@ -1,0 +1,48 @@
+{
+  "line": 586,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000586_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999801&Signature=MCrds1h8orF2eYkS0B7a9Z8jgBM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000586_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999806&Signature=L2f1qXpiQbj9U1C26hbWFpDwihU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 880,
+        "y": 423,
+        "w": 99,
+        "h": 417
+      },
+      "type": "move",
+      "target": {
+        "x": 1167,
+        "y": 592
+      }
+    },
+    {
+      "box": {
+        "x": 593,
+        "y": 330,
+        "w": 140,
+        "h": 622
+      },
+      "type": "move",
+      "target": {
+        "x": 997,
+        "y": 523
+      }
+    },
+    {
+      "box": {
+        "x": 792,
+        "y": 376,
+        "w": 86,
+        "h": 488
+      },
+      "type": "add"
+    }
+  ],
+  "note": "黄衣女子位置发生变化\n黑衣男子位置和朝向发生变化\n少了一名红衣男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786066061352
+}
