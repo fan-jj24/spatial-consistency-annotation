@@ -1,0 +1,41 @@
+{
+  "line": 988,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000988_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999867&Signature=12e6kO5bXKJYcQeCgSLyEnL4RUs%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000988_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999874&Signature=wQuxmstLVb5VNclxMqCk0v416Vk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 319,
+        "y": 413,
+        "w": 97,
+        "h": 225
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 342,
+          "y": 484
+        },
+        {
+          "x": 383,
+          "y": 569
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 595,
+        "y": 353,
+        "w": 611,
+        "h": 294
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "少一个粉衣人物\n黄衣女子和黄衣男子的朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786072916582
+}
