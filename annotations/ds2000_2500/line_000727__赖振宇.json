@@ -1,0 +1,22 @@
+{
+  "line": 727,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000727_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999821&Signature=WjaYy9jV7J0PAn2jwruRMfl%2Fzxk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000727_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999826&Signature=CnfItzhAytBLLC65PByUXLNlBwQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 598,
+        "y": 573,
+        "w": 294,
+        "h": 495
+      },
+      "type": "add"
+    }
+  ],
+  "note": "少了一个白银v字",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786074001774
+}
