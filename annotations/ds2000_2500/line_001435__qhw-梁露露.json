@@ -1,0 +1,39 @@
+{
+  "line": 1435,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001435_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786000001&Signature=EfM45gZ2IANAcOJlQvaWVb26sbw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001435_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786000004&Signature=Ucmkt3MNEV4pQsSBj1KjYyDRUNg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 680,
+        "y": 384,
+        "w": 537,
+        "h": 610
+      },
+      "type": "move",
+      "target": {
+        "x": 118,
+        "y": 418
+      }
+    },
+    {
+      "box": {
+        "x": 1233,
+        "y": 529,
+        "w": 444,
+        "h": 469
+      },
+      "type": "move",
+      "target": {
+        "x": 1485,
+        "y": 361
+      }
+    }
+  ],
+  "note": "光头男的位置和高度发生变化\n棕衣男的高度发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786083008711
+}
