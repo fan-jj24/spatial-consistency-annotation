@@ -1,0 +1,22 @@
+{
+  "line": 1925,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001925_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035475&Signature=QgyA56rsB26FkgqsyNrIfWM2tzk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001925_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035478&Signature=ZSwwFE52NAV%2BaORmGFEkrtAfzKc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 584,
+        "y": 145,
+        "w": 275,
+        "h": 691
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "格子衫男子右侧多出一个女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786070741775
+}
