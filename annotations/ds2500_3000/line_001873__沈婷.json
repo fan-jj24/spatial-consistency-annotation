@@ -1,0 +1,22 @@
+{
+  "line": 1873,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001873_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035458&Signature=HNUxYhW43HZhJ%2Fpo6r3sMa9QogE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001873_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035458&Signature=KAvhE7jPGphPLDdbFz%2BcDFrmBTA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1115,
+        "y": 110,
+        "w": 566,
+        "h": 966
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "红发人朝向变化，由背对白发人变为侧对",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786070741775
+}
