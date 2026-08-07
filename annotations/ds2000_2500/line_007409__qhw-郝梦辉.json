@@ -1,0 +1,26 @@
+{
+  "line": 7409,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007409_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785986633&Signature=C3k9Pj8ltXEOLN4gizIcoEJF5I8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007409_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785986634&Signature=T3qPO7pVY9TpWMRFlRkqwrBg0Qc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1022,
+        "y": 22,
+        "w": 709,
+        "h": 830
+      },
+      "type": "move",
+      "target": {
+        "x": 724,
+        "y": 591
+      }
+    }
+  ],
+  "note": "卷发女子位置发生变化，朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786074684125
+}
