@@ -1,0 +1,27 @@
+{
+  "line": 1720,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001720_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035414&Signature=dx6QvXB5qQjq1lrYVTzWY%2BeklCg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001720_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035416&Signature=e8zBuwAO7DgbeODCVCP0Ool%2F9hE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 927,
+        "y": 121,
+        "w": 449,
+        "h": 917
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.311,
+        0.004,
+        0.95
+      ]
+    }
+  ],
+  "note": "紫衣女子与粉衣丫鬟的相对距离变远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786099532295
+}
