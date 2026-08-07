@@ -1,0 +1,26 @@
+{
+  "line": 1563,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001563_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035366&Signature=6ty%2Bpzpzs90Whqkc51Eh7Tj68MA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001563_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035367&Signature=6mQSwGAGVEKsM7lUBLNAPfgef9Q%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 6,
+        "y": 138,
+        "w": 608,
+        "h": 943
+      },
+      "type": "move",
+      "target": {
+        "x": 1252,
+        "y": 619
+      }
+    }
+  ],
+  "note": "领带男子相对位置变化，应在灰衣男子和女子之间",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786070741775
+}
