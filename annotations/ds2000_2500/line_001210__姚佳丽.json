@@ -1,0 +1,31 @@
+{
+  "line": 1210,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001210_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999933&Signature=i3tQ90%2B2Oly6gAWS%2F5rLY1zHPWc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001210_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999935&Signature=MvRsQ5i%2FS4429oMtJOh0ul0B%2BFE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 645,
+        "y": 432,
+        "w": 281,
+        "h": 497
+      },
+      "type": "replace"
+    },
+    {
+      "box": {
+        "x": 1215,
+        "y": 112,
+        "w": 389,
+        "h": 821
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "蓝衣男子与蓝衣女子位置互换",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786099155601
+}
