@@ -1,0 +1,36 @@
+{
+  "line": 1803,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001803_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035439&Signature=O57cv3SF4TxMmlI3JFmlo39wPQI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001803_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035444&Signature=6nT%2B6E7auxzzvdQw%2BzBy1nR%2FPWo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1115,
+        "y": 362,
+        "w": 316,
+        "h": 600
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.89,
+        -0.156,
+        -0.429
+      ]
+    },
+    {
+      "box": {
+        "x": 465,
+        "y": 385,
+        "w": 453,
+        "h": 706
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "红衣男子相对位置，应坐在沙发上，沙发上多出了的白衣男子与扎发女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786099532295
+}
