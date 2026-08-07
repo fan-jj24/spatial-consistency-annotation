@@ -1,0 +1,22 @@
+{
+  "line": 1644,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001644_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035390&Signature=USbxurb%2BQy335IKAxsbz1RD0wwo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001644_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035391&Signature=obFKvwuj8uysgpcM1jMqkX6YxMQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -8,
+        "y": 87,
+        "w": 1456,
+        "h": 780
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "门应是朝外开，男子后面墙上多出奖状",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786099532295
+}
