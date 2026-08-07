@@ -1,0 +1,46 @@
+{
+  "line": 7210,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007210_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785986606&Signature=xifRSPPHxdDkLnH6Y6p3aNVDfyI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007210_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785986607&Signature=eHiiAg7R7a9gxmCD77sxWsPkEPs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 381,
+        "y": 268,
+        "w": 212,
+        "h": 598
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 506,
+          "y": 315
+        },
+        {
+          "x": 394,
+          "y": 728
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 1122,
+        "y": 318,
+        "w": 341,
+        "h": 521
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.8,
+        0.112,
+        0.59
+      ]
+    }
+  ],
+  "note": "多了一名黑衣男子\n黑衣女子位置发生变化，朝向发生变化，高度发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786066061352
+}
