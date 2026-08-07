@@ -1,0 +1,22 @@
+{
+  "line": 1885,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001885_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035462&Signature=vDRtmNNKM3ov2HHdbLBjpwqlUEM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001885_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035464&Signature=k1LBo7MGpjWiLdaxApNfgoUKHno%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 968,
+        "y": 471,
+        "w": 192,
+        "h": 607
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "粉衣女子替换为A图右边的男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786086596060
+}
