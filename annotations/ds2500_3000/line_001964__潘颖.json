@@ -1,0 +1,27 @@
+{
+  "line": 1964,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001964_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035490&Signature=zf7G7WteEZ5CYztFBS7WnJgpnS0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001964_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035492&Signature=Q5cf%2FcG8ERPHq5%2BCntlQbbH39Jk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 703,
+        "y": 48,
+        "w": 238,
+        "h": 322
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.158,
+        -0.388,
+        -0.908
+      ]
+    }
+  ],
+  "note": "蓝衣女子与灰衣男子的相对距离变远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786086596060
+}
