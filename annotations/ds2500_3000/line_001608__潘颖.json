@@ -1,0 +1,26 @@
+{
+  "line": 1608,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001608_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035380&Signature=zqXPGN9Kn1G5%2BzRLAX%2BAYRztu9Y%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001608_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035380&Signature=rGRY3Gpfeo%2F%2Fc6Vmvz8Yi4ml1mc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 228,
+        "y": -2,
+        "w": 307,
+        "h": 1056
+      },
+      "type": "move",
+      "target": {
+        "x": -276,
+        "y": 508
+      }
+    }
+  ],
+  "note": "红衣女子的相对位置变了，红衣女子与灶台的距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786086596060
+}
