@@ -1,0 +1,26 @@
+{
+  "line": 912,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000912_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999844&Signature=%2BS%2FOBKs%2ByJfXFqWQScj6vcLWRSU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000912_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999848&Signature=c8YR8HaAiykaoi6LaiWXlzCEyHU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1222,
+        "y": 5,
+        "w": 594,
+        "h": 1059
+      },
+      "type": "move",
+      "target": {
+        "x": 666,
+        "y": 380
+      }
+    }
+  ],
+  "note": "灰衣女位置和朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786087599210
+}
