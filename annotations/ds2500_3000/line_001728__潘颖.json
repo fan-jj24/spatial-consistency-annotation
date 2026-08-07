@@ -1,0 +1,26 @@
+{
+  "line": 1728,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001728_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035417&Signature=5tzx%2BpMyXW1HRWTLZZdvr%2FMu49g%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001728_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035418&Signature=nKhxz%2FAzWSNDeJfD1GdeziJN8z8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 161,
+        "y": 84,
+        "w": 598,
+        "h": 996
+      },
+      "type": "move",
+      "target": {
+        "x": 1410,
+        "y": 687
+      }
+    }
+  ],
+  "note": "黑衣男子与红与女子的相对位置变了，两人需互换",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786099532295
+}
