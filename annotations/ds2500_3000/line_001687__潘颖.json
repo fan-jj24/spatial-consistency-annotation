@@ -1,0 +1,26 @@
+{
+  "line": 1687,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001687_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035404&Signature=jQJNzrD9aGx1W22X0cE0ijJ%2BE2U%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001687_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035405&Signature=dIpIjH1WnnuBJEhdqsM4VBuKkZg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 688,
+        "y": 190,
+        "w": 218,
+        "h": 514
+      },
+      "type": "move",
+      "target": {
+        "x": 441,
+        "y": 462
+      }
+    }
+  ],
+  "note": "风衣男子的相对位置变了，应在白衣女子和红衣女子中间",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786099532295
+}
