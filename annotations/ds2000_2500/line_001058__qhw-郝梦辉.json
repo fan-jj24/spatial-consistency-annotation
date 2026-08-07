@@ -1,0 +1,31 @@
+{
+  "line": 1058,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001058_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999893&Signature=aeGzVXXZrniMS%2Fuqjd1%2BikURXQ4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001058_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999895&Signature=M8%2Ffax9WN8W5039MTnRRbp4leHE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 320,
+        "y": 527,
+        "w": 177,
+        "h": 546
+      },
+      "type": "rotate"
+    },
+    {
+      "box": {
+        "x": 724,
+        "y": 598,
+        "w": 110,
+        "h": 469
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "灰衣拿扇子男子的朝向发生变化\n黄衣女子朝向发生变化，位置发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786083880787
+}
