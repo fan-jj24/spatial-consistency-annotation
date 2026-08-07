@@ -1,0 +1,22 @@
+{
+  "line": 1628,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001628_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035386&Signature=9vKv7SujkCx8AIrt45UnoUFuWDY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001628_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035387&Signature=T1T0ig3zPqkgxxbe3jk0JGia2mE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 590,
+        "y": 220,
+        "w": 538,
+        "h": 864
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "女主左手边多出一个男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786079472338
+}
