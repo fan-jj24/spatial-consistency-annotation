@@ -1,0 +1,31 @@
+{
+  "line": 1360,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001360_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999983&Signature=nX4f2za9KXet1squFwC4zcQuXm4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001360_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999987&Signature=F90ea5lPcx3mNjjQgHqE30S9ib0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1181,
+        "y": 26,
+        "w": 254,
+        "h": 771
+      },
+      "type": "rotate"
+    },
+    {
+      "box": {
+        "x": 510,
+        "y": 160,
+        "w": 288,
+        "h": 637
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "黑衣女和白衣黑裙女的朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786072916582
+}
