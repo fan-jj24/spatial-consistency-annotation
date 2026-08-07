@@ -1,0 +1,26 @@
+{
+  "line": 7204,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007204_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785986608&Signature=ZoCEKOh%2BM07AddD70MKaC9AnLRg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007204_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785986604&Signature=4O4zX%2B0lMsRQNSTZ3VMYtM5SoW4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 245,
+        "y": 207,
+        "w": 578,
+        "h": 725
+      },
+      "type": "move",
+      "target": {
+        "x": 512,
+        "y": 142
+      }
+    }
+  ],
+  "note": "白短袖男的高度发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786068637030
+}
