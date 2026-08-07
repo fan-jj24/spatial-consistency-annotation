@@ -1,0 +1,22 @@
+{
+  "line": 1811,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001811_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035441&Signature=1BIGvPi2y%2F32V2J53B4323b5vek%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001811_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035442&Signature=xgxAtjSdVLKBmWH0hryFnSCib%2BI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 251,
+        "y": 45,
+        "w": 1349,
+        "h": 937
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "黑衣女子与花衣女子由面对面变成背对背",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786099532295
+}
