@@ -1,0 +1,22 @@
+{
+  "line": 1699,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001699_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035409&Signature=smyQ7HT%2BkUtby8xyC31g7QFWyAk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001699_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035410&Signature=5%2BqtFo%2BAZcIjo5Ew2FrZz%2BjW99I%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 72,
+        "y": 7,
+        "w": 641,
+        "h": 618
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "男子朝向变化，由正面变为侧身",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786080680268
+}
