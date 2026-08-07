@@ -1,0 +1,26 @@
+{
+  "line": 1535,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001535_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035357&Signature=1y9T61OyFxLP15s9uiF6tD5%2B0g4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001535_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035361&Signature=mCZMqkUrl%2F7XODey0zw71zfQSFg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 688,
+        "y": 119,
+        "w": 778,
+        "h": 289
+      },
+      "type": "move",
+      "target": {
+        "x": 1014,
+        "y": 804
+      }
+    }
+  ],
+  "note": "绿色怪物的相对位置变高了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786079472338
+}
