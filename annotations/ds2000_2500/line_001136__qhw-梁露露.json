@@ -1,0 +1,32 @@
+{
+  "line": 1136,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001136_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999908&Signature=A%2FX1Xs9hglJ4H37tnataoXQFC%2F4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001136_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999913&Signature=Tnxx%2B7BD8DoX4Woz0Avc1zJwFO8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1189,
+        "y": 469,
+        "w": 380,
+        "h": 486
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 1320,
+          "y": 603
+        },
+        {
+          "x": 1415,
+          "y": 772
+        }
+      ]
+    }
+  ],
+  "note": "多出一个齐刘海女孩",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786075053987
+}
