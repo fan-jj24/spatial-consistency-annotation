@@ -1,0 +1,22 @@
+{
+  "line": 2015,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002015_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035505&Signature=3ypcAKMGQI3ymN35T9ztf7qvjcc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002015_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035507&Signature=n9anpDPd2dJsK5QsxJQXs8v6hSM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1693,
+        "y": 164,
+        "w": 208,
+        "h": 631
+      },
+      "type": "add"
+    }
+  ],
+  "note": "红衣女子左侧的白衣女子消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786070741775
+}
