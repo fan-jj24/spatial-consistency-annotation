@@ -1,0 +1,27 @@
+{
+  "line": 1240,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001240_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999945&Signature=nH1u77yCulbt6W9VHOPOBJgIXLo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001240_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999946&Signature=iNE%2FgLGR4GpgCjg9KKU19f2hzMA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 479,
+        "y": 272,
+        "w": 182,
+        "h": 349
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.306,
+        0.163,
+        0.938
+      ]
+    }
+  ],
+  "note": "黑衣男子和牛仔裤牛仔裤女子位置发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786068643200
+}
