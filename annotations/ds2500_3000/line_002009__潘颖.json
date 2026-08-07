@@ -1,0 +1,22 @@
+{
+  "line": 2009,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002009_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035503&Signature=222%2B67OKgwa1GcVEIyaeBb%2FkYYU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002009_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035506&Signature=NgMqLT7qK6spj5ejnQx78X4al8Q%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 296,
+        "y": 372,
+        "w": 328,
+        "h": 715
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "负荆男子的朝向变了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786099532295
+}
