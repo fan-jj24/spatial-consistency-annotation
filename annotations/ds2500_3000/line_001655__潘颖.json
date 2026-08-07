@@ -1,0 +1,26 @@
+{
+  "line": 1655,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001655_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035392&Signature=%2FHo%2FdUwqwN%2FXGfSQmZZkLplvdbA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001655_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035399&Signature=tctszzBfyq7mnWx8G8mJnQRla4k%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 2381,
+        "y": 4,
+        "w": 383,
+        "h": 1070
+      },
+      "type": "move",
+      "target": {
+        "x": 1155,
+        "y": 852
+      }
+    }
+  ],
+  "note": "灰衣男子的相对位置变了，应站在镜子前",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786072498922
+}
