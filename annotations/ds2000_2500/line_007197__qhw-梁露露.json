@@ -1,0 +1,32 @@
+{
+  "line": 7197,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007197_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785986606&Signature=x70Uy89mQ%2Fil%2BqWLqkEmg%2F89fDA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007197_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785986602&Signature=wBSLGmro1vAbNu8L7WPP15DST6w%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1174,
+        "y": 164,
+        "w": 469,
+        "h": 560
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 1355,
+          "y": 341
+        },
+        {
+          "x": 1471,
+          "y": 516
+        }
+      ]
+    }
+  ],
+  "note": "多出一个灰衣女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786083976910
+}
