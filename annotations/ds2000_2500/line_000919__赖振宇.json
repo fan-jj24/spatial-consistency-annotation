@@ -1,0 +1,59 @@
+{
+  "line": 919,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000919_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999846&Signature=d9CVhBkwIaStUM2BlmnyQl1%2FuYg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000919_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999851&Signature=vtWIuRCNhfE6gSA8AYDvrX8snUA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 843,
+        "y": 256,
+        "w": 458,
+        "h": 743
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 1219,
+          "y": 454
+        },
+        {
+          "x": 1009,
+          "y": 642
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 152,
+        "y": 349,
+        "w": 153,
+        "h": 678
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.996,
+        -0.006,
+        -0.092
+      ]
+    },
+    {
+      "box": {
+        "x": 467,
+        "y": 452,
+        "w": 207,
+        "h": 495
+      },
+      "type": "move",
+      "target": {
+        "x": 566,
+        "y": 256
+      }
+    }
+  ],
+  "note": "红衣女子高度变化，白衣女子位置朝向变化，多了俩个人粉衣女子和黄衣男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786074633562
+}
