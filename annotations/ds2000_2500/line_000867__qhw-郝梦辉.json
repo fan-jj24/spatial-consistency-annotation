@@ -1,0 +1,26 @@
+{
+  "line": 867,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000867_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999835&Signature=92PmPonK1Q%2FAnPzLjbCldcTIEHs%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000867_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999838&Signature=CO63qI6QNrvAcvsEFzf1wc9sC5w%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 681,
+        "y": 508,
+        "w": 259,
+        "h": 598
+      },
+      "type": "move",
+      "target": {
+        "x": 517,
+        "y": 825
+      }
+    }
+  ],
+  "note": "黑衣插发簪男位置发生变化，朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786072569062
+}
