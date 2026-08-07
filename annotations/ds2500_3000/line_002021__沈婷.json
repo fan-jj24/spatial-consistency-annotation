@@ -1,0 +1,26 @@
+{
+  "line": 2021,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002021_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035506&Signature=86%2FSu7xZjmOxrfbn1%2BbtjszwKNs%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002021_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035507&Signature=IhmFJJMdOTEQ0Itf4Vk19Fb3X%2B4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 563,
+        "y": 213,
+        "w": 493,
+        "h": 677
+      },
+      "type": "move",
+      "target": {
+        "x": 1184,
+        "y": 509
+      }
+    }
+  ],
+  "note": "黄毛狗与红发狗距离变远",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786070741775
+}
