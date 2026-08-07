@@ -1,0 +1,27 @@
+{
+  "line": 1070,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001070_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999899&Signature=DxJubnQ4ZlC9Zje%2F9NZ8pRJzbsk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001070_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999902&Signature=PdB%2F%2FiUGJ7Sa8I38wdiMqwigLQE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1137,
+        "y": 63,
+        "w": 724,
+        "h": 592
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.626,
+        -0.065,
+        -0.777
+      ]
+    }
+  ],
+  "note": "粉头套绿鬼位置发生变化，朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786072569062
+}
