@@ -1,0 +1,36 @@
+{
+  "line": 545,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000545_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999797&Signature=ydlX6Xq8m1LDEsz95wPYbSv9D9U%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000545_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999799&Signature=hhjTTCluU1ryxCKwx5WrjbN1xmI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 283,
+        "y": 350,
+        "w": 741,
+        "h": 691
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.503,
+        0.024,
+        0.864
+      ]
+    },
+    {
+      "box": {
+        "x": 100,
+        "y": 400,
+        "w": 119,
+        "h": 464
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "蓝衣男子位置变化朝向变化，局部背景变为门",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786099745769
+}
