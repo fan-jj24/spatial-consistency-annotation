@@ -1,0 +1,22 @@
+{
+  "line": 7372,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007372_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785986628&Signature=gheqvY9XEIctVcZggYstLg2CVz4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007372_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785986628&Signature=bfDh4QnLb%2FaSLZ21oIAp0VoFgVE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 113,
+        "y": 66,
+        "w": 1281,
+        "h": 895
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "绿衣女和黑衣男位置需要互换",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786069441666
+}
