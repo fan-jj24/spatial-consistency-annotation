@@ -1,0 +1,35 @@
+{
+  "line": 64,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000064_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999771&Signature=bN1T5CpKJazsl7wf6ZrjPEL%2B9lc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000064_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999773&Signature=tOht7xJeHk%2BT821T4JHR%2Fb0sikM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 982,
+        "y": 415,
+        "w": 102,
+        "h": 410
+      },
+      "type": "add"
+    },
+    {
+      "box": {
+        "x": 1481,
+        "y": 518,
+        "w": 130,
+        "h": 184
+      },
+      "type": "move",
+      "target": {
+        "x": 1338,
+        "y": 590
+      }
+    }
+  ],
+  "note": "少了一名黑衣男子\n米白色衣服女子位置发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786072569062
+}
