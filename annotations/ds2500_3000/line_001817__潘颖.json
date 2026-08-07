@@ -1,0 +1,22 @@
+{
+  "line": 1817,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001817_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035444&Signature=R%2FQ5uA0k%2Fm%2FnMJko7YW4Sj2GFqM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001817_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035445&Signature=XU83ENMDz4wCDhBCH8Dmb%2FLIK3o%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 247,
+        "y": 0,
+        "w": 948,
+        "h": 1078
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "男子与女子由前后变成面对面",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786086596060
+}
