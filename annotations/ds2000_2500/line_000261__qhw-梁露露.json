@@ -1,0 +1,36 @@
+{
+  "line": 261,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000261_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999775&Signature=9F1ZZ26VDR6s288cfwxWXoBHfMc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000261_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999779&Signature=6clNlpdXFh9U54Ytq3hGCVgosQ4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 591,
+        "y": 304,
+        "w": 265,
+        "h": 700
+      },
+      "type": "rotate"
+    },
+    {
+      "box": {
+        "x": 993,
+        "y": 637,
+        "w": 211,
+        "h": 374
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.798,
+        -0.417,
+        -0.435
+      ]
+    }
+  ],
+  "note": "粉衣女朝向发生变化\n小男孩位置发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786083976910
+}
