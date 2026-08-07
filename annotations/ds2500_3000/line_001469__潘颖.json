@@ -1,0 +1,26 @@
+{
+  "line": 1469,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001469_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035336&Signature=bZSJDEWy9CRVht6tVfSCmaP3vp4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001469_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035339&Signature=LG8jp6lMJsKTkvvzBC9cpLtTEHM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1154,
+        "y": -2,
+        "w": 244,
+        "h": 1004
+      },
+      "type": "move",
+      "target": {
+        "x": 1293,
+        "y": 1065
+      }
+    }
+  ],
+  "note": "背心男子的相对高度变高了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786086596060
+}
