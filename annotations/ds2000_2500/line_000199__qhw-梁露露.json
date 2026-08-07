@@ -1,0 +1,22 @@
+{
+  "line": 199,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000199_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999774&Signature=d9AKkv2wgQukpO7l2EhNMtgnOIQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000199_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999774&Signature=zJ02fSFkgFaog2i8QuXiiFdQcPg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 393,
+        "y": 560,
+        "w": 358,
+        "h": 249
+      },
+      "type": "add"
+    }
+  ],
+  "note": "少了一个灰色机器人",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786066332019
+}
