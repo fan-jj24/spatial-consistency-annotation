@@ -1,0 +1,41 @@
+{
+  "line": 1888,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001888_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035464&Signature=l1LRaPQWqyU6oQ7TIzyKUEeSwrg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001888_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035466&Signature=iXrqbY8MWnVlgzrGZJTAx8uQTfM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 154,
+        "y": 632,
+        "w": 499,
+        "h": 305
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.097,
+        0.463,
+        0.881
+      ]
+    },
+    {
+      "box": {
+        "x": 1205,
+        "y": 290,
+        "w": 515,
+        "h": 716
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.27,
+        0.111,
+        0.956
+      ]
+    }
+  ],
+  "note": "卷发男子与蓝衣男子距离变近，白发女子与蓝衣男子距离变远",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786070741775
+}
