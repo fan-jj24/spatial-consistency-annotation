@@ -12,15 +12,16 @@
         "w": 458,
         "h": 622
       },
-      "type": "move",
-      "target": {
-        "x": 476,
-        "y": 629
-      }
+      "type": "move3d",
+      "dir3d": [
+        -1,
+        0,
+        -0.01
+      ]
     }
   ],
   "note": "黑衣男子位置朝向变化",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1786070501730
+  "ts": 1786081130344
 }
