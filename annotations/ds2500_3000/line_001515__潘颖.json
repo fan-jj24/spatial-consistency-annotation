@@ -1,0 +1,22 @@
+{
+  "line": 1515,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001515_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035351&Signature=Ztf77PHSls4lESvAxQfl5OH1ij8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001515_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035352&Signature=V6v3p%2Fu0AM7wdBDW42RfToTZ5LY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 215,
+        "y": 171,
+        "w": 495,
+        "h": 762
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "老人右前方多出了一个的长发女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786099532295
+}
