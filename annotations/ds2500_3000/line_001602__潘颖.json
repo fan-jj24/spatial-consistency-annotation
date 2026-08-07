@@ -1,0 +1,22 @@
+{
+  "line": 1602,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001602_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035378&Signature=GLCbbi4byEPSqvkFDQVeYGB4%2BzE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001602_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035378&Signature=%2Frbxnk4YiYNz0o9Z3vXSGbDAsgQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 860,
+        "y": 455,
+        "w": 192,
+        "h": 350
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "狗狗的朝向变了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786099532295
+}
