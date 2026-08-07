@@ -1,0 +1,22 @@
+{
+  "line": 481,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000481_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999791&Signature=93CAfE1s3kEn95AVWiiFGcvMJvk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000481_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999795&Signature=ctn7vg54HcWbAbRb1QFgZscrq8E%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 868,
+        "y": 71,
+        "w": 285,
+        "h": 943
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "没抽烟的黑衣男子朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786074684125
+}
