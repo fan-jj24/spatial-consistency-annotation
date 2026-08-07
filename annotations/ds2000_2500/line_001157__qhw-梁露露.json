@@ -1,0 +1,35 @@
+{
+  "line": 1157,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001157_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999919&Signature=US9ufKflDSkJb53hJ6CBne%2BzUiE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001157_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999920&Signature=m8LA1FwQhJOIlyUHXGxaLfl0C4w%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 7,
+        "y": 42,
+        "w": 1573,
+        "h": 941
+      },
+      "type": "move",
+      "target": {
+        "x": 789,
+        "y": 4
+      }
+    },
+    {
+      "box": {
+        "x": 1716,
+        "y": 276,
+        "w": 193,
+        "h": 351
+      },
+      "type": "add"
+    }
+  ],
+  "note": "白衣男和灰衣男的高度发生变化\n少了一个红衣女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786066332019
+}
