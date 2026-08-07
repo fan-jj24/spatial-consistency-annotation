@@ -1,0 +1,46 @@
+{
+  "line": 932,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000932_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999852&Signature=qQXQ%2B5eYocEFqRYZz3eonyFsf9o%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000932_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999859&Signature=N0dbc207B%2FerryxSLQPNMElpTVU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 366,
+        "y": 333,
+        "w": 199,
+        "h": 482
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.359,
+        -0.078,
+        -0.93
+      ]
+    },
+    {
+      "box": {
+        "x": 621,
+        "y": 540,
+        "w": 89,
+        "h": 354
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 690,
+          "y": 633
+        },
+        {
+          "x": 701,
+          "y": 903
+        }
+      ]
+    }
+  ],
+  "note": "红色斗笠男子位置变化，多了一个红衣男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786084683865
+}
