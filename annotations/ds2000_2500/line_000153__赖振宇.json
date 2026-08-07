@@ -1,0 +1,27 @@
+{
+  "line": 153,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000153_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999773&Signature=on00ldAwmu6NAb3A%2FEk4oZ7xEaA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000153_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999779&Signature=i2eZ%2BryW9zMT9Kw%2BKxG3mzmra6E%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 762,
+        "y": 282,
+        "w": 210,
+        "h": 594
+      },
+      "type": "move3d",
+      "dir3d": [
+        1,
+        -0.002,
+        -0.004
+      ]
+    }
+  ],
+  "note": "蓝衣黄头生物位置变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786083731251
+}
