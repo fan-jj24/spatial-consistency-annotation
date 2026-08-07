@@ -4,24 +4,9 @@
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017505_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863819&Signature=L55qiLbu5BkOdq5Yt6Pzv%2BxAueU%3D",
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017505_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863819&Signature=GC5m1LEvmNBKiF%2FkzRf32SEUjoA%3D"
   ],
-  "objects": [
-    {
-      "box": {
-        "x": 1,
-        "y": 211,
-        "w": 312,
-        "h": 1068
-      },
-      "type": "move3d",
-      "dir3d": [
-        0.031,
-        -0.092,
-        -0.995
-      ]
-    }
-  ],
-  "note": "白发男子位置发生变化",
+  "objects": [],
+  "note": "",
   "bg_global": false,
-  "bg_ambiguous": false,
-  "ts": 1786003763414
+  "bg_ambiguous": true,
+  "ts": 1786088616343
 }
