@@ -1,0 +1,46 @@
+{
+  "line": 1044,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001044_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999889&Signature=26d5DmI7cfH8o4KcTe%2BGDxN3KWM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001044_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999892&Signature=YciXZ2FVYcqIFOqwH0i9DRFGdEI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1113,
+        "y": 22,
+        "w": 211,
+        "h": 267
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 1192,
+          "y": 90
+        },
+        {
+          "x": 1271,
+          "y": 210
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 653,
+        "y": 15,
+        "w": 435,
+        "h": 789
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.475,
+        0.178,
+        0.862
+      ]
+    }
+  ],
+  "note": "多出一个白帽男子\n绿衣女子位置发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786083976910
+}
