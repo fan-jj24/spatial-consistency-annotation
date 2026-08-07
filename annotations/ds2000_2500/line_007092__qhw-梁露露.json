@@ -1,0 +1,35 @@
+{
+  "line": 7092,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007092_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785986592&Signature=CCmMlyKa9mIQ%2F72H9rHOqzhzDPI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007092_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785986592&Signature=9v0rmXNNzFlT1wrS8g%2FlDvMLd8M%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 993,
+        "y": 316,
+        "w": 70,
+        "h": 156
+      },
+      "type": "rotate"
+    },
+    {
+      "box": {
+        "x": 639,
+        "y": 325,
+        "w": 120,
+        "h": 313
+      },
+      "type": "move",
+      "target": {
+        "x": 1113,
+        "y": 391
+      }
+    }
+  ],
+  "note": "白衣女朝向发生变化\n黑衣男位置和高度发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786072916582
+}
