@@ -1,0 +1,23 @@
+{
+  "line": 1933,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001933_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035479&Signature=jxDtrprjxg%2F%2BTuoOHyPlAmKZYCs%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001933_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035487&Signature=EAFIOWddvn7e90gUZkkoeDHoJ3A%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 391,
+        "y": 391,
+        "w": 1197,
+        "h": 692
+      },
+      "type": "custom",
+      "text": "2人相对位置变化，需要重排"
+    }
+  ],
+  "note": "花裙女和长发女相对位置相反，应交换位置",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786077734843
+}
