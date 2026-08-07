@@ -1,0 +1,22 @@
+{
+  "line": 1982,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001982_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035495&Signature=NZazMCIxuCoTBaMe7oi0g8pCtAU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001982_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035495&Signature=Be0KpyM9p%2BEXcVVsT41zbE3fS4A%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 385,
+        "y": 314,
+        "w": 379,
+        "h": 742
+      },
+      "type": "add"
+    }
+  ],
+  "note": "拉链男子右侧的女子消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786077734843
+}
