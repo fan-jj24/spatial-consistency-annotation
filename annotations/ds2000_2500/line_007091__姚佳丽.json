@@ -1,0 +1,31 @@
+{
+  "line": 7091,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007091_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785986592&Signature=9k30o8TQPNmwJmonY4iRc0ByEw8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007091_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785986592&Signature=UtBV9BMg%2FAet4CdS6O45WmqAFMc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 67,
+        "y": 130,
+        "w": 1013,
+        "h": 860
+      },
+      "type": "rotate"
+    },
+    {
+      "box": {
+        "x": 1117,
+        "y": 110,
+        "w": 294,
+        "h": 769
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "白衣男子和绿衣男子朝向变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786099155601
+}
