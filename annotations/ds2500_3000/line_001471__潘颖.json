@@ -1,0 +1,27 @@
+{
+  "line": 1471,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001471_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035336&Signature=SK%2FClYrWLGmQpV4%2FmkXoRMsqy3w%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001471_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035338&Signature=bBYgFP1DIbuL2COQ4Le%2BNRn%2FHaw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 511,
+        "y": 210,
+        "w": 546,
+        "h": 868
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.097,
+        -0.099,
+        -0.99
+      ]
+    }
+  ],
+  "note": "女子离坟墓的相对位置变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786072498922
+}
