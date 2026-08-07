@@ -182,6 +182,7 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
   margin-top:8px; border:1px solid var(--border); border-radius:8px; overflow:hidden; background:#fff;
 }
 .my-records-panel.hidden { display:none; }
+.my-records-foot { padding:8px 12px; border-top:1px solid var(--border); text-align:center; }
 .my-records-head {
   display:flex; align-items:center; justify-content:space-between;
   padding:8px 12px; font-size:13px; font-weight:700; border-bottom:1px solid var(--border);
@@ -605,6 +606,9 @@ button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:va
       <div class="my-records-panel hidden" id="myRecordsPanel">
         <div class="my-records-head">我的标注记录 <span class="my-records-close" id="myRecordsClose">✕</span></div>
         <div class="my-records-body" id="myRecordsBody">加载中...</div>
+        <div class="my-records-foot">
+          <button id="btnReclaimAll" class="primary" style="font-size:13px;padding:8px 16px;">🔄 回扫全部记录</button>
+        </div>
       </div>
     </div>
   </div>
@@ -844,6 +848,8 @@ const STATE = {
   editLine: null,       // 正在编辑的行号
   editSha: null,        // 已有文件的 sha（用于覆盖更新）
   editIsReview: false,  // 正在编辑的是审核还是标注
+  // 回扫模式：批量修改自己已有的全部标注记录，上传时走 updateMyAnnotation 而非 uploadBatch
+  reclaimMode: false,
   // 审核
   reviewVerdict: null,
   reviewAnnotator: "",
@@ -944,7 +950,7 @@ function getCurrentDatasetId() {
 }
 function saveLocal() {
   try {
-    const data = { datasetId: getCurrentDatasetId(), batch: STATE.batch, batchDatasetId: STATE.batchDatasetId, batchIdx: STATE.batchIdx, batchResults: STATE.batchResults, batchDone: [...STATE.batchDone], role: STATE.role };
+    const data = { datasetId: getCurrentDatasetId(), batch: STATE.batch, batchDatasetId: STATE.batchDatasetId, batchIdx: STATE.batchIdx, batchResults: STATE.batchResults, batchDone: [...STATE.batchDone], role: STATE.role, reclaimMode: STATE.reclaimMode };
     localStorage.setItem(LS_KEY, JSON.stringify(data));
   } catch (e) {}
 }
@@ -965,6 +971,7 @@ function loadLocal() {
     STATE.batchResults = data.batchResults || {};
     STATE.batchDone = new Set(data.batchDone || []);
     STATE.role = data.role || "annotator";
+    STATE.reclaimMode = !!data.reclaimMode;
     return true;
   } catch (e) { return false; }
 }
@@ -1866,6 +1873,7 @@ function updateBatchUI() {
   // 背景按钮：审核者隐藏（只读）
   $("btnBgGlobal").disabled = isReviewer();
   $("btnBgLocal").disabled = isReviewer();
+  $("btnBgAmbiguous").disabled = isReviewer();
   // 图片提示
   document.querySelector(".img-tip").textContent = isReviewer()
     ? "查看标注结果 · 在下方判定正确或错误"
@@ -1891,17 +1899,19 @@ async function finishAnnotation() {
   const undoneCount = total - doneCount;
 
   // ===== 双重确认：明确显示数据集，防止传错池子 =====
+  const isReclaim = STATE.reclaimMode;
   const uploadRows = [
     { k: "角色", v: isReviewer() ? "⚖️ 审核者" : "✍️ 标注者" },
+    { k: "模式", v: isReclaim ? "🔄 回扫（覆盖原文件）" : "📥 新标注" },
     { k: "本批总数", v: total + " 条" },
     { k: "✅ 将保存到仓库", v: doneCount + " 条", hl: true },
   ];
-  if (undoneCount > 0) uploadRows.push({ k: "↩️ 将返回池子", v: undoneCount + " 条" });
+  if (!isReclaim && undoneCount > 0) uploadRows.push({ k: "↩️ 将返回池子", v: undoneCount + " 条" });
   const okUpload = await showConfirm({
     tone: "upload",
-    icon: "📤",
-    title: isReviewer() ? "结束审核并上传" : "结束标注并上传",
-    sub: "结果将上传到以下数据集目录",
+    icon: isReclaim ? "🔄" : "📤",
+    title: isReclaim ? "回扫上传（覆盖）" : (isReviewer() ? "结束审核并上传" : "结束标注并上传"),
+    sub: isReclaim ? "将覆盖以下数据集中的原有标注文件" : "结果将上传到以下数据集目录",
     rows: uploadRows,
     warn: "⚠️ 此操作不可撤销，请确认数据集无误后再继续。",
     okText: "确认上传",
@@ -1911,7 +1921,7 @@ async function finishAnnotation() {
   const btn = $("btnUpload");
   btn.disabled = true;
   const statusEl = $("uploadStatus");
-  statusEl.className = "syncing"; statusEl.textContent = "正在结束...";
+  statusEl.className = "syncing"; statusEl.textContent = isReclaim ? "正在覆盖上传..." : "正在结束...";
 
   // 构建要上传的结果
   const results = [];
@@ -1921,7 +1931,7 @@ async function finishAnnotation() {
     if (!r) continue;
     if (isReviewer()) {
       if (!r.verdict) continue;
-      results.push({ line: s.line, data: { line: s.line, verdict: r.verdict, reason: r.reason || "", annotator: s._annotatorName || "", reviewer: username, ts: Date.now() } });
+      results.push({ line: s.line, data: { line: s.line, verdict: r.verdict, reason: r.reason || "", annotator: s._annotatorName || "", reviewer: username, ts: Date.now() }, sha: s._editSha });
     } else {
       if (!r.boxes.length && !r.note && !r.bgGlobal && !r.bgAmbiguous) continue;
       results.push({ line: s.line, data: {
@@ -1938,17 +1948,36 @@ async function finishAnnotation() {
         bg_global: !!r.bgGlobal,
         bg_ambiguous: !!r.bgAmbiguous,
         ts: Date.now(),
-      }});
+      }, sha: s._editSha });
     }
   }
 
   try {
-    // 1. 上传已完成的
-    if (results.length > 0) {
-      await window.GithubDispatch.uploadBatch(results, isReviewer());
+    if (isReclaim) {
+      // 回扫模式：逐条覆盖更新（走 updateMyAnnotation，不释放锁）
+      // sha 传 null：让 updateMyAnnotation 上传时实时取最新 sha，
+      // 避免回扫期间文件被改动导致快照 sha 过期而 409 失败
+      let ok = 0, fail = 0;
+      for (let i = 0; i < results.length; i++) {
+        const r = results[i];
+        statusEl.textContent = "覆盖上传 " + (i + 1) + "/" + results.length + " ...";
+        try {
+          await window.GithubDispatch.updateMyAnnotation(r.line, r.data, isReviewer(), null);
+          ok++;
+        } catch (e) {
+          fail++;
+          console.error("覆盖 line " + r.line + " 失败:", e);
+        }
+      }
+      showToast("回扫完成：成功 " + ok + " 条" + (fail ? "，失败 " + fail + " 条" : ""), fail ? "warn" : "success");
+    } else {
+      // 正常模式：批量上传 + 释放锁
+      if (results.length > 0) {
+        await window.GithubDispatch.uploadBatch(results, isReviewer());
+      }
+      await window.GithubDispatch.releaseAll(isReviewer());
+      showToast("已保存 " + results.length + " 条，释放 " + undoneCount + " 条回池子", "success");
     }
-    // 2. 释放全部剩余锁（未完成的行回到池子）
-    await window.GithubDispatch.releaseAll(isReviewer());
 
     // 清空本地所有记录
     clearLocal();
@@ -1956,10 +1985,10 @@ async function finishAnnotation() {
     STATE.batchIdx = 0;
     STATE.batchResults = {};
     STATE.batchDone = new Set();
+    STATE.reclaimMode = false;
 
     statusEl.className = "synced";
     statusEl.textContent = "已结束 ✓";
-    showToast("已保存 " + results.length + " 条，释放 " + undoneCount + " 条回池子", "success");
 
     // 回到领取界面
     showPhase("claim");
@@ -2459,6 +2488,117 @@ async function loadMyRecords() {
   }
 }
 
+// ===== 回扫全部记录：把已有标注全部拉成一个批次，逐条修改后统一上传（覆盖更新）=====
+async function reclaimAllRecords() {
+  const isReview = (document.querySelector('input[name="roleRadio"]:checked') || {}).value === "reviewer";
+  STATE.role = isReview ? "reviewer" : "annotator";
+  window.GithubAuth.setRole(STATE.role);
+
+  // 确认弹窗
+  const ok = await showConfirm({
+    tone: "claim",
+    icon: "🔄",
+    title: "回扫全部记录",
+    sub: "将加载你已有的全部标注记录，逐条修改后统一上传（覆盖原文件）",
+    rows: [
+      { k: "角色", v: isReview ? "⚖️ 审核者" : "✍️ 标注者" },
+      { k: "数据集", v: getCurrentDatasetName() },
+    ],
+    warn: "⚠️ 上传后将覆盖原有标注文件，请确认数据集无误。",
+    okText: "确认回扫",
+  });
+  if (!ok) return;
+
+  showLoading("正在获取记录列表...");
+  try {
+    const records = await window.GithubDispatch.listMyAnnotations(isReview);
+    hideLoading();
+    if (!records.length) {
+      showToast("没有可回扫的记录", "warn");
+      return;
+    }
+
+    // 逐条加载已有标注数据（复用 startEditRecord 的加载逻辑）
+    const batch = [];
+    const batchResults = {};
+    showLoading("正在加载 " + records.length + " 条记录...");
+    for (let i = 0; i < records.length; i++) {
+      const r = records[i];
+      const result = await window.GithubDispatch.loadMyAnnotation(r.line, isReview);
+      if (!result || !result.data) continue;
+
+      // 构建样本（优先用 samples.json 里的，没有就用记录自带的 remotes）
+      let sample = STATE.sampleByLine[r.line];
+      if (!sample) {
+        const remotes = (result.data && result.data.remotes) || [];
+        sample = { line: r.line, remotes: remotes, locals: ["", ""] };
+        STATE.sampleByLine[r.line] = sample;
+      }
+      // 把 sha 存到 sample 上，上传时用
+      sample._editSha = result.sha;
+      sample._editPath = result.path;
+      batch.push(sample);
+
+      // 恢复 boxes/note/bg 到 batchResults（和 startEditRecord 一样的逻辑）
+      let boxesSource = result.data;
+      if (isReview) {
+        try {
+          const anno = await window.GithubDispatch.loadAnnotationForReview(r.line);
+          if (anno && anno.data) {
+            boxesSource = anno.data;
+            sample._annotatorName = anno.annotatorName || "";
+          }
+        } catch (e) {}
+      }
+
+      const boxes = [];
+      let bid = 1;
+      if (boxesSource.objects) {
+        boxesSource.objects.forEach((obj) => {
+          const box = { boxId: bid++, x:obj.box.x, y:obj.box.y, w:obj.box.w, h:obj.box.h, action:obj.type||"neutral" };
+          if (obj.type === "bg_local") { box.bgLocal = true; box.action = "neutral"; }
+          if (obj.target) box.target = obj.target;
+          if (obj.dir3d) box.dir3d = obj.dir3d;
+          if (obj.text) box.text = obj.text;
+          if (obj.line) box.line = obj.line;
+          boxes.push(box);
+        });
+      }
+      batchResults[r.line] = {
+        boxes, note: boxesSource.note || "",
+        bgGlobal: !!boxesSource.bg_global, bgAmbiguous: !!boxesSource.bg_ambiguous,
+        verdict: isReview ? (result.data.verdict || null) : null,
+        reason: isReview ? (result.data.reason || "") : "",
+      };
+    }
+    hideLoading();
+
+    if (!batch.length) {
+      showToast("没有可回扫的记录", "warn");
+      return;
+    }
+
+    // 进入工作区（和领取流程一样）
+    STATE.batch = batch;
+    STATE.batchDatasetId = getCurrentDatasetId();
+    STATE.batchIdx = 0;
+    STATE.batchResults = batchResults;
+    STATE.batchDone = new Set(batch.map((s) => s.line)); // 回扫模式下全部标记为已完成
+    STATE.reclaimMode = true;
+    STATE.editMode = false;
+
+    saveLocal();
+    showPhase("work");
+    loadCurrentFromLocal();
+    loadCurrentSample();
+    updateBatchUI();
+    showToast("已加载 " + batch.length + " 条记录，逐条修改后点「结束标注」统一上传", "success");
+  } catch (e) {
+    hideLoading();
+    showToast("回扫失败: " + e.message, "warn");
+  }
+}
+
 // 从记录列表点击修改 → 加载到 phase-work（复用 DOM）
 async function startEditRecord(line, isReview, filePath) {
   showLoading("正在加载数据...");
@@ -2760,6 +2900,10 @@ async function init() {
     loadMyRecords();
   };
   $("myRecordsClose").onclick = () => { $("myRecordsPanel").classList.add("hidden"); };
+  $("btnReclaimAll").onclick = () => {
+    if (!window.GithubAuth.getToken()) { openLoginModal(); return; }
+    reclaimAllRecords();
+  };
   // 锁详情面板：点击"锁定中"展开/关闭
   $("lockedStatBox").onclick = () => {
     $("lockDetails").classList.toggle("hidden");
