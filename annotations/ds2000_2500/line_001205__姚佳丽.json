@@ -1,0 +1,27 @@
+{
+  "line": 1205,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001205_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999932&Signature=sEwtuQ1nZ%2FLqDb4ecbjSGdBlKTA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001205_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999933&Signature=%2FHSjf1m6B8PSp8fcY2py3yuWazc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 954,
+        "y": 214,
+        "w": 743,
+        "h": 745
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.913,
+        0.041,
+        -0.406
+      ]
+    }
+  ],
+  "note": "绿色生物位置朝向变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786084683865
+}
