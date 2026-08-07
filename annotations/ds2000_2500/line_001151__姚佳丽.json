@@ -1,0 +1,23 @@
+{
+  "line": 1151,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001151_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999916&Signature=aoApL5Wujczq3cqxTLGcghpPSK4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001151_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999916&Signature=i0WAiePzZgkbtwlqT5xZps782Q4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 81,
+        "y": 125,
+        "w": 1335,
+        "h": 834
+      },
+      "type": "custom",
+      "text": "人物需要重组"
+    }
+  ],
+  "note": "整体人物相对位置变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786099659265
+}
