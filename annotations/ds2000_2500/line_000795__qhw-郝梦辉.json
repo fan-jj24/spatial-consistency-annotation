@@ -1,0 +1,27 @@
+{
+  "line": 795,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000795_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999829&Signature=CZy%2BuO4KBt3gQf8ZLzNRpFNhG1Q%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000795_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999830&Signature=1AkCM%2FWCWs77%2F9C9gUhq%2BdSszUI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 265,
+        "y": 15,
+        "w": 664,
+        "h": 730
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.915,
+        -0.107,
+        -0.388
+      ]
+    }
+  ],
+  "note": "红衣男子位置发生变化，朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786081370012
+}
