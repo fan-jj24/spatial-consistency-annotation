@@ -1,0 +1,35 @@
+{
+  "line": 1254,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001254_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999948&Signature=Bayyr645vYhtb34GiMKn8NkX4P8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001254_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999950&Signature=kAbrQwXgfzjuZ7J8Z5guMuNNmVI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 880,
+        "y": 181,
+        "w": 266,
+        "h": 812
+      },
+      "type": "move",
+      "target": {
+        "x": 664,
+        "y": 525
+      }
+    },
+    {
+      "box": {
+        "x": 1139,
+        "y": 426,
+        "w": 123,
+        "h": 611
+      },
+      "type": "add"
+    }
+  ],
+  "note": "灰衣卷发男子位置 发生变化，朝向发生变化\n少了一名红衣人物",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786068575175
+}
