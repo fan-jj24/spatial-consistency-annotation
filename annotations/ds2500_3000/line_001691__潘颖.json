@@ -1,0 +1,27 @@
+{
+  "line": 1691,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001691_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035405&Signature=h33sIFKYDorIabkaJKZRtPGN0ak%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001691_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035409&Signature=nF8plWREXklnNKNR3OCL3KWw8Tg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1107,
+        "y": 492,
+        "w": 222,
+        "h": 523
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.349,
+        0.056,
+        0.935
+      ]
+    }
+  ],
+  "note": "灰衣女子与婴儿车的相对位置变了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786099532295
+}
