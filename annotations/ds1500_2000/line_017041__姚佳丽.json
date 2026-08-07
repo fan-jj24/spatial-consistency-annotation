@@ -1,0 +1,41 @@
+{
+  "line": 17041,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017041_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863813&Signature=ThN37rit6bIRdqA6%2BWBlYPyTnFg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017041_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863813&Signature=aAQ%2BKg%2BC79EvLK5FYMTvAJbtAYM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 76,
+        "y": 358,
+        "w": 200,
+        "h": 522
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 160,
+          "y": 451
+        },
+        {
+          "x": 222,
+          "y": 645
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": -4,
+        "y": 151,
+        "w": 274,
+        "h": 159
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "多了一个灰衣女子，局部背景变化窗户变为屏风",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786070089154
+}
