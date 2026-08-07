@@ -1,0 +1,31 @@
+{
+  "line": 944,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000944_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999857&Signature=o1q7aqFi350caOpIKjKDau0TsLE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000944_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999861&Signature=55xQ8vFBdgigJrr39lK%2B2Hct9W0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 313,
+        "y": 301,
+        "w": 216,
+        "h": 534
+      },
+      "type": "rotate"
+    },
+    {
+      "box": {
+        "x": 1032,
+        "y": 374,
+        "w": 214,
+        "h": 421
+      },
+      "type": "add"
+    }
+  ],
+  "note": "紫衣女的朝向发生变化\n少了三个红衣女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786069134398
+}
