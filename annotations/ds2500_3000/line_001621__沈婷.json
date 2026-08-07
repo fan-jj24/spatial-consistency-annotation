@@ -1,0 +1,12 @@
+{
+  "line": 1621,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001621_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035384&Signature=8BLmsNLSeROvWJ%2B0%2FCIvWqBV%2BjI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001621_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035386&Signature=lPKkEXUFJ%2Fg2DlHBi0kQ4FWUIk4%3D"
+  ],
+  "objects": [],
+  "note": "服装过于相似，分辨不出人物，无法判断人物站位",
+  "bg_global": false,
+  "bg_ambiguous": true,
+  "ts": 1786070741775
+}
