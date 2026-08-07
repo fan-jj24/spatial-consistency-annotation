@@ -1,0 +1,23 @@
+{
+  "line": 1137,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001137_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999909&Signature=OLnnTrjVhN%2BCTaSH2Q0rNVhPNmc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001137_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999910&Signature=hJ6rT0zwtnSdREq%2F183SKzBIJic%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 219,
+        "y": 164,
+        "w": 1665,
+        "h": 894
+      },
+      "type": "custom",
+      "text": "黑衣男子和紫衣女子从餐厅向后方门口移动，高度变化，旋转"
+    }
+  ],
+  "note": "黑衣男子和紫衣女子位置、朝向变化，高度变高",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786099155601
+}
