@@ -1,0 +1,50 @@
+{
+  "line": 1006,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001006_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999872&Signature=eoAKYywQZ9wbDbSQBnyWxJP44Xk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001006_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999878&Signature=iynWude7v2lLcTopmnLdMXcqGMk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1236,
+        "y": 577,
+        "w": 499,
+        "h": 276
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 1392,
+          "y": 665
+        },
+        {
+          "x": 1543,
+          "y": 791
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": -25,
+        "y": 693,
+        "w": 555,
+        "h": 372
+      },
+      "type": "add"
+    },
+    {
+      "box": {
+        "x": 1344,
+        "y": 382,
+        "w": 298,
+        "h": 147
+      },
+      "type": "add"
+    }
+  ],
+  "note": "地上少了一个趴着的男子，少了一个头仰天的男子，多了一个喝水男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786088068747
+}
