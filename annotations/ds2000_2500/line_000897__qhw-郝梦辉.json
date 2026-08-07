@@ -1,0 +1,23 @@
+{
+  "line": 897,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000897_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999841&Signature=SeCwkZS%2Bc0jwyPFpoLa6V7Ll4EM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000897_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999846&Signature=nA%2FoON13j1NfQE9gMIhG0yf%2B7xs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 193,
+        "y": 326,
+        "w": 469,
+        "h": 611
+      },
+      "type": "custom",
+      "text": "人物群体需要整体后移，蓝格纹衣服人物需要向右移并旋转，高度需要变高，粉衣女子需要向左移并旋转，蓝牛仔衣服女孩需要向左移并旋转"
+    }
+  ],
+  "note": "人物群体发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786066061352
+}
