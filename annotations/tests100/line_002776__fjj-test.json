@@ -22,5 +22,6 @@
   ],
   "note": "男子和女子距离变化",
   "bg_global": false,
-  "ts": 1785750543491
+  "bg_ambiguous": false,
+  "ts": 1786127361237
 }
