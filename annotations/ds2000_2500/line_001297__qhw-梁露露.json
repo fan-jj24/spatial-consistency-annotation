@@ -15,8 +15,8 @@
       "type": "rotate"
     }
   ],
-  "note": "黑衣男的朝向发生变化",
+  "note": "黑衣男的朝向和位置发生变化",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1786074735253
+  "ts": 1786161297183
 }
