@@ -12,7 +12,7 @@
         "w": 810,
         "h": 840
       },
-      "type": "replace"
+      "type": "rotate"
     },
     {
       "box": {
@@ -21,11 +21,11 @@
         "w": 553,
         "h": 845
       },
-      "type": "replace"
+      "type": "rotate"
     }
   ],
-  "note": "白衣男子和黑衣女子位置互换，朝向变化",
+  "note": "白衣男子和黑衣女子朝向变化",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1786092800430
+  "ts": 1786158987836
 }
