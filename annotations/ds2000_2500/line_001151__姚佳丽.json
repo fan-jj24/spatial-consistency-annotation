@@ -7,17 +7,16 @@
   "objects": [
     {
       "box": {
-        "x": 81,
-        "y": 125,
-        "w": 1335,
-        "h": 834
+        "x": 210,
+        "y": 181,
+        "w": 1337,
+        "h": 665
       },
-      "type": "custom",
-      "text": "人物需要重组"
+      "type": "replace"
     }
   ],
-  "note": "整体人物相对位置变化",
+  "note": "背景人物被替换",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1786099745769
+  "ts": 1786158987836
 }
