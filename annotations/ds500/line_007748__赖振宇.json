@@ -17,17 +17,10 @@
         "x": 614,
         "y": 155
       }
-    },
-    {
-      "box": {
-        "x": 843,
-        "y": 180,
-        "w": 176,
-        "h": 90
-      },
-      "type": "add"
     }
   ],
-  "note": "黄色球体向下移动，少了一张纸",
-  "bg_global": false
+  "note": "黄色球体向下移动",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786343478683
 }
