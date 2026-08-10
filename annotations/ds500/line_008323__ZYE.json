@@ -22,5 +22,6 @@
   ],
   "note": "蓝衣男和蓝衣女位置发生变化",
   "bg_global": false,
-  "ts": 1785749140054
+  "bg_ambiguous": false,
+  "ts": 1786344348500
 }
