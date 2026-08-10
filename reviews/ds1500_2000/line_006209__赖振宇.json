@@ -1,8 +1,8 @@
 {
   "line": 6209,
-  "verdict": "wrong",
+  "verdict": "correct",
   "reason": "描述衣服颜色",
   "annotator": "姚佳丽",
   "reviewer": "赖振宇",
-  "ts": 1786063469629
+  "ts": 1786350541691
 }
