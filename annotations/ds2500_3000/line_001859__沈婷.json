@@ -1,0 +1,27 @@
+{
+  "line": 1859,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001859_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035455&Signature=Ql300mTjMJFrqSfoubUiKFii5Qk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001859_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035458&Signature=8QqCSFpKGhD69vZGgbULXrk4FNU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 27,
+        "y": 228,
+        "w": 436,
+        "h": 739
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.946,
+        -0.006,
+        0.324
+      ]
+    }
+  ],
+  "note": "女子和桌子距离变近，高度由站姿变为坐姿",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786333234779
+}
