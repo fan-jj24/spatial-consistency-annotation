@@ -1,8 +1,8 @@
 {
   "line": 1370,
-  "verdict": "wrong",
+  "verdict": "correct",
   "reason": "钢琴这里局部变化",
   "annotator": "姚佳丽",
   "reviewer": "赖振宇",
-  "ts": 1786097126975
+  "ts": 1786363603821
 }
