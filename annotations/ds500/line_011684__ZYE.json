@@ -16,5 +16,7 @@
     }
   ],
   "note": "人物群体需要替换",
-  "bg_global": false
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786344348500
 }
