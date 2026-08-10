@@ -1,8 +1,8 @@
 {
   "line": 6346,
-  "verdict": "wrong",
+  "verdict": "correct",
   "reason": "白衣女子位置变化",
   "annotator": "赖振宇",
   "reviewer": "姚佳丽",
-  "ts": 1786069899833
+  "ts": 1786379895829
 }
