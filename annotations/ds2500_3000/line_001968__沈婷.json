@@ -1,0 +1,26 @@
+{
+  "line": 1968,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001968_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035492&Signature=u4wRO149MZ6l3RuMIUJamV0dcR4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001968_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035492&Signature=kN0vkKLRFh2TFhTGGsnKqpJ3gTM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 387,
+        "y": 134,
+        "w": 423,
+        "h": 851
+      },
+      "type": "move",
+      "target": {
+        "x": 1707,
+        "y": 510
+      }
+    }
+  ],
+  "note": "男子相对位置变化，男子应在蓝衣女子的左侧",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786328613893
+}
