@@ -1,8 +1,8 @@
 {
   "line": 190,
-  "verdict": "wrong",
-  "reason": "3d箭头方向应该入屏一点",
+  "verdict": "correct",
+  "reason": "",
   "annotator": "qhw-郝梦辉",
   "reviewer": "qhw-梁露露",
-  "ts": 1786098011337
+  "ts": 1786353052244
 }
