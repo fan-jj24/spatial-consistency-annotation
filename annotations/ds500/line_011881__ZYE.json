@@ -26,5 +26,7 @@
     }
   ],
   "note": "多了一双手",
-  "bg_global": false
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786344348500
 }
