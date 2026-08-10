@@ -21,5 +21,7 @@
     }
   ],
   "note": "红衣男和红衣女位置和朝向发生变化",
-  "bg_global": false
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786344348500
 }
