@@ -1,0 +1,22 @@
+{
+  "line": 1990,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001990_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035498&Signature=T7zdMRmriQ%2Fi03bF0XBYEl8OCbo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001990_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035499&Signature=K%2F3J6NbVEA3tFV4qnldSUC4RXdE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 428,
+        "y": 367,
+        "w": 143,
+        "h": 605
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "蓝衣女子的朝向变了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786339746476
+}
