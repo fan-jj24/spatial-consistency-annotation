@@ -20,5 +20,7 @@
     }
   ],
   "note": "靠近门的黑衣男位置发生变化",
-  "bg_global": false
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786344348500
 }
