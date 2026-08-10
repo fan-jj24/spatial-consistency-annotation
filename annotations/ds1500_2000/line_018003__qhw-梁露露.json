@@ -12,11 +12,15 @@
         "w": 305,
         "h": 370
       },
-      "type": "replace"
+      "type": "move",
+      "target": {
+        "x": 1167,
+        "y": 384
+      }
     }
   ],
   "note": "13号球员被14号球员替换，位置发生变化",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1786333377954
+  "ts": 1786356952311
 }
