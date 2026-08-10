@@ -1,0 +1,26 @@
+{
+  "line": 1597,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001597_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035376&Signature=VYnaue0OXkWIDu%2FdqfiIxEeTcsk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001597_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035378&Signature=pl3ltXfXb5Tsw8E0I3QkzQ3UuCA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 4,
+        "y": 79,
+        "w": 567,
+        "h": 913
+      },
+      "type": "move",
+      "target": {
+        "x": 1792,
+        "y": 362
+      }
+    }
+  ],
+  "note": "花衣女子和男子相对位置变化，应在男子身后",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786342266620
+}
