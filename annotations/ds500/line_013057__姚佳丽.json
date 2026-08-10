@@ -21,5 +21,6 @@
   ],
   "note": "青衣女子位置、朝向变化",
   "bg_global": false,
-  "ts": 1785752304669
+  "bg_ambiguous": false,
+  "ts": 1786342350055
 }
