@@ -1,8 +1,8 @@
 {
   "line": 969,
-  "verdict": "wrong",
-  "reason": "绿衣旋转好一点",
+  "verdict": "correct",
+  "reason": "",
   "annotator": "qhw-郝梦辉",
   "reviewer": "qhw-梁露露",
-  "ts": 1786353052244
+  "ts": 1786359454513
 }
