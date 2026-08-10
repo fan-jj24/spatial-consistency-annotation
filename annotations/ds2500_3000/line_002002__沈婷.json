@@ -1,0 +1,27 @@
+{
+  "line": 2002,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002002_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035500&Signature=NaYraPzo8XYFcOUj8PqB8g2c%2BXk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002002_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035502&Signature=65WXxH4il1GvH%2Bn7ERecvpxiABc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 175,
+        "y": -3,
+        "w": 497,
+        "h": 243
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.889,
+        -0.009,
+        0.458
+      ]
+    }
+  ],
+  "note": "绿衣女子由马甲女子左侧变为身后",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786333234779
+}
