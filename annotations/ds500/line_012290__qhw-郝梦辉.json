@@ -22,5 +22,6 @@
   ],
   "note": "蓝衣男子位置发生变化",
   "bg_global": false,
-  "ts": 1785739141270
+  "bg_ambiguous": false,
+  "ts": 1786347366526
 }
