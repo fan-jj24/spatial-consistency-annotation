@@ -7,19 +7,16 @@
   "objects": [
     {
       "box": {
-        "x": 84,
-        "y": 138,
-        "w": 614,
-        "h": 1106
+        "x": 88,
+        "y": 423,
+        "w": 236,
+        "h": 394
       },
-      "type": "move3d",
-      "dir3d": [
-        -0.383,
-        0.245,
-        0.891
-      ]
+      "type": "add"
     }
   ],
-  "note": "黑衣男子位置朝向变化",
-  "bg_global": false
+  "note": "少了一个白衣盔甲男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786342350055
 }
