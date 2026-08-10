@@ -1,8 +1,8 @@
 {
   "line": 929,
-  "verdict": "wrong",
+  "verdict": "correct",
   "reason": "背景有问题 粉衣服后退",
   "annotator": "qhw-郝梦辉",
   "reviewer": "qhw-梁露露",
-  "ts": 1786157014278
+  "ts": 1786353052244
 }
