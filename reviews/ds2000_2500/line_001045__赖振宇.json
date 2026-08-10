@@ -1,8 +1,8 @@
 {
   "line": 1045,
-  "verdict": "wrong",
+  "verdict": "correct",
   "reason": "什么颜色衣服描述清楚，框不要这么大",
   "annotator": "姚佳丽",
   "reviewer": "赖振宇",
-  "ts": 1786090237211
+  "ts": 1786363603821
 }
