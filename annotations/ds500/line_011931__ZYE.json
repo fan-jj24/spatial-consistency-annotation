@@ -16,5 +16,7 @@
     }
   ],
   "note": "戴帽灰衣男替换为黑色短发灰衣男",
-  "bg_global": false
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786344348500
 }
