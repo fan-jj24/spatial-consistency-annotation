@@ -1,0 +1,23 @@
+{
+  "line": 1877,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001877_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035460&Signature=7MWKuUB5T%2FWFMAz4hKUHwLSBhbg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001877_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035460&Signature=Cjz1QRofWXuOPPi32wvhazCH9Uo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 727,
+        "y": 137,
+        "w": 1121,
+        "h": 732
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向变化，需要重排"
+    }
+  ],
+  "note": "花衣女子和红衣女子位置变化，应在红衣女子左侧，红衣女子右侧多出一个粉衣女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786342266620
+}
