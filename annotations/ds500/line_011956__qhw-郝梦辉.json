@@ -34,5 +34,7 @@
     }
   ],
   "note": "黄衣男子朝向发生变化\n少了一名红衣男子\n局部背景发生变化",
-  "bg_global": false
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786347366526
 }
