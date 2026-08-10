@@ -1,0 +1,26 @@
+{
+  "line": 1912,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001912_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035471&Signature=kYrGfDzw2sAINRQtem4UuOmBf2c%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001912_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035473&Signature=RD9PuERnjyyALR4UpL2lP25nJX0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 206,
+        "y": 117,
+        "w": 378,
+        "h": 529
+      },
+      "type": "move",
+      "target": {
+        "x": 848,
+        "y": 356
+      }
+    }
+  ],
+  "note": "2人相对位置变化，瘦脸男子由胖脸男子左侧身后变为右侧身后",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786342266620
+}
