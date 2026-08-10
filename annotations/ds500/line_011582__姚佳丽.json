@@ -34,5 +34,7 @@
     }
   ],
   "note": "黑衣男子和红衣男子位置变化",
-  "bg_global": false
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786342350055
 }
