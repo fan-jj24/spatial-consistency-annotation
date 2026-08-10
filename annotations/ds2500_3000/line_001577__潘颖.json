@@ -1,0 +1,27 @@
+{
+  "line": 1577,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001577_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035370&Signature=SCG88zj2XCgjCLMt6dvWuUXcE7c%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001577_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035374&Signature=99DgWGSHJuNawUHIDqvEMYJUpYA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 690,
+        "y": 94,
+        "w": 193,
+        "h": 882
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.987,
+        -0.002,
+        -0.161
+      ]
+    }
+  ],
+  "note": "黑衣男子与门的相对位置变了，应在门外",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786347863494
+}
