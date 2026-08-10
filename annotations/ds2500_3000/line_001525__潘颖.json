@@ -1,0 +1,22 @@
+{
+  "line": 1525,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001525_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035354&Signature=wdWX%2BauJnM%2BFCJDVEOvnHuPAN4s%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001525_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035354&Signature=3550bxvB8B7dy4Nlfx32JiBDyYA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1394,
+        "y": -1,
+        "w": 512,
+        "h": 800
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "男子背后的空间变大，由墙变成了屏风",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786339746476
+}
