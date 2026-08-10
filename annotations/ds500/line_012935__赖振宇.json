@@ -33,5 +33,7 @@
     }
   ],
   "note": "黑衣男青衣女位置变化，整体背景变化",
-  "bg_global": true
+  "bg_global": true,
+  "bg_ambiguous": false,
+  "ts": 1786343478683
 }
