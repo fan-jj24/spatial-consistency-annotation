@@ -1,8 +1,8 @@
 {
   "line": 17462,
-  "verdict": "wrong",
+  "verdict": "correct",
   "reason": "黑衣男的位置也变了",
   "annotator": "qhw-郝梦辉",
   "reviewer": "qhw-梁露露",
-  "ts": 1786011591590
+  "ts": 1786349835196
 }
