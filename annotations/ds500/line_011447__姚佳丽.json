@@ -15,7 +15,8 @@
       "type": "add"
     }
   ],
-  "note": "少了双手",
+  "note": "少了个红衣男子",
   "bg_global": false,
-  "ts": 1785741836327
+  "bg_ambiguous": false,
+  "ts": 1786342350055
 }
