@@ -21,5 +21,7 @@
     }
   ],
   "note": "黄衣男子位置发生变化",
-  "bg_global": false
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786347366526
 }
