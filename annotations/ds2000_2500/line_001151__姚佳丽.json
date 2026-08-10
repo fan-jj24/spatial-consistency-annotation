@@ -7,16 +7,17 @@
   "objects": [
     {
       "box": {
-        "x": 210,
-        "y": 181,
-        "w": 1337,
-        "h": 665
+        "x": 828,
+        "y": 234,
+        "w": 225,
+        "h": 497
       },
-      "type": "replace"
+      "type": "custom",
+      "text": "人物重组"
     }
   ],
   "note": "背景人物被替换",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1786353902313
+  "ts": 1786387442012
 }
