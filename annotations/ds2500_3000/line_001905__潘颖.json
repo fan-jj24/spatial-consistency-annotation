@@ -1,0 +1,27 @@
+{
+  "line": 1905,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001905_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035468&Signature=LxUssPXQeRQmwP1Ti8CQBJQv%2FXg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001905_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035470&Signature=7LyveG343IwF6UPLPKGD7EFiSlw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 59,
+        "y": 61,
+        "w": 960,
+        "h": 923
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.992,
+        0.002,
+        0.126
+      ]
+    }
+  ],
+  "note": "花衣女子与红衣女子的相对距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786347863494
+}
