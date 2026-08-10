@@ -1,0 +1,27 @@
+{
+  "line": 1501,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001501_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035347&Signature=6jTFsB03alYm%2FWt1MI6T9%2BFy0ms%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001501_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035348&Signature=VIPrYt3T%2BvIPklMdkFw4Zb1avX0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1040,
+        "y": 404,
+        "w": 136,
+        "h": 404
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.388,
+        -0.004,
+        0.922
+      ]
+    }
+  ],
+  "note": "橙衣女子与白衣女子与门的相对位置变了，应在门外",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786339746476
+}
