@@ -1,0 +1,23 @@
+{
+  "line": 1494,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001494_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035345&Signature=wKuqfF6LzEzs9yYs6RvMTJ5uaeU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001494_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035348&Signature=NKEBPMC%2BJbsPq1XWyaLZaaO34lc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 727,
+        "y": 171,
+        "w": 411,
+        "h": 614
+      },
+      "type": "custom",
+      "text": "男子和女子与窗户的相对位置变了，男子与女子的相对距离变了，男子的朝向变了"
+    }
+  ],
+  "note": "男子和女子与窗户的相对位置变近了，男子与女子的相对距离变近了，男子的朝向变了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786339746476
+}
