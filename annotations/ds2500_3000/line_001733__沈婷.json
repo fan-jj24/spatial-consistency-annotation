@@ -1,0 +1,26 @@
+{
+  "line": 1733,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001733_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035419&Signature=z4laHLq2NJWGlLCE5HbbOz1%2B8eA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001733_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035420&Signature=VtzUB865AR3z6tbNs4R4tQRHfM8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 235,
+        "y": 192,
+        "w": 510,
+        "h": 883
+      },
+      "type": "move",
+      "target": {
+        "x": 25,
+        "y": 611
+      }
+    }
+  ],
+  "note": "蓝背心男子与白衬衫男子距离变近",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786342266620
+}
