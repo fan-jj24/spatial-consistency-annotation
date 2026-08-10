@@ -1,0 +1,22 @@
+{
+  "line": 1485,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001485_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035341&Signature=dtLzHIfCYKUCoDhvqd18q8L6A0I%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001485_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035343&Signature=V21dOS3kb6K7sfdJJuJkijSmES0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 952,
+        "y": 570,
+        "w": 63,
+        "h": 495
+      },
+      "type": "add"
+    }
+  ],
+  "note": "粉衣女子右边的红衣女子消失了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786339746476
+}
