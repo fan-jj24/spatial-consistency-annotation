@@ -1,0 +1,22 @@
+{
+  "line": 1713,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001713_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035412&Signature=XWbKVC4WLYqKVrFvOZ447gixe1g%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001713_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035412&Signature=HyAl0fWGePci0soKgcdxQB588Z8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 709,
+        "y": 6,
+        "w": 1201,
+        "h": 1074
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "婴儿方向变化，应与男人面对面",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786342266620
+}
