@@ -1,0 +1,23 @@
+{
+  "line": 1640,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001640_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035388&Signature=Kqh%2BCXlcyeJpzrzpaI995iG2sUI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001640_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035389&Signature=XwlDksNJXEod%2FMAQMoQ%2FVPj56xw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 115,
+        "y": 156,
+        "w": 883,
+        "h": 890
+      },
+      "type": "custom",
+      "text": "多个人物相对位置变化，需要重排"
+    }
+  ],
+  "note": "女子左侧的男子消失，多出两个不存在的女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786328613893
+}
