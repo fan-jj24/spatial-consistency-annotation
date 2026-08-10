@@ -14,13 +14,13 @@
       },
       "type": "move",
       "target": {
-        "x": 666,
-        "y": 380
+        "x": 519,
+        "y": 364
       }
     }
   ],
   "note": "灰衣女位置和朝向发生变化",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1786161297183
+  "ts": 1786346387100
 }
