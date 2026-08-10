@@ -29,5 +29,7 @@
     }
   ],
   "note": "黑衣男位置变化，局部背景变化",
-  "bg_global": false
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786343478683
 }
