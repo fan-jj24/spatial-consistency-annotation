@@ -1,0 +1,22 @@
+{
+  "line": 1830,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001830_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035448&Signature=6xpScTHfYbIZkloIge2MvEoH%2B50%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001830_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035453&Signature=Cc88%2FO4x6pgKCr1m1z4U%2FeG%2Fq7g%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 689,
+        "y": 313,
+        "w": 253,
+        "h": 767
+      },
+      "type": "add"
+    }
+  ],
+  "note": "白衣女子左手边的棕衣男子消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786347863494
+}
