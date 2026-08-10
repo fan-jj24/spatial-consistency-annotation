@@ -1,0 +1,27 @@
+{
+  "line": 1922,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001922_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035475&Signature=HuUKBiepIFK4t1w9uneo7bgK448%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001922_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035476&Signature=s56x4QCTczM05Ks3yty%2BCVxcDJI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 256,
+        "y": 97,
+        "w": 534,
+        "h": 670
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.242,
+        0.074,
+        0.967
+      ]
+    }
+  ],
+  "note": "貂皮男子与皮衣男子与警察的距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786347863494
+}
