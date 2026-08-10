@@ -12,11 +12,11 @@
         "w": 626,
         "h": 1024
       },
-      "type": "replace"
+      "type": "rotate"
     }
   ],
-  "note": "灰衣男被黄衣男替换",
+  "note": "黄衣男朝向发生变化",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1786161297183
+  "ts": 1786333565791
 }
