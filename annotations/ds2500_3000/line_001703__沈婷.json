@@ -1,0 +1,22 @@
+{
+  "line": 1703,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001703_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035410&Signature=fA1yxbNIj5ZtBa4F9laA2%2B4XDi4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001703_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035410&Signature=H7%2BcBW%2FJC0tXiCBEBHfIZ3W5VxA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 468,
+        "y": 471,
+        "w": 252,
+        "h": 402
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "将图B的眼镜男子替换为图A的灰衣男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786328613893
+}
