@@ -7,16 +7,16 @@
   "objects": [
     {
       "box": {
-        "x": 191,
-        "y": 523,
-        "w": 97,
-        "h": 259
+        "x": 105,
+        "y": 482,
+        "w": 74,
+        "h": 141
       },
-      "type": "rotate"
+      "type": "bg_local"
     }
   ],
-  "note": "黑衣女子朝向变化",
+  "note": "局部背景变化，空调变墙壁了",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1786003588998
+  "ts": 1786334616644
 }
