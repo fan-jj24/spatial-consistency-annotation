@@ -13,10 +13,19 @@
         "h": 627
       },
       "type": "bg_local"
+    },
+    {
+      "box": {
+        "x": 90,
+        "y": 26,
+        "w": 573,
+        "h": 189
+      },
+      "type": "bg_local"
     }
   ],
   "note": "局部背景变化，假山变成了池塘",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1786352036433
+  "ts": 1786352132271
 }
