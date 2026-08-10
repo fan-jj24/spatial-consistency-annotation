@@ -1,0 +1,22 @@
+{
+  "line": 1883,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001883_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035462&Signature=KUjl5CwG91khb9l1ETTrhy6AZN0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001883_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035463&Signature=cOGWEsjW1SXRTjuA5btvC4IArac%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 697,
+        "y": 258,
+        "w": 233,
+        "h": 809
+      },
+      "type": "add"
+    }
+  ],
+  "note": "白短袖女子前面的粉衣服女子消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786328613893
+}
