@@ -15,8 +15,8 @@
       "type": "add"
     }
   ],
-  "note": "少了一个白衣盔甲男子",
+  "note": "",
   "bg_global": false,
-  "bg_ambiguous": false,
-  "ts": 1786342350055
+  "bg_ambiguous": true,
+  "ts": 1786347348593
 }
