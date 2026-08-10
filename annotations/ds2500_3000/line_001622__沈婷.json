@@ -1,0 +1,22 @@
+{
+  "line": 1622,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001622_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035384&Signature=AytVlOPeHRoypxmtOsJytuT%2BDkE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001622_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035384&Signature=3Sc5FFK6YSX6I3Cfwj1%2FHww1yQY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 27,
+        "y": 147,
+        "w": 728,
+        "h": 809
+      },
+      "type": "add"
+    }
+  ],
+  "note": "短发女子右侧3个人消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786328613893
+}
