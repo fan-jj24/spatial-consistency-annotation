@@ -1,8 +1,8 @@
 {
   "line": 1006,
-  "verdict": "correct",
+  "verdict": "wrong",
   "reason": "不要删除",
   "annotator": "姚佳丽",
   "reviewer": "赖振宇",
-  "ts": 1786360811065
+  "ts": 1786363603821
 }
