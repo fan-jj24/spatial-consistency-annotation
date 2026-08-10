@@ -1,0 +1,22 @@
+{
+  "line": 1528,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001528_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035355&Signature=nBzVG7WgZOUbygHbDOIYZcMbC08%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001528_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035357&Signature=K3yN64HTu8gl4V4%2FI4IurDpCdbA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 794,
+        "y": 58,
+        "w": 772,
+        "h": 825
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "男子朝向发生变化，由并排变为面对",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786342266620
+}
