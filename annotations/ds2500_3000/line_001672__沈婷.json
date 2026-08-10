@@ -1,0 +1,23 @@
+{
+  "line": 1672,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001672_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035399&Signature=%2BaRyUwOt%2FXkxzraP5ZJ9q%2BphTus%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001672_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035399&Signature=4sbWCs19rNOc5Hs0DSj7l1s064E%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 792,
+        "y": 36,
+        "w": 1130,
+        "h": 915
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向变化，需要重排"
+    }
+  ],
+  "note": "红眼动物和雪人的相对位置变化，缺少一个雪人，出多一个尖耳棕眼动物",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786342266620
+}
