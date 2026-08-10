@@ -1,8 +1,8 @@
 {
   "line": 2569,
-  "verdict": "wrong",
+  "verdict": "correct",
   "reason": "粉衣女需要后退",
   "annotator": "胡苡榕",
   "reviewer": "ZYE",
-  "ts": 1785744800105
+  "ts": 1786347577976
 }
