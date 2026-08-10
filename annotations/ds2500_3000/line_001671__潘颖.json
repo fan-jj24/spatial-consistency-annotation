@@ -1,0 +1,27 @@
+{
+  "line": 1671,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001671_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035398&Signature=A9f2krWEZJzAruk3pEk5xNObkdI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001671_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035399&Signature=tsxHlpdVHVllcClT8ykgGq0xb7E%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -4,
+        "y": 207,
+        "w": 536,
+        "h": 870
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.3,
+        0.011,
+        0.954
+      ]
+    }
+  ],
+  "note": "黑衣男子与披发女子的距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786347863494
+}
