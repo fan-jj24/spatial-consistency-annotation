@@ -1,0 +1,26 @@
+{
+  "line": 1732,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001732_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035418&Signature=mwrkD8HXjzcmBkpFvSH8aFrVpXQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001732_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035420&Signature=6P0mqHpEnGpXo3DmFvIX8MpCjGo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 81,
+        "y": 9,
+        "w": 883,
+        "h": 970
+      },
+      "type": "move",
+      "target": {
+        "x": 556,
+        "y": 2
+      }
+    }
+  ],
+  "note": "男子的相对高度变低了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786347863494
+}
