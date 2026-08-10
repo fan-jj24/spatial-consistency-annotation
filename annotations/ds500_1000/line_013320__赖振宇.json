@@ -4,9 +4,29 @@
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013320_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757976&Signature=Z7BHXLo91d10yKLioMwsNFaiM9I%3D",
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013320_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757976&Signature=Wpbdkud%2FZ0wPtQqoAvTWl0dF2VQ%3D"
   ],
-  "objects": [],
-  "note": "",
+  "objects": [
+    {
+      "box": {
+        "x": 146,
+        "y": 305,
+        "w": 284,
+        "h": 376
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 356,
+          "y": 463
+        },
+        {
+          "x": 210,
+          "y": 574
+        }
+      ]
+    }
+  ],
+  "note": "多了一个蓝衣和白衣女子",
   "bg_global": false,
   "bg_ambiguous": true,
-  "ts": 1786342534598
+  "ts": 1786343674760
 }
