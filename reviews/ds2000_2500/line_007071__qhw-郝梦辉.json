@@ -1,8 +1,8 @@
 {
   "line": 7071,
-  "verdict": "wrong",
+  "verdict": "correct",
   "reason": "高度要有变化",
   "annotator": "qhw-梁露露",
   "reviewer": "qhw-郝梦辉",
-  "ts": 1786090565914
+  "ts": 1786365119458
 }
