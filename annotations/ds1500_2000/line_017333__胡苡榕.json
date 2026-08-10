@@ -5,8 +5,8 @@
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_017333_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863817&Signature=Y8lsX1jixBYEwxsrpT3ew9Ks5y4%3D"
   ],
   "objects": [],
-  "note": "整体背景不一致，如中年女身后由院内背景变为院门外的背景。",
-  "bg_global": true,
-  "bg_ambiguous": false,
-  "ts": 1785980955173
+  "note": "",
+  "bg_global": false,
+  "bg_ambiguous": true,
+  "ts": 1786341248806
 }
