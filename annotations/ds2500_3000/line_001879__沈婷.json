@@ -1,0 +1,22 @@
+{
+  "line": 1879,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001879_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035461&Signature=HSZpcR8Qxu8GB4%2Fa0g6iGWLPR0k%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001879_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035462&Signature=m1s36uVnJwZY0lJdWn6YNEbwdJg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1076,
+        "y": 29,
+        "w": 656,
+        "h": 1054
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "青蛙左侧多出一个蓝衣人物",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786333234779
+}
