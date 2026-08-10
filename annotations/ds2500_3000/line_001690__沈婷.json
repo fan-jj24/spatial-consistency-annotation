@@ -1,0 +1,26 @@
+{
+  "line": 1690,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001690_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035405&Signature=8tRAcYQRccMjHeYZTPQ2ElReL%2F4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001690_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035408&Signature=KFvZT6oHFIeqkDBOZJ%2FMxWccqDA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 89,
+        "y": -5,
+        "w": 512,
+        "h": 1085
+      },
+      "type": "move",
+      "target": {
+        "x": 1206,
+        "y": 535
+      }
+    }
+  ],
+  "note": "2人相对位置变化，帽子男应该在绿衣男子左侧",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786342266620
+}
