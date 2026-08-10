@@ -1,0 +1,26 @@
+{
+  "line": 1740,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001740_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035422&Signature=OSgtEIYQB6IsjbjaDqTVSJIrkuQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001740_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035425&Signature=T3c4wTBk%2Fdufy9jVP7PlO9Yt54k%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 475,
+        "y": 335,
+        "w": 374,
+        "h": 663
+      },
+      "type": "move",
+      "target": {
+        "x": 1069,
+        "y": 333
+      }
+    }
+  ],
+  "note": "格子衫男子从女子身后变到沙发上，高度变低",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786328613893
+}
