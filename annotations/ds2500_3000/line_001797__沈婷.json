@@ -1,0 +1,22 @@
+{
+  "line": 1797,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001797_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035437&Signature=Oucj3ipUdFBPXGti0uFgCguffkE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001797_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035438&Signature=JkNwhxIfC2NZEQz2jWr%2F6p3qDRA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 863,
+        "y": 110,
+        "w": 404,
+        "h": 970
+      },
+      "type": "add"
+    }
+  ],
+  "note": "披肩女子对面与左侧的女子消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786342266620
+}
