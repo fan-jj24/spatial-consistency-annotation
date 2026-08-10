@@ -26,5 +26,7 @@
     }
   ],
   "note": "多了一个青衣女子",
-  "bg_global": false
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786343478683
 }
