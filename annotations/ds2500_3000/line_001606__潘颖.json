@@ -1,0 +1,22 @@
+{
+  "line": 1606,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001606_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035379&Signature=D17GSpdTzExX%2Ffq3HGxwIfBHrTw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001606_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035380&Signature=Z9ZvAXojmxflxLquRCrZpfnYvFk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 19,
+        "y": 40,
+        "w": 507,
+        "h": 586
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "绿衣女子与白衣女子由一前一后变成面对面",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786339746476
+}
