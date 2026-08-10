@@ -1,0 +1,23 @@
+{
+  "line": 1500,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001500_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035346&Signature=SVvBLeHK1wPVFRV2gBbPI7oBfw8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001500_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035348&Signature=GxW5%2B0Iu2up8DgHmsF2zJD4OmEg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 163,
+        "y": 152,
+        "w": 1106,
+        "h": 832
+      },
+      "type": "custom",
+      "text": "长发男子和短发男子与门的距离变了，长发男子和短发男子的相对位置变了"
+    }
+  ],
+  "note": "长发男子和短发男子与门的距离变远了，长发男子和短发男子的相对位置由一前一后变成并肩",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786339746476
+}
