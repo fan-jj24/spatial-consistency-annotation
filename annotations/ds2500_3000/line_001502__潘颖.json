@@ -1,0 +1,23 @@
+{
+  "line": 1502,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001502_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035347&Signature=97J8paj4NWmU7gbdHZez0Cx7nD4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001502_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035349&Signature=Nsws0gL9ksLhIMT68Vd96Kz13GU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 568,
+        "y": 261,
+        "w": 603,
+        "h": 816
+      },
+      "type": "custom",
+      "text": "男女的相对距离变了"
+    }
+  ],
+  "note": "粉衣女子与黄衣男子的相对距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786347863494
+}
