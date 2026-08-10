@@ -4,9 +4,24 @@
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001223_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999940&Signature=xuxS5bkxu1S%2F8ae%2BVSQ8ZWIUScw%3D",
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001223_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999939&Signature=v3kfnv1TM51DhAYG7EpqC4LQnGc%3D"
   ],
-  "objects": [],
-  "note": "",
+  "objects": [
+    {
+      "box": {
+        "x": 998,
+        "y": 462,
+        "w": 598,
+        "h": 549
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.845,
+        0.462,
+        0.269
+      ]
+    }
+  ],
+  "note": "蓝衣男子位置、高度变化",
   "bg_global": false,
-  "bg_ambiguous": true,
-  "ts": 1786353902313
+  "bg_ambiguous": false,
+  "ts": 1786387646588
 }
