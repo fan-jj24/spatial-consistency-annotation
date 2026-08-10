@@ -12,16 +12,11 @@
         "w": 825,
         "h": 953
       },
-      "type": "move3d",
-      "dir3d": [
-        0.733,
-        -0.024,
-        -0.68
-      ]
+      "type": "rotate"
     }
   ],
   "note": "男主与女主由并肩变成面对面",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1786086596060
+  "ts": 1786349708979
 }
