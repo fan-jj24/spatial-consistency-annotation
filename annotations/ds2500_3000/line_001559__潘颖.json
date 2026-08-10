@@ -1,0 +1,27 @@
+{
+  "line": 1559,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001559_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035364&Signature=M4m367B2tHXfweYmVp0x%2Bv0OT1g%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001559_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035365&Signature=z0sw2tABMhH7x8HWCpmiu%2FY%2BHk0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 472,
+        "y": 95,
+        "w": 847,
+        "h": 981
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.849,
+        -0.002,
+        0.528
+      ]
+    }
+  ],
+  "note": "绿衣女子和西装男子与沙发的距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786339746476
+}
