@@ -1,0 +1,22 @@
+{
+  "line": 1495,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001495_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035345&Signature=U5CTYB67EW06%2BynGuOgo63u2M8E%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001495_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035346&Signature=gBsE2tPPQxAkG4kvcaeG4QwZKKg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 718,
+        "y": 415,
+        "w": 222,
+        "h": 596
+      },
+      "type": "add"
+    }
+  ],
+  "note": "绿发女子右侧的粉发女子消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786333234779
+}
