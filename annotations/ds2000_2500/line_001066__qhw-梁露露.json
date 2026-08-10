@@ -4,9 +4,19 @@
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001066_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999896&Signature=oqZC%2FbG4gUNPd9xmSL5OFEpsEdQ%3D",
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001066_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999898&Signature=EV3g88mObLv0lKGfk60uZmsN3mU%3D"
   ],
-  "objects": [],
-  "note": "背景中周围人群发生变化",
-  "bg_global": true,
+  "objects": [
+    {
+      "box": {
+        "x": 200,
+        "y": 42,
+        "w": 1156,
+        "h": 147
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "背景中周围人群发生变化，木栅栏变成画框",
+  "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1786161297183
+  "ts": 1786346387100
 }
