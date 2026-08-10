@@ -29,8 +29,8 @@
       "type": "bg_local"
     }
   ],
-  "note": "紫衣女子位置朝向变化，局部背景变化",
+  "note": "紫衣女子位置、朝向变化，局部背景变化",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785834782217
+  "ts": 1786342534598
 }
