@@ -1,8 +1,8 @@
 {
   "line": 1086,
-  "verdict": "wrong",
+  "verdict": "correct",
   "reason": "粉发应该在红发的位置上",
   "annotator": "qhw-郝梦辉",
   "reviewer": "qhw-梁露露",
-  "ts": 1786090607778
+  "ts": 1786353052244
 }
