@@ -1,0 +1,22 @@
+{
+  "line": 1661,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001661_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035394&Signature=mMYLgDJm0xGHQ%2B2UCoHWdQDPXe0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001661_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035395&Signature=lVe7PBrOdB0WM%2Fmj13hgjAz4aNk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1129,
+        "y": 156,
+        "w": 522,
+        "h": 924
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "车旁边多出一个女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786333234779
+}
