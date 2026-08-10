@@ -1,0 +1,22 @@
+{
+  "line": 1829,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001829_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035447&Signature=OB7rManLf3bROJ%2BE7Ya7%2BzS%2BnsU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001829_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035449&Signature=8finInvBnmdTOBFcjQY%2FQlTCoJ0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 180,
+        "y": 114,
+        "w": 700,
+        "h": 968
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "灰衣男子朝向变了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786339746476
+}
