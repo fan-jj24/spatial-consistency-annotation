@@ -1,0 +1,26 @@
+{
+  "line": 1483,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001483_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035341&Signature=UHteDrX8lK1VYWSrJOUfhqyyJck%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001483_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035342&Signature=SLzeMLu2YHCmw163lpAxwRIKMaw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 633,
+        "y": 626,
+        "w": 168,
+        "h": 391
+      },
+      "type": "move",
+      "target": {
+        "x": 723,
+        "y": 1058
+      }
+    }
+  ],
+  "note": "人物高度变化，由坐姿变为站姿",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786333234779
+}
