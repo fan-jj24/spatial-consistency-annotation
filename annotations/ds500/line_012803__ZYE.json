@@ -30,5 +30,7 @@
     }
   ],
   "note": "黑衣男朝向发生变化，紫衣女位置和朝向发生变化",
-  "bg_global": false
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786344348500
 }
