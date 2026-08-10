@@ -4,9 +4,28 @@
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_018008_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863826&Signature=gztqUK72OaQ7SIGNeyaUnpcB3GY%3D",
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_018008_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785863826&Signature=r9pyxOFW7tzbMLHFYQuR2pnlX7w%3D"
   ],
-  "objects": [],
-  "note": "整体背景不一致，由红色墙面前转换为城门前。",
-  "bg_global": true,
+  "objects": [
+    {
+      "box": {
+        "x": 25,
+        "y": 40,
+        "w": 1256,
+        "h": 457
+      },
+      "type": "bg_local"
+    },
+    {
+      "box": {
+        "x": 6,
+        "y": 194,
+        "w": 180,
+        "h": 491
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "背景不一致，由红色墙面前转换为城门前。\n浅蓝色衣衫人物应替换为墨绿色衣衫人物。",
+  "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785980955173
+  "ts": 1786341653535
 }
