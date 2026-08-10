@@ -33,5 +33,7 @@
     }
   ],
   "note": "红衣小孩和红衣女子位置变化",
-  "bg_global": false
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786342350055
 }
