@@ -12,12 +12,7 @@
         "w": 253,
         "h": 755
       },
-      "type": "move3d",
-      "dir3d": [
-        0.407,
-        -0.069,
-        0.911
-      ]
+      "type": "replace"
     },
     {
       "box": {
@@ -26,12 +21,7 @@
         "w": 331,
         "h": 800
       },
-      "type": "move3d",
-      "dir3d": [
-        -0.742,
-        -0.099,
-        0.663
-      ]
+      "type": "replace"
     },
     {
       "box": {
@@ -48,5 +38,7 @@
     }
   ],
   "note": "白衣女子和黑衣男子与狗位置变化",
-  "bg_global": false
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786342350055
 }
