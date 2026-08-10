@@ -1,0 +1,27 @@
+{
+  "line": 1831,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001831_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035448&Signature=7FpRbfJIx6wvPW0O2ziQTL9jSSE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001831_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035450&Signature=%2Fv3YxHXghK77dhR78qUg4zC%2BJYs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 512,
+        "y": -2,
+        "w": 635,
+        "h": 841
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.427,
+        0.465,
+        0.776
+      ]
+    }
+  ],
+  "note": "光头男子和眼镜男子距离变近",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786342266620
+}
