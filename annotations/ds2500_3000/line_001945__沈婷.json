@@ -1,0 +1,27 @@
+{
+  "line": 1945,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001945_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035483&Signature=z8jx0trwg8eqTUO%2B3iCxrJfQ5%2FA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001945_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035485&Signature=aCJQfls1OiEv%2BFZujbXq00%2F%2BeMk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 149,
+        "y": 91,
+        "w": 683,
+        "h": 989
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.182,
+        -0.129,
+        -0.975
+      ]
+    }
+  ],
+  "note": "男子和女子位置由前后变为并排",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786328613893
+}
