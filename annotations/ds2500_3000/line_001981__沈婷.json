@@ -1,0 +1,23 @@
+{
+  "line": 1981,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001981_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035495&Signature=7rYKPl1aIQPBNUGp0kmDkPTriCQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001981_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035497&Signature=4potoYKKRnIpmN4MIW4e42wRqFM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 282,
+        "y": 179,
+        "w": 1104,
+        "h": 629
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向变化，需要重排"
+    }
+  ],
+  "note": "所有人物相对位置变化，多出几个不存在的人物",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786328613893
+}
