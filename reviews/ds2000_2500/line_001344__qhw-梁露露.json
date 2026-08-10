@@ -1,8 +1,8 @@
 {
   "line": 1344,
-  "verdict": "wrong",
+  "verdict": "correct",
   "reason": "蓝衣朝向好像没变",
   "annotator": "qhw-郝梦辉",
   "reviewer": "qhw-梁露露",
-  "ts": 1786157014278
+  "ts": 1786353052244
 }
