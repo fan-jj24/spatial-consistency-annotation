@@ -1,0 +1,26 @@
+{
+  "line": 1685,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001685_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035403&Signature=yMH3XRP8CK11XDhsXF%2FrdooKYw0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001685_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035405&Signature=MfH0NMz1zc816qk6thtGual%2BhMA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 551,
+        "y": 87,
+        "w": 655,
+        "h": 722
+      },
+      "type": "move",
+      "target": {
+        "x": 325,
+        "y": 202
+      }
+    }
+  ],
+  "note": "三人与围墙的相对位置变了，应在围墙内",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786347863494
+}
