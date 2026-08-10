@@ -1,0 +1,8 @@
+{
+  "line": 1582,
+  "verdict": "wrong",
+  "reason": "A图男子在女子左手边，B图出现在右手边",
+  "annotator": "沈婷",
+  "reviewer": "潘颖",
+  "ts": 1786353898275
+}
