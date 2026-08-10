@@ -1,0 +1,22 @@
+{
+  "line": 1552,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001552_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035362&Signature=Oba27LDkBWeLdUDePOv4bn8QdUc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001552_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035367&Signature=zv0qLHHU4M%2F3VKB2z7wm77GrclM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 723,
+        "y": 92,
+        "w": 598,
+        "h": 927
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "红衣女子怀中多出一名小女孩",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786347863494
+}
