@@ -12,15 +12,16 @@
         "w": 397,
         "h": 566
       },
-      "type": "move",
-      "target": {
-        "x": 744,
-        "y": 693
-      }
+      "type": "move3d",
+      "dir3d": [
+        -1,
+        0,
+        0.014
+      ]
     }
   ],
   "note": "灰衣女子位置变化",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1786353902313
+  "ts": 1786387926435
 }
