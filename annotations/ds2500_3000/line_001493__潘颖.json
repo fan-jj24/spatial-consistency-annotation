@@ -1,0 +1,26 @@
+{
+  "line": 1493,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001493_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035344&Signature=2y1JlwbH9W4rIaRx1c3bBWSuH8k%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001493_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035349&Signature=AvFK8zjdY1FAOQ2Tf1NhHN3z1Gw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 10,
+        "y": 134,
+        "w": 685,
+        "h": 948
+      },
+      "type": "move",
+      "target": {
+        "x": 1377,
+        "y": 616
+      }
+    }
+  ],
+  "note": "黄衣男子与棕衣男子的相对位置变了，应在棕衣男子左手边",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786339746476
+}
