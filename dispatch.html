@@ -2737,6 +2737,8 @@ async function startEditRecord(line, isReview, filePath) {
     // 切换到工作区，适配编辑模式 UI
     showPhase("work");
     applyEditUI();
+    // 刷新审核面板显隐（applyEditUI 不含此逻辑，否则审核员编辑时看不到正确/错误按钮）
+    $("review-panel").classList.toggle("hidden", !isReviewer());
     updateBgBtnUI();
     renderAll();
 
