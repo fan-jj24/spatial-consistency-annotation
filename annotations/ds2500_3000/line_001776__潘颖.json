@@ -1,0 +1,26 @@
+{
+  "line": 1776,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001776_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035431&Signature=YmZCEBoiyN5HURYaUbyYFhdUBAY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001776_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035433&Signature=%2BDSteKmsvmDYTWh%2Fxl24lbeVOP4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1226,
+        "y": 186,
+        "w": 490,
+        "h": 894
+      },
+      "type": "move",
+      "target": {
+        "x": 23,
+        "y": 670
+      }
+    }
+  ],
+  "note": "花衣女子与蓝衣女子的相对位置变了，应在蓝衣女子左手边",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786339746476
+}
