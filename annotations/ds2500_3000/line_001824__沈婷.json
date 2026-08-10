@@ -1,0 +1,22 @@
+{
+  "line": 1824,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001824_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035446&Signature=iSI%2BcONg8fwF2%2FXv950cGoNdN3w%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001824_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035446&Signature=SjWwOZY4PP3OuJfIjDCthGGkz0g%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 191,
+        "y": 443,
+        "w": 393,
+        "h": 330
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "银发男子右侧多出一个光头男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786342266620
+}
