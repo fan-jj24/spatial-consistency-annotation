@@ -4,9 +4,19 @@
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007253_A.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785986614&Signature=TEk1wP9sCE1wFJ8oTaGNwYKDjyw%3D",
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007253_B.png?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785986611&Signature=o%2FVJuJ%2Fj2%2BGjXc0COd2y3Qptsmc%3D"
   ],
-  "objects": [],
-  "note": "整体背景从街道路边变到带有高栏杆的路上",
-  "bg_global": true,
+  "objects": [
+    {
+      "box": {
+        "x": 22,
+        "y": 6,
+        "w": 1038,
+        "h": 886
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "局部背景的路边商店变为石栏杆",
+  "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1786159907360
+  "ts": 1786345151805
 }
