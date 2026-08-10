@@ -20,6 +20,8 @@
       ]
     }
   ],
-  "note": "黑衣女位置朝向高度变化",
-  "bg_global": false
+  "note": "黑衣女位置、朝向、高度变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786343478683
 }
