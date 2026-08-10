@@ -1,0 +1,27 @@
+{
+  "line": 1959,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001959_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035489&Signature=ZfKYrZ6%2B4xdwjUxBD%2BY1zJpgCVc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001959_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035490&Signature=DqB%2BF%2BQ9zx1sa9c1aVJyYMIYRVA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 10,
+        "y": 0,
+        "w": 559,
+        "h": 728
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.585,
+        -0.074,
+        -0.807
+      ]
+    }
+  ],
+  "note": "白衣男子与小孩的距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786347863494
+}
