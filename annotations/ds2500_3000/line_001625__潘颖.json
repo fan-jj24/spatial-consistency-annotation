@@ -1,0 +1,27 @@
+{
+  "line": 1625,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001625_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035385&Signature=w%2F2gH8u%2FH5Fhi2H95mdFIx49gKk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001625_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035387&Signature=S7mOfzZwteX%2BiIydqbdMPDiisaY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 311,
+        "y": 274,
+        "w": 562,
+        "h": 804
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.203,
+        0.02,
+        0.979
+      ]
+    }
+  ],
+  "note": "白衣女子与凳子的相对距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786347863494
+}
