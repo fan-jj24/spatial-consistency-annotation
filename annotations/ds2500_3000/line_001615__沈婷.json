@@ -1,0 +1,22 @@
+{
+  "line": 1615,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001615_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035382&Signature=KvXyfBNhxVFEX0QiMrrzP682aOM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001615_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035383&Signature=YiotO7gWgqG227uPuIyiYvISuoM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 723,
+        "y": 406,
+        "w": 572,
+        "h": 674
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "紫衣女子朝向变化，应和花衣女子面对",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786342266620
+}
