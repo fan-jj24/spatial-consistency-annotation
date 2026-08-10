@@ -22,5 +22,6 @@
   ],
   "note": "人物群体位置变化",
   "bg_global": false,
-  "ts": 1785740974735
+  "bg_ambiguous": false,
+  "ts": 1786343478683
 }
