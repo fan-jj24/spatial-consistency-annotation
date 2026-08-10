@@ -34,5 +34,7 @@
     }
   ],
   "note": "粉衣女位置和高度发生变化，蓝衣女高度发生变化",
-  "bg_global": false
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786344348499
 }
