@@ -1,8 +1,8 @@
 {
   "line": 6914,
-  "verdict": "wrong",
-  "reason": "高度",
+  "verdict": "correct",
+  "reason": "",
   "annotator": "qhw-郝梦辉",
   "reviewer": "qhw-梁露露",
-  "ts": 1786349835196
+  "ts": 1786358971239
 }
