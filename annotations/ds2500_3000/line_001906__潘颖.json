@@ -1,0 +1,22 @@
+{
+  "line": 1906,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001906_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035468&Signature=WkK5kKabZZlcoS4EmWrGWHaQxc8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001906_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035470&Signature=9t%2FzsG9ThLpCAgcS%2B3fpkn2AGFI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 740,
+        "y": 9,
+        "w": 667,
+        "h": 1067
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "绿衣女子与短发男子的相对位置变了，由并肩变成面对面",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786339746476
+}
