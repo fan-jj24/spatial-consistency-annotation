@@ -1,0 +1,26 @@
+{
+  "line": 1795,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001795_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035436&Signature=42oOv1LjSYoflytxcuUIieobFEU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001795_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035438&Signature=5dmQnFJqQow%2B9oAMby6NlAOlTEU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 534,
+        "y": 205,
+        "w": 376,
+        "h": 860
+      },
+      "type": "move",
+      "target": {
+        "x": 1348,
+        "y": 577
+      }
+    }
+  ],
+  "note": "绿衣女子与鹦鹉的距离变远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786347863494
+}
