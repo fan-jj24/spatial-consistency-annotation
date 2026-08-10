@@ -1,8 +1,8 @@
 {
   "line": 17113,
-  "verdict": "wrong",
+  "verdict": "correct",
   "reason": "黑衣男子位置错误",
   "annotator": "赖振宇",
   "reviewer": "姚佳丽",
-  "ts": 1786069899833
+  "ts": 1786379895829
 }
