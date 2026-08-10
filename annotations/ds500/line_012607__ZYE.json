@@ -6,5 +6,7 @@
   ],
   "objects": [],
   "note": "整体背景从房内变到朝堂",
-  "bg_global": true
+  "bg_global": true,
+  "bg_ambiguous": false,
+  "ts": 1786344348500
 }
