@@ -1,0 +1,23 @@
+{
+  "line": 1650,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001650_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035391&Signature=9II2lqhMjffaLmOu%2BGLXedAZSPU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_001650_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786035393&Signature=MMSIlDoSUtkmjAWDc7ez1CKWwLA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 685,
+        "y": 378,
+        "w": 449,
+        "h": 607
+      },
+      "type": "custom",
+      "text": "两男子与窗户的相对距离变近了，相对高度变低了"
+    }
+  ],
+  "note": "两男子与窗户的相对距离变近了，牛仔裤男子应在女子右手边，风衣男子应在凳子左侧，两男子相对高度变低了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786339746476
+}
