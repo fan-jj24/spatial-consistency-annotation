@@ -29,5 +29,8 @@
       "type": "rotate"
     }
   ],
-  "note": "粉衣女子位置与朝向发生变化\n蓝衣女子朝向发生变化"
+  "note": "粉衣女子位置与朝向发生变化\n蓝衣女子朝向发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786414133849
 }
