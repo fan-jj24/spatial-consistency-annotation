@@ -15,5 +15,8 @@
       "type": "rotate"
     }
   ],
-  "note": "紫衣女子朝向发生了变化"
+  "note": "紫衣女子朝向发生了变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786414133849
 }
