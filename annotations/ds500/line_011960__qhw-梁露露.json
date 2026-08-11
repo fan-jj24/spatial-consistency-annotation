@@ -12,7 +12,12 @@
         "w": 379,
         "h": 719
       },
-      "type": "rotate"
+      "type": "move3d",
+      "dir3d": [
+        0.039,
+        -0.004,
+        0.999
+      ]
     },
     {
       "box": {
@@ -25,5 +30,7 @@
     }
   ],
   "note": "红衣男子朝向与位置发生变化\n白衣女子朝向发生变化",
-  "bg_global": false
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786414133849
 }
