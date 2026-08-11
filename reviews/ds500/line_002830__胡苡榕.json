@@ -1,8 +1,8 @@
 {
   "line": 2830,
-  "verdict": "wrong",
+  "verdict": "correct",
   "reason": "少了旋转",
   "annotator": "qhw-郝梦辉",
   "reviewer": "胡苡榕",
-  "ts": 1785745231085
+  "ts": 1786427419061
 }
