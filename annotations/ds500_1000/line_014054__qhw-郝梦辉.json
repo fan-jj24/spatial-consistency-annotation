@@ -12,12 +12,11 @@
         "w": 659,
         "h": 579
       },
-      "type": "custom",
-      "text": "棕色衣服男子和米棕色衣服女子的位置需要互换"
+      "type": "replace"
     }
   ],
   "note": "棕色衣服男子和米棕色衣服女子位置发生变化",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785936969301
+  "ts": 1786413403462
 }
