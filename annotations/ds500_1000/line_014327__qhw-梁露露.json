@@ -4,9 +4,19 @@
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014327_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757998&Signature=N%2FT%2By9o987BfJOpnhUUUStojHho%3D",
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_014327_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757998&Signature=GlAoLc7ti1p3q3NCjCuSQjUSBig%3D"
   ],
-  "objects": [],
-  "note": "整体背景发生变化",
-  "bg_global": true,
+  "objects": [
+    {
+      "box": {
+        "x": -3,
+        "y": 547,
+        "w": 156,
+        "h": 613
+      },
+      "type": "add"
+    }
+  ],
+  "note": "少一个黑衣女子",
+  "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785832786565
+  "ts": 1786417942963
 }
