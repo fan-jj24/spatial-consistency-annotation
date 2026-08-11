@@ -1,8 +1,8 @@
 {
   "line": 14113,
-  "verdict": "wrong",
-  "reason": "黑衣男向前移动并旋转",
+  "verdict": "correct",
+  "reason": "",
   "annotator": "qhw-郝梦辉",
   "reviewer": "qhw-梁露露",
-  "ts": 1785918829630
+  "ts": 1786419549709
 }
