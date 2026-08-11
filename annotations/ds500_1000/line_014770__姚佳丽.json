@@ -13,10 +13,19 @@
         "h": 697
       },
       "type": "rotate"
+    },
+    {
+      "box": {
+        "x": 117,
+        "y": 51,
+        "w": 366,
+        "h": 93
+      },
+      "type": "bg_local"
     }
   ],
-  "note": "红衣女子朝向变化整体背景变化",
-  "bg_global": true,
+  "note": "红衣女子朝向变化，局部背景变化为屏风",
+  "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1786350879693
+  "ts": 1786414042119
 }
