@@ -13,10 +13,19 @@
         "h": 591
       },
       "type": "add"
+    },
+    {
+      "box": {
+        "x": 25,
+        "y": 38,
+        "w": 660,
+        "h": 364
+      },
+      "type": "bg_local"
     }
   ],
-  "note": "局部背景发生变化\n少一个黄衣女子",
-  "bg_global": true,
+  "note": "背景由院门口变成街道口\n少一个黄衣女子",
+  "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785831926245
+  "ts": 1786417942963
 }
