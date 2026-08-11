@@ -19,8 +19,8 @@
       }
     }
   ],
-  "note": "整体背景变化，白衣男子高度变化",
-  "bg_global": true,
+  "note": "白衣男子高度变化",
+  "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1786350879693
+  "ts": 1786413843904
 }
