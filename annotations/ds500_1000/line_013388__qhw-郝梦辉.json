@@ -12,12 +12,11 @@
         "w": 589,
         "h": 1132
       },
-      "type": "custom",
-      "text": "麻衣女子需要向前移动并旋转"
+      "type": "rotate"
     }
   ],
-  "note": "麻衣女子位置发生变化，朝向发生变化",
+  "note": "麻衣女子朝向发生变化",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1786413403461
+  "ts": 1786413616484
 }
