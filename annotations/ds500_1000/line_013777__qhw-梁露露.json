@@ -34,8 +34,8 @@
       "type": "bg_local"
     }
   ],
-  "note": "局部背景发生变化\n多出一个穿围裙女子",
+  "note": "背景房屋的窗户不一致\n多出一个穿围裙女子",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785826266421
+  "ts": 1786417942963
 }
