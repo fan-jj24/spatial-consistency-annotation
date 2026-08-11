@@ -1,8 +1,8 @@
 {
   "line": 2833,
-  "verdict": "wrong",
+  "verdict": "correct",
   "reason": "高度不是主要的问题，不能只给高度的手势动作。",
   "annotator": "ZYE",
   "reviewer": "胡苡榕",
-  "ts": 1785726996102
+  "ts": 1786427419061
 }
