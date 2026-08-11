@@ -21,5 +21,7 @@
     }
   ],
   "note": "抱着人的男人位置发生变化",
-  "bg_global": false
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786414133849
 }
