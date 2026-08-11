@@ -4,9 +4,24 @@
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000032_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999770&Signature=%2BZVOmBnQdNMfboaPnIPtqcyyDSE%3D",
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_000032_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785999771&Signature=aS27XgrP%2BEtHMhJkYzhJKHWaX%2Bc%3D"
   ],
-  "objects": [],
-  "note": "",
+  "objects": [
+    {
+      "box": {
+        "x": 905,
+        "y": 188,
+        "w": 456,
+        "h": 819
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.033,
+        -0.171,
+        -0.985
+      ]
+    }
+  ],
+  "note": "粉衣女子位置变化",
   "bg_global": false,
-  "bg_ambiguous": true,
-  "ts": 1786354924434
+  "bg_ambiguous": false,
+  "ts": 1786415597866
 }
