@@ -1,8 +1,8 @@
 {
   "line": 13711,
-  "verdict": "wrong",
+  "verdict": "correct",
   "reason": "轮椅男旋转",
   "annotator": "qhw-梁露露",
   "reviewer": "qhw-郝梦辉",
-  "ts": 1785926047635
+  "ts": 1786419017130
 }
