@@ -21,5 +21,7 @@
     }
   ],
   "note": "粉衣女子位置和高度发生变化",
-  "bg_global": false
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786414133849
 }
