@@ -1,8 +1,8 @@
 {
   "line": 14658,
-  "verdict": "wrong",
+  "verdict": "correct",
   "reason": "多个描写用自定义",
   "annotator": "qhw-梁露露",
   "reviewer": "qhw-郝梦辉",
-  "ts": 1785838086696
+  "ts": 1786419017130
 }
