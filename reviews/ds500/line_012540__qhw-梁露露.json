@@ -1,8 +1,8 @@
 {
   "line": 12540,
-  "verdict": "wrong",
-  "reason": "背景发生变化\n白衣男子的高度和朝向发生变化\n白衣女子可看作没变化",
+  "verdict": "correct",
+  "reason": "",
   "annotator": "qhw-郝梦辉",
   "reviewer": "qhw-梁露露",
-  "ts": 1785722939548
+  "ts": 1786419019951
 }
