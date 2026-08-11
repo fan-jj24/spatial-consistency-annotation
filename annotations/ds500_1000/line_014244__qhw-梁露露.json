@@ -15,8 +15,8 @@
       "type": "bg_local"
     }
   ],
-  "note": "局部背景发生变化",
+  "note": "背景由室外变成室内",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785828378612
+  "ts": 1786417942963
 }
