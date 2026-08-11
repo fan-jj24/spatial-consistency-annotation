@@ -12,12 +12,11 @@
         "w": 553,
         "h": 901
       },
-      "type": "custom",
-      "text": "旗袍女高度需要变高并旋转"
+      "type": "rotate"
     }
   ],
   "note": "旗袍女的高度和朝向发生变化",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785832786565
+  "ts": 1786417942963
 }
