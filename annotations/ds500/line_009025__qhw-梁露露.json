@@ -21,12 +21,15 @@
         "w": 331,
         "h": 696
       },
-      "type": "custom",
-      "text": "紫衣女子需要向前移动并旋转"
+      "type": "move",
+      "target": {
+        "x": 736,
+        "y": 292
+      }
     }
   ],
   "note": "紫衣女子位置和朝向发生变化\n少了一个黄色生物",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785916674237
+  "ts": 1786414133849
 }
