@@ -4,29 +4,9 @@
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013320_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757976&Signature=Z7BHXLo91d10yKLioMwsNFaiM9I%3D",
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_013320_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785757976&Signature=Wpbdkud%2FZ0wPtQqoAvTWl0dF2VQ%3D"
   ],
-  "objects": [
-    {
-      "box": {
-        "x": 110,
-        "y": 318,
-        "w": 177,
-        "h": 476
-      },
-      "type": "delete",
-      "line": [
-        {
-          "x": 225,
-          "y": 479
-        },
-        {
-          "x": 197,
-          "y": 614
-        }
-      ]
-    }
-  ],
-  "note": "多了蓝衣女子",
+  "objects": [],
+  "note": "",
   "bg_global": false,
-  "bg_ambiguous": false,
-  "ts": 1786427792985
+  "bg_ambiguous": true,
+  "ts": 1786428922783
 }
