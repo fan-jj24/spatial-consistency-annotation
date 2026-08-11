@@ -14,12 +14,14 @@
       },
       "type": "move3d",
       "dir3d": [
-        0.047,
-        0.436,
-        0.899
+        0.244,
+        -0.043,
+        0.969
       ]
     }
   ],
   "note": "灰色西装女子位置发生变化",
-  "bg_global": false
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786414133849
 }
