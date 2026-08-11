@@ -22,12 +22,11 @@
         "w": 361,
         "h": 870
       },
-      "type": "custom",
-      "text": "粉衣女子高度需要变高并旋转"
+      "type": "rotate"
     }
   ],
   "note": "群体人物位置发生变化\n粉衣女子朝向和高度发生变化",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785900655247
+  "ts": 1786414133849
 }
