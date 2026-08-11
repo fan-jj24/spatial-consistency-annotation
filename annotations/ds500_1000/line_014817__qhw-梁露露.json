@@ -34,8 +34,8 @@
       "type": "bg_local"
     }
   ],
-  "note": "多出一个蓝衣男\n局部背景发生变化",
+  "note": "多出一个蓝衣男\n背景由空地变成屋前",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785833636944
+  "ts": 1786417942963
 }
