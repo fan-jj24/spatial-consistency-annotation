@@ -13,22 +13,10 @@
         "h": 1029
       },
       "type": "replace"
-    },
-    {
-      "box": {
-        "x": 424,
-        "y": 36,
-        "w": 289,
-        "h": 1093
-      },
-      "type": "move3d",
-      "dir3d": [
-        -0.74,
-        0.214,
-        0.638
-      ]
     }
   ],
-  "note": "黄衣侍卫位置发生变化\n蓝衣女子被粉衣女子替换",
-  "bg_global": false
+  "note": "蓝衣女子被粉衣女子替换",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786414133849
 }
