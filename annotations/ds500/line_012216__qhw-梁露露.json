@@ -7,10 +7,10 @@
   "objects": [
     {
       "box": {
-        "x": 320,
+        "x": 421,
         "y": 195,
-        "w": 381,
-        "h": 515
+        "w": 156,
+        "h": 128
       },
       "type": "move",
       "target": {
@@ -20,5 +20,7 @@
     }
   ],
   "note": "衬衫男子位置发生变化",
-  "bg_global": false
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786414133849
 }
