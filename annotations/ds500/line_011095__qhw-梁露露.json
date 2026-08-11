@@ -12,12 +12,11 @@
         "w": 463,
         "h": 1098
       },
-      "type": "custom",
-      "text": "需要将蓝衣男子替换为绿衣老人，并且高度需要降低"
+      "type": "replace"
     }
   ],
   "note": "绿衣老人被蓝衣男子替换，并且高度发生变化",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785898484228
+  "ts": 1786414133849
 }
