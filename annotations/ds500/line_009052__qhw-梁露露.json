@@ -14,12 +14,14 @@
       },
       "type": "move3d",
       "dir3d": [
-        0.055,
-        0.643,
-        0.764
+        0.007,
+        0.004,
+        1
       ]
     }
   ],
   "note": "紫衣女子位置发生变化",
-  "bg_global": false
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786414133849
 }
