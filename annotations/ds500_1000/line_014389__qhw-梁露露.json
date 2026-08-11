@@ -12,12 +12,11 @@
         "w": 404,
         "h": 801
       },
-      "type": "custom",
-      "text": "红衣女需要变低并旋转"
+      "type": "rotate"
     }
   ],
   "note": "红衣女高度和朝向发生变化",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1785828378612
+  "ts": 1786417942963
 }
