@@ -1,8 +1,8 @@
 {
   "line": 2825,
-  "verdict": "wrong",
+  "verdict": "correct",
   "reason": "两名士兵旋转单独标",
   "annotator": "ZYE",
   "reviewer": "qhw-郝梦辉",
-  "ts": 1785744315595
+  "ts": 1786432632304
 }
