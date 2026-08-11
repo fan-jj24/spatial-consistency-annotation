@@ -9,12 +9,14 @@
       "box": {
         "x": 353,
         "y": 105,
-        "w": 199,
-        "h": 490
+        "w": 165,
+        "h": 442
       },
       "type": "add"
     }
   ],
   "note": "少一个动画人物",
-  "bg_global": false
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786414133849
 }
