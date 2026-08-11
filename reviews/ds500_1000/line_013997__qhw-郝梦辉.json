@@ -1,8 +1,8 @@
 {
   "line": 13997,
-  "verdict": "wrong",
+  "verdict": "correct",
   "reason": "男子朝向不用标",
   "annotator": "qhw-梁露露",
   "reviewer": "qhw-郝梦辉",
-  "ts": 1785918939581
+  "ts": 1786419017130
 }
