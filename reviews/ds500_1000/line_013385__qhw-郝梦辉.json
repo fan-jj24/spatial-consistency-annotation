@@ -1,8 +1,8 @@
 {
   "line": 13385,
-  "verdict": "wrong",
+  "verdict": "correct",
   "reason": "朝向也变了",
   "annotator": "qhw-梁露露",
   "reviewer": "qhw-郝梦辉",
-  "ts": 1785900200408
+  "ts": 1786419017130
 }
