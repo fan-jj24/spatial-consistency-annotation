@@ -47,6 +47,9 @@ window.ANNOTATE_CONFIG = {
       visibleTo: ["a66afe3a6c09a67abcb833de04fde0a3e0635bb131dc51f032b9631f8c0cc6a9"] },
     { id: "ds2500_3000", name: "real_movies", file: "samples_2500_3000.json",
       visibleTo: ["d21a8e1324b281f343e56e2b61d203c38b3bd445c55642ba3012fc8f574c183d"] },
+    { id: "ds3000_3500", name: "samples500", file: "samples_reannotate_3000_3500.json",
+      visibleTo: ["*"] },
+    
     // 哈希对照：
     //   a66afe3a6c09a67abcb833de04fde0a3e0635bb131dc51f032b9631f8c0cc6a9  <- PAT ghp_zTGa...（标注员A）
     //   d21a8e1324b281f343e56e2b61d203c38b3bd445c55642ba3012fc8f574c183d <- PAT ghp_jp3M...（标注员B）
