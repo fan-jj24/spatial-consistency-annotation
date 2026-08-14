@@ -1,0 +1,35 @@
+{
+  "line": 2899,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002899_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590756&Signature=RVndMXkriV%2BZjjjLeAbu40dryMU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002899_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590756&Signature=DIA6Ihmgf7Opw6YCnXbb%2Fp%2Bhmjs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 447,
+        "y": 320,
+        "w": 118,
+        "h": 458
+      },
+      "type": "move",
+      "target": {
+        "x": 204,
+        "y": 837
+      }
+    },
+    {
+      "box": {
+        "x": 603,
+        "y": 750,
+        "w": 118,
+        "h": 527
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "男子与女子的相对距离变远了，女子右手边多出一人",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786684970260
+}
