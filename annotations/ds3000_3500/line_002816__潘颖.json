@@ -1,0 +1,27 @@
+{
+  "line": 2816,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002816_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590754&Signature=9ibfjXRxtANcEpXf0yldr4Esmh8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002816_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590754&Signature=RxNl4ph2UIlerrtyGJUU4olVcD0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 173,
+        "y": 410,
+        "w": 435,
+        "h": 438
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.091,
+        0.084,
+        0.992
+      ]
+    }
+  ],
+  "note": "人群的相对位置由门外变成门内",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786684970260
+}
