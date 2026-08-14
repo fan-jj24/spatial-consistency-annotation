@@ -1,0 +1,23 @@
+{
+  "line": 2864,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002864_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590755&Signature=p3oeAQnXXg8mng627Z1O8xhK7xM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002864_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590755&Signature=yMl79Koi5Jr%2B%2Fst5dpH9Y%2BF%2Bgis%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -4,
+        "y": 94,
+        "w": 717,
+        "h": 1180
+      },
+      "type": "custom",
+      "text": "2人相对位置和朝向变化，需要重排"
+    }
+  ],
+  "note": "2人相对位置变化，女衣女子由在男子左后侧变为面对",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786678260865
+}
