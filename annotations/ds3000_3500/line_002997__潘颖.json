@@ -1,0 +1,23 @@
+{
+  "line": 2997,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002997_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590757&Signature=ruBhg%2Fy%2BrbhwHyo2wIVD1uquyUI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002997_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590757&Signature=pZhvrUY0rYL1v2I%2BiPUUhWmokwo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 296,
+        "y": 771,
+        "w": 138,
+        "h": 241
+      },
+      "type": "custom",
+      "text": "三人的相对距离和位置变了"
+    }
+  ],
+  "note": "三人与门的相对距离变远了，绿衣女子与红衣女子由面对面变成并肩，黑衣男子由绿衣女子的右后方变成在红衣女子左侧",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786684970260
+}
