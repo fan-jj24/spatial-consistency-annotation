@@ -1,0 +1,27 @@
+{
+  "line": 7563,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007563_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590766&Signature=53oEg7BTZA7jk8Rn%2FtPLWAoh%2FjU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007563_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590766&Signature=waWJK9qIYN0G6ffBOT7WxHoISB4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 60,
+        "y": 50,
+        "w": 392,
+        "h": 671
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.361,
+        -0.011,
+        -0.933
+      ]
+    }
+  ],
+  "note": "男子与棺材的距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786689622299
+}
