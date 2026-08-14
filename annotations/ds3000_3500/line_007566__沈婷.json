@@ -1,0 +1,27 @@
+{
+  "line": 7566,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007566_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590766&Signature=9GiMiqi2jHUjxNXeGL8xTp3fNtI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007566_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590766&Signature=GN1KcTB6lCt26DrKy9GO22JCR2Y%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 254,
+        "y": 63,
+        "w": 497,
+        "h": 654
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.41,
+        -0.456,
+        -0.79
+      ]
+    }
+  ],
+  "note": "老人与香炉桌距离变近",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786687326515
+}
