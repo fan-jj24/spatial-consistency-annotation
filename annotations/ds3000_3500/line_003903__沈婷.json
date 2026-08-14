@@ -1,0 +1,36 @@
+{
+  "line": 3903,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003903_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590760&Signature=hLj%2BNXl7%2FWvaNCAGKcR5JtT9PTE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003903_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590760&Signature=ZDDgx0LxCGlwYHTcoWjVZF1oO4I%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 434,
+        "y": 593,
+        "w": 64,
+        "h": 279
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.009,
+        0.594,
+        0.804
+      ]
+    },
+    {
+      "box": {
+        "x": 245,
+        "y": 583,
+        "w": 69,
+        "h": 230
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "西装女子与眼镜男子距离变近，领带男子方向变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786687326515
+}
