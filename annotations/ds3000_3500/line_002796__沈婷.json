@@ -1,0 +1,22 @@
+{
+  "line": 2796,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002796_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590754&Signature=kjS9dniAlOPIGALGhBoOX9aM0vg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002796_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590754&Signature=%2FhoCh2i0yT%2FXJ58xMWyzXpaLJcU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -4,
+        "y": 772,
+        "w": 172,
+        "h": 276
+      },
+      "type": "neutral"
+    }
+  ],
+  "note": "发髻男子前方多出一个人",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786687326515
+}
