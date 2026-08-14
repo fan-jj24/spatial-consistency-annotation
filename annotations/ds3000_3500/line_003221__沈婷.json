@@ -1,0 +1,27 @@
+{
+  "line": 3221,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003221_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590758&Signature=tEjEykDf%2Bvwwnl%2BOQwg8KjoJZ7I%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003221_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590758&Signature=KvFrddCmT7LvGwvXOpBDcjFZ7Rs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 43,
+        "y": 260,
+        "w": 435,
+        "h": 379
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.009,
+        0.607,
+        0.795
+      ]
+    }
+  ],
+  "note": "女子与床上男子距离变近，高度变低",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786687326515
+}
