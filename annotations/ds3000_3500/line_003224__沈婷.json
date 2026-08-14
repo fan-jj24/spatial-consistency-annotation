@@ -1,0 +1,22 @@
+{
+  "line": 3224,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003224_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590758&Signature=N9AfYRgs2P%2F6LASCkkSaptn6DS4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003224_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590758&Signature=3dDN9B2jtAoMfCmHep5%2Bget0NVU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 4,
+        "y": 117,
+        "w": 512,
+        "h": 809
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "风衣女子身后多出2个保安",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786687326515
+}
