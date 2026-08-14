@@ -1,0 +1,22 @@
+{
+  "line": 3919,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003919_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590760&Signature=%2FUNAkZCaUmzL%2BjWlQ1By6ZEzigg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003919_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590760&Signature=I7o2ZcS9hkRWcIA599blnrpY1Oc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 306,
+        "y": 228,
+        "w": 248,
+        "h": 1052
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "绿衣女子与黑衣男子之间多了红衣女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786684970260
+}
