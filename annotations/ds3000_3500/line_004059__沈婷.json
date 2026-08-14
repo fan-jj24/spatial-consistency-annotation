@@ -1,0 +1,36 @@
+{
+  "line": 4059,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004059_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590763&Signature=A6ElfK4%2BGrweT3dmd9mpt2OGY4A%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004059_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590763&Signature=4gDamly5vPQjxXqPo0mnO6hTpBM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 529,
+        "y": 421,
+        "w": 172,
+        "h": 463
+      },
+      "type": "delete"
+    },
+    {
+      "box": {
+        "x": 383,
+        "y": 426,
+        "w": 141,
+        "h": 458
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.537,
+        0.269,
+        0.8
+      ]
+    }
+  ],
+  "note": "黑衣男子与女子距离变近，且左侧多出一个白衣男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786678260866
+}
