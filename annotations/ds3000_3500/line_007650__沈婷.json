@@ -1,0 +1,26 @@
+{
+  "line": 7650,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007650_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590767&Signature=Dwa%2BVSPLDyxaMNGUdiclhFBVfEU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007650_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590767&Signature=FIJPQ9%2F68Q%2BxWzEvqFQxqt%2B4f20%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 264,
+        "y": 190,
+        "w": 239,
+        "h": 530
+      },
+      "type": "move",
+      "target": {
+        "x": 715,
+        "y": 367
+      }
+    }
+  ],
+  "note": "披发女子与紫衣女子和绿衣女子距离变远",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786687326515
+}
