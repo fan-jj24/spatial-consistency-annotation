@@ -1,0 +1,27 @@
+{
+  "line": 5386,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_005386_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590765&Signature=KP%2Bkt%2F3IrnzUEWgrufr9LfNljUU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_005386_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590765&Signature=AyT0pb3PeAT%2FKMqyMkgOlSy%2FY7A%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 173,
+        "y": 9,
+        "w": 540,
+        "h": 1262
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.383,
+        0.294,
+        0.876
+      ]
+    }
+  ],
+  "note": "发髻女子和盖头女子距离变近",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786678260865
+}
