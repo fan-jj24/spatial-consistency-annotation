@@ -1,0 +1,22 @@
+{
+  "line": 3909,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003909_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590760&Signature=sWUzUgjwCtq3WrstHn1KZ2N0pfI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003909_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590760&Signature=cj45jgQws0l0VZyCdDIpOnOoc38%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 183,
+        "y": 547,
+        "w": 169,
+        "h": 420
+      },
+      "type": "add"
+    }
+  ],
+  "note": "男子前方的马消失，高度变高",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786688124892
+}
