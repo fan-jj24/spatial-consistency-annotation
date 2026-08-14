@@ -1,0 +1,27 @@
+{
+  "line": 2954,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002954_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590756&Signature=oVgFkTNrPB9y6fB1mK8ll7aKkBM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002954_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590756&Signature=U0QuO4OCE%2BSbIYYkbUXZmizqTyI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 457,
+        "y": 307,
+        "w": 253,
+        "h": 732
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.989,
+        -0.001,
+        -0.147
+      ]
+    }
+  ],
+  "note": "粉衣女子相对位置变了，从台阶下变到台阶上了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786684970260
+}
