@@ -1,0 +1,31 @@
+{
+  "line": 4012,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004012_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590762&Signature=CsN2LkoPg%2F8kdM774oEchMmOucA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004012_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590762&Signature=aX7pqGYd4sPxogqSSdgsbIs0euU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 470,
+        "y": 286,
+        "w": 197,
+        "h": 573
+      },
+      "type": "delete"
+    },
+    {
+      "box": {
+        "x": 465,
+        "y": 874,
+        "w": 205,
+        "h": 399
+      },
+      "type": "add"
+    }
+  ],
+  "note": "绿衣女子前面的男子消失，身后多出一个黑衣女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786678260865
+}
