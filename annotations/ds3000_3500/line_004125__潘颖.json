@@ -1,0 +1,22 @@
+{
+  "line": 4125,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004125_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590764&Signature=GEAdYQgGojg8tqpzOV3Eb8Ct5YY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004125_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590764&Signature=KvpqxFjZONf2RmxIjYlZLmvsMmY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -9,
+        "y": 438,
+        "w": 397,
+        "h": 850
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "粉衣女子前面多出一个蓝衣女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786689622299
+}
