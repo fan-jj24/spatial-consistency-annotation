@@ -1,0 +1,22 @@
+{
+  "line": 7614,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007614_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590767&Signature=wcr2eQedfuPAotzyFfNv5%2BUsl%2FQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007614_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590767&Signature=1fvQEtw2ihf4ja7LDJqE1KLCdD8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 634,
+        "y": 577,
+        "w": 29,
+        "h": 45
+      },
+      "type": "neutral"
+    }
+  ],
+  "note": "绿衣人物身后多了一个女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786678260866
+}
