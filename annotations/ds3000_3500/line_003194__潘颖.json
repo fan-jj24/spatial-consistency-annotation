@@ -1,0 +1,23 @@
+{
+  "line": 3194,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003194_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590757&Signature=OpmdM4%2FOLo3sUWPYYc04g3bNqPw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003194_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590757&Signature=WIEFIFWLEP0f7sgllo8bmZ1JWsI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 104,
+        "y": 509,
+        "w": 522,
+        "h": 532
+      },
+      "type": "custom",
+      "text": "两人的相对位置、距离和高度均变了"
+    }
+  ],
+  "note": "黄衣女子和绿衣女子与凳子的相对距离变近了，黄衣女子由绿衣女子的左手边变为右侧，两人的相对高度变低了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786689622299
+}
