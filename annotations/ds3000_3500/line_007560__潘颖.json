@@ -1,0 +1,22 @@
+{
+  "line": 7560,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007560_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590766&Signature=%2B%2FCJB2QyFqNaz%2ByeodhG5PgqMos%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007560_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590766&Signature=bs4otKmWWA9eW93bKyV0VVPH7c4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 761,
+        "y": 122,
+        "w": 534,
+        "h": 593
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "桌子边多出一个人",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786689622299
+}
