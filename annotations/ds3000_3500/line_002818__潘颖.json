@@ -1,0 +1,23 @@
+{
+  "line": 2818,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002818_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590754&Signature=lJcP91hgTuaoUpcBMuWOWyUM3LU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002818_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590754&Signature=Fsg1ls6ENHe8JQ4iMOeFRfrStRY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 60,
+        "y": 346,
+        "w": 602,
+        "h": 650
+      },
+      "type": "custom",
+      "text": "两人相对位置、朝向和高度都变了"
+    }
+  ],
+  "note": "女子由男子的右手边变为左手边，两人由前后变为相对，男子与女子的相对高度变低了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786684970260
+}
