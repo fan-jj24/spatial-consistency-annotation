@@ -1,0 +1,22 @@
+{
+  "line": 4013,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004013_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590762&Signature=8VtjNHngOXbCV5fBDf%2Bb6b7Dp2E%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004013_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590762&Signature=NKnzMJL8OpgazksY2ACgImEw5WQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 127,
+        "y": 250,
+        "w": 259,
+        "h": 1024
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "绿衣女子右侧多出一个红衣女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786687326515
+}
