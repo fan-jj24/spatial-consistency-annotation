@@ -1,0 +1,22 @@
+{
+  "line": 3225,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003225_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590758&Signature=iG4IOu0NkbkqawW8tFsjNVuv3Ro%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003225_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590758&Signature=qIfz0geDJ7CjCqPr%2BBzU58xc9sc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 270,
+        "y": 680,
+        "w": 177,
+        "h": 371
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "黄衣女子方向变化，由对面变为并排",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786687326515
+}
