@@ -1,0 +1,26 @@
+{
+  "line": 3989,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003989_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590762&Signature=xEuw8AsFb%2BT7R8CvwAqsb4pikt0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003989_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590762&Signature=TzCBX7TAAtGOl9ByUbyNAea%2FWkg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 288,
+        "y": 488,
+        "w": 138,
+        "h": 410
+      },
+      "type": "move",
+      "target": {
+        "x": 357,
+        "y": 997
+      }
+    }
+  ],
+  "note": "眼镜男子和蓝裙女子与浅灰衣男子距离变远",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786950771606
+}
