@@ -1,0 +1,26 @@
+{
+  "line": 7593,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007593_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590766&Signature=OHFb3Q338Ra68n0yJmg5161RlaA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007593_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590766&Signature=R1V2lu0FfyIJzT5PqXVWRd3Qe5M%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 338,
+        "y": 501,
+        "w": 88,
+        "h": 75
+      },
+      "type": "move",
+      "target": {
+        "x": 238,
+        "y": 534
+      }
+    }
+  ],
+  "note": "男子与右手边遮雨棚的相对距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786956862189
+}
