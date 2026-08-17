@@ -1,0 +1,35 @@
+{
+  "line": 7651,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007651_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590767&Signature=9BHXdCW5qiq9J%2FgFjhdmmz%2Fxjeo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007651_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590767&Signature=EKban%2FT8tMcr%2FTSfPYXCKsQrgm0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 415,
+        "y": 501,
+        "w": 154,
+        "h": 144
+      },
+      "type": "move",
+      "target": {
+        "x": 237,
+        "y": 599
+      }
+    },
+    {
+      "box": {
+        "x": 876,
+        "y": 202,
+        "w": 154,
+        "h": 514
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "小怪兽离帐篷变远了，小男孩朝向变了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786954699714
+}
