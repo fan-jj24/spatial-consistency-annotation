@@ -1,0 +1,22 @@
+{
+  "line": 3207,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003207_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590757&Signature=aYw1vFlsV6fwmeFi2GCA4GzXUvc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003207_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590757&Signature=8di62GBtG%2BR9stK6ZWwCakNMIhA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 416,
+        "y": 393,
+        "w": 297,
+        "h": 719
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "女子朝向变化，由面对男子变为侧对男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786945177497
+}
