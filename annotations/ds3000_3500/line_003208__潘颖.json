@@ -1,0 +1,26 @@
+{
+  "line": 3208,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003208_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590757&Signature=EVURaOzdEyF56OB60OqzhyaN1aY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003208_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590758&Signature=AIevTtfOQO3BmSdpy77hC2LIMsM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 570,
+        "y": 404,
+        "w": 82,
+        "h": 282
+      },
+      "type": "move",
+      "target": {
+        "x": 375,
+        "y": 607
+      }
+    }
+  ],
+  "note": "女子与桌椅的相对距离变远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786948483899
+}
