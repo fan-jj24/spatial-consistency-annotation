@@ -1,0 +1,31 @@
+{
+  "line": 5354,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_005354_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590764&Signature=rFzCXS%2BnCcvstRarFhiQl6rNeUA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_005354_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590764&Signature=coQxY8KL6sisC5aR%2F9F4eGW7iBM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -4,
+        "y": 191,
+        "w": 284,
+        "h": 1091
+      },
+      "type": "delete"
+    },
+    {
+      "box": {
+        "x": 496,
+        "y": 137,
+        "w": 223,
+        "h": 1139
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "黄衣女子对面多出两个人",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786950771607
+}
