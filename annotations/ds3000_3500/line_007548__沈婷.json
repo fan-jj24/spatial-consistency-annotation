@@ -1,0 +1,22 @@
+{
+  "line": 7548,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007548_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590766&Signature=YH8u7TAZ3Y0avT8aLVcEUFSHegk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007548_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590766&Signature=ttEF8fFedHHoAOnYkdbsNThPFV8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 826,
+        "y": 15,
+        "w": 448,
+        "h": 701
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "棺木右侧多出一个老人",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786945177496
+}
