@@ -1,0 +1,23 @@
+{
+  "line": 3964,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003964_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590761&Signature=W4hvgD9eWvc4dZj%2FRHKEJRIsxq8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003964_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590761&Signature=tP8WS993zGQQEqiKrVJq371g3Gc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -4,
+        "y": 361,
+        "w": 719,
+        "h": 922
+      },
+      "type": "custom",
+      "text": "两人相对距离、位置与局部背景均发生变化"
+    }
+  ],
+  "note": "男子与女子的相对距离变近了，男女和窗户的距离变近了，男女前方多出着火木材",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786954699714
+}
