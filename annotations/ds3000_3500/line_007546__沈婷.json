@@ -1,0 +1,27 @@
+{
+  "line": 7546,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007546_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590766&Signature=WmT6%2FHxR0JeYDEGx6f%2ByuoxrT2I%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007546_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590766&Signature=3MCRs5IVWJ00VZ%2Fo7pdzVd%2Flk4s%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 286,
+        "y": 159,
+        "w": 734,
+        "h": 557
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.001,
+        -0.6,
+        -0.8
+      ]
+    }
+  ],
+  "note": "男子和灯泡店铺的距离变近",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786950771606
+}
