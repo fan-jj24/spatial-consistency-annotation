@@ -1,0 +1,27 @@
+{
+  "line": 5366,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_005366_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590765&Signature=tPAMoxDtwtRm7g%2BJ8xI8sgITML8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_005366_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590765&Signature=pZfV7zdlc38BbRKM6921FvdI5yw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -1,
+        "y": 130,
+        "w": 435,
+        "h": 1144
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.989,
+        -0.006,
+        0.145
+      ]
+    }
+  ],
+  "note": "2人距离变近",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786950771607
+}
