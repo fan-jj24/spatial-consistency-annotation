@@ -1,0 +1,27 @@
+{
+  "line": 7587,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007587_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590766&Signature=InXLzMT0laHMDVq4oVglrK1YYVI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007587_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590766&Signature=HS%2FiB3SQg5P0DUlTTZq7J%2FgjxKE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 313,
+        "y": 329,
+        "w": 670,
+        "h": 226
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.009,
+        -0.444,
+        -0.896
+      ]
+    }
+  ],
+  "note": "3只小狗与斑马线距离变近",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786950771607
+}
