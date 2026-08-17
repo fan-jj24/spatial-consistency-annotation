@@ -1,0 +1,26 @@
+{
+  "line": 7572,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007572_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590766&Signature=FwG%2FbSz6%2FZ2wa%2BVjhH4fQHlaPHk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007572_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590766&Signature=vMLBsSk2io0ERx7H4BpZ1tgr6Ls%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 448,
+        "y": 435,
+        "w": 128,
+        "h": 109
+      },
+      "type": "move",
+      "target": {
+        "x": 974,
+        "y": 567
+      }
+    }
+  ],
+  "note": "黄色小车的相对位置变了，由土坑内变为土坑外了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786946716672
+}
