@@ -1,0 +1,35 @@
+{
+  "line": 7620,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007620_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590767&Signature=ltks%2B6yOcE5S%2BQCGJNIn6sGMDRE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007620_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590767&Signature=XtXGVA2TE3kxy4T%2FKnPZhS6X%2BjY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 171,
+        "y": 178,
+        "w": 240,
+        "h": 331
+      },
+      "type": "move",
+      "target": {
+        "x": 567,
+        "y": 404
+      }
+    },
+    {
+      "box": {
+        "x": 790,
+        "y": 70,
+        "w": 452,
+        "h": 639
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "白发老人与桌子距离变近，桌子内侧多出一个人物",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786950771606
+}
