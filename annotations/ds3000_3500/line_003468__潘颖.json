@@ -1,0 +1,23 @@
+{
+  "line": 3468,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003468_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590760&Signature=7k3c9avS5mov1hsAB%2BoOIRpXGIE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003468_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590760&Signature=rXU6T4DRsYEdfGecYxdMXbc8lQs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 309,
+        "y": 202,
+        "w": 410,
+        "h": 1070
+      },
+      "type": "custom",
+      "text": "人物群体位置需重排"
+    }
+  ],
+  "note": "黄衣女子前方的蓝衣女子消失，黄衣女子左后方多出一名绿衣女子，黄衣女子的相对高度变低了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786956862189
+}
