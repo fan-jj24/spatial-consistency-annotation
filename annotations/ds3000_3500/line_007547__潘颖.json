@@ -1,0 +1,22 @@
+{
+  "line": 7547,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007547_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590766&Signature=aMQA9br5Fq%2Bt6Z9qbb33j8F0gDI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007547_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590766&Signature=pNN142boAMOF21Hkp4WmpMe6AiQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 942,
+        "y": 1,
+        "w": 340,
+        "h": 729
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "桌旁多出一名黑衣男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786946716671
+}
