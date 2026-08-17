@@ -1,0 +1,27 @@
+{
+  "line": 3925,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003925_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590761&Signature=9fXE222elUbS1mNDUSmN9358Oc0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003925_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590761&Signature=iC3whDRld0MNeAlWicp6XqBv4zU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 30,
+        "y": 479,
+        "w": 458,
+        "h": 556
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.823,
+        0.248,
+        0.511
+      ]
+    }
+  ],
+  "note": "绿衣女子与男子的相对位置从面对面变成一前一后",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786946716671
+}
