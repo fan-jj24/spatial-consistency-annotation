@@ -1,0 +1,27 @@
+{
+  "line": 3956,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003956_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590761&Signature=RJgJhzHDLyKAu3Uii2kXGK0SR3Y%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003956_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590761&Signature=Q42TbldJVFiAvq19%2Fh5uI5BpD6g%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 309,
+        "y": 475,
+        "w": 97,
+        "h": 248
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.025,
+        0.451,
+        0.892
+      ]
+    }
+  ],
+  "note": "女子从帘帐内移动到帘帐外",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786950771606
+}
