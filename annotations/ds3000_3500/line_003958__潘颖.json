@@ -1,0 +1,27 @@
+{
+  "line": 3958,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003958_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590761&Signature=AzIcRpkaJLmZGbVCP7g5RxXBPsg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003958_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590761&Signature=8akhTdorT5kMk31yskmdRPkAOAw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 219,
+        "y": 433,
+        "w": 361,
+        "h": 410
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.031,
+        0.052,
+        0.998
+      ]
+    }
+  ],
+  "note": "人物群体与门的相对位置变了，应在门外",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786954699714
+}
