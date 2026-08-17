@@ -1,0 +1,26 @@
+{
+  "line": 3187,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003187_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590757&Signature=RHn%2B6nl8KFQ1v6nuFRY2EO7trwA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003187_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590757&Signature=6sWCORcDxyN3nffcE%2BhCKy3wE3c%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 311,
+        "y": 637,
+        "w": 141,
+        "h": 131
+      },
+      "type": "move",
+      "target": {
+        "x": 391,
+        "y": 886
+      }
+    }
+  ],
+  "note": "男主与女主的相对位置从台阶下变为台阶上了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786954699714
+}
