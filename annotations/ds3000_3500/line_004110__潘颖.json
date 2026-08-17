@@ -1,0 +1,23 @@
+{
+  "line": 4110,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004110_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590764&Signature=h7fTkexld83YcAwRRgrbJu%2BfUvU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004110_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590764&Signature=YWnah36ZNWskvjZAHAdIcmWNj0c%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 9,
+        "y": 241,
+        "w": 691,
+        "h": 748
+      },
+      "type": "custom",
+      "text": "男女主的相对位置、距离和朝向变了"
+    }
+  ],
+  "note": "男女主与台阶的相对距离变近了，男主与女主的相对位置应互换，男主的朝向变了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786954699714
+}
