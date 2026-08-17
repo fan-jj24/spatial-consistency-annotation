@@ -1,0 +1,27 @@
+{
+  "line": 2510,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002510_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590752&Signature=iLqmTK2Z5qCNpMxzwb0P6kjXDk8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002510_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590752&Signature=d1Wx4c%2FAyTFiREINOCbiBwNNqvU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 222,
+        "y": 496,
+        "w": 259,
+        "h": 215
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.007,
+        -0.479,
+        -0.878
+      ]
+    }
+  ],
+  "note": "红衣女子和绿衣男子与座椅距离变近，高度变低",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786945177497
+}
