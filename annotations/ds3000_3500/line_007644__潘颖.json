@@ -1,0 +1,23 @@
+{
+  "line": 7644,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007644_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590767&Signature=W3s0ed6xAyDhaKrg0joEjEG3tFI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007644_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590767&Signature=zcFHoiATsRfJXWzX%2FZBVNP3R23k%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 304,
+        "y": 573,
+        "w": 110,
+        "h": 294
+      },
+      "type": "custom",
+      "text": "舞台上人的相对位置变了，过道多出一人"
+    }
+  ],
+  "note": "舞台上的人相对位置变了，从舞台四周变成舞台中央，过道多出一人",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786946716671
+}
