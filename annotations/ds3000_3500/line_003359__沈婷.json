@@ -1,0 +1,22 @@
+{
+  "line": 3359,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003359_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590759&Signature=mAWl4uCvmsdVmQ%2FeBNyCzz7VC%2FA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003359_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590759&Signature=Hc9GIgSk1ZxP49hnRJvwwR5TpVg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 337,
+        "y": 178,
+        "w": 215,
+        "h": 205
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "女子身后的保安替换成图A的蓝衣女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786945177497
+}
