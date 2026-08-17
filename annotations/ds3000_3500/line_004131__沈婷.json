@@ -1,0 +1,22 @@
+{
+  "line": 4131,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004131_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590764&Signature=lBcJR7EjfHs9AAU00rc%2BLt%2Fzh2A%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004131_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590764&Signature=VLXWAtV1mFvvF47KYgGr38tGPGA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 334,
+        "y": 273,
+        "w": 376,
+        "h": 1004
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "绿衣女子和黑衣男子面前多出一个红衣女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786945177496
+}
