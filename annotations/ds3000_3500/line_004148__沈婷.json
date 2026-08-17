@@ -1,0 +1,27 @@
+{
+  "line": 4148,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004148_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590764&Signature=7kfI7EAl3UdzMvQRJWx9l2VRq3g%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004148_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590764&Signature=cZszvxeEXD67KasNe805YOeHeMU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -1,
+        "y": 350,
+        "w": 366,
+        "h": 932
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.973,
+        -0.019,
+        0.231
+      ]
+    }
+  ],
+  "note": "粉衣女子与黑衣男子距离变近",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786950771607
+}
