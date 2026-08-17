@@ -1,0 +1,22 @@
+{
+  "line": 2871,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002871_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590755&Signature=v%2BA7pU1HTOjw7eKPjMEbD%2BpChsk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002871_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590755&Signature=EyPx86ewpV1zJ4d%2FSlLzogMXaoQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 222,
+        "y": 323,
+        "w": 369,
+        "h": 957
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "男子怀中多出一名女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786946716672
+}
