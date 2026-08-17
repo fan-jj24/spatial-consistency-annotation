@@ -1,0 +1,26 @@
+{
+  "line": 7654,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007654_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590767&Signature=UiLB%2FoFjFm6NPRzIwniTBwDOThM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007654_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590767&Signature=NgHKD2Cya98AAQxLKWSc9M5ZeNo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 368,
+        "y": 181,
+        "w": 325,
+        "h": 348
+      },
+      "type": "move",
+      "target": {
+        "x": -61,
+        "y": 321
+      }
+    }
+  ],
+  "note": "2人相对位置变化，黄色动物应在画面左侧，女孩朝向变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786935610071
+}
