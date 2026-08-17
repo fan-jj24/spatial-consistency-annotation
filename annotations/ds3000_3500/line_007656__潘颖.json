@@ -1,0 +1,22 @@
+{
+  "line": 7656,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007656_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590767&Signature=%2B5Mui%2FXw77URWM6yce3k5hh%2Bioo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007656_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590767&Signature=oxJnOn20n%2BnigCLXL%2BlJHIum1iw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1202,
+        "y": 829,
+        "w": 657,
+        "h": 490
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "男孩右前方多出一个小怪兽",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786954699714
+}
