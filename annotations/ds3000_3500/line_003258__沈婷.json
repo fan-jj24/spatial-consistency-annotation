@@ -1,0 +1,26 @@
+{
+  "line": 3258,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003258_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590758&Signature=oYv9eUg%2F94LR5aHTNNwmL%2FG47u8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003258_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590758&Signature=tP%2FAH9TVt1%2BLwXrQS3P6O2kflYQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 140,
+        "y": 496,
+        "w": 305,
+        "h": 538
+      },
+      "type": "move",
+      "target": {
+        "x": 301,
+        "y": 1235
+      }
+    }
+  ],
+  "note": "男孩相对位置从洞里变到洞外",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786935610071
+}
