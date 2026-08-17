@@ -1,0 +1,27 @@
+{
+  "line": 7540,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007540_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590766&Signature=v9vbxwvVnFN%2B6Yc1MnyQDO2IAYU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007540_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590766&Signature=RQMg6nSteiPAjXcJSxAEc5HzMK8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 400,
+        "y": 253,
+        "w": 374,
+        "h": 465
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.105,
+        -0.441,
+        -0.891
+      ]
+    }
+  ],
+  "note": "男子与红色店铺距离变近",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786950771607
+}
