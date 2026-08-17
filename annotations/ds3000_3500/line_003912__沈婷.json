@@ -1,0 +1,26 @@
+{
+  "line": 3912,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003912_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590760&Signature=CfcrelNCSHS8fc%2FsR5Bdv8LMIYs%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003912_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590760&Signature=Hav1wq4qT0gsS6iIwq9RN93URD8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 281,
+        "y": 329,
+        "w": 174,
+        "h": 492
+      },
+      "type": "move",
+      "target": {
+        "x": 444,
+        "y": 1248
+      }
+    }
+  ],
+  "note": "灰衣男子相对位置变化，应在黑衣男子后面",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786935610071
+}
