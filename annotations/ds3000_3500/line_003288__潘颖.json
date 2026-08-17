@@ -1,0 +1,26 @@
+{
+  "line": 3288,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003288_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590759&Signature=iFbdkJrlD1dVkuy6nwm%2F2cwkgk8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003288_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590759&Signature=uoz9puzO2OBTTAxDMpFPM0FD1%2BE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 332,
+        "y": 481,
+        "w": 90,
+        "h": 356
+      },
+      "type": "move",
+      "target": {
+        "x": 329,
+        "y": 934
+      }
+    }
+  ],
+  "note": "粉衣女子与门槛的相对位置变了，应在门槛边",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786956862189
+}
