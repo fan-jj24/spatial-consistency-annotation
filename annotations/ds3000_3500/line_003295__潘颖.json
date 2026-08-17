@@ -1,0 +1,26 @@
+{
+  "line": 3295,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003295_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590759&Signature=8xRYKWU7pecWLA6%2FNc2na9YISLE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003295_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590759&Signature=3RsTqlAlJgPBJ%2Fh0KNv2J6wwY%2FY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 260,
+        "y": 323,
+        "w": 366,
+        "h": 630
+      },
+      "type": "move",
+      "target": {
+        "x": 4,
+        "y": 622
+      }
+    }
+  ],
+  "note": "男女主的相对位置变了，应互换位置",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786946716672
+}
