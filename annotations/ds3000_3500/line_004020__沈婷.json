@@ -1,0 +1,23 @@
+{
+  "line": 4020,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004020_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590762&Signature=mFIJ4W26ZEL6IkLt4jZFqf54uhg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004020_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590762&Signature=n9mQwVWU9yyb1xm4y%2FHm%2BWrRccc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -4,
+        "y": 137,
+        "w": 719,
+        "h": 1137
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向变化，需要重排"
+    }
+  ],
+  "note": "3人相对位置发生变化，整体与窗户距离变近，图B的裸男替换为图A的淡黄衣男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786950771607
+}
