@@ -1,0 +1,35 @@
+{
+  "line": 4143,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004143_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590764&Signature=gk7%2FbGRsNngZqosYOWhvzafYZGA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004143_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590764&Signature=9ByoK1SsFiLQ3LcpgBNp7CRdiIw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 398,
+        "y": 391,
+        "w": 156,
+        "h": 420
+      },
+      "type": "rotate"
+    },
+    {
+      "box": {
+        "x": 158,
+        "y": 588,
+        "w": 192,
+        "h": 220
+      },
+      "type": "move",
+      "target": {
+        "x": 245,
+        "y": 485
+      }
+    }
+  ],
+  "note": "女子朝向变化，男子高度变低",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786945177497
+}
