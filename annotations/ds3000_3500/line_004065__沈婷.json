@@ -1,0 +1,27 @@
+{
+  "line": 4065,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004065_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590763&Signature=h7IfLeDIr94xG77F0laP7Ch1muA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004065_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590763&Signature=4LfvtKq%2Fp761OrKy3l9Tt6PDklk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 240,
+        "y": 273,
+        "w": 476,
+        "h": 1001
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.001,
+        -0.415,
+        -0.91
+      ]
+    }
+  ],
+  "note": "女孩与凳子距离变近，朝向变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786956679981
+}
