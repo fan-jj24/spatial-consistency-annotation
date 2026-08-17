@@ -1,0 +1,27 @@
+{
+  "line": 4096,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004096_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590763&Signature=XrUZ66oy1Oo6JyWaj62vqwcAad4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004096_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590763&Signature=3I%2B766D2538VGClTXeYS%2BKHGevo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 4,
+        "y": 188,
+        "w": 220,
+        "h": 1085
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.879,
+        -0.021,
+        0.477
+      ]
+    }
+  ],
+  "note": "白衣男子和长发粉衣男子与发髻男子距离变近",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786935610071
+}
