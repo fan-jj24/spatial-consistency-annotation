@@ -1,0 +1,26 @@
+{
+  "line": 2809,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002809_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590754&Signature=1ASH2wOs16uu9my63hEc78A0UWQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002809_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590754&Signature=8UMril1l9BTCj%2FIjtNyvcTn91PY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 35,
+        "y": 553,
+        "w": 573,
+        "h": 138
+      },
+      "type": "move",
+      "target": {
+        "x": 140,
+        "y": 356
+      }
+    }
+  ],
+  "note": "男主与女主的相对位置从岸边变为水里",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786954699714
+}
