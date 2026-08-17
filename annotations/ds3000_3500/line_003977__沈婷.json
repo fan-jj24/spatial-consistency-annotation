@@ -1,0 +1,27 @@
+{
+  "line": 3977,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003977_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590762&Signature=IXg53gqcz5S8WEQwnNxqPE0uutg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003977_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590762&Signature=SJDnQfkmBsIPOWdXaH49EJnkny4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 101,
+        "y": 117,
+        "w": 609,
+        "h": 1157
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.009,
+        0.507,
+        0.862
+      ]
+    }
+  ],
+  "note": "绿衣女子与毛领人物距离变近",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786935610071
+}
