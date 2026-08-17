@@ -1,0 +1,36 @@
+{
+  "line": 2840,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002840_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590755&Signature=KkUnRoSce2FKq9Vk5uzgCLG6D8o%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002840_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590755&Signature=ZM52skCO8%2FWcmXMsvEmcdtnRCfY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 521,
+        "y": 397,
+        "w": 105,
+        "h": 476
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.993,
+        0,
+        0.116
+      ]
+    },
+    {
+      "box": {
+        "x": 199,
+        "y": 404,
+        "w": 161,
+        "h": 474
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "黑衣女子与门的距离变远，红衣女子的朝向变了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786946716671
+}
