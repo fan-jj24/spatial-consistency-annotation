@@ -1,0 +1,22 @@
+{
+  "line": 7523,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007523_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590765&Signature=jKHbQ%2BjjW%2B%2ByfuYgcCxl35Ge9kw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007523_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590765&Signature=%2BD%2FCPW%2FJIcknA%2FqXTX6e%2BEMZ%2Fhc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 531,
+        "y": 40,
+        "w": 671,
+        "h": 678
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "棺材旁多出一名持蜡男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786946716672
+}
