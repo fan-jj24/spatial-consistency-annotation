@@ -1,0 +1,26 @@
+{
+  "line": 7553,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007553_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590766&Signature=2JFT03HllqMtP3uangFUf8L2sdI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007553_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590766&Signature=0vhcMk2dzgX%2Fa14QPM5SkpRV9HM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1115,
+        "y": 245,
+        "w": 82,
+        "h": 294
+      },
+      "type": "move",
+      "target": {
+        "x": 1026,
+        "y": 373
+      }
+    }
+  ],
+  "note": "两个纸扎人的相对距离变远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786946716672
+}
