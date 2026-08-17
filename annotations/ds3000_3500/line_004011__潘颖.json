@@ -1,0 +1,22 @@
+{
+  "line": 4011,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004011_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590762&Signature=TCCOBlQFenIG3XSENH6CXecF0oY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004011_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590762&Signature=7Xxog5Dc9e0zGN266vLa2AYd6Hs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 2,
+        "y": 136,
+        "w": 325,
+        "h": 1134
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "女子右手边多出一名男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786956862189
+}
