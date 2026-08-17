@@ -1,0 +1,27 @@
+{
+  "line": 2574,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002574_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590753&Signature=bPVZxp8ifee9T4H2rBGZQhpM7lQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002574_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590753&Signature=cXVu09FfwXrXj2RFxIiDa4ksY8c%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 127,
+        "y": 696,
+        "w": 323,
+        "h": 489
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.197,
+        0.035,
+        0.98
+      ]
+    }
+  ],
+  "note": "红衣男子的相对位置变了，从桌前变为桌后了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786946716672
+}
