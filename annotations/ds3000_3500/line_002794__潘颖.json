@@ -1,0 +1,31 @@
+{
+  "line": 2794,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002794_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590754&Signature=nvjrOPFukzoAi3WS4s1M2tme8PY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002794_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590754&Signature=W0XPhvEeb8OfCDjLwv%2FejWeSsOs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 572,
+        "y": 8,
+        "w": 151,
+        "h": 955
+      },
+      "type": "delete"
+    },
+    {
+      "box": {
+        "x": 250,
+        "y": 5,
+        "w": 223,
+        "h": 220
+      },
+      "type": "add"
+    }
+  ],
+  "note": "黄衣女子身后少了红衣女子，黄衣女子左手边多出一人",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786946716672
+}
