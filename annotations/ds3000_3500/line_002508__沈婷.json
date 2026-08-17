@@ -1,0 +1,22 @@
+{
+  "line": 2508,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002508_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590752&Signature=aLhBJS7nUl6ekKigLA4Hm1Rf%2F0k%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002508_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590752&Signature=%2FCRaFWpIyGbfPU%2FIzb4ppw2%2FmFc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 542,
+        "y": 537,
+        "w": 189,
+        "h": 591
+      },
+      "type": "add"
+    }
+  ],
+  "note": "女子右侧的白衣男子消失，高度变低",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786935610071
+}
