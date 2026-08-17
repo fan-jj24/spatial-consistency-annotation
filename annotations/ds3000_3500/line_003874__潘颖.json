@@ -1,0 +1,27 @@
+{
+  "line": 3874,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003874_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590760&Signature=13OU6lOscV%2FznGbdUkiU9La0yP0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003874_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590760&Signature=%2F1P7RCME00T5SXgTjdeI5g9EXhQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 165,
+        "y": 59,
+        "w": 548,
+        "h": 768
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.542,
+        0.05,
+        0.839
+      ]
+    }
+  ],
+  "note": "黑衣男子与粉衣女子与床的距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786948344724
+}
