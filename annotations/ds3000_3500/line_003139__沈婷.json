@@ -1,0 +1,22 @@
+{
+  "line": 3139,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003139_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590757&Signature=%2FwMn4dBTz%2B6e3K%2FHtc2ncq5x4vY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003139_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590757&Signature=meHhNekLNhRZ%2Fwjv0aioHxkDycI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 304,
+        "y": 421,
+        "w": 417,
+        "h": 855
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "绿衣女子对面多出一个男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786957554021
+}
