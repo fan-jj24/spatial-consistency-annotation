@@ -1,0 +1,26 @@
+{
+  "line": 3455,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003455_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590759&Signature=XOvd4N%2FWDqfNG8LlR8jMq%2BvF3x0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003455_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590759&Signature=tjHmfXUOhrEoD%2FrpLghyFYIcQhM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 188,
+        "y": 671,
+        "w": 105,
+        "h": 412
+      },
+      "type": "move",
+      "target": {
+        "x": 388,
+        "y": 1083
+      }
+    }
+  ],
+  "note": "红衣女子与绿衣女子由面对面变成并肩",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786946716672
+}
