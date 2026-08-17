@@ -1,0 +1,22 @@
+{
+  "line": 2572,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002572_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590753&Signature=2Iqn7agFhcPWRIH0JJKs%2B5Zu%2F2I%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002572_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590753&Signature=wSh8H9sHUXmS9ZVBN%2FfgYxsJ9%2B0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 570,
+        "y": 159,
+        "w": 148,
+        "h": 1080
+      },
+      "type": "add"
+    }
+  ],
+  "note": "女子前方的长发男子消失了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786954699714
+}
