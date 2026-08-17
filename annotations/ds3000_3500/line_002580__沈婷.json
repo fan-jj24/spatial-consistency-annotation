@@ -1,0 +1,23 @@
+{
+  "line": 2580,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002580_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590754&Signature=q8AJy8z%2FAc7NWRxL4VkQb3dbqfs%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002580_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590754&Signature=srkCr0WE%2FFPHQ6tg05CVe6EsnY0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 4,
+        "y": 526,
+        "w": 609,
+        "h": 361
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向变化，需要重排"
+    }
+  ],
+  "note": "女子与床上男子距离变近，床边的黑衣男子消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786935610071
+}
