@@ -1,0 +1,23 @@
+{
+  "line": 2914,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002914_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590756&Signature=KOSR1LFTE1m6NckoxUgGobahwf0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002914_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590756&Signature=1rgtZE7dU1U7KuCd3tR4mmH484o%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -9,
+        "y": 106,
+        "w": 709,
+        "h": 1004
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向变化，需要重排"
+    }
+  ],
+  "note": "粉衣女子和男子的距离与相对位置变化，蓝衣女子应在男子左侧",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786956679981
+}
