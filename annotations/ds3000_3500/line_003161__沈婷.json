@@ -1,0 +1,31 @@
+{
+  "line": 3161,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003161_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590757&Signature=MkQlVZ6rFZ6NcPLt9IXdaOBwjz4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003161_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590757&Signature=9a3InvkARoqzxBTgSeG2u1LgPxY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -11,
+        "y": 176,
+        "w": 118,
+        "h": 1108
+      },
+      "type": "delete"
+    },
+    {
+      "box": {
+        "x": 122,
+        "y": 291,
+        "w": 169,
+        "h": 983
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "毛领男子由背对白衣男子变为面对，右侧多出一个花衣男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786945177496
+}
