@@ -1,0 +1,27 @@
+{
+  "line": 3167,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003167_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590757&Signature=F%2F7Rm%2BiA9Dyrl0GNaGVuzrsfUmY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003167_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601786590757&Signature=44%2FcH8IrarLWmkJ4KRmEAaTUZhI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 4,
+        "y": 99,
+        "w": 714,
+        "h": 1183
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.009,
+        0.662,
+        0.749
+      ]
+    }
+  ],
+  "note": "所有人从门外移动到门内，需整体后移",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1786945177497
+}
