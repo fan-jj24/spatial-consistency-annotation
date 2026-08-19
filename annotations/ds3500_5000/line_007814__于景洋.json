@@ -1,0 +1,45 @@
+{
+  "line": 7814,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007814_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=Wyn1%2FmZNSEon4tQaZi2eSekKf%2FQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007814_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=n%2BIkEHpLufdKgQ0bRzz%2BUwq%2B344%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 366,
+        "y": 249,
+        "w": 456,
+        "h": 359
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 690,
+          "y": 297
+        },
+        {
+          "x": 518,
+          "y": 531
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 882,
+        "y": 206,
+        "w": 98,
+        "h": 92
+      },
+      "type": "move",
+      "target": {
+        "x": 834,
+        "y": 386
+      }
+    }
+  ],
+  "note": "戴安全帽的红色小车多余，黄色出租车距离土地中央远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787125986747
+}
