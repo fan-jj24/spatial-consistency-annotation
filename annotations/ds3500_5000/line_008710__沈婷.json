@@ -1,0 +1,27 @@
+{
+  "line": 8710,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008710_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=dmUEHT71aPlM%2Bfrg%2B0Rtl00D4f8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008710_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=loyq5WmYH%2BkHaLq4woaiu%2B58ETU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 45,
+        "y": 168,
+        "w": 673,
+        "h": 1106
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.298,
+        0.389,
+        0.872
+      ]
+    }
+  ],
+  "note": "女子与轿子的距离变远",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787121242852
+}
