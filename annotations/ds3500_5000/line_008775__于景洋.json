@@ -1,0 +1,22 @@
+{
+  "line": 8775,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008775_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109362&Signature=57MYz1BwQ%2FZgfzw%2FNqNYisa7upc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008775_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109362&Signature=7ntmUgwhC8mQgTavuMOIWsE29QA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 457,
+        "y": 228,
+        "w": 143,
+        "h": 443
+      },
+      "type": "add"
+    }
+  ],
+  "note": "女子背后的黑衣男子缺失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787131745311
+}
