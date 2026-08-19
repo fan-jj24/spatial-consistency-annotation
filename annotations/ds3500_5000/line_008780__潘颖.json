@@ -1,0 +1,27 @@
+{
+  "line": 8780,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008780_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109362&Signature=vV26JUQ%2Bhi6TOGa5TkIpNK%2FZWlE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008780_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109362&Signature=1Ijqgyxl7udxWvy465zh7dIsaKY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 721,
+        "y": 45,
+        "w": 217,
+        "h": 204
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.267,
+        0.321,
+        -0.908
+      ]
+    }
+  ],
+  "note": "小怪物与女孩的相对位置变了，应在女孩前方",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787131630705
+}
