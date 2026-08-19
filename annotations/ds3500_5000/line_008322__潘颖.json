@@ -1,0 +1,27 @@
+{
+  "line": 8322,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008322_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=ifPbPYTFDAEiAk3i%2BY3IzCn5WSQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008322_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=KRN7exwf9SHZvCM%2FasktpTqr1qU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 109,
+        "y": 233,
+        "w": 492,
+        "h": 1050
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.19,
+        0.004,
+        0.982
+      ]
+    }
+  ],
+  "note": "男子与女子的相对位置由并肩变成一前一后",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787124925942
+}
