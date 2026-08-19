@@ -1,0 +1,32 @@
+{
+  "line": 7845,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007845_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=1l4PgU1EIRlHZXskHwM%2FDNorqDk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007845_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=Dt9YOtiQeLsu6Zei3UP6MH8CA2s%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 235,
+        "y": 76,
+        "w": 540,
+        "h": 395
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 618,
+          "y": 124
+        },
+        {
+          "x": 427,
+          "y": 420
+        }
+      ]
+    }
+  ],
+  "note": "橙色八字胡人物多余",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787135379390
+}
