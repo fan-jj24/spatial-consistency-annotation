@@ -1,0 +1,23 @@
+{
+  "line": 9172,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009172_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=0P9pDbNG3F5qomxOvCR19AOfKWg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009172_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=FQ9Xl2z0behvoKDfErR1dcDTiKA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 317,
+        "y": 66,
+        "w": 749,
+        "h": 606
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向变化，需要重排 "
+    }
+  ],
+  "note": "牛仔男子距离桌子远了，且对面的老头缺失，周围多个白衣木偶距离牛仔男子远了，局部背景由无火焰变成了火焰包围",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787131745311
+}
