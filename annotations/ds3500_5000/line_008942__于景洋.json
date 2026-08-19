@@ -1,0 +1,27 @@
+{
+  "line": 8942,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008942_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=ATKGVYKdZ%2FwL1vFA9BcjdMFz%2Fnw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008942_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=AQwTaba5J7Lx63IdCp8orGcpMq4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 483,
+        "y": 89,
+        "w": 372,
+        "h": 628
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.925,
+        0.023,
+        0.38
+      ]
+    }
+  ],
+  "note": "男子距离画面右侧的桌子近了，且朝向也发生了变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787134637159
+}
