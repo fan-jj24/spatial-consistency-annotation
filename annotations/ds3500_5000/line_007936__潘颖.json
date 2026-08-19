@@ -1,0 +1,26 @@
+{
+  "line": 7936,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007936_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=c6NaqQlS6YLtO3z5ur2UtObIv6k%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007936_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=Iq7nWNZj1DceOVUtadHTV%2F4kYuA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1035,
+        "y": 19,
+        "w": 536,
+        "h": 905
+      },
+      "type": "move",
+      "target": {
+        "x": 428,
+        "y": 12
+      }
+    }
+  ],
+  "note": "男子与佛像的相对距离变远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787135512771
+}
