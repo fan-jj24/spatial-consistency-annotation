@@ -1,0 +1,31 @@
+{
+  "line": 9196,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009196_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=dXwu9ytcsUikO4DbIvdI5Zu%2FtI4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009196_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=Zy1PUXRFojSxSvAKk29zODqr39k%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 28,
+        "y": 314,
+        "w": 520,
+        "h": 340
+      },
+      "type": "add"
+    },
+    {
+      "box": {
+        "x": 895,
+        "y": 343,
+        "w": 243,
+        "h": 354
+      },
+      "type": "neutral"
+    }
+  ],
+  "note": "老头周围的多个白衣木偶缺失，画面右侧的两个白衣木偶距离桌子近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787134637159
+}
