@@ -1,0 +1,27 @@
+{
+  "line": 9137,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009137_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=7HlLM7j1HwGjFL88HjndKa6%2FXZ8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009137_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=YMrPfblVzOXlA%2F2cGn8WFhLJ0rc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 443,
+        "y": 26,
+        "w": 788,
+        "h": 690
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.001,
+        0.535,
+        0.845
+      ]
+    }
+  ],
+  "note": "男子由站在门口处的外面，变化成进入到房间内，朝向也发生了变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787134637159
+}
