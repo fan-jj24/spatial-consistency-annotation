@@ -1,0 +1,27 @@
+{
+  "line": 8589,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008589_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=g2Hk7W73BxWYCwvjS7MOkhoivTw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008589_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=oMMfx1KhnzXvVxUMp8jDHKnl620%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 186,
+        "y": 249,
+        "w": 675,
+        "h": 386
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.041,
+        0.076,
+        0.996
+      ]
+    }
+  ],
+  "note": "三人与帐篷的相对距离变远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787124925941
+}
