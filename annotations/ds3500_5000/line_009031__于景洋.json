@@ -1,0 +1,27 @@
+{
+  "line": 9031,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009031_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=bSGdtzVHTFlHvpevxbVfjuJsNvM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009031_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=vsP6nsjMywc61Y3IYczx9Mt38Bc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 604,
+        "y": 301,
+        "w": 79,
+        "h": 219
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.017,
+        -0.514,
+        -0.858
+      ]
+    }
+  ],
+  "note": "棕衣男子距离祭奠台近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787125986747
+}
