@@ -1,0 +1,22 @@
+{
+  "line": 8474,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008474_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=0LYHdOKc8V5gKIRpQ8HKqyZUuUk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008474_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=Pe9rzA1Hx05dielk2X4t0sQ59d8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 650,
+        "y": 216,
+        "w": 92,
+        "h": 95
+      },
+      "type": "add"
+    }
+  ],
+  "note": "汽车右上方的棕色小怪物缺失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787125986747
+}
