@@ -1,0 +1,27 @@
+{
+  "line": 9113,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009113_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=M%2FoXxVColOZWUIblAGoU0uCnfn4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009113_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=3dXTveQAZ9EZWqj9KPOx%2FWZDc0o%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 352,
+        "y": 60,
+        "w": 298,
+        "h": 657
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.873,
+        -0.014,
+        0.488
+      ]
+    }
+  ],
+  "note": "戴白色手套男子由在房门外变化到进入房间内，",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787131745311
+}
