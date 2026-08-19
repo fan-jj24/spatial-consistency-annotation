@@ -1,0 +1,22 @@
+{
+  "line": 9498,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009498_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=3C3yTGVp7jIdVG9qaDsrbQgNzxw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009498_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=SVxa8hA13RbfKhxcb%2FayvxOqW%2BI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 3009,
+        "y": 471,
+        "w": 717,
+        "h": 1348
+      },
+      "type": "neutral"
+    }
+  ],
+  "note": "图片右侧的长颈鹿消失了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787131630705
+}
