@@ -1,0 +1,23 @@
+{
+  "line": 8473,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008473_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=q%2BuOwnbTQARtE3bblZZ%2Fy5u8UIg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008473_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=IvMjDwqzLHurxYTmUcog7ywdJys%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 7,
+        "y": 30,
+        "w": 712,
+        "h": 1121
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向变化，需要重排"
+    }
+  ],
+  "note": "女子面前多出一个黑熊，男子由女子对面移动至女子右后侧",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787121242852
+}
