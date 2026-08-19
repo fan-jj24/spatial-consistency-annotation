@@ -1,0 +1,27 @@
+{
+  "line": 8555,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008555_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=bj6jte1OD98VY6hiAhu22H6l9oc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008555_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=IsBGMWI6kKFmLV1czrtVW5B6cEA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1023,
+        "y": 3,
+        "w": 442,
+        "h": 570
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.909,
+        0.114,
+        0.401
+      ]
+    }
+  ],
+  "note": "腿上绑着红带子的人物距离地上的花朵远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787134637159
+}
