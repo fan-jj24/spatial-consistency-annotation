@@ -1,0 +1,32 @@
+{
+  "line": 9395,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009395_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=t9%2FOkMk9OwQ9sWYXW%2FhyS%2FviN6E%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009395_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=oJ9sY9Z2YqrApdcbhhN%2BianglG0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 754,
+        "y": 104,
+        "w": 527,
+        "h": 612
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 1118,
+          "y": 253
+        },
+        {
+          "x": 1017,
+          "y": 603
+        }
+      ]
+    }
+  ],
+  "note": "老头多余",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787135379390
+}
