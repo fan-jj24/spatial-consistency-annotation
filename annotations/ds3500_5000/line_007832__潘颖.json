@@ -1,0 +1,23 @@
+{
+  "line": 7832,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007832_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=j6xak8twTIR72Z%2F2boli1Rz2XTM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007832_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=%2F5GBTy%2F%2FcRm9w6aqDIQ5L7bGddk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 191,
+        "y": 121,
+        "w": 500,
+        "h": 433
+      },
+      "type": "custom",
+      "text": "两女子的相对位置变了"
+    }
+  ],
+  "note": "短发女子与长发女子的相对位置变了，应互换",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787131630705
+}
