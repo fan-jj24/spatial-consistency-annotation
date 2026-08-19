@@ -1,0 +1,22 @@
+{
+  "line": 7931,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007931_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=84sz1SM2yAmXjo71gxk5o9f%2F4mo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007931_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=qDrpoSL8fLPaNoOWhxqq0Vqy9D0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 115,
+        "y": 340,
+        "w": 613,
+        "h": 737
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "2男孩与推车男子由面对变为并排",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787121242852
+}
