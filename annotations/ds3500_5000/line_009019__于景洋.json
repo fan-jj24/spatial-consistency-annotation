@@ -1,0 +1,23 @@
+{
+  "line": 9019,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009019_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=eUc9ScDnNd7T%2BiDxgG72%2Ba65HUg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009019_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=AvOPjOsZQNfA7c9fQ9OO0SCgZV0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 4,
+        "y": 95,
+        "w": 707,
+        "h": 1183
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向变化，需要重排 "
+    }
+  ],
+  "note": "红衣带皇冠男子左侧的白衣人物需要替换为红衣人物，且两人应背对画面左侧的侍从，画面右侧的侍卫移动到红衣带皇冠男子的右前方",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787125986747
+}
