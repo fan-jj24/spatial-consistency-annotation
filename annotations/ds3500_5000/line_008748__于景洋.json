@@ -1,0 +1,27 @@
+{
+  "line": 8748,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008748_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109362&Signature=MJvXc8rw8OopUb0PabHJJWOGRHs%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008748_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109362&Signature=KiiHyGp16Q%2FJPe7bpothgAg%2BKU0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 417,
+        "y": 22,
+        "w": 683,
+        "h": 697
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.8,
+        0.499,
+        0.334
+      ]
+    }
+  ],
+  "note": "男子下楼梯走远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787125986747
+}
