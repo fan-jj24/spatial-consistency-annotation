@@ -1,0 +1,22 @@
+{
+  "line": 8821,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008821_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=TS%2BPoClH4cy%2FfTwNwWrRGRU5%2BA4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008821_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=f9gj2QKOnF4o04bnw3O0f%2FmjPtU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 487,
+        "y": 377,
+        "w": 137,
+        "h": 135
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "男子右侧下方的字幕亮灯缺失，局部背景发生了变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787131745311
+}
