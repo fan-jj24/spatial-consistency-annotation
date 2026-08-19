@@ -1,0 +1,27 @@
+{
+  "line": 3490,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003490_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109352&Signature=hvQMStxEGoMcElFO0eOZUiKtbOg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003490_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109352&Signature=jLKc7bqGEx1CXAcR7pqXPvIt5Gw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 150,
+        "y": 330,
+        "w": 236,
+        "h": 947
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.598,
+        0.086,
+        0.797
+      ]
+    }
+  ],
+  "note": "蓝衣女子与两男子的相对位置变了，应在两男子后方",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787124925941
+}
