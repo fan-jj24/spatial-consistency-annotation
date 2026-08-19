@@ -1,0 +1,27 @@
+{
+  "line": 9158,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009158_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=UEv%2Fbkz43B35vG9gxZil3ERNAPk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009158_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=9nLv5Oj8lcj12mZwJT1wNZ7yTGE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1,
+        "y": -1,
+        "w": 508,
+        "h": 729
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.895,
+        0.135,
+        0.425
+      ]
+    }
+  ],
+  "note": "纸人与男子的距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787124925941
+}
