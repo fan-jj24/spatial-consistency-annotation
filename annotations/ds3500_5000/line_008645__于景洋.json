@@ -1,0 +1,22 @@
+{
+  "line": 8645,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008645_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=miq1a%2B9QHLq3euPFgj7WkVXMfHo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008645_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=83FCulKioBXTKEtm7m7naoTgALQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 777,
+        "y": 304,
+        "w": 140,
+        "h": 314
+      },
+      "type": "add"
+    }
+  ],
+  "note": "白衣女生缺失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787131745311
+}
