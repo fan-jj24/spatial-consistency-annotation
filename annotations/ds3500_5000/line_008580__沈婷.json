@@ -1,0 +1,36 @@
+{
+  "line": 8580,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008580_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=4UUfNNOyX298MTQAI%2Fn574Arglw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008580_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=DXVybIdRwpqCqDxppCapj9pnho8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 922,
+        "y": 341,
+        "w": 115,
+        "h": 377
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.374,
+        -0.253,
+        -0.893
+      ]
+    },
+    {
+      "box": {
+        "x": 732,
+        "y": 364,
+        "w": 88,
+        "h": 334
+      },
+      "type": "add"
+    }
+  ],
+  "note": "短发男子与左侧店铺门距离变近，门前的帽子老人消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787124860700
+}
