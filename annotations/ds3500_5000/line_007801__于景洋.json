@@ -1,0 +1,27 @@
+{
+  "line": 7801,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007801_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=%2Bh%2BMvQzvA5U95VbEwhgZbbj8MEk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007801_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=BFO0d%2F63GLvaehq4HKEI0ii%2B8S8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 752,
+        "y": 112,
+        "w": 420,
+        "h": 605
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.041,
+        -0.132,
+        -0.99
+      ]
+    }
+  ],
+  "note": "黄发男子距离门口近了，且朝向由背对变成了面对",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787132278873
+}
