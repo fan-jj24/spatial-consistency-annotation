@@ -1,0 +1,23 @@
+{
+  "line": 9437,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009437_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=6ptAqDjE6qyBpWPRMzVDO%2BoLRmc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009437_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=6bbW4NS%2Bg2GopKyAaRakwf%2F613s%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1,
+        "y": 71,
+        "w": 1231,
+        "h": 645
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向变化，需要重排 "
+    }
+  ],
+  "note": "老头与牛仔男子由面对朝向变成同向前后站位状态，其余多个白衣木偶的朝向和高度也发生了变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787131745311
+}
