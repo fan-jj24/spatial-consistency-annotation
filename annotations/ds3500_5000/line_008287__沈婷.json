@@ -1,0 +1,22 @@
+{
+  "line": 8287,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008287_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=35cbKqxJdNstSbejxw%2FW68IhUmg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008287_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=ozz6KArP5TqBEw8hrsM%2BDYSFK1k%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1377,
+        "y": 381,
+        "w": 179,
+        "h": 456
+      },
+      "type": "add"
+    }
+  ],
+  "note": "黑裙女子左前方的两个人消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787121242852
+}
