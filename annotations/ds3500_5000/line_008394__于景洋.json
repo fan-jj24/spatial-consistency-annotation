@@ -1,0 +1,22 @@
+{
+  "line": 8394,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008394_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=FBCcahmKyaaOqNP0xh3HzAWBeYQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008394_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=3I1%2FHprffYaXIcLt83iMIYoQzeE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 490,
+        "y": 215,
+        "w": 395,
+        "h": 465
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "两位女子由肩并肩变成近似相对的朝向",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787125986747
+}
