@@ -1,0 +1,36 @@
+{
+  "line": 8542,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008542_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=L6UQjT51pMvCrOzYRKhIoFGwPhM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008542_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=pvH%2BJ5mKHFvLrpKxO0ZMYvAZLtg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 267,
+        "y": 213,
+        "w": 348,
+        "h": 315
+      },
+      "type": "delete"
+    },
+    {
+      "box": {
+        "x": 647,
+        "y": 99,
+        "w": 384,
+        "h": 501
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.344,
+        -0.004,
+        0.939
+      ]
+    }
+  ],
+  "note": "女子与桌子的相对距离变远了，女子右手边多出了一个怪物",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787124925942
+}
