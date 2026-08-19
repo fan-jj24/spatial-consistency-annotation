@@ -1,0 +1,22 @@
+{
+  "line": 8439,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008439_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=RydyjTffQ9MvafcMo55uDGqZ0vY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008439_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=q2vOueuIR8InGLQz51waI9ql9c0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 601,
+        "y": 504,
+        "w": 202,
+        "h": 163
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "B图多出一个黄色怪物",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787134138301
+}
