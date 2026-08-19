@@ -1,0 +1,22 @@
+{
+  "line": 9350,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009350_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=0HbFbfBYWMkPN18Ft1wFzeg0VUI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009350_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=lwcdOqqYefIZY%2B6fthG9E2AfQ3U%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 97,
+        "y": -2,
+        "w": 773,
+        "h": 288
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "B图多出了撑开的伞和三叉戟",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787134138301
+}
