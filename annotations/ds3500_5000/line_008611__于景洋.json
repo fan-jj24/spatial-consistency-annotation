@@ -1,0 +1,26 @@
+{
+  "line": 8611,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008611_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=I7sUye39lhcK%2FjwZDXdc%2FnTlhMQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008611_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=jIru4OG58wyRodpQgh1VJymW%2Bhg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 575,
+        "y": 387,
+        "w": 105,
+        "h": 213
+      },
+      "type": "move",
+      "target": {
+        "x": 614,
+        "y": 655
+      }
+    }
+  ],
+  "note": "年轻男子距离老头远了，且朝向变成了背对老头",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787131745311
+}
