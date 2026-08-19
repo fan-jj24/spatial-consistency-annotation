@@ -1,0 +1,23 @@
+{
+  "line": 8552,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008552_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=uQL%2B9F%2BnOf41IWMokbULq2LKxBQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008552_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=h%2FE8UYJ56TNHXvQqORiuXYJs5do%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 3,
+        "y": 129,
+        "w": 1461,
+        "h": 509
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向变化，需要重排 "
+    }
+  ],
+  "note": "多个人物的站位及朝向都发生了变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787131745311
+}
