@@ -1,0 +1,26 @@
+{
+  "line": 8195,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008195_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=Xs4SqOmAI7mJBrZmupOZ%2BH2j%2FmE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008195_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=ZALV7K%2Fx8JLqaxc3CVGxzC4XLgg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1254,
+        "y": 583,
+        "w": 147,
+        "h": 404
+      },
+      "type": "move",
+      "target": {
+        "x": 1651,
+        "y": 782
+      }
+    }
+  ],
+  "note": "盲人女孩距离男生变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787125986747
+}
