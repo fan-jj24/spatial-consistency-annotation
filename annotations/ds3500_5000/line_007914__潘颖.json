@@ -1,0 +1,23 @@
+{
+  "line": 7914,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007914_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=ACr6BYl5jDdCxOdKW4uhEEaPaj4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007914_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=5Fu6DX9cu6206RpF9zNlvkoE9BE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 283,
+        "y": 243,
+        "w": 844,
+        "h": 344
+      },
+      "type": "custom",
+      "text": "红车与蓝车的相对位置、距离均变了"
+    }
+  ],
+  "note": "红车与蓝车的相对位置变了，由前后变为并排蓝车，红车与蓝车的相对距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787131630705
+}
