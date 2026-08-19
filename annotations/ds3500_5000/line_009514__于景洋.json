@@ -1,0 +1,23 @@
+{
+  "line": 9514,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009514_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=O8m%2FO034jULSKpg6s2SgeIS0x9A%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009514_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=wdHBgrJ2OgtyLMDpSA2yCEiZfPQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 5,
+        "y": 84,
+        "w": 1273,
+        "h": 635
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向变化，需要重排"
+    }
+  ],
+  "note": "棕衣老头多余，牛仔衣男子朝向变成面对白衣木偶，多个白衣木偶距离中间人物远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787125986747
+}
