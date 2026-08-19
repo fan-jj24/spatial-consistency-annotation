@@ -1,0 +1,22 @@
+{
+  "line": 5372,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_005372_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=iPnmBVt1k0320Mh4kaE%2FtMJRAnU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_005372_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=EE5nCsb%2BiO1F7fRCTFtUfwQo7uE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 99,
+        "y": 252,
+        "w": 246,
+        "h": 899
+      },
+      "type": "add"
+    }
+  ],
+  "note": "发髻男子对面的白衣人物消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787121242852
+}
