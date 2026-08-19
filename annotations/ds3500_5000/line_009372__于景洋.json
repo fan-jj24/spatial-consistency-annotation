@@ -1,0 +1,23 @@
+{
+  "line": 9372,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009372_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=HQUWs86vZg0K2IpD%2FYihNP6%2B5VI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009372_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=LbpfTwz7%2FSgNt8FhtHYEWp4Iy2g%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 425,
+        "y": 317,
+        "w": 448,
+        "h": 403
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向变化，需要重排 "
+    }
+  ],
+  "note": "寸头男子和黄发男子距离墙体远了，两人的朝向、高度也发生了变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787125986747
+}
