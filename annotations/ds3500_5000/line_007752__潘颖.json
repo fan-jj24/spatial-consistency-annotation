@@ -1,0 +1,26 @@
+{
+  "line": 7752,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007752_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=OpdglLJ8vTm%2BVNGW77eKo%2FW2xDU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007752_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=z0P33EsPDVYKdHkjUDOmW4Egi70%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 315,
+        "y": 327,
+        "w": 592,
+        "h": 91
+      },
+      "type": "move",
+      "target": {
+        "x": 604,
+        "y": 575
+      }
+    }
+  ],
+  "note": "女子与海底的相对距离变远",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787134138301
+}
