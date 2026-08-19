@@ -1,0 +1,23 @@
+{
+  "line": 3171,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003171_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=uxiddhVh6MMWeXO7UWvo5ErAQyM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003171_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=7qrma5Pf3lMiZVKsE9fxr3V2hig%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 71,
+        "y": 266,
+        "w": 645,
+        "h": 1004
+      },
+      "type": "custom",
+      "text": "两人物相对位置和朝向变化，需要重排 "
+    }
+  ],
+  "note": "男女二人距离床近了，彼此之间的距离也变近了，朝向变成了面对面",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787131745311
+}
