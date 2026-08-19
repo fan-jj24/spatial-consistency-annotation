@@ -1,0 +1,27 @@
+{
+  "line": 8437,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008437_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=G%2Bg3miPcP%2Fvgi57ukhsWHL0gAT0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008437_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=0ubHufXGYUoNh%2F1Vkc833hvR5O4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 427,
+        "y": 284,
+        "w": 200,
+        "h": 901
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.031,
+        -0.541,
+        -0.84
+      ]
+    }
+  ],
+  "note": "红衣嬷嬷由在房间内变化到在房门外",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787131745311
+}
