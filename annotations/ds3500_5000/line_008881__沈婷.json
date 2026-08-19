@@ -1,0 +1,22 @@
+{
+  "line": 8881,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008881_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=vpH72jezeXb1v6dEK9kr1IfdtDA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008881_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=hDzEyC1Yw5qXLcLYDBawjPdR9kc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 12,
+        "y": 670,
+        "w": 712,
+        "h": 620
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "2人身后多出一堆士兵",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787121242852
+}
