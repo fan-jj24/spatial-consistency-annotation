@@ -1,0 +1,27 @@
+{
+  "line": 9082,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009082_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=z3DRJOpWvzFs9k8cn%2BQ2AnKEQXo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009082_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=oZipvx1SbLTWD9tI%2F4BSxGW5b7Q%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 362,
+        "y": 49,
+        "w": 729,
+        "h": 668
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.95,
+        0.169,
+        0.263
+      ]
+    }
+  ],
+  "note": "黑衣男子由在汽车后排门外变成在前排驾驶位",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787125986747
+}
