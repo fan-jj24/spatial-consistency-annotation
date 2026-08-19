@@ -1,0 +1,26 @@
+{
+  "line": 8607,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008607_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=j5Gy16b0s7rg1FKl0gx%2FQ0j7XvA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008607_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=zP6KCMg%2BQGSIF5Fmthz%2FM66O5U8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 4,
+        "y": 320,
+        "w": 525,
+        "h": 343
+      },
+      "type": "move",
+      "target": {
+        "x": 140,
+        "y": 282
+      }
+    }
+  ],
+  "note": "两人远离了石砖路",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787125986747
+}
