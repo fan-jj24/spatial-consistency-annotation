@@ -1,0 +1,22 @@
+{
+  "line": 8582,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008582_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=66qv%2BQGVg4GRa%2FN102f2PgZPaPI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008582_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=QHVtK1EZ667tiLH5oEl%2FIXQq1U4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 375,
+        "y": 360,
+        "w": 74,
+        "h": 138
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "男子朝向变化，应面对水盆",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787121242852
+}
