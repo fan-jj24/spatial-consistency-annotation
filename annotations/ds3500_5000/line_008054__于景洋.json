@@ -1,0 +1,22 @@
+{
+  "line": 8054,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008054_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=NemwdISHggwyz9oqPlqljgvXqLE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008054_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=V8k%2BA92IZdVT3XIdCrFMNmEaSCY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 351,
+        "y": 230,
+        "w": 312,
+        "h": 485
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "男子由面对电脑变成侧对，高度也发生了变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787135379390
+}
