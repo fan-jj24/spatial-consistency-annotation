@@ -1,0 +1,26 @@
+{
+  "line": 9355,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009355_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=zhLEqUqip%2BJPCvy4dyaOfOb0nMI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009355_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=KCF%2F2SrE9ZCzjKgUhcEupFQbuH0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 643,
+        "y": 447,
+        "w": 127,
+        "h": 136
+      },
+      "type": "move",
+      "target": {
+        "x": 1235,
+        "y": 208
+      }
+    }
+  ],
+  "note": "手拿冰糖葫芦男子由站在围墙上面变化到站在地上",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787134637159
+}
