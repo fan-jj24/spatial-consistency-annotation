@@ -1,0 +1,27 @@
+{
+  "line": 8867,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008867_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=2Lo29QfEFMjKiumt4TI0FKo7BAk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008867_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=Z9mp61x2JgZM58gt0pbN34EndBg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 345,
+        "y": 4,
+        "w": 933,
+        "h": 638
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.79,
+        0.603,
+        0.111
+      ]
+    }
+  ],
+  "note": "老头距离棺材近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787131745311
+}
