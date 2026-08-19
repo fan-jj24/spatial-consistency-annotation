@@ -1,0 +1,32 @@
+{
+  "line": 8214,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008214_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=rmqclD%2BQqsWjXvM0N4gHrxGbkRA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008214_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=D3%2FVZbFmwQDU3KknVp8FlnnJ5F8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 323,
+        "y": 174,
+        "w": 287,
+        "h": 402
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 480,
+          "y": 245
+        },
+        {
+          "x": 425,
+          "y": 464
+        }
+      ]
+    }
+  ],
+  "note": "男子多余",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787125986747
+}
