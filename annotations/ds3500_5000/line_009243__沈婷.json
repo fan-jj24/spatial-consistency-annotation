@@ -1,0 +1,27 @@
+{
+  "line": 9243,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009243_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109368&Signature=ErSyJnqyldhhlyy09rUV9dkGs1o%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009243_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109368&Signature=6SiKf12VkDGCR3l4vxgezyHIsGU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 93,
+        "y": 226,
+        "w": 517,
+        "h": 416
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.993,
+        0,
+        0.121
+      ]
+    }
+  ],
+  "note": "男孩与黄色动物的距离变近",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787121242852
+}
