@@ -1,0 +1,22 @@
+{
+  "line": 8319,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008319_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=ptZxiAuNA42DT5c8%2FrScDcG7xwg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008319_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=E8u8HUtesU1NLeugmVKwaX7Ngz4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 493,
+        "y": 481,
+        "w": 77,
+        "h": 417
+      },
+      "type": "add"
+    }
+  ],
+  "note": "粉衣男子前面的白衣人消失了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787124925942
+}
