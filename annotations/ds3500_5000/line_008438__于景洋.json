@@ -1,0 +1,46 @@
+{
+  "line": 8438,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008438_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=FfkEGK7Ly08aQwFG975M9rK81fY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008438_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=aO9cWK8UEr0NtQxVlm%2BWeZ4v5as%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 464,
+        "y": 75,
+        "w": 369,
+        "h": 517
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 690,
+          "y": 236
+        },
+        {
+          "x": 590,
+          "y": 475
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 106,
+        "y": 461,
+        "w": 307,
+        "h": 259
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.787,
+        -0.261,
+        -0.56
+      ]
+    }
+  ],
+  "note": "蓝衣男孩多余，黄色小动物距离汽车近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787131745311
+}
