@@ -1,0 +1,26 @@
+{
+  "line": 8908,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008908_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=Rl4uDQjoCms0OJPv%2BQIrgrZaVUw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008908_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=9OtHYLo2JkhO68xPJw4TNs0Wu7M%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 572,
+        "y": 192,
+        "w": 108,
+        "h": 212
+      },
+      "type": "move",
+      "target": {
+        "x": 326,
+        "y": 328
+      }
+    }
+  ],
+  "note": "男孩距离墙面远了，且高度也发生了变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787131745311
+}
