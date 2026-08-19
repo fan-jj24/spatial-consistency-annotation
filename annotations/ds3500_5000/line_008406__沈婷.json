@@ -1,0 +1,23 @@
+{
+  "line": 8406,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008406_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=1JnFEU2lnPEAagZYvUyfpZAXr%2FA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008406_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=qvd3TVGT1b4vcNeBeVZtm84NnFg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -4,
+        "y": 178,
+        "w": 717,
+        "h": 1096
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向变化，需要重排"
+    }
+  ],
+  "note": "2女子身后士兵距离变近，应向两边移动；2女子前面各多出一个士兵",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787121242852
+}
