@@ -1,0 +1,27 @@
+{
+  "line": 8705,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008705_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=iLS%2B%2BbmYqKCrqhAro9SE%2FDWu9co%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008705_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=HNrE6YG1ZtdUrawuul4aw2J%2BvlU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 43,
+        "y": 78,
+        "w": 770,
+        "h": 1003
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.007,
+        0.108,
+        0.994
+      ]
+    }
+  ],
+  "note": "女孩与猫眼的距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787124925942
+}
