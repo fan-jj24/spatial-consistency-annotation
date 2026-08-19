@@ -1,0 +1,26 @@
+{
+  "line": 7859,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007859_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=rZgonwt04LiDOuWDGCohLFPLZPg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007859_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=OTLKB1iIGVm51tL%2BryDL8C%2BU9c4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 402,
+        "y": 1,
+        "w": 281,
+        "h": 350
+      },
+      "type": "move",
+      "target": {
+        "x": 369,
+        "y": 43
+      }
+    }
+  ],
+  "note": "人物距离路上的白色横线远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787134637159
+}
