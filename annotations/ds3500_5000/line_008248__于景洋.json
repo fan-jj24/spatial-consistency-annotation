@@ -1,0 +1,27 @@
+{
+  "line": 8248,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008248_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=j3DkIgKHaFPadlO3U34nj2QddNM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008248_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=K68mA7Y9Vbm%2Bh949SlP1JunsooA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 211,
+        "y": 0,
+        "w": 994,
+        "h": 527
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.346,
+        0.508,
+        0.789
+      ]
+    }
+  ],
+  "note": "蓝衣男孩和黄色小动物距离被子收纳袋近了，且黄色小动物的朝向也发生了变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787134637159
+}
