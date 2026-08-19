@@ -1,0 +1,35 @@
+{
+  "line": 8648,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008648_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=SaLlNUw3b8l%2FkKXytxZ6Sllfxko%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008648_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=61w1wKpLEVXS9rTvfKDZs0nlMgs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 273,
+        "y": 754,
+        "w": 174,
+        "h": 172
+      },
+      "type": "delete"
+    },
+    {
+      "box": {
+        "x": -6,
+        "y": 101,
+        "w": 724,
+        "h": 476
+      },
+      "type": "move",
+      "target": {
+        "x": 357,
+        "y": 731
+      }
+    }
+  ],
+  "note": "圆形广场上多出一个人、琴、鼎；空中怪物位置变高",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787121242852
+}
