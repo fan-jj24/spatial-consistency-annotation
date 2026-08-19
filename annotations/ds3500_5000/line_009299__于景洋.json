@@ -1,0 +1,27 @@
+{
+  "line": 9299,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009299_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=fQErrJrh9BUrMOAE6FLypC5CL5A%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009299_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=NrW2EJSdD3%2FgeEF1x3JsQVfyfMA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 156,
+        "y": 48,
+        "w": 418,
+        "h": 667
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.374,
+        -0.483,
+        -0.792
+      ]
+    }
+  ],
+  "note": "老头距离年轻男子近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787125986747
+}
