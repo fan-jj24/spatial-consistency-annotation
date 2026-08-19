@@ -1,0 +1,26 @@
+{
+  "line": 8355,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008355_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=1uLFLLG2yh5uycC5v7g7nh7vlzM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008355_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=ozlnB0EvQ8k%2FmWFm0jQXDr2Qjt0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -4,
+        "y": 269,
+        "w": 202,
+        "h": 1006
+      },
+      "type": "move",
+      "target": {
+        "x": 695,
+        "y": 855
+      }
+    }
+  ],
+  "note": "黑色披风男子远离了粉衣侍女",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787125986747
+}
