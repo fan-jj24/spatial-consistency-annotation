@@ -1,0 +1,22 @@
+{
+  "line": 8117,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008117_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=vnoszNxxnzvruE8p44Y741w%2BXk4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008117_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=82o1HEXifWyMagBGfBbEoVvMu68%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 711,
+        "y": 4,
+        "w": 356,
+        "h": 716
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "花衣男子左后方多出一名男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787124925941
+}
