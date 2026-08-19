@@ -1,0 +1,26 @@
+{
+  "line": 8522,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008522_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=G9AV%2BB0Ef50VqhwXnoa3DtmkEcQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008522_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=Z1OC9%2Bi44hAzUvZ7waZqZvMEpjg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 153,
+        "y": 486,
+        "w": 271,
+        "h": 317
+      },
+      "type": "move",
+      "target": {
+        "x": 488,
+        "y": 791
+      }
+    }
+  ],
+  "note": "男子和女子距离画面左侧的台阶近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787131745311
+}
