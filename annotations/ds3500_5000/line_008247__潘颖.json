@@ -1,0 +1,22 @@
+{
+  "line": 8247,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008247_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=ql3yew4JTQaPBB%2BYNKtWRDSjuDw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008247_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=6QVp9Vapy%2B7FvhLaGtd1eRzN%2Bj8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 560,
+        "y": 337,
+        "w": 354,
+        "h": 737
+      },
+      "type": "add"
+    }
+  ],
+  "note": "男孩面前的灰熊消失了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787131630705
+}
