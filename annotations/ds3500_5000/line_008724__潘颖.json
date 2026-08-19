@@ -1,0 +1,22 @@
+{
+  "line": 8724,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008724_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109362&Signature=%2F%2BhBD6H4ZgLY4emeCYXSVt7RCYg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008724_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109362&Signature=qMu%2FKD46ItqVm0OGKPf7ugrLi5Y%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 335,
+        "y": 248,
+        "w": 716,
+        "h": 399
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "画卷前方多出两人",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787131630705
+}
