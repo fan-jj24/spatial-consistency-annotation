@@ -1,0 +1,27 @@
+{
+  "line": 8854,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008854_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=bHJBNa9Ii93TKHXH4aAn3UezDAw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008854_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=Dfc6xSJM7oyaUtD84KVIgKXJ2r4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 662,
+        "y": 3,
+        "w": 477,
+        "h": 498
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.801,
+        -0.117,
+        -0.587
+      ]
+    }
+  ],
+  "note": "男子距离台灯近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787131745311
+}
