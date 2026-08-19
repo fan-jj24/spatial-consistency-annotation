@@ -1,0 +1,22 @@
+{
+  "line": 3472,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003472_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109352&Signature=s%2BY%2F3Z7VuUbeUeDlT9LcfC7jc%2FM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003472_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109352&Signature=WvHvTv6xhXnYRO%2BVU1O5cbooOR8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 485,
+        "y": 305,
+        "w": 189,
+        "h": 814
+      },
+      "type": "add"
+    }
+  ],
+  "note": "粉衣女子前面的蓝衣女子缺失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787134637159
+}
