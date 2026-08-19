@@ -1,0 +1,27 @@
+{
+  "line": 8364,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008364_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=i3rvuEr9gthueU03QLLXxREgEiI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008364_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=qA0jODgWvGo6M32eIphlHpgVRRA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -4,
+        "y": 41,
+        "w": 717,
+        "h": 1236
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.015,
+        0.798,
+        0.603
+      ]
+    }
+  ],
+  "note": "男子由远离轿子变成进入到轿子内",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787125986747
+}
