@@ -1,0 +1,27 @@
+{
+  "line": 9269,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009269_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=mOtnUSpwPQwLdJSg7I9LcfSxcsM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009269_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=GlY2ou9Ly2OEUi0fm7mguqUH2Pk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 535,
+        "y": 118,
+        "w": 144,
+        "h": 338
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.93,
+        0.164,
+        0.33
+      ]
+    }
+  ],
+  "note": "牛仔男子远离了房顶，且朝向发生了变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787125986747
+}
