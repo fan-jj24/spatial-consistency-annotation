@@ -1,0 +1,40 @@
+{
+  "line": 9392,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009392_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=3r2ULnwguPKmupL3SbZBijpmLUU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009392_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=p8ZD%2ByQRR1XJiKfsdOXjgKdPCW8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 326,
+        "y": 138,
+        "w": 318,
+        "h": 580
+      },
+      "type": "move",
+      "target": {
+        "x": 237,
+        "y": 500
+      }
+    },
+    {
+      "box": {
+        "x": 935,
+        "y": 541,
+        "w": 252,
+        "h": 132
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.544,
+        -0.017,
+        -0.839
+      ]
+    }
+  ],
+  "note": "牛仔男子距离老头近了，白衣木偶由在老头左前方站立变成在左后方躺地",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787125986747
+}
