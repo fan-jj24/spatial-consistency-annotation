@@ -1,0 +1,23 @@
+{
+  "line": 9015,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009015_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=17HgT6OfzYVDhe2KRR2gzI6ksJ8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009015_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=NkWjt%2BkCKnxpu5QgOGuhuZS9dRE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 490,
+        "y": 177,
+        "w": 350,
+        "h": 541
+      },
+      "type": "custom",
+      "text": "褐衣男子朝向变了，两男子相对位置变了"
+    }
+  ],
+  "note": "褐衣男子朝向变了，褐衣男子与白桌的相对位置变了，应在白桌内，蓝衣男子的相对位置变了，应在褐衣男子的左后方",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787124925941
+}
