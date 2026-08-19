@@ -1,0 +1,27 @@
+{
+  "line": 7883,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007883_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=s%2BTDsE6nHJ4s1mRjMOiWuG3evNU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007883_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=1c9Qnhl3rnjpGEkzZz6y%2BkVgSyM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -1,
+        "y": 218,
+        "w": 714,
+        "h": 896
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.55,
+        0.553,
+        0.625
+      ]
+    }
+  ],
+  "note": "三位女子距离台阶远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787131745311
+}
