@@ -1,0 +1,23 @@
+{
+  "line": 5340,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_005340_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=EapJdJalJcztTSe%2B9IZkTO0%2B9GQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_005340_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=%2F1WDwMTXb23RMBVusWwYo9quNBA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 2,
+        "y": 269,
+        "w": 712,
+        "h": 1014
+      },
+      "type": "custom",
+      "text": "两人相对位置变了"
+    }
+  ],
+  "note": "男子与女子的相对位置变了，需互换",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787124925941
+}
