@@ -1,0 +1,26 @@
+{
+  "line": 8650,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008650_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=pjrMY75orBZmSik7yr%2Bu6xkQ4m0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008650_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=8wBV80APOPfPnZeJEaP%2B3ZM7Rts%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 328,
+        "y": 53,
+        "w": 469,
+        "h": 747
+      },
+      "type": "move",
+      "target": {
+        "x": 279,
+        "y": 681
+      }
+    }
+  ],
+  "note": "女孩与乐器的距离变远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787131630705
+}
