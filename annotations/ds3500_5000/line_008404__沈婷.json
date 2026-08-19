@@ -1,0 +1,27 @@
+{
+  "line": 8404,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008404_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=yOgPhCSxvDTQBJY0WYY%2FT%2Fn2jUU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008404_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=HLMTqFBOnbgoN2EGSC%2BWyzZskiA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -4,
+        "y": 731,
+        "w": 724,
+        "h": 543
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.007,
+        -0.644,
+        -0.765
+      ]
+    }
+  ],
+  "note": "红衣男子和士兵与台阶的距离变近，需整体后移",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787121242852
+}
