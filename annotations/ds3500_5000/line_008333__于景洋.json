@@ -1,0 +1,27 @@
+{
+  "line": 8333,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008333_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=ydy9lMX%2BnZb0eoUVjqTUGmbXaM8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008333_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=Tz6WCaESkQN%2FN3ce9fEHnbuOXOo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -1,
+        "y": 138,
+        "w": 724,
+        "h": 1139
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.503,
+        0.546,
+        0.67
+      ]
+    }
+  ],
+  "note": "三位女子由在门口外面变成进入到房间内",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787131745311
+}
