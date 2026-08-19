@@ -1,0 +1,23 @@
+{
+  "line": 3140,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003140_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=OGw5JlOfov%2Bj2KeRm4sSgh8GW%2Bo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003140_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=bu0fl8uo7Itmm49KG1jcwt%2Be0AI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 114,
+        "y": 412,
+        "w": 404,
+        "h": 617
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向变化，需要重排 "
+    }
+  ],
+  "note": "绿衣男子和白衣男子距离摆放在地上的绿色盆栽植物远了，黄衣男子由在绿衣男子的右前方变成左前方",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787131745311
+}
