@@ -1,0 +1,27 @@
+{
+  "line": 7596,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007596_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=d3MEaYdy6T52NQWPV%2BaiyVqaAnk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007596_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=1os3U9GQLQ7i3wCSZG12ukGIrYs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 476,
+        "y": -3,
+        "w": 494,
+        "h": 553
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.184,
+        -0.798,
+        -0.574
+      ]
+    }
+  ],
+  "note": "牛仔衣男子距离窗户近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787131745311
+}
