@@ -1,0 +1,27 @@
+{
+  "line": 9421,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009421_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=11bAcqREmgAjWrGwoWJMgIztbC0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009421_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=dg0nlsi%2FHogFM46jrphkSvetKEs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 461,
+        "y": 1,
+        "w": 420,
+        "h": 717
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.126,
+        -0.316,
+        -0.94
+      ]
+    }
+  ],
+  "note": "鹿与十字架距离变近，朝向变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787121242852
+}
