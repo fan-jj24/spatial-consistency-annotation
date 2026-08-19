@@ -1,0 +1,23 @@
+{
+  "line": 3325,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003325_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=51mbN1ManENKy5vOsJI5EDElxtM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003325_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=AWXhVzvoo%2BV1%2Bf%2FfjeOodyCt74o%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -4,
+        "y": 154,
+        "w": 732,
+        "h": 1111
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向变化，需要重排 "
+    }
+  ],
+  "note": "蓝色披风男子由与女子面对面变成背对女子，戴黑色帽子的白衣男子距离女子近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787135379390
+}
