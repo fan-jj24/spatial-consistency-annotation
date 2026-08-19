@@ -1,0 +1,27 @@
+{
+  "line": 9059,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009059_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=xcLxP3MXV%2FAfyKzYZhEAPir8eKM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009059_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=ZCho4JntnBW7IjpEXS%2BLLabZYvg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 495,
+        "y": 64,
+        "w": 407,
+        "h": 569
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.049,
+        0.084,
+        0.995
+      ]
+    }
+  ],
+  "note": "蓝衣男子与持伞男子和抱猫男子的相对距离变远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787131630705
+}
