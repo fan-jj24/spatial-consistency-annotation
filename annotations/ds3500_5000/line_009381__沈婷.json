@@ -1,0 +1,22 @@
+{
+  "line": 9381,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009381_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=Bwp3m6eucKdKmApEiksHBHvl010%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009381_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=pCYtO9gB%2FQZyrk5qiNl8Mlsiw%2Fk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 410,
+        "y": 244,
+        "w": 65,
+        "h": 173
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "画面最左侧的动物身后多出一个动物",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787121242852
+}
