@@ -1,0 +1,26 @@
+{
+  "line": 9034,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009034_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=jFLsKRkNNQc37SDxvsfkK5HNAlM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009034_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=vdElwaP0V5naUTQOLLXQB7uNMvU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 797,
+        "y": 193,
+        "w": 96,
+        "h": 140
+      },
+      "type": "move",
+      "target": {
+        "x": 620,
+        "y": 274
+      }
+    }
+  ],
+  "note": "两男子相对距离变远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787124925941
+}
