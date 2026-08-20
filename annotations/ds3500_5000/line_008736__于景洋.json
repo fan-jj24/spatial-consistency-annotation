@@ -1,0 +1,26 @@
+{
+  "line": 8736,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008736_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109362&Signature=VJPy35b8mcC3y5%2BOCk%2Fye0WUx%2Fs%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008736_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109362&Signature=m2Ugb%2FfgHSGUNJPLOHPnHx2sirU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 324,
+        "y": 492,
+        "w": 31,
+        "h": 102
+      },
+      "type": "move",
+      "target": {
+        "x": 288,
+        "y": 563
+      }
+    }
+  ],
+  "note": "蓝衣女子由在绿衣男子的右侧变成了左侧",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787204989400
+}
