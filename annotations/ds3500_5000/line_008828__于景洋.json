@@ -1,0 +1,26 @@
+{
+  "line": 8828,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008828_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=%2FNg6EYZxjpkk9383tWgkYkC5534%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008828_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=SUiDc3Bf90xWQLtt081OGJXfmKc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 528,
+        "y": 435,
+        "w": 186,
+        "h": 156
+      },
+      "type": "move",
+      "target": {
+        "x": 1063,
+        "y": 671
+      }
+    }
+  ],
+  "note": "金色汽车距离摆有花盆的马路边远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787194395909
+}
