@@ -1,0 +1,27 @@
+{
+  "line": 8144,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008144_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=aqG0DZggA6yBWJCLIu2rESJP7kc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008144_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=4PDhEkR68xhIV7UtXLL%2BuyFqEqk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 807,
+        "y": 322,
+        "w": 365,
+        "h": 490
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.432,
+        0.659,
+        0.615
+      ]
+    }
+  ],
+  "note": "盲人女孩后面的众多学生由在大门内变为走出大门",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787205772671
+}
