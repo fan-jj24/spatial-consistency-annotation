@@ -1,0 +1,27 @@
+{
+  "line": 8884,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008884_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=8hqHPM5qFIM5qE0driVDTpGe8Cc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008884_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=ADknjyL%2BCIbzhDmFrLMhgb0W5bE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 63,
+        "y": 719,
+        "w": 302,
+        "h": 105
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.622,
+        0.661,
+        -0.42
+      ]
+    }
+  ],
+  "note": "蓝色花衣男子距离红衣女子远了，且高度和朝向也发生了变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787194395909
+}
