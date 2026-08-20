@@ -1,0 +1,27 @@
+{
+  "line": 8805,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008805_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=jwjtdEOLXIofjpITgnFwM5RYrmc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008805_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=s2tA4hWuYKIpQTIUolQB2Sqo064%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 306,
+        "y": 509,
+        "w": 118,
+        "h": 205
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.007,
+        -0.812,
+        -0.583
+      ]
+    }
+  ],
+  "note": "太后距离大殿门口远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787194395909
+}
