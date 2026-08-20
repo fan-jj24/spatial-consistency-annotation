@@ -1,0 +1,27 @@
+{
+  "line": 5329,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_005329_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=ZVWoaMS2P6yaBfwyKiUEiBQkYiA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_005329_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=rjIo7eEi1t9ijJl3DQpZuVRtoDs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 9,
+        "y": 650,
+        "w": 676,
+        "h": 620
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.007,
+        -0.686,
+        -0.728
+      ]
+    }
+  ],
+  "note": "抬花轿和前面吹奏的众人距离台阶近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787204989400
+}
