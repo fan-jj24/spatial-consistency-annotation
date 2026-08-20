@@ -1,0 +1,41 @@
+{
+  "line": 8460,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008460_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=phlllD08%2BxwJ02%2BEYtDwzPFimDY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008460_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=E%2B6sbPKFVn7ijKrHq%2Fuhvl4vlfA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 211,
+        "y": 284,
+        "w": 216,
+        "h": 167
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 371,
+          "y": 308
+        },
+        {
+          "x": 254,
+          "y": 413
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 1,
+        "y": 456,
+        "w": 1277,
+        "h": 253
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "画面左侧的小怪物多余，小怪物脚下地面的纹理发生了变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787196866755
+}
