@@ -1,0 +1,27 @@
+{
+  "line": 9071,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009071_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=r%2FrsjUFgDZi3R8%2Bs6uGnaYjxmxA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009071_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=4Z%2F3Yz2%2BIiIlFFrDtnUIvSW4Zy8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 616,
+        "y": 219,
+        "w": 71,
+        "h": 117
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.398,
+        0.414,
+        -0.819
+      ]
+    }
+  ],
+  "note": "黑衣男子距离悬崖边近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787192322598
+}
