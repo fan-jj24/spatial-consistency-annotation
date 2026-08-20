@@ -1,0 +1,26 @@
+{
+  "line": 9384,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009384_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=7fhf2fV7mU%2BG0h8X6srvFO7b6Hg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009384_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=ajwfibJunsf47687PbxViijjWIQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 451,
+        "y": 186,
+        "w": 376,
+        "h": 531
+      },
+      "type": "move",
+      "target": {
+        "x": 608,
+        "y": 84
+      }
+    }
+  ],
+  "note": "男子由腾空变成站立在地上，高度发生了变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787192322598
+}
