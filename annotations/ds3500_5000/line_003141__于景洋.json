@@ -1,0 +1,26 @@
+{
+  "line": 3141,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003141_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=CHVX%2BaaRZlNvm54h%2FlsybItbg7c%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003141_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=HTZwTYWuGNIDydDSlcGPGROBiNw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 470,
+        "y": 361,
+        "w": 261,
+        "h": 535
+      },
+      "type": "move",
+      "target": {
+        "x": 473,
+        "y": 266
+      }
+    }
+  ],
+  "note": "绿衣男子由在穿盔甲男子的左后面变化到左侧稍前",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787194395909
+}
