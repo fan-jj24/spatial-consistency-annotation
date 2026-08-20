@@ -1,0 +1,27 @@
+{
+  "line": 8556,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008556_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=iWZ%2BC5lwnleZqm2u%2FFD%2BQ0uom3I%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008556_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=JUYnp9oR4lY8lBgj8eiPRWyefP4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 632,
+        "y": 11,
+        "w": 146,
+        "h": 119
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.161,
+        0.215,
+        -0.963
+      ]
+    }
+  ],
+  "note": "孙悟空与蓝脸男子的相对位置变了，因在蓝脸男子身后",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787202859546
+}
