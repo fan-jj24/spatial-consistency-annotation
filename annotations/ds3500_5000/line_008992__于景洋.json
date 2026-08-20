@@ -1,0 +1,31 @@
+{
+  "line": 8992,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008992_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=sTn3HzftpVtNpMi%2BI2%2BdLpmcD7I%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008992_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=wQNlBLQQ8dBfXoiPrZSfK5xv1Do%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 575,
+        "y": 291,
+        "w": 63,
+        "h": 145
+      },
+      "type": "rotate"
+    },
+    {
+      "box": {
+        "x": 708,
+        "y": 302,
+        "w": 30,
+        "h": 117
+      },
+      "type": "add"
+    }
+  ],
+  "note": "老头由面向房间内变成对背房间内，画面右侧的门框外缺失蓝衬衣男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787204989400
+}
