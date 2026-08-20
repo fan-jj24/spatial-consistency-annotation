@@ -1,0 +1,22 @@
+{
+  "line": 9170,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009170_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=QxtmZ23bMaslXfCNMEl5wkKfHAE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009170_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=U2NdTdsrccWD4snz9A5r3Ru4Qfk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 785,
+        "y": 1,
+        "w": 495,
+        "h": 713
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "红发男子左手边多出黑发男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787222166321
+}
