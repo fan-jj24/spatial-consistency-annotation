@@ -1,0 +1,23 @@
+{
+  "line": 8370,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008370_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=WPe3EE7PeOf4kLw5GK9VnZ1W7b4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008370_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=etfKA0WGsCA16TYHClOD504kEMs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 40,
+        "y": 475,
+        "w": 1138,
+        "h": 215
+      },
+      "type": "custom",
+      "text": "车辆与人物群体位置需重排"
+    }
+  ],
+  "note": "车辆与人物群体的相对位置发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787202859546
+}
