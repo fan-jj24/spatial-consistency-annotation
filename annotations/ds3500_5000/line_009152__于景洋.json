@@ -1,0 +1,22 @@
+{
+  "line": 9152,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009152_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=D9YZEIyAbsgC%2B4omEKfJ19IByFg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009152_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=0yVXy8dbrruSxtJjT8a07VX7E7c%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 473,
+        "y": 79,
+        "w": 248,
+        "h": 591
+      },
+      "type": "add"
+    }
+  ],
+  "note": "黄衣人物缺失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787196866755
+}
