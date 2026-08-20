@@ -1,0 +1,26 @@
+{
+  "line": 8352,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008352_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=cNtQLFZ%2Fw5WiJnJ%2FLrV2J0ZJ6mQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008352_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=%2F5cDGQonjUN6NLo7YB5g69D4yyU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 558,
+        "y": 238,
+        "w": 85,
+        "h": 318
+      },
+      "type": "move",
+      "target": {
+        "x": 772,
+        "y": 410
+      }
+    }
+  ],
+  "note": "女子与窗户的相对距离变远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787222166321
+}
