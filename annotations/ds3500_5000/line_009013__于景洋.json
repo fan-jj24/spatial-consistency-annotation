@@ -1,0 +1,26 @@
+{
+  "line": 9013,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009013_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=rn%2B76JBOr0quRypaelgDlMnp3r0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009013_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=gsG8wx7HgjpQ4HXF2cMcJGmP2eE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 575,
+        "y": 17,
+        "w": 397,
+        "h": 698
+      },
+      "type": "move",
+      "target": {
+        "x": 48,
+        "y": 694
+      }
+    }
+  ],
+  "note": "老头由在画面左侧变成到画面右侧，离棺材近了，朝向也发生了变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787194395909
+}
