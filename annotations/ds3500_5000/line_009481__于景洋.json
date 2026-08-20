@@ -1,0 +1,22 @@
+{
+  "line": 9481,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009481_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=DoPWor8vodVjcwg6HJ9a1umzrR4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009481_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=juuPbNomc86s%2BFZ4BbVmY1otTIE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 4,
+        "y": 23,
+        "w": 370,
+        "h": 694
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "画面左侧的女孩由短头发变成了长头发",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787204989400
+}
