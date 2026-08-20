@@ -1,0 +1,27 @@
+{
+  "line": 8842,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008842_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=YurUN5dnHFRROIW86K%2BXkjliR6M%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008842_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=GVdyuGdfT3jvdLFHFuX9FmYP2rY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 5,
+        "y": -3,
+        "w": 1298,
+        "h": 635
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.126,
+        -0.39,
+        -0.912
+      ]
+    }
+  ],
+  "note": "男女两人距离台阶最上边的柱子近了，且两人的朝向也变成了面对面",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787192322598
+}
