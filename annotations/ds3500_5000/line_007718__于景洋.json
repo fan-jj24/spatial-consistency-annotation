@@ -1,0 +1,23 @@
+{
+  "line": 7718,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007718_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=FoucAkazuaZv6k9TklTKzYLB%2Frw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007718_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=KIhkPy2JqPd3nIhsS2h%2FZRGMh4E%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 8,
+        "y": 118,
+        "w": 1428,
+        "h": 2437
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向变化，需要重排 "
+    }
+  ],
+  "note": "嬷嬷离台阶远了，多个丫鬟距离嬷嬷近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787192322598
+}
