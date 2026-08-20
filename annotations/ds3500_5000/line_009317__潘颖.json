@@ -1,0 +1,23 @@
+{
+  "line": 9317,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009317_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=Z9tySRiFrXpnyuPgycrxQCoq4xg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009317_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=sj9pd1xYRXTyyrX3VMT7fWUDAk8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 411,
+        "y": 246,
+        "w": 690,
+        "h": 321
+      },
+      "type": "custom",
+      "text": "人物群体位置需重排"
+    }
+  ],
+  "note": "人物群体相对位置变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787202859546
+}
