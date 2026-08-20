@@ -1,0 +1,23 @@
+{
+  "line": 8533,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008533_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=9%2BhjwzBym%2BRfSwcftyeXezXsWwA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008533_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=%2FyLvu0h5IawqfHllJiX8SjgUO%2FE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 265,
+        "y": 630,
+        "w": 200,
+        "h": 182
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向变化，需要重排 "
+    }
+  ],
+  "note": "黑衣男子由在红衣女子右侧变成了左侧且距离远了，俩人由在走廊变化到庭院中央",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787192322598
+}
