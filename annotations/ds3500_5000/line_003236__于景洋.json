@@ -1,0 +1,27 @@
+{
+  "line": 3236,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003236_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=hIhP3WSCAex9GmQk8Hahdl7sN6o%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003236_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=%2F2oCPWPcaXbJDgLkkMzv2hLyBhY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 542,
+        "y": 236,
+        "w": 177,
+        "h": 1039
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.89,
+        -0.11,
+        -0.443
+      ]
+    }
+  ],
+  "note": "深蓝衣士兵距离黑红衣皇帝近了，朝向由背对变成了面对",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787192322598
+}
