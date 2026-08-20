@@ -1,0 +1,26 @@
+{
+  "line": 9322,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009322_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=zPasOwYUgQlUDw6fYwdTf1Z2mUg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009322_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=mKm%2FXdV09EpSs86Q7l5huHkpE%2B4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1013,
+        "y": 206,
+        "w": 258,
+        "h": 505
+      },
+      "type": "move",
+      "target": {
+        "x": 577,
+        "y": 491
+      }
+    }
+  ],
+  "note": "褐衣男子和蓝衣男子与棺材的相对距离变远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787202859546
+}
