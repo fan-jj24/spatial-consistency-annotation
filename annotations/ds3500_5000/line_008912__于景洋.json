@@ -1,0 +1,27 @@
+{
+  "line": 8912,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008912_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=FI5nTEgUAL%2BUeho5k24pfMjgzpM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008912_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=lTF1HjyQEDmuE4aJUUlVcylnCJ0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 446,
+        "y": -3,
+        "w": 341,
+        "h": 721
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.031,
+        -0.998,
+        -0.055
+      ]
+    }
+  ],
+  "note": "黄色气球的高度变高了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787196866755
+}
