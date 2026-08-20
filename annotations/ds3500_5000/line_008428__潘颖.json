@@ -1,0 +1,26 @@
+{
+  "line": 8428,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008428_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=YGtq3BKpJWzoXvnbb8rMQAlBpmI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008428_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=zztqZxRltoRCsMuopj2UC0LS%2BHQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 342,
+        "y": 564,
+        "w": 402,
+        "h": 156
+      },
+      "type": "move",
+      "target": {
+        "x": 1253,
+        "y": 625
+      }
+    }
+  ],
+  "note": "小怪兽与车的相对距离变远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787202859546
+}
