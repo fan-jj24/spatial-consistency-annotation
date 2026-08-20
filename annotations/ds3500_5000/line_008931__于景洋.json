@@ -1,0 +1,22 @@
+{
+  "line": 8931,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008931_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=dfwusFEn6YDC4jL9bp2aesdCcmc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008931_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=%2FIkbT%2FC5WQorLrp3rKXN7B8g6To%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 541,
+        "y": 244,
+        "w": 382,
+        "h": 122
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "人物背后的局部背景缺少3个铁柜子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787192322598
+}
