@@ -1,0 +1,27 @@
+{
+  "line": 9131,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009131_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=UrPblOJLpCaWpSuHXQSH1xX%2BbBI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009131_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=e%2Fs8Os8CIICtAgBODbBp3ZoiPyY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 904,
+        "y": 216,
+        "w": 219,
+        "h": 504
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.758,
+        0.086,
+        0.646
+      ]
+    }
+  ],
+  "note": "黑发女子与男子的相对位置变了，从男子的右前方变成男子的右后方",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787202859546
+}
