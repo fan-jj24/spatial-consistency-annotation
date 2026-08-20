@@ -1,0 +1,27 @@
+{
+  "line": 8783,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008783_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109362&Signature=fnKR5tkH85NE7yqRGQv3bk4FBuc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008783_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109362&Signature=ySRd0Nb5CyqG4Pr4FpqK%2FPvKw3A%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 273,
+        "y": 364,
+        "w": 228,
+        "h": 612
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.017,
+        0.036,
+        0.999
+      ]
+    }
+  ],
+  "note": "白衣男子与门槛的相对距离变了，从门槛外变到门槛内",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787202859546
+}
