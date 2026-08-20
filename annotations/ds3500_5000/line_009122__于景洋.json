@@ -1,0 +1,27 @@
+{
+  "line": 9122,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009122_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=T1b0%2BcQKrACP7OEi5LYwG6NNKRc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009122_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=qE30V5udUElKzF6fiJax%2BSoLm9c%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 561,
+        "y": 216,
+        "w": 248,
+        "h": 498
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.001,
+        -0.548,
+        -0.836
+      ]
+    }
+  ],
+  "note": "老头距离祭奠台台阶近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787196866755
+}
