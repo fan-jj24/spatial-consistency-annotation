@@ -1,0 +1,39 @@
+{
+  "line": 8421,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008421_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=aZerDvOzYi5Tj0qNEfe1vf8tp58%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008421_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=CX%2BHs75oI5PLHOMEw9%2FMkHVlw9o%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 112,
+        "y": 341,
+        "w": 194,
+        "h": 225
+      },
+      "type": "move",
+      "target": {
+        "x": 412,
+        "y": 379
+      }
+    },
+    {
+      "box": {
+        "x": 536,
+        "y": 108,
+        "w": 369,
+        "h": 611
+      },
+      "type": "move",
+      "target": {
+        "x": 6,
+        "y": 708
+      }
+    }
+  ],
+  "note": "黄色小动物由在车顶上变成在引擎盖上，男孩由在车头变化到在车子左侧，朝向也发生了变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787194395909
+}
