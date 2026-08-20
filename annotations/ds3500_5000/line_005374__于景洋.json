@@ -1,0 +1,26 @@
+{
+  "line": 5374,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_005374_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=PoRonZHLStDuunT5FmGFFNORtdU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_005374_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=Di1ORH6e25%2FgfUXXv7SwkMP3sfI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 14,
+        "y": 840,
+        "w": 696,
+        "h": 435
+      },
+      "type": "move",
+      "target": {
+        "x": 130,
+        "y": 563
+      }
+    }
+  ],
+  "note": "白衣戴帽男子由在红衣女子右后面变到前面",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787194395909
+}
