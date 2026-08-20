@@ -1,0 +1,46 @@
+{
+  "line": 9445,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009445_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=vrnNfEYz5aG2JcqC7BrSp%2BH9%2BeE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009445_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=cK0O9ZVH0VTrkVIpRIKdx0QNOv8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1125,
+        "y": 400,
+        "w": 154,
+        "h": 312
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.42,
+        0.633,
+        0.65
+      ]
+    },
+    {
+      "box": {
+        "x": 29,
+        "y": 454,
+        "w": 314,
+        "h": 266
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 253,
+          "y": 495
+        },
+        {
+          "x": 129,
+          "y": 672
+        }
+      ]
+    }
+  ],
+  "note": "男子左后方的白衣木偶距离男子近了，男子右后方的白衣木偶多余",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787194395909
+}
