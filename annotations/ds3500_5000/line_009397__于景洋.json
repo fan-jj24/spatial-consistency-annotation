@@ -1,0 +1,22 @@
+{
+  "line": 9397,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009397_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=GGY%2FGLZdlDncTSSUTckfFUMbnUA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009397_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=lgscNKeY3dS2X63g56Noaz1ICHw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 583,
+        "y": 0,
+        "w": 129,
+        "h": 473
+      },
+      "type": "add"
+    }
+  ],
+  "note": "两个小动物中间的女孩缺失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787192322598
+}
