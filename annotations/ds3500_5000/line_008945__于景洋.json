@@ -1,0 +1,27 @@
+{
+  "line": 8945,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008945_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=uR%2Bji%2BGzCgRDMIibZoY%2B7I0U8c4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008945_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=RS3oT4OLMneP%2FB8MxuoT57LP4zc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 2,
+        "y": 45,
+        "w": 563,
+        "h": 576
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.772,
+        -0.053,
+        -0.634
+      ]
+    }
+  ],
+  "note": "黄色小动物距离蓝衣男孩近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787205772671
+}
