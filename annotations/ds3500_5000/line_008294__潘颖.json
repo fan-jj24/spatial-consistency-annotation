@@ -1,0 +1,26 @@
+{
+  "line": 8294,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008294_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=4Ago57na%2BDCI7hCwBUcVSeipKGc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008294_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=nP87wjNtclfK714bcg5CMIIgQ3k%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 0,
+        "y": 722,
+        "w": 727,
+        "h": 305
+      },
+      "type": "move",
+      "target": {
+        "x": 373,
+        "y": 225
+      }
+    }
+  ],
+  "note": "女子相对高度变低了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787202859546
+}
