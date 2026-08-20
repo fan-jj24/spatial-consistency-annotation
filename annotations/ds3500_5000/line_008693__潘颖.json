@@ -1,0 +1,26 @@
+{
+  "line": 8693,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008693_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=ywCu3zARIywJHu7mMZ%2F3GnwyVRk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008693_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=iAAQckUG6haPzQ6IY%2FV9CCteZVk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 0,
+        "y": 832,
+        "w": 732,
+        "h": 443
+      },
+      "type": "move",
+      "target": {
+        "x": 427,
+        "y": 719
+      }
+    }
+  ],
+  "note": "倒地人群的相对高度变低了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787202859546
+}
