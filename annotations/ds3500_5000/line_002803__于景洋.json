@@ -1,0 +1,23 @@
+{
+  "line": 2803,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002803_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109350&Signature=iamp6rGRnZeRaMxn5IrPwmO%2FhIc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002803_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109350&Signature=YNofLrktK5SwzJUje%2BdBM7Rmv4g%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 12,
+        "y": 44,
+        "w": 650,
+        "h": 1229
+      },
+      "type": "custom",
+      "text": "两个人物相对位置和朝向变化，需要重排 "
+    }
+  ],
+  "note": "女子与黑虎由面对面站立状态变成女子骑在黑虎背上，高度和朝向发生了变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787196866755
+}
