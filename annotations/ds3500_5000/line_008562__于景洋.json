@@ -1,0 +1,26 @@
+{
+  "line": 8562,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008562_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=NZ38fLyvow97OvJ5aV6uxWOAISo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008562_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=kS4%2FJcBiDvaLCSQrkadx0XBLcDg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 782,
+        "y": 3,
+        "w": 121,
+        "h": 99
+      },
+      "type": "move",
+      "target": {
+        "x": 1063,
+        "y": 146
+      }
+    }
+  ],
+  "note": "戴翅膀的怪物距离天宫大门近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787192322598
+}
