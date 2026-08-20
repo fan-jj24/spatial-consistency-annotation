@@ -1,0 +1,27 @@
+{
+  "line": 8817,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008817_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=vOLzHU3cWx%2BLdr2rPI%2FDKpFUOks%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008817_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=M3f0HmoYhv5HPcuqrOlL3IEYYP8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 84,
+        "y": 343,
+        "w": 532,
+        "h": 940
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.77,
+        0.003,
+        0.638
+      ]
+    }
+  ],
+  "note": "粉衣女子与绿衣男子的相对距离变近了，应在男子后方",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787202859546
+}
