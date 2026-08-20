@@ -1,0 +1,22 @@
+{
+  "line": 9181,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009181_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=fjdoxiPPBrnKFpqGOslLEFcq4go%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009181_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=9a3jYTDmN5TMV%2FsWnk4Vw1e2Rbk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 197,
+        "y": 163,
+        "w": 351,
+        "h": 367
+      },
+      "type": "add"
+    }
+  ],
+  "note": "眼镜男子右后方的人物缺失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787192322598
+}
