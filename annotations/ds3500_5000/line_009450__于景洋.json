@@ -1,0 +1,27 @@
+{
+  "line": 9450,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009450_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=hQpzRiSwDLXr5BHdUqj%2FyQQEuD0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009450_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=BDQdN5kbv6f%2BgAlUowyjDHk%2BIps%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 274,
+        "y": 69,
+        "w": 320,
+        "h": 649
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.724,
+        -0.306,
+        -0.618
+      ]
+    }
+  ],
+  "note": "被男子踢踹的白衣木偶的左后方的白衣木偶距离男子近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787204989400
+}
