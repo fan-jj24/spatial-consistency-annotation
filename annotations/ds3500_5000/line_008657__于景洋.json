@@ -1,0 +1,27 @@
+{
+  "line": 8657,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008657_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=eb5A127yhO8L7NAj0Z%2FnKnzsqGo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008657_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=kpjrr9zrIOT7SP1K5cnjpAQD4VM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -1,
+        "y": 3,
+        "w": 307,
+        "h": 768
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.833,
+        0.146,
+        0.533
+      ]
+    }
+  ],
+  "note": "黑色花衣男子距离白衣男子近了，朝向也由面对面变成了背对",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787192322598
+}
