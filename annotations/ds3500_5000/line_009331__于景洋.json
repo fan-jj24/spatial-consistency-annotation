@@ -1,0 +1,26 @@
+{
+  "line": 9331,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009331_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=66RJBjwrIzuuvoGsiQkhjF%2BUAE0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009331_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=tnV3D99Uo%2F%2Fp235TubjaduXpKcM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 221,
+        "y": 128,
+        "w": 315,
+        "h": 580
+      },
+      "type": "move",
+      "target": {
+        "x": 22,
+        "y": 639
+      }
+    }
+  ],
+  "note": "蓝衬衣男子由在老头的右侧变成在老头后面，距离也变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787194395909
+}
