@@ -1,0 +1,35 @@
+{
+  "line": 8983,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008983_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=0%2BF%2F2uWTOIUZpWW8qYGLNKPjI8E%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008983_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=NrURN1XwGHqjNi0%2FRFIwP%2FCc0Bg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 2,
+        "y": 3,
+        "w": 330,
+        "h": 613
+      },
+      "type": "move",
+      "target": {
+        "x": 1210,
+        "y": 478
+      }
+    },
+    {
+      "box": {
+        "x": 338,
+        "y": 189,
+        "w": 423,
+        "h": 455
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "蓝衣男孩距离桌子上摆放的摄像机远了，花束前面的黄色小动物变成了橙色小动物",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787204989400
+}
