@@ -1,0 +1,27 @@
+{
+  "line": 9510,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009510_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=Oz9YKUaWLTICRVaqLEjKTymnC%2Bw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009510_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=hMSV2yMD2WDrGQuIROZLJyypZnU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 459,
+        "y": 48,
+        "w": 341,
+        "h": 670
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.017,
+        -0.607,
+        -0.795
+      ]
+    }
+  ],
+  "note": "老头距离门口近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787194395909
+}
