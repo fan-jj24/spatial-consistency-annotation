@@ -1,0 +1,27 @@
+{
+  "line": 7827,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007827_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=EgmH1B53gzJxMUxMts3EwFPuWbU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007827_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=ce8MQGs3371aDAnWQYtaaLkH6uY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 368,
+        "y": 65,
+        "w": 275,
+        "h": 648
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.374,
+        0.798,
+        0.473
+      ]
+    }
+  ],
+  "note": "牛仔裤女子由在女服务员背后变成在女服务员的右边，距离画面左侧的老板娘近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787196866755
+}
