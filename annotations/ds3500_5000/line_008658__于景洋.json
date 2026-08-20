@@ -1,0 +1,27 @@
+{
+  "line": 8658,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008658_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=7OXXlJy%2FpUhT4yxxDrvWP5tMsSw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008658_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=Y0xgvDbxeV9UNcSegp6eqDJccvE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 240,
+        "y": 58,
+        "w": 603,
+        "h": 665
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.039,
+        0.554,
+        0.831
+      ]
+    }
+  ],
+  "note": "灰衣男子距离缺块皮的树近了，且高度也发生了变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787192322598
+}
