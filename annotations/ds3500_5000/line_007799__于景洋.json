@@ -1,0 +1,26 @@
+{
+  "line": 7799,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007799_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=uNhKPmVCeVNrajbHmVpSMue7Ca4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007799_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=QD2W4Ubb48fjJQU%2FfK%2B9e539p4U%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1087,
+        "y": 2,
+        "w": 832,
+        "h": 1002
+      },
+      "type": "move",
+      "target": {
+        "x": 576,
+        "y": 583
+      }
+    }
+  ],
+  "note": "红色汽车距离红绿灯远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787196866755
+}
