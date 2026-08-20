@@ -1,0 +1,32 @@
+{
+  "line": 8848,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008848_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=uP3xSQ%2BJe7Eow%2FlrzAt9xZhin%2B8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008848_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=f93FXQwot6f%2FK%2F3G870p8laILWU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 196,
+        "y": 96,
+        "w": 324,
+        "h": 615
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 400,
+          "y": 238
+        },
+        {
+          "x": 292,
+          "y": 621
+        }
+      ]
+    }
+  ],
+  "note": "蓝衬衣男子多余",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787204989400
+}
