@@ -1,0 +1,26 @@
+{
+  "line": 8951,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008951_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=NHLlztG5JT%2BdgmAdtGPLUaTiKSo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008951_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=wqbcFOQX96xFldF5eA4A5R7J%2Feg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 725,
+        "y": 343,
+        "w": 183,
+        "h": 229
+      },
+      "type": "move",
+      "target": {
+        "x": 1068,
+        "y": 387
+      }
+    }
+  ],
+  "note": "黄色小怪兽应在蓝衣男子的左后方",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787306374984
+}
