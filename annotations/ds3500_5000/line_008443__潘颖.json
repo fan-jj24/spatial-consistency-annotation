@@ -1,0 +1,26 @@
+{
+  "line": 8443,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008443_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=f1L9LqoUDJDerU5OkFe03JV2FuY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008443_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=vOfnTYpI7ZjJ08N3ASZ6XnG%2FPRo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 518,
+        "y": 330,
+        "w": 202,
+        "h": 950
+      },
+      "type": "move",
+      "target": {
+        "x": -9,
+        "y": 806
+      }
+    }
+  ],
+  "note": "粉衣女子与男子的相对距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787301405753
+}
