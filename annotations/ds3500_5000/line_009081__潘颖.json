@@ -1,0 +1,22 @@
+{
+  "line": 9081,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009081_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=FzKJYQ79paTHG3enf51PZWmn6qI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009081_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=ievkqOc2yO9%2BR%2BxmZR3VV4iPzvo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 2,
+        "y": 101,
+        "w": 577,
+        "h": 621
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "纸人右脸边多出一个纸人",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787301405753
+}
