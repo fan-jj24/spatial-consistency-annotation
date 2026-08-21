@@ -1,0 +1,22 @@
+{
+  "line": 8427,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008427_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=PPiEoEtNx3SjfWOS2uy5TPjfYP0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008427_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=WMv%2BgO7Pp0qDUCNzHxONwPM46Dk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 258,
+        "y": 158,
+        "w": 533,
+        "h": 500
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "车上多了一个棕色怪兽",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787306374984
+}
