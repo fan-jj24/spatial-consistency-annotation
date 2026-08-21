@@ -1,0 +1,27 @@
+{
+  "line": 3386,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003386_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109352&Signature=3K7fKAyY3AaW6BweYc7BHWMUbLg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003386_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109352&Signature=bFh%2BonbzQ5HTUegXLf%2FddViN5Qs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 391,
+        "y": 325,
+        "w": 284,
+        "h": 584
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.338,
+        -0.056,
+        -0.939
+      ]
+    }
+  ],
+  "note": "白衣男子与黑衣男子的相对位置变了，由黑衣男子前面变成黑衣男子后面",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787306374984
+}
