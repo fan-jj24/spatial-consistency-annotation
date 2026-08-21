@@ -1,0 +1,22 @@
+{
+  "line": 7786,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007786_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=0b%2FcXV1q2gHTbWc6CyNq2ht7Fmw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007786_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=x%2BDgw81pB1PmhOJ%2BKDIpEUS8x5k%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 247,
+        "y": 96,
+        "w": 187,
+        "h": 262
+      },
+      "type": "add"
+    }
+  ],
+  "note": "黄车右后方的蓝车消失了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787301405753
+}
