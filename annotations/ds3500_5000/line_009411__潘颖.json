@@ -1,0 +1,26 @@
+{
+  "line": 9411,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009411_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=aUMAwc4fwZ5J0JK26%2BWRaor1Wdc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009411_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=7iFWWnEuNJ9Q38M7InwYaox%2FDk8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 392,
+        "y": 81,
+        "w": 285,
+        "h": 636
+      },
+      "type": "move",
+      "target": {
+        "x": 1112,
+        "y": 693
+      }
+    }
+  ],
+  "note": "男子与凳子的相对距离变远了，男子的相对高度变高了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787301405753
+}
