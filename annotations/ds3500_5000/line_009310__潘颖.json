@@ -1,0 +1,22 @@
+{
+  "line": 9310,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009310_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=36h1%2B0x33TaPnXs76r2Cp8zk%2BKY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009310_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=jofAO7Ka54vJwqHi4tqeAtAiVao%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 245,
+        "y": 151,
+        "w": 1028,
+        "h": 552
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "男子口中由无变成吹出一团火焰",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787304116116
+}
