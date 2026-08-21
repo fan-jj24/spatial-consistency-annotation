@@ -1,0 +1,23 @@
+{
+  "line": 7787,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007787_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=24Y8IoHbOK%2FFz%2F4vQc7fGx11QzA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007787_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=NCK1J6XqLxDuE6UkrJjKFjl2KyI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 169,
+        "y": -6,
+        "w": 1112,
+        "h": 723
+      },
+      "type": "custom",
+      "text": "两汽车的相对距离和位置变了，需重排"
+    }
+  ],
+  "note": "红色汽车和蓝色汽车的相对距离变近了，红色汽车和蓝色汽车与花园的相对位置变了，需重排",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787301405753
+}
