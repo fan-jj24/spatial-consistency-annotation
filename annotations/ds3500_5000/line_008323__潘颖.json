@@ -1,0 +1,27 @@
+{
+  "line": 8323,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008323_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=qYkM9Xq6kkiDs2nfi2BgHlrbovk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008323_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=zZFwUlfcm2d7c0L8noYYuxhYvWI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 427,
+        "y": 52,
+        "w": 572,
+        "h": 665
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.785,
+        0.002,
+        0.619
+      ]
+    }
+  ],
+  "note": "男子和女子与校门的距离变远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787304116116
+}
