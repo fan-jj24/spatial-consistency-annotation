@@ -1,0 +1,27 @@
+{
+  "line": 7962,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007962_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=4hW%2B2wAl3JO25u2BNkVltZ7OkSU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007962_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=xjF3lDx9bfAGsYMpNbcO%2Bg6%2FERU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 502,
+        "y": 540,
+        "w": 425,
+        "h": 140
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.017,
+        -0.311,
+        -0.95
+      ]
+    }
+  ],
+  "note": "三人与球门的相对距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787301405753
+}
