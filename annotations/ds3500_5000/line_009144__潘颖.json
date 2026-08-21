@@ -1,0 +1,23 @@
+{
+  "line": 9144,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009144_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=QDjA41z44iZvHg%2FJl8IOaT7aaYE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009144_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=IFP4fCpwPg7bPttNPs9pz6TLA%2F8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 127,
+        "y": 66,
+        "w": 1162,
+        "h": 651
+      },
+      "type": "custom",
+      "text": "两男子的相对位置与距离均变了"
+    }
+  ],
+  "note": "褐衣男子和蓝衣男子与柜台的相对位置变了，应位置互换，褐衣男子与蓝衣男子的相对距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787301405753
+}
