@@ -1,0 +1,31 @@
+{
+  "line": 7784,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007784_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=qIP4ypTM9b5FDj%2F0B8tvUcel25Y%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007784_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=Z7ne7QUMYDeydIJxhVgxMB15Yqg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1401,
+        "y": 274,
+        "w": 447,
+        "h": 806
+      },
+      "type": "delete"
+    },
+    {
+      "box": {
+        "x": 1,
+        "y": 2,
+        "w": 458,
+        "h": 845
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "紫衣女子左后方多出一人，紫衣女子左后方的背景由石墩变成门",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787301405753
+}
