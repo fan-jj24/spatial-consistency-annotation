@@ -1,0 +1,36 @@
+{
+  "line": 8987,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008987_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=BiLzC0yNLAgkpMe3YUAqSvQCLp4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008987_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=GXgWxvEzlGZ3tmmoSQXQ6s6Eag0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 641,
+        "y": 200,
+        "w": 297,
+        "h": 347
+      },
+      "type": "bg_local"
+    },
+    {
+      "box": {
+        "x": 459,
+        "y": 442,
+        "w": 82,
+        "h": 261
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.267,
+        0.004,
+        -0.964
+      ]
+    }
+  ],
+  "note": "男孩与楼梯的相对距离变远了，局部背景由空白变为图画字体",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787301405753
+}
