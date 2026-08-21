@@ -1,0 +1,27 @@
+{
+  "line": 9146,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009146_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=Fx1L7dZRJbGt6WV%2FyDLqzyVmWH0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009146_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=BILAcPLZYgrrPhXJBEETXqfDBH0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 150,
+        "y": 76,
+        "w": 399,
+        "h": 649
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.617,
+        -0.035,
+        -0.786
+      ]
+    }
+  ],
+  "note": "蓝衣男子与门的相对距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787308288052
+}
