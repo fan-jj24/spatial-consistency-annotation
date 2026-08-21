@@ -1,0 +1,27 @@
+{
+  "line": 8701,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008701_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=mDDhGPVs4DR9p6cJm8hfK09BnHw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008701_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=gTn1YWOCkeT2lm%2F0vBGSXtWWupM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -1,
+        "y": 243,
+        "w": 722,
+        "h": 1034
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.031,
+        0.1,
+        0.995
+      ]
+    }
+  ],
+  "note": "女子与花轿的相对位置变了，由花轿内变为花轿外",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787306374984
+}
