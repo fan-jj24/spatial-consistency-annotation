@@ -1,0 +1,23 @@
+{
+  "line": 8339,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008339_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=hvugAi70sApE05ClYW6m4ak%2BYCo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008339_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=4uCNe64FTILAU1kEkMshm5ZEZ%2FI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -4,
+        "y": 323,
+        "w": 271,
+        "h": 589
+      },
+      "type": "custom",
+      "text": "两男子的相对位置与朝向变了"
+    }
+  ],
+  "note": "卷发男子与白衣男子的相对位置变了，因互换，卷发男子与白衣男子的朝向变了，应面朝白纱帘",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787308288052
+}
