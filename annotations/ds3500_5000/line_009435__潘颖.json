@@ -1,0 +1,26 @@
+{
+  "line": 9435,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009435_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=qty2yLzA2gaLYPldWAMbxjknrls%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009435_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=iuPYFrlDj3BO%2BAy7zwUqtfssvtk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 833,
+        "y": 226,
+        "w": 115,
+        "h": 166
+      },
+      "type": "move",
+      "target": {
+        "x": 803,
+        "y": 318
+      }
+    }
+  ],
+  "note": "小羚羊与背包羚羊的相对距离变近",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787306374984
+}
