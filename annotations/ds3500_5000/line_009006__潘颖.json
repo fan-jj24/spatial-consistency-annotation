@@ -1,0 +1,26 @@
+{
+  "line": 9006,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009006_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=W4KzFjIFuTPRTDsmPndeqjkRtDE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009006_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=WvgBVwOS5MbTtjzYvinZml7zz3s%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 614,
+        "y": 150,
+        "w": 664,
+        "h": 572
+      },
+      "type": "move",
+      "target": {
+        "x": 6,
+        "y": 300
+      }
+    }
+  ],
+  "note": "男子与女子的相对位置变了，应在女子的正对面",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787304116116
+}
