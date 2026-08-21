@@ -1,0 +1,26 @@
+{
+  "line": 8978,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008978_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=3y9%2Fg8KEHY3Vf8pqOzuORMY11nQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008978_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=G56lvgMoAYEYHx0pgh%2B7cGxm6ys%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 755,
+        "y": 295,
+        "w": 296,
+        "h": 260
+      },
+      "type": "move",
+      "target": {
+        "x": 657,
+        "y": 425
+      }
+    }
+  ],
+  "note": "两名男子与对面怪物的相对距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787306374984
+}
