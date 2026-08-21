@@ -1,0 +1,31 @@
+{
+  "line": 8264,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008264_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=NonIybiqesoxqwl1qdfvTMPL%2FEA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008264_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=dvzIOJS%2BuUHwNjV%2FgUcgkyGSteM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 811,
+        "y": 240,
+        "w": 468,
+        "h": 477
+      },
+      "type": "delete"
+    },
+    {
+      "box": {
+        "x": -2,
+        "y": 226,
+        "w": 435,
+        "h": 497
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "男孩左右两侧分别多出两个黄色怪兽",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787306374984
+}
