@@ -1,0 +1,27 @@
+{
+  "line": 9183,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009183_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=302XL%2B%2B5vGK7UTSDEGMsfm2iCAs%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009183_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=I%2FEsNqtbNi1bbM6tv1v29yInSB0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1,
+        "y": 1,
+        "w": 868,
+        "h": 716
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.293,
+        -0.004,
+        0.956
+      ]
+    }
+  ],
+  "note": "黑衣男子与栏杆的相对距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787568777140
+}
