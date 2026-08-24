@@ -1,0 +1,3548 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>空间一致性标注 - 本地分类修改</title>
+<style>
+:root {
+  --bg:#f5f6f8; --panel:#fff; --border:#e3e5ea;
+  --text:#1f2328; --muted:#6a737d;
+  --accent:#3b7dfb; --accent-weak:#e5efff;
+  --ok:#2e9f5a; --ok-weak:#d8f2e3;
+  --bad:#d1453b; --bad-weak:#fde2e0;
+  --warn:#d97706; --warn-weak:#fef3c7;
+  --shadow:0 1px 3px rgba(0,0,0,.06);
+}
+* { box-sizing:border-box; }
+html, body { height:100%; margin:0; }
+body {
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  background:var(--bg); color:var(--text); font-size:14px;
+  display:flex; flex-direction:column; overflow:hidden;
+}
+button {
+  cursor:pointer; padding:6px 14px; border-radius:6px;
+  border:1px solid var(--border); background:#fff; color:var(--text);
+  font-size:13px; transition:background .15s,border-color .15s; user-select:none;
+}
+button:hover:not(:disabled) { background:var(--accent-weak); border-color:var(--accent); }
+button:disabled { opacity:.4; cursor:not-allowed; }
+button.primary { background:var(--accent); color:#fff; border-color:var(--accent); font-weight:600; }
+button.primary:hover:not(:disabled) { background:#2a6ae0; }
+button.success { background:var(--ok); color:#fff; border-color:var(--ok); font-weight:600; }
+button.success:hover:not(:disabled) { background:#268a4d; }
+button.ghost { background:#fff; }
+button.danger { color:var(--bad); }
+button.danger:hover:not(:disabled) { background:var(--bad-weak); border-color:var(--bad); }
+.muted { color:var(--muted); font-size:12px; }
+.hidden { display:none !important; }
+
+/* ===== 第一阶段：领取任务 ===== */
+#phase-claim {
+  flex:1; display:flex; align-items:center; justify-content:center;
+  padding:20px; overflow-y:auto;
+}
+.claim-card {
+  background:var(--panel); border-radius:16px; padding:32px 36px;
+  box-shadow:0 4px 24px rgba(0,0,0,.08); width:700px; max-width:95vw;
+}
+.claim-card h2 { margin:0 0 4px; font-size:20px; }
+.claim-card .subtitle { color:var(--muted); font-size:13px; margin-bottom:24px; }
+.claim-section { margin-bottom:20px; }
+.claim-section label { display:block; font-size:13px; font-weight:600; margin-bottom:8px; }
+.claim-section select, .claim-section input[type="number"] {
+  width:100%; padding:10px 12px; border:1.5px solid var(--border); border-radius:8px;
+  font-size:14px; background:#fff;
+}
+.claim-section select:focus, .claim-section input:focus { outline:none; border-color:var(--accent); }
+.role-picker { display:flex; gap:10px; }
+.role-card { flex:1; cursor:pointer; }
+.role-card input { display:none; }
+.role-card-body {
+  display:flex; flex-direction:column; gap:2px; padding:12px;
+  border:2px solid var(--border); border-radius:10px; transition:all .15s;
+}
+.role-card-body:hover { border-color:var(--accent); transform:translateY(-1px); }
+.role-card input:checked + .role-card-body {
+  border-color:var(--accent); background:var(--accent-weak);
+  box-shadow:0 2px 10px rgba(59,125,251,.18);
+}
+.role-card .role-emoji { font-size:22px; }
+.role-card .role-name { font-size:14px; font-weight:700; }
+.role-card .role-desc { font-size:11px; color:var(--muted); }
+.role-card input:checked + .role-card-body .role-name { color:var(--accent); }
+.pool-stats {
+  display:grid; grid-template-columns:repeat(4,1fr); gap:8px; margin-top:12px;
+}
+.pool-stat {
+  text-align:center; padding:10px 6px; background:var(--bg); border-radius:8px;
+}
+.pool-stat .num { font-size:22px; font-weight:700; color:var(--accent); }
+.pool-stat .lbl { font-size:11px; color:var(--muted); margin-top:2px; }
+.pool-stat.locked .num { color:var(--warn); }
+.pool-stat.locked { cursor:pointer; position:relative; }
+.pool-stat.locked:hover { background:var(--warn-weak); }
+.pool-stat.locked::after {
+  content:"▶"; position:absolute; top:4px; right:6px; font-size:8px; color:var(--warn); opacity:.6;
+}
+/* 锁详情面板 */
+.lock-details {
+  margin-top:10px; border:1px solid var(--border); border-radius:8px;
+  background:#fffdf5; overflow:hidden;
+}
+.lock-details.hidden { display:none; }
+.lock-details-head {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:8px 12px; font-size:12px; font-weight:700; color:#8a6d1a;
+  border-bottom:1px solid #ead9a8; background:#fef9e7;
+}
+.lock-close { cursor:pointer; font-size:14px; color:var(--muted); }
+.lock-close:hover { color:var(--bad); }
+.lock-details-body { padding:10px 12px; font-size:12px; color:var(--text); max-height:160px; overflow-y:auto; }
+.lock-holder-row {
+  display:flex; align-items:center; gap:8px; padding:4px 0;
+  border-bottom:1px dashed var(--border);
+}
+.lock-holder-row:last-child { border-bottom:none; }
+.lock-holder-name { font-weight:600; color:var(--accent); min-width:80px; }
+.lock-holder-lines { color:var(--muted); }
+.pool-stat.done .num { color:var(--ok); }
+/* +N 重复徽章 */
+.dup-badge {
+  display:inline-block; margin-left:6px; padding:1px 7px; font-size:12px;
+  font-weight:700; color:#b45309; background:var(--warn-weak);
+  border:1px solid #f2d8a7; border-radius:10px; vertical-align:middle;
+}
+.dup-badge.hidden { display:none; }
+.pool-stat.done.clickable { cursor:pointer; position:relative; }
+.pool-stat.done.clickable:hover { background:var(--warn-weak); }
+.pool-stat.done.clickable::after {
+  content:"▶"; position:absolute; top:4px; right:6px; font-size:8px; color:var(--warn); opacity:.6;
+}
+/* 重复详情面板 */
+.dup-details {
+  margin-top:10px; border:1px solid var(--border); border-radius:8px;
+  background:#fdf6f0; overflow:hidden;
+}
+.dup-details.hidden { display:none; }
+.dup-details-head {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:8px 12px; font-size:12px; font-weight:700; color:#b45309;
+  border-bottom:1px solid #f0d9c0; background:#fdf0e2;
+}
+.dup-details-body { padding:10px 12px; font-size:12px; color:var(--text); max-height:220px; overflow-y:auto; }
+.dup-holder-row {
+  display:flex; align-items:flex-start; gap:8px; padding:5px 0;
+  border-bottom:1px dashed var(--border);
+}
+.dup-holder-row:last-child { border-bottom:none; }
+.dup-holder-name { font-weight:600; color:#b45309; min-width:110px; flex-shrink:0; }
+.dup-holder-lines { color:var(--text); word-break:break-all; }
+.dup-shown { color:var(--muted); }
+.claim-actions { margin-top:24px; display:flex; gap:10px; }
+.claim-actions button { flex:1; padding:12px; font-size:15px; }
+.claim-msg { margin-top:12px; font-size:13px; color:var(--bad); display:none; }
+
+/* 审核定向筛选 */
+.filter-toolbar { display:flex; align-items:center; gap:8px; margin-bottom:8px; }
+.filter-mini-btn {
+  font-size:11px; padding:3px 10px; border-radius:12px;
+  border:1px solid var(--border); background:#fff; color:var(--muted);
+  cursor:pointer; transition:all .15s;
+}
+.filter-mini-btn:hover { border-color:var(--accent); color:var(--accent); background:var(--accent-weak); }
+.filter-summary { font-size:11px; color:var(--muted); margin-left:auto; }
+.annotator-chips { display:flex; flex-wrap:wrap; gap:8px; }
+.annotator-chip {
+  display:inline-flex; align-items:center; gap:6px;
+  padding:6px 12px; border-radius:16px; cursor:pointer;
+  border:1.5px solid var(--border); background:#fff;
+  font-size:13px; transition:all .18s ease; user-select:none;
+}
+.annotator-chip:hover { border-color:var(--accent); transform:translateY(-1px); box-shadow:0 2px 8px rgba(59,125,251,.15); }
+.annotator-chip .chip-name { font-weight:600; color:var(--text); }
+.annotator-chip .chip-count {
+  font-size:11px; font-weight:700; color:var(--muted);
+  background:var(--bg); border-radius:8px; padding:1px 7px;
+  transition:all .18s ease;
+}
+.annotator-chip.selected {
+  border-color:var(--accent); background:var(--accent-weak);
+  box-shadow:0 2px 10px rgba(59,125,251,.22);
+}
+.annotator-chip.selected .chip-name { color:var(--accent); }
+.annotator-chip.selected .chip-count { background:var(--accent); color:#fff; }
+.annotator-chip.selected::before { content:"✓ "; color:var(--accent); font-weight:700; }
+
+/* 我的标注记录 */
+.my-records-section { margin-top:8px; }
+.my-records-panel {
+  margin-top:8px; border:1px solid var(--border); border-radius:8px; overflow:hidden; background:#fff;
+}
+.my-records-panel.hidden { display:none; }
+.my-records-foot { padding:8px 12px; border-top:1px solid var(--border); text-align:center; }
+.my-records-head {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:8px 12px; font-size:13px; font-weight:700; border-bottom:1px solid var(--border);
+  background:var(--accent-weak);
+}
+.my-records-close { cursor:pointer; font-size:14px; color:var(--muted); }
+.my-records-close:hover { color:var(--bad); }
+.my-records-body { padding:8px 12px; max-height:280px; overflow-y:auto; font-size:12px; }
+.record-row {
+  display:flex; align-items:center; gap:8px; padding:6px 0;
+  border-bottom:1px dashed var(--border);
+}
+.record-row:last-child { border-bottom:none; }
+.record-line { font-weight:700; color:var(--accent); min-width:70px; }
+.record-info { color:var(--muted); flex:1 1 auto; }
+.record-edit-btn { font-size:12px; padding:3px 10px; }
+.my-records-empty { text-align:center; color:var(--muted); padding:16px 0; }
+
+/* 记录状态徽章 */
+.record-badge {
+  font-size:11px; font-weight:600; padding:2px 8px; border-radius:10px;
+  white-space:nowrap; cursor:default; flex-shrink:0;
+}
+.record-badge.loading { color:var(--muted); background:transparent; }
+.record-badge.correct { color:var(--ok); background:var(--ok-weak); }
+.record-badge.wrong { color:var(--bad); background:var(--bad-weak); cursor:help; }
+.record-badge.pending { color:var(--warn); background:var(--warn-weak); }
+.record-badge.outdated { color:var(--muted); background:#eceef1; cursor:help; }
+
+/* ===== 第二阶段：标注工作区 ===== */
+#phase-work { flex:1; display:none; flex-direction:column; min-height:0; overflow-y:auto; }
+#phase-work.active { display:flex; }
+
+/* 工作区顶栏 */
+#work-topbar {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:8px 16px; background:var(--panel); border-bottom:1px solid var(--border);
+  box-shadow:var(--shadow); gap:12px; flex:0 0 auto;
+}
+#work-topbar .left { display:flex; align-items:center; gap:10px; }
+#work-topbar .right { display:flex; align-items:center; gap:8px; }
+.batch-progress { font-size:13px; font-weight:600; }
+.batch-progress .cur { color:var(--accent); font-size:16px; }
+.progress-bar { width:120px; height:6px; background:var(--border); border-radius:3px; overflow:hidden; }
+.progress-bar .fill { height:100%; background:var(--ok); transition:width .3s; border-radius:3px; }
+#btnUpload { background:var(--ok); color:#fff; border-color:var(--ok); font-weight:700; font-size:14px; padding:8px 20px; }
+#btnUpload:hover:not(:disabled) { background:#268a4d; }
+#btnUpload:disabled { opacity:.5; }
+#btnBackToClaim { font-size:12px; }
+#uploadStatus { font-size:12px; color:var(--muted); }
+#uploadStatus.syncing { color:var(--warn); }
+#uploadStatus.synced { color:var(--ok); }
+#uploadStatus.error { color:var(--bad); }
+
+/* 图片对：固定在顶部，不随页面滚动消失 */
+#pair-area {
+  flex:0 0 auto; padding:12px 16px; background:var(--panel); border-bottom:1px solid var(--border);
+  position:sticky; top:0; z-index:10;
+}
+.pair-cells { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+/* 审核者可见：标注者信息条 */
+.annotator-badge {
+  display:flex; align-items:center; gap:8px; margin-bottom:10px;
+  padding:6px 12px; border-radius:6px; font-size:13px;
+  background:var(--accent-weak); border:1px solid #c3d9ff; color:var(--text);
+}
+.annotator-badge.hidden { display:none; }
+.annotator-badge b { color:var(--accent); }
+.annotator-badge-icon { font-size:16px; }
+/* 回扫模式：审核意见条 */
+.review-badge {
+  display:flex; align-items:center; gap:8px; margin-bottom:10px;
+  padding:6px 12px; border-radius:6px; font-size:13px;
+  background:#f2f8f4; border:1px solid #bfe3c9; color:var(--text);
+}
+.review-badge.hidden { display:none; }
+.review-badge-icon { font-size:16px; }
+.review-badge .rb-verdict { font-weight:700; }
+.review-badge .rb-verdict.ok { color:var(--ok); }
+.review-badge .rb-verdict.bad { color:var(--bad); }
+.review-badge .rb-reason { color:var(--muted); }
+.review-badge.wrong { background:#fdf3f2; border-color:#f0c3bf; }
+.cell-wrap { position:relative; }
+.cell {
+  position:relative; width:100%; height:500px; background:#111;
+  border-radius:8px; overflow:hidden; display:flex; align-items:center; justify-content:center;
+}
+.cell img { max-width:100%; max-height:100%; object-fit:contain; }
+.cell .label {
+  position:absolute; top:6px; left:8px; font-size:11px; font-weight:700;
+  color:#fff; background:rgba(0,0,0,.55); padding:2px 8px; border-radius:4px;
+}
+.b-cell svg { position:absolute; inset:0; width:100%; height:100%; }
+.img-tip {
+  position:absolute; bottom:6px; right:8px; font-size:10px; color:rgba(255,255,255,.6);
+}
+
+/* 整体不一致描述 */
+#note-bar {
+  flex:0 0 auto; background:var(--panel); border-bottom:1px solid var(--border);
+  padding:10px 16px 12px;
+}
+#note-bar .note-label { display:block; font-size:12px; font-weight:700; margin-bottom:6px; }
+#note-bar .note-label::before {
+  content:""; display:inline-block; width:4px; height:12px;
+  background:var(--accent); border-radius:2px; margin-right:6px; vertical-align:-1px;
+}
+#globalNote {
+  width:100%; padding:8px 12px; border:1px solid var(--border); border-radius:6px;
+  font-size:13px; font-family:inherit; resize:vertical; min-height:40px;
+}
+#globalNote:focus { outline:none; border-color:var(--accent); box-shadow:0 0 0 2px var(--accent-weak); }
+
+/* 标注行列表（不再独立滚动，随页面一起滚） */
+#anno-panel { flex:0 0 auto; padding:12px 16px; }
+.anno-empty { text-align:center; color:var(--muted); padding:40px 0; font-size:14px; }
+.anno-row {
+  display:flex; align-items:center; gap:8px; padding:8px 10px; margin-bottom:8px;
+  background:var(--panel); border:1px solid var(--border); border-radius:8px;
+  box-shadow:var(--shadow); transition:border-color .15s;
+}
+.anno-row.editing { border-color:var(--accent); box-shadow:0 0 0 2px var(--accent-weak); }
+.anno-row.invalid { border-color:var(--bad); box-shadow:0 0 0 2px var(--bad-weak); }
+.anno-row .color-dot { flex:0 0 14px; width:14px; height:14px; border-radius:3px; }
+.anno-row .edit-btn {
+  flex:0 0 auto; padding:4px 8px; font-size:12px; border-radius:4px;
+  border:1px solid var(--border); background:#fff; cursor:pointer;
+}
+.anno-row .edit-btn:hover { border-color:var(--accent); color:var(--accent); }
+.anno-row .edit-btn.active { background:var(--accent); color:#fff; border-color:var(--accent); }
+.anno-row .coord {
+  flex:0 0 auto; font-family:'SF Mono',Consolas,monospace; font-size:12px;
+  color:var(--muted); min-width:150px;
+}
+.anno-row .action-select {
+  flex:0 0 auto; padding:5px 8px; border:1px solid var(--border); border-radius:6px;
+  font-size:13px; background:#fff; cursor:pointer;
+}
+.anno-row .action-input {
+  flex:1 1 auto; padding:5px 10px; border:1px solid var(--border); border-radius:6px;
+  font-size:13px; font-family:inherit; min-width:120px;
+}
+.anno-row .action-input:focus, .anno-row .action-select:focus { outline:none; border-color:var(--accent); }
+.anno-row .dir3d-tag {
+  flex:0 0 auto; font-size:11px; color:#8E24AA; background:#f3e5f5;
+  padding:2px 6px; border-radius:4px;
+}
+.anno-row .del-btn {
+  flex:0 0 auto; padding:4px 8px; font-size:12px; border-radius:4px;
+  border:1px solid var(--border); background:#fff; color:var(--bad); cursor:pointer;
+}
+.anno-row .del-btn:hover { background:var(--bad-weak); border-color:var(--bad); }
+
+/* 审核面板 */
+#review-panel {
+  flex:0 0 auto; margin:0 16px 12px; padding:12px 14px;
+  background:linear-gradient(180deg, #fffdf5 0%, #fff 100%);
+  border:1px solid #ead9a8; border-left:4px solid var(--warn);
+  border-radius:8px; box-shadow:var(--shadow);
+}
+#review-panel .review-head { display:flex; align-items:center; gap:10px; margin-bottom:10px; }
+#review-panel .review-title { font-size:14px; font-weight:700; color:#8a6d1a; }
+#review-panel .review-by { font-size:12px; color:var(--muted); }
+#review-panel .verdict-row { display:flex; gap:10px; margin-bottom:10px; }
+#review-panel .verdict {
+  flex:1; padding:10px 0; font-size:15px; font-weight:700;
+  border-radius:8px; border:2px solid var(--border); background:#fff; transition:all .15s;
+}
+#review-panel .verdict.correct { color:var(--ok); }
+#review-panel .verdict.correct:hover { border-color:var(--ok); background:var(--ok-weak); }
+#review-panel .verdict.correct.active { background:var(--ok); border-color:var(--ok); color:#fff; }
+#review-panel .verdict.wrong { color:var(--bad); }
+#review-panel .verdict.wrong:hover { border-color:var(--bad); background:var(--bad-weak); }
+#review-panel .verdict.wrong.active { background:var(--bad); border-color:var(--bad); color:#fff; }
+#reviewReason {
+  width:100%; padding:8px 12px; border:1px solid var(--border); border-radius:6px;
+  font-size:13px; font-family:inherit; resize:vertical; min-height:40px;
+}
+#reviewReason:focus { outline:none; border-color:var(--warn); box-shadow:0 0 0 2px var(--warn-weak); }
+#reviewReason.invalid { border-color:var(--bad); box-shadow:0 0 0 2px var(--bad-weak); }
+
+/* 顶栏分隔线 */
+.tb-sep { width:1px; height:20px; background:var(--border); margin:0 2px; flex:0 0 auto; }
+.arrow-scale-label {
+  display:flex; align-items:center; gap:4px; font-size:12px; color:var(--muted); white-space:nowrap;
+}
+.arrow-scale-label input[type="range"] {
+  width:80px; cursor:pointer; accent-color:var(--accent);
+}
+#arrowScaleVal { font-size:11px; min-width:24px; text-align:center; }
+.bg-btn {
+  font-size:12px; padding:5px 10px; border:1px solid var(--border);
+  border-radius:6px; background:#fff; cursor:pointer;
+  transition:all .15s;
+}
+.bg-btn:hover:not(:disabled) { border-color:#009688; background:#e0f5f3; }
+.bg-btn.active { background:#009688; color:#fff; border-color:#009688; font-weight:600; }
+.bg-btn:disabled { display:none; }
+#navInfo { font-size:12px; color:var(--muted); }
+#navDots { display:flex; gap:3px; flex-wrap:wrap; max-width:300px; }
+#navDots .dot {
+  width:10px; height:10px; border-radius:2px; background:var(--border); cursor:pointer;
+  transition:background .15s;
+}
+#navDots .dot.done { background:var(--ok); }
+#navDots .dot.current { background:var(--accent); box-shadow:0 0 0 2px var(--accent-weak); }
+
+/* ===== Toast ===== */
+#toast {
+  position:fixed; bottom:80px; left:50%; transform:translateX(-50%);
+  padding:8px 20px; border-radius:6px; background:var(--bad); color:#fff;
+  font-size:13px; z-index:9999; opacity:0; transition:opacity .3s; pointer-events:none;
+}
+#toast.show { opacity:1; }
+#toast.success { background:var(--ok); }
+#toast.warn { background:var(--warn); }
+
+/* ===== 加载遮罩 ===== */
+#loading-overlay {
+  position:fixed; inset:0; background:rgba(255,255,255,0.88);
+  z-index:9999; display:flex; align-items:center; justify-content:center;
+  flex-direction:column; gap:16px;
+}
+#loading-overlay.hidden { display:none; }
+#loading-overlay .spinner {
+  width:40px; height:40px; border:4px solid var(--border);
+  border-top-color:var(--accent); border-radius:50%;
+  animation:spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform:rotate(360deg); } }
+#loading-overlay .loading-text { color:var(--muted); font-size:14px; }
+
+/* ===== 登录模态框 ===== */
+#modal-login-overlay {
+  position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:9100;
+  display:none; align-items:center; justify-content:center;
+}
+#modal-login-overlay.show { display:flex; }
+#modal-login {
+  background:#fff; border-radius:12px; padding:32px; width:440px; max-width:90vw;
+  text-align:center; box-shadow:0 8px 32px rgba(0,0,0,0.2);
+}
+#modal-login h3 { margin:0 0 8px; font-size:18px; }
+#modal-login .login-sub { color:var(--muted); font-size:13px; margin-bottom:20px; }
+#modal-login .login-error { color:var(--bad); font-size:13px; margin-top:12px; display:none; }
+#modal-login .login-cancel { margin-top:16px; font-size:13px; color:var(--muted); cursor:pointer; text-decoration:underline; }
+#patInput:focus, #annotatorNameInput:focus { outline:none; border-color:var(--accent); }
+
+/* ===== 数据集双重确认弹窗 ===== */
+#modal-confirm-overlay {
+  position:fixed; inset:0; background:rgba(15,20,30,0.55); z-index:9200;
+  display:none; align-items:center; justify-content:center;
+  backdrop-filter:blur(2px);
+}
+#modal-confirm-overlay.show { display:flex; animation:confirmFade .18s ease; }
+@keyframes confirmFade { from { opacity:0; } to { opacity:1; } }
+#modal-confirm {
+  background:#fff; border-radius:14px; width:420px; max-width:92vw;
+  box-shadow:0 16px 48px rgba(0,0,0,0.28); overflow:hidden;
+  animation:confirmPop .22s cubic-bezier(.2,.9,.3,1.2);
+}
+@keyframes confirmPop { from { transform:scale(.92) translateY(8px); opacity:0; } to { transform:scale(1) translateY(0); opacity:1; } }
+#modal-confirm .confirm-band {
+  padding:18px 24px 14px; color:#fff;
+  display:flex; align-items:center; gap:12px;
+}
+#modal-confirm .confirm-band .band-icon { font-size:26px; line-height:1; }
+#modal-confirm .confirm-band .band-title { font-size:17px; font-weight:800; letter-spacing:.3px; }
+#modal-confirm .confirm-band .band-sub { font-size:12px; opacity:.85; margin-top:2px; }
+#modal-confirm.tone-claim .confirm-band { background:linear-gradient(120deg,#2f6fe4,#3b82f6); }
+#modal-confirm.tone-upload .confirm-band { background:linear-gradient(120deg,#1f9d55,#2eb872); }
+#modal-confirm .confirm-body { padding:20px 24px 8px; }
+#modal-confirm .confirm-ds-label { font-size:11px; font-weight:700; color:var(--muted); letter-spacing:1px; text-transform:uppercase; }
+#modal-confirm .confirm-ds-name {
+  margin:6px 0 14px; padding:10px 14px; border-radius:9px;
+  font-size:19px; font-weight:800; text-align:center; letter-spacing:.3px;
+  border:2px dashed; transition:all .15s;
+}
+#modal-confirm.tone-claim .confirm-ds-name { color:#2563eb; border-color:#93c5fd; background:#eff6ff; }
+#modal-confirm.tone-upload .confirm-ds-name { color:#15803d; border-color:#86efac; background:#f0fdf4; }
+#modal-confirm .confirm-rows { font-size:13px; color:var(--text); }
+#modal-confirm .confirm-rows .crow {
+  display:flex; justify-content:space-between; align-items:center;
+  padding:7px 2px; border-bottom:1px dashed var(--border);
+}
+#modal-confirm .confirm-rows .crow:last-child { border-bottom:none; }
+#modal-confirm .confirm-rows .ck { color:var(--muted); }
+#modal-confirm .confirm-rows .cv { font-weight:700; }
+#modal-confirm .confirm-rows .cv.hl { color:#2563eb; }
+#modal-confirm .confirm-warn {
+  margin:12px 0 0; padding:9px 12px; border-radius:8px;
+  background:#fffbeb; border:1px solid #fde68a; color:#92400e;
+  font-size:12px; line-height:1.5; display:none;
+}
+#modal-confirm .confirm-warn.show { display:block; }
+#modal-confirm .confirm-actions { display:flex; gap:10px; padding:18px 24px 22px; }
+#modal-confirm .confirm-actions button {
+  flex:1; padding:11px 0; border-radius:9px; font-size:14px; font-weight:700;
+  border:1.5px solid var(--border); background:#fff; color:var(--text);
+  cursor:pointer; transition:all .15s;
+}
+#modal-confirm .confirm-actions #btnConfirmCancel:hover { border-color:var(--muted); background:var(--bg); }
+#modal-confirm .confirm-actions #btnConfirmOk { color:#fff; border-color:transparent; }
+#modal-confirm.tone-claim .confirm-actions #btnConfirmOk { background:#2f6fe4; }
+#modal-confirm.tone-claim .confirm-actions #btnConfirmOk:hover { background:#2563eb; box-shadow:0 4px 14px rgba(47,111,228,.4); }
+#modal-confirm.tone-upload .confirm-actions #btnConfirmOk { background:#1f9d55; }
+#modal-confirm.tone-upload .confirm-actions #btnConfirmOk:hover { background:#178a48; box-shadow:0 4px 14px rgba(31,157,85,.4); }
+
+/* ===== 3D 球体编辑器模态框 ===== */
+#modal-3d-overlay {
+  position:fixed; top:0; left:0; width:100%; height:100%;
+  background:rgba(0,0,0,0.6); z-index:9000;
+  display:none; align-items:center; justify-content:center;
+}
+#modal-3d-overlay.show { display:flex; }
+#modal-3d {
+  background:#0a0a18; border:1px solid #555; border-radius:12px;
+  padding:16px; width:680px; max-width:95vw;
+}
+#modal-3d h3 { color:#7ec8e3; margin:0 0 8px; font-size:16px; text-align:center; }
+#modal-3d .modal-body { display:flex; gap:12px; align-items:flex-start; }
+#modal-3d canvas { display:block; border-radius:8px; background:#0a0a18; }
+#modal-3d .preview-wrap { flex:0 0 240px; }
+#modal-3d .preview-wrap canvas { width:240px; height:240px; border:1px solid #444; border-radius:8px; }
+#modal-3d .preview-label { text-align:center; color:#999; font-size:11px; margin-top:4px; }
+#modal-3d .modal-info {
+  text-align:center; margin:8px 0; padding:6px; border-radius:6px;
+  font-size:13px; font-weight:bold; transition:all 0.15s;
+}
+#modal-3d .modal-tip { text-align:center; color:#999; font-size:11px; margin:6px 0; }
+#modal-3d .modal-btns { display:flex; gap:8px; justify-content:center; margin-top:10px; }
+#modal-3d .modal-btns button {
+  padding:8px 20px; border-radius:6px; border:2px solid #555;
+  background:rgba(30,30,50,0.8); color:#ddd; font-size:14px; font-weight:bold;
+  cursor:pointer; transition:all 0.15s;
+}
+#modal-3d .modal-btns button:hover { border-color:#888; color:#fff; }
+#modal-3d .modal-btns .btn-ok { border-color:#4af; color:#fff; background:rgba(40,80,140,0.6); }
+#modal-3d .legend3d {
+  font-size:11px; color:#888; line-height:1.6; margin-top:8px; padding-top:8px;
+  border-top:1px solid #333;
+}
+
+/* ===== 本地管理员入口 ===== */
+.admin-local-tag {
+  display:inline-flex; align-items:center; margin-bottom:14px; padding:5px 9px;
+  border:1px solid #b9d0fb; border-radius:6px; background:var(--accent-weak);
+  color:#285cae; font-size:12px; font-weight:700;
+}
+.admin-help {
+  padding:10px 12px; border-left:3px solid var(--accent); background:#f7faff;
+  color:var(--muted); font-size:12px; line-height:1.65; margin-bottom:18px;
+}
+#bboxHistogram { display:flex; flex-wrap:wrap; gap:8px; min-height:34px; }
+.bbox-chip {
+  display:inline-flex; align-items:center; gap:6px; padding:7px 10px;
+  border:1px solid var(--border); border-radius:6px; background:#fff;
+  color:var(--text); cursor:pointer; font-size:12px;
+}
+.bbox-chip:hover, .bbox-chip.active { border-color:var(--accent); background:var(--accent-weak); }
+.bbox-chip strong { color:var(--accent); font-family:'SF Mono',Consolas,monospace; }
+.bbox-chip span { color:var(--muted); }
+#matchPreview {
+  max-height:150px; overflow:auto; padding:8px 10px; border:1px solid var(--border);
+  border-radius:6px; background:var(--bg); font:12px/1.65 'SF Mono',Consolas,monospace;
+  color:var(--muted);
+}
+#matchPreview .preview-record { display:flex; gap:10px; }
+#matchPreview .preview-record .line { min-width:76px; color:var(--accent); font-weight:700; }
+#matchPreview .preview-record .author { color:var(--text); }
+#localErrorBox {
+  display:none; margin-top:12px; padding:9px 11px; border:1px solid #f0b7b2;
+  border-radius:6px; color:var(--bad); background:var(--bad-weak); font-size:12px;
+}
+#phase-claim .role-picker,
+#phase-claim .admin-hide,
+#phase-claim #annotatorFilterSection,
+#phase-claim .lock-details,
+#phase-claim .dup-details,
+#phase-claim .my-records-section { display:none !important; }
+.pool-stat.locked { cursor:default; }
+.pool-stat.locked:hover { background:var(--bg); }
+.pool-stat.locked::after { content:none; }
+#work-topbar .right { min-width:180px; justify-content:flex-end; }
+@media (max-width:900px) {
+  body { overflow:auto; }
+  #work-topbar { align-items:flex-start; flex-direction:column; }
+  #work-topbar .left, #work-topbar .right { width:100%; flex-wrap:wrap; }
+  #work-topbar .right { justify-content:flex-start; }
+  .pair-cells { grid-template-columns:1fr; }
+  .cell { height:min(58vw,420px); min-height:260px; }
+  #pair-area { position:relative; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== 第一阶段：领取任务 ===== -->
+<div id="phase-claim">
+  <div class="claim-card">
+    <div class="admin-local-tag">管理员本地工具</div>
+    <h2>按 BBox 数量分类修改</h2>
+    <div class="subtitle">加载已有标注，批量修改后直接写回当前本地仓库</div>
+    <div class="admin-help">不需要 PAT，不读取审核，不调用 GitHub API，也不会创建新的标注文件。保存前可在 Git 中查看全部改动。</div>
+
+    <div class="claim-section admin-hide">
+      <label>你的角色</label>
+      <div class="role-picker">
+        <label class="role-card">
+          <input type="radio" name="roleRadio" value="annotator" checked />
+          <div class="role-card-body">
+            <span class="role-emoji">✍️</span>
+            <span class="role-name">标注者</span>
+            <span class="role-desc">领取未标注数据，画框填动作</span>
+          </div>
+        </label>
+        <label class="role-card">
+          <input type="radio" name="roleRadio" value="reviewer" />
+          <div class="role-card-body">
+            <span class="role-emoji">⚖️</span>
+            <span class="role-name">审核者</span>
+            <span class="role-desc">领取已标注数据，判定正确/错误</span>
+          </div>
+        </label>
+      </div>
+    </div>
+
+    <div class="claim-section">
+      <label>数据集</label>
+      <select id="datasetSelect"></select>
+    </div>
+
+    <div class="claim-section">
+      <label>BBox 数量分布</label>
+      <div id="bboxHistogram"><span class="muted">正在扫描本地标注...</span></div>
+    </div>
+
+    <div class="claim-section">
+      <label>本地索引</label>
+      <div class="pool-stats" id="poolStats">
+        <div class="pool-stat"><div class="num" id="statTotal">-</div><div class="lbl">标注文件</div></div>
+        <div class="pool-stat done" id="doneStatBox">
+          <div class="num"><span id="statDone">-</span><span class="dup-badge hidden" id="dupBadge">+0</span></div>
+          <div class="lbl">BBox 分类</div>
+        </div>
+        <div class="pool-stat locked" id="lockedStatBox"><div class="num" id="statLocked">-</div><div class="lbl">当前匹配</div></div>
+        <div class="pool-stat"><div class="num" id="statAvail">-</div><div class="lbl">异常文件</div></div>
+      </div>
+      <!-- 锁详情（点击"锁定中"展开） -->
+      <div class="lock-details hidden" id="lockDetails">
+        <div class="lock-details-head">🔒 锁定详情 <span class="lock-close" id="lockDetailsClose">✕</span></div>
+        <div class="lock-details-body" id="lockDetailsBody">暂无锁定</div>
+      </div>
+      <!-- 重复详情（点击"已完成"的 +N 徽章展开） -->
+      <div class="dup-details hidden" id="dupDetails">
+        <div class="dup-details-head">⚠️ 重复提交详情 <span class="muted" style="font-weight:400;">（主界面未显示的副本）</span> <span class="lock-close" id="dupDetailsClose">✕</span></div>
+        <div class="dup-details-body" id="dupDetailsBody">暂无重复</div>
+      </div>
+    </div>
+
+    <!-- 审核定向筛选（仅审核角色可见） -->
+    <div class="claim-section hidden" id="annotatorFilterSection">
+      <label>定向筛选标注者 <span class="muted">（可多选，不选 = 全部）</span></label>
+      <div class="filter-toolbar">
+        <button type="button" class="filter-mini-btn" id="btnFilterAll">全选</button>
+        <button type="button" class="filter-mini-btn" id="btnFilterNone">清空</button>
+        <span class="filter-summary" id="filterSummary"></span>
+      </div>
+      <div class="annotator-chips" id="annotatorChips">
+        <span class="muted">加载中...</span>
+      </div>
+    </div>
+
+    <div class="claim-section">
+      <label for="claimCount">要修改的 BBox 数量</label>
+      <input type="number" id="claimCount" min="0" step="1" value="1" placeholder="例如：2" />
+    </div>
+
+    <div class="claim-section">
+      <label>匹配预览</label>
+      <div id="matchPreview">选择 BBox 数量后显示匹配记录</div>
+    </div>
+
+    <div class="claim-actions">
+      <button id="btnRefreshStats" class="ghost">刷新本地索引</button>
+      <button id="btnClaim" class="primary">加载全部匹配记录</button>
+    </div>
+    <div class="claim-msg" id="claimMsg"></div>
+    <div id="localErrorBox"></div>
+
+    <!-- 我的标注记录 -->
+    <div class="my-records-section">
+      <button id="btnMyRecords" class="ghost" style="width:100%;margin-top:8px;">📋 我的标注记录</button>
+      <div class="my-records-panel hidden" id="myRecordsPanel">
+        <div class="my-records-head">我的标注记录 <span class="my-records-close" id="myRecordsClose">✕</span></div>
+        <div class="my-records-body" id="myRecordsBody">加载中...</div>
+        <div class="my-records-foot">
+          <button id="btnReclaimAll" class="primary" style="font-size:13px;padding:8px 16px;">🔄 回扫全部记录</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 第二阶段：标注工作区 ===== -->
+<div id="phase-work">
+  <div id="work-topbar">
+    <div class="left">
+      <button id="btnBackToClaim" class="ghost">← 返回筛选</button>
+      <span class="batch-progress">
+        <span class="cur" id="batchCur">0</span> / <span id="batchTotal">0</span> 已修改
+      </span>
+      <div class="progress-bar"><div class="fill" id="progressFill" style="width:0%"></div></div>
+      <span id="navInfo"></span>
+      <span class="tb-sep"></span>
+      <label class="arrow-scale-label" title="调整箭头显示大小">箭头
+        <input type="range" id="arrowScale" min="0.5" max="3" step="0.1" value="1" />
+        <span id="arrowScaleVal">1.0</span>
+      </label>
+      <span class="tb-sep"></span>
+      <button id="btnPrev" class="ghost">← 上一条</button>
+      <button id="btnNextItem" class="primary">下一条 →</button>
+      <span class="tb-sep"></span>
+      <button id="btnBgGlobal" class="bg-btn" title="整体背景不一致">整体背景</button>
+      <button id="btnBgLocal" class="bg-btn" title="激活后下一个框标记为局部背景">局部背景</button>
+      <button id="btnBgAmbiguous" class="bg-btn" title="无法判断或背景一致">无法判断/一致</button>
+    </div>
+    <div class="right">
+      <div id="navDots"></div>
+      <span class="tb-sep"></span>
+      <span id="uploadStatus"></span>
+      <button id="btnUpload">保存本批修改</button>
+      <button id="btnEditSave" class="primary" style="display:none;">💾 保存修改</button>
+    </div>
+  </div>
+
+  <!-- 图片对 -->
+  <div id="pair-area">
+    <!-- 审核者可见：标注者信息条 -->
+    <div class="annotator-badge hidden" id="annotatorBadge">
+      <span class="annotator-badge-icon">✍️</span>
+      <span>当前标注文件：<b id="annotatorBadgeName">-</b></span>
+    </div>
+    <!-- 回扫模式可见：审核者意见条 -->
+    <div class="review-badge hidden" id="reviewBadge">
+      <span class="review-badge-icon">⚖️</span>
+      <span>审核意见：<b class="rb-verdict" id="rbVerdict">-</b><span class="rb-reason" id="rbReason"></span></span>
+    </div>
+    <div class="pair-cells">
+      <div class="cell-wrap">
+        <div class="cell">
+          <img id="imgA" alt="A" />
+          <span class="label">A（参考）</span>
+        </div>
+      </div>
+      <div class="cell-wrap">
+        <div class="cell b-cell" id="cellB">
+          <img id="imgB" alt="B" />
+          <svg id="svgB" xmlns="http://www.w3.org/2000/svg"></svg>
+          <span class="label">B（标注）</span>
+          <span class="img-tip">拖拽画框 · 点框左侧✎可编辑</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 整体不一致描述 -->
+  <div id="note-bar">
+    <label class="note-label" for="globalNote">整体不一致描述</label>
+    <textarea id="globalNote" placeholder="描述两张图之间的整体不一致"></textarea>
+  </div>
+
+  <!-- 标注行列表 -->
+  <div id="anno-panel">
+    <div class="anno-empty" id="annoEmpty">在右侧 B 图上拖拽画框，开始标注</div>
+  </div>
+
+  <!-- 审核面板 -->
+  <div id="review-panel" class="hidden">
+    <div class="review-head">
+      <span class="review-title">⚖ 审核判定</span>
+      <span class="review-by" id="reviewBy"></span>
+    </div>
+    <div class="verdict-row">
+      <button id="btnVerdictCorrect" class="verdict correct">✓ 正确</button>
+      <button id="btnVerdictWrong" class="verdict wrong">✗ 错误</button>
+    </div>
+    <textarea id="reviewReason" placeholder="判定为错误时，请填写原因"></textarea>
+  </div>
+
+</div>
+
+<div id="toast"></div>
+
+<!-- 加载遮罩 -->
+<div id="loading-overlay" class="hidden">
+  <div class="spinner"></div>
+  <div class="loading-text" id="loadingText">正在加载...</div>
+</div>
+
+<!-- 登录模态框 -->
+<div id="modal-login-overlay">
+  <div id="modal-login">
+    <h3>🔑 GitHub 登录</h3>
+    <div class="login-sub">使用 Personal Access Token 认证，Token 仅保存在本地浏览器</div>
+    <div style="text-align:left;margin:16px 0;">
+      <label style="font-size:13px;font-weight:600;display:block;margin-bottom:6px;">Personal Access Token</label>
+      <input type="password" id="patInput" placeholder="ghp_xxxx 或 github_pat_xxxx"
+             style="width:100%;padding:10px 12px;border:1.5px solid var(--border);border-radius:6px;font-size:14px;font-family:monospace;box-sizing:border-box;" />
+      <div style="font-size:12px;color:var(--muted);margin-top:8px;line-height:1.6;">
+        需要 <b>Contents (Read and Write)</b> 权限（Classic PAT 勾 repo）
+      </div>
+    </div>
+    <div style="text-align:left;margin:16px 0;">
+      <label style="font-size:13px;font-weight:600;display:block;margin-bottom:6px;">你的名字（标注标识）</label>
+      <input type="text" id="annotatorNameInput" placeholder="例如：张三、李四、annotator_01"
+             style="width:100%;padding:10px 12px;border:1.5px solid var(--border);border-radius:6px;font-size:14px;box-sizing:border-box;" />
+    </div>
+    <button id="btnStartLogin" class="primary" style="font-size:15px;padding:10px 32px;width:100%;">验证并登录</button>
+    <div class="login-error" id="loginError"></div>
+    <div class="login-cancel" id="loginCancel">取消</div>
+  </div>
+</div>
+
+<!-- 数据集双重确认弹窗 -->
+<div id="modal-confirm-overlay">
+  <div id="modal-confirm" class="tone-claim">
+    <div class="confirm-band">
+      <span class="band-icon" id="confirmIcon">📥</span>
+      <div>
+        <div class="band-title" id="confirmTitle">领取任务</div>
+        <div class="band-sub" id="confirmSub">请确认操作的数据集</div>
+      </div>
+    </div>
+    <div class="confirm-body">
+      <div class="confirm-ds-label">当前数据集</div>
+      <div class="confirm-ds-name" id="confirmDsName">-</div>
+      <div class="confirm-rows" id="confirmRows"></div>
+      <div class="confirm-warn" id="confirmWarn"></div>
+    </div>
+    <div class="confirm-actions">
+      <button id="btnConfirmCancel">取消</button>
+      <button id="btnConfirmOk">确认</button>
+    </div>
+  </div>
+</div>
+
+<!-- 3D 球体编辑器模态框 -->
+<div id="modal-3d-overlay">
+  <div id="modal-3d">
+    <h3>🎯 3D 移动方向标注</h3>
+    <div class="modal-body">
+      <div>
+        <canvas id="canvas-3d" width="400" height="400"></canvas>
+        <div class="preview-label">3D 球体（拖拽旋转）</div>
+      </div>
+      <div class="preview-wrap">
+        <canvas id="canvas-preview" width="240" height="240"></canvas>
+        <div class="preview-label">框选区域原图</div>
+      </div>
+    </div>
+    <div class="modal-info" id="modal-3d-info">朝向: 计算中...</div>
+    <div class="modal-tip">左键拖拽 = 旋转球体 | 滚轮 = 缩放 | 右侧为框选区域原图</div>
+    <div class="legend3d">
+      <span style="color:#ff6666">●</span> 亮红/粗 = 箭头朝你(出屏) &nbsp;
+      <span style="color:#6666aa">●</span> 暗蓝/细 = 箭头远离你(入屏)<br>
+      <span style="color:#ffaa00">◆</span> 黄色菱形 = 箭头在球面切平面上
+    </div>
+    <div class="modal-btns">
+      <button id="modal-3d-cancel">取消</button>
+      <button id="modal-3d-ok" class="btn-ok">确定</button>
+    </div>
+  </div>
+</div>
+
+<script>
+"use strict";
+(function () {
+
+// ===== 常量 =====
+const SVG_NS = "http://www.w3.org/2000/svg";
+const ACTION_COLORS = {
+  add:    ["#2E7D32", "#4CAF50", "#81C784", "#A5D6A7"],
+  delete: ["#C62828", "#E53935", "#EF5350", "#EF9A9A"],
+  replace:["#795548", "#8D6E63", "#A1887F", "#BCAAA4"],
+  move:   ["#1565C0", "#2196F3", "#64B5F6", "#90CAF9"],
+  move3d: ["#6A1B9A", "#8E24AA", "#AB47BC", "#CE93D8"],
+  rotate: ["#E65100", "#FF9800", "#FFB74D", "#FFCC80"],
+  cw:     ["#E65100", "#FF9800", "#FFB74D", "#FFCC80"],  // 旧数据兼容
+  ccw:    ["#E65100", "#FF9800", "#FFB74D", "#FFCC80"],  // 旧数据兼容
+  neutral:["#FFC107", "#FFB300", "#FFA000", "#FF8F00"],
+  custom: ["#5D4037", "#795548", "#8D6E63", "#A1887F"],
+  bg_local:["#009688", "#26A69A", "#4DB6AC", "#80CBC4"],  // 青绿色系（背景框）
+};
+const ACTION_LABELS = {
+  add:"新增", delete:"删除", replace:"替换", move:"2D移动",
+  rotate:"旋转", cw:"旋转", ccw:"旋转", move3d:"3D移动", custom:"自定义文字", neutral:"未指定"
+};
+// 手势阈值（与原始 3D 模板一致）
+const GESTURE = {
+  DRAG_THRESH: 5,     // 小于此距离视为点击而非拖拽
+  DBLCLICK_MS: 350,   // 双击间隔
+  DBLCLICK_MOVE: 6,   // 双击允许的最大位移
+  LINE_MIN_LEN: 15,   // 划线删除的最小长度
+};
+
+// 箭头显示缩放（滑块控制，数据只存坐标点不变）
+let ARROW_SCALE = 1;
+
+// ===== 状态 =====
+const $ = (id) => document.getElementById(id);
+const svgB = $("svgB");
+const cellB = $("cellB");
+const imgB = $("imgB");
+const imgA = $("imgA");
+const annoPanel = $("anno-panel");
+
+const STATE = {
+  role: "annotator",
+  samples: [],          // 当前数据集全部样本
+  sampleByLine: {},
+  // 批量任务
+  batch: [],            // 领取的样本列表 [{line, remotes, locals}]
+  batchDatasetId: null, // 领取批次时的数据集 ID（上传时校验，防止跨数据集污染）
+  batchIdx: 0,          // 当前正在标注的索引
+  batchResults: {},     // { line: {boxes, note, verdict, reason, bgGlobal, bgLocalMode} } 本地暂存
+  batchDone: new Set(), // 已完成的行号
+  dirtyKeys: new Set(), // 本地管理员模式：内容实际发生变化的文件路径
+  imgNatW: 0, imgNatH: 0,
+  // 当前图的框
+  boxes: [],
+  nextBoxId: 1,
+  undoStack: [],
+  editingBoxId: null,
+  lastClick: null,      // 双击检测 { time, pos, boxId }
+  // 背景不一致
+  bgGlobal: false,      // 整体背景不一致
+  bgLocalMode: false,   // 局部背景模式：激活后下一个框自动成为 bg_local 类型
+  bgAmbiguous: false,   // 无法判断/一致（全局标记，和 bgGlobal 同层面）
+  // 编辑模式
+  editMode: false,      // true=正在修改已提交的记录
+  editLine: null,       // 正在编辑的行号
+  editSha: null,        // 已有文件的 sha（用于覆盖更新）
+  editIsReview: false,  // 正在编辑的是审核还是标注
+  // 回扫模式：批量修改自己已有的全部标注记录，上传时走 updateMyAnnotation 而非 uploadBatch
+  reclaimMode: false,
+  // 审核
+  reviewVerdict: null,
+  reviewAnnotator: "",
+};
+
+// ===== 工具函数 =====
+function showToast(msg, type) {
+  const t = $("toast");
+  t.textContent = msg;
+  t.className = (type || "") + " show";
+  clearTimeout(t._timer);
+  t._timer = setTimeout(() => { t.className = ""; }, 2500);
+}
+function showLoading(text) {
+  $("loadingText").textContent = text || "加载中...";
+  $("loading-overlay").classList.remove("hidden");
+}
+function hideLoading() { $("loading-overlay").classList.add("hidden"); }
+
+function isReviewer() { return STATE.role === "reviewer"; }
+
+// ===== 背景不一致 =====
+function toggleBgGlobal() {
+  STATE.bgGlobal = !STATE.bgGlobal;
+  if (STATE.bgGlobal) { STATE.bgLocalMode = false; STATE.bgAmbiguous = false; }
+  updateBgBtnUI();
+  renderAll();
+}
+function toggleBgLocalMode() {
+  STATE.bgLocalMode = !STATE.bgLocalMode;
+  if (STATE.bgLocalMode) { STATE.bgGlobal = false; STATE.bgAmbiguous = false; }
+  updateBgBtnUI();
+  showToast(STATE.bgLocalMode ? "局部背景已激活，下一个框将标记为背景" : "局部背景已关闭", "info");
+}
+function toggleBgAmbiguous() {
+  STATE.bgAmbiguous = !STATE.bgAmbiguous;
+  if (STATE.bgAmbiguous) { STATE.bgGlobal = false; STATE.bgLocalMode = false; }
+  updateBgBtnUI();
+  renderAll();
+}
+function updateBgBtnUI() {
+  $("btnBgGlobal").classList.toggle("active", STATE.bgGlobal);
+  $("btnBgLocal").classList.toggle("active", STATE.bgLocalMode);
+  $("btnBgAmbiguous").classList.toggle("active", STATE.bgAmbiguous);
+}
+
+function getBoxColor(boxId, action) {
+  const shades = ACTION_COLORS[action] || ACTION_COLORS.neutral;
+  let idx = 0;
+  for (const b of STATE.boxes) {
+    if ((b.action || "neutral") === (action || "neutral")) {
+      if (b.boxId === boxId) break;
+      idx++;
+    }
+  }
+  return shades[idx % shades.length];
+}
+
+function pushUndo() {
+  STATE.undoStack.push(JSON.parse(JSON.stringify(STATE.boxes)));
+  if (STATE.undoStack.length > 30) STATE.undoStack.shift();
+}
+function undo() {
+  if (!STATE.undoStack.length) { showToast("没有可撤销的操作", "warn"); return; }
+  STATE.boxes = STATE.undoStack.pop();
+  renderAll();
+}
+
+function imgToSvg(ix, iy) {
+  const cw = cellB.clientWidth, ch = cellB.clientHeight;
+  const nw = STATE.imgNatW, nh = STATE.imgNatH;
+  if (!nw || !nh) return { x: ix, y: iy };
+  const scale = Math.min(cw / nw, ch / nh);
+  const dw = nw * scale, dh = nh * scale;
+  const ox = (cw - dw) / 2, oy = (ch - dh) / 2;
+  return { x: ox + ix * scale, y: oy + iy * scale };
+}
+function svgToImg(sx, sy) {
+  const cw = cellB.clientWidth, ch = cellB.clientHeight;
+  const nw = STATE.imgNatW, nh = STATE.imgNatH;
+  if (!nw || !nh) return { x: sx, y: sy };
+  const scale = Math.min(cw / nw, ch / nh);
+  const dw = nw * scale, dh = nh * scale;
+  const ox = (cw - dw) / 2, oy = (ch - dh) / 2;
+  return { x: (sx - ox) / scale, y: (sy - oy) / scale };
+}
+function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
+
+// ===== localStorage 暂存 =====
+const LS_KEY = "annotate_local_admin_batch";
+// 获取当前数据集 ID（用于 localStorage 校验和上传校验）
+// 注意：必须用 currentDataset（可见列表中实际加载的对象），不能用完整列表+下标反查，
+// 因为过滤后下标会错位
+function getCurrentDatasetId() {
+  if (currentDataset) return currentDataset.id;
+  const ds = getDatasets();
+  return ds[currentDatasetIdx] ? ds[currentDatasetIdx].id : "default";
+}
+function saveLocal() {
+  try {
+    const data = { datasetId: getCurrentDatasetId(), batch: STATE.batch, batchDatasetId: STATE.batchDatasetId, batchIdx: STATE.batchIdx, batchResults: STATE.batchResults, batchDone: [...STATE.batchDone], dirtyKeys: [...STATE.dirtyKeys], role: STATE.role, reclaimMode: STATE.reclaimMode };
+    localStorage.setItem(LS_KEY, JSON.stringify(data));
+  } catch (e) {}
+}
+function loadLocal() {
+  try {
+    const raw = localStorage.getItem(LS_KEY);
+    if (!raw) return false;
+    const data = JSON.parse(raw);
+    if (!data.batch || !data.batch.length) return false;
+    // 数据集不匹配 → 丢弃旧数据，防止跨数据集污染
+    if (data.datasetId && data.datasetId !== getCurrentDatasetId()) {
+      clearLocal();
+      return false;
+    }
+    STATE.batch = data.batch;
+    STATE.batchDatasetId = data.batchDatasetId || data.datasetId || getCurrentDatasetId();
+    STATE.batchIdx = data.batchIdx || 0;
+    STATE.batchResults = data.batchResults || {};
+    STATE.batchDone = new Set(data.batchDone || []);
+    STATE.dirtyKeys = new Set(data.dirtyKeys || []);
+    STATE.role = data.role || "annotator";
+    STATE.reclaimMode = !!data.reclaimMode;
+    return true;
+  } catch (e) { return false; }
+}
+function clearLocal() {
+  try { localStorage.removeItem(LS_KEY); } catch (e) {}
+}
+
+function sampleKey(sample) {
+  return sample && sample._path ? sample._path : String(sample ? sample.line : "");
+}
+
+function boxToObject(box) {
+  const object = {};
+  const knownKeys = new Set(["box", "type", "target", "dir3d", "text", "line"]);
+  Object.entries(box._originalObject || {}).forEach(([key, value]) => {
+    if (!knownKeys.has(key)) object[key] = value;
+  });
+  Object.assign(object, {
+    box: { x:Math.round(box.x), y:Math.round(box.y), w:Math.round(box.w), h:Math.round(box.h) },
+    type: box.bgLocal ? "bg_local" : (box.action || "neutral"),
+  });
+  if (box.target) object.target = { x:Math.round(box.target.x), y:Math.round(box.target.y) };
+  if (box.dir3d) object.dir3d = box.dir3d;
+  if (box.text) object.text = box.text;
+  if (box.line) object.line = box.line.map((point) => ({ x:Math.round(point.x), y:Math.round(point.y) }));
+  return object;
+}
+
+function resultSignature(result) {
+  return JSON.stringify({
+    objects: (result.boxes || []).map(boxToObject),
+    note: (result.note || "").trim(),
+    bg_global: !!result.bgGlobal,
+    bg_ambiguous: !!result.bgAmbiguous,
+  });
+}
+
+// ===== 渲染 =====
+function renderAll() { renderSvg(); renderAnnoRows(); }
+
+function renderSvg() {
+  while (svgB.firstChild) svgB.removeChild(svgB.firstChild);
+  const defs = document.createElementNS(SVG_NS, "defs");
+  defs.innerHTML = '<marker id="ah" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto" markerUnits="strokeWidth"><polygon points="0 0,6 3,0 6" fill="currentColor"/></marker>'
+    + '<pattern id="bgp" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="12" stroke="#009688" stroke-width="3" opacity="0.35"/></pattern>'
+    + '<pattern id="bgp_amb" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)"><line x1="0" y1="0" x2="0" y2="12" stroke="#888" stroke-width="3" opacity="0.30"/></pattern>';
+  svgB.appendChild(defs);
+
+  // 整体背景不一致：斜线 pattern 覆盖全图
+  if (STATE.bgGlobal) {
+    const overlay = document.createElementNS(SVG_NS, "rect");
+    overlay.setAttribute("x", 0); overlay.setAttribute("y", 0);
+    overlay.setAttribute("width", "100%"); overlay.setAttribute("height", "100%");
+    overlay.setAttribute("fill", "url(#bgp)");
+    svgB.appendChild(overlay);
+  }
+
+  // 无法判断/一致：反向斜线 pattern 覆盖全图（灰色，区别于整体背景的绿色）
+  if (STATE.bgAmbiguous) {
+    const overlay = document.createElementNS(SVG_NS, "rect");
+    overlay.setAttribute("x", 0); overlay.setAttribute("y", 0);
+    overlay.setAttribute("width", "100%"); overlay.setAttribute("height", "100%");
+    overlay.setAttribute("fill", "url(#bgp_amb)");
+    svgB.appendChild(overlay);
+  }
+
+  STATE.boxes.forEach((b) => {
+    const act = b.action || "neutral";
+    const isBgLocal = !!b.bgLocal;
+    const colorKey = isBgLocal ? "bg_local" : act;
+    const color = getBoxColor(b.boxId, colorKey);
+    const tl = imgToSvg(b.x, b.y);
+    const br = imgToSvg(b.x + b.w, b.y + b.h);
+    const sx = tl.x, sy = tl.y, sw = br.x - tl.x, sh = br.y - tl.y;
+    const isEditing = STATE.editingBoxId === b.boxId;
+
+    const g = document.createElementNS(SVG_NS, "g");
+    g.setAttribute("data-boxid", b.boxId);
+    g.style.cursor = isEditing ? "move" : "default";
+
+    const rect = document.createElementNS(SVG_NS, "rect");
+    rect.setAttribute("x", sx); rect.setAttribute("y", sy);
+    rect.setAttribute("width", Math.max(0, sw)); rect.setAttribute("height", Math.max(0, sh));
+    // 局部背景框：用斜线 pattern 填充
+    if (isBgLocal) {
+      rect.setAttribute("fill", "url(#bgp)");
+      rect.setAttribute("stroke", color);
+      rect.setAttribute("stroke-width", "2.5");
+    } else {
+      rect.setAttribute("fill", "none");
+      rect.setAttribute("stroke", color);
+      rect.setAttribute("stroke-width", isEditing ? 3 : 2);
+      if (isEditing) rect.setAttribute("stroke-dasharray", "6 3");
+    }
+    g.appendChild(rect);
+
+    // 局部背景框不画箭头等动作元素
+    if (isBgLocal) {
+      svgB.appendChild(g);
+      return;
+    }
+
+    if (act === "move" && b.target) {
+      // 2D 移动：粗锥形箭头（与原始模板一致）
+      const t = imgToSvg(b.target.x, b.target.y);
+      const cx = sx + sw / 2, cy = sy + sh / 2;
+      const angle = Math.atan2(t.y - cy, t.x - cx);
+      const perpX = -Math.sin(angle), perpY = Math.cos(angle);
+      const tailW = 10 * ARROW_SCALE, headLen = 20 * ARROW_SCALE, headW = 14 * ARROW_SCALE;
+      const sx1 = cx + perpX * tailW, sy1 = cy + perpY * tailW;
+      const sx2 = cx - perpX * tailW, sy2 = cy - perpY * tailW;
+      const hbx = t.x - Math.cos(angle) * headLen, hby = t.y - Math.sin(angle) * headLen;
+      const hx1 = hbx + perpX * headW, hy1 = hby + perpY * headW;
+      const hx2 = hbx - perpX * headW, hy2 = hby - perpY * headW;
+      const arrowShape = document.createElementNS(SVG_NS, "polygon");
+      arrowShape.setAttribute("points",
+        sx1+","+sy1+" "+hx1+","+hy1+" "+t.x+","+t.y+" "+hx2+","+hy2+" "+sx2+","+sy2);
+      arrowShape.setAttribute("fill", color);
+      arrowShape.setAttribute("stroke", color);
+      arrowShape.setAttribute("stroke-width", "1");
+      arrowShape.setAttribute("stroke-linejoin", "round");
+      arrowShape.setAttribute("opacity", "0.85");
+      g.appendChild(arrowShape);
+    } else if (act === "move3d" && b.dir3d) {
+      // 3D 移动：球体 + 法向量箭头的 2D 投影（与原始模板一致）
+      render3DArrowOnSvg(g, b, sx, sy, sw, sh, color);
+    } else if (act === "rotate" || act === "cw" || act === "ccw") {
+      // 旋转（cw/ccw 为旧数据兼容，统一显示旋转符号）
+      const cx = sx + sw / 2, cy = sy + sh / 2;
+      const txt = document.createElementNS(SVG_NS, "text");
+      txt.setAttribute("x", cx); txt.setAttribute("y", cy);
+      txt.setAttribute("fill", color); txt.setAttribute("font-size", "24");
+      txt.setAttribute("font-weight", "bold");
+      txt.setAttribute("text-anchor", "middle"); txt.setAttribute("dominant-baseline", "middle");
+      txt.textContent = "↻";
+      g.appendChild(txt);
+    } else if (act === "custom" && b.text) {
+      const txt = document.createElementNS(SVG_NS, "text");
+      txt.setAttribute("x", sx); txt.setAttribute("y", sy - 4);
+      txt.setAttribute("fill", color); txt.setAttribute("font-size", "12");
+      txt.textContent = b.text.length > 12 ? b.text.slice(0, 12) + "…" : b.text;
+      g.appendChild(txt);
+    }
+
+    // 序号
+    const numTxt = document.createElementNS(SVG_NS, "text");
+    numTxt.setAttribute("x", sx + 2); numTxt.setAttribute("y", sy - 4);
+    numTxt.setAttribute("fill", color); numTxt.setAttribute("font-size", "10");
+    numTxt.setAttribute("font-weight", "bold");
+    numTxt.textContent = "#" + (STATE.boxes.indexOf(b) + 1);
+    g.appendChild(numTxt);
+
+    // 删除框：渲染划线（手势划过的轨迹）
+    if (act === "delete" && b.line) {
+      const l0 = imgToSvg(b.line[0].x, b.line[0].y);
+      const l1 = imgToSvg(b.line[1].x, b.line[1].y);
+      const dl = document.createElementNS(SVG_NS, "line");
+      dl.setAttribute("x1", l0.x); dl.setAttribute("y1", l0.y);
+      dl.setAttribute("x2", l1.x); dl.setAttribute("y2", l1.y);
+      dl.setAttribute("stroke", color); dl.setAttribute("stroke-width", "3");
+      dl.setAttribute("stroke-linecap", "round");
+      g.appendChild(dl);
+    }
+
+    // 编辑手柄
+    if (isEditing) {
+      const handles = ["nw","n","ne","e","se","s","sw","w"];
+      const pos = { nw:[sx,sy], n:[sx+sw/2,sy], ne:[sx+sw,sy], e:[sx+sw,sy+sh/2],
+                    se:[sx+sw,sy+sh], s:[sx+sw/2,sy+sh], sw:[sx,sy+sh], w:[sx,sy+sh/2] };
+      handles.forEach((h) => {
+        const c = document.createElementNS(SVG_NS, "circle");
+        c.setAttribute("cx", pos[h][0]); c.setAttribute("cy", pos[h][1]);
+        c.setAttribute("r", 5); c.setAttribute("fill", "#fff");
+        c.setAttribute("stroke", color); c.setAttribute("stroke-width", 2);
+        c.setAttribute("data-handle", h); c.style.cursor = h + "-resize";
+        g.appendChild(c);
+      });
+    }
+    svgB.appendChild(g);
+  });
+
+  // 划线删除的临时视觉反馈（手势进行中）
+  if (tempDeleteLine) {
+    const f = imgToSvg(tempDeleteLine.from.x, tempDeleteLine.from.y);
+    const t = imgToSvg(tempDeleteLine.to.x, tempDeleteLine.to.y);
+    const tl = document.createElementNS(SVG_NS, "line");
+    tl.setAttribute("x1", f.x); tl.setAttribute("y1", f.y);
+    tl.setAttribute("x2", t.x); tl.setAttribute("y2", t.y);
+    tl.setAttribute("stroke", "#E53935"); tl.setAttribute("stroke-width", "3");
+    tl.setAttribute("stroke-linecap", "round");
+    tl.setAttribute("stroke-dasharray", "6 4");
+    tl.setAttribute("opacity", "0.9");
+    svgB.appendChild(tl);
+  }
+}
+
+// 3D 移动箭头在 SVG 上的 2D 投影（球体轮廓 + 法向量箭头 + 深度标记）
+function render3DArrowOnSvg(g, box, sx, sy, sw, sh, color) {
+  const cx = sx + sw / 2, cy = sy + sh / 2;
+  const dir = box.dir3d || [1, 0, 0];
+  const r = Math.min(70, sw / 1.5, sh / 1.5) * ARROW_SCALE;
+
+  // 球体轮廓（加粗虚线圆）
+  const circle = document.createElementNS(SVG_NS, "circle");
+  circle.setAttribute("cx", cx); circle.setAttribute("cy", cy); circle.setAttribute("r", r);
+  circle.setAttribute("fill", "rgba(0,0,0,0.15)");
+  circle.setAttribute("stroke", color); circle.setAttribute("stroke-width", String(4 * ARROW_SCALE));
+  circle.setAttribute("stroke-dasharray", "8 5"); circle.setAttribute("opacity", "0.7");
+  g.appendChild(circle);
+
+  // 方向投影
+  const dx = dir[0], dy = dir[1], dz = dir[2];
+  const ex = cx + dx * r, ey = cy - dy * r;
+
+  // 箭杆（加粗）
+  const line = document.createElementNS(SVG_NS, "line");
+  line.setAttribute("x1", cx); line.setAttribute("y1", cy);
+  line.setAttribute("x2", ex); line.setAttribute("y2", ey);
+  line.setAttribute("stroke", color); line.setAttribute("stroke-width", String(12 * ARROW_SCALE));
+  line.setAttribute("stroke-linecap", "round");
+  if (dz > 0.3) line.setAttribute("stroke-dasharray", "14 8");
+  g.appendChild(line);
+
+  // 箭头头部（大三角）
+  const angle = Math.atan2(ey - cy, ex - cx);
+  const headLen = 22 * ARROW_SCALE, headWidth = 16 * ARROW_SCALE;
+  const arrow = document.createElementNS(SVG_NS, "polygon");
+  arrow.setAttribute("fill", color);
+  arrow.setAttribute("points",
+    ex + "," + ey + " " +
+    (ex - headLen * Math.cos(angle - Math.PI/6)) + "," + (ey - headLen * Math.sin(angle - Math.PI/6)) + " " +
+    (ex - headLen * Math.cos(angle + Math.PI/6)) + "," + (ey - headLen * Math.sin(angle + Math.PI/6)));
+  g.appendChild(arrow);
+
+  // 深度方向端点标记
+  const marker = document.createElementNS(SVG_NS, "g");
+  marker.setAttribute("transform", "translate(" + ex + "," + ey + ")");
+  if (dz < -0.2) {
+    // 朝向观察者：大圆 + 实心 + 白边
+    const dot = document.createElementNS(SVG_NS, "circle");
+    dot.setAttribute("r", String(14 * ARROW_SCALE)); dot.setAttribute("fill", color);
+    dot.setAttribute("stroke", "#fff"); dot.setAttribute("stroke-width", String(3 * ARROW_SCALE));
+    marker.appendChild(dot);
+  } else if (dz > 0.2) {
+    // 远离观察者：X 标记
+    const xSize = 10 * ARROW_SCALE;
+    const xLine1 = document.createElementNS(SVG_NS, "line");
+    xLine1.setAttribute("x1", -xSize); xLine1.setAttribute("y1", -xSize);
+    xLine1.setAttribute("x2", xSize); xLine1.setAttribute("y2", xSize);
+    xLine1.setAttribute("stroke", "#fff"); xLine1.setAttribute("stroke-width", String(4 * ARROW_SCALE));
+    xLine1.setAttribute("stroke-linecap", "round");
+    marker.appendChild(xLine1);
+    const xLine2 = document.createElementNS(SVG_NS, "line");
+    xLine2.setAttribute("x1", xSize); xLine2.setAttribute("y1", -xSize);
+    xLine2.setAttribute("x2", -xSize); xLine2.setAttribute("y2", xSize);
+    xLine2.setAttribute("stroke", "#fff"); xLine2.setAttribute("stroke-width", String(4 * ARROW_SCALE));
+    xLine2.setAttribute("stroke-linecap", "round");
+    marker.appendChild(xLine2);
+  }
+  g.appendChild(marker);
+
+  // 球心点
+  const center = document.createElementNS(SVG_NS, "circle");
+  center.setAttribute("cx", cx); center.setAttribute("cy", cy);
+  center.setAttribute("r", String(6 * ARROW_SCALE)); center.setAttribute("fill", "#fff");
+  center.setAttribute("stroke", color); center.setAttribute("stroke-width", String(2 * ARROW_SCALE));
+  g.appendChild(center);
+}
+
+function renderAnnoRows() {
+  annoPanel.querySelectorAll(".anno-row").forEach((n) => n.remove());
+  const empty = $("annoEmpty");
+  if (!STATE.boxes.length) { empty.style.display = ""; return; }
+  empty.style.display = "none";
+  const readonly = isReviewer();
+
+  STATE.boxes.forEach((b, i) => {
+    const act = b.action || "neutral";
+    const color = getBoxColor(b.boxId, act);
+    const row = document.createElement("div");
+    row.className = "anno-row" + (STATE.editingBoxId === b.boxId ? " editing" : "");
+
+    const dot = document.createElement("span");
+    dot.className = "color-dot"; dot.style.background = color;
+    row.appendChild(dot);
+
+    if (!readonly) {
+      const editBtn = document.createElement("button");
+      editBtn.className = "edit-btn" + (STATE.editingBoxId === b.boxId ? " active" : "");
+      editBtn.textContent = "✎"; editBtn.title = "编辑框位置/大小";
+      editBtn.onclick = () => { STATE.editingBoxId = STATE.editingBoxId === b.boxId ? null : b.boxId; renderAll(); };
+      row.appendChild(editBtn);
+    }
+
+    const coord = document.createElement("span");
+    coord.className = "coord";
+    coord.textContent = `#${i+1} x:${Math.round(b.x)} y:${Math.round(b.y)} ${Math.round(b.w)}×${Math.round(b.h)}`;
+    row.appendChild(coord);
+
+    const sel = document.createElement("select");
+    sel.className = "action-select";
+    ["neutral","add","delete","replace","move","move3d","rotate","custom"].forEach((k) => {
+      const opt = document.createElement("option");
+      opt.value = k; opt.textContent = ACTION_LABELS[k];
+      if (k === act) opt.selected = true;
+      sel.appendChild(opt);
+    });
+    if (readonly) { sel.disabled = true; sel.style.opacity = "0.75"; }
+    else { sel.onchange = () => onActionChange(b.boxId, sel.value); }
+    row.appendChild(sel);
+
+    if (act === "move3d" && b.dir3d) {
+      const tag = document.createElement("span");
+      tag.className = "dir3d-tag"; tag.textContent = "方向: " + b.dir3d;
+      row.appendChild(tag);
+    }
+    if (act === "custom") {
+      const inp = document.createElement("input");
+      inp.className = "action-input"; inp.type = "text";
+      inp.placeholder = readonly ? "" : "输入自定义描述...";
+      inp.value = b.text || "";
+      if (readonly) { inp.readOnly = true; inp.style.cssText = "border:none;background:transparent;color:var(--muted);"; }
+      else { inp.oninput = () => { b.text = inp.value; renderSvg(); }; }
+      row.appendChild(inp);
+    } else if (act === "move") {
+      const hint = document.createElement("span");
+      hint.className = "action-input";
+      hint.style.cssText = "border:none;color:var(--muted);font-size:12px;";
+      hint.textContent = b.target ? `目标: (${Math.round(b.target.x)},${Math.round(b.target.y)})` : "请在图上点击设定目标";
+      row.appendChild(hint);
+    } else {
+      const spacer = document.createElement("span");
+      spacer.className = "action-input"; spacer.style.border = "none";
+      row.appendChild(spacer);
+    }
+
+    if (!readonly) {
+      const delBtn = document.createElement("button");
+      delBtn.className = "del-btn"; delBtn.textContent = "✕"; delBtn.title = "删除此框";
+      delBtn.onclick = () => { pushUndo(); STATE.boxes = STATE.boxes.filter((x) => x.boxId !== b.boxId); if (STATE.editingBoxId === b.boxId) STATE.editingBoxId = null; renderAll(); };
+      row.appendChild(delBtn);
+    }
+    annoPanel.appendChild(row);
+  });
+}
+
+function onActionChange(boxId, action) {
+  pushUndo();
+  const b = STATE.boxes.find((x) => x.boxId === boxId);
+  if (!b) return;
+  b.action = action;
+  if (action !== "move") delete b.target;
+  if (action !== "move3d") delete b.dir3d;
+  if (action !== "custom") delete b.text;
+  if (action !== "delete") delete b.line;
+  if (action === "move3d" && !b.dir3d) { renderAll(); openModal3D(boxId); return; }
+  renderAll();
+}
+
+// ===== 手势系统（与原始 3D 模板一致：双击新增 / 框内划线删除 / 右键替换 / 旋转图标）=====
+let gesture = null;
+let tempDeleteLine = null; // 划线删除时的临时视觉反馈
+
+function svgPoint(e) { const r = svgB.getBoundingClientRect(); return { x: e.clientX - r.left, y: e.clientY - r.top }; }
+
+// 命中检测：返回点击位置最上层的框（数组末尾 = 最上层）
+function hitTestBox(sx, sy) {
+  for (let i = STATE.boxes.length - 1; i >= 0; i--) {
+    const b = STATE.boxes[i];
+    const tl = imgToSvg(b.x, b.y), br = imgToSvg(b.x + b.w, b.y + b.h);
+    if (sx >= tl.x && sx <= br.x && sy >= tl.y && sy <= br.y) return b;
+  }
+  return null;
+}
+
+// 应用动作到框（手势与下拉框共用）
+function handleAction(boxId, action, extra) {
+  pushUndo();
+  const b = STATE.boxes.find((x) => x.boxId === boxId);
+  if (!b) return;
+  b.action = action;
+  if (action !== "move") delete b.target;
+  if (action !== "move3d") delete b.dir3d;
+  if (action !== "custom") delete b.text;
+  if (action !== "delete") delete b.line;
+  if (extra) Object.assign(b, extra);
+  if (action === "move3d" && !b.dir3d) { renderAll(); openModal3D(boxId); return; }
+  renderAll();
+  showToast((ACTION_LABELS[action] || action) + " ✓", "success");
+}
+
+svgB.addEventListener("mousedown", (e) => {
+  if (isReviewer()) return;
+  const p = svgPoint(e);
+
+  // 右键点在框上 → 替换
+  if (e.button === 2) {
+    const hit = hitTestBox(p.x, p.y);
+    if (hit) { handleAction(hit.boxId, "replace"); }
+    e.preventDefault();
+    return;
+  }
+
+  if (e.button !== 0) return;
+
+  // 有 move 框且未设目标 → 框外点击设目标，不画新框
+  const pendingMove = STATE.boxes.find((b) => b.action === "move" && !b.target);
+  const hitMove = hitTestBox(p.x, p.y);
+  if (pendingMove && !hitMove) {
+    const img = svgToImg(p.x, p.y);
+    pendingMove.target = { x: img.x, y: img.y };
+    renderAll(); showToast("已设定移动目标", "success");
+    e.preventDefault();
+    return;
+  }
+
+  // 编辑模式：缩放手柄 / 移动框
+  if (STATE.editingBoxId != null) {
+    const b = STATE.boxes.find((x) => x.boxId === STATE.editingBoxId);
+    if (!b) return;
+    const handleEl = e.target.getAttribute && e.target.getAttribute("data-handle");
+    if (handleEl) { pushUndo(); gesture = { mode:"resize", boxId:b.boxId, handle:handleEl, start:p, orig:{...b} }; e.preventDefault(); return; }
+    const tl = imgToSvg(b.x, b.y), br = imgToSvg(b.x+b.w, b.y+b.h);
+    if (p.x >= tl.x && p.x <= br.x && p.y >= tl.y && p.y <= br.y) { pushUndo(); gesture = { mode:"moveBox", boxId:b.boxId, start:p, orig:{...b} }; e.preventDefault(); return; }
+    return;
+  }
+
+  // 点在已有框上 → 可能是划线删除 / 单击 / 双击
+  const hit = hitTestBox(p.x, p.y);
+  if (hit) {
+    gesture = { mode:"boxGesture", boxId:hit.boxId, start:p, startImg:svgToImg(p.x,p.y), moved:false };
+    e.preventDefault();
+    return;
+  }
+
+  // 空白处 → 画新框
+  pushUndo();
+  const img = svgToImg(p.x, p.y);
+  const boxId = STATE.nextBoxId++;
+  const newBox = { boxId, x:img.x, y:img.y, w:0, h:0, action:"neutral" };
+  // 局部背景模式：新框自动标记为 bg_local，画完自动关闭模式
+  if (STATE.bgLocalMode) {
+    newBox.bgLocal = true;
+    STATE.bgLocalMode = false;
+    updateBgBtnUI();
+  }
+  STATE.boxes.push(newBox);
+  gesture = { mode:"draw", boxId, startImg:img };
+  renderAll(); e.preventDefault();
+});
+
+window.addEventListener("mousemove", (e) => {
+  if (!gesture) return;
+  const p = svgPoint(e);
+
+  // 框内手势：超过阈值 → 显示划线删除反馈
+  if (gesture.mode === "boxGesture") {
+    const dist = Math.hypot(p.x - gesture.start.x, p.y - gesture.start.y);
+    if (dist >= GESTURE.DRAG_THRESH) {
+      gesture.moved = true;
+      tempDeleteLine = { from: gesture.startImg, to: svgToImg(p.x, p.y) };
+      renderSvg();
+    }
+    return;
+  }
+
+  const b = STATE.boxes.find((x) => x.boxId === gesture.boxId);
+  if (!b) return;
+  if (gesture.mode === "draw") {
+    const img = svgToImg(p.x, p.y);
+    b.x = Math.min(gesture.startImg.x, img.x); b.y = Math.min(gesture.startImg.y, img.y);
+    b.w = Math.abs(img.x - gesture.startImg.x); b.h = Math.abs(img.y - gesture.startImg.y);
+    renderSvg();
+  } else if (gesture.mode === "moveBox") {
+    const dx = svgToImg(p.x,p.y).x - svgToImg(gesture.start.x,gesture.start.y).x;
+    const dy = svgToImg(p.x,p.y).y - svgToImg(gesture.start.x,gesture.start.y).y;
+    b.x = clamp(gesture.orig.x + dx, 0, STATE.imgNatW - b.w);
+    b.y = clamp(gesture.orig.y + dy, 0, STATE.imgNatH - b.h);
+    renderSvg();
+  } else if (gesture.mode === "resize") {
+    const img = svgToImg(p.x, p.y); const o = gesture.orig;
+    let x1=o.x, y1=o.y, x2=o.x+o.w, y2=o.y+o.h;
+    const h = gesture.handle;
+    if (h.includes("w")) x1 = img.x; if (h.includes("e")) x2 = img.x;
+    if (h.includes("n")) y1 = img.y; if (h.includes("s")) y2 = img.y;
+    b.x = Math.min(x1,x2); b.y = Math.min(y1,y2);
+    b.w = Math.abs(x2-x1); b.h = Math.abs(y2-y1);
+    renderSvg();
+  }
+});
+
+window.addEventListener("mouseup", (e) => {
+  if (!gesture) return;
+  const p = svgPoint(e);
+
+  // 框内手势收尾
+  if (gesture.mode === "boxGesture") {
+    const g = gesture; gesture = null;
+    const endImg = svgToImg(p.x, p.y);
+    const imgLen = Math.hypot(endImg.x - g.startImg.x, endImg.y - g.startImg.y);
+    tempDeleteLine = null;
+
+    // 划线足够长 → 删除
+    if (g.moved && imgLen >= GESTURE.LINE_MIN_LEN) {
+      handleAction(g.boxId, "delete", { line: [g.startImg, endImg] });
+      return;
+    }
+
+    // 点击 / 双击检测
+    const dist = Math.hypot(p.x - g.start.x, p.y - g.start.y);
+    if (dist < GESTURE.DRAG_THRESH) {
+      const now = Date.now();
+      const lc = STATE.lastClick;
+      if (lc && (now - lc.time) < GESTURE.DBLCLICK_MS && lc.boxId === g.boxId &&
+          Math.hypot(p.x - lc.pos.x, p.y - lc.pos.y) < GESTURE.DBLCLICK_MOVE) {
+        STATE.lastClick = null;
+        handleAction(g.boxId, "add"); // 双击 → 新增
+        return;
+      }
+      STATE.lastClick = { time: now, pos: p, boxId: g.boxId };
+    }
+    renderSvg();
+    return;
+  }
+
+  if (gesture.mode === "draw") {
+    const b = STATE.boxes.find((x) => x.boxId === gesture.boxId);
+    if (b && b.w < 5 && b.h < 5) { STATE.boxes = STATE.boxes.filter((x) => x.boxId !== b.boxId); renderAll(); }
+  }
+  gesture = null;
+});
+
+// 禁止画布默认右键菜单（替换手势需要）
+svgB.addEventListener("contextmenu", (e) => { e.preventDefault(); });
+
+imgB.addEventListener("load", () => { STATE.imgNatW = imgB.naturalWidth; STATE.imgNatH = imgB.naturalHeight; renderSvg(); });
+
+// ===== 3D 球体编辑器（与原始模板一致：球体+经纬线+法向量箭头+深度着色）=====
+const modal3D = {
+  ctx: null, canvas: null, previewCtx: null, previewCanvas: null,
+  R: 150, rotX: 0.3, rotY: 0.5, zoom: 1,
+  boxId: -1, dragging: false, lx: 0, ly: 0,
+};
+
+function initModal3D() {
+  modal3D.canvas = $("canvas-3d");
+  modal3D.ctx = modal3D.canvas.getContext("2d");
+  modal3D.previewCanvas = $("canvas-preview");
+  modal3D.previewCtx = modal3D.previewCanvas.getContext("2d");
+  const cv = modal3D.canvas;
+
+  cv.addEventListener("mousedown", (e) => {
+    modal3D.dragging = true; modal3D.lx = e.clientX; modal3D.ly = e.clientY;
+    cv.style.cursor = "grabbing";
+  });
+  document.addEventListener("mousemove", (e) => {
+    if (!modal3D.dragging) return;
+    modal3D.rotY += (e.clientX - modal3D.lx) * 0.008;
+    modal3D.rotX += (e.clientY - modal3D.ly) * 0.008;
+    modal3D.rotX = Math.max(-Math.PI * 0.49, Math.min(Math.PI * 0.49, modal3D.rotX));
+    modal3D.lx = e.clientX; modal3D.ly = e.clientY;
+    renderModal3D();
+  });
+  document.addEventListener("mouseup", () => { modal3D.dragging = false; cv.style.cursor = "default"; });
+  cv.addEventListener("wheel", (e) => {
+    e.preventDefault();
+    modal3D.zoom *= (1 - e.deltaY * 0.001);
+    modal3D.zoom = Math.max(0.3, Math.min(3, modal3D.zoom));
+    renderModal3D();
+  }, { passive: false });
+
+  $("modal-3d-ok").onclick = () => {
+    const dir = computeArrowDir3D();
+    closeModal3D(true, dir);
+  };
+  $("modal-3d-cancel").onclick = () => { closeModal3D(false, null); };
+}
+
+// 箭头方向固定 +X，通过 rotX/rotY 旋转变换得到世界空间方向
+function computeArrowDir3D() {
+  const cy = Math.cos(modal3D.rotY), sy = Math.sin(modal3D.rotY);
+  const cx = Math.cos(modal3D.rotX), sx = Math.sin(modal3D.rotX);
+  let x1 = cy, y1 = 0, z1 = -sy;
+  let y2 = y1 * cx - z1 * sx;
+  let z2 = y1 * sx + z1 * cx;
+  return [cy, y2, z2];
+}
+
+function project3D(x, y, z) {
+  const W = modal3D.canvas.width, H = modal3D.canvas.height;
+  const cy = Math.cos(modal3D.rotY), sy = Math.sin(modal3D.rotY);
+  const x1 = x * cy + z * sy, z1 = -x * sy + z * cy, y1 = y;
+  const cx = Math.cos(modal3D.rotX), sx = Math.sin(modal3D.rotX);
+  const y2 = y1 * cx - z1 * sx, z2 = y1 * sx + z1 * cx;
+  const d = 600 / modal3D.zoom;
+  const s = d / (d + z2);
+  return { x: W / 2 + x1 * s, y: H / 2 - y2 * s, z: z2, s: s };
+}
+
+function getArrowCameraZ() {
+  const cy = Math.cos(modal3D.rotY), sy = Math.sin(modal3D.rotY);
+  const z1 = -sy;
+  const cx = Math.cos(modal3D.rotX);
+  return z1 * cx;
+}
+
+function renderModal3D() {
+  const ctx = modal3D.ctx;
+  const W = modal3D.canvas.width, H = modal3D.canvas.height;
+  const R = modal3D.R;
+
+  ctx.fillStyle = "#0a0a18";
+  ctx.fillRect(0, 0, W, H);
+
+  // 经度环
+  for (let j = 0; j < 16; j++) {
+    const th = Math.PI * j / 16;
+    const pts = [];
+    for (let i = 0; i <= 64; i++) {
+      const phi = Math.PI * i / 64;
+      pts.push([R * Math.sin(phi) * Math.cos(th), R * Math.cos(phi), R * Math.sin(phi) * Math.sin(th)]);
+    }
+    for (let i = 0; i < pts.length - 1; i++) {
+      const p1 = project3D(pts[i][0], pts[i][1], pts[i][2]);
+      const p2 = project3D(pts[i+1][0], pts[i+1][1], pts[i+1][2]);
+      const avgZ = (p1.z + p2.z) / 2;
+      const t = Math.max(0, Math.min(1, (avgZ + R) / (2 * R)));
+      ctx.strokeStyle = "rgba(60,180,255," + (0.7 - t * 0.55) + ")";
+      ctx.lineWidth = 1.5 - t * 1.0;
+      ctx.beginPath(); ctx.moveTo(p1.x, p1.y); ctx.lineTo(p2.x, p2.y); ctx.stroke();
+    }
+  }
+  // 纬度环
+  for (let i = 1; i < 10; i++) {
+    const phi = Math.PI * i / 10;
+    const pts = [];
+    for (let j = 0; j <= 64; j++) {
+      const th = 2 * Math.PI * j / 64;
+      pts.push([R * Math.sin(phi) * Math.cos(th), R * Math.cos(phi), R * Math.sin(phi) * Math.sin(th)]);
+    }
+    for (let j = 0; j < pts.length - 1; j++) {
+      const p1 = project3D(pts[j][0], pts[j][1], pts[j][2]);
+      const p2 = project3D(pts[j+1][0], pts[j+1][1], pts[j+1][2]);
+      const avgZ = (p1.z + p2.z) / 2;
+      const t = Math.max(0, Math.min(1, (avgZ + R) / (2 * R)));
+      ctx.strokeStyle = "rgba(60,180,255," + (0.7 - t * 0.55) + ")";
+      ctx.lineWidth = 1.5 - t * 1.0;
+      ctx.beginPath(); ctx.moveTo(p1.x, p1.y); ctx.lineTo(p2.x, p2.y); ctx.stroke();
+    }
+  }
+
+  // 箭头（法向量）
+  const end = [R, 0, 0];
+  const p0 = project3D(0, 0, 0);
+  const p1 = project3D(end[0], end[1], end[2]);
+  const cz = getArrowCameraZ();
+  const depthT = Math.max(-1, Math.min(1, cz));
+  const t01 = (depthT + 1) / 2;
+
+  let r, g, b, lineW, alpha, glowSize = 0;
+  if (t01 < 0.5) {
+    const k = t01 / 0.5;
+    r = Math.round(255 - k * 55); g = Math.round(60 + k * 110); b = Math.round(30 + k * 20);
+    lineW = 4.5 - k * 1.5; alpha = 1.0 - k * 0.2; glowSize = (1 - k) * 20;
+  } else {
+    const k = (t01 - 0.5) / 0.5;
+    r = Math.round(200 - k * 140); g = Math.round(170 - k * 120); b = Math.round(50 + k * 150);
+    lineW = 3 - k * 1.5; alpha = 0.8 - k * 0.45; glowSize = 0;
+  }
+  const color = "rgba(" + r + "," + g + "," + b + "," + alpha + ")";
+
+  if (glowSize > 0) { ctx.save(); ctx.shadowColor = "rgba(255,80,30,0.7)"; ctx.shadowBlur = glowSize; }
+  ctx.strokeStyle = color; ctx.lineWidth = lineW;
+  if (depthT > 0.4) ctx.setLineDash([8, 5]); else ctx.setLineDash([]);
+  ctx.beginPath(); ctx.moveTo(p0.x, p0.y); ctx.lineTo(p1.x, p1.y); ctx.stroke();
+  ctx.setLineDash([]);
+  if (glowSize > 0) ctx.restore();
+
+  // 箭头三角（锥形头部）
+  const dx = 1, dy = 0, dz = 0;
+  const hL = R * 0.2;
+  const hR = hL * (0.35 + 0.3 * (1 - t01));
+  const up = [0, 1, 0];
+  let px = dy * up[2] - dz * up[1], py = dz * up[0] - dx * up[2], pz = dx * up[1] - dy * up[0];
+  const pl = Math.sqrt(px*px + py*py + pz*pz);
+  if (pl > 0) { px /= pl; py /= pl; pz /= pl; }
+  let qx = dy * pz - dz * py, qy = dz * px - dx * pz, qz = dx * py - dy * px;
+  const bx = end[0] - dx * hL, by = end[1] - dy * hL, bz = end[2] - dz * hL;
+  const nP = 8;
+  ctx.fillStyle = color;
+  for (let i = 0; i < nP; i++) {
+    const a = 2 * Math.PI * i / nP;
+    const ax2 = bx + (px * Math.cos(a) + qx * Math.sin(a)) * hR;
+    const ay2 = by + (py * Math.cos(a) + qy * Math.sin(a)) * hR;
+    const az2 = bz + (pz * Math.cos(a) + qz * Math.sin(a)) * hR;
+    const a1 = 2 * Math.PI * (i+1) / nP;
+    const ax1 = bx + (px * Math.cos(a1) + qx * Math.sin(a1)) * hR;
+    const ay1 = by + (py * Math.cos(a1) + qy * Math.sin(a1)) * hR;
+    const az1 = bz + (pz * Math.cos(a1) + qz * Math.sin(a1)) * hR;
+    const pc = project3D(ax2, ay2, az2);
+    const pn = project3D(ax1, ay1, az1);
+    ctx.beginPath(); ctx.moveTo(pc.x, pc.y); ctx.lineTo(pn.x, pn.y); ctx.lineTo(p1.x, p1.y);
+    ctx.closePath(); ctx.fill();
+  }
+
+  // 端点标记（深度指示）
+  if (depthT < -0.2) {
+    ctx.save(); ctx.shadowColor = "rgba(255,50,50,0.8)"; ctx.shadowBlur = 25;
+    ctx.fillStyle = "#ff3333";
+    ctx.beginPath(); ctx.arc(p1.x, p1.y, 12, 0, Math.PI * 2); ctx.fill();
+    ctx.restore();
+    ctx.strokeStyle = "#fff"; ctx.lineWidth = 3;
+    ctx.beginPath(); ctx.arc(p1.x, p1.y, 12, 0, Math.PI * 2); ctx.stroke();
+    ctx.fillStyle = "#fff"; ctx.font = "bold 16px sans-serif"; ctx.textAlign = "center"; ctx.textBaseline = "middle";
+    ctx.fillText("\u25b6", p1.x, p1.y);
+  } else if (depthT > 0.2) {
+    ctx.fillStyle = "rgba(80,80,160,0.6)";
+    ctx.beginPath(); ctx.arc(p1.x, p1.y, 5, 0, Math.PI * 2); ctx.fill();
+    ctx.setLineDash([3, 3]);
+    ctx.strokeStyle = "rgba(100,100,200,0.5)"; ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.arc(p1.x, p1.y, 10, 0, Math.PI * 2); ctx.stroke();
+    ctx.setLineDash([]);
+    ctx.strokeStyle = "rgba(150,150,255,0.7)"; ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.moveTo(p1.x - 7, p1.y - 7); ctx.lineTo(p1.x + 7, p1.y + 7); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(p1.x + 7, p1.y - 7); ctx.lineTo(p1.x - 7, p1.y + 7); ctx.stroke();
+  } else {
+    ctx.fillStyle = "#ffaa00";
+    ctx.beginPath();
+    ctx.moveTo(p1.x, p1.y - 10); ctx.lineTo(p1.x + 7, p1.y);
+    ctx.lineTo(p1.x, p1.y + 10); ctx.lineTo(p1.x - 7, p1.y);
+    ctx.closePath(); ctx.fill();
+    ctx.strokeStyle = "#fff"; ctx.lineWidth = 1.5;
+    ctx.beginPath();
+    ctx.moveTo(p1.x, p1.y - 10); ctx.lineTo(p1.x + 7, p1.y);
+    ctx.lineTo(p1.x, p1.y + 10); ctx.lineTo(p1.x - 7, p1.y);
+    ctx.closePath(); ctx.stroke();
+  }
+  // 球心
+  ctx.fillStyle = "#fff";
+  ctx.beginPath(); ctx.arc(p0.x, p0.y, 4, 0, Math.PI * 2); ctx.fill();
+
+  // 更新指示器
+  const indEl = $("modal-3d-info");
+  if (depthT < -0.2) {
+    indEl.innerHTML = "\ud83d\udd34 \u25b6 箭头指向你(出屏)";
+    indEl.style.background = "rgba(255,40,40,0.35)"; indEl.style.color = "#ff6666";
+    indEl.style.border = "2px solid rgba(255,80,80,0.7)";
+  } else if (depthT > 0.2) {
+    indEl.innerHTML = "\ud83d\udd35 \u2717 箭头远离你(入屏)";
+    indEl.style.background = "rgba(40,40,120,0.35)"; indEl.style.color = "#8888ff";
+    indEl.style.border = "2px solid rgba(80,80,200,0.6)";
+  } else {
+    indEl.innerHTML = "\ud83d\udfe1 \u25c6 箭头在侧面";
+    indEl.style.background = "rgba(255,170,0,0.25)"; indEl.style.color = "#ffcc44";
+    indEl.style.border = "2px solid rgba(255,170,0,0.5)";
+  }
+}
+
+// 渲染 bbox 对应的原图区域到预览 canvas
+function renderPreview3D(boxId) {
+  const ctx = modal3D.previewCtx;
+  if (!ctx) return;
+  const W = modal3D.previewCanvas.width, H = modal3D.previewCanvas.height;
+  ctx.fillStyle = "#0a0a18"; ctx.fillRect(0, 0, W, H);
+
+  const box = STATE.boxes.find((b) => b.boxId === boxId);
+  if (!box) {
+    ctx.fillStyle = "#888"; ctx.font = "13px sans-serif"; ctx.textAlign = "center";
+    ctx.fillText("未找到框数据", W/2, H/2); return;
+  }
+  const { x, y, w, h } = box;
+  const src = imgB.dataset.currentSrc || imgB.src || "";
+  if (!src) return;
+  fetch(src).then((r) => r.blob()).then((blob) => {
+    const url = URL.createObjectURL(blob);
+    const tmpImg = new Image();
+    tmpImg.onload = () => {
+      URL.revokeObjectURL(url);
+      const nw = tmpImg.naturalWidth, nh = tmpImg.naturalHeight;
+      ctx.fillStyle = "#0a0a18"; ctx.fillRect(0, 0, W, H);
+      const scale = Math.min(W / nw, H / nh);
+      const dw = nw * scale, dh = nh * scale;
+      const dxo = (W - dw) / 2, dyo = (H - dh) / 2;
+      ctx.drawImage(tmpImg, 0, 0, nw, nh, dxo, dyo, dw, dh);
+      const bx = dxo + x * scale, by = dyo + y * scale, bw = w * scale, bh = h * scale;
+      ctx.fillStyle = "rgba(255,170,0,0.15)"; ctx.fillRect(bx, by, bw, bh);
+      ctx.strokeStyle = "#ffaa00"; ctx.lineWidth = 3; ctx.strokeRect(bx, by, bw, bh);
+    };
+    tmpImg.onerror = () => {
+      ctx.fillStyle = "#888"; ctx.font = "13px sans-serif"; ctx.textAlign = "center";
+      ctx.fillText("图片加载失败", W/2, H/2);
+    };
+    tmpImg.src = url;
+  }).catch(() => {});
+}
+
+function closeModal3D(confirmed, dir) {
+  $("modal-3d-overlay").classList.remove("show");
+  if (confirmed && dir) {
+    const len = Math.sqrt(dir[0]*dir[0] + dir[1]*dir[1] + dir[2]*dir[2]);
+    if (len > 0) { dir[0] /= len; dir[1] /= len; dir[2] /= len; }
+    const box = STATE.boxes.find((b) => b.boxId === modal3D.boxId);
+    if (box) {
+      box.action = "move3d";
+      box.dir3d = [Math.round(dir[0]*1000)/1000, Math.round(dir[1]*1000)/1000, Math.round(dir[2]*1000)/1000];
+    }
+    renderAll();
+  }
+}
+
+function openModal3D(boxId) {
+  gesture = null; // 清理手势残留
+  modal3D.boxId = boxId;
+  // 如果已有 move3d 方向，恢复其旋转角度
+  const box = STATE.boxes.find((b) => b.boxId === boxId);
+  if (box && box.dir3d) {
+    const d = box.dir3d;
+    modal3D.rotY = Math.atan2(-d[2], d[0]);
+    modal3D.rotX = Math.atan2(d[1], Math.sqrt(d[0]*d[0] + d[2]*d[2]));
+  } else {
+    modal3D.rotX = 0.3; modal3D.rotY = 0.5;
+  }
+  modal3D.zoom = 1;
+  renderPreview3D(boxId);
+  $("modal-3d-overlay").classList.add("show");
+  renderModal3D();
+}
+
+// ===== 批量任务：保存/恢复当前条 =====
+function saveCurrentToLocal() {
+  if (!STATE.batch.length) return;
+  const sample = STATE.batch[STATE.batchIdx];
+  const line = sample.line;
+  const key = sampleKey(sample);
+  const result = { boxes: JSON.parse(JSON.stringify(STATE.boxes)), note: $("globalNote").value.trim() };
+  result.bgGlobal = STATE.bgGlobal;
+  result.bgAmbiguous = STATE.bgAmbiguous;
+  if (isReviewer()) { result.verdict = STATE.reviewVerdict; result.reason = $("reviewReason").value.trim(); }
+  result._originalSignature = (STATE.batchResults[key] || {})._originalSignature || "";
+  STATE.batchResults[key] = result;
+
+  if (resultSignature(result) !== result._originalSignature) STATE.dirtyKeys.add(key);
+  else STATE.dirtyKeys.delete(key);
+
+  // 只有有实际内容才算"已完成"
+  if (isReviewer()) {
+    // 审核者：必须有判定（正确/错误）
+    if (result.verdict) STATE.batchDone.add(key);
+    else STATE.batchDone.delete(key);
+  } else {
+    // 标注者：必须有框、有描述、或有背景标注
+    if (result.boxes.length > 0 || result.note || result.bgGlobal || result.bgAmbiguous) STATE.batchDone.add(key);
+    else STATE.batchDone.delete(key);
+  }
+  saveLocal();
+}
+
+function loadCurrentFromLocal() {
+  const sample = STATE.batch[STATE.batchIdx];
+  const saved = STATE.batchResults[sampleKey(sample)];
+  if (saved) {
+    STATE.boxes = saved.boxes || [];
+    STATE.nextBoxId = STATE.boxes.length ? Math.max(...STATE.boxes.map(b => b.boxId)) + 1 : 1;
+    STATE.bgGlobal = !!saved.bgGlobal;
+    STATE.bgAmbiguous = !!saved.bgAmbiguous;
+    STATE.bgLocalMode = false;
+    $("globalNote").value = saved.note || "";
+    if (isReviewer()) {
+      STATE.reviewVerdict = saved.verdict || null;
+      $("reviewReason").value = saved.reason || "";
+      $("btnVerdictCorrect").classList.toggle("active", saved.verdict === "correct");
+      $("btnVerdictWrong").classList.toggle("active", saved.verdict === "wrong");
+    }
+  } else {
+    STATE.boxes = []; STATE.nextBoxId = 1;
+    STATE.bgGlobal = false; STATE.bgAmbiguous = false; STATE.bgLocalMode = false;
+    $("globalNote").value = "";
+    STATE.reviewVerdict = null;
+    $("reviewReason").value = "";
+    $("btnVerdictCorrect").classList.remove("active");
+    $("btnVerdictWrong").classList.remove("active");
+  }
+  STATE.undoStack = []; STATE.editingBoxId = null;
+  updateBgBtnUI();
+}
+
+// ===== 批量导航 =====
+function goToItem(idx) {
+  if (idx < 0 || idx >= STATE.batch.length) return;
+  // 保存当前
+  saveCurrentToLocal();
+  STATE.batchIdx = idx;
+  loadCurrentFromLocal();
+  loadCurrentSample();
+  updateBatchUI();
+  saveLocal();
+}
+
+function loadCurrentSample() {
+  const s = STATE.batch[STATE.batchIdx];
+  if (!s) return;
+  const remotes = s.remotes || [];
+  imgA.src = remotes[0] || ""; imgB.src = remotes[1] || "";
+  $("navInfo").textContent = "Line " + s.line + " / " + (s._annotator || "未知标注者") + " / 原 " + s._bboxCount + " 框";
+  // 审核模式：图片对上方显示标注者信息条
+  const badge = $("annotatorBadge");
+  if (s._path) {
+    badge.classList.remove("hidden");
+    $("annotatorBadgeName").textContent = s._path;
+  } else {
+    badge.classList.add("hidden");
+  }
+  // 回扫模式（标注者）：显示审核者意见
+  const rb = $("reviewBadge");
+  if (STATE.reclaimMode && !isReviewer() && s._reviewBadge) {
+    const b = s._reviewBadge;
+    rb.classList.remove("hidden");
+    rb.classList.toggle("wrong", b.verdict === "wrong");
+    const vEl = $("rbVerdict");
+    vEl.textContent = b.verdict === "correct" ? "✓ 通过" : (b.verdict === "wrong" ? "✗ 驳回" : "待审核");
+    vEl.className = "rb-verdict " + (b.verdict === "correct" ? "ok" : b.verdict === "wrong" ? "bad" : "");
+    $("rbReason").textContent = b.reason ? " 原因：" + b.reason : "";
+  } else {
+    rb.classList.add("hidden");
+  }
+  renderAll();
+}
+
+function updateBatchUI() {
+  const done = STATE.dirtyKeys.size;
+  const total = STATE.batch.length;
+  $("batchCur").textContent = done;
+  $("batchTotal").textContent = total;
+  $("progressFill").style.width = (total ? (done/total*100) : 0) + "%";
+  // 导航点
+  const dots = $("navDots");
+  dots.innerHTML = "";
+  STATE.batch.forEach((s, i) => {
+    const d = document.createElement("span");
+    d.className = "dot" + (STATE.dirtyKeys.has(sampleKey(s)) ? " done" : "") + (i === STATE.batchIdx ? " current" : "");
+    d.title = "Line " + s.line + " / " + (s._annotator || "未知标注者");
+    d.onclick = () => goToItem(i);
+    dots.appendChild(d);
+  });
+  // 审核面板显隐
+  $("review-panel").classList.toggle("hidden", !isReviewer());
+  // 背景按钮：审核者隐藏（只读）
+  $("btnBgGlobal").disabled = isReviewer();
+  $("btnBgLocal").disabled = isReviewer();
+  $("btnBgAmbiguous").disabled = isReviewer();
+  // 图片提示
+  document.querySelector(".img-tip").textContent = isReviewer()
+    ? "查看标注结果 · 在下方判定正确或错误"
+    : "拖拽画框 · 点框左侧✎可编辑";
+}
+
+// ===== 上传 =====
+// ===== 结束标注：确认 → 上传已完成的 → 释放未完成的 → 清空本地 → 回到领取 =====
+async function finishAnnotation() {
+  // 最终防线：校验批次数据集与当前数据集一致，防止跨数据集污染
+  const curDsId = getCurrentDatasetId();
+  if (STATE.batchDatasetId && STATE.batchDatasetId !== curDsId) {
+    showToast("数据集已切换，本批次属于「" + STATE.batchDatasetId + "」，请切回后再上传", "warn");
+    return;
+  }
+
+  // 先保存当前条到本地
+  saveCurrentToLocal();
+
+  // 统计已完成和未完成的数量
+  const doneCount = STATE.batchDone.size;
+  const total = STATE.batch.length;
+  const undoneCount = total - doneCount;
+
+  // ===== 双重确认：明确显示数据集，防止传错池子 =====
+  const isReclaim = STATE.reclaimMode;
+  const uploadRows = [
+    { k: "角色", v: isReviewer() ? "⚖️ 审核者" : "✍️ 标注者" },
+    { k: "模式", v: isReclaim ? "🔄 回扫（覆盖原文件）" : "📥 新标注" },
+    { k: "本批总数", v: total + " 条" },
+    { k: "✅ 将保存到仓库", v: doneCount + " 条", hl: true },
+  ];
+  if (!isReclaim && undoneCount > 0) uploadRows.push({ k: "↩️ 将返回池子", v: undoneCount + " 条" });
+  const okUpload = await showConfirm({
+    tone: "upload",
+    icon: isReclaim ? "🔄" : "📤",
+    title: isReclaim ? "回扫上传（覆盖）" : (isReviewer() ? "结束审核并上传" : "结束标注并上传"),
+    sub: isReclaim ? "将覆盖以下数据集中的原有标注文件" : "结果将上传到以下数据集目录",
+    rows: uploadRows,
+    warn: "⚠️ 此操作不可撤销，请确认数据集无误后再继续。",
+    okText: "确认上传",
+  });
+  if (!okUpload) return;
+
+  const btn = $("btnUpload");
+  btn.disabled = true;
+  const statusEl = $("uploadStatus");
+  statusEl.className = "syncing"; statusEl.textContent = isReclaim ? "正在覆盖上传..." : "正在结束...";
+
+  // 构建要上传的结果
+  const results = [];
+  const username = window.GithubAuth.getAnnotatorId();
+  for (const s of STATE.batch) {
+    const r = STATE.batchResults[s.line];
+    if (!r) continue;
+    if (isReviewer()) {
+      if (!r.verdict) continue;
+      results.push({ line: s.line, data: { line: s.line, verdict: r.verdict, reason: r.reason || "", annotator: s._annotatorName || "", reviewer: username, ts: Date.now() }, sha: s._editSha });
+    } else {
+      if (!r.boxes.length && !r.note && !r.bgGlobal && !r.bgAmbiguous) continue;
+      results.push({ line: s.line, data: {
+        line: s.line, remotes: s.remotes,
+        objects: r.boxes.map((b) => {
+          const o = { box: { x:Math.round(b.x), y:Math.round(b.y), w:Math.round(b.w), h:Math.round(b.h) }, type: b.bgLocal ? "bg_local" : (b.action || "neutral") };
+          if (b.target) o.target = { x:Math.round(b.target.x), y:Math.round(b.target.y) };
+          if (b.dir3d) o.dir3d = b.dir3d;
+          if (b.text) o.text = b.text;
+          if (b.line) o.line = b.line.map((p) => ({ x:Math.round(p.x), y:Math.round(p.y) }));
+          return o;
+        }),
+        note: r.note || "",
+        bg_global: !!r.bgGlobal,
+        bg_ambiguous: !!r.bgAmbiguous,
+        ts: Date.now(),
+      }, sha: s._editSha });
+    }
+  }
+
+  try {
+    if (isReclaim) {
+      // 回扫模式：逐条覆盖更新（走 updateMyAnnotation，不释放锁）
+      // sha 传 null：让 updateMyAnnotation 上传时实时取最新 sha，
+      // 避免回扫期间文件被改动导致快照 sha 过期而 409 失败
+      let ok = 0, fail = 0;
+      for (let i = 0; i < results.length; i++) {
+        const r = results[i];
+        statusEl.textContent = "覆盖上传 " + (i + 1) + "/" + results.length + " ...";
+        try {
+          await window.GithubDispatch.updateMyAnnotation(r.line, r.data, isReviewer(), null);
+          ok++;
+        } catch (e) {
+          fail++;
+          console.error("覆盖 line " + r.line + " 失败:", e);
+        }
+      }
+      showToast("回扫完成：成功 " + ok + " 条" + (fail ? "，失败 " + fail + " 条" : ""), fail ? "warn" : "success");
+    } else {
+      // 正常模式：批量上传 + 释放锁
+      if (results.length > 0) {
+        await window.GithubDispatch.uploadBatch(results, isReviewer());
+      }
+      await window.GithubDispatch.releaseAll(isReviewer());
+      showToast("已保存 " + results.length + " 条，释放 " + undoneCount + " 条回池子", "success");
+    }
+
+    // 清空本地所有记录
+    clearLocal();
+    STATE.batch = [];
+    STATE.batchIdx = 0;
+    STATE.batchResults = {};
+    STATE.batchDone = new Set();
+    STATE.reclaimMode = false;
+
+    statusEl.className = "synced";
+    statusEl.textContent = "已结束 ✓";
+
+    // 回到领取界面
+    showPhase("claim");
+    refreshPoolStats();
+  } catch (e) {
+    statusEl.className = "error";
+    statusEl.textContent = "操作失败: " + e.message;
+    showToast("操作失败: " + e.message, "warn");
+  }
+  btn.disabled = false;
+}
+
+// ===== 阶段切换 =====
+function showPhase(phase) {
+  $("phase-claim").style.display = phase === "claim" ? "flex" : "none";
+  $("phase-work").classList.toggle("active", phase === "work");
+  // 进入工作区后禁用数据集切换，防止标到一半切数据集导致上传到错误目录
+  $("datasetSelect").disabled = (phase === "work");
+}
+
+// ===== 第一阶段逻辑 =====
+let currentDatasetIdx = 0;
+
+// SHA256 十六进制（用于 PAT 可见性过滤）
+// 优先用浏览器原生 crypto.subtle（仅 HTTPS/localhost 可用）；
+// 非安全上下文（http://）下回退到纯 JS 实现，避免页面初始化中断
+async function sha256Hex(str) {
+  if (window.crypto && window.crypto.subtle && window.crypto.subtle.digest) {
+    const buf = await window.crypto.subtle.digest("SHA-256", new TextEncoder().encode(str));
+    return Array.from(new Uint8Array(buf)).map((b) => b.toString(16).padStart(2, "0")).join("");
+  }
+  return sha256HexJs(str);
+}
+
+// 纯 JS SHA-256（兜底实现，结果与原生 crypto.subtle 完全一致）
+function sha256HexJs(str) {
+  const K = [
+    0x428a2f98,0x71374491,0xb5c0fbcf,0xe9b5dba5,0x3956c25b,0x59f111f1,0x923f82a4,0xab1c5ed5,
+    0xd807aa98,0x12835b01,0x243185be,0x550c7dc3,0x72be5d74,0x80deb1fe,0x9bdc06a7,0xc19bf174,
+    0xe49b69c1,0xefbe4786,0x0fc19dc6,0x240ca1cc,0x2de92c6f,0x4a7484aa,0x5cb0a9dc,0x76f988da,
+    0x983e5152,0xa831c66d,0xb00327c8,0xbf597fc7,0xc6e00bf3,0xd5a79147,0x06ca6351,0x14292967,
+    0x27b70a85,0x2e1b2138,0x4d2c6dfc,0x53380d13,0x650a7354,0x766a0abb,0x81c2c92e,0x92722c85,
+    0xa2bfe8a1,0xa81a664b,0xc24b8b70,0xc76c51a3,0xd192e819,0xd6990624,0xf40e3585,0x106aa070,
+    0x19a4c116,0x1e376c08,0x2748774c,0x34b0bcb5,0x391c0cb3,0x4ed8aa4a,0x5b9cca4f,0x682e6ff3,
+    0x748f82ee,0x78a5636f,0x84c87814,0x8cc70208,0x90befffa,0xa4506ceb,0xbef9a3f7,0xc67178f2
+  ];
+  const msg = unescape(encodeURIComponent(str)); // UTF-8 编码
+  const bytes = [];
+  for (let i = 0; i < msg.length; i++) bytes.push(msg.charCodeAt(i));
+  const bitLen = bytes.length * 8;
+  bytes.push(0x80);
+  while (bytes.length % 64 !== 56) bytes.push(0);
+  for (let i = 0; i < 4; i++) bytes.push(0); // 长度高 32 位（token 远小于 2^32 位）
+  for (let i = 3; i >= 0; i--) bytes.push((bitLen >>> (i * 8)) & 0xff);
+  let h0=0x6a09e667,h1=0xbb67ae85,h2=0x3c6ef372,h3=0xa54ff53a,h4=0x510e527f,h5=0x9b05688c,h6=0x1f83d9ab,h7=0x5be0cd19;
+  const w = new Array(64);
+  const rotr = (x, n) => (x >>> n) | (x << (32 - n));
+  for (let off = 0; off < bytes.length; off += 64) {
+    for (let i = 0; i < 16; i++) {
+      w[i] = (bytes[off+i*4]<<24) | (bytes[off+i*4+1]<<16) | (bytes[off+i*4+2]<<8) | bytes[off+i*4+3];
+    }
+    for (let i = 16; i < 64; i++) {
+      const s0 = rotr(w[i-15],7) ^ rotr(w[i-15],18) ^ (w[i-15]>>>3);
+      const s1 = rotr(w[i-2],17) ^ rotr(w[i-2],19) ^ (w[i-2]>>>10);
+      w[i] = (w[i-16] + s0 + w[i-7] + s1) | 0;
+    }
+    let a=h0,b=h1,c=h2,d=h3,e=h4,f=h5,g=h6,h=h7;
+    for (let i = 0; i < 64; i++) {
+      const S1 = rotr(e,6) ^ rotr(e,11) ^ rotr(e,25);
+      const ch = (e & f) ^ (~e & g);
+      const t1 = (h + S1 + ch + K[i] + w[i]) | 0;
+      const S0 = rotr(a,2) ^ rotr(a,13) ^ rotr(a,22);
+      const maj = (a & b) ^ (a & c) ^ (b & c);
+      const t2 = (S0 + maj) | 0;
+      h=g; g=f; f=e; e=(d+t1)|0; d=c; c=b; b=a; a=(t1+t2)|0;
+    }
+    h0=(h0+a)|0; h1=(h1+b)|0; h2=(h2+c)|0; h3=(h3+d)|0; h4=(h4+e)|0; h5=(h5+f)|0; h6=(h6+g)|0; h7=(h7+h)|0;
+  }
+  const hex = (x) => (x >>> 0).toString(16).padStart(8, "0");
+  return hex(h0)+hex(h1)+hex(h2)+hex(h3)+hex(h4)+hex(h5)+hex(h6)+hex(h7);
+}
+
+function getDatasets() { // 同步版：返回全部数据集（兼容旧调用点）
+  const ds = (window.ANNOTATE_CONFIG && window.ANNOTATE_CONFIG.datasets)
+    || (typeof ADMIN_INDEX !== "undefined" && ADMIN_INDEX.datasets);
+  if (ds && ds.length) return ds;
+  return [{ id:"default", name:"默认数据集", file:"samples.json" }];
+}
+
+// 按当前登录 PAT 的哈希过滤出可见数据集（visibleTo 未配置或含 "*" 视为共用池）
+// 所有角色（标注员/审核员）一律按 PAT 哈希过滤，不做角色例外
+async function getVisibleDatasets() {
+  const ds = window.ANNOTATE_CONFIG.datasets;
+  if (!ds || !ds.length) {
+    return [{ id:"default", name:"默认数据集", file: window.ANNOTATE_CONFIG.samplesFile || "samples.json" }];
+  }
+  const token = window.GithubAuth.getToken();
+  const hash = token ? await sha256Hex(token) : null;
+  return ds.filter((d) => {
+    if (!d.visibleTo || d.visibleTo.includes("*")) return true;
+    return hash && d.visibleTo.includes(hash);
+  });
+}
+
+async function populateDatasetSelect() {
+  const sel = $("datasetSelect");
+  const datasets = await getVisibleDatasets();
+  sel.innerHTML = "";
+  datasets.forEach((ds, i) => {
+    const opt = document.createElement("option");
+    opt.value = i; opt.textContent = ds.name;
+    sel.appendChild(opt);
+  });
+  if (currentDatasetIdx >= datasets.length) currentDatasetIdx = 0;
+  sel.value = currentDatasetIdx;
+}
+
+let currentDataset = null; // 当前选中的数据集对象（可见列表中的）
+
+// 只读探查 localStorage 中未完成批次的数据集 ID（不清除、不加载）
+function peekLocalBatchDatasetId() {
+  try {
+    const raw = localStorage.getItem(LS_KEY);
+    if (!raw) return null;
+    const data = JSON.parse(raw);
+    if (!data.batch || !data.batch.length) return null;
+    return data.datasetId || data.batchDatasetId || null;
+  } catch (e) { return null; }
+}
+
+// 选择登录后的默认池，优先级：
+// 1) 有未完成本地批次的池（防止 loadLocal 因数据集不匹配而静默丢弃批次）
+// 2) "只对我可见"的私有池
+// 3) 全局 defaultDataset
+async function pickDefaultVisibleIdx() {
+  const datasets = await getVisibleDatasets();
+  const token = window.GithubAuth.getToken();
+  const hash = token ? await sha256Hex(token) : null;
+  // 1) 未完成批次所在的池（若它仍对我可见）
+  const pendingDsId = peekLocalBatchDatasetId();
+  if (pendingDsId) {
+    const i = datasets.findIndex((d) => d.id === pendingDsId);
+    if (i >= 0) return i;
+  }
+  // 2) 可见列表中"私有且归我"的池子（所有角色一致）
+  for (let i = 0; i < datasets.length; i++) {
+    const d = datasets[i];
+    if (d.visibleTo && !d.visibleTo.includes("*") && hash && d.visibleTo.includes(hash)) return i;
+  }
+  // 3) 回退到全局默认（若它在可见列表里）
+  const def = window.ANNOTATE_CONFIG.defaultDataset || 0;
+  return def < datasets.length ? def : 0;
+}
+
+async function loadDatasetSamples(idx) {
+  const datasets = await getVisibleDatasets();
+  if (!datasets.length) {
+    // 可见池为空：当前 PAT 未配置任何可见池（且无共用池）。给出明确提示而非 undefined 崩溃
+    throw new Error("当前 Token 没有可见的数据集池子，请联系管理员在 config.js 的 visibleTo 中添加你的 PAT 哈希");
+  }
+  if (idx < 0 || idx >= datasets.length) idx = 0;
+  currentDatasetIdx = idx;
+  const ds = datasets[idx];
+  currentDataset = ds;
+  window.GithubDispatch.setDataset(ds.id);
+  const resp = await fetch(ds.file);
+  if (!resp.ok) throw new Error("HTTP " + resp.status);
+  STATE.samples = await resp.json();
+  STATE.sampleByLine = {};
+  STATE.samples.forEach((s) => { STATE.sampleByLine[s.line] = s; });
+}
+
+let lastLockHolders = {}; // 缓存锁持有者信息，供展开面板用
+let lastHiddenDupes = {}; // 缓存被覆盖的副本 { line: { hidden:[...], shown } }
+let lastHiddenCount = 0;  // 被覆盖副本总数
+
+async function refreshPoolStats() {
+  try {
+    const isReview = (document.querySelector('input[name="roleRadio"]:checked') || {}).value === "reviewer";
+    showLoading("正在统计池子状态...");
+    const stats = await window.GithubDispatch.getPoolStats(STATE.samples, isReview);
+    hideLoading();
+    $("statTotal").textContent = stats.total;
+    $("statDone").textContent = stats.done;
+    $("statLocked").textContent = stats.locked;
+    $("statAvail").textContent = stats.available;
+    lastLockHolders = stats.lockHolders || {};
+    renderLockDetails();
+    // +N 重复徽章
+    lastHiddenDupes = stats.hidden || {};
+    lastHiddenCount = stats.hiddenCount || 0;
+    const badge = $("dupBadge");
+    const doneBox = $("doneStatBox");
+    if (lastHiddenCount > 0) {
+      badge.textContent = "+" + lastHiddenCount;
+      badge.classList.remove("hidden");
+      doneBox.classList.add("clickable");
+    } else {
+      badge.classList.add("hidden");
+      doneBox.classList.remove("clickable");
+    }
+    renderDupDetails();
+    // 审核模式：渲染定向筛选标注者 chip
+    if (isReview) renderAnnotatorChips(stats.pendingByAnnotator || {});
+  } catch (e) {
+    hideLoading();
+    showToast("统计失败: " + e.message, "warn");
+  }
+}
+
+// 渲染锁详情面板内容
+function renderLockDetails() {
+  const body = $("lockDetailsBody");
+  const holders = lastLockHolders;
+  const lines = Object.keys(holders);
+  if (!lines.length) {
+    body.innerHTML = '<div style="color:var(--muted);text-align:center;padding:8px;">暂无锁定</div>';
+    return;
+  }
+  // 按持有者分组
+  const byHolder = {};
+  lines.forEach((l) => {
+    const name = holders[l];
+    if (!byHolder[name]) byHolder[name] = [];
+    byHolder[name].push(l);
+  });
+  let html = "";
+  for (const [name, ls] of Object.entries(byHolder)) {
+    const sorted = ls.map(Number).sort((a, b) => a - b);
+    const display = sorted.length <= 8
+      ? sorted.join(", ")
+      : sorted.slice(0, 8).join(", ") + " ... 等" + sorted.length + "条";
+    html += '<div class="lock-holder-row"><span class="lock-holder-name">' + name + '</span><span class="lock-holder-lines">' + sorted.length + ' 条：' + display + '</span></div>';
+  }
+  body.innerHTML = html;
+}
+
+// 渲染重复提交详情面板（按被覆盖者名字分组，完整列出，不省略）
+function renderDupDetails() {
+  const body = $("dupDetailsBody");
+  const dupes = lastHiddenDupes;
+  const lines = Object.keys(dupes);
+  if (!lines.length) {
+    body.innerHTML = '<div style="color:var(--muted);text-align:center;padding:8px;">暂无重复提交</div>';
+    return;
+  }
+  // 按"被覆盖的作者"分组：name → [{line, shown}]
+  const byAuthor = {};
+  lines.forEach((l) => {
+    const info = dupes[l];
+    info.hidden.forEach((name) => {
+      if (!byAuthor[name]) byAuthor[name] = [];
+      byAuthor[name].push({ line: Number(l), shown: info.shown });
+    });
+  });
+  let html = "";
+  for (const [name, items] of Object.entries(byAuthor)) {
+    items.sort((a, b) => a.line - b.line);
+    // 完整列出所有行号 + 每行当前显示的是谁
+    const detail = items.map((it) => {
+      let s = "Line " + it.line;
+      if (it.shown && it.shown !== name) s += "（现显示：" + it.shown + "）";
+      return s;
+    }).join("、");
+    html += '<div class="dup-holder-row"><span class="dup-holder-name">' + name + '</span><span class="dup-holder-lines">被覆盖 ' + items.length + ' 份：' + detail + '</span></div>';
+  }
+  body.innerHTML = html;
+}
+
+// ===== 审核定向筛选标注者 =====
+const selectedAnnotators = new Set(); // 当前勾选的标注者
+let pendingByAnnotatorCache = {};     // { name: count } 缓存，供全选/汇总用
+
+// 渲染标注者筛选 chip（带各自待审核数量）
+function renderAnnotatorChips(pendingByAnnotator) {
+  pendingByAnnotatorCache = pendingByAnnotator || {};
+  const box = $("annotatorChips");
+  const names = Object.keys(pendingByAnnotatorCache).sort();
+  if (!names.length) {
+    box.innerHTML = '<span class="muted">暂无可审核的标注数据</span>';
+    updateFilterSummary();
+    return;
+  }
+  box.innerHTML = "";
+  names.forEach((name) => {
+    const chip = document.createElement("div");
+    chip.className = "annotator-chip" + (selectedAnnotators.has(name) ? " selected" : "");
+    chip.setAttribute("data-name", name);
+    chip.innerHTML = '<span class="chip-name">' + name + '</span><span class="chip-count">' + pendingByAnnotatorCache[name] + '</span>';
+    chip.onclick = () => {
+      if (selectedAnnotators.has(name)) selectedAnnotators.delete(name);
+      else selectedAnnotators.add(name);
+      chip.classList.toggle("selected");
+      updateFilterSummary();
+    };
+    box.appendChild(chip);
+  });
+  updateFilterSummary();
+}
+
+// 更新筛选汇总（已选 N 人 / 共 M 条）
+function updateFilterSummary() {
+  const el = $("filterSummary");
+  if (!selectedAnnotators.size) {
+    el.textContent = "未筛选，将领取全部待审核数据";
+    return;
+  }
+  let total = 0;
+  selectedAnnotators.forEach((n) => { total += (pendingByAnnotatorCache[n] || 0); });
+  el.textContent = "已选 " + selectedAnnotators.size + " 人 · 共 " + total + " 条";
+}
+
+// 获取当前勾选的标注者列表（空数组 = 不筛选）
+function getAnnotatorFilter() {
+  return [...selectedAnnotators];
+}
+
+// 根据角色显隐筛选区
+function toggleAnnotatorFilterSection(isReview) {
+  $("annotatorFilterSection").classList.toggle("hidden", !isReview);
+}
+
+async function claimTasks() {
+  const count = parseInt($("claimCount").value, 10) || 10;
+  const isReview = (document.querySelector('input[name="roleRadio"]:checked') || {}).value === "reviewer";
+  STATE.role = isReview ? "reviewer" : "annotator";
+  window.GithubAuth.setRole(STATE.role);
+
+  const msgEl = $("claimMsg");
+  msgEl.style.display = "none";
+
+  // 审核模式：定向筛选标注者
+  const annotatorFilter = isReview ? getAnnotatorFilter() : null;
+
+  // ===== 双重确认：明确显示数据集，防止领错池子 =====
+  const rows = [
+    { k: "角色", v: isReview ? "⚖️ 审核者" : "✍️ 标注者" },
+    { k: "领取数量", v: count + " 条", hl: true },
+  ];
+  if (isReview && annotatorFilter.length) {
+    rows.push({ k: "定向标注者", v: annotatorFilter.join("、") });
+  }
+  const avail = parseInt($("statAvail").textContent, 10) || 0;
+  const okClaim = await showConfirm({
+    tone: "claim",
+    icon: isReview ? "⚖️" : "📥",
+    title: isReview ? "领取审核任务" : "领取标注任务",
+    sub: "将从以下数据集随机抽取任务并锁定",
+    rows: rows,
+    warn: (avail > 0 && count > avail) ? "⚠️ 可领取数量仅 " + avail + " 条，实际最多领取 " + avail + " 条" : "",
+    okText: "确认领取",
+  });
+  if (!okClaim) return;
+
+  showLoading("正在领取 " + count + " 条任务...");
+  try {
+    const result = await window.GithubDispatch.claimBatch(STATE.samples, count, isReview, annotatorFilter);
+    hideLoading();
+
+    // 审核模式：加载每行的标注数据
+    if (isReview) {
+      showLoading("正在加载标注数据...");
+      for (const s of result.samples) {
+        try {
+          const anno = await window.GithubDispatch.loadAnnotationForReview(s.line);
+          if (anno && anno.data) {
+            s._annoData = anno.data;
+            s._annotatorName = anno.annotatorName;
+          }
+        } catch (e) {}
+      }
+      hideLoading();
+    }
+
+    STATE.batch = result.samples;
+    STATE.batchDatasetId = getCurrentDatasetId();  // 记录领取时的数据集，上传时校验
+    STATE.batchIdx = 0;
+    STATE.batchResults = {};
+    STATE.batchDone = new Set();
+    STATE.reclaimMode = false;  // 正常领取，清除可能残留的回扫标记
+
+    // 审核模式：预填 boxes
+    if (isReview) {
+      STATE.batch.forEach((s) => {
+        if (s._annoData) {
+          const boxes = [];
+          let bid = 1;
+          (s._annoData.objects || []).forEach((obj) => {
+            const box = { boxId: bid++, x:obj.box.x, y:obj.box.y, w:obj.box.w, h:obj.box.h, action:obj.type||"neutral" };
+            if (obj.type === "bg_local") { box.bgLocal = true; box.action = "neutral"; }
+            if (obj.target) box.target = obj.target;
+            if (obj.dir3d) box.dir3d = obj.dir3d;
+            if (obj.text) box.text = obj.text;
+            if (obj.line) box.line = obj.line;
+            boxes.push(box);
+          });
+          STATE.batchResults[s.line] = { boxes, note: s._annoData.note || "", bgGlobal: !!s._annoData.bg_global, bgAmbiguous: !!s._annoData.bg_ambiguous, verdict: null, reason: "" };
+        }
+      });
+    }
+
+    saveLocal();
+    showPhase("work");
+    loadCurrentFromLocal();
+    loadCurrentSample();
+    updateBatchUI();
+    showToast("已领取 " + result.samples.length + " 条任务", "success");
+  } catch (e) {
+    hideLoading();
+    msgEl.textContent = e.message;
+    msgEl.style.display = "block";
+  }
+}
+
+// ===== 我的标注记录 =====
+async function loadMyRecords() {
+  const isReview = (document.querySelector('input[name="roleRadio"]:checked') || {}).value === "reviewer";
+  const panel = $("myRecordsPanel");
+  const body = $("myRecordsBody");
+  panel.classList.remove("hidden");
+  body.innerHTML = '<div style="text-align:center;color:var(--muted);padding:8px;">加载中...</div>';
+
+  try {
+    const records = await window.GithubDispatch.listMyAnnotations(isReview);
+    if (!records.length) {
+      body.innerHTML = '<div class="my-records-empty">暂无记录</div>';
+      return;
+    }
+
+    // 先渲染列表骨架（徽章稍后异步填充，避免阻塞列表显示）
+    body.innerHTML = "";
+    records.forEach((r) => {
+      const row = document.createElement("div");
+      row.className = "record-row";
+      const lineEl = document.createElement("span");
+      lineEl.className = "record-line";
+      lineEl.textContent = "Line " + r.line;
+      row.appendChild(lineEl);
+
+      // 徽章占位
+      const badgeEl = document.createElement("span");
+      badgeEl.className = "record-badge loading";
+      badgeEl.textContent = "...";
+      badgeEl.dataset.line = r.line;
+      row.appendChild(badgeEl);
+
+      const info = document.createElement("span");
+      info.className = "record-info";
+      info.textContent = isReview ? "审核记录" : "标注记录";
+      row.appendChild(info);
+      const editBtn = document.createElement("button");
+      editBtn.className = "record-edit-btn primary";
+      editBtn.textContent = "✎ 修改";
+      editBtn.onclick = () => startEditRecord(r.line, isReview, r.path);
+      row.appendChild(editBtn);
+      body.appendChild(row);
+    });
+
+    // 异步查询徽章状态并回填
+    const badges = await window.GithubDispatch.getRecordBadges(records, isReview);
+    records.forEach((r) => {
+      const el = body.querySelector('.record-badge[data-line="' + r.line + '"]');
+      if (!el) return;
+      el.classList.remove("loading");
+      const b = badges[r.line];
+      if (isReview) {
+        // 审核者视角：被审标注在审核后被修改过 → 灰色（审核结论已过时）
+        if (b && b.outdated) {
+          el.className = "record-badge outdated";
+          el.textContent = "⚪ 标注已修改，需重审";
+          el.title = "标注者在你审核之后修改了这条标注，你当时的结论可能已不适用";
+        } else if (b && b.verdict === "correct") {
+          el.className = "record-badge correct";
+          el.textContent = "✓ 我判了正确";
+        } else if (b && b.verdict === "wrong") {
+          el.className = "record-badge wrong";
+          el.textContent = "✗ 我判了错误";
+          el.title = b.reason || "";
+        } else {
+          el.textContent = "";
+        }
+      } else {
+        // 标注者视角：显示审核结论（绿=正确，红=错误，无=未审核）
+        if (!b || !b.verdict) {
+          el.className = "record-badge pending";
+          el.textContent = "○ 待审核";
+        } else if (b.verdict === "correct") {
+          el.className = "record-badge correct";
+          el.textContent = "✓ 审核通过";
+        } else {
+          el.className = "record-badge wrong";
+          el.textContent = "✗ 审核驳回";
+          el.title = (b.reason ? "原因：" + b.reason : "");
+        }
+      }
+    });
+  } catch (e) {
+    body.innerHTML = '<div style="color:var(--bad);text-align:center;padding:8px;">加载失败: ' + e.message + '</div>';
+  }
+}
+
+// ===== 回扫全部记录：把已有标注全部拉成一个批次，逐条修改后统一上传（覆盖更新）=====
+async function reclaimAllRecords() {
+  const isReview = (document.querySelector('input[name="roleRadio"]:checked') || {}).value === "reviewer";
+  STATE.role = isReview ? "reviewer" : "annotator";
+  window.GithubAuth.setRole(STATE.role);
+
+  // 确认弹窗
+  const ok = await showConfirm({
+    tone: "claim",
+    icon: "🔄",
+    title: "回扫全部记录",
+    sub: "将加载你已有的全部标注记录，逐条修改后统一上传（覆盖原文件）",
+    rows: [
+      { k: "角色", v: isReview ? "⚖️ 审核者" : "✍️ 标注者" },
+      { k: "数据集", v: getCurrentDatasetName() },
+    ],
+    warn: "⚠️ 上传后将覆盖原有标注文件，请确认数据集无误。",
+    okText: "确认回扫",
+  });
+  if (!ok) return;
+
+  showLoading("正在获取记录列表...");
+  try {
+    const records = await window.GithubDispatch.listMyAnnotations(isReview);
+    hideLoading();
+    if (!records.length) {
+      showToast("没有可回扫的记录", "warn");
+      return;
+    }
+
+    // 逐条加载已有标注数据（复用 startEditRecord 的加载逻辑）
+    const batch = [];
+    const batchResults = {};
+    showLoading("正在加载 " + records.length + " 条记录...");
+    for (let i = 0; i < records.length; i++) {
+      const r = records[i];
+      const result = await window.GithubDispatch.loadMyAnnotation(r.line, isReview);
+      if (!result || !result.data) continue;
+
+      // 构建样本（优先用 samples.json 里的，没有就用记录自带的 remotes）
+      let sample = STATE.sampleByLine[r.line];
+      if (!sample) {
+        const remotes = (result.data && result.data.remotes) || [];
+        sample = { line: r.line, remotes: remotes, locals: ["", ""] };
+        STATE.sampleByLine[r.line] = sample;
+      }
+      // 把 sha 存到 sample 上，上传时用
+      sample._editSha = result.sha;
+      sample._editPath = result.path;
+      batch.push(sample);
+
+      // 恢复 boxes/note/bg 到 batchResults（和 startEditRecord 一样的逻辑）
+      let boxesSource = result.data;
+      if (isReview) {
+        try {
+          const anno = await window.GithubDispatch.loadAnnotationForReview(r.line);
+          if (anno && anno.data) {
+            boxesSource = anno.data;
+            sample._annotatorName = anno.annotatorName || "";
+          }
+        } catch (e) {}
+      }
+
+      const boxes = [];
+      let bid = 1;
+      if (boxesSource.objects) {
+        boxesSource.objects.forEach((obj) => {
+          const box = { boxId: bid++, x:obj.box.x, y:obj.box.y, w:obj.box.w, h:obj.box.h, action:obj.type||"neutral" };
+          if (obj.type === "bg_local") { box.bgLocal = true; box.action = "neutral"; }
+          if (obj.target) box.target = obj.target;
+          if (obj.dir3d) box.dir3d = obj.dir3d;
+          if (obj.text) box.text = obj.text;
+          if (obj.line) box.line = obj.line;
+          boxes.push(box);
+        });
+      }
+      batchResults[r.line] = {
+        boxes, note: boxesSource.note || "",
+        bgGlobal: !!boxesSource.bg_global, bgAmbiguous: !!boxesSource.bg_ambiguous,
+        verdict: isReview ? (result.data.verdict || null) : null,
+        reason: isReview ? (result.data.reason || "") : "",
+      };
+    }
+    hideLoading();
+
+    if (!batch.length) {
+      showToast("没有可回扫的记录", "warn");
+      return;
+    }
+
+    // 标注者回扫：拉取审核意见，挂到对应 sample 上（失败不影响回扫本身）
+    if (!isReview) {
+      showLoading("正在加载审核意见...");
+      try {
+        const badges = await window.GithubDispatch.getRecordBadges(records, false);
+        batch.forEach((s) => {
+          const b = badges[s.line];
+          if (b && b.verdict) s._reviewBadge = b;
+        });
+      } catch (e) {}
+      hideLoading();
+    }
+
+    // 进入工作区（和领取流程一样）
+    STATE.batch = batch;
+    STATE.batchDatasetId = getCurrentDatasetId();
+    STATE.batchIdx = 0;
+    STATE.batchResults = batchResults;
+    STATE.batchDone = new Set(batch.map((s) => s.line)); // 回扫模式下全部标记为已完成
+    STATE.reclaimMode = true;
+    STATE.editMode = false;
+
+    saveLocal();
+    showPhase("work");
+    loadCurrentFromLocal();
+    loadCurrentSample();
+    updateBatchUI();
+    showToast("已加载 " + batch.length + " 条记录，逐条修改后点「结束标注」统一上传", "success");
+  } catch (e) {
+    hideLoading();
+    showToast("回扫失败: " + e.message, "warn");
+  }
+}
+
+// 从记录列表点击修改 → 加载到 phase-work（复用 DOM）
+async function startEditRecord(line, isReview, filePath) {
+  showLoading("正在加载数据...");
+  try {
+    const result = await window.GithubDispatch.loadMyAnnotation(line, isReview);
+    hideLoading();
+    if (!result || !result.data) { showToast("加载失败", "warn"); return; }
+
+    // 进入编辑模式
+    STATE.editMode = true;
+    STATE.editLine = line;
+    STATE.editSha = result.sha;
+    STATE.editIsReview = isReview;
+    STATE.role = isReview ? "reviewer" : "annotator";
+
+    // 加载样本（samples.json 缺该行时，下面用记录自带的 remotes 兜底重建）
+    let sample = STATE.sampleByLine[line];
+
+    // 恢复 boxes
+    STATE.boxes = [];
+    STATE.nextBoxId = 1;
+    STATE.bgLocalMode = false;
+    STATE.editingBoxId = null;
+    STATE.undoStack = [];
+
+    // 决定 boxes/note/bg 的数据来源：
+    // - 标注记录：直接用 result.data（标注文件本身含 objects + remotes）
+    // - 审核记录：审核文件不含 objects，需额外加载原始标注数据来渲染框
+    let boxesSource = result.data;
+    if (isReview) {
+      showLoading("正在加载原始标注数据...");
+      try {
+        const anno = await window.GithubDispatch.loadAnnotationForReview(line);
+        if (anno && anno.data) {
+          boxesSource = anno.data;
+          STATE.reviewAnnotator = anno.annotatorName || "";
+        }
+      } catch (e) {}
+      hideLoading();
+    }
+
+    // 兜底：samples.json 没有该行时（如历史脏数据/跨数据集行），
+    // 用记录自带的 remotes 重建样本，保证图片能显示、保存时 STATE.current 不为空
+    if (!sample) {
+      const remotes = (boxesSource && boxesSource.remotes) || [];
+      sample = { line: line, remotes: remotes, locals: ["", ""] };
+      STATE.sampleByLine[line] = sample;
+    }
+    STATE.current = sample;
+    STATE.batch = [sample];
+    STATE.batchIdx = 0;
+
+    STATE.bgGlobal = !!boxesSource.bg_global;
+    STATE.bgAmbiguous = !!boxesSource.bg_ambiguous;
+    if (boxesSource.objects) {
+      boxesSource.objects.forEach((obj) => {
+        const box = { boxId: STATE.nextBoxId++, x:obj.box.x, y:obj.box.y, w:obj.box.w, h:obj.box.h, action:obj.type||"neutral" };
+        if (obj.type === "bg_local") { box.bgLocal = true; box.action = "neutral"; }
+        if (obj.target) box.target = obj.target;
+        if (obj.dir3d) box.dir3d = obj.dir3d;
+        if (obj.text) box.text = obj.text;
+        if (obj.line) box.line = obj.line;
+        STATE.boxes.push(box);
+      });
+    }
+
+    $("globalNote").value = boxesSource.note || "";
+    // 审核模式下整体描述只读展示
+    $("globalNote").readOnly = isReview;
+
+    // 如果是审核记录，恢复 verdict
+    if (isReview) {
+      STATE.reviewVerdict = result.data.verdict || null;
+      $("reviewReason").value = result.data.reason || "";
+      $("btnVerdictCorrect").classList.toggle("active", result.data.verdict === "correct");
+      $("btnVerdictWrong").classList.toggle("active", result.data.verdict === "wrong");
+    } else {
+      STATE.reviewVerdict = null;
+      $("reviewReason").value = "";
+      $("btnVerdictCorrect").classList.remove("active");
+      $("btnVerdictWrong").classList.remove("active");
+    }
+
+    // 加载图片
+    const remotes = (sample && sample.remotes) || [];
+    imgA.src = remotes[0] || ""; imgA.dataset.currentSrc = remotes[0] || "";
+    imgB.src = remotes[1] || ""; imgB.dataset.currentSrc = remotes[1] || "";
+    // 单条编辑模式：隐藏回扫的审核意见条，避免残留
+    $("reviewBadge").classList.add("hidden");
+
+    // 切换到工作区，适配编辑模式 UI
+    showPhase("work");
+    applyEditUI();
+    // 刷新审核面板显隐（applyEditUI 不含此逻辑，否则审核员编辑时看不到正确/错误按钮）
+    $("review-panel").classList.toggle("hidden", !isReviewer());
+    updateBgBtnUI();
+    renderAll();
+
+    showToast("已加载 Line " + line + "，修改后点保存", "success");
+  } catch (e) {
+    hideLoading();
+    showToast("加载失败: " + e.message, "warn");
+  }
+}
+
+// 编辑模式 UI：隐藏导航/结束按钮，显示保存按钮
+function applyEditUI() {
+  const editing = STATE.editMode;
+  // 隐藏批量导航相关
+  $("btnPrev").style.display = editing ? "none" : "";
+  $("btnNextItem").style.display = editing ? "none" : "";
+  $("navDots").style.display = editing ? "none" : "";
+  $("btnUpload").style.display = editing ? "none" : "";
+  $("btnBackToClaim").style.display = editing ? "none" : "";
+  // 显示保存按钮
+  $("btnEditSave").style.display = editing ? "" : "none";
+  // 显示信息
+  if (editing) {
+    $("navInfo").textContent = "修改 Line " + STATE.editLine;
+  }
+}
+
+// 校验所有框是否都填完整（适配 dispatch 数据模型）
+// 返回 false 表示有未完成的框，并给出提示
+function validateBoxes() {
+  for (const b of STATE.boxes) {
+    if (b.bgLocal) continue; // 局部背景框不需要动作
+    const act = b.action || "neutral";
+    if (act === "neutral") {
+      showToast("有框未指定动作，请补齐或删掉该框", "warn");
+      return false;
+    }
+    if (act === "move" && !b.target) {
+      showToast("有移动框未设定目标点", "warn");
+      return false;
+    }
+    if (act === "move3d" && !b.dir3d) {
+      showToast("有 3D 移动框未选择方向", "warn");
+      return false;
+    }
+    if (act === "custom" && !(b.text && b.text.trim())) {
+      showToast("有自定义框未填写描述", "warn");
+      return false;
+    }
+  }
+  return true;
+}
+
+// 保存修改
+async function saveEdit() {
+  if (!STATE.editMode || !STATE.current) {
+    showToast("编辑数据未就绪，请重新打开该记录", "warn");
+    return;
+  }
+
+  if (isReviewer()) {
+    if (!STATE.reviewVerdict) { showToast("请先选择判定", "warn"); return; }
+    const reason = $("reviewReason").value.trim();
+    if (STATE.reviewVerdict === "wrong" && !reason) {
+      $("reviewReason").classList.add("invalid");
+      showToast("判定错误时请填写原因", "warn"); return;
+    }
+  } else {
+    if (STATE.boxes.length && !validateBoxes()) return;
+  }
+
+  const btn = $("btnEditSave");
+  btn.disabled = true; btn.textContent = "保存中...";
+  const statusEl = $("uploadStatus");
+  statusEl.className = "syncing"; statusEl.textContent = "保存中...";
+
+  try {
+    const username = window.GithubAuth.getAnnotatorId();
+    let data;
+    if (STATE.editIsReview) {
+      data = { line: STATE.editLine, verdict: STATE.reviewVerdict, reason: $("reviewReason").value.trim(),
+               annotator: STATE.reviewAnnotator || "", reviewer: username, ts: Date.now() };
+    } else {
+      data = { line: STATE.editLine, remotes: STATE.current.remotes,
+        objects: STATE.boxes.map((b) => {
+          const o = { box: { x:Math.round(b.x), y:Math.round(b.y), w:Math.round(b.w), h:Math.round(b.h) }, type: b.bgLocal ? "bg_local" : (b.action || "neutral") };
+          if (b.target) o.target = { x:Math.round(b.target.x), y:Math.round(b.target.y) };
+          if (b.dir3d) o.dir3d = b.dir3d;
+          if (b.text) o.text = b.text;
+          if (b.line) o.line = b.line.map((p) => ({ x:Math.round(p.x), y:Math.round(p.y) }));
+          return o;
+        }),
+        note: $("globalNote").value.trim(),
+        bg_global: STATE.bgGlobal,
+        bg_ambiguous: STATE.bgAmbiguous,
+        ts: Date.now(),
+      };
+    }
+
+    await window.GithubDispatch.updateMyAnnotation(STATE.editLine, data, STATE.editIsReview, STATE.editSha);
+
+    statusEl.className = "synced"; statusEl.textContent = "已保存 ✓";
+    showToast("修改已保存", "success");
+
+    // 退出编辑模式，回到领取界面
+    STATE.editMode = false;
+    STATE.editLine = null;
+    STATE.editSha = null;
+    btn.disabled = false; btn.textContent = "💾 保存修改";
+    setTimeout(() => {
+      showPhase("claim");
+      $("myRecordsPanel").classList.add("hidden");
+      refreshPoolStats();
+    }, 800);
+  } catch (e) {
+    statusEl.className = "error"; statusEl.textContent = "保存失败";
+    showToast("保存失败: " + e.message, "warn");
+  }
+  btn.disabled = false; btn.textContent = "💾 保存修改";
+}
+
+// ===== 登录 =====
+function updateLoginUI() {
+  // 领取页面不需要单独的登录区，登录在领取前完成
+}
+function openLoginModal() {
+  $("modal-login-overlay").classList.add("show");
+  $("loginError").style.display = "none";
+  $("patInput").value = "";
+  $("annotatorNameInput").value = window.GithubAuth.getAnnotatorName() || "";
+  $("patInput").focus();
+}
+function closeLoginModal() { $("modal-login-overlay").classList.remove("show"); }
+
+// ===== 数据集双重确认弹窗 =====
+// 返回 Promise<boolean>。opts: { tone, icon, title, sub, rows:[{k,v,hl}], warn }
+let confirmResolver = null;
+function showConfirm(opts) {
+  return new Promise((resolve) => {
+    confirmResolver = resolve;
+    const box = $("modal-confirm");
+    box.className = "tone-" + (opts.tone || "claim");
+    $("confirmIcon").textContent = opts.icon || "📥";
+    $("confirmTitle").textContent = opts.title || "确认操作";
+    $("confirmSub").textContent = opts.sub || "请确认操作的数据集";
+    $("confirmDsName").textContent = getCurrentDatasetName();
+    let rowsHtml = "";
+    (opts.rows || []).forEach((r) => {
+      rowsHtml += '<div class="crow"><span class="ck">' + r.k + '</span><span class="cv' + (r.hl ? " hl" : "") + '">' + r.v + '</span></div>';
+    });
+    $("confirmRows").innerHTML = rowsHtml;
+    const warnEl = $("confirmWarn");
+    if (opts.warn) { warnEl.textContent = opts.warn; warnEl.classList.add("show"); }
+    else { warnEl.textContent = ""; warnEl.classList.remove("show"); }
+    $("btnConfirmOk").textContent = opts.okText || "确认";
+    $("modal-confirm-overlay").classList.add("show");
+  });
+}
+function closeConfirm(result) {
+  $("modal-confirm-overlay").classList.remove("show");
+  if (confirmResolver) { confirmResolver(result); confirmResolver = null; }
+}
+function getCurrentDatasetName() {
+  if (currentDataset) return currentDataset.name;
+  const ds = getDatasets();
+  return ds[currentDatasetIdx] ? ds[currentDatasetIdx].name : "-";
+}
+function startPatLogin() {
+  const token = $("patInput").value.trim();
+  const name = $("annotatorNameInput").value.trim();
+  const errEl = $("loginError");
+  errEl.style.display = "none";
+  if (!token) { errEl.textContent = "请输入 Token"; errEl.style.display = "block"; return; }
+  if (!name) { errEl.textContent = "请输入你的名字"; errEl.style.display = "block"; return; }
+  const btn = $("btnStartLogin");
+  btn.disabled = true; btn.textContent = "验证中...";
+  window.GithubAuth.login(token).then(async () => {
+    window.GithubAuth.setAnnotatorName(name);
+    btn.disabled = false; btn.textContent = "验证并登录";
+    closeLoginModal();
+    showToast("登录成功：欢迎，" + name, "success");
+    // 登录成功后按该 PAT 的哈希重建可见池子，并默认落在自己的专属池
+    await populateDatasetSelect();
+    await loadDatasetSamples(await pickDefaultVisibleIdx());
+    refreshPoolStats();
+  }).catch((err) => {
+    btn.disabled = false; btn.textContent = "验证并登录";
+    errEl.textContent = err.message; errEl.style.display = "block";
+  });
+}
+
+// ===== 原在线页面初始化（本地管理员页不调用，仅保留编辑器兼容代码） =====
+async function legacyInit() {
+  initModal3D();
+  // 必须 await：确保下拉框先按当前登录态（未登录=仅共用池）渲染完成，
+  // 再加载默认数据集，避免下拉框选中项与实际加载的数据集不一致
+  await populateDatasetSelect();
+
+  // 按钮绑定
+  $("btnRefreshStats").onclick = refreshPoolStats;
+  $("btnClaim").onclick = () => {
+    if (!window.GithubAuth.getToken()) { openLoginModal(); return; }
+    claimTasks();
+  };
+  // 我的标注记录
+  $("btnMyRecords").onclick = () => {
+    if (!window.GithubAuth.getToken()) { openLoginModal(); return; }
+    loadMyRecords();
+  };
+  $("myRecordsClose").onclick = () => { $("myRecordsPanel").classList.add("hidden"); };
+  $("btnReclaimAll").onclick = () => {
+    if (!window.GithubAuth.getToken()) { openLoginModal(); return; }
+    reclaimAllRecords();
+  };
+  // 锁详情面板：点击"锁定中"展开/关闭
+  $("lockedStatBox").onclick = () => {
+    $("lockDetails").classList.toggle("hidden");
+  };
+  $("lockDetailsClose").onclick = () => {
+    $("lockDetails").classList.add("hidden");
+  };
+  // 重复详情面板：点击"已完成"格子展开/关闭（仅有重复时可点）
+  $("doneStatBox").onclick = () => {
+    if (lastHiddenCount > 0) $("dupDetails").classList.toggle("hidden");
+  };
+  $("dupDetailsClose").onclick = () => {
+    $("dupDetails").classList.add("hidden");
+  };
+  $("datasetSelect").onchange = (e) => {
+    loadDatasetSamples(parseInt(e.target.value, 10)).then(refreshPoolStats);
+  };
+  document.querySelectorAll('input[name="roleRadio"]').forEach((r) => {
+    r.addEventListener("change", () => {
+      const isReview = (document.querySelector('input[name="roleRadio"]:checked') || {}).value === "reviewer";
+      toggleAnnotatorFilterSection(isReview);
+      if (window.GithubAuth.getToken()) refreshPoolStats();
+    });
+  });
+  // 定向筛选：全选 / 清空
+  $("btnFilterAll").onclick = () => {
+    Object.keys(pendingByAnnotatorCache).forEach((n) => selectedAnnotators.add(n));
+    document.querySelectorAll(".annotator-chip").forEach((c) => c.classList.add("selected"));
+    updateFilterSummary();
+  };
+  $("btnFilterNone").onclick = () => {
+    selectedAnnotators.clear();
+    document.querySelectorAll(".annotator-chip").forEach((c) => c.classList.remove("selected"));
+    updateFilterSummary();
+  };
+  $("btnUpload").onclick = finishAnnotation;
+  $("btnEditSave").onclick = saveEdit;
+  $("btnBackToClaim").onclick = () => {
+    saveCurrentToLocal();
+    showPhase("claim");
+    refreshPoolStats();
+  };
+  $("btnPrev").onclick = () => goToItem(STATE.batchIdx - 1);
+  $("btnBgGlobal").onclick = toggleBgGlobal;
+  $("btnBgLocal").onclick = toggleBgLocalMode;
+  $("btnBgAmbiguous").onclick = toggleBgAmbiguous;
+  // 箭头大小滑块
+  $("arrowScale").oninput = (e) => {
+    ARROW_SCALE = parseFloat(e.target.value);
+    $("arrowScaleVal").textContent = ARROW_SCALE.toFixed(1);
+    renderSvg();
+  };
+  $("btnNextItem").onclick = () => {
+    if (STATE.batchIdx < STATE.batch.length - 1) goToItem(STATE.batchIdx + 1);
+    else { saveCurrentToLocal(); showToast("已是最后一条，请上传", "warn"); }
+  };
+  $("btnVerdictCorrect").onclick = () => {
+    STATE.reviewVerdict = "correct";
+    $("btnVerdictCorrect").classList.add("active");
+    $("btnVerdictWrong").classList.remove("active");
+    $("reviewReason").classList.remove("invalid");
+  };
+  $("btnVerdictWrong").onclick = () => {
+    STATE.reviewVerdict = "wrong";
+    $("btnVerdictWrong").classList.add("active");
+    $("btnVerdictCorrect").classList.remove("active");
+    $("reviewReason").focus();
+  };
+  $("reviewReason").addEventListener("input", () => { if ($("reviewReason").value.trim()) $("reviewReason").classList.remove("invalid"); });
+
+  // 登录模态框
+  $("btnStartLogin").onclick = startPatLogin;
+  // 数据集双重确认弹窗按钮
+  $("btnConfirmOk").onclick = () => closeConfirm(true);
+  $("btnConfirmCancel").onclick = () => closeConfirm(false);
+  $("patInput").addEventListener("keydown", (e) => { if (e.key === "Enter") { e.preventDefault(); startPatLogin(); } });
+  $("loginCancel").onclick = closeLoginModal;
+
+  // 快捷键
+  document.addEventListener("keydown", (e) => {
+    if (e.target.tagName === "INPUT" || e.target.tagName === "SELECT" || e.target.tagName === "TEXTAREA") return;
+    if ((e.ctrlKey || e.metaKey) && e.key === "z") { e.preventDefault(); undo(); }
+    if (e.key === "ArrowRight" || e.key === "Enter") { e.preventDefault(); if ($("phase-work").classList.contains("active")) { if (STATE.batchIdx < STATE.batch.length - 1) goToItem(STATE.batchIdx + 1); } }
+    if (e.key === "ArrowLeft") { e.preventDefault(); if ($("phase-work").classList.contains("active")) goToItem(STATE.batchIdx - 1); }
+  });
+
+  // 恢复上次的角色选择，并同步筛选区显隐
+  const savedRole = window.GithubAuth.getRole();
+  if (savedRole) {
+    const radio = document.querySelector('input[name="roleRadio"][value="' + savedRole + '"]');
+    if (radio) radio.checked = true;
+    STATE.role = savedRole;
+  }
+  toggleAnnotatorFilterSection(savedRole === "reviewer");
+
+  // 加载默认数据集
+  showLoading("正在加载数据集...");
+  try {
+    await loadDatasetSamples(window.ANNOTATE_CONFIG.defaultDataset || 0);
+    hideLoading();
+  } catch (e) {
+    hideLoading();
+    showToast("数据集加载失败: " + e.message, "warn");
+    return;
+  }
+
+  // 检查登录态（必须先登录才能看统计和领取）
+  const saved = await window.GithubAuth.checkToken();
+  if (saved) {
+    // 登录态确认：按该 PAT 的哈希重建可见池子，默认落在自己的专属池
+    await populateDatasetSelect();
+    await loadDatasetSamples(await pickDefaultVisibleIdx());
+    refreshPoolStats();
+    // 检查是否有未完成的本地批量任务
+    if (loadLocal()) {
+      showPhase("work");
+      loadCurrentFromLocal();
+      loadCurrentSample();
+      updateBatchUI();
+      showToast("已恢复上次未完成的 " + STATE.batch.length + " 条任务", "success");
+    }
+  } else {
+    // 未登录：直接弹出登录框
+    openLoginModal();
+  }
+}
+
+// ===== 本地管理员模式 =====
+let ADMIN_INDEX = { datasets: [], errors: [] };
+
+async function localApi(path, options) {
+  const response = await fetch(path, options);
+  let body = null;
+  try { body = await response.json(); } catch (e) {}
+  if (!response.ok) throw new Error((body && body.error) || ("HTTP " + response.status));
+  return body;
+}
+
+function showLocalError(message) {
+  const box = $("localErrorBox");
+  if (!message) { box.style.display = "none"; box.textContent = ""; return; }
+  box.textContent = message;
+  box.style.display = "block";
+}
+
+function selectedDatasetMeta() {
+  const id = $("datasetSelect").value;
+  return ADMIN_INDEX.datasets.find((dataset) => dataset.id === id) || null;
+}
+
+function setCurrentAdminDataset() {
+  currentDataset = selectedDatasetMeta();
+  currentDatasetIdx = Math.max(0, ADMIN_INDEX.datasets.findIndex((dataset) => dataset === currentDataset));
+}
+
+function renderMatchPreview() {
+  const dataset = selectedDatasetMeta();
+  const count = Number.parseInt($("claimCount").value, 10);
+  const preview = $("matchPreview");
+  if (!dataset || !Number.isInteger(count) || count < 0) {
+    preview.textContent = "请输入大于或等于 0 的整数";
+    $("statLocked").textContent = "-";
+    return;
+  }
+  const records = (dataset.records || []).filter((record) => record.bboxCount === count);
+  $("statLocked").textContent = records.length;
+  document.querySelectorAll(".bbox-chip").forEach((chip) => {
+    chip.classList.toggle("active", Number(chip.dataset.count) === count);
+  });
+  if (!records.length) {
+    preview.textContent = "该分类没有标注记录";
+    return;
+  }
+  preview.innerHTML = "";
+  records.slice(0, 80).forEach((record) => {
+    const row = document.createElement("div");
+    row.className = "preview-record";
+    const line = document.createElement("span");
+    line.className = "line";
+    line.textContent = "Line " + record.line;
+    const author = document.createElement("span");
+    author.className = "author";
+    author.textContent = record.annotator;
+    const path = document.createElement("span");
+    path.textContent = record.path;
+    row.append(line, author, path);
+    preview.appendChild(row);
+  });
+  if (records.length > 80) {
+    const more = document.createElement("div");
+    more.textContent = "另有 " + (records.length - 80) + " 条，加载后可全部修改";
+    preview.appendChild(more);
+  }
+}
+
+function renderAdminDataset() {
+  setCurrentAdminDataset();
+  const dataset = currentDataset;
+  const histogram = $("bboxHistogram");
+  histogram.innerHTML = "";
+  if (!dataset) {
+    $("statTotal").textContent = "0";
+    $("statDone").textContent = "0";
+    $("statLocked").textContent = "0";
+    return;
+  }
+  $("statTotal").textContent = dataset.recordCount || 0;
+  $("statDone").textContent = (dataset.histogram || []).length;
+  $("statAvail").textContent = (ADMIN_INDEX.errors || []).filter((item) => item.datasetId === dataset.id).length;
+  if (!(dataset.histogram || []).length) {
+    histogram.innerHTML = '<span class="muted">该数据集还没有标注文件</span>';
+  } else {
+    dataset.histogram.forEach((item) => {
+      const chip = document.createElement("button");
+      chip.type = "button";
+      chip.className = "bbox-chip";
+      chip.dataset.count = item.bboxCount;
+      chip.innerHTML = "<strong>" + item.bboxCount + " 框</strong><span>" + item.recordCount + " 条</span>";
+      chip.onclick = () => {
+        $("claimCount").value = item.bboxCount;
+        renderMatchPreview();
+      };
+      histogram.appendChild(chip);
+    });
+    const currentCount = Number.parseInt($("claimCount").value, 10);
+    if (!dataset.histogram.some((item) => item.bboxCount === currentCount)) {
+      $("claimCount").value = dataset.histogram[0].bboxCount;
+    }
+  }
+  renderMatchPreview();
+}
+
+async function refreshLocalIndex(preferredDatasetId) {
+  showLoading("正在扫描本地 annotations...");
+  showLocalError("");
+  try {
+    ADMIN_INDEX = await localApi("/api/index");
+    const select = $("datasetSelect");
+    const previous = preferredDatasetId || select.value;
+    select.innerHTML = "";
+    ADMIN_INDEX.datasets.forEach((dataset) => {
+      const option = document.createElement("option");
+      option.value = dataset.id;
+      option.textContent = dataset.name + "（" + dataset.id + "）";
+      select.appendChild(option);
+    });
+    if (ADMIN_INDEX.datasets.some((dataset) => dataset.id === previous)) select.value = previous;
+    renderAdminDataset();
+    if (ADMIN_INDEX.errors && ADMIN_INDEX.errors.length) {
+      showLocalError("有 " + ADMIN_INDEX.errors.length + " 个标注文件无法解析，已跳过。请先检查 JSON 格式。第一个：" + ADMIN_INDEX.errors[0].path);
+    }
+  } catch (error) {
+    showLocalError("无法连接本地服务：" + error.message + "。请用 python3 local_admin_server.py 启动，不要直接双击 HTML。" );
+  } finally {
+    hideLoading();
+  }
+}
+
+function annotationToResult(data) {
+  const boxes = [];
+  let boxId = 1;
+  (data.objects || []).forEach((object) => {
+    if (!object || !object.box) return;
+    const box = {
+      boxId: boxId++, x:object.box.x, y:object.box.y, w:object.box.w, h:object.box.h,
+      action:object.type || "neutral",
+      _originalObject: object,
+    };
+    if (object.type === "bg_local") { box.bgLocal = true; box.action = "neutral"; }
+    if (object.target) box.target = object.target;
+    if (object.dir3d) box.dir3d = object.dir3d;
+    if (object.text) box.text = object.text;
+    if (object.line) box.line = object.line;
+    boxes.push(box);
+  });
+  const result = {
+    boxes: boxes,
+    note: String(data.note || "").trim(),
+    bgGlobal: !!data.bg_global,
+    bgAmbiguous: !!data.bg_ambiguous,
+  };
+  result._originalSignature = resultSignature(result);
+  return result;
+}
+
+async function loadMatchingRecords() {
+  const dataset = selectedDatasetMeta();
+  const bboxCount = Number.parseInt($("claimCount").value, 10);
+  if (!dataset || !Number.isInteger(bboxCount) || bboxCount < 0) {
+    showToast("请输入有效的 BBox 数量", "warn");
+    return;
+  }
+  if (STATE.dirtyKeys.size && !window.confirm("当前还有未保存修改。加载新分类会覆盖草稿，确定继续吗？")) return;
+  showLoading("正在加载 " + bboxCount + " 框分类...");
+  try {
+    const result = await localApi("/api/records?dataset=" + encodeURIComponent(dataset.id) + "&bbox_count=" + bboxCount);
+    if (!result.records.length) {
+      showToast("该分类没有标注记录", "warn");
+      return;
+    }
+    STATE.role = "annotator";
+    STATE.batch = [];
+    STATE.batchResults = {};
+    STATE.batchDone = new Set();
+    STATE.dirtyKeys = new Set();
+    STATE.batchIdx = 0;
+    STATE.batchDatasetId = dataset.id;
+    STATE.reclaimMode = false;
+    STATE.editMode = false;
+    $("uploadStatus").className = "";
+    $("uploadStatus").textContent = "";
+    result.records.forEach((record) => {
+      const data = record.data || {};
+      const sample = {
+        line: record.line,
+        remotes: record.remotes || data.remotes || [],
+        locals: data.locals || ["", ""],
+        _path: record.path,
+        _annotator: record.annotator,
+        _bboxCount: record.bboxCount,
+        _expectedSha: record.sha256,
+        _originalData: data,
+      };
+      const key = sampleKey(sample);
+      STATE.batch.push(sample);
+      STATE.batchResults[key] = annotationToResult(data);
+      STATE.batchDone.add(key);
+    });
+    saveLocal();
+    showPhase("work");
+    loadCurrentFromLocal();
+    loadCurrentSample();
+    updateBatchUI();
+    $("review-panel").classList.add("hidden");
+    $("btnEditSave").style.display = "none";
+    showToast("已加载 " + STATE.batch.length + " 条记录", "success");
+  } catch (error) {
+    showToast("加载失败：" + error.message, "warn");
+  } finally {
+    hideLoading();
+  }
+}
+
+function validateResult(result) {
+  for (const box of result.boxes || []) {
+    if (box.bgLocal) continue;
+    const action = box.action || "neutral";
+    if (action === "neutral") return "有框未指定动作";
+    if (action === "move" && !box.target) return "有 2D 移动框未设目标点";
+    if (action === "move3d" && !box.dir3d) return "有 3D 移动框未设方向";
+    if (action === "custom" && !(box.text && box.text.trim())) return "有自定义框未填写描述";
+  }
+  return "";
+}
+
+function resultToAnnotation(sample, result) {
+  return Object.assign({}, sample._originalData || {}, {
+    line: sample.line,
+    remotes: (sample._originalData && sample._originalData.remotes) || sample.remotes,
+    objects: (result.boxes || []).map(boxToObject),
+    note: (result.note || "").trim(),
+    bg_global: !!result.bgGlobal,
+    bg_ambiguous: !!result.bgAmbiguous,
+    ts: Date.now(),
+  });
+}
+
+async function finishLocalEdits() {
+  saveCurrentToLocal();
+  const changed = STATE.batch.filter((sample) => STATE.dirtyKeys.has(sampleKey(sample)));
+  if (!changed.length) {
+    showToast("本批没有实际修改", "warn");
+    return;
+  }
+  for (const sample of changed) {
+    const error = validateResult(STATE.batchResults[sampleKey(sample)]);
+    if (error) {
+      showToast("Line " + sample.line + "：" + error, "warn");
+      return;
+    }
+  }
+  const confirmed = await showConfirm({
+    tone: "upload",
+    icon: "💾",
+    title: "写回本地标注",
+    sub: "只覆盖内容实际发生变化的已有 JSON 文件",
+    rows: [
+      { k:"数据集", v:getCurrentDatasetName() },
+      { k:"当前分类", v:STATE.batch[0]._bboxCount + " 个 BBox" },
+      { k:"将修改", v:changed.length + " 个文件", hl:true },
+    ],
+    warn: "保存会直接修改当前工作区。完成后请使用 git diff 检查，再自行 commit 和 push。",
+    okText: "确认写回",
+  });
+  if (!confirmed) return;
+
+  const button = $("btnUpload");
+  const status = $("uploadStatus");
+  button.disabled = true;
+  status.className = "syncing";
+  status.textContent = "正在写回...";
+  try {
+    const payload = {
+      items: changed.map((sample) => ({
+        path: sample._path,
+        expectedSha256: sample._expectedSha,
+        data: resultToAnnotation(sample, STATE.batchResults[sampleKey(sample)]),
+      })),
+    };
+    const response = await localApi("/api/save-batch", {
+      method: "POST",
+      headers: { "Content-Type":"application/json" },
+      body: JSON.stringify(payload),
+    });
+    status.className = "synced";
+    status.textContent = "已写回 " + response.saved + " 个文件";
+    showToast("本地修改已保存，请检查 git diff", "success");
+    clearLocal();
+    STATE.batch = [];
+    STATE.batchResults = {};
+    STATE.dirtyKeys = new Set();
+    STATE.batchDone = new Set();
+    showPhase("claim");
+    await refreshLocalIndex(getCurrentDatasetId());
+  } catch (error) {
+    status.className = "error";
+    status.textContent = "写回失败";
+    showToast("写回失败：" + error.message, "warn");
+  } finally {
+    button.disabled = false;
+  }
+}
+
+function backToAdminFilter() {
+  saveCurrentToLocal();
+  if (STATE.dirtyKeys.size) showToast("未保存修改仍保留在本地草稿中", "warn");
+  showPhase("claim");
+  renderAdminDataset();
+}
+
+async function init() {
+  initModal3D();
+  $("btnRefreshStats").onclick = () => refreshLocalIndex(getCurrentDatasetId());
+  $("btnClaim").onclick = loadMatchingRecords;
+  $("datasetSelect").onchange = renderAdminDataset;
+  $("claimCount").addEventListener("input", renderMatchPreview);
+  $("btnUpload").onclick = finishLocalEdits;
+  $("btnBackToClaim").onclick = backToAdminFilter;
+  $("btnPrev").onclick = () => goToItem(STATE.batchIdx - 1);
+  $("btnNextItem").onclick = () => {
+    if (STATE.batchIdx < STATE.batch.length - 1) goToItem(STATE.batchIdx + 1);
+    else { saveCurrentToLocal(); updateBatchUI(); showToast("已是最后一条", "warn"); }
+  };
+  $("btnBgGlobal").onclick = toggleBgGlobal;
+  $("btnBgLocal").onclick = toggleBgLocalMode;
+  $("btnBgAmbiguous").onclick = toggleBgAmbiguous;
+  $("arrowScale").oninput = (event) => {
+    ARROW_SCALE = Number.parseFloat(event.target.value);
+    $("arrowScaleVal").textContent = ARROW_SCALE.toFixed(1);
+    renderSvg();
+  };
+  $("btnConfirmOk").onclick = () => closeConfirm(true);
+  $("btnConfirmCancel").onclick = () => closeConfirm(false);
+  document.addEventListener("keydown", (event) => {
+    if (event.target.tagName === "INPUT" || event.target.tagName === "SELECT" || event.target.tagName === "TEXTAREA") return;
+    if ((event.ctrlKey || event.metaKey) && event.key === "z") { event.preventDefault(); undo(); return; }
+    if (!$("phase-work").classList.contains("active")) return;
+    if ((event.key === "ArrowRight" || event.key === "Enter") && STATE.batchIdx < STATE.batch.length - 1) {
+      event.preventDefault(); goToItem(STATE.batchIdx + 1);
+    }
+    if (event.key === "ArrowLeft") { event.preventDefault(); goToItem(STATE.batchIdx - 1); }
+  });
+  window.addEventListener("beforeunload", () => saveCurrentToLocal());
+
+  let savedDatasetId = "";
+  try {
+    const draft = JSON.parse(localStorage.getItem(LS_KEY) || "null");
+    savedDatasetId = draft && draft.datasetId ? draft.datasetId : "";
+  } catch (e) {}
+  await refreshLocalIndex(savedDatasetId);
+  if (savedDatasetId && loadLocal()) {
+    showPhase("work");
+    loadCurrentFromLocal();
+    loadCurrentSample();
+    updateBatchUI();
+    showToast("已恢复上次未保存的本地修改", "success");
+  }
+}
+
+document.addEventListener("DOMContentLoaded", init);
+
+})();
+</script>
+</body>
+</html>
