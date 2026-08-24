@@ -1,0 +1,26 @@
+{
+  "line": 8939,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008939_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=nGaD17DeGbdVvdwjk03pf6pgW0U%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008939_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=DWm%2FVZsmb2rYO%2BO0J2ZdwbxEQ%2Fk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 616,
+        "y": 395,
+        "w": 40,
+        "h": 39
+      },
+      "type": "move",
+      "target": {
+        "x": 545,
+        "y": 426
+      }
+    }
+  ],
+  "note": "怪兽与蓝色男子的相对距离变远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787554865981
+}
