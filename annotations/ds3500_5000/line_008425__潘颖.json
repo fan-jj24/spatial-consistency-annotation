@@ -1,0 +1,27 @@
+{
+  "line": 8425,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008425_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=Zg%2BeztaxczHrGUUULbH8u02sHaI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008425_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=Qg7hu16RcnpQK1lERPlmCZgr9Mo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 73,
+        "y": 210,
+        "w": 422,
+        "h": 829
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.254,
+        -0.089,
+        -0.963
+      ]
+    }
+  ],
+  "note": "男子与台阶的相对位置变了，由台阶中央变为台阶上",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787567650487
+}
