@@ -1,0 +1,27 @@
+{
+  "line": 7740,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007740_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=zLk6QGjgoVKfvrqaIPCZGp%2FHlUY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007740_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=JgflgDOHoTDTcB8CiJ8n4a%2BMspQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 2,
+        "y": 311,
+        "w": 449,
+        "h": 534
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.427,
+        0.004,
+        0.904
+      ]
+    }
+  ],
+  "note": "警车与大门的相对位置发生变化，由大门左边变成大门右边",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787553304160
+}
