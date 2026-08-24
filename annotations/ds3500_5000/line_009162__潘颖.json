@@ -1,0 +1,36 @@
+{
+  "line": 9162,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009162_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=4Th3K9Qs7zeH9gFPdJQZWzoC1ms%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009162_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=d5F%2FD9bbjlPsBRqberG5ioLtypg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 621,
+        "y": 301,
+        "w": 56,
+        "h": 215
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.007,
+        0.092,
+        0.996
+      ]
+    },
+    {
+      "box": {
+        "x": 760,
+        "y": 125,
+        "w": 160,
+        "h": 239
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "男子与地面黄色框线的相对位置变了，由黄色框线外变为黄色框线内，男子左后方的铁门由半开变为全开",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787553304159
+}
