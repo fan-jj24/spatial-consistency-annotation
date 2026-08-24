@@ -1,0 +1,27 @@
+{
+  "line": 8353,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008353_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=%2BqwIRb6DXWKnPl9kV8JDYJ%2BF29k%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008353_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=SFx43t%2B6qVJgpz%2B8wyeQFYasggo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 561,
+        "y": 58,
+        "w": 616,
+        "h": 661
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.031,
+        -0.052,
+        -0.998
+      ]
+    }
+  ],
+  "note": "两人的相对位置由并肩变为面对面",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787553304160
+}
