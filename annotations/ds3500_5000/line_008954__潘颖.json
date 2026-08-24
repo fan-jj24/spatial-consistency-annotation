@@ -1,0 +1,22 @@
+{
+  "line": 8954,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008954_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=9BYQuR%2BOpwKZ3lY42zFrP3s7oMw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008954_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=vtePkohNlJeD5g00yVFgjinZaOw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 760,
+        "y": 359,
+        "w": 442,
+        "h": 360
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "男子左手边多出了一个怪兽",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787553304160
+}
