@@ -1,0 +1,22 @@
+{
+  "line": 8327,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008327_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=sGJP0nirg1SuVwUi13iK47SxsqE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008327_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=ONdakEKWHdt0G88biddVrpTryQY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 4,
+        "y": 837,
+        "w": 561,
+        "h": 379
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "倒地女子替换为披发男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787567650487
+}
