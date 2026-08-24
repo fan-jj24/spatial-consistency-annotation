@@ -1,0 +1,22 @@
+{
+  "line": 9226,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009226_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109368&Signature=5GkP%2FEy%2FphgH1iUqrny1fylU%2FT8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009226_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109368&Signature=vnxcTOy6bogXRD6XplF%2F0bBXZyM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 364,
+        "y": 102,
+        "w": 667,
+        "h": 615
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "纸人的朝向变了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787553304160
+}
