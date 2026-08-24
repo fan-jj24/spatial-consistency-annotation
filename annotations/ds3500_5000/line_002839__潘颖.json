@@ -1,0 +1,23 @@
+{
+  "line": 2839,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002839_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109350&Signature=r08SdUm9nnNt0uksdkZsC9LKsUw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002839_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109350&Signature=zwrNPRhsavflZ2TbdaeWQTVetRc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 130,
+        "y": 540,
+        "w": 369,
+        "h": 676
+      },
+      "type": "custom",
+      "text": "女子的朝向变了，多出一名黑衣男子"
+    }
+  ],
+  "note": "女子的朝向变了，应与绿衣男子面对面，女子对面多出一名黑衣男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787568777140
+}
