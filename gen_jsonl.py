@@ -3,7 +3,7 @@
 从标注数据生成 JSONL 数据集
 
 功能：
-  - 读取 4 个数据集（ds500, ds500_1000, ds1500_2000, ds2000_2500）的全部标注记录
+  - 默认读取仓库中的 8 个正式数据集（不包含 tests100）
   - 下载原始图片对（A + B）
   - 在 B 图上渲染标注（bbox、箭头、线条、文字标签）
   - 上传标注后的 B 图到外网 OSS，获取 URL
@@ -18,13 +18,14 @@
     - objects: [{box, type, target, dir3d, text, line}, ...]
 
 用法：
-  python3 gen_jsonl.py --repo-dir annotation-repo --output dataset.jsonl
-  python3 gen_jsonl.py --repo-dir annotation-repo --override-dir annotation-override --output dataset.jsonl
-  python3 gen_jsonl.py --repo-dir annotation-repo --output dataset.jsonl --datasets ds500,ds500_1000
-  python3 gen_jsonl.py --repo-dir annotation-repo --output dataset.jsonl --skip-upload  # 只保存本地不上传
+  python3 gen_jsonl.py --output dataset.jsonl
+  python3 gen_jsonl.py --override-dir annotation-override --output dataset.jsonl
+  python3 gen_jsonl.py --output dataset.jsonl --datasets ds500,ds500_1000
+  python3 gen_jsonl.py --output dataset.jsonl --skip-upload  # 只保存本地不上传
 """
 
 import argparse
+import hashlib
 import json
 import os
 import sys
@@ -48,6 +49,11 @@ except ImportError:
 
 # ===== OSS =====
 OUTER_OSS_PREFIX = "yk/ai-material/neo/fjj/2k/annotated"
+SCRIPT_DIR = Path(__file__).resolve().parent
+DEFAULT_DATASETS = (
+    "ds500,ds500_1000,ds1000_1500,ds1500_2000,"
+    "ds2000_2500,ds2500_3000,ds3000_3500,ds3500_5000"
+)
 
 def build_outer_handler():
     """从环境变量构建 OSS handler（参考 interactive_selector.py）"""
@@ -105,7 +111,7 @@ def load_annotation_records(repo_dir, override_dir, dataset_ids):
     """
     读取指定数据集的全部标注记录
     override 优先：如果 override 目录有同名文件，用 override 的
-    同一个 line 如果有多个标注者，后读到的覆盖前面的（与 review.html 逻辑一致）
+    同一个 line 如果有多个标注者，会分别保留为独立记录
     """
     from pathlib import Path
     import json
@@ -161,12 +167,12 @@ def load_annotation_records(repo_dir, override_dir, dataset_ids):
                 "file_path": rel_path,
             })
 
-    records.sort(key=lambda r: r["line"])
+    records.sort(key=lambda r: (r["dataset_id"], r["line"], r["annotator"]))
     return records
 
 # ===== 读取审核记录 =====
 def load_review_records(repo_dir, override_dir, dataset_ids):
-    """读取审核记录，按 line 索引"""
+    """读取审核记录，按 (dataset_id, line) 索引"""
     from pathlib import Path
     import json
     import re
@@ -201,8 +207,9 @@ def load_review_records(repo_dir, override_dir, dataset_ids):
             m = re.match(r"line_(\d+)__(.+)\.json$", f.name)
             if m:
                 line = int(m.group(1))
-                if line not in reviews:
-                    reviews[line] = data
+                key = (ds_id, line)
+                if key not in reviews:
+                    reviews[key] = data
     return reviews
 
 # ===== 读取 samples（获取 remotes）=====
@@ -233,7 +240,7 @@ def load_samples(repo_dir, dataset_ids):
                     with open(p, "r", encoding="utf-8") as f:
                         samples = json.load(f)
                     for s in samples:
-                        sample_by_line[s["line"]] = s
+                        sample_by_line[(ds_id, s["line"])] = s
                 except Exception:
                     pass
                 break
@@ -368,6 +375,35 @@ def is_oss_file_exist(bucket, oss_key):
     except Exception:
         return False
 
+def safe_key_component(value):
+    """将标注者名称转换为稳定且适合放入 OSS Key 的片段。"""
+    value = str(value)
+    slug = re.sub(r"[^0-9A-Za-z._-]+", "_", value).strip("._-") or "annotator"
+    digest = hashlib.sha256(value.encode("utf-8")).hexdigest()[:8]
+    return slug[:48] + "-" + digest
+
+def annotation_content_hash(annotation):
+    """计算稳定的标注内容哈希；忽略时间戳和可能变化的图片签名 URL。"""
+    content = {
+        "objects": annotation.get("objects", []),
+        "note": annotation.get("note", ""),
+        "bg_global": annotation.get("bg_global", False),
+        "bg_ambiguous": annotation.get("bg_ambiguous", False),
+    }
+    encoded = json.dumps(
+        content, ensure_ascii=False, sort_keys=True, separators=(",", ":")
+    ).encode("utf-8")
+    return hashlib.sha256(encoded).hexdigest()[:16]
+
+def build_annotated_image_path(record):
+    """构建不会在数据集、标注者或标注版本之间冲突的相对图片路径。"""
+    file_name = "line_{:06d}__{}__{}.jpg".format(
+        record["line"],
+        safe_key_component(record["annotator"]),
+        annotation_content_hash(record["annotation"]),
+    )
+    return Path(record["dataset_id"]) / file_name
+
 # ===== 主流程 =====
 def process_one_record(record, sample, review, bucket, skip_upload, local_dir):
     """处理一条记录：下载图片 → 渲染标注 → 上传 → 返回 JSONL 行"""
@@ -390,15 +426,16 @@ def process_one_record(record, sample, review, bucket, skip_upload, local_dir):
 
         # 上传或保存本地
         annotated_url = ""
+        image_rel_path = build_annotated_image_path(record)
         if skip_upload:
-            local_path = Path(local_dir) / ("line_" + str(line).zfill(6) + "_annotated.jpg")
+            local_path = Path(local_dir) / image_rel_path
             local_path.parent.mkdir(parents=True, exist_ok=True)
             img_annotated.save(str(local_path), "JPEG", quality=90)
             annotated_url = str(local_path)
         else:
             if not bucket:
                 raise Exception("OSS 未配置")
-            oss_key = OUTER_OSS_PREFIX + "/line_" + str(line).zfill(6) + "_annotated.jpg"
+            oss_key = OUTER_OSS_PREFIX + "/" + image_rel_path.as_posix()
             if not is_oss_file_exist(bucket, oss_key):
                 annotated_url = upload_to_oss(bucket, oss_key, img_annotated)
             else:
@@ -447,10 +484,16 @@ def process_one_record(record, sample, review, bucket, skip_upload, local_dir):
 
 def main():
     parser = argparse.ArgumentParser(description="从标注数据生成 JSONL 数据集")
-    parser.add_argument("--repo-dir", default="annotation-repo", help="仓库目录")
-    parser.add_argument("--override-dir", default="annotation-override", help="override 目录（修改后的数据）")
+    parser.add_argument(
+        "--repo-dir", default=str(SCRIPT_DIR),
+        help="仓库目录（默认：gen_jsonl.py 所在目录）",
+    )
+    parser.add_argument(
+        "--override-dir", default=None,
+        help="override 目录（默认：仓库目录内的 annotation-override）",
+    )
     parser.add_argument("--output", "-o", default="dataset.jsonl", help="输出 JSONL 文件")
-    parser.add_argument("--datasets", default="ds500,ds500_1000,ds1500_2000,ds2000_2500",
+    parser.add_argument("--datasets", default=DEFAULT_DATASETS,
                         help="数据集 ID 列表（逗号分隔）")
     parser.add_argument("--skip-upload", action="store_true", help="只保存本地不上传 OSS")
     parser.add_argument("--local-dir", default="./tmp/annotated_images", help="本地保存目录（skip-upload 时用）")
@@ -458,7 +501,10 @@ def main():
     args = parser.parse_args()
 
     repo_dir = Path(args.repo_dir)
-    override_dir = Path(args.override_dir) if args.override_dir else None
+    override_dir = (
+        Path(args.override_dir) if args.override_dir is not None
+        else repo_dir / "annotation-override"
+    )
     dataset_ids = [d.strip() for d in args.datasets.split(",") if d.strip()]
     output_path = Path(args.output)
 
@@ -513,8 +559,9 @@ def main():
     with ThreadPoolExecutor(max_workers=args.workers) as pool:
         futures = {}
         for record in records:
-            sample = sample_by_line.get(record["line"])
-            review = reviews.get(record["line"])
+            record_key = (record["dataset_id"], record["line"])
+            sample = sample_by_line.get(record_key)
+            review = reviews.get(record_key)
             fut = pool.submit(process_one_record, record, sample, review, bucket, args.skip_upload, local_dir)
             futures[fut] = record
 
@@ -533,7 +580,7 @@ def main():
                 print("  进度: " + str(done[0]) + "/" + str(len(records)) + " 成功=" + str(len(results)) + " 失败=" + str(len(errors)))
 
     # 按行号排序
-    results.sort(key=lambda r: r["line"])
+    results.sort(key=lambda r: (r["dataset_id"], r["line"], r["annotator"]))
 
     # 写 JSONL
     output_path.parent.mkdir(parents=True, exist_ok=True)
