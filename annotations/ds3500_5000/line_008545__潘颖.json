@@ -1,0 +1,27 @@
+{
+  "line": 8545,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008545_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=pCWX3CZZa64KqQ73xEUsC3Y%2Fbkc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008545_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=%2BFaekmbqkzShXm2MQXDf3Tw%2F8zE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 675,
+        "y": 235,
+        "w": 114,
+        "h": 285
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.985,
+        0.018,
+        0.17
+      ]
+    }
+  ],
+  "note": "壁虎与拉链的相对距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787568777140
+}
