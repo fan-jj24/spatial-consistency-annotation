@@ -1,0 +1,26 @@
+{
+  "line": 9403,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009403_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=mH8cP6QBlMDX8nue7eqTpbl7M80%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009403_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=A7%2BMGl7dXeEDgk1Yv0%2BusK6xb%2BQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 473,
+        "y": 81,
+        "w": 173,
+        "h": 554
+      },
+      "type": "move",
+      "target": {
+        "x": 814,
+        "y": 274
+      }
+    }
+  ],
+  "note": "羚羊与十字架的相对距离变远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787567650487
+}
