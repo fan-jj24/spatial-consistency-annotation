@@ -1,0 +1,39 @@
+{
+  "line": 9066,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009066_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=CWPTJlaMq0HwTQvBZt7q2KfuT8M%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009066_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=BH5fwNWR%2FQIvhaI10xPLeG1p%2B7Q%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 715,
+        "y": 233,
+        "w": 117,
+        "h": 390
+      },
+      "type": "move",
+      "target": {
+        "x": 788,
+        "y": 127
+      }
+    },
+    {
+      "box": {
+        "x": 271,
+        "y": 104,
+        "w": 65,
+        "h": 82
+      },
+      "type": "move",
+      "target": {
+        "x": 643,
+        "y": 117
+      }
+    }
+  ],
+  "note": "男子的相对高度变低了，球与男子的相对距离变远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787553304160
+}
