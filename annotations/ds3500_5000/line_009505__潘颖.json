@@ -1,0 +1,26 @@
+{
+  "line": 9505,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009505_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=T6OY1JnQvftbuUuyjyamEttiREg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009505_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=%2Bv2%2FgoQILW2FDkd%2BGH1l7AGEGVM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 654,
+        "y": 297,
+        "w": 160,
+        "h": 135
+      },
+      "type": "move",
+      "target": {
+        "x": 25,
+        "y": 344
+      }
+    }
+  ],
+  "note": "怪兽与男子的相对距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787553304160
+}
