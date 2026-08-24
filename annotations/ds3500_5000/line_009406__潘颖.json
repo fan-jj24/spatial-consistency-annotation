@@ -1,0 +1,22 @@
+{
+  "line": 9406,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009406_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=eMQfZ6u8j26x6hcAa2wl0o9697s%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009406_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=MlYqm1iMI1EQAL93F2qc%2FrvMgWA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1020,
+        "y": 9,
+        "w": 151,
+        "h": 698
+      },
+      "type": "add"
+    }
+  ],
+  "note": "电脑桌前的黄发男子消失了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787567650487
+}
