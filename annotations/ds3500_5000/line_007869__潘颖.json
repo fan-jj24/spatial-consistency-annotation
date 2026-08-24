@@ -1,0 +1,12 @@
+{
+  "line": 7869,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007869_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=cqWgNYFef%2BG4jiR5gB0E2jLr1k8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007869_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=soD4cN8Ea75M7h9SE3%2BmoBxpzcU%3D"
+  ],
+  "objects": [],
+  "note": "A图中的床在B图中没有体现，无法判断一致性",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787567650487
+}
