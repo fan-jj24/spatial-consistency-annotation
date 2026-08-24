@@ -1,0 +1,26 @@
+{
+  "line": 2878,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002878_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109350&Signature=AIA4tjm4Ati0aeMYpjXrU7f6NcA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002878_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109350&Signature=EHHce1VkAcL8Jm7ndT%2FgdqKkn3Y%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 235,
+        "y": 499,
+        "w": 340,
+        "h": 143
+      },
+      "type": "move",
+      "target": {
+        "x": 20,
+        "y": 361
+      }
+    }
+  ],
+  "note": "男子与女子的相对位置由岸上变成水里",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787567650487
+}
