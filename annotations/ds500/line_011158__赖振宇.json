@@ -4,45 +4,9 @@
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011158_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477450&Signature=cOecbXcLls0hv3netgbA9vD2yQQ%3D",
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011158_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477450&Signature=moLczNIZHS4BISOYv2tNwdd9P%2F4%3D"
   ],
-  "objects": [
-    {
-      "box": {
-        "x": 389,
-        "y": 262,
-        "w": 279,
-        "h": 253
-      },
-      "type": "move",
-      "target": {
-        "x": 693,
-        "y": 615
-      }
-    },
-    {
-      "box": {
-        "x": 501,
-        "y": 577,
-        "w": 169,
-        "h": 643
-      },
-      "type": "move",
-      "target": {
-        "x": 383,
-        "y": 710
-      }
-    },
-    {
-      "box": {
-        "x": 38,
-        "y": 446,
-        "w": 308,
-        "h": 809
-      },
-      "type": "replace"
-    }
-  ],
+  "objects": [],
   "note": "整体背景变化，人物重组",
   "bg_global": true,
   "bg_ambiguous": false,
-  "ts": 1786352739975
+  "ts": 1787574619820
 }

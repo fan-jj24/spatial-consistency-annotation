@@ -4,45 +4,9 @@
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011367_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477451&Signature=dXmCQstNXcbLqXN88jsR2Tlr9vU%3D",
     "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_011367_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601785477451&Signature=VJdmxAGikFwutsB5p72Cp7SmI24%3D"
   ],
-  "objects": [
-    {
-      "box": {
-        "x": 97,
-        "y": 249,
-        "w": 189,
-        "h": 788
-      },
-      "type": "move",
-      "target": {
-        "x": 302,
-        "y": 567
-      }
-    },
-    {
-      "box": {
-        "x": 335,
-        "y": 329,
-        "w": 164,
-        "h": 694
-      },
-      "type": "move",
-      "target": {
-        "x": 296,
-        "y": 687
-      }
-    },
-    {
-      "box": {
-        "x": 525,
-        "y": 252,
-        "w": 189,
-        "h": 865
-      },
-      "type": "bg_local"
-    }
-  ],
-  "note": "黑衣男子和青衣女子位置变化，局部背景变化，房屋变池塘",
-  "bg_global": false,
+  "objects": [],
+  "note": "黑衣男子和青衣女子位置变化，房屋变池塘，背景完全不一致",
+  "bg_global": true,
   "bg_ambiguous": false,
-  "ts": 1786352739975
+  "ts": 1787574619820
 }
