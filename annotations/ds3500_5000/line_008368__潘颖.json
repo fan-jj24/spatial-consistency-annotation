@@ -1,0 +1,27 @@
+{
+  "line": 8368,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008368_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=k7l1qbEbAfJR9vV1qb%2FfPjdd%2BtE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008368_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=DocPe7LUVJTIECyJnV6Y8gqOF9w%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 289,
+        "y": 422,
+        "w": 552,
+        "h": 79
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.283,
+        0.004,
+        -0.959
+      ]
+    }
+  ],
+  "note": "苍鹰与城市的距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787554865981
+}
