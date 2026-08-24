@@ -1,0 +1,26 @@
+{
+  "line": 9205,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009205_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109368&Signature=zlsUeR1PNe2z%2ByZgzvKE5slLPfg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009205_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109368&Signature=yCNFGjgwHJLIoYJPZT2TwbkRldg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 900,
+        "y": 356,
+        "w": 241,
+        "h": 274
+      },
+      "type": "move",
+      "target": {
+        "x": 596,
+        "y": 375
+      }
+    }
+  ],
+  "note": "蓝人与白发男子的相对位置变了，由白发男子右后方变为左前方",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787554865981
+}
