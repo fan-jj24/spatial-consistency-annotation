@@ -1,0 +1,26 @@
+{
+  "line": 8676,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008676_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=F03muNJ%2BpVoMPoZ3BPp9%2FRB8%2Fko%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008676_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=FYKExWO0u33ocN0rOdWhhusLC%2FU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 168,
+        "y": 261,
+        "w": 420,
+        "h": 1027
+      },
+      "type": "move",
+      "target": {
+        "x": 365,
+        "y": 3
+      }
+    }
+  ],
+  "note": "女子与地面的相对距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787567650487
+}
