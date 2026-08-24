@@ -1,0 +1,27 @@
+{
+  "line": 8882,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008882_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=oOjs1dsKLhPNOar6Dl7q1YmpmVE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008882_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=TPnECUuVsdc1N0IUBfVSTyhFgoY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 598,
+        "y": 292,
+        "w": 95,
+        "h": 91
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.079,
+        0.976,
+        -0.205
+      ]
+    }
+  ],
+  "note": "男子与地面的相对距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787567650487
+}
