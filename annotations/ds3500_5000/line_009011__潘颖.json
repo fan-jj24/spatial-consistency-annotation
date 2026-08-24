@@ -1,0 +1,27 @@
+{
+  "line": 9011,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009011_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=OxDjsnSFQGG%2BDQz%2FtYOY6vpGKjs%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009011_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=dq0KmjGukRv57hid9nYdDD06680%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 379,
+        "y": 1,
+        "w": 746,
+        "h": 723
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.437,
+        -0.004,
+        0.899
+      ]
+    }
+  ],
+  "note": "女子与怪兽的相对距离变远了，女子的相对高度变低了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787567650487
+}
