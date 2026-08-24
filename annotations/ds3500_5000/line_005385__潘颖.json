@@ -1,0 +1,27 @@
+{
+  "line": 5385,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_005385_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=ypkRuonR1V7rUSokHg1MZXts53g%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_005385_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=MU15zyXQnTu%2B%2B2gABFEBUrs3p7k%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 319,
+        "y": 604,
+        "w": 84,
+        "h": 69
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.001,
+        0.012,
+        1
+      ]
+    }
+  ],
+  "note": "三人与观众席的相对距离边远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787554865981
+}
