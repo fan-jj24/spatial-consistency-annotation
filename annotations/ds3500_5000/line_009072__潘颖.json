@@ -1,0 +1,27 @@
+{
+  "line": 9072,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009072_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=6MT%2F5SUFBFKJKajk5EBmx5CU8qg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009072_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=xwXXS03msJSlzGEiTQPo5b5A1ww%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 188,
+        "y": 269,
+        "w": 358,
+        "h": 1006
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.925,
+        -0.002,
+        0.381
+      ]
+    }
+  ],
+  "note": "男子与虚线的相对距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787553304160
+}
