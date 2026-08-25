@@ -1,0 +1,27 @@
+{
+  "line": 8181,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008181_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=VDdi0WsAA%2B9Umzxl0cYgZwm8kkw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008181_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=K2zh95vwDvMV6nagFNTvnJwfjeo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 677,
+        "y": 86,
+        "w": 866,
+        "h": 991
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.007,
+        0.541,
+        0.841
+      ]
+    }
+  ],
+  "note": "白发男子由在门口外面变成进入门内一点距离",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787653601071
+}
