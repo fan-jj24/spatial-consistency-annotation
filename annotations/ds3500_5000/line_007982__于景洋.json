@@ -1,0 +1,26 @@
+{
+  "line": 7982,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007982_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=Ewa4ohtct2%2BKKOtKb4YpsqzwJr4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007982_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=HeJaavLXPv66CHDtFEs1Vfw%2Fwrk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 760,
+        "y": 295,
+        "w": 122,
+        "h": 274
+      },
+      "type": "move",
+      "target": {
+        "x": 837,
+        "y": 148
+      }
+    }
+  ],
+  "note": "男子由站立取行李箱变为坐在座位上，高度变低了，朝向也发生了变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787628534724
+}
