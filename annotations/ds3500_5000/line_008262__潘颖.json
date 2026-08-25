@@ -1,0 +1,27 @@
+{
+  "line": 8262,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008262_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=ASW3MyZB594j0xGD9PmsWH2%2BWQE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008262_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=rH71JbM2znT1GK0CYUZgUKLI5hE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 260,
+        "y": 68,
+        "w": 829,
+        "h": 639
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.854,
+        -0.002,
+        0.521
+      ]
+    }
+  ],
+  "note": "男子和怪兽与小狐狸公仔的相对位置变了，应在小狐狸公仔的右边",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787634608281
+}
