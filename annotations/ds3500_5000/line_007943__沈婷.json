@@ -1,0 +1,26 @@
+{
+  "line": 7943,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007943_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=YR7lRAHZIID5Y9FcQ%2BCoTwsArZM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007943_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=K6b3nVmapz8aStkKFySMfj5skzo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 457,
+        "y": -1,
+        "w": 627,
+        "h": 718
+      },
+      "type": "move",
+      "target": {
+        "x": 20,
+        "y": 407
+      }
+    }
+  ],
+  "note": "男子与柱子的距离变远，高度变高",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647430472
+}
