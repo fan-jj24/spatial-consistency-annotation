@@ -1,0 +1,27 @@
+{
+  "line": 3482,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003482_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109352&Signature=TCc3byQsVf5R9dDBalpeSWpz%2FwQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003482_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109352&Signature=OsFzsi6UQFDc8y5oph8Y0%2BMYXhM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 55,
+        "y": 192,
+        "w": 310,
+        "h": 1093
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.845,
+        0.279,
+        0.456
+      ]
+    }
+  ],
+  "note": "红衣女子距离绿衣女子近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787636694727
+}
