@@ -1,0 +1,22 @@
+{
+  "line": 3349,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003349_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=NK%2FzaLPXWGIHqTzgS7rKL5CnYeQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003349_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=pU%2BnZM8BizjzbZR381MjcBRqLEs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 265,
+        "y": 617,
+        "w": 404,
+        "h": 110
+      },
+      "type": "add"
+    }
+  ],
+  "note": "男子面前的女子消失了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787634608281
+}
