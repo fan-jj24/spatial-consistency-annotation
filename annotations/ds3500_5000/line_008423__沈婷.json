@@ -1,0 +1,31 @@
+{
+  "line": 8423,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008423_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=HSPBhnTruwiZoPMxEnQ2X%2BGJYmE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008423_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=fZi5LzCGfzI%2B0FxMe6ic3dVBWRU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 7,
+        "y": 395,
+        "w": 397,
+        "h": 323
+      },
+      "type": "delete"
+    },
+    {
+      "box": {
+        "x": 557,
+        "y": 0,
+        "w": 721,
+        "h": 722
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "汽车前方多出一个动物和男孩",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787629109406
+}
