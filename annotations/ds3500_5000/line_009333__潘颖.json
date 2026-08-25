@@ -1,0 +1,23 @@
+{
+  "line": 9333,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009333_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=QprYtEUdLt1e0EK2ujHZxMw7%2FDk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009333_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=02u2n%2FST5ZOoYcxGg8Hu%2Bjt38tw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 429,
+        "y": 72,
+        "w": 834,
+        "h": 561
+      },
+      "type": "custom",
+      "text": "肩上站狐狸男子的相对位置变了，左后方多出一人"
+    }
+  ],
+  "note": "肩上站狐狸的男子左后方多出一名蓝衣男子，肩上站狐狸男子的相对位置应在持伞男子的左前方",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787653904415
+}
