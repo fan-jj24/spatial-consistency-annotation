@@ -1,0 +1,41 @@
+{
+  "line": 8920,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008920_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=xwxCqeZNNG1cPcL74g25NT8%2BESg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008920_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=EfW%2BwYkXHJ2L3EwvvqpQCJHFhzQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 431,
+        "y": 402,
+        "w": 170,
+        "h": 166
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.989,
+        0.003,
+        -0.145
+      ]
+    },
+    {
+      "box": {
+        "x": 878,
+        "y": 386,
+        "w": 140,
+        "h": 193
+      },
+      "type": "move3d",
+      "dir3d": [
+        -1,
+        0.009,
+        0.021
+      ]
+    }
+  ],
+  "note": "女子距离画面左侧的小摊远了，男子距离画面右侧的小摊近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787640873749
+}
