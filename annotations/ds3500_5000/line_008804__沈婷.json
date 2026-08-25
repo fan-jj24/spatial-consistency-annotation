@@ -1,0 +1,22 @@
+{
+  "line": 8804,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008804_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=9rCNPhqq1GZHzjNOSlW9pNOr1dE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008804_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=G0yO45bgQ99zjCkeERdQiMfkMQ8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 317,
+        "y": 358,
+        "w": 282,
+        "h": 922
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "男子对面多出一个女子，高度变高",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787637542948
+}
