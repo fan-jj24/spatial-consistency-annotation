@@ -1,0 +1,32 @@
+{
+  "line": 9418,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009418_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=ogXpgT1edNazUPMbxOUnN%2Fo%2F4rU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009418_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=3npBGN6DStkEthNG31QfwjPSAVA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1195,
+        "y": 117,
+        "w": 276,
+        "h": 732
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 1310,
+          "y": 305
+        },
+        {
+          "x": 1267,
+          "y": 778
+        }
+      ]
+    }
+  ],
+  "note": "画面右侧的小鹿多余",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787643868931
+}
