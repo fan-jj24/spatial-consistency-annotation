@@ -1,0 +1,23 @@
+{
+  "line": 4047,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004047_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109352&Signature=moeWHeOCV6Q77nZNzTZGBe%2F6tfg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004047_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109352&Signature=3rXk5JePFVRHhEBFsH29uY25Jvs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 7,
+        "y": 200,
+        "w": 714,
+        "h": 832
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向变化，需要重排 "
+    }
+  ],
+  "note": "众人距离座椅近了，彼此的相对站位及朝向均发生变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787650739721
+}
