@@ -1,0 +1,26 @@
+{
+  "line": 8932,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008932_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=Se9bcEx3QqxxL5vEMe6VcLvsnYw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008932_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=p2mFeel4sKgxPedruDzUKxgTYJQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 158,
+        "y": 324,
+        "w": 280,
+        "h": 293
+      },
+      "type": "move",
+      "target": {
+        "x": 740,
+        "y": 505
+      }
+    }
+  ],
+  "note": "蓝衣男孩和黄色动物从红衣男男孩右前方移动至左后方，男孩高度变高",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647430473
+}
