@@ -1,0 +1,23 @@
+{
+  "line": 7808,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007808_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=bhVQLByVL%2FGJ5aY6CiWJGgFgI%2Bg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007808_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=EIuPYjHMjIVfhHuJC0XA%2BrVh2Es%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 170,
+        "y": 29,
+        "w": 961,
+        "h": 689
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向变化，需要重排"
+    }
+  ],
+  "note": "‌交通锥‌由房子上方移动至前方，路上的小汽车消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787625431729
+}
