@@ -1,0 +1,23 @@
+{
+  "line": 8088,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008088_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=0GupCNhxrh8mTbLfH3hRPDxHGOU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008088_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=ZqlOfHmS06vLux3PiKn%2BZf4%2FJ3k%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 4,
+        "y": 76,
+        "w": 1525,
+        "h": 1003
+      },
+      "type": "custom",
+      "text": "人物相对位置变化，需要重排"
+    }
+  ],
+  "note": "2人与楼梯口的距离变近，2人距离变远，站位变反，女子应在男子左侧",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647430472
+}
