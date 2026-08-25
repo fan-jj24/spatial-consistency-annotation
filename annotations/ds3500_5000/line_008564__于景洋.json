@@ -1,0 +1,23 @@
+{
+  "line": 8564,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008564_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=h%2F8IzXVshlgrMFyHCUnZKqigAGM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008564_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=l4hwWb0b3AOd31GD2UeBegnU3aw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 450,
+        "y": 354,
+        "w": 170,
+        "h": 252
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向变化，需要重排 "
+    }
+  ],
+  "note": "黄色小动物由在男孩的右前方变成在男孩的头顶，所有角色距离蓝色小汽车远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787625926109
+}
