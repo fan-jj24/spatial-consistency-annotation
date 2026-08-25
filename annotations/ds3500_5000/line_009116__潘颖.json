@@ -1,0 +1,23 @@
+{
+  "line": 9116,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009116_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=NNY2nMHeUSUrY6AAFoIvGrQPiZc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009116_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=iVMN2Pl0vs2CBNaf%2FktTjax1Isw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 84,
+        "y": 78,
+        "w": 1192,
+        "h": 636
+      },
+      "type": "custom",
+      "text": "人物群体位置需重排"
+    }
+  ],
+  "note": "两男子与棺材的相对距离变远了，蓝衣男子的相对位置由褐衣男子右后方变为右边，僵尸的相对位置由棺材内变成棺材外",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787638704402
+}
