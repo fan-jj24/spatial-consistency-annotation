@@ -1,0 +1,26 @@
+{
+  "line": 7872,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007872_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=P2Cx6ocozeFuHBYMjMd8S8kWRpk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007872_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=taRuY1l%2B2BQk10qrp08JO%2BCNdTQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -6,
+        "y": 833,
+        "w": 545,
+        "h": 343
+      },
+      "type": "move",
+      "target": {
+        "x": 309,
+        "y": 503
+      }
+    }
+  ],
+  "note": "黑衣男子高度变低，由站着变为躺着",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647430473
+}
