@@ -1,0 +1,23 @@
+{
+  "line": 7661,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007661_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=OLNDAGLpHb7D%2FxKi6pQg%2FbXB2mo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007661_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=TuVCv3gLHtxjtvwgTM2FrXSxfT8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 6,
+        "y": 327,
+        "w": 1266,
+        "h": 392
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向变化，需要重排 "
+    }
+  ],
+  "note": "众人需要替换",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787653601071
+}
