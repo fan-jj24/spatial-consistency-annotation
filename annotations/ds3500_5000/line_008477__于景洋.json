@@ -1,0 +1,26 @@
+{
+  "line": 8477,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008477_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=ER9lEoI1MrNAVmzVLVIomWhpv9E%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008477_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=FamEDWkNte8YOftMkCNGIDaqhiQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -6,
+        "y": 965,
+        "w": 102,
+        "h": 297
+      },
+      "type": "move",
+      "target": {
+        "x": 401,
+        "y": 945
+      }
+    }
+  ],
+  "note": "绿衣人物距离男子远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787625926109
+}
