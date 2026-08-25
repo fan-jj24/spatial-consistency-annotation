@@ -1,0 +1,26 @@
+{
+  "line": 8067,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008067_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=LqRCmWgJfe5Tpa89uowWAManGLM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008067_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=DvOt%2F2KmKQUSkMZiBieOykaqQTc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 699,
+        "y": 277,
+        "w": 122,
+        "h": 251
+      },
+      "type": "move",
+      "target": {
+        "x": 623,
+        "y": 412
+      }
+    }
+  ],
+  "note": "男子与沙发边缘距离变远，高度变低",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787625431729
+}
