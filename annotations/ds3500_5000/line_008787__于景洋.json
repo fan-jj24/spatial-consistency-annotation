@@ -1,0 +1,23 @@
+{
+  "line": 8787,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008787_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109362&Signature=56jdSN8h2OB9OVHTiPg%2FCE5Wqbk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008787_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109362&Signature=2IvpB2V9VKgHjGgljmmkD4hjZcA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 91,
+        "y": 3,
+        "w": 1139,
+        "h": 627
+      },
+      "type": "custom",
+      "text": "人物相对位置、朝向和局部背景变化，需要重排 "
+    }
+  ],
+  "note": "男子距离门口远了，朝向由面对门变成对背门，门的状态由关闭变成打开",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787624129926
+}
