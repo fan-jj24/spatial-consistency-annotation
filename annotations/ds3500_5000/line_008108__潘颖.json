@@ -1,0 +1,26 @@
+{
+  "line": 8108,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008108_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=HS5JQ9ee6GWAweLVZVl0Z9w07l8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008108_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=3Wf1UAFRrhfkPmSU7Z%2FNjN2o%2FMk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1085,
+        "y": 370,
+        "w": 122,
+        "h": 328
+      },
+      "type": "move",
+      "target": {
+        "x": 796,
+        "y": 534
+      }
+    }
+  ],
+  "note": "女子与广告牌的相对距离变远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787643645433
+}
