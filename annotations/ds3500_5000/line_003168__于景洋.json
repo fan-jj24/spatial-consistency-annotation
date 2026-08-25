@@ -1,0 +1,27 @@
+{
+  "line": 3168,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003168_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=xY8MbM%2FUE%2F8omEERFrkZ%2F3JG1fY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003168_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=BrrRoarH%2BzXibc0R9JMIVAQkRV4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 2,
+        "y": 177,
+        "w": 714,
+        "h": 1103
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.031,
+        0.632,
+        0.775
+      ]
+    }
+  ],
+  "note": "白衣太监和众位士兵距离门口处远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647668306
+}
