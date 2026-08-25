@@ -1,0 +1,27 @@
+{
+  "line": 7683,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007683_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=ADHEparTb8krycDgA2hl%2BNz%2BUas%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007683_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=FNDHWJH%2BSQL3J0KWPnXpTqrZoLE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1343,
+        "y": 221,
+        "w": 856,
+        "h": 722
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.945,
+        0.066,
+        0.321
+      ]
+    }
+  ],
+  "note": "紫衣战士与左肩有小动物的战士距离变远了，朝向同向肩并肩变成背对",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787640873749
+}
