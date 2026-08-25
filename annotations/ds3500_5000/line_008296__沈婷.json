@@ -1,0 +1,22 @@
+{
+  "line": 8296,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008296_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=4tox8YR%2BRxusRZMTOWyfEStCous%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008296_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=daKDKfb44jM1IKPKm5%2F6%2F7lI8VY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 145,
+        "y": 886,
+        "w": 573,
+        "h": 394
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "长发男子脚下多出一个人",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787629109406
+}
