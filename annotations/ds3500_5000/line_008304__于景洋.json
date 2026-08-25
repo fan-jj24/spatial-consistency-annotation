@@ -1,0 +1,22 @@
+{
+  "line": 8304,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008304_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=tR54nkL7JWKPIomHFR8hKnym6Io%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008304_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=5lGDQSgmLvTIjVSSirP9AMGSP%2BQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 436,
+        "y": 48,
+        "w": 634,
+        "h": 671
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "年轻女子由右侧面对戴黑帽女士变为右侧背对戴黑帽女士",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787628534724
+}
