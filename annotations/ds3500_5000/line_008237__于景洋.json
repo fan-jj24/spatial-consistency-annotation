@@ -1,0 +1,26 @@
+{
+  "line": 8237,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008237_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=nbDgI3A%2BOsCY7j4rlImZgOftuTY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008237_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=0VVpYEnE3O0Y3CWqZhvt4tm3WD4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 889,
+        "y": 503,
+        "w": 251,
+        "h": 413
+      },
+      "type": "move",
+      "target": {
+        "x": 742,
+        "y": 428
+      }
+    }
+  ],
+  "note": "灰色小熊由在男孩的右手变成到在男孩左手的袋子里",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787624129926
+}
