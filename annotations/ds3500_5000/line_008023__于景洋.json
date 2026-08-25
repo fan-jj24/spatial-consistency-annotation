@@ -1,0 +1,27 @@
+{
+  "line": 8023,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008023_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=%2FA0dS9iO8oCtStpR7f6lojIvz74%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008023_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=xy7ED6ywLpMGSdGFYdV0hv6YAuY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 394,
+        "y": 85,
+        "w": 766,
+        "h": 634
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.98,
+        0.001,
+        -0.2
+      ]
+    }
+  ],
+  "note": "格子衫男子由在花衬衣壮汉的右前方变成在左前方，并距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647668306
+}
