@@ -1,0 +1,45 @@
+{
+  "line": 9291,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009291_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=oCdtQhfrkYr7vtrj3EaRHypBHG8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009291_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=%2Bb3CJfWMEoa5CplNlBGZPX4OZ2A%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 315,
+        "y": 60,
+        "w": 240,
+        "h": 301
+      },
+      "type": "move",
+      "target": {
+        "x": 688,
+        "y": 150
+      }
+    },
+    {
+      "box": {
+        "x": 1005,
+        "y": 91,
+        "w": 182,
+        "h": 191
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 1130,
+          "y": 124
+        },
+        {
+          "x": 1045,
+          "y": 240
+        }
+      ]
+    }
+  ],
+  "note": "怪物由在白衣男子的面前变成在男子的左侧，距离变远了，画面最右侧的怪物多余",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787628534724
+}
