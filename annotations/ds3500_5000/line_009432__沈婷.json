@@ -1,0 +1,35 @@
+{
+  "line": 9432,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009432_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=KP9NWARjiPOSlsZe9SHj%2FMm8BEM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009432_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=3YKVNnPpjrr1wXhGbK9Sweb78IQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 300,
+        "y": 329,
+        "w": 37,
+        "h": 68
+      },
+      "type": "add"
+    },
+    {
+      "box": {
+        "x": 423,
+        "y": 352,
+        "w": 123,
+        "h": 40
+      },
+      "type": "move",
+      "target": {
+        "x": 485,
+        "y": 317
+      }
+    }
+  ],
+  "note": "鳄鱼右侧的鹿消失，左侧两个鹿高度变低",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787625431728
+}
