@@ -1,0 +1,22 @@
+{
+  "line": 8028,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008028_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=208T4%2F4qeYLTiS5scsRRLID3oYw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008028_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=oKvKDBh6lMHQm3qLf0k1EQaK4Qc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 690,
+        "y": 303,
+        "w": 132,
+        "h": 294
+      },
+      "type": "add"
+    }
+  ],
+  "note": "道路上提行李箱的男子消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787629109406
+}
