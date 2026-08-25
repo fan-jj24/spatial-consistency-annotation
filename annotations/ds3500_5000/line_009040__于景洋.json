@@ -1,0 +1,27 @@
+{
+  "line": 9040,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009040_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=qxSi8Nz0brDK77aNN%2BSQjKTgduk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009040_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=gy%2B%2FBqK7mWtwl%2FIHwnDoiIBNZXI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 510,
+        "y": 225,
+        "w": 252,
+        "h": 213
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.087,
+        0.996,
+        -0.031
+      ]
+    }
+  ],
+  "note": "女子由腾空变为俯身摸地，高度变低了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787628534724
+}
