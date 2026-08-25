@@ -1,0 +1,26 @@
+{
+  "line": 8521,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008521_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=UciZlGP22zTNqcxiyuJexXgEnQk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008521_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=GuQMRF1qccK%2FtHIo8udrJKMlvIM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 464,
+        "y": -8,
+        "w": 514,
+        "h": 528
+      },
+      "type": "move",
+      "target": {
+        "x": 685,
+        "y": 553
+      }
+    }
+  ],
+  "note": "女子由站在自行车的左侧变成坐到自行车的座位上，高度变高了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787628534724
+}
