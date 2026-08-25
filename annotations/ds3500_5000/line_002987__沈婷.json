@@ -1,0 +1,22 @@
+{
+  "line": 2987,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002987_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=Qm549ZisByJ%2FHAyzVwWtmUBEBXs%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002987_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=GLrrfgOBMgJu4Ica6OfPQNAtH%2FQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 2,
+        "y": 907,
+        "w": 714,
+        "h": 369
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "男子面前的物品不一致",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647430472
+}
