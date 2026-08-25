@@ -1,0 +1,36 @@
+{
+  "line": 9178,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009178_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=AlODzTIra7D24oNBL0Q74TSIPtY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009178_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=c63n6nJMuOVDGjnDyazIt8HZh6s%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 603,
+        "y": 442,
+        "w": 202,
+        "h": 276
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.015,
+        -0.363,
+        -0.932
+      ]
+    },
+    {
+      "box": {
+        "x": 445,
+        "y": 308,
+        "w": 393,
+        "h": 129
+      },
+      "type": "add"
+    }
+  ],
+  "note": "桌子中间的一堆纸人消失，牛仔衣男子与台阶的距离变近",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787637542948
+}
