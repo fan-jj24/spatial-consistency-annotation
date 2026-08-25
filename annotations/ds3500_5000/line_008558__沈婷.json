@@ -1,0 +1,31 @@
+{
+  "line": 8558,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008558_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=9fij9r%2F0ZkWSWwcc5sftWQYymFc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008558_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=xEJlLf%2FmyYz1XtRS4T4PF0SVh44%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 320,
+        "y": 205,
+        "w": 271,
+        "h": 423
+      },
+      "type": "delete"
+    },
+    {
+      "box": {
+        "x": 787,
+        "y": 89,
+        "w": 363,
+        "h": 393
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "悟空左右两侧多出两个人物",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787651791672
+}
