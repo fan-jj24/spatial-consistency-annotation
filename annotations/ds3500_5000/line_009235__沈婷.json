@@ -1,0 +1,22 @@
+{
+  "line": 9235,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009235_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109368&Signature=LMAVt2LI14Edbw7RRjBxX9gT0d0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009235_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109368&Signature=YooUks5dTTzo%2B1XOZJwYekkJqds%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 435,
+        "y": 385,
+        "w": 46,
+        "h": 108
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "蓝衣男子左前方多出一个白衣路人",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787629109406
+}
