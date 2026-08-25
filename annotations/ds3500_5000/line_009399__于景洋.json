@@ -1,0 +1,26 @@
+{
+  "line": 9399,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009399_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=pv2091YpVYg%2FNEL2tpkLWSFBup8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009399_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=wbTTA23Mf30g3mh1XMEuUPkPmWs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 362,
+        "y": 360,
+        "w": 96,
+        "h": 258
+      },
+      "type": "move",
+      "target": {
+        "x": 328,
+        "y": 465
+      }
+    }
+  ],
+  "note": "小鹿距离十字架远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787636694727
+}
