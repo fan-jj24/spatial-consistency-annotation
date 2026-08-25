@@ -1,0 +1,23 @@
+{
+  "line": 7991,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007991_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=IOecAV57Rh1kAKVvwPjeBPMCyAY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007991_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=CYzMJK720B9hYuKT1N8daYKC90c%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 176,
+        "y": 22,
+        "w": 1060,
+        "h": 698
+      },
+      "type": "custom",
+      "text": "背包男子与桌子的相对距离变了，眼睛男子左手边多出了三人"
+    }
+  ],
+  "note": "眼镜男子左手边多出了三人，背包男子与桌子的相对距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787643645433
+}
