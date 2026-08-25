@@ -1,0 +1,27 @@
+{
+  "line": 2892,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002892_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109350&Signature=GDm%2BVu1%2BuOCiSA4odBsntoSnqic%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002892_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109350&Signature=oF%2FLwNNo8Oh93X1rn3QbG1O0GZY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 173,
+        "y": 310,
+        "w": 415,
+        "h": 968
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.98,
+        -0.025,
+        -0.199
+      ]
+    }
+  ],
+  "note": "红衣女子距离背后的帘子远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787628534724
+}
