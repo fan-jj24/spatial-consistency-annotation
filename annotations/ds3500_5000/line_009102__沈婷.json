@@ -1,0 +1,27 @@
+{
+  "line": 9102,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009102_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=6iT4trYaDt0yaPeK6OZvO0nmRTo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009102_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=FcPh3Bpum%2BgsCIWndWyjL8iZ03M%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 562,
+        "y": 234,
+        "w": 179,
+        "h": 468
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.007,
+        -0.451,
+        -0.892
+      ]
+    }
+  ],
+  "note": "老人与台阶距离变近",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787625431728
+}
