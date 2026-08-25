@@ -1,0 +1,22 @@
+{
+  "line": 7744,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007744_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=%2B56lE8wD%2B8oqzoLr3FSzU4IUxsE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007744_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=204zjAcZR3jYR%2Bd6MS%2Bre74BS1M%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 487,
+        "y": -6,
+        "w": 789,
+        "h": 723
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "黄发男子后面多出一个花衣男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787634608281
+}
