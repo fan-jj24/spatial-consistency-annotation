@@ -1,0 +1,22 @@
+{
+  "line": 8321,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008321_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=2IfKBNfqEdEEccwZ6aVkKk%2Bnd5E%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008321_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=t2dvpLETUDomQ%2FXFiRbVkQfAgeY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -1,
+        "y": 349,
+        "w": 719,
+        "h": 927
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "浴池里多出3个人物",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647430473
+}
