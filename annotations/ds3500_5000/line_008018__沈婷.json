@@ -1,0 +1,27 @@
+{
+  "line": 8018,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008018_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=FmRtZj9v8OW%2F1AWGFqGBsZcPcBU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008018_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=BQ31yo9LBfKNYwdJnKv9j22gGIo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 261,
+        "y": 190,
+        "w": 305,
+        "h": 400
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.121,
+        0.441,
+        0.889
+      ]
+    }
+  ],
+  "note": "女子与左手边墙面的距离变远",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647430472
+}
