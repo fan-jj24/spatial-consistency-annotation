@@ -1,0 +1,27 @@
+{
+  "line": 8750,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008750_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109362&Signature=BL1tkDPawXDFWcMfSOITc%2BmC4eA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008750_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109362&Signature=ISQbV2MTiw781Wvhb7wOs8Qtxl4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -1,
+        "y": 190,
+        "w": 732,
+        "h": 1085
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.089,
+        0.325,
+        0.942
+      ]
+    }
+  ],
+  "note": "女子由门外移动至门内",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647430472
+}
