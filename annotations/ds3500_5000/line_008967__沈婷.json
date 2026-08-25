@@ -1,0 +1,27 @@
+{
+  "line": 8967,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008967_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=ul3kWTgD49znJ8tzR6a485IYxjk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008967_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=jho9%2F0YnwkFupA33aGUXi%2BN4ww8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 389,
+        "y": 117,
+        "w": 262,
+        "h": 607
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.27,
+        -0.321,
+        -0.908
+      ]
+    }
+  ],
+  "note": "黑衣老人与棺木的距离变近",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787637542948
+}
