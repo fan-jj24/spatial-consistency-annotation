@@ -1,0 +1,22 @@
+{
+  "line": 8669,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008669_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=tTRCgY2Kf5Iwk1bIYCRI3fPQ8g0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008669_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=8en3Io64xK38nrdAjPkYEm4kAMQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 30,
+        "y": 5,
+        "w": 689,
+        "h": 1277
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "男女两人由侧身对窗户变成女生背对窗户",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787643868931
+}
