@@ -1,0 +1,22 @@
+{
+  "line": 5332,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_005332_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=wN4uNirqLB4qwIRwrl6kvpi0gUA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_005332_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=IB7ovxJhxmZ6D56kXWCwPH6B0LE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 40,
+        "y": 369,
+        "w": 643,
+        "h": 492
+      },
+      "type": "replace"
+    }
+  ],
+  "note": "图B的西装男子替换为图A的蓝裙女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787629109406
+}
