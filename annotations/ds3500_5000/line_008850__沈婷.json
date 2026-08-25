@@ -1,0 +1,27 @@
+{
+  "line": 8850,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008850_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=ShFPHniYvyW1kMNeAJJDkFWYBek%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008850_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=6d3UuksfoFcFDGYx9DXyUip%2B60E%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 401,
+        "y": 121,
+        "w": 838,
+        "h": 513
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.596,
+        0.407,
+        0.692
+      ]
+    }
+  ],
+  "note": "3人与门的距离变远，需整体后移",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647430473
+}
