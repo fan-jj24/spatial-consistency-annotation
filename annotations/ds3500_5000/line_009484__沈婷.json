@@ -1,0 +1,22 @@
+{
+  "line": 9484,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009484_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=CpFiVwsbZaNlODCEEu4977CT0BA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009484_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=biEnB8GpvVmtDsZFO36oW4U7IwQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 130,
+        "y": 192,
+        "w": 114,
+        "h": 451
+      },
+      "type": "add"
+    }
+  ],
+  "note": "牛仔衣男子左前方的纸人消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787637542948
+}
