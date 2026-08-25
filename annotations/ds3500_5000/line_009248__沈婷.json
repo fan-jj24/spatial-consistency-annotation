@@ -1,0 +1,26 @@
+{
+  "line": 9248,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009248_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109368&Signature=UHzNr3ASYdx6OjqF3vgYnCmHvuQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009248_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109368&Signature=GPgEnmRw%2B3DYdSQsd2S3efeFnLU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 445,
+        "y": 140,
+        "w": 156,
+        "h": 196
+      },
+      "type": "move",
+      "target": {
+        "x": 520,
+        "y": 452
+      }
+    }
+  ],
+  "note": "黑衣男子高度变高，从地上变到空中",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787625431729
+}
