@@ -1,0 +1,26 @@
+{
+  "line": 7930,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007930_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=oEnBHgQhgV77P1%2B7PGbKXnCNxyY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007930_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=VD8KQZZ7e%2BQUiSH762eMDVqciV4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 687,
+        "y": 546,
+        "w": 245,
+        "h": 365
+      },
+      "type": "move",
+      "target": {
+        "x": 1256,
+        "y": 727
+      }
+    }
+  ],
+  "note": "画面左侧的橙衣战士距离蓝衣战士远了，朝向由在蓝衣战士的背后变成面向",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787628534724
+}
