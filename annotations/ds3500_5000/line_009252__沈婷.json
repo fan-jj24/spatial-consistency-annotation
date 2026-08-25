@@ -1,0 +1,26 @@
+{
+  "line": 9252,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009252_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109368&Signature=%2FrGR0BhFvErimyLctn7kCe5f4h4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009252_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109368&Signature=%2B%2Fg%2FbRtCmNQl06jM1n81%2BFCZqlc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 791,
+        "y": 466,
+        "w": 116,
+        "h": 189
+      },
+      "type": "move",
+      "target": {
+        "x": 859,
+        "y": 708
+      }
+    }
+  ],
+  "note": "黑衣老人高度变高",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787637542948
+}
