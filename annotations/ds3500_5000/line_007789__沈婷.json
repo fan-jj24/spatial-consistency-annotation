@@ -1,0 +1,26 @@
+{
+  "line": 7789,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007789_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=JOuCoZUa6BN5FOTx2MMhf8SU94c%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007789_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=geX%2Bs8BOk7ce%2FjwF5Yxay1vxYJ8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 616,
+        "y": 355,
+        "w": 615,
+        "h": 464
+      },
+      "type": "move",
+      "target": {
+        "x": 1896,
+        "y": 568
+      }
+    }
+  ],
+  "note": "红色汽车由栏杆处移动至路口",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787637542948
+}
