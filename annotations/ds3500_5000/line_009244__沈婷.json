@@ -1,0 +1,22 @@
+{
+  "line": 9244,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009244_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109368&Signature=Iud2VQ7TDmkWInzGS9nzy11POVU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009244_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109368&Signature=NVOOH%2FEMjv%2BhtqymgGvF8k0Txg8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 907,
+        "y": 64,
+        "w": 368,
+        "h": 656
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "钟表前方多出一个眼镜男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787651791672
+}
