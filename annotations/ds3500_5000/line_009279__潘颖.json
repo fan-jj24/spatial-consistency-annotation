@@ -1,0 +1,22 @@
+{
+  "line": 9279,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009279_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=xdS8EmOItuerny70vj4%2FpliR19E%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009279_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=Rz4EpSbhCLitsdLwenXo5Tdr%2Bz4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 479,
+        "y": 334,
+        "w": 392,
+        "h": 396
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "尸体的朝向变了，由脚朝供桌变成头朝供桌",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787634608281
+}
