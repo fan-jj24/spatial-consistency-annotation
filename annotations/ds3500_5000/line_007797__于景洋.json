@@ -1,0 +1,46 @@
+{
+  "line": 7797,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007797_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=GIl1Znt%2Bk4%2BjJ8R4q2zzTTi5HMk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007797_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=RS5CbgfDpEI0bJfGzNKArmz7pAk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 201,
+        "y": 337,
+        "w": 245,
+        "h": 173
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.996,
+        0.008,
+        -0.083
+      ]
+    },
+    {
+      "box": {
+        "x": 973,
+        "y": 3,
+        "w": 305,
+        "h": 721
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 1176,
+          "y": 135
+        },
+        {
+          "x": 1078,
+          "y": 517
+        }
+      ]
+    }
+  ],
+  "note": "黄色小车距离画面左侧的绿草地近了，朝向由背对草地变成面对，红色车多余",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787640873749
+}
