@@ -1,0 +1,27 @@
+{
+  "line": 8844,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008844_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=rMrEGMkYoLamzTO%2F89O4Q%2BkrX8Q%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008844_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=WL%2BmoYuz1u9gFXVE7BMzx3pKJxI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 339,
+        "y": 109,
+        "w": 599,
+        "h": 608
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.229,
+        -0.019,
+        -0.973
+      ]
+    }
+  ],
+  "note": "男子与镜子的相对距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787653904415
+}
