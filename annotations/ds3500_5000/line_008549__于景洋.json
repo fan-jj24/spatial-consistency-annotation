@@ -1,0 +1,27 @@
+{
+  "line": 8549,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008549_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=t%2BI1jfMV8EHMfQTZVJeV4rLMnus%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008549_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=c2KZmIUTCM6eVobx3VBT6gd2egs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1075,
+        "y": 111,
+        "w": 203,
+        "h": 599
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.532,
+        -0.257,
+        -0.807
+      ]
+    }
+  ],
+  "note": "男孩和黄色小动物距离汽车远了，两人朝向由与车头同向变为与车头反向",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647668306
+}
