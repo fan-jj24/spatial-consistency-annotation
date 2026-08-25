@@ -1,0 +1,46 @@
+{
+  "line": 8665,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008665_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=t%2BXYODKOB1zOV2D0Hn4BHS5gXpw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008665_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=iturg3usdwa6mgR2JkQkHBjht6Y%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 672,
+        "y": 125,
+        "w": 144,
+        "h": 356
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.015,
+        0.5,
+        0.866
+      ]
+    },
+    {
+      "box": {
+        "x": 257,
+        "y": 516,
+        "w": 1026,
+        "h": 116
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 1053,
+          "y": 542
+        },
+        {
+          "x": 480,
+          "y": 610
+        }
+      ]
+    }
+  ],
+  "note": "披头发女子距离房门远了，倒地的白衣娃娃多余",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647668306
+}
