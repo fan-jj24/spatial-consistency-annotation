@@ -1,0 +1,23 @@
+{
+  "line": 8997,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008997_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=rfSiks0tf9YA3I%2BqAsB%2BxuZOuWs%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008997_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=JbTMvKYwQUeo1He2dX1wd%2FtVTLI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 297,
+        "y": 97,
+        "w": 981,
+        "h": 621
+      },
+      "type": "custom",
+      "text": "多个人物相对位置变化，需要重排"
+    }
+  ],
+  "note": "蓝裙女子与橙衣女子距离变远，白背心男子、黄衣女子、白裙女子应在绿衣男子左后方",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647430473
+}
