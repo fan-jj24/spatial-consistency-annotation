@@ -1,0 +1,23 @@
+{
+  "line": 8192,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008192_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=IcQlNhn%2FJPag4EusKHN01Fximpw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008192_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=GKsfk4Ch5zOxt9dBrQw1OqokZSg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 484,
+        "y": 275,
+        "w": 291,
+        "h": 315
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向及变化，需要重排 "
+    }
+  ],
+  "note": "男女两人距离一高一矮树木近了，树木中间的汽车缺失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787653601071
+}
