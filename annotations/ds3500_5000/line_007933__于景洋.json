@@ -1,0 +1,23 @@
+{
+  "line": 7933,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007933_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=hFP5VVGWEB7gBkyIKk9Oq%2B2pRbc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007933_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=upzHF5s3aftP5Qa%2F%2ByvYg2HISiU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 746,
+        "y": 306,
+        "w": 816,
+        "h": 604
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向变化，需要重排 "
+    }
+  ],
+  "note": "众战士面前的蜡烛台缺失，蓝衣战士的身体朝向由面对两位橙衣战士变成身体侧对，画面最右侧的橙衣战士由站在另一位橙衣战士的右后方变成左后方",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787628534724
+}
