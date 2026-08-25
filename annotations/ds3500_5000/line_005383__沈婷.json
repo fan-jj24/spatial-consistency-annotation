@@ -1,0 +1,27 @@
+{
+  "line": 5383,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_005383_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=poVvVQCoTKp9HkduEJd%2FvKXLbus%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_005383_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=Gk5fetp%2BT9giS7LUcydZalEDncM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 28,
+        "y": 297,
+        "w": 694,
+        "h": 978
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.009,
+        -0.458,
+        -0.889
+      ]
+    }
+  ],
+  "note": "2人与台阶的距离变近，相对位置相反了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787629109406
+}
