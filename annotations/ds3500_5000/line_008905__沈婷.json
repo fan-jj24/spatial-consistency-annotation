@@ -1,0 +1,26 @@
+{
+  "line": 8905,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008905_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=etI6e75qkfVgtxay5Lb9wJzk7u0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008905_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=M1e4fmkqnX8Vr79ufsZXnNJ%2BKDw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 894,
+        "y": 286,
+        "w": 274,
+        "h": 305
+      },
+      "type": "move",
+      "target": {
+        "x": 908,
+        "y": 221
+      }
+    }
+  ],
+  "note": "小动物由在书架上变为书架下",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787625431728
+}
