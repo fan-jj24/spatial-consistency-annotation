@@ -1,0 +1,26 @@
+{
+  "line": 8430,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008430_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=jCaXs0mGhuhm%2BZP8x5fUOPbx2EA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008430_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=bshohuDNgGG2Vt%2F8wIB7h%2BacIRo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 346,
+        "y": 243,
+        "w": 502,
+        "h": 382
+      },
+      "type": "move",
+      "target": {
+        "x": 166,
+        "y": 399
+      }
+    }
+  ],
+  "note": "黄色动物从汽车右前方移动至正前方",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787637542948
+}
