@@ -1,0 +1,22 @@
+{
+  "line": 7867,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007867_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=wmgVQTbNqjtKSlqGS1CuG2%2FAk8s%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007867_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=IswGtjad89ojR4UdtuaxrWtlWPs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 119,
+        "y": 317,
+        "w": 323,
+        "h": 960
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "灰衣男子的朝向由背对另一人物变成半转身面向",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787653601071
+}
