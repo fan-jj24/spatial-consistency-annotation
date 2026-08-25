@@ -1,0 +1,22 @@
+{
+  "line": 2959,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002959_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=8vTvwzxfpogXdOTmUtCFPMv1WKI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002959_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=6%2FZVhjAvNkZ6wz6PdSWHxsXHlDk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 2,
+        "y": 292,
+        "w": 241,
+        "h": 911
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "男子右后方多出一名女子，男子相对高度变低了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787623316548
+}
