@@ -1,0 +1,27 @@
+{
+  "line": 9294,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009294_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=OOI0pV3zh6FcUsvyopOQh1v5Ku8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009294_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=aQ5Vp1Z6ybeaww8mUz5NtiZ6TcA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 388,
+        "y": 197,
+        "w": 502,
+        "h": 530
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.001,
+        -0.528,
+        -0.849
+      ]
+    }
+  ],
+  "note": "男子与前方的路灯的距离变近",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787629109406
+}
