@@ -1,0 +1,27 @@
+{
+  "line": 8761,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008761_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109362&Signature=f7gm6SpUxxByj5oswLx2CSOsVeo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008761_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109362&Signature=7ko839Z9XRi6mqQCmEid6Z2S6lM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 281,
+        "y": 515,
+        "w": 440,
+        "h": 632
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.804,
+        0.002,
+        0.594
+      ]
+    }
+  ],
+  "note": "人物群体与小桥的相对距离变远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787634608281
+}
