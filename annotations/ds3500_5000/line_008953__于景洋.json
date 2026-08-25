@@ -1,0 +1,27 @@
+{
+  "line": 8953,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008953_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=q6oivuadJ62UWnFm3bhpYGwjsbI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008953_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=4e9yumT%2B2oZ3D9w1UtdQ%2Ba0q2nI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 376,
+        "y": 0,
+        "w": 567,
+        "h": 717
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.113,
+        0.538,
+        0.835
+      ]
+    }
+  ],
+  "note": "紫衣女孩距离奖杯近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787640873749
+}
