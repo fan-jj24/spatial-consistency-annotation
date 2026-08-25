@@ -1,0 +1,22 @@
+{
+  "line": 8892,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008892_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=lqcqOk6u9ORXYmttFmzmlCQoy7g%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008892_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=0vi2Se8soMfRw3QwW1oWVMICyMA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 479,
+        "y": 0,
+        "w": 223,
+        "h": 333
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "小怪兽上方多出一个人手",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787638704402
+}
