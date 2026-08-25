@@ -1,0 +1,27 @@
+{
+  "line": 7875,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007875_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=CaeI9D2FsSfFUf%2FKofp8sCNeBeY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007875_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=lWyeE2gpkH9XtRS4NenRtntLD0c%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 316,
+        "y": 194,
+        "w": 405,
+        "h": 494
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.244,
+        -0.492,
+        -0.836
+      ]
+    }
+  ],
+  "note": "蓝色小车和车上多个人物及玩偶距离黄色太阳伞的商店近了，且整体朝向也发生了变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787636694727
+}
