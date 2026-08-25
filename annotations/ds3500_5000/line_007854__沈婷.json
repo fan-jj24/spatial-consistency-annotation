@@ -1,0 +1,23 @@
+{
+  "line": 7854,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007854_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=TB9Ngfhoix0TUB9FqMoHHKAPDP4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007854_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=qa1feaXfdT5q4cxD5OlJ1oGssss%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -6,
+        "y": 189,
+        "w": 691,
+        "h": 1085
+      },
+      "type": "custom",
+      "text": "人物相对位置和朝向变化，需要重排"
+    }
+  ],
+  "note": "黑衣男子左侧多出一个绿衣女子，面前的绿衣男子消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787625431729
+}
