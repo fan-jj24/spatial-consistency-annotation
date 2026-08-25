@@ -1,0 +1,23 @@
+{
+  "line": 8944,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008944_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=FCkxfVCW%2FI8hlNAkpdCm11ZyWwM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008944_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=YF8O5H54lxbL7n2TwUC04NU2bq4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 353,
+        "y": 269,
+        "w": 891,
+        "h": 448
+      },
+      "type": "custom",
+      "text": "两男子的相对位置变了，僵尸的相对高度变了"
+    }
+  ],
+  "note": "褐衣男子和蓝衣男子与棺材的相对距离变远了，蓝衣男子与褐衣男子的相对位置变了，因在褐衣男子右后方，僵尸的相对高度变高了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787643645433
+}
