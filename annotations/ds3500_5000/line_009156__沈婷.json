@@ -1,0 +1,27 @@
+{
+  "line": 9156,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009156_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=gn1b6S8kn%2FteO99i16Xm6bRwTmA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009156_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=6V1Tg5FrvFKJsECr2GJFJ7GnVfU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 392,
+        "y": 300,
+        "w": 117,
+        "h": 193
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.388,
+        -0.251,
+        -0.887
+      ]
+    }
+  ],
+  "note": "女子与大佛距离变远，朝向由面对大佛变为背对，高度变高",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787651791672
+}
