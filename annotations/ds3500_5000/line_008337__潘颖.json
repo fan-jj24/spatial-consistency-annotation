@@ -1,0 +1,27 @@
+{
+  "line": 8337,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008337_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=atAy9IPnlqGbzkb1mHDHU%2B18r%2Bc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008337_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=tz0g8EsJdVJdPMIBW5O2N3LpDQY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 457,
+        "y": 259,
+        "w": 266,
+        "h": 307
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.729,
+        -0.003,
+        0.684
+      ]
+    }
+  ],
+  "note": "男子和士兵的相对位置变了，应在骑马男子的右前方",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787623316548
+}
