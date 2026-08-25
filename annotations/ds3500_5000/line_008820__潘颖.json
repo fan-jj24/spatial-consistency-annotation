@@ -1,0 +1,22 @@
+{
+  "line": 8820,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008820_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=8V4eS4DYA%2BQaxLP7Q8cSlS1s7YE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008820_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=Tv0Ze0uAZXplg4cRS20uARKrWDc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 367,
+        "y": 8,
+        "w": 1097,
+        "h": 412
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "两男子的朝向变了，由脚朝天空变成脚朝大楼",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787649235103
+}
