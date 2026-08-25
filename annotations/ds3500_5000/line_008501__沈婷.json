@@ -1,0 +1,22 @@
+{
+  "line": 8501,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008501_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=yXSNz47nYTkjbMkiCtOECRUCZUY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008501_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=9VZ3qClaiW7BdQarzQdWoKPxzvY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1065,
+        "y": 280,
+        "w": 108,
+        "h": 114
+      },
+      "type": "add"
+    }
+  ],
+  "note": "汽车后方的黄色动物消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787625431729
+}
