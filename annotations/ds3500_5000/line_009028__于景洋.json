@@ -1,0 +1,23 @@
+{
+  "line": 9028,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009028_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=nsJfkkWEXoYMYn67yEMvF%2FSXjkA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009028_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=BkdLGjYg6Us81NqaosHuXuFYiv0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 142,
+        "y": 146,
+        "w": 576,
+        "h": 1132
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向变化，需要重排 "
+    }
+  ],
+  "note": "红衣男子距离跪地的黑衣男子远了，朝向由侧面背对背擦肩变成黑衣男子面向红衣男子的右侧，白衣男子和紫衣人物多余",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787624129926
+}
