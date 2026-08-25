@@ -1,0 +1,26 @@
+{
+  "line": 9349,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009349_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=sfzat%2BUjYtBcb9rp2cyv7EomS4g%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009349_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=wegdFXzSIuKs8VVQ6s%2Bvg72YtvM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 94,
+        "y": 714,
+        "w": 522,
+        "h": 561
+      },
+      "type": "move",
+      "target": {
+        "x": 383,
+        "y": 343
+      }
+    }
+  ],
+  "note": "绿衣女子的相对高度变低了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787638704402
+}
