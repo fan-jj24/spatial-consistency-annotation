@@ -1,0 +1,27 @@
+{
+  "line": 8737,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008737_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109362&Signature=ieQAVhAyPbe2i05SeloUJD%2FBGZM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008737_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109362&Signature=8gGsZYJHco8npSV40CWmTb9Hki0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 78,
+        "y": 61,
+        "w": 509,
+        "h": 1221
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.503,
+        -0.003,
+        -0.864
+      ]
+    }
+  ],
+  "note": "女子与男子的相对距离变远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787643645433
+}
