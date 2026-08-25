@@ -1,0 +1,27 @@
+{
+  "line": 8469,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008469_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=lmdz0%2F1r7RMERELZZDnBkHWw6Js%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008469_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=PXrH0SQuoQvxNq2Inf0GldsaU4w%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -6,
+        "y": 182,
+        "w": 727,
+        "h": 945
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.285,
+        0.658,
+        0.697
+      ]
+    }
+  ],
+  "note": "众人距离红衣倒地男子近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787643868931
+}
