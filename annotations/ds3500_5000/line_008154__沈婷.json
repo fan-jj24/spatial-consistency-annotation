@@ -1,0 +1,22 @@
+{
+  "line": 8154,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008154_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=dsNwG7MGGL8FzbLrlUqaEQh1mls%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008154_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=wSQkirwFzMv%2FT3AjNNubtdLENyA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 294,
+        "y": 225,
+        "w": 99,
+        "h": 317
+      },
+      "type": "add"
+    }
+  ],
+  "note": "门旁边的男子消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647430473
+}
