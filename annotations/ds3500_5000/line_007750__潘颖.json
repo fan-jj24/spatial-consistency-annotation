@@ -1,0 +1,22 @@
+{
+  "line": 7750,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007750_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=VYw40GzqBNh%2B8nUVRp70qF%2FRdMg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007750_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=LvukzHyrTCfI0pYjHyj7%2FehIyJo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 300,
+        "y": 235,
+        "w": 56,
+        "h": 91
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "B图右半边多出一名粉衣女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787634608281
+}
