@@ -1,0 +1,35 @@
+{
+  "line": 8960,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008960_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=izYVL%2FiVlUD%2FTYS185Gfj0CoY4E%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008960_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=i1fnBJfbkdYEVFeHK2lrE54ZxJY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 335,
+        "y": 346,
+        "w": 72,
+        "h": 160
+      },
+      "type": "move",
+      "target": {
+        "x": 493,
+        "y": 626
+      }
+    },
+    {
+      "box": {
+        "x": 617,
+        "y": 246,
+        "w": 261,
+        "h": 132
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "男子与楼梯的相对位置变了，应在楼梯底部，男子右上方出“中级科学星匠”及图标",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787643645433
+}
