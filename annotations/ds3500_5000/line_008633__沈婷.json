@@ -1,0 +1,35 @@
+{
+  "line": 8633,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008633_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=ofgBqBgFzHl1wnmmKa7Uf6zb8u4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008633_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=bERwHRm2DsP1WybG236RcksQPDQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 577,
+        "y": 248,
+        "w": 85,
+        "h": 414
+      },
+      "type": "move",
+      "target": {
+        "x": 1024,
+        "y": 437
+      }
+    },
+    {
+      "box": {
+        "x": 264,
+        "y": 268,
+        "w": 68,
+        "h": 154
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "西装女子从门外移动至门内，白衣女子身后多出一个男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787651791672
+}
