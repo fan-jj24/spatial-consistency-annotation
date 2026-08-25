@@ -1,0 +1,44 @@
+{
+  "line": 8422,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008422_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=sWuXwymEavMmiWiX1rZZMlI3OrY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008422_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=DJ%2FH7CSBy8AOhF975unroBdu79U%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 762,
+        "y": 192,
+        "w": 105,
+        "h": 197
+      },
+      "type": "rotate"
+    },
+    {
+      "box": {
+        "x": 1200,
+        "y": 164,
+        "w": 78,
+        "h": 276
+      },
+      "type": "move",
+      "target": {
+        "x": 1104,
+        "y": 377
+      }
+    },
+    {
+      "box": {
+        "x": -2,
+        "y": 242,
+        "w": 66,
+        "h": 452
+      },
+      "type": "add"
+    }
+  ],
+  "note": "画面右侧远处戴帽子的赛车手由面对伙伴变成侧对，画面最右侧的寸头赛车手离操作台远了，画面最左侧缺少一位赛车手",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647668306
+}
