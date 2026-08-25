@@ -1,0 +1,23 @@
+{
+  "line": 8492,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008492_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=7IUJJT3FDFTbxKJ1k6VT9iGBVM8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008492_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=EMYeFNpJvF6j59Fiw0VHv3R%2Ftxw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 414,
+        "y": 334,
+        "w": 508,
+        "h": 379
+      },
+      "type": "custom",
+      "text": "两个人物相对位置和朝向变化，需要重排 "
+    }
+  ],
+  "note": "女孩由在男孩的右侧变成在男孩的前面，两人朝向也变成了面对面",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787653601071
+}
