@@ -1,0 +1,27 @@
+{
+  "line": 8797,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008797_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109362&Signature=rKT1boJfgFtvK12iQxYhFGL0Dis%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008797_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109362&Signature=l2jGmZU90a%2Bjhf%2FJljuc0HHcEWw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 479,
+        "y": 74,
+        "w": 376,
+        "h": 650
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.007,
+        -0.393,
+        -0.919
+      ]
+    }
+  ],
+  "note": "男子与灵堂的距离变近",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647430473
+}
