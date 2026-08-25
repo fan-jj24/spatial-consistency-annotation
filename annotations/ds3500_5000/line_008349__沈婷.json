@@ -1,0 +1,27 @@
+{
+  "line": 8349,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008349_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=Q%2BYwUSFoQAbWZVxuRfAdzGnsGhQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008349_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=C9FZUKWrNqQ42HhQhTNHIJFT4uA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 143,
+        "y": 412,
+        "w": 189,
+        "h": 384
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.696,
+        0.106,
+        0.711
+      ]
+    }
+  ],
+  "note": "粉衣男子与白衣和绿衣男子距离变近",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787637542948
+}
