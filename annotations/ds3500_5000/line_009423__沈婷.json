@@ -1,0 +1,35 @@
+{
+  "line": 9423,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009423_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=1CQx7WXlsjupc8nwbNvV7Sy%2F9H8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009423_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=kBTprgDXy4itRYm%2FagR2Bt%2FhqPg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 881,
+        "y": 47,
+        "w": 396,
+        "h": 584
+      },
+      "type": "move",
+      "target": {
+        "x": 782,
+        "y": 342
+      }
+    },
+    {
+      "box": {
+        "x": 177,
+        "y": 114,
+        "w": 223,
+        "h": 487
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "袋鼠与十字架距离变远，鹿的朝向由面对袋鼠变为背对",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787629109406
+}
