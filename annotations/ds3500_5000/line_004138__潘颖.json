@@ -1,0 +1,23 @@
+{
+  "line": 4138,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004138_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109352&Signature=8ltm%2ByCfINlt%2B88yrAv%2FkRWOZ%2B8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004138_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109352&Signature=KfOBQGlBjAVbF1B1jweAUNFsEIA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 60,
+        "y": 87,
+        "w": 599,
+        "h": 1193
+      },
+      "type": "custom",
+      "text": "宣旨男子的朝向变了，右后方的男子消失"
+    }
+  ],
+  "note": "宣旨男子右后方的白衣男子消失了，宣旨男子的朝向变了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787649235103
+}
