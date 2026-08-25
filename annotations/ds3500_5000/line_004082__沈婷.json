@@ -1,0 +1,35 @@
+{
+  "line": 4082,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004082_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109352&Signature=q9g%2FBwOzNZsEJR15hF%2BMGFJW%2BYM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_004082_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109352&Signature=Dk%2Bih5vfgMXMM7LQhvUMjzrga6I%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 199,
+        "y": 252,
+        "w": 79,
+        "h": 228
+      },
+      "type": "move",
+      "target": {
+        "x": 394,
+        "y": 651
+      }
+    },
+    {
+      "box": {
+        "x": 232,
+        "y": 638,
+        "w": 246,
+        "h": 335
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "白衣男子由台阶上移动至台阶下，朝向变化；台阶下多出一个黑衣男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647430472
+}
