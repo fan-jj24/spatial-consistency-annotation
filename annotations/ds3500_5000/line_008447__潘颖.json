@@ -1,0 +1,31 @@
+{
+  "line": 8447,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008447_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=wHrk6%2B5KARSNFRic8l4Q2%2F%2BGp%2Bw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008447_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=2A5t95IbZHMa5AbsQS467hxBR6I%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 731,
+        "y": 151,
+        "w": 207,
+        "h": 183
+      },
+      "type": "add"
+    },
+    {
+      "box": {
+        "x": 21,
+        "y": 249,
+        "w": 193,
+        "h": 228
+      },
+      "type": "add"
+    }
+  ],
+  "note": "棕色怪兽左右两边的黄色怪兽都消失了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787649235103
+}
