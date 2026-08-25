@@ -1,0 +1,23 @@
+{
+  "line": 8038,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008038_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=npyZQ%2B2VluVFuqr8uJCxZ4SEhl4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008038_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=oRWJysKGTMlF%2FMlVC6qAvv5caEo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 434,
+        "y": 94,
+        "w": 569,
+        "h": 589
+      },
+      "type": "custom",
+      "text": "两个人物相对位置和朝向变化，需要重排 "
+    }
+  ],
+  "note": "男子距离茶几近了，女子由站立变为躺地，高度发生了变化，男女两人彼此的朝向也发生了变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787640873749
+}
