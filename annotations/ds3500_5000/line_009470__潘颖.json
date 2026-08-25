@@ -1,0 +1,22 @@
+{
+  "line": 9470,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009470_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=b6TktnAM2x1wuAS8xjb2j2o48Q0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009470_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=5qHVNQZUsZbQyY%2FU1wMd2IgivvA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 250,
+        "y": 372,
+        "w": 99,
+        "h": 26
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "跑道上多出两辆跑车",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787638704402
+}
