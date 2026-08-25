@@ -1,0 +1,27 @@
+{
+  "line": 2939,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002939_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109350&Signature=7X90J%2F0c46shVp30tSDc6NNblug%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002939_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109350&Signature=astuyqx4iogX7xjAarTku9YSBJo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 7,
+        "y": 261,
+        "w": 412,
+        "h": 1021
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.491,
+        -0.317,
+        -0.812
+      ]
+    }
+  ],
+  "note": "女子距离男子近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787643868931
+}
