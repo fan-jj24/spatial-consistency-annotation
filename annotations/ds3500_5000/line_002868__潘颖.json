@@ -1,0 +1,22 @@
+{
+  "line": 2868,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002868_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109350&Signature=l55Nq8t1rQ500N4Na9JVk%2F88tjk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002868_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109350&Signature=7SQqwOXRil7N3%2FuXIUzPEvJXi0I%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 163,
+        "y": 100,
+        "w": 556,
+        "h": 1178
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "黑衣男子的朝向变了，应与白衣男子面对面",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787653904415
+}
