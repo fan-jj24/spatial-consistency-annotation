@@ -1,0 +1,26 @@
+{
+  "line": 9500,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009500_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=5LujKgsKe5lK0fHJEBXy1%2FojYU8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009500_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=uX0MH56XFknjTRxyQla4GQ8RZjQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 377,
+        "y": 292,
+        "w": 239,
+        "h": 260
+      },
+      "type": "move",
+      "target": {
+        "x": 793,
+        "y": 425
+      }
+    }
+  ],
+  "note": "小狗与鳄鱼的距离变远，朝向变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787629109406
+}
