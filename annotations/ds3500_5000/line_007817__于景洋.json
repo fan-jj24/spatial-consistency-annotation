@@ -1,0 +1,65 @@
+{
+  "line": 7817,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007817_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=QtGPP28amoxQvb%2FzUWBLVV25aKk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007817_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=V%2BACCG5JoWJpn1CvNA4G7aZ3DN4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 588,
+        "y": 204,
+        "w": 130,
+        "h": 433
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.001,
+        -0.408,
+        -0.913
+      ]
+    },
+    {
+      "box": {
+        "x": 266,
+        "y": 253,
+        "w": 291,
+        "h": 390
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 456,
+          "y": 284
+        },
+        {
+          "x": 339,
+          "y": 577
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 863,
+        "y": 295,
+        "w": 104,
+        "h": 220
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 929,
+          "y": 307
+        },
+        {
+          "x": 889,
+          "y": 495
+        }
+      ]
+    }
+  ],
+  "note": "牛仔裤女子距离背后的吧台近了，女子右侧的众人和桌子多余，画面右侧的男服务员多余",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787653601071
+}
