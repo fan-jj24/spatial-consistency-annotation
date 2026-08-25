@@ -1,0 +1,41 @@
+{
+  "line": 7772,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007772_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=8UiQG0lFhPfuGdKvxzJoJz9UgAk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007772_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=RQkWUcXxW5siGOPjuBsa7%2FwwldA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 739,
+        "y": 209,
+        "w": 384,
+        "h": 386
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 978,
+          "y": 262
+        },
+        {
+          "x": 878,
+          "y": 528
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 152,
+        "y": 120,
+        "w": 580,
+        "h": 590
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "红色汽车多余，黄色汽车由面对杂草变成侧对",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787640873749
+}
