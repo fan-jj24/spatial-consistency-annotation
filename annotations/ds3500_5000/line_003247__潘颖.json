@@ -1,0 +1,27 @@
+{
+  "line": 3247,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003247_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=EUpZpo8KZfbhW5I4kZaEJ8nLAQA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003247_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=CxkAUGN5c6VKPScqtR5j2Zq6AaI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -9,
+        "y": 512,
+        "w": 707,
+        "h": 276
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.182,
+        0.059,
+        0.982
+      ]
+    }
+  ],
+  "note": "女子与床的相对距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787643645433
+}
