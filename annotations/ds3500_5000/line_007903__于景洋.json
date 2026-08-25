@@ -1,0 +1,42 @@
+{
+  "line": 7903,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007903_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=DtqPsUcua%2BmQkQzsbiWMoCsjhac%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007903_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=y58PBBCtGZaDLQO3JiWr%2FvBwq%2BQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 152,
+        "y": 101,
+        "w": 395,
+        "h": 373
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 430,
+          "y": 194
+        },
+        {
+          "x": 287,
+          "y": 410
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 734,
+        "y": 75,
+        "w": 544,
+        "h": 642
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向变化，需要重排 "
+    }
+  ],
+  "note": "蓝色小精灵多余，男孩和黄色小动物距离沙发近了，男孩由在黄色小动物的左侧变为右侧",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787628994283
+}
