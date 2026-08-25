@@ -1,0 +1,26 @@
+{
+  "line": 3465,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003465_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109352&Signature=M9jEkdV8ti7kmQYPIwFwzZKi4Do%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003465_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109352&Signature=gn3cks1j3Yque1HoA5PVoTb7pvY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 2,
+        "y": 236,
+        "w": 381,
+        "h": 824
+      },
+      "type": "move",
+      "target": {
+        "x": 539,
+        "y": 1170
+      }
+    }
+  ],
+  "note": "黑衣男子与椅子的相对位置变了，由椅子上变为对面",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787638704402
+}
