@@ -1,0 +1,26 @@
+{
+  "line": 7761,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007761_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=1baTsEyAV8RP5s4Qc8d0RxkTFOo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007761_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=zvG5ahIPfyi2wL9RMFkfdaNN9P8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 587,
+        "y": 105,
+        "w": 492,
+        "h": 415
+      },
+      "type": "move",
+      "target": {
+        "x": 29,
+        "y": 386
+      }
+    }
+  ],
+  "note": "女子与栏杆的距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787649235103
+}
