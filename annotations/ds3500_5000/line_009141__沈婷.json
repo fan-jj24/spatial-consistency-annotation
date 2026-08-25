@@ -1,0 +1,31 @@
+{
+  "line": 9141,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009141_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=bY%2F9BnLXConexLeA0zW7Ca9Oq9E%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009141_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=KHLlpiOv6CJwzxVajSpsABgEJ6Q%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 371,
+        "y": 453,
+        "w": 351,
+        "h": 814
+      },
+      "type": "delete"
+    },
+    {
+      "box": {
+        "x": 30,
+        "y": 451,
+        "w": 328,
+        "h": 814
+      },
+      "type": "add"
+    }
+  ],
+  "note": "画面右侧多出一个士兵，中间2个粉衣人物消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787625431729
+}
