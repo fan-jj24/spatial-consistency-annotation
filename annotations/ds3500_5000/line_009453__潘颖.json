@@ -1,0 +1,23 @@
+{
+  "line": 9453,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009453_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=JztgCeIK8ydCgjDjSH%2FTYC%2BNXmI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009453_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=qE6PqtzG3%2FpSFY613REjwhix4lo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 679,
+        "y": 1,
+        "w": 598,
+        "h": 717
+      },
+      "type": "custom",
+      "text": "金发男子消失了，局部背景变了"
+    }
+  ],
+  "note": "黑发男子左后方的金发男子消失了，图片右半边的窗帘消失了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787634608281
+}
