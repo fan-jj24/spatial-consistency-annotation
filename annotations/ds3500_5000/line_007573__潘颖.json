@@ -1,0 +1,22 @@
+{
+  "line": 7573,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007573_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=inJ6mKQHv4p2njlb6nD4OA%2BLPWI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007573_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=6IULi26g4qqKJy7kUhkh0G6iueA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1310,
+        "y": 219,
+        "w": 508,
+        "h": 729
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "蓝衣男子左手边多出一名橙衣女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787653904415
+}
