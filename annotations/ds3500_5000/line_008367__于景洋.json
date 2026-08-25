@@ -1,0 +1,31 @@
+{
+  "line": 8367,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008367_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=hJ7z%2BmD8uTHTmeWp36vASelawHY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008367_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=ZpJ40FF5jJjFk0ZPXoMwj9jXqV0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 407,
+        "y": 52,
+        "w": 693,
+        "h": 667
+      },
+      "type": "rotate"
+    },
+    {
+      "box": {
+        "x": 1132,
+        "y": 105,
+        "w": 143,
+        "h": 580
+      },
+      "type": "add"
+    }
+  ],
+  "note": "戴黑帽女士由右侧对男子变成面对，灰色西服女子缺失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787636694727
+}
