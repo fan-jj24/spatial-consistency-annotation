@@ -1,0 +1,41 @@
+{
+  "line": 9217,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009217_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109368&Signature=CObeMah6IahHb0%2BACOSu8WSdXcM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009217_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109368&Signature=ThoMcqWcbp75LHeZD6GosAyNtmU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -1,
+        "y": 140,
+        "w": 600,
+        "h": 444
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.894,
+        -0.002,
+        -0.449
+      ]
+    },
+    {
+      "box": {
+        "x": 924,
+        "y": 148,
+        "w": 199,
+        "h": 383
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.964,
+        -0.003,
+        -0.265
+      ]
+    }
+  ],
+  "note": "兔女郎、红衣男子和黑衣男子与粉衣女子的相对距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787643645433
+}
