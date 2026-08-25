@@ -1,0 +1,22 @@
+{
+  "line": 7945,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007945_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=5f6KL7U0D3yBjoUFwhZJcr5z42I%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007945_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=dw3VVOmUDOXV0x77adFgrxMStaI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -3,
+        "y": 124,
+        "w": 389,
+        "h": 1149
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "黑衣男子高度变高，对面多出一个白衣男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647430473
+}
