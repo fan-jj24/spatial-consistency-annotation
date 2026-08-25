@@ -1,0 +1,27 @@
+{
+  "line": 9154,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009154_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=05S1Ydtwdqowa5d8S3P2T9e%2BeDo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009154_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=ApG5JNablq9hV7hUSoKPhqEoPag%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 5,
+        "y": 187,
+        "w": 1277,
+        "h": 530
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.031,
+        -0.514,
+        -0.857
+      ]
+    }
+  ],
+  "note": "众多木偶距离老头近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787624129926
+}
