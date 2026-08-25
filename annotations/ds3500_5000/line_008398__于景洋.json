@@ -1,0 +1,22 @@
+{
+  "line": 8398,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008398_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=KQSoQ9ZeoiVJH0M7pg7x0oflaA4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008398_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=bOo0N93NIXewNyUAM%2BSW4DSX%2Fr8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 533,
+        "y": 265,
+        "w": 199,
+        "h": 297
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "两位女子朝向由背对画面变为侧对",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787640873749
+}
