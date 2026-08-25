@@ -1,0 +1,27 @@
+{
+  "line": 8178,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008178_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=QCHQQvY5jn0X3ara9LMMLOIGRiQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008178_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=T8BUzLnA%2BNDh6k364DOkLG7SLB0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 186,
+        "y": 78,
+        "w": 1640,
+        "h": 998
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.009,
+        0.393,
+        0.919
+      ]
+    }
+  ],
+  "note": "2人与大佛的距离变远",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787625431728
+}
