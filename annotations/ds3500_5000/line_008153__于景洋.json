@@ -1,0 +1,27 @@
+{
+  "line": 8153,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008153_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=z89qHzkgjcuTqAY7%2FYr2NXfxFo4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008153_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=PGV%2FYXNd2Rc2HUiLH5WV6meWh%2Fg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 861,
+        "y": 449,
+        "w": 199,
+        "h": 618
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.208,
+        -0.462,
+        -0.862
+      ]
+    }
+  ],
+  "note": "女子距离滑梯口近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787643868931
+}
