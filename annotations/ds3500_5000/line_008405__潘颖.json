@@ -1,0 +1,26 @@
+{
+  "line": 8405,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008405_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=9t1fKfa%2Bk7GUVGgGxotweWXiO6A%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008405_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=TvOx%2FzWcwtjC%2BUuRyE2eLNdOtYQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 30,
+        "y": 315,
+        "w": 686,
+        "h": 965
+      },
+      "type": "move",
+      "target": {
+        "x": 388,
+        "y": 13
+      }
+    }
+  ],
+  "note": "粉衣女子的相对高度变低了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787653904415
+}
