@@ -1,0 +1,39 @@
+{
+  "line": 9063,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009063_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=JpVjGm%2BHztt3ZOrk6DvjcKix4ng%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009063_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=DcB6tR8ylJd3HZuPqjuat1lgQXg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 93,
+        "y": 72,
+        "w": 491,
+        "h": 645
+      },
+      "type": "move",
+      "target": {
+        "x": 618,
+        "y": 300
+      }
+    },
+    {
+      "box": {
+        "x": 837,
+        "y": 91,
+        "w": 314,
+        "h": 631
+      },
+      "type": "move",
+      "target": {
+        "x": 667,
+        "y": 429
+      }
+    }
+  ],
+  "note": "老头和蓝衬衣男子距离棺材远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787624129926
+}
