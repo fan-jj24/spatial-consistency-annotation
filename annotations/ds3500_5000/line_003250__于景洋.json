@@ -1,0 +1,27 @@
+{
+  "line": 3250,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003250_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=NG0FrXPTByRPBqa0NSbBdlrVnLM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003250_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=P5XBEw6HK%2BubiYjChqUnP7LGGVU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 135,
+        "y": 297,
+        "w": 448,
+        "h": 980
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.686,
+        0.015,
+        0.727
+      ]
+    }
+  ],
+  "note": "女子由在黑衣男子的右侧变成在左前方",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787650739721
+}
