@@ -1,0 +1,22 @@
+{
+  "line": 9446,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009446_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=C2jrDQdiIFIoCwKZHJlOaSmPs40%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009446_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=JC1bUuwlUF731oMfkQqpHHr2CSg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 528,
+        "y": 248,
+        "w": 291,
+        "h": 471
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "墨镜男子朝向变化，由背对灵堂变为背对门",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647430472
+}
