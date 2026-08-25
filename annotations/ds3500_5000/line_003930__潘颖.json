@@ -1,0 +1,23 @@
+{
+  "line": 3930,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003930_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109352&Signature=gpEez9ABEF7E5DmBcyMeCji8fuQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003930_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109352&Signature=NcSBjcD6nn%2FtLWuG5Dsyqis8dEs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 140,
+        "y": 261,
+        "w": 568,
+        "h": 783
+      },
+      "type": "custom",
+      "text": "多出一名女子"
+    }
+  ],
+  "note": "男子背后多出一名女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787643645433
+}
