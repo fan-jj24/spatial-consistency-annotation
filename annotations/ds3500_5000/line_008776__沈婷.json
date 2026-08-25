@@ -1,0 +1,22 @@
+{
+  "line": 8776,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008776_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109362&Signature=X1WSlz86SukJzLctdKyRPcTQjV4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008776_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109362&Signature=vjwsbQyZERAkNjzPY6QObplBvjk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -3,
+        "y": 154,
+        "w": 172,
+        "h": 1129
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "紫衣女子和红衣女子从并排变成相对",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647430472
+}
