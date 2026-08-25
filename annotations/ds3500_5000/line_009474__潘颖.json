@@ -1,0 +1,27 @@
+{
+  "line": 9474,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009474_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=QOHpq%2FtXOj93cfG%2B3hnzxk0bam0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009474_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=yMmNZyKLwZPHLD2AztT3I%2B2N3g4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 443,
+        "y": -1,
+        "w": 393,
+        "h": 521
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.031,
+        -0.311,
+        -0.95
+      ]
+    }
+  ],
+  "note": "男子与两根柱子的相对距离变近了，男子的相对高度变高了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787634608281
+}
