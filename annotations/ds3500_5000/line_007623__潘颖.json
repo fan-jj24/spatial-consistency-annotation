@@ -1,0 +1,22 @@
+{
+  "line": 7623,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007623_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=6jReW2j1XXplMaieaO3Fj%2BdbEnI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007623_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=ArJxZrJJGY1XAPjbW6aGBWNIv5o%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 0,
+        "y": 89,
+        "w": 291,
+        "h": 631
+      },
+      "type": "add"
+    }
+  ],
+  "note": "蓝衣男子对面的紫衣女子消失了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787653904415
+}
