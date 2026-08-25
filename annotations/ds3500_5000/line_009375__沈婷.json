@@ -1,0 +1,22 @@
+{
+  "line": 9375,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009375_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=Hc5yc4dMUPkZnDDap4MJcpaqBW4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009375_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=q%2BWsqxfm%2FvtboQ2eIEddCen8UXY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 9,
+        "y": -1,
+        "w": 627,
+        "h": 716
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "黑衣男子由侧对桌子变为面对",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647430473
+}
