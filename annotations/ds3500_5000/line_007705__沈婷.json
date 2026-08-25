@@ -1,0 +1,26 @@
+{
+  "line": 7705,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007705_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=u6%2FblQlzpoH1RFfwg4D5y%2FUVf1c%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007705_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=3MCHpEtJKp%2BGO%2Bld7TZy889sfQE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 611,
+        "y": 615,
+        "w": 84,
+        "h": 169
+      },
+      "type": "move",
+      "target": {
+        "x": 537,
+        "y": 817
+      }
+    }
+  ],
+  "note": "蓝裙女子由门内移动至门外",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647430473
+}
