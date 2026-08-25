@@ -1,0 +1,27 @@
+{
+  "line": 7947,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007947_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=hdNjep3LRHI8mevMMNiFy0TSCf8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007947_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=aZ2XwJfXU4yHn2ccWLeXLsFbqTQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 848,
+        "y": 575,
+        "w": 143,
+        "h": 490
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.087,
+        -0.036,
+        -0.996
+      ]
+    }
+  ],
+  "note": "白衣女子与树的相对距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787643645433
+}
