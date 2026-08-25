@@ -1,0 +1,27 @@
+{
+  "line": 7574,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007574_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=VABbEPljxJC5EiP%2Bh2KKzTZ%2B1eI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007574_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=UXBIIxNbVv92cUtMw8PzX6FhWHs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 673,
+        "y": 147,
+        "w": 431,
+        "h": 570
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.572,
+        -0.01,
+        -0.82
+      ]
+    }
+  ],
+  "note": "蓝衣男子与纸马的相对距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787649235103
+}
