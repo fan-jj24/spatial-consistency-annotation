@@ -1,0 +1,89 @@
+{
+  "line": 9287,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009287_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=jLtiLW29aOmZO1HlYpYaFICrShc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009287_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=8iUJlv5gHo1MO%2BVrMXQ%2Fo%2Foh7iM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 15,
+        "y": 143,
+        "w": 289,
+        "h": 576
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 225,
+          "y": 180
+        },
+        {
+          "x": 68,
+          "y": 677
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 857,
+        "y": -1,
+        "w": 357,
+        "h": 720
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 1144,
+          "y": 56
+        },
+        {
+          "x": 1003,
+          "y": 629
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 444,
+        "y": 353,
+        "w": 82,
+        "h": 242
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 474,
+          "y": 369
+        },
+        {
+          "x": 467,
+          "y": 562
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 747,
+        "y": 320,
+        "w": 76,
+        "h": 275
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 788,
+          "y": 353
+        },
+        {
+          "x": 784,
+          "y": 580
+        }
+      ]
+    }
+  ],
+  "note": "多个白衣木偶多余",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787640873749
+}
