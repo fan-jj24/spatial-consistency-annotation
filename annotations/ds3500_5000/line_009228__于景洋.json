@@ -1,0 +1,35 @@
+{
+  "line": 9228,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009228_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109368&Signature=OzAQMJRkIFgQqqe20pVv6z3rKog%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009228_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109368&Signature=eRtocW98RHg4G6tmdnEPmZXigZ0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 346,
+        "y": 350,
+        "w": 213,
+        "h": 317
+      },
+      "type": "move",
+      "target": {
+        "x": 1056,
+        "y": 667
+      }
+    },
+    {
+      "box": {
+        "x": 846,
+        "y": 46,
+        "w": 432,
+        "h": 465
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "女子由在男子的左前方变成右前方，男子左后方的建筑物也发生了变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647668306
+}
