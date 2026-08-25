@@ -1,0 +1,27 @@
+{
+  "line": 8691,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008691_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=bkpTStP5epBxofjrGnwJQebykE4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008691_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=74Gt7Y3NVB%2BSenExqlPLv%2F0E75Q%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 117,
+        "y": 210,
+        "w": 525,
+        "h": 517
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.031,
+        0.747,
+        0.664
+      ]
+    }
+  ],
+  "note": "绿衣女子距离地上的男子近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787640873749
+}
