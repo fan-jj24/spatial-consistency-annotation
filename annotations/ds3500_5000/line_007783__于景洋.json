@@ -1,0 +1,26 @@
+{
+  "line": 7783,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007783_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=XlS4rCpy3an9Y1zhEEmjb2YAoGs%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007783_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=URtwgPm2IrG5u%2Blpgg%2B6e5tW9tA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 477,
+        "y": 472,
+        "w": 49,
+        "h": 125
+      },
+      "type": "move",
+      "target": {
+        "x": 594,
+        "y": 534
+      }
+    }
+  ],
+  "note": "花衣男子距离汽车后排门远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787640873749
+}
