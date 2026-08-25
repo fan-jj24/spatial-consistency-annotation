@@ -1,0 +1,26 @@
+{
+  "line": 7802,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007802_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=rBYjfzHV3hUT75trdwlCjPD1JnY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007802_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=8cKfQc%2Ff4HZBbvKZoqROeTQLcfY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 755,
+        "y": 491,
+        "w": 134,
+        "h": 90
+      },
+      "type": "move",
+      "target": {
+        "x": 875,
+        "y": 619
+      }
+    }
+  ],
+  "note": "红汽车与摩托车距离变远",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787625431728
+}
