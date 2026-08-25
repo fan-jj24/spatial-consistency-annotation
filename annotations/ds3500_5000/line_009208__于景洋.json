@@ -1,0 +1,22 @@
+{
+  "line": 9208,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009208_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109368&Signature=xEQxIVNobPjVLTNAlwMn3i8HuMM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009208_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109368&Signature=5a7PSBGFR5jXguuYMjq4mKmbENY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 384,
+        "y": 92,
+        "w": 562,
+        "h": 575
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "红蓝衣持刀男子由面向站地男子变成背对",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787628534724
+}
