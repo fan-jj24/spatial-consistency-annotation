@@ -1,0 +1,23 @@
+{
+  "line": 8803,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008803_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=3qDDVouBEX9Mj4HFakFbPTBoORk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008803_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=omZmD4KztGIT9mXQmExULX6VU7k%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -6,
+        "y": 138,
+        "w": 732,
+        "h": 1078
+      },
+      "type": "custom",
+      "text": "人物相对位置和局部场景变化，需要重排 "
+    }
+  ],
+  "note": "男子离女子远了，女子身旁的罩子多余",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787624129926
+}
