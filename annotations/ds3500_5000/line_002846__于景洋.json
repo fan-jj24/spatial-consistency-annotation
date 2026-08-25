@@ -1,0 +1,26 @@
+{
+  "line": 2846,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002846_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109350&Signature=N0GpRl0L3xlUaiqPyKqew3RfuRg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002846_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109350&Signature=gFz8B43vMbWyoP0QBN9XbQdwXfs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 337,
+        "y": 97,
+        "w": 384,
+        "h": 1083
+      },
+      "type": "move",
+      "target": {
+        "x": -11,
+        "y": 763
+      }
+    }
+  ],
+  "note": "白衣男子由在蓝色披风男子的右侧变成在左侧",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787628534724
+}
