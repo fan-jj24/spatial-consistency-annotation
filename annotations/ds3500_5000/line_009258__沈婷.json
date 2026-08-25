@@ -1,0 +1,27 @@
+{
+  "line": 9258,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009258_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109368&Signature=h7G6oKrNsmvDM0tVFdRLB0xyOmE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009258_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109368&Signature=ZqgOyD%2BERT6FtLH6brgyl97EnZM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 512,
+        "y": 260,
+        "w": 461,
+        "h": 461
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.017,
+        -0.4,
+        -0.916
+      ]
+    }
+  ],
+  "note": "男子与街道尽头房子的距离变近",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647430473
+}
