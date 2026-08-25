@@ -1,0 +1,27 @@
+{
+  "line": 9046,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009046_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=O8qsf3Ct9mOSH7UxdvKueyhOgDk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009046_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=3LVuKcyYxhx3aPsWTWQsbWbwsks%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 124,
+        "y": 37,
+        "w": 245,
+        "h": 392
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.994,
+        -0.015,
+        -0.104
+      ]
+    }
+  ],
+  "note": "年轻男孩距离栅栏门近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787650739721
+}
