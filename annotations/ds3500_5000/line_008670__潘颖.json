@@ -1,0 +1,22 @@
+{
+  "line": 8670,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008670_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=q0SYcEp6uHk7n3jNeKigB5Evygk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008670_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=yzlJ5ckpK%2BhBxZPAxTPiZEnSBUg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -6,
+        "y": 392,
+        "w": 294,
+        "h": 858
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "男子左后方多出一个粉衣人",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787638704402
+}
