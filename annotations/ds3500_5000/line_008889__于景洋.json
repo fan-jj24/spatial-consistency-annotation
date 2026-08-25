@@ -1,0 +1,32 @@
+{
+  "line": 8889,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008889_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=88J%2BUfphn%2B78vLw4gIhn%2Be5ARQ0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008889_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=kQNGidPozCek5HVYRrZjI%2BHOi8k%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 352,
+        "y": 45,
+        "w": 514,
+        "h": 677
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 657,
+          "y": 124
+        },
+        {
+          "x": 446,
+          "y": 644
+        }
+      ]
+    }
+  ],
+  "note": "黑头发男子多余",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787643868931
+}
