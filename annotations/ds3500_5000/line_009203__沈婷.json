@@ -1,0 +1,22 @@
+{
+  "line": 9203,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009203_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109368&Signature=yh%2BQICV2uCtCwL1uJh3TTTihKvk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009203_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109368&Signature=l%2BXyg22aXNynHfZkklcegqYiBPU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1394,
+        "y": 443,
+        "w": 832,
+        "h": 887
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "男孩后侧多出一个黄色动物",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787629109406
+}
