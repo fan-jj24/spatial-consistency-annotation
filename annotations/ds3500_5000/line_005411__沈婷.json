@@ -1,0 +1,27 @@
+{
+  "line": 5411,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_005411_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=VhrhFQF1JlJjw%2FpQ87YCM2rGh60%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_005411_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=wWKiBicj6YNNKoOBf4va%2BQGJeTg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 43,
+        "y": 379,
+        "w": 676,
+        "h": 804
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.017,
+        0.356,
+        0.934
+      ]
+    }
+  ],
+  "note": "2人由台阶下方移动至台阶上",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787625431729
+}
