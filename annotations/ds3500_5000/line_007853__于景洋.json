@@ -1,0 +1,22 @@
+{
+  "line": 7853,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007853_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=dNYLpp01xz2RCYg1vDHNp2BpyMM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007853_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=kuuQiZcSAnq7uracZZOfQuOTETM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 109,
+        "y": 125,
+        "w": 609,
+        "h": 1155
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "背包男子的朝向由背对货架变为面对货架",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647668306
+}
