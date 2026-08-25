@@ -1,0 +1,22 @@
+{
+  "line": 8537,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008537_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=UqwBAKS%2FmQLNEf5hRPCrT4goCAU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008537_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=2YU2p3js8g9ulrm7N4KaKa46H%2FI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 491,
+        "y": 36,
+        "w": 228,
+        "h": 1239
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "白衣人物朝向变化，由与女子背对背变为面对",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787629109406
+}
