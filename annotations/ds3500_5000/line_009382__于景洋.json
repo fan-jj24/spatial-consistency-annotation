@@ -1,0 +1,26 @@
+{
+  "line": 9382,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009382_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=EY1c%2Bscz7Q6dQ%2BolNHTx5JyKFuA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009382_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=tSVx%2Ftve5%2FWKCv3s8g6qIBp8cto%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 219,
+        "y": 377,
+        "w": 176,
+        "h": 340
+      },
+      "type": "move",
+      "target": {
+        "x": 163,
+        "y": 582
+      }
+    }
+  ],
+  "note": "女子距离男子远了，女子由依靠在男子左肩变成半身起立面对，高度也发生了变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787636694727
+}
