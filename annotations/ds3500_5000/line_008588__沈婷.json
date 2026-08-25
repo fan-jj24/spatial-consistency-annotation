@@ -1,0 +1,49 @@
+{
+  "line": 8588,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008588_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=LcXeyvDay9nphY6oFroehJTaBqM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008588_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=nxPHyWHIRBQAehtxC1kXxWBpvkg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 77,
+        "y": -3,
+        "w": 584,
+        "h": 481
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.986,
+        0.003,
+        0.169
+      ]
+    },
+    {
+      "box": {
+        "x": 967,
+        "y": -5,
+        "w": 103,
+        "h": 368
+      },
+      "type": "move",
+      "target": {
+        "x": 1287,
+        "y": 327
+      }
+    },
+    {
+      "box": {
+        "x": 1287,
+        "y": 97,
+        "w": 88,
+        "h": 380
+      },
+      "type": "add"
+    }
+  ],
+  "note": "白袜人物与花坛距离变近，蓝衣男子与花坛距离变远，花坛旁边的褐衣男子消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787625431729
+}
