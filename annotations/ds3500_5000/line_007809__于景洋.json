@@ -1,0 +1,22 @@
+{
+  "line": 7809,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007809_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=%2F0mE5VqkqVX1VBjeemm%2FD2vDibQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007809_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=CtiswJlxC1xKDzw0Jlf22emCSdw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 685,
+        "y": 78,
+        "w": 346,
+        "h": 641
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "黑色西服男子由背对黑色防弹衣男子变成向右侧身面对",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787640873749
+}
