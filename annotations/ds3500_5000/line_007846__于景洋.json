@@ -1,0 +1,22 @@
+{
+  "line": 7846,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007846_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=AmLmb7yfiL%2FMENZ39VfrK1iOgqY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007846_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=0KyMzDg6%2F%2FVJDf14oTwY6WXP6bY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 200,
+        "y": 60,
+        "w": 346,
+        "h": 611
+      },
+      "type": "add"
+    }
+  ],
+  "note": "女子左后方的男服务员缺失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787625926109
+}
