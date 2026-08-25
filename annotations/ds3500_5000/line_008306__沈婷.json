@@ -1,0 +1,26 @@
+{
+  "line": 8306,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008306_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=xHdlR26jdXZ6QgW1vTLys4h67Ds%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008306_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=SHe7KpUIiUygfMne5S86SE%2B9kgs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1037,
+        "y": 141,
+        "w": 265,
+        "h": 684
+      },
+      "type": "move",
+      "target": {
+        "x": 1616,
+        "y": 465
+      }
+    }
+  ],
+  "note": "男子与洞口距离变远",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647430472
+}
