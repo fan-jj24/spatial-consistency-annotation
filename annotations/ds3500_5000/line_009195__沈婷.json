@@ -1,0 +1,27 @@
+{
+  "line": 9195,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009195_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=5phObcKx2wxd%2B0K6YMho8b1IQ4c%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009195_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=C%2BLAaL1IIegDbxRR7VF4D0lsK10%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1022,
+        "y": 25,
+        "w": 254,
+        "h": 690
+      },
+      "type": "move3d",
+      "dir3d": [
+        1,
+        0,
+        0.028
+      ]
+    }
+  ],
+  "note": "黄发女子与白发男子的距离变近",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647430473
+}
