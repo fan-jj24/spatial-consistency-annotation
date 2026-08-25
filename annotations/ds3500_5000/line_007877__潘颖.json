@@ -1,0 +1,22 @@
+{
+  "line": 7877,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007877_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=nEPQVsdBhdnfB7jZ%2B0hlJcJB4sQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007877_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=ezWHCsCFq6acB17RgU9biCT7xFA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 4,
+        "y": 7,
+        "w": 288,
+        "h": 714
+      },
+      "type": "add"
+    }
+  ],
+  "note": "图片左边的黄衣女子消失了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787638704401
+}
