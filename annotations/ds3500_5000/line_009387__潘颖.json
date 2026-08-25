@@ -1,0 +1,26 @@
+{
+  "line": 9387,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009387_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=pffpjurlXnhJHJl6xfYjeU9jakk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009387_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=J4GFNidBhynrLmOx8dYPsOOZPxs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 526,
+        "y": 10,
+        "w": 409,
+        "h": 708
+      },
+      "type": "move",
+      "target": {
+        "x": 705,
+        "y": 0
+      }
+    }
+  ],
+  "note": "蓝衣男子的相对高度变低了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787623316548
+}
