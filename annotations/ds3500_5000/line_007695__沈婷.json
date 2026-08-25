@@ -1,0 +1,22 @@
+{
+  "line": 7695,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007695_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=drWBCGoM96XxJwXPldQQq4vivbM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007695_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=qjoGvYD1DXE4GyBIBadAxq9wLhk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 4,
+        "y": 59,
+        "w": 345,
+        "h": 659
+      },
+      "type": "add"
+    }
+  ],
+  "note": "男孩对面的紫衣女孩消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647430472
+}
