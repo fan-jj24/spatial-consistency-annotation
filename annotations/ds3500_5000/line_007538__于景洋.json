@@ -1,0 +1,23 @@
+{
+  "line": 7538,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007538_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=tCvEUjp4nUH6ApnQvy00arhnGx4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007538_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=ghEuJEsi3qSQKGEo9N%2B2Qy3wjSU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 660,
+        "y": 356,
+        "w": 210,
+        "h": 273
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向变化，需要重排 "
+    }
+  ],
+  "note": "画面中央的战士们距离手持长矛武器矗立在地的巨人远了，蓝衣战士由面向长矛巨人变成背对",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787636694727
+}
