@@ -1,0 +1,27 @@
+{
+  "line": 7606,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007606_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=4jaPAg%2BuK%2Be7jqb5Z%2B0OPZ3r0YI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007606_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=eMFZqkKBuNR5dXqclRakj1Zw6bo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 781,
+        "y": 118,
+        "w": 513,
+        "h": 595
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.809,
+        -0.031,
+        -0.587
+      ]
+    }
+  ],
+  "note": "老头和牛仔衣男子距离白布桌子远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787624129926
+}
