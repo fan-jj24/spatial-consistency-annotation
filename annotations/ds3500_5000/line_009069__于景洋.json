@@ -1,0 +1,32 @@
+{
+  "line": 9069,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009069_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=WW4k4SSXxnToGzhMTm4NjtR4WRg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009069_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=42Ps%2Bd1b%2FBz05NwKfy%2FmLmG4i3M%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 908,
+        "y": 1,
+        "w": 370,
+        "h": 717
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 1112,
+          "y": 98
+        },
+        {
+          "x": 1029,
+          "y": 662
+        }
+      ]
+    }
+  ],
+  "note": "紫衣女孩多余",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787653601071
+}
