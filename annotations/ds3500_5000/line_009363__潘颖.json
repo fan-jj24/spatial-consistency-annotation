@@ -1,0 +1,35 @@
+{
+  "line": 9363,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009363_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=YrS3Ta0KKx7bhEU7FcGYPObeVf0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009363_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=PevYWvcHwwOT7Fpl7wg7dtzp10Q%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 519,
+        "y": 143,
+        "w": 422,
+        "h": 399
+      },
+      "type": "move",
+      "target": {
+        "x": 724,
+        "y": 717
+      }
+    },
+    {
+      "box": {
+        "x": 8,
+        "y": 559,
+        "w": 900,
+        "h": 98
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "男子身后的围栏消失了，男子的相对高度变高了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787653904415
+}
