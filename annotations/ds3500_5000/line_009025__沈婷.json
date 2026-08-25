@@ -1,0 +1,22 @@
+{
+  "line": 9025,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009025_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=WxsrL1%2BDVRgESX2N9xq2vNhjMJM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009025_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=r2sx4iETgQDCVXSi5WB0xVfD9RE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 366,
+        "y": 2,
+        "w": 354,
+        "h": 704
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "紫衣女子由面对台子变为侧对",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647430472
+}
