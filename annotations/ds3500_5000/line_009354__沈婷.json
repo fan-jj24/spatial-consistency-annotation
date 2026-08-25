@@ -1,0 +1,27 @@
+{
+  "line": 9354,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009354_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=dsDX2m67TT4jnJDWeyWNMzSq5To%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009354_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=PkmuPyjVIyp8V5qicbdUc5OKtSA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 291,
+        "y": 98,
+        "w": 739,
+        "h": 544
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.572,
+        -0.382,
+        -0.726
+      ]
+    }
+  ],
+  "note": "2人从棺木侧面移动至棺木顶端，2人距离变远，朝向变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787637542948
+}
