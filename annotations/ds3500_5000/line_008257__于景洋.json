@@ -1,0 +1,32 @@
+{
+  "line": 8257,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008257_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=73rOHDKyTMEkB6ZhOT9hsjWuDCQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008257_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=EdYC%2BZhSLd3OnJfbt1uWCtBCGBU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 171,
+        "y": 255,
+        "w": 287,
+        "h": 251
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 364,
+          "y": 311
+        },
+        {
+          "x": 245,
+          "y": 469
+        }
+      ]
+    }
+  ],
+  "note": "黄色小动物多余",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787636694727
+}
