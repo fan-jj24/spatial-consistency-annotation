@@ -1,0 +1,26 @@
+{
+  "line": 8218,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008218_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=mcXw%2FCdqYu%2BCsLLxqF5LmIS0TCU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008218_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=C%2BU51DfZfGbV6pSxuiplMJvTSRU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 666,
+        "y": 143,
+        "w": 176,
+        "h": 528
+      },
+      "type": "move",
+      "target": {
+        "x": 332,
+        "y": 520
+      }
+    }
+  ],
+  "note": "男子与格子抱枕的相对距离变远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787643645433
+}
