@@ -1,0 +1,27 @@
+{
+  "line": 8198,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008198_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=MLUBclMLJmPlqt32shl5jgEH0qA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008198_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=lX9AAJkIHBYvNjZSX3hQWsHm998%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 441,
+        "y": 84,
+        "w": 719,
+        "h": 634
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.475,
+        0.081,
+        -0.876
+      ]
+    }
+  ],
+  "note": "男子由在沙发远处站立变成坐在沙发上，距离沙发近了，高度也发生了变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787653601071
+}
