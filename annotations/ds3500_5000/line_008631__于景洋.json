@@ -1,0 +1,26 @@
+{
+  "line": 8631,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008631_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=AKwNTNK1syYwWg7ZD2%2FF0sGbKSI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008631_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=stCDu0FkbIpwfwjjZMqojSgQBPU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 306,
+        "y": 287,
+        "w": 253,
+        "h": 737
+      },
+      "type": "move",
+      "target": {
+        "x": 427,
+        "y": 136
+      }
+    }
+  ],
+  "note": "腾空女子距离地面近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647668306
+}
