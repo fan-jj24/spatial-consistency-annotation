@@ -1,0 +1,27 @@
+{
+  "line": 8746,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008746_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109362&Signature=HRaFu9v3HbN57M2cNj7D%2BRKmwdo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008746_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109362&Signature=Dr5dbxVC6uWxN6o4cLd4BH1JLr0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 199,
+        "y": 203,
+        "w": 515,
+        "h": 1070
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.98,
+        -0.004,
+        0.2
+      ]
+    }
+  ],
+  "note": "粉衣女子由绿衣男子后方移动到对面",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647430472
+}
