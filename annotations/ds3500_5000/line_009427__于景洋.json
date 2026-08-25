@@ -1,0 +1,23 @@
+{
+  "line": 9427,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009427_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=ZE2B7FKjxGn%2FnGqg5gqA0p%2BUrXo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009427_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=Db4h6kJG6cYibQXVcr3NSSU71As%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 279,
+        "y": 16,
+        "w": 968,
+        "h": 701
+      },
+      "type": "custom",
+      "text": "两个人物相对位置和朝向变化，需要重排 "
+    }
+  ],
+  "note": "黄头发男子由背对门口变为面对，黑头发男子多余",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787650739721
+}
