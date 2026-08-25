@@ -1,0 +1,27 @@
+{
+  "line": 8436,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008436_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=31gKUQ96NM70THrsNYz0AJaDLHE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008436_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=XWKH4I%2FV2exYJxkapd%2FxvheLSPw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 55,
+        "y": 203,
+        "w": 430,
+        "h": 493
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.213,
+        0.427,
+        0.879
+      ]
+    }
+  ],
+  "note": "动物位置变化，由车头移动至轮胎位置",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787625431728
+}
