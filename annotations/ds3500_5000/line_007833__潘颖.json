@@ -1,0 +1,22 @@
+{
+  "line": 7833,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007833_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=vDiShEVmu5NNVA0kN3vO7vE80uw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007833_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=zCTDtIFeHTLLe5tdY9R2PpDfopY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 8,
+        "y": 43,
+        "w": 521,
+        "h": 677
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "衬衫女子右手边多出一名黄马甲男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787623316548
+}
