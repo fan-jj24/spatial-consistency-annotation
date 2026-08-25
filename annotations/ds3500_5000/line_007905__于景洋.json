@@ -1,0 +1,41 @@
+{
+  "line": 7905,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007905_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=WxXKVs%2B5WH1TwmCmrbC6Pxa80Qg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007905_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=73acSbU1lHPoMA0MPbm2JpQf7HQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1,
+        "y": 302,
+        "w": 626,
+        "h": 418
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 454,
+          "y": 405
+        },
+        {
+          "x": 159,
+          "y": 648
+        }
+      ]
+    },
+    {
+      "box": {
+        "x": 647,
+        "y": 36,
+        "w": 482,
+        "h": 683
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "蓝色小精灵和被拖着的手多余，紫衣女孩的朝向由左侧后对着一束气球变成右后方对着气球",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647668306
+}
