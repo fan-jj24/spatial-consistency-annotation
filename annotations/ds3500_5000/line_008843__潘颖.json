@@ -1,0 +1,27 @@
+{
+  "line": 8843,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008843_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=17ncKBZqL14pv1oHgjWd%2FcVLJiI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008843_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=jVJPt%2FwzG9wp5%2B5m0Bma16Q9U0s%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 531,
+        "y": -9,
+        "w": 478,
+        "h": 491
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.731,
+        0.003,
+        0.682
+      ]
+    }
+  ],
+  "note": "男子与桌子的相对距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787653904415
+}
