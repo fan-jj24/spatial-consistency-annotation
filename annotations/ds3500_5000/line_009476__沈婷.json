@@ -1,0 +1,22 @@
+{
+  "line": 9476,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009476_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=rvKquNB62fTRDap3hAlJ8Ew82QI%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009476_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=60%2F5fWMB2E2xH2yCE1EW88B0nYc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 549,
+        "y": 107,
+        "w": 724,
+        "h": 613
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "老人朝向变化，由背对钟表变为面对",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787637542948
+}
