@@ -1,0 +1,23 @@
+{
+  "line": 9022,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009022_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=QEtw6fekTAFv%2Bk7TnZ2%2B895bauQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009022_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=xBpcU8K%2FNNI1ijEP8sqpw6zt8Ls%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 290,
+        "y": 264,
+        "w": 547,
+        "h": 455
+      },
+      "type": "custom",
+      "text": "多出五个人，白衣男子的朝向变了"
+    }
+  ],
+  "note": "图B多出五个人，除白衣男子外的人物需要删除，白衣男子的朝向变了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787643645433
+}
