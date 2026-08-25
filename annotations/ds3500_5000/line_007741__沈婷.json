@@ -1,0 +1,45 @@
+{
+  "line": 7741,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007741_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=8DMlw1b%2BDmQkbNO1F%2FFDzUsgusE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007741_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=u2VGY814ehfsD4SGQUbEsYr0G%2Bw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 322,
+        "y": 554,
+        "w": 82,
+        "h": 210
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.015,
+        -0.4,
+        -0.916
+      ]
+    },
+    {
+      "box": {
+        "x": 588,
+        "y": 738,
+        "w": 131,
+        "h": 532
+      },
+      "type": "add"
+    },
+    {
+      "box": {
+        "x": 284,
+        "y": 764,
+        "w": 156,
+        "h": 512
+      },
+      "type": "add"
+    }
+  ],
+  "note": "蓝衣女子与门的距离变近，身后的2个绿衣女子消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787647430472
+}
