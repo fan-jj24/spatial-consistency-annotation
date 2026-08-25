@@ -1,0 +1,22 @@
+{
+  "line": 8656,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008656_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=ghS4hNQwkhglC4lxRmJKpzhTaLk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008656_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=O2PmZBW1DcDOiPn7szAZGPv0ET4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 43,
+        "y": 49,
+        "w": 579,
+        "h": 1226
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "黑色花衣男子由面向白衣人物变为背对",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787636694727
+}
