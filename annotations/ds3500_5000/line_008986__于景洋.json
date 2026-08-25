@@ -1,0 +1,27 @@
+{
+  "line": 8986,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008986_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=Vj8HVR%2BFpXleB%2Fwzz%2BLjWHlLE30%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008986_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=45QjJK1eOCEJH9eyhQ8FiS5QWHU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -4,
+        "y": 6,
+        "w": 798,
+        "h": 524
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.951,
+        -0.021,
+        -0.308
+      ]
+    }
+  ],
+  "note": "棕衣人物距离蜡烛近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787643868931
+}
