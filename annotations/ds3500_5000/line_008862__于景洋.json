@@ -1,0 +1,23 @@
+{
+  "line": 8862,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008862_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=jEn9L%2Fr7%2F30K1xDDRdwc3%2Bp3Jdk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008862_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=%2BW5Vz17IsUk61THpK7tlZ375G84%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 2,
+        "y": 52,
+        "w": 1214,
+        "h": 665
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向变化，需要重排 "
+    }
+  ],
+  "note": "画面中央被挡住的戴黑手套男子由站在绿色台子的上面变化到了站在台子前面，其余人物多余",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787624129926
+}
