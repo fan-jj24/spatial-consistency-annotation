@@ -1,0 +1,45 @@
+{
+  "line": 7923,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007923_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=Wnij16ZoNvu9NPVClHBmtc7giDY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007923_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=BldqKe21ODjsKHmAj2XfBnjTvOs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1524,
+        "y": -2,
+        "w": 668,
+        "h": 473
+      },
+      "type": "move",
+      "target": {
+        "x": 1035,
+        "y": 497
+      }
+    },
+    {
+      "box": {
+        "x": 1576,
+        "y": 482,
+        "w": 390,
+        "h": 456
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 1905,
+          "y": 569
+        },
+        {
+          "x": 1714,
+          "y": 922
+        }
+      ]
+    }
+  ],
+  "note": "打伞战士距离蓝衣战士远了，蓝衣战士后面的战士多余",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787628534724
+}
