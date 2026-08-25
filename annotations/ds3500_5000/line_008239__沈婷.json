@@ -1,0 +1,41 @@
+{
+  "line": 8239,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008239_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=ZqAdqdftFXDJQAeBb%2BMGJZ3E9ks%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008239_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=BzAak6smDaMUhurIiMMIwynDT8A%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 3,
+        "y": 66,
+        "w": 424,
+        "h": 587
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.999,
+        0.001,
+        -0.05
+      ]
+    },
+    {
+      "box": {
+        "x": 928,
+        "y": 67,
+        "w": 350,
+        "h": 524
+      },
+      "type": "move3d",
+      "dir3d": [
+        1,
+        0,
+        0.012
+      ]
+    }
+  ],
+  "note": "两个动物与男孩距离变近，男孩高度变低",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787625431728
+}
