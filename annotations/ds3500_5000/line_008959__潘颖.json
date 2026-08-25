@@ -1,0 +1,26 @@
+{
+  "line": 8959,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008959_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=jhEKRBadYIFvkLDgzGWR%2FhfWses%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008959_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=k88oK64GIJj1WHHehjzfHuKH6bY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 284,
+        "y": 338,
+        "w": 82,
+        "h": 160
+      },
+      "type": "move",
+      "target": {
+        "x": 463,
+        "y": 707
+      }
+    }
+  ],
+  "note": "男孩的相对位置变了，应在台阶下",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787649235103
+}
