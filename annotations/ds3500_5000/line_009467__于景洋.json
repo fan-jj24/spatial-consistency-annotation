@@ -1,0 +1,22 @@
+{
+  "line": 9467,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009467_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=zKl0%2B53YZx0Y8Ztb%2FOcao7jFURU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009467_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=CYeWOhqgIIGGHPCsHUa9mI0txW8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 149,
+        "y": 363,
+        "w": 238,
+        "h": 59
+      },
+      "type": "add"
+    }
+  ],
+  "note": "蓝色和红色汽车缺失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787624129926
+}
