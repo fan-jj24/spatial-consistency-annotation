@@ -1,0 +1,23 @@
+{
+  "line": 3323,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003323_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=QpSgtVUZ6ptmOzxm%2Bgs6P4E4j3c%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003323_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=a5IU1Bkq%2BiA84kFUlrdYwukFRnc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -4,
+        "y": 84,
+        "w": 722,
+        "h": 1198
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向变化，需要重排 "
+    }
+  ],
+  "note": "女子由在男子的右后方变成在男子的前面，男子左侧的柱子消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787624129926
+}
