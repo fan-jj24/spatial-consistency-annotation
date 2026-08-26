@@ -1,0 +1,26 @@
+{
+  "line": 7812,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007812_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=c9coYWXiUcRZevEXnjkjDCO0PPY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007812_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=xeNXWUe%2BOpOKEwV9T0AeNDVStu0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 685,
+        "y": 168,
+        "w": 259,
+        "h": 199
+      },
+      "type": "move",
+      "target": {
+        "x": 1577,
+        "y": 531
+      }
+    }
+  ],
+  "note": "女子与置物架的距离变远，朝向变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787726752445
+}
