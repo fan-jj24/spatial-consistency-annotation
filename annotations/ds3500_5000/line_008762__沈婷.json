@@ -1,0 +1,22 @@
+{
+  "line": 8762,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008762_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109362&Signature=zpDxlZI3sVCUynNGG6yaVlm347I%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008762_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109362&Signature=w8xl6hrbm7FBumrqcXg7bG18DYI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 209,
+        "y": 210,
+        "w": 269,
+        "h": 1062
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "女子从面对柜子变为侧对",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787726752445
+}
