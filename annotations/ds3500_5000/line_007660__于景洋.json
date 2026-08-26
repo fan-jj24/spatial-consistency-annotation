@@ -1,0 +1,22 @@
+{
+  "line": 7660,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007660_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=ccsyEB9NEy4l5XCvgDMMliw6cdg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007660_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=TcOpoiH8Cg0P%2B4aWcQBbBAgFFbI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 480,
+        "y": 228,
+        "w": 508,
+        "h": 727
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "蓝衣战士的朝向由背对拿琵琶的战士变成右侧对",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787710163273
+}
