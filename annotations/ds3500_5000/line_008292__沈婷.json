@@ -1,0 +1,23 @@
+{
+  "line": 8292,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008292_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=FQVJh4ROv%2FK%2FSclvssrfIQzG6R8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008292_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=YPxvDO4rmBq0sqPzQVi2m%2BCHNeo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -1,
+        "y": -13,
+        "w": 829,
+        "h": 730
+      },
+      "type": "custom",
+      "text": "人物相对位置和朝向变化，需要重排"
+    }
+  ],
+  "note": "黑衣女子和皮衣男子相对位置要更换，皮衣男子应在黑衣女子左侧",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787712284826
+}
