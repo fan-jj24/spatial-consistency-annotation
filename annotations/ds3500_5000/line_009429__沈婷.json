@@ -1,0 +1,22 @@
+{
+  "line": 9429,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009429_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=Xkdc7jVqPJySrfi%2Bt5KKZqNAVtk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009429_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=Yh1qfNGm2M6u%2F25NO8SgLv78q20%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 371,
+        "y": 258,
+        "w": 148,
+        "h": 461
+      },
+      "type": "add"
+    }
+  ],
+  "note": "两男子右侧的纸人消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787726752445
+}
