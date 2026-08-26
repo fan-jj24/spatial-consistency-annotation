@@ -1,0 +1,31 @@
+{
+  "line": 7825,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007825_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=qiZ5WJvBx3ZejwZf2VuySyywenM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007825_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=VGGI%2BsTTExLDKjsQzuEq%2FyNt4u4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1,
+        "y": 0,
+        "w": 416,
+        "h": 718
+      },
+      "type": "replace"
+    },
+    {
+      "box": {
+        "x": 420,
+        "y": 468,
+        "w": 159,
+        "h": 246
+      },
+      "type": "add"
+    }
+  ],
+  "note": "图B的男子替换为图A老太太右侧的男子，老太太右手边的男孩消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787726752445
+}
