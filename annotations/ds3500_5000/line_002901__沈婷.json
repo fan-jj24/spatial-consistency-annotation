@@ -1,0 +1,31 @@
+{
+  "line": 2901,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002901_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109350&Signature=u%2F1FkvfnKskNcQRHBb3nF6J5Bc4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002901_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109350&Signature=HMcbbUUheNL%2FtKcue%2BYVVBt%2B%2BR8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 250,
+        "y": 430,
+        "w": 72,
+        "h": 210
+      },
+      "type": "add"
+    },
+    {
+      "box": {
+        "x": 5,
+        "y": 681,
+        "w": 712,
+        "h": 189
+      },
+      "type": "bg_local"
+    }
+  ],
+  "note": "红衣女子身后的发髻女子消失，前面的道具不一致",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787726752445
+}
