@@ -1,0 +1,26 @@
+{
+  "line": 8365,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008365_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=8zPZhGP8NB2O0lJS2zmgKGz%2Bsy8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008365_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=jPPbaV6n4p97ndSy1isDvLm%2BiCQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 891,
+        "y": -4,
+        "w": 387,
+        "h": 368
+      },
+      "type": "move",
+      "target": {
+        "x": 585,
+        "y": 291
+      }
+    }
+  ],
+  "note": "摩托车从斑马线中央移动至边缘",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787726752445
+}
