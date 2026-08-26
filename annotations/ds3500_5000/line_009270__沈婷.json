@@ -1,0 +1,26 @@
+{
+  "line": 9270,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009270_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=HjxpmIQsBt2vNrkfOq99YNweHsM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009270_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=NLQ5VlBWVqq2iTqbF8B6nCxt0NA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 725,
+        "y": 405,
+        "w": 132,
+        "h": 271
+      },
+      "type": "move",
+      "target": {
+        "x": 656,
+        "y": 371
+      }
+    }
+  ],
+  "note": "黑衣男子与纸人的距离变远",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787712284826
+}
