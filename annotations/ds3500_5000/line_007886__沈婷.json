@@ -1,0 +1,27 @@
+{
+  "line": 7886,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007886_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=rHPg7xzeMcyQGPqLBcLVheZOlss%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007886_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=%2FaW4rCZLa2GWsjSU8J%2Fm8fjFLAI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 558,
+        "y": 28,
+        "w": 386,
+        "h": 598
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.996,
+        -0.002,
+        0.084
+      ]
+    }
+  ],
+  "note": "白衣男子与右后方的侍卫距离变近",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787726752445
+}
