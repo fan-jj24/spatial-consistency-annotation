@@ -1,0 +1,27 @@
+{
+  "line": 8800,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008800_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=uhNcaSGgkX07zxjTmzKSW79wkVc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008800_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=TtnUVkWxO67GHlLzDno68NXHSg0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 491,
+        "y": 291,
+        "w": 142,
+        "h": 300
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.009,
+        0.613,
+        0.79
+      ]
+    }
+  ],
+  "note": "男子从门外移动至门内",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787726752445
+}
