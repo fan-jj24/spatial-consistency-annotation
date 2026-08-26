@@ -1,0 +1,27 @@
+{
+  "line": 9339,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009339_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=80RfNHwFS6pWtYYlIcIdMw74fNA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009339_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=zVC20brQhquLX8t%2BTDZzmMGDxpg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 907,
+        "y": 78,
+        "w": 559,
+        "h": 544
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.724,
+        -0.063,
+        -0.687
+      ]
+    }
+  ],
+  "note": "紫衣战士和橙衣战士距离蓝衣战士远了，朝向应与蓝衣战士同向肩并肩",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787710163273
+}
