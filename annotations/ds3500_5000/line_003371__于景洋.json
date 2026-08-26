@@ -1,0 +1,35 @@
+{
+  "line": 3371,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003371_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109352&Signature=Kpa1GZnFjJ%2BzTmlWIcyroPflFwQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003371_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109352&Signature=RDdTDBELZ03iUoQLOUH4D6Rayq8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 4,
+        "y": 269,
+        "w": 148,
+        "h": 596
+      },
+      "type": "add"
+    },
+    {
+      "box": {
+        "x": 158,
+        "y": 212,
+        "w": 561,
+        "h": 1062
+      },
+      "type": "move",
+      "target": {
+        "x": 444,
+        "y": 59
+      }
+    }
+  ],
+  "note": "被绑绳女子右侧的蓝衣女子缺失，被绑绳女子由站立变成趴在地上，高度发生了变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787710163273
+}
