@@ -1,0 +1,27 @@
+{
+  "line": 9356,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009356_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=DKoDz2wDmq%2Fcw0Rp4CQ%2BY9sa2Y0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009356_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=YWvdwsbFpg3%2FoJlrmp2owzeWaAg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 546,
+        "y": 140,
+        "w": 110,
+        "h": 172
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.121,
+        -0.346,
+        -0.93
+      ]
+    }
+  ],
+  "note": "男子与红色区域距离变近",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787712284826
+}
