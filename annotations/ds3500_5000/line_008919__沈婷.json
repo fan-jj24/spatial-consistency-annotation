@@ -1,0 +1,22 @@
+{
+  "line": 8919,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008919_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=JYSxXr6XlUH9QZnif3rPTaUu4L4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008919_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=CYDkEWF77p7fEKFoJmFhHFbJp%2BI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 340,
+        "y": 232,
+        "w": 262,
+        "h": 265
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "男孩右肩多出一个黄色动物",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787712284826
+}
