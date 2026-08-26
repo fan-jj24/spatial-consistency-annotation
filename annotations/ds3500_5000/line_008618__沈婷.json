@@ -1,0 +1,27 @@
+{
+  "line": 8618,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008618_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=rCJtvJOqTwONi8SKEGAga26qAKc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008618_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=Z7zs6mqIlRApI8xYr85SyFvRIag%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -6,
+        "y": 397,
+        "w": 264,
+        "h": 873
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.321,
+        -0.372,
+        -0.871
+      ]
+    }
+  ],
+  "note": "蓝衣女子从广场移动至座位上，高度变低",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787726752445
+}
