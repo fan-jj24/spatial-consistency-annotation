@@ -1,0 +1,23 @@
+{
+  "line": 8328,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008328_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=8nlW8MYb8neeMJPuh72sbXt9SBs%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008328_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=plx%2FGLJelI1dHCA2J0Nf9lovw7c%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 10,
+        "y": 210,
+        "w": 681,
+        "h": 778
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向变化，需要重排"
+    }
+  ],
+  "note": "亭子下面多出一个女子，粉衣男子与浴池边缘距离变近，浴池的白衣和绿衣男子消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787712284826
+}
