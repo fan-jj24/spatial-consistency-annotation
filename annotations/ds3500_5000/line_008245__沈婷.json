@@ -1,0 +1,27 @@
+{
+  "line": 8245,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008245_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=0ENKKIL7nF0p5vh4To%2FoZRnxOKs%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008245_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=PYWHO5CaqfQ2LdwACxjRufCIV%2Bc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1185,
+        "y": 309,
+        "w": 732,
+        "h": 776
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.353,
+        -0.354,
+        -0.866
+      ]
+    }
+  ],
+  "note": "男孩和蓝色动物从深蓝衣男子对面移动至侧面",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787726752445
+}
