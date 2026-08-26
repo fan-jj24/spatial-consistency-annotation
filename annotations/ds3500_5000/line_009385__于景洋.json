@@ -1,0 +1,26 @@
+{
+  "line": 9385,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009385_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=z1fCWmJT%2Fevr4SPdEk%2B6qlcM2NE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009385_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=x5Cy8aSaD9ecKigj1ZMByQGt3pY%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 616,
+        "y": 124,
+        "w": 517,
+        "h": 357
+      },
+      "type": "move",
+      "target": {
+        "x": 846,
+        "y": 687
+      }
+    }
+  ],
+  "note": "牛仔衣男子距离地面高度变高了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787710163273
+}
