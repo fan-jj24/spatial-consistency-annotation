@@ -1,0 +1,27 @@
+{
+  "line": 3195,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003195_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=RScYCSlj03OvddynwFT5a4x%2B07g%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003195_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=GSbaCGrS6ynM2JzfYcSUXyQLT1Y%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 179,
+        "y": 261,
+        "w": 292,
+        "h": 1011
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.975,
+        0.001,
+        0.224
+      ]
+    }
+  ],
+  "note": "拿书女子从门内移动至门外",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787726752445
+}
