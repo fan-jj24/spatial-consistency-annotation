@@ -1,0 +1,22 @@
+{
+  "line": 2975,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002975_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=9L3CGJ4mlFmlOv9qm%2BRtXDJMltA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002975_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=ZPnYyqvkUTaOdR95UgPEO4JM5nw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 174,
+        "y": 458,
+        "w": 174,
+        "h": 294
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "女子由背对烛台变为侧对，高度变高",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787726752445
+}
