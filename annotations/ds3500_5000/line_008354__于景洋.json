@@ -1,0 +1,27 @@
+{
+  "line": 8354,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008354_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=EFMcDY5b1L%2FqWYhMdfE4yHxVVPc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008354_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=xyA9dxP%2FalvTgBlGu1s4uGWJg2E%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 500,
+        "y": 30,
+        "w": 683,
+        "h": 691
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.525,
+        0.139,
+        -0.839
+      ]
+    }
+  ],
+  "note": "男子由在女子的右后方站立并面向女孩的后背，变成蹲在女孩的正前方与其面对面，高度也变低了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787710163273
+}
