@@ -1,0 +1,26 @@
+{
+  "line": 8380,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008380_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=evljqJqyJ9IIzZaR%2FNzefIqpc%2BA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008380_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=F0VBHhO03NxPJUx0caEq1X34x94%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 452,
+        "y": 217,
+        "w": 621,
+        "h": 421
+      },
+      "type": "move",
+      "target": {
+        "x": 1202,
+        "y": 269
+      }
+    }
+  ],
+  "note": "女孩和玩偶与滑滑梯拐弯处的距离变远",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787712284826
+}
