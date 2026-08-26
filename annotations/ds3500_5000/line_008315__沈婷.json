@@ -1,0 +1,31 @@
+{
+  "line": 8315,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008315_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=KGqv%2B0ZoYGqdvVOfTRsbNJ2Ac6Y%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008315_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=Xcky%2FF%2B1rPLHefQu6fbrIJIvFWs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 396,
+        "y": 550,
+        "w": 59,
+        "h": 207
+      },
+      "type": "add"
+    },
+    {
+      "box": {
+        "x": 535,
+        "y": 553,
+        "w": 69,
+        "h": 207
+      },
+      "type": "add"
+    }
+  ],
+  "note": "粉衣男子身后的两个人物消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787726752445
+}
