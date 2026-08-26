@@ -1,0 +1,22 @@
+{
+  "line": 9466,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009466_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=YU3yZEP32wQTqlT%2Fn%2BzUMDhd8TA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009466_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=Xe4CfThD3zXF6zAiw6K5IULhP%2Fg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 727,
+        "y": 241,
+        "w": 470,
+        "h": 476
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "牛仔衣男子旁边多出一个黑衣男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787726752445
+}
