@@ -1,0 +1,22 @@
+{
+  "line": 8124,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008124_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=BU6nqDVr0oMrvlcm9Ufpx863voA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008124_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=4YDGG8Vh8dEzyoUohh6K0JoT%2Fs4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1,
+        "y": 70,
+        "w": 1215,
+        "h": 650
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "多出4个人，画面右下角多出一组架子鼓",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787712284826
+}
