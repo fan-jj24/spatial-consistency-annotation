@@ -1,0 +1,22 @@
+{
+  "line": 7795,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007795_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=xwJhF4aMzAFf04N%2FqBGuoJLHG1Y%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007795_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109354&Signature=D7%2Fu9G8THRgCqfK3Nnb1b6Ka4ck%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1550,
+        "y": 2,
+        "w": 365,
+        "h": 1074
+      },
+      "type": "add"
+    }
+  ],
+  "note": "点心盒旁边的黑衣人消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787726752445
+}
