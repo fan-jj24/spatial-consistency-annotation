@@ -1,0 +1,32 @@
+{
+  "line": 3487,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003487_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109352&Signature=CngnQnDl6EQX3aRnYH6BalhpCfc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003487_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109352&Signature=8ba5ivcA5IzgaMG6YcQ3ksxhj4A%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 4,
+        "y": 584,
+        "w": 425,
+        "h": 694
+      },
+      "type": "delete",
+      "line": [
+        {
+          "x": 227,
+          "y": 689
+        },
+        {
+          "x": 114,
+          "y": 1201
+        }
+      ]
+    }
+  ],
+  "note": "女子多余",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787710163273
+}
