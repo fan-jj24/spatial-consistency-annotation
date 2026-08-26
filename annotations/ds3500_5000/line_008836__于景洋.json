@@ -1,0 +1,23 @@
+{
+  "line": 8836,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008836_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=%2BL5xFpTe7uUAfxf6jHB%2BlgwE6fo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008836_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=B%2FR0nVdskBp7lcw%2BC9J28R9vLZ4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 231,
+        "y": 55,
+        "w": 1047,
+        "h": 664
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向变化，需要重排 "
+    }
+  ],
+  "note": "女子和戴领带西装男子的相对位置相互颠倒，两人朝向由肩并肩面向楼梯上方变成背对楼梯上方且两人面对面",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787710163273
+}
