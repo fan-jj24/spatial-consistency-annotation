@@ -3,10 +3,11 @@
 从标注数据生成 JSONL 数据集
 
 功能：
-  - 默认读取仓库中的 8 个正式数据集（不包含 tests100）
+  - 默认读取 DEFAULT_DATASETS 中配置的数据集
   - 下载原始图片对（A + B）
   - 在 B 图上渲染标注（bbox、箭头、线条、文字标签）
   - 上传标注后的 B 图到外网 OSS，获取 URL
+  - 输出文件已存在时，自动生成只含新增或修改记录的时间戳 JSONL
   - 生成 JSONL，每行包含：
     - line: 行号
     - image_a_url: 原始 A 图 URL
@@ -18,7 +19,8 @@
     - objects: [{box, type, target, dir3d, text, line}, ...]
 
 用法：
-  python3 gen_jsonl.py --output dataset.jsonl
+  python gen_jsonl.py
+  python gen_jsonl.py --output dataset.jsonl
   python3 gen_jsonl.py --override-dir annotation-override --output dataset.jsonl
   python3 gen_jsonl.py --output dataset.jsonl --datasets ds500,ds500_1000
   python3 gen_jsonl.py --output dataset.jsonl --skip-upload  # 只保存本地不上传
@@ -32,6 +34,7 @@ import sys
 import io
 import time
 import re
+from datetime import datetime
 from pathlib import Path
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -57,6 +60,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 DEFAULT_DATASETS = (
     "ds2500_3000,ds3000_3500,ds3500_5000"
 )
+
 def build_outer_handler():
     """从环境变量构建 OSS handler（参考 interactive_selector.py）"""
     ak = os.environ.get("OUTER_OSS_ACCESS_KEY_ID", "")
@@ -397,6 +401,83 @@ def annotation_content_hash(annotation):
     ).encode("utf-8")
     return hashlib.sha256(encoded).hexdigest()[:16]
 
+def record_version_key(record):
+    """返回一条标注记录的稳定版本标识。"""
+    return (
+        record["dataset_id"],
+        int(record["line"]),
+        record["annotator"],
+        annotation_content_hash(record["annotation"]),
+    )
+
+def row_version_key(row):
+    """从已有 JSONL 行恢复版本标识，兼容尚无 annotation_hash 的旧文件。"""
+    return (
+        row["dataset_id"],
+        int(row["line"]),
+        row["annotator"],
+        row.get("annotation_hash") or annotation_content_hash(row),
+    )
+
+def find_history_files(requested_output):
+    """查找指定输出文件及由本脚本生成的同系列时间戳文件。"""
+    requested_output = Path(requested_output)
+    history_files = []
+    if requested_output.is_file():
+        history_files.append(requested_output)
+
+    pattern = re.compile(
+        r"^" + re.escape(requested_output.stem)
+        + r"_\d{8}_\d{6}(?:_\d+)?"
+        + re.escape(requested_output.suffix) + r"$"
+    )
+    parent = requested_output.parent
+    if parent.is_dir():
+        history_files.extend(
+            p for p in parent.iterdir()
+            if p.is_file() and pattern.match(p.name)
+        )
+    return sorted(set(history_files))
+
+def load_history_keys(history_files):
+    """读取历史 JSONL 中已成功输出的标注版本。"""
+    keys = set()
+    invalid_count = 0
+    for history_file in history_files:
+        try:
+            with open(history_file, "r", encoding="utf-8") as f:
+                for line in f:
+                    if not line.strip():
+                        continue
+                    try:
+                        keys.add(row_version_key(json.loads(line)))
+                    except (KeyError, TypeError, ValueError, json.JSONDecodeError):
+                        invalid_count += 1
+        except OSError as e:
+            print("  ⚠️ 无法读取历史文件 " + str(history_file) + ": " + str(e))
+    if invalid_count:
+        print("  ⚠️ 历史 JSONL 中有 " + str(invalid_count) + " 行无效，已跳过")
+    return keys
+
+def choose_output_path(requested_output):
+    """首次使用原文件名；已存在时改用带时间戳且不冲突的新文件名。"""
+    requested_output = Path(requested_output)
+    if not requested_output.exists():
+        return requested_output
+
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    candidate = requested_output.with_name(
+        requested_output.stem + "_" + timestamp + requested_output.suffix
+    )
+    sequence = 2
+    while candidate.exists():
+        candidate = requested_output.with_name(
+            requested_output.stem + "_" + timestamp + "_" + str(sequence)
+            + requested_output.suffix
+        )
+        sequence += 1
+    return candidate
+
 def build_annotated_image_path(record):
     """构建不会在数据集、标注者或标注版本之间冲突的相对图片路径。"""
     file_name = "line_{:06d}__{}__{}.jpg".format(
@@ -467,6 +548,7 @@ def process_one_record(record, sample, review, bucket, skip_upload, local_dir):
         "line": line,
         "dataset_id": record["dataset_id"],
         "annotator": record["annotator"],
+        "annotation_hash": annotation_content_hash(annotation),
         "image_a_url": url_a,
         "image_b_url": url_b,
         "annotated_b_url": annotated_url,
@@ -508,7 +590,9 @@ def main():
         else repo_dir / "annotation-override"
     )
     dataset_ids = [d.strip() for d in args.datasets.split(",") if d.strip()]
-    output_path = Path(args.output)
+    requested_output_path = Path(args.output)
+    history_files = find_history_files(requested_output_path)
+    output_path = choose_output_path(requested_output_path)
 
     print("=" * 60)
     print("  📦 标注数据 → JSONL 生成器")
@@ -517,6 +601,8 @@ def main():
     print("  Override: " + (str(override_dir) if override_dir else "无"))
     print("  数据集: " + str(dataset_ids))
     print("  输出: " + str(output_path))
+    if history_files:
+        print("  增量基准: " + str(len(history_files)) + " 个历史 JSONL")
     print("  上传: " + ("跳过（保存本地）" if args.skip_upload else "OSS"))
     print()
 
@@ -525,8 +611,21 @@ def main():
     records = load_annotation_records(repo_dir, override_dir, dataset_ids)
     print("  共 " + str(len(records)) + " 条标注记录")
 
+    if history_files:
+        history_keys = load_history_keys(history_files)
+        total_records = len(records)
+        records = [r for r in records if record_version_key(r) not in history_keys]
+        print("  已有版本: " + str(len(history_keys)) + " 条")
+        print("  本次新增或修改: " + str(len(records)) + " 条"
+              + "（跳过 " + str(total_records - len(records)) + " 条）")
+
     if not records:
-        print("  ❌ 没有标注记录，退出")
+        if history_files:
+            output_path.parent.mkdir(parents=True, exist_ok=True)
+            output_path.touch()
+            print("  ✅ 没有新增或修改记录，已生成空增量文件: " + str(output_path))
+        else:
+            print("  ❌ 没有标注记录，退出")
         return
 
     # 2. 读取 samples（获取 remotes）
