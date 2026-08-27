@@ -1,0 +1,22 @@
+{
+  "line": 3454,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003454_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109352&Signature=gAOJxruPhrYTtuPrWmudIBLT5ck%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003454_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109352&Signature=q96BoYB%2BNal2YbX7aFruwzTRNCU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 37,
+        "y": 233,
+        "w": 620,
+        "h": 1042
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "粉衣女子朝向变了，应与黑衣男子面对面",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787800901583
+}
