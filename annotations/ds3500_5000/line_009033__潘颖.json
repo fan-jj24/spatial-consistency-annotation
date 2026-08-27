@@ -1,0 +1,22 @@
+{
+  "line": 9033,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009033_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=eIQHa91VRMNExhJW6z98Mvrjvh0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009033_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=OTAjkDCp18Xwa2jIYsL233x5RKc%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -2,
+        "y": 90,
+        "w": 717,
+        "h": 998
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "两人朝向由面对面变为一前一后，小刺猬的朝向由躺着变为趴着",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787800901583
+}
