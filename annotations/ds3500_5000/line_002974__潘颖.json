@@ -1,0 +1,23 @@
+{
+  "line": 2974,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002974_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=OJUHvdVhzm6SvRFLcZlIdJj5AcM%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_002974_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=%2F1G%2BZ6h5D3BHssaQpXr0EIWqKn0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -6,
+        "y": 325,
+        "w": 717,
+        "h": 778
+      },
+      "type": "custom",
+      "text": "黑豹的相对位置变了，白衣男子消失了，多出一名绿衣人，局部背景变了"
+    }
+  ],
+  "note": "黑豹与粉衣女子的相对位置由正前方变为左前方，粉衣女子右后方的白衣男子消失了，粉衣女子右前方多出一个绿衣人人，粉衣女子身后的幔帐变为屏风",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787813122597
+}
