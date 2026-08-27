@@ -1,0 +1,27 @@
+{
+  "line": 8698,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008698_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=Z9bxFpxfxK5KGbAuFlo7tXf0GGQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008698_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=pqrPzI8Vkp6fELTsFXs5KDqiRXI%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 522,
+        "y": 311,
+        "w": 182,
+        "h": 407
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.007,
+        0.356,
+        0.934
+      ]
+    }
+  ],
+  "note": "女子从棕色圆环外移动至圆环内",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787819787821
+}
