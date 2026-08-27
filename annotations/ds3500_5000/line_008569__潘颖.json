@@ -1,0 +1,26 @@
+{
+  "line": 8569,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008569_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=0oeGMpWnU3LIGiSrLjZxRQVFf9M%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008569_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=x4pts7axdzdPfNU%2FwQfXWj8PeCE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 661,
+        "y": 1,
+        "w": 381,
+        "h": 350
+      },
+      "type": "move",
+      "target": {
+        "x": 862,
+        "y": 714
+      }
+    }
+  ],
+  "note": "黄色小怪兽的相对高度变高了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787800901583
+}
