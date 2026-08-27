@@ -1,0 +1,27 @@
+{
+  "line": 8155,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008155_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=GCOupKqMHSJR3QxKkc7odm0iOik%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008155_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=4o0dPjJVf7wobC60xKrNiUll76Y%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 540,
+        "y": 214,
+        "w": 140,
+        "h": 316
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.823,
+        -0.002,
+        -0.568
+      ]
+    }
+  ],
+  "note": "花衬衫男子与沙发的相对距离变远了，相对高度变高了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787800901583
+}
