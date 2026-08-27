@@ -1,0 +1,23 @@
+{
+  "line": 7894,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007894_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=tilfIhb4Wc%2B7JDhynVNDNXhMm1A%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007894_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109355&Signature=AbwPfFCkMaRmP2b6ahuVVzjSzTE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 403,
+        "y": 428,
+        "w": 356,
+        "h": 180
+      },
+      "type": "custom",
+      "text": "多个人物相对位置和朝向变化，需要重排"
+    }
+  ],
+  "note": "蓝汽车上的动物从车上变到地面上，左前方多出 4个小汽车",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787819787821
+}
