@@ -1,0 +1,27 @@
+{
+  "line": 3337,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003337_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=BSOYBxdLg7DsyaZTWaaAC38m1Sk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003337_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=2ZRf1MX5S4Ha1Yo6wJU4TmfNYy0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 209,
+        "y": 148,
+        "w": 294,
+        "h": 1142
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.007,
+        0.472,
+        0.881
+      ]
+    }
+  ],
+  "note": "女子由床上躺着变为床下站着",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787819787821
+}
