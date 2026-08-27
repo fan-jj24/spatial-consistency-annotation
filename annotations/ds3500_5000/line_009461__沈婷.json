@@ -1,0 +1,27 @@
+{
+  "line": 9461,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009461_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=qnaHLDdrWD%2F9mbKdcm4tQAEbSL0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009461_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=tv7NQq7Xh1ixemXV6NrjE61NyhE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 200,
+        "y": 86,
+        "w": 940,
+        "h": 488
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.007,
+        -0.444,
+        -0.896
+      ]
+    }
+  ],
+  "note": "男子从树杆靠下部分移动至靠上部分，朝向变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787819787821
+}
