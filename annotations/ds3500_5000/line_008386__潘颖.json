@@ -1,0 +1,23 @@
+{
+  "line": 8386,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008386_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=Ki6VkJGu60cfOSDiudqDPcjoD3g%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008386_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=eORZDLqRS3uHvv5m7Dv7A7Fu3Y4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 2,
+        "y": 5,
+        "w": 719,
+        "h": 1272
+      },
+      "type": "custom",
+      "text": "男子的相对位置变了，两女子朝向变了"
+    }
+  ],
+  "note": "绿衣男子与粉衣女子和蓝衣女子的相对位置变了，应在两女子中间，粉衣女子和蓝衣女子的朝向由并肩变为面对面",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787811414848
+}
