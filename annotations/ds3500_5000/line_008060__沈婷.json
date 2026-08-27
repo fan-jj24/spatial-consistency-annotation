@@ -1,0 +1,23 @@
+{
+  "line": 8060,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008060_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=C7Trlf%2Bt4l5S%2FL%2FxN%2BArDP1oJaY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008060_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=nA4z7H8DnxCLPsy%2F154KqAdTo%2FA%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 425,
+        "y": 129,
+        "w": 681,
+        "h": 582
+      },
+      "type": "custom",
+      "text": "人物相对位置和朝向变化，需要重排"
+    }
+  ],
+  "note": "2人与玻璃窗户的距离变远，眼镜男子从花衣男子右后方移动至左前方",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787819787821
+}
