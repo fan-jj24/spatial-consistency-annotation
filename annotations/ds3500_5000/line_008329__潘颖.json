@@ -1,0 +1,27 @@
+{
+  "line": 8329,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008329_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=uRTf1tvkWVSP97zUGiH0zgHIJlU%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008329_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109358&Signature=eGlDFJk7KP%2F61MtqAEVSadgwuu4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 327,
+        "y": 753,
+        "w": 238,
+        "h": 248
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.2,
+        -0.027,
+        -0.979
+      ]
+    }
+  ],
+  "note": "男子与女子的相对位置变了，应在女子右手边",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787800901583
+}
