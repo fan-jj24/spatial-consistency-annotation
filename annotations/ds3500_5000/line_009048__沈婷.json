@@ -1,0 +1,53 @@
+{
+  "line": 9048,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009048_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=D86qYIVtCuM9wNjfXcwsy3ExLJo%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009048_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=dWuN47aCxmfNwflsvY8tzAH58dQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": -1,
+        "y": 157,
+        "w": 231,
+        "h": 561
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.552,
+        -0.234,
+        -0.8
+      ]
+    },
+    {
+      "box": {
+        "x": 546,
+        "y": 249,
+        "w": 157,
+        "h": 168
+      },
+      "type": "move",
+      "target": {
+        "x": 318,
+        "y": 673
+      }
+    },
+    {
+      "box": {
+        "x": 990,
+        "y": 297,
+        "w": 180,
+        "h": 214
+      },
+      "type": "move",
+      "target": {
+        "x": 1079,
+        "y": 568
+      }
+    }
+  ],
+  "note": "紫衣女孩与桌子距离变近，地上的黄色动物移动至桌子上，橙色动物从箱子上移动至空中",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787819787821
+}
