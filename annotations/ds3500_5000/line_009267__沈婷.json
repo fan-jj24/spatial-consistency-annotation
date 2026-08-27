@@ -1,0 +1,27 @@
+{
+  "line": 9267,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009267_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=Ec%2BF2sxylPjuP6tCSoVtOjkZUQE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009267_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=u%2F6TKhmMgP5YC2dgD5%2FpDxDwXeE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 1,
+        "y": 40,
+        "w": 1275,
+        "h": 672
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.009,
+        -0.588,
+        -0.809
+      ]
+    }
+  ],
+  "note": "黑衣男子和纸人与门的距离变近，需整体后移",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787819787821
+}
