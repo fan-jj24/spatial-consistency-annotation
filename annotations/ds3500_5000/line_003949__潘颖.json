@@ -1,0 +1,22 @@
+{
+  "line": 3949,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003949_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109352&Signature=%2BAoKzfVXpaIN8KuTz7n%2FJiOQlKQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003949_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109352&Signature=6zEa7awV7TvDoR3vOpFj8Jm8ym0%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 245,
+        "y": 159,
+        "w": 266,
+        "h": 1124
+      },
+      "type": "add"
+    }
+  ],
+  "note": "白发男子对面的黑发男子消失了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787811414848
+}
