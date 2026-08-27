@@ -1,0 +1,27 @@
+{
+  "line": 9145,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009145_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=Ws9PztoDwzWrLdZG1e472Wbz7u4%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009145_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=A6ThU2dO%2F0zKoB99uyt0iAuQsWE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 571,
+        "y": 465,
+        "w": 134,
+        "h": 207
+      },
+      "type": "move3d",
+      "dir3d": [
+        0.023,
+        0.977,
+        0.213
+      ]
+    }
+  ],
+  "note": "老头由在房间内的门口处变化到庭院里，距离门口远了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787812927994
+}
