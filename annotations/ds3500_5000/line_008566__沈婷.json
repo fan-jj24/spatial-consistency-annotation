@@ -1,0 +1,45 @@
+{
+  "line": 8566,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008566_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=wS7N8MaFAFjY64bry8B92KZCt%2BE%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008566_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109360&Signature=VBBX5UH7KyrQrmSYQcFIs87NlJw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 579,
+        "y": -7,
+        "w": 768,
+        "h": 1026
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.994,
+        0.001,
+        0.113
+      ]
+    },
+    {
+      "box": {
+        "x": 1357,
+        "y": 64,
+        "w": 212,
+        "h": 630
+      },
+      "type": "replace"
+    },
+    {
+      "box": {
+        "x": 179,
+        "y": 0,
+        "w": 290,
+        "h": 676
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "白袜男子从花朵左侧移动至右侧，石柱旁边多出一个人，图B台阶上的人替换为图A台阶上的人",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787819787821
+}
