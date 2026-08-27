@@ -1,0 +1,22 @@
+{
+  "line": 8251,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008251_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=GllLbwNonaPzf09Mx4rXinGDALA%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008251_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109357&Signature=XArlhE4jjVwt%2Fp5LF4U81kWSEuM%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 350,
+        "y": 148,
+        "w": 101,
+        "h": 741
+      },
+      "type": "add"
+    }
+  ],
+  "note": "蓝衣男子右后方的抱琴男子消失了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787811414848
+}
