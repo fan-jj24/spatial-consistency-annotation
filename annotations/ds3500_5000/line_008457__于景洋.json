@@ -1,0 +1,27 @@
+{
+  "line": 8457,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008457_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=tC2QiJ2KfNQ7CcptypUAn7BKYt8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008457_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109359&Signature=beG0OoYKcrGX2cu5QrPqcKsVJFw%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 461,
+        "y": 429,
+        "w": 416,
+        "h": 291
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.073,
+        0.805,
+        0.588
+      ]
+    }
+  ],
+  "note": "人物由在奖牌后面变成手拿奖牌",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787812927994
+}
