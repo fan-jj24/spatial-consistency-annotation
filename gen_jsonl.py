@@ -48,13 +48,15 @@ except ImportError:
     sys.exit(1)
 
 # ===== OSS =====
-OUTER_OSS_PREFIX = "yk/ai-material/neo/fjj/2k/annotated"
+OUTER_OSS_PREFIX = "yk/ai-material/neo/fjj/2k/annotated_0824"
 SCRIPT_DIR = Path(__file__).resolve().parent
+# DEFAULT_DATASETS = (
+#     "ds500,ds500_1000,ds1000_1500,ds1500_2000,"
+#     "ds2000_2500,ds2500_3000,ds3000_3500,ds3500_5000"
+# )
 DEFAULT_DATASETS = (
-    "ds500,ds500_1000,ds1000_1500,ds1500_2000,"
-    "ds2000_2500,ds2500_3000,ds3000_3500,ds3500_5000"
+    "ds2500_3000,ds3000_3500,ds3500_5000"
 )
-
 def build_outer_handler():
     """从环境变量构建 OSS handler（参考 interactive_selector.py）"""
     ak = os.environ.get("OUTER_OSS_ACCESS_KEY_ID", "")
@@ -492,12 +494,12 @@ def main():
         "--override-dir", default=None,
         help="override 目录（默认：仓库目录内的 annotation-override）",
     )
-    parser.add_argument("--output", "-o", default="dataset.jsonl", help="输出 JSONL 文件")
+    parser.add_argument("--output", "-o", default="dataset_1800.jsonl", help="输出 JSONL 文件")
     parser.add_argument("--datasets", default=DEFAULT_DATASETS,
                         help="数据集 ID 列表（逗号分隔）")
     parser.add_argument("--skip-upload", action="store_true", help="只保存本地不上传 OSS")
     parser.add_argument("--local-dir", default="./tmp/annotated_images", help="本地保存目录（skip-upload 时用）")
-    parser.add_argument("--workers", type=int, default=4, help="并发下载数")
+    parser.add_argument("--workers", type=int, default=32, help="并发下载数")
     args = parser.parse_args()
 
     repo_dir = Path(args.repo_dir)
