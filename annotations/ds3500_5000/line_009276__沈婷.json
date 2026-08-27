@@ -1,0 +1,22 @@
+{
+  "line": 9276,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009276_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=eXmneQ6KMemGol2SWnptbjATy4c%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009276_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=1PA2O2XBr5Yj69qPScsCIEYa14Q%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 505,
+        "y": 33,
+        "w": 715,
+        "h": 687
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "女子由面对衣帽架变为背对",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787819787821
+}
