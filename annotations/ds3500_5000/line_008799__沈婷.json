@@ -1,0 +1,22 @@
+{
+  "line": 8799,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008799_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=dCyeuD64ycnHcGg4w4wLw9iQ96w%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008799_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109363&Signature=RD9Sl7Tlc3CyRDcPd2gQMVxCLVU%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 326,
+        "y": 342,
+        "w": 42,
+        "h": 49
+      },
+      "type": "add"
+    }
+  ],
+  "note": "画面最左边的牛消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787819787821
+}
