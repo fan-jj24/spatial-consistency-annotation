@@ -1,0 +1,27 @@
+{
+  "line": 9060,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009060_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=lOoOz67HmqQMeID3iIEp2qrLT18%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009060_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=uEbOgG54FaCcvm6h0WqHdVsbHpQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 117,
+        "y": 88,
+        "w": 968,
+        "h": 629
+      },
+      "type": "move3d",
+      "dir3d": [
+        -0.961,
+        -0.001,
+        -0.278
+      ]
+    }
+  ],
+  "note": "男子和女子与路边店铺的距离变近了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787813122597
+}
