@@ -1,0 +1,23 @@
+{
+  "line": 9383,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009383_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=0RQ7JDlLYhYS9zuK3x4Y8XOVYb0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009383_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=w3WROx%2FcsCgsa7ZM34SJwhoAvyE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 437,
+        "y": 183,
+        "w": 525,
+        "h": 543
+      },
+      "type": "custom",
+      "text": "男子与门的相对距离变了，三个纸人消失了"
+    }
+  ],
+  "note": "男子与门的相对距离变远了，门边的三个白色纸人消失了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787800901583
+}
