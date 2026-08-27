@@ -1,0 +1,22 @@
+{
+  "line": 9159,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009159_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=4ibxx2lvjCFGkzqXKeWzmb1n9%2Fc%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009159_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=f7crtTdv%2FnyM4fq0XZz9rPVJPlE%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 175,
+        "y": 23,
+        "w": 898,
+        "h": 695
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "男子朝向由面对纸人变为侧对",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787819787821
+}
