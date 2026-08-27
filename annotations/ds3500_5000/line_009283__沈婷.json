@@ -1,0 +1,26 @@
+{
+  "line": 9283,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009283_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=qbxWdLzRr8YdndjqLYb7rkYMYPQ%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009283_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109369&Signature=vbrLaMNNbeuWHuHVOGTyZLkjXwQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 466,
+        "y": 0,
+        "w": 812,
+        "h": 718
+      },
+      "type": "move",
+      "target": {
+        "x": 100,
+        "y": 295
+      }
+    }
+  ],
+  "note": "男孩与身后建筑的距离变远",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787819787821
+}
