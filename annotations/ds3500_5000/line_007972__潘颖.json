@@ -1,0 +1,26 @@
+{
+  "line": 7972,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007972_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=9QvoqoH%2BN3glSvCq%2BFR6KZpGlR8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007972_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109356&Signature=vob3YOGothcYORM7%2FTL6%2BDTKLk4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 940,
+        "y": 414,
+        "w": 120,
+        "h": 120
+      },
+      "type": "move",
+      "target": {
+        "x": 569,
+        "y": 416
+      }
+    }
+  ],
+  "note": "小怪兽与男子的相对位置变了，应在男子左后方",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787800901583
+}
