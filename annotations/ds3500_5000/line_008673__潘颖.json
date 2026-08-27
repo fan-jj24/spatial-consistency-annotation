@@ -1,0 +1,22 @@
+{
+  "line": 8673,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008673_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=XimWmhzSx%2FUbk5SFTthqvm7%2BUsg%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008673_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109361&Signature=TXK%2BHX%2B1aRjVKympp9HrEv8iUG8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 144,
+        "y": 418,
+        "w": 407,
+        "h": 860
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "牛头马面手中多出了一个的黑衣女子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787800901583
+}
