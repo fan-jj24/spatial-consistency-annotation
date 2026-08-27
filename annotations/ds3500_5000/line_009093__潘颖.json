@@ -1,0 +1,22 @@
+{
+  "line": 9093,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009093_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=JzRtAt6ssImMMWfw2Td0Utg9X0w%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009093_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=f7UmyAa%2BEI3xVKAirOnfTXt6dYQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 279,
+        "y": 243,
+        "w": 193,
+        "h": 416
+      },
+      "type": "rotate"
+    }
+  ],
+  "note": "褐衣男子的朝向变了，应面朝右手边餐桌",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787811414848
+}
