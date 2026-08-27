@@ -1,0 +1,22 @@
+{
+  "line": 9407,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009407_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=ykRBd4aUltB17dBwtlXQ2k4fG4A%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009407_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=vVYuXMjQHI7WDemclKO6YVga%2FeQ%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 395,
+        "y": 15,
+        "w": 847,
+        "h": 699
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "十字架前方多出两个动物",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787819787821
+}
