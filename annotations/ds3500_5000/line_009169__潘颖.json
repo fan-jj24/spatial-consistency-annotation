@@ -1,0 +1,23 @@
+{
+  "line": 9169,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009169_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=ulVu8H9CHQWOQith4t4iU0sXl6U%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009169_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109367&Signature=JYtZE36hLpfR4GHCtQpgnrwINKs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 505,
+        "y": 197,
+        "w": 279,
+        "h": 294
+      },
+      "type": "custom",
+      "text": "蓝衣男子前方多出一个纸人，后方纸人群体消失"
+    }
+  ],
+  "note": "蓝衣男子前方多出一个燃烧的纸人，蓝衣男子后方的纸人群体消失了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787811414848
+}
