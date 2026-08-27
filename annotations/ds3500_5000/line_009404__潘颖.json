@@ -1,0 +1,23 @@
+{
+  "line": 9404,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009404_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=TPlcnSuQZEIBlXEJygxIZKig23E%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009404_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109370&Signature=DR9d9d3df4cg6lMq1fA55gBtfXs%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 462,
+        "y": 199,
+        "w": 260,
+        "h": 229
+      },
+      "type": "custom",
+      "text": "两只羚羊的相对距离和高度均变了"
+    }
+  ],
+  "note": "背草的羚羊和白色羚羊与倒下羚羊的相对距离变近了，背草的羚羊和白色羚羊的相对高度变低了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787800901583
+}
