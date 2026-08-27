@@ -1,0 +1,22 @@
+{
+  "line": 8957,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008957_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=sqtW%2FEpIcB9Sre4cv%2Finn1SI9w8%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008957_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109364&Signature=mDvPybXONq2IeSHApjryQSH%2Blbg%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 884,
+        "y": 351,
+        "w": 106,
+        "h": 109
+      },
+      "type": "add"
+    }
+  ],
+  "note": "绿色飞车上方的黄色动物消失",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787819787821
+}
