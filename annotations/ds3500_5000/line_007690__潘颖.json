@@ -1,0 +1,23 @@
+{
+  "line": 7690,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007690_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=h19zKrBSB%2BMtqPG20Up65PtrIOw%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_007690_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109353&Signature=VEq%2FjHlO83zgGvejhj8O345%2B4Kk%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 347,
+        "y": 2,
+        "w": 1436,
+        "h": 806
+      },
+      "type": "custom",
+      "text": "小鸟与男孩的相对距离变了，红色小球消失了"
+    }
+  ],
+  "note": "小鸟与男孩的相对距离变远了，小孩与第三个方块的相对距离变近了，第三个方块前方的红色小球消失了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787811414848
+}
