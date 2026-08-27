@@ -1,0 +1,39 @@
+{
+  "line": 9509,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009509_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=VRg6e64t7KoRhGs58DnO3vIk594%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009509_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109371&Signature=gqRmt%2FwhNMIKXWxUYm%2Bvy%2BCJIo8%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 403,
+        "y": 375,
+        "w": 112,
+        "h": 80
+      },
+      "type": "move",
+      "target": {
+        "x": 442,
+        "y": 469
+      }
+    },
+    {
+      "box": {
+        "x": 814,
+        "y": 342,
+        "w": 128,
+        "h": 77
+      },
+      "type": "move",
+      "target": {
+        "x": 948,
+        "y": 275
+      }
+    }
+  ],
+  "note": "2只鸟与旁边鸟的距离变化",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787819787821
+}
