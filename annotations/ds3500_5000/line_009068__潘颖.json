@@ -1,0 +1,39 @@
+{
+  "line": 9068,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009068_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=BZoo%2BPVNxnOc4GvC5ScC%2BRF%2FSXk%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009068_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109366&Signature=m7x%2Fz0XO31GHIXBvrIXDn7rlu5A%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 411,
+        "y": 577,
+        "w": 128,
+        "h": 461
+      },
+      "type": "move",
+      "target": {
+        "x": 626,
+        "y": 1083
+      }
+    },
+    {
+      "box": {
+        "x": 126,
+        "y": 745,
+        "w": 138,
+        "h": 279
+      },
+      "type": "move",
+      "target": {
+        "x": 198,
+        "y": 612
+      }
+    }
+  ],
+  "note": "黑衣男子与棺材的距离变近了，绿衣女子的相对高度变低了",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787800901583
+}
