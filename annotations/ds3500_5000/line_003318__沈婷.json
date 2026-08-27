@@ -1,0 +1,23 @@
+{
+  "line": 3318,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003318_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=%2Fcu77oEFu80Z3qSO7fIFUP7XJP0%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_003318_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109351&Signature=U%2Ftw5VNfhgjnhpdEp9bssqvtlNo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 58,
+        "y": 115,
+        "w": 658,
+        "h": 940
+      },
+      "type": "custom",
+      "text": "人物相对位置和朝向变化，需要重排"
+    }
+  ],
+  "note": "粉衣女子面前的黑熊消失，多了一个黑色怪物，女子高度变高",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787819787821
+}
