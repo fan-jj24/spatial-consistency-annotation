@@ -1,0 +1,22 @@
+{
+  "line": 8749,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008749_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109362&Signature=z44uYZMSfjD9RDh06HD71PHB2ZY%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008749_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109362&Signature=PTzlbut307f5%2BtStLu1qIGTFZ%2Bo%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 609,
+        "y": 404,
+        "w": 100,
+        "h": 384
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "红衣男子对面多出一个盔甲男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787819787821
+}
