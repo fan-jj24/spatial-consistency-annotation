@@ -1,0 +1,12 @@
+{
+  "line": 8973,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008973_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=KMZe9VczGIDgQeCOFPopD6TCQ68%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_008973_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109365&Signature=bbfVR67OoH0dmfLFdzrHvDqkRGY%3D"
+  ],
+  "objects": [],
+  "note": "B图没有体现A图门的方位，无法判断一致性",
+  "bg_global": false,
+  "bg_ambiguous": true,
+  "ts": 1787811414848
+}
