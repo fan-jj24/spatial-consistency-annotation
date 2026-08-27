@@ -1,0 +1,22 @@
+{
+  "line": 9253,
+  "remotes": [
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009253_A.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109368&Signature=JxTUhuiCpQFR5FPP4H6aRPSVyho%3D",
+    "https://ykanimate-res.oss-cn-beijing.aliyuncs.com/yk%2Fai-material%2Fneo%2Ffjj%2F2k%2Fline_009253_B.jpg?OSSAccessKeyId=LTAI5tDH9aUqMbRD3fiMYDxa&Expires=3601787109368&Signature=kP6ogjLfCck3mfVUyiqDFl09LC4%3D"
+  ],
+  "objects": [
+    {
+      "box": {
+        "x": 296,
+        "y": 235,
+        "w": 484,
+        "h": 485
+      },
+      "type": "delete"
+    }
+  ],
+  "note": "理发店前多出一名男子",
+  "bg_global": false,
+  "bg_ambiguous": false,
+  "ts": 1787813122597
+}
