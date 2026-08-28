@@ -12,11 +12,16 @@
         "w": 298,
         "h": 541
       },
-      "type": "neutral"
+      "type": "move3d",
+      "dir3d": [
+        -0.017,
+        -0.108,
+        -0.994
+      ]
     }
   ],
   "note": "男子与小供桌的相对距离变近了",
   "bg_global": false,
   "bg_ambiguous": false,
-  "ts": 1787649235103
+  "ts": 1787881559754
 }
